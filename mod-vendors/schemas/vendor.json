@@ -1,0 +1,167 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": ["string", "null"],
+      "description": "UUID",
+      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "vendor_status": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "aliases": {
+      "id": "aliases",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "alias.json"
+      }
+    },
+    "addresses": {
+      "id": "addresses",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "vendor_address.json"
+      }
+    },
+    "phone_numbers": {
+      "id": "phone_numbers",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "vendor_phone.json"
+      }
+    },
+    "emails": {
+      "id": "email_addresses",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "vendor_email.json"
+      }
+    },
+    "urls": {
+      "id": "urls",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "vendor_url.json"
+      }
+    },
+    "contacts": {
+      "id": "vendor_contact_person",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "vendor_contact_person.json"
+      }
+    },
+    "agreements": {
+      "id": "agreement",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "agreement.json"
+      }
+    },
+
+    "erp_code": {
+      "type": "string"
+    },
+    "payment_method": {
+      "type": "string"
+    },
+    "access_provider": {
+      "type": "boolean"
+    },
+    "governmental": {
+      "type": "boolean"
+    },
+    "licensor": {
+      "type": "boolean"
+    },
+    "material_supplier": {
+      "type": "boolean"
+    },
+    "vendor_currencies": {
+      "id": "vendor_currencies",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "claiming_interval": {
+      "type": "integer"
+    },
+    "discount_percent": {
+      "type": "number"
+    },
+    "expected_activation_interval": {
+      "type": "integer"
+    },
+    "expected_invoice_interval": {
+      "type": "integer"
+    },
+    "renewal_activation_interval": {
+      "type": "integer"
+    },
+    "subscription_interval": {
+      "type": "integer"
+    },
+    "tax_id": {
+      "type": "string"
+    },
+    "liable_for_vat": {
+      "type": "boolean"
+    },
+    "tax_percentage": {
+      "type": "number"
+    },
+    "edi": {
+      "type": "object",
+      "$ref": "edi.json"
+    },
+    "interfaces": {
+      "id": "interfaces",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "interface.json"
+      }
+    },
+    "accounts": {
+      "id": "accounts",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "account.json"
+      }
+    },
+    "changelogs": {
+      "id": "changelogs",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "changelog.json"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "name"
+  ]
+}

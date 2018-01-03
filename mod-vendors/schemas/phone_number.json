@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "country_code": {
+      "type": "string"
+    },
+    "area_code": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "phone_number"
+  ]
+}

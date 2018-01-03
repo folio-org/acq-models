@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "address": {
+      "type": "object",
+      "$ref": "address.json"
+    },
+    "categories": {
+      "id": "category",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "language": {
+      "type": "string"
+    },
+    "san_code": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "address"
+  ]
+}

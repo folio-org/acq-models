@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "email": {
+      "type": "object",
+      "$ref": "email.json"
+    },
+    "categories": {
+      "id": "category",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "language": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "email"
+  ]
+}

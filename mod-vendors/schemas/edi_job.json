@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "schedule_edi": {
+      "type": "boolean"
+    },
+    "date": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "time": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "is_monday": {
+      "type": "boolean"
+    },
+    "is_tuesday": {
+      "type": "boolean"
+    },
+    "is_wednesday": {
+      "type": "boolean"
+    },
+    "is_thursday": {
+      "type": "boolean"
+    },
+    "is_friday": {
+      "type": "boolean"
+    },
+    "is_saturday": {
+      "type": "boolean"
+    },
+    "is_sunday": {
+      "type": "boolean"
+    },
+    "send_to_emails": {
+      "type": "string"
+    },
+    "notify_all_edi": {
+      "type": "boolean"
+    },
+    "notify_invoice_only": {
+      "type": "boolean"
+    },
+    "notify_error_only": {
+      "type": "boolean"
+    },
+    "scheduling_notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

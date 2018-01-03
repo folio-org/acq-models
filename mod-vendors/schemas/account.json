@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "account_no": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "app_system_no": {
+      "type": "string"
+    },
+    "payment_method": {
+      "type": "string"
+    },
+    "account_status": {
+      "type": "string"
+    },
+    "contact_info": {
+      "type": "string"
+    },
+    "library_code": {
+      "type": "string"
+    },
+    "library_edi_code": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "name",
+    "account_no",
+    "payment_method",
+    "account_status",
+    "library_code",
+    "library_edi_code"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "contact_person": {
+      "type": "object",
+      "$ref": "contact_person.json"
+    },
+    "language": {
+      "type": "string"
+    },
+    "categories": {
+      "id": "contact_category",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "contact_person"
+  ]
+}

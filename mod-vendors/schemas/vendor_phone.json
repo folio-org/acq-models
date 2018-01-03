@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "phone_number": {
+      "type": "object",
+      "$ref": "phone_number.json"
+    },
+    "categories": {
+      "id": "category",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "language": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "phone_number"
+  ]
+}

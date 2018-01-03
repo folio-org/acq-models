@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "vendor_edi_code": {
+      "type": "string"
+    },
+    "vendor_edi_type": {
+      "type": "string"
+    },
+    "lib_edi_code": {
+      "type": "string"
+    },
+    "lib_edi_type": {
+      "type": "string"
+    },
+    "prorate_tax": {
+      "type": "boolean"
+    },
+    "prorate_fees": {
+      "type": "boolean"
+    },
+    "edi_naming_convention": {
+      "type": "string"
+    },
+    "send_acct_num": {
+      "type": "boolean"
+    },
+    "support_order": {
+      "type": "boolean"
+    },
+    "support_invoice": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": "string"
+    },
+
+    "edi_ftp": {
+      "type": "object",
+      "$ref": "edi_ftp.json"
+    },
+    "edi_job": {
+      "type": "object",
+      "$ref": "edi_job.json"
+    }
+  },
+  "additionalProperties": false
+}
