@@ -1,4 +1,4 @@
-# mod-sample
+# acq-models
 
 Copyright (C) 2018 The Open Library Foundation
 
