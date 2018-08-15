@@ -3,6 +3,7 @@
   "type": "object",
   "properties": {
     "purchase_order": {
+      "id": "purchase_order",
       "type": "object",
       "$ref": "../../mod-orders/schemas/purchase_order.json"
     },
