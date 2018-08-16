@@ -5,14 +5,14 @@
     "purchase_order": {
       "id": "purchase_order",
       "type": "object",
-      "$ref": "../../mod-orders-storage/schemas/purchase_order.json"
+      "$ref": "mod-orders-storage/schemas/purchase_order.json"
     },
     "po_lines": {
       "id": "po_lines",
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "../../mod-orders-storage/schemas/po_line.json"
+        "$ref": "mod-orders-storage/schemas/po_line.json"
       }
     }
   },
