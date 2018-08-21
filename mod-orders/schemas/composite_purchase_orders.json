@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "composite_purchase_orders": {
+      "id": "composite_purchase_orders",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "composite_purchase_order.json"
+      }
+    },
+    "totalRecords": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "composite_purchase_orders",
+    "totalRecords"
+  ]
+}
