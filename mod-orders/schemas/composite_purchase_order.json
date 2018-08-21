@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "purchase_order": {
+      "id": "purchase_order",
+      "type": "object",
+      "$ref": "../../mod-orders-storage/schemas/purchase_order.json"
+    },
+    "po_lines": {
+      "id": "po_lines",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "../../mod-orders-storage/schemas/po_line.json"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "purchase_order"
+  ]
+}
