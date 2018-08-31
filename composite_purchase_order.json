@@ -12,7 +12,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "mod-orders-storage/schemas/po_line.json"
+        "$ref": "composite_po_line.json"
       }
     }
   },

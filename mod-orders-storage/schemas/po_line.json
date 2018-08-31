@@ -32,6 +32,11 @@
     "po_line_description": {
       "type": "string"
     },
+    "po_line_number": {
+      "description": "A human readable number assigned to this PO line",
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9]{5,16}-[0-9]{1,3}$"
+    },
     "adjustment": {
       "type": "string"
     },

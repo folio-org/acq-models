@@ -1,0 +1,134 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "UUID",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
+    "acquisition_method": {
+      "type": "string"
+    },
+    "barcode": {
+      "type": "string"
+    },
+    "cancellation_restriction": {
+      "type": "boolean"
+    },
+    "cancellation_restriction_comment": {
+      "type": "string"
+    },
+    "receipt_date": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "collection": {
+      "type": "boolean"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "po_line_description": {
+      "type": "string"
+    },
+    "po_line_number": {
+      "description": "A human readable number assigned to this PO line",
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9]{5,16}-[0-9]{1,3}$"
+    },
+    "adjustment": {
+      "type": "object",
+      "$ref": "mod-orders-storage/schemas/adjustment.json"
+    },
+    "alerts": {
+      "id": "alerts",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "mod-orders-storage/schemas/alert.json"
+      }
+    },
+    "claims": {
+      "id": "claims",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "mod-orders-storage/schemas/claim.json"
+      }
+    },
+    "cost": {
+      "type": "object",
+      "$ref": "mod-orders-storage/schemas/cost.json"
+    },
+    "details": {
+      "type": "object",
+      "$ref": "mod-orders-storage/schemas/details.json"
+    },
+    "eresource": {
+      "type": "object",
+      "$ref": "mod-orders-storage/schemas/eresource.json"
+    },
+    "license": {
+      "type": "object",
+      "$ref": "mod-orders-storage/schemas/license.json"
+    },
+    "location": {
+      "type": "object",
+      "$ref": "mod-orders-storage/schemas/location.json"
+    },
+    "order_format": {
+      "type": "object",
+      "$ref": "mod-orders-storage/schemas/order_format.json"
+    },
+    "order_type": {
+      "type": "object",
+      "$ref": "mod-orders-storage/schemas/order_type.json"
+    },
+    "physical": {
+      "type": "object",
+      "$ref": "mod-orders-storage/schemas/physical.json"
+    },
+    "purchase_order_id": {
+      "type": "string",
+      "description": "UUID",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
+    "receipt_status": {
+      "type": "object",
+      "$ref": "mod-orders-storage/schemas/receipt_status.json"
+    },
+    "renewal": {
+      "type": "object",
+      "$ref": "mod-orders-storage/schemas/renewal.json"
+    },
+    "source": {
+      "type": "object",
+      "$ref": "mod-orders-storage/schemas/source.json"
+    },
+    "vendor": {
+      "type": "object",
+      "$ref": "mod-orders-storage/schemas/vendor_detail.json"
+    },
+    "workflow_status": {
+      "type": "object",
+      "$ref": "mod-orders-storage/schemas/workflow_status.json"
+    },
+    "selector": {
+      "type": "string"
+    },
+    "requester": {
+      "type": "string"
+    },
+    "account_number": {
+      "type": "string"
+    },
+    "donor": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "barcode"
+  ]
+}
