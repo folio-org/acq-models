@@ -7,7 +7,7 @@
       "amount_expended": 1567.92,
       "encumbrance_status": "unknown",
       "currency": "CAD",
-      "exchange_rate": 1,
+      "exchange_rate": "1",
       "po_line_id": null,
       "fund_id": null
     }
