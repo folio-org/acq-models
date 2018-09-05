@@ -38,7 +38,6 @@
   },
   "additionalProperties": false,
   "required": [
-    "name",
-    "code"
+    "currency"
   ]
 }
