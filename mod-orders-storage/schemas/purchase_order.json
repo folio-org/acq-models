@@ -59,6 +59,5 @@
   },
   "additionalProperties": false,
   "required": [
-    "po_number"
   ]
 }
