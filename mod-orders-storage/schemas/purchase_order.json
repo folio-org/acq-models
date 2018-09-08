@@ -57,7 +57,5 @@
       "type": "string"
     }
   },
-  "additionalProperties": false,
-  "required": [
-  ]
+  "additionalProperties": false
 }
