@@ -29,9 +29,6 @@
     "owner": {
       "type": "string"
     },
-    "po_line_number": {
-      "type": "string"
-    },
     "po_line_description": {
       "type": "string"
     },
