@@ -4,7 +4,7 @@
             {
             	"id": "da0272e4-7ff7-4ea8-9bc9-9d9cd5c81580",
                 "quantity": 8,
-                "location_id", null
+                "location_id": null
             }
         ],
     "total_records": 1,
