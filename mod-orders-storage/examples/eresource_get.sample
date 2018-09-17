@@ -5,7 +5,7 @@
     "create_inventory": false,
     "trial": false,
     "expected_activation": null,
-    "user_limit" 5,
+    "user_limit": 5,
     "material_id": null,
     "access_provider": null
 }
