@@ -14,7 +14,7 @@
       "type": "string"
     },
     "created_date": {
-      "type": "string",
+      "type": ["string", "null"],
       "format": "date-time"
     },
     "fund_status": {
