@@ -158,10 +158,6 @@
         "type": "object",
         "$ref": "changelog.json"
       }
-    },
-    "tags": {
-      "type": "object",
-      "$ref": "raml-util/schemas/tags.schema"
     }
   },
   "additionalProperties": false,
