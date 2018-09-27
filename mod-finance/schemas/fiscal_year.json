@@ -24,9 +24,9 @@
       "type": "string",
       "format": "date-time"
     },
-    “tags”: {
-      “type”: “object”,
-      “$ref”: “raml-util/schemas/tags.schema”
+    "tags": {
+      "type": "object",
+      "$ref": "raml-util/schemas/tags.schema"
     }
   },
   "additionalProperties": false,
