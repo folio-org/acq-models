@@ -23,10 +23,6 @@
     "end_date": {
       "type": "string",
       "format": "date-time"
-    },
-    "tags": {
-      "type": "object",
-      "$ref": "raml-util/schemas/tags.schema"
     }
   },
   "additionalProperties": false,
