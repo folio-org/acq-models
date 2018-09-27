@@ -17,11 +17,11 @@
       "type": "string"
     },
     "period_start": {
-      "type": ["string", "null"],
+      "type": "string",
       "format": "date-time"
     },
     "period_end": {
-      "type": ["string", "null"],
+      "type": "string",
       "format": "date-time"
     },
     "fiscal_years": {
