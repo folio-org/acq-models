@@ -52,7 +52,7 @@
     },
     "tags": {
       "type": "object",
-      "$ref": "raml-util/schemas/tags.schema"
+      "$ref": "../../raml-util/schemas/tags.schema"
     }
   },
   "additionalProperties": false,
