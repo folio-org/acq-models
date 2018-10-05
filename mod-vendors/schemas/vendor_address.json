@@ -3,20 +3,24 @@
   "type": "object",
   "properties": {
     "address": {
+      "description": "The address object for this vendor address",
       "type": "object",
       "$ref": "address.json"
     },
     "categories": {
       "id": "category",
+      "description": "The list of categories for this vendor address",
       "type": "array",
       "items": {
         "type": "string"
       }
     },
     "language": {
+      "description": "The language for this vendor address",
       "type": "string"
     },
     "san_code": {
+      "description": "The SAN code for this vendor address",
       "type": "string"
     }
   },

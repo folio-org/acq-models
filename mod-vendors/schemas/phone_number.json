@@ -3,12 +3,15 @@
   "type": "object",
   "properties": {
     "country_code": {
+      "description": "The country code for this phone number",
       "type": "string"
     },
     "area_code": {
+      "description": "The area code for this phone number",
       "type": "string"
     },
     "phone_number": {
+      "description": "The phone number for this phone number",
       "type": "string"
     }
   },

@@ -3,14 +3,17 @@
   "type": "object",
   "properties": {
     "contact_person": {
+      "description": "The contact person object for this vendor contact person",
       "type": "object",
       "$ref": "contact_person.json"
     },
     "language": {
+      "description": "The language for this vendor contact person",
       "type": "string"
     },
     "categories": {
       "id": "contact_category",
+      "description": "The list of contact categories for this vendor contact person",
       "type": "array",
       "items": {
         "type": "string"

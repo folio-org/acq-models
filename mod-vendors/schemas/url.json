@@ -3,9 +3,11 @@
   "type": "object",
   "properties": {
     "value": {
+      "description": "The value for this URL",
       "type": "string"
     },
     "description": {
+      "description": "The description for this URL",
       "type": "string"
     }
   },

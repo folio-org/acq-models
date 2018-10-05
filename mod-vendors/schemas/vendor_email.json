@@ -3,17 +3,20 @@
   "type": "object",
   "properties": {
     "email": {
+      "description": "The email object for this vendor email",
       "type": "object",
       "$ref": "email.json"
     },
     "categories": {
       "id": "category",
+      "description": "The list of categories for this vendor email",
       "type": "array",
       "items": {
         "type": "string"
       }
     },
     "language": {
+      "description": "The language for this vendor email",
       "type": "string"
     }
   },

@@ -3,9 +3,11 @@
   "type": "object",
   "properties": {
     "value": {
+      "description": "The unique name of this alias",
       "type": "string"
     },
     "description": {
+      "description": "The description of this alias",
       "type": "string"
     }
   },

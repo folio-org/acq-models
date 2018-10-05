@@ -3,33 +3,42 @@
   "type": "object",
   "properties": {
     "prefix": {
+      "description": "The prefix for this contact person",
       "type": "string"
     },
     "first_name": {
+      "description": "The first name of this contact person",
       "type": "string"
     },
     "last_name": {
+      "description": "The last name of this contact person",
       "type": "string"
     },
     "language": {
+      "description": "The preferred language for this contact person",
       "type": "string"
     },
     "notes": {
+      "description": "The notes for this contact person",
       "type": "string"
     },
     "phone_number": {
+      "description": "The contact phone number for this contact person",
       "type": "object",
       "$ref": "phone_number.json"
     },
     "email": {
+      "description": "The email for this contact person",
       "type": "object",
       "$ref": "email.json"
     },
     "address": {
+      "description": "The address for this contact person",
       "type": "object",
       "$ref": "address.json"
     },
     "url": {
+      "description": "The website url for this contact person",
       "type": "object",
       "$ref": "url.json"
     }

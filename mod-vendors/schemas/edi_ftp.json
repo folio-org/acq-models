@@ -3,33 +3,43 @@
   "type": "object",
   "properties": {
     "ftp_format": {
+      "description": "The FTP format for this EDI",
       "type": "string"
     },
     "server_address": {
+      "description": "The server address for this EDI",
       "type": "string"
     },
     "username": {
+      "description": "The login username for this EDI",
       "type": "string"
     },
     "password": {
+      "description": "The login password for this EDI",
       "type": "string"
     },
     "ftp_mode": {
+      "description": "The FTP mode for this EDI",
       "type": "string"
     },
     "ftp_conn_mode": {
+      "description": "The FTP connection mode for this EDI",
       "type": "string"
     },
     "ftp_port": {
+      "description": "The port for this EDI",
       "type": "string"
     },
     "order_directory": {
+      "description": "The order directory for this EDI",
       "type": "string"
     },
     "invoice_directory": {
+      "description": "The invoice directory for this EDI",
       "type": "string"
     },
     "notes": {
+      "description": "The notes for this EDI",
       "type": "string"
     }
   },

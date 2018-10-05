@@ -4,6 +4,7 @@
   "additionalProperties": false,
   "properties": {
     "error": {
+      "description": "The message for this error",
       "type": "string"
     }
   },

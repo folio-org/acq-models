@@ -3,6 +3,7 @@
   "type": "object",
   "properties": {
     "categories": {
+      "description": "The list of categores in this collection",
       "type": "array",
       "id": "categories",
       "items": {
@@ -11,12 +12,15 @@
       }
     },
     "total_records": {
+      "description": "The number of category objects returned in this collection",
       "type": "integer"
     },
     "first": {
+      "description": "The index of the first object returned in this collection",
       "type": "integer"
     },
     "last": {
+      "description": "The index of the last object returned in this collection",
       "type": "integer"
     }
   },

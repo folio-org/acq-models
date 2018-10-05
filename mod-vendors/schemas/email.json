@@ -3,9 +3,11 @@
   "type": "object",
   "properties": {
     "value": {
+      "description": "The value for this email",
       "type": "string"
     },
     "description": {
+      "description": "The description for this email",
       "type": "string"
     }
   },

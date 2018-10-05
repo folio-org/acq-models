@@ -3,17 +3,20 @@
   "type": "object",
   "properties": {
     "phone_number": {
+      "description": "The phone number object for this vendor phone",
       "type": "object",
       "$ref": "phone_number.json"
     },
     "categories": {
       "id": "category",
+      "description": "The list of categories for this vendor phone",
       "type": "array",
       "items": {
         "type": "string"
       }
     },
     "language": {
+      "description": "The language for this vendor phone",
       "type": "string"
     }
   },
