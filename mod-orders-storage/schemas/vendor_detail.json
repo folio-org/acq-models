@@ -2,8 +2,8 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
-    "description": "UUID of this vendor details record",
     "id": {
+      "description": "UUID of this vendor details record",
       "type": [
         "string",
         "null"
