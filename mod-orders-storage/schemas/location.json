@@ -39,8 +39,5 @@
       "type": "integer"
     }
   },
-  "additionalProperties": false,
-  "required": [
-    "quantity"
-  ]
+  "additionalProperties": false
 }

@@ -18,11 +18,11 @@
       "type": "string",
       "description": "a currency code"
     },
-    "quantity_ordered_physical": {
+    "quantity_physical": {
       "type": "integer",
       "description": "quantity of physical items in this purchase order line"
     },
-    "quantity_ordered_electronic": {
+    "quantity_electronic": {
       "type": "integer",
       "description": "quantity of electronic items in this purchase order line"
     },
