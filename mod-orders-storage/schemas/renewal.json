@@ -3,29 +3,51 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": ["string", "null"],
-      "description": "UUID",
+      "description": "UUID of this renewal record",
+      "type": [
+        "string",
+        "null"
+      ],
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     },
     "cycle": {
-      "type": "string"
-    },
-    "review_period": {
-      "type": "integer"
-    },
-    "renewal_date": {
-      "type": ["string", "null"],
-      "format": "date-time"
+      "description": "length of the renewal cycle",
+      "type": "string",
+      "enum": [
+        "Two Years",
+        "One Year",
+        "3 Months",
+        "6 Months",
+        "1 Month",
+        "Manual"
+      ]
     },
     "interval": {
+      "description": "renewal interval (in days?)",
       "type": "integer"
     },
     "manual_renewal": {
+      "description": "whether or not this is a manual renewal",
       "type": "boolean"
     },
+    "review_period": {
+      "description": "time prior to renewal where changes can be made to subscription",
+      "type": "integer"
+    },
+    "renewal_date": {
+      "description": "date renewal was confirmed by vendor or sent to vendor",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
     "po_line_id": {
-      "type": ["string", "null"],
-      "description": "UUID",
+      "description": "UUID of the purchase order line this record is associated with",
+      "type": [
+        "string",
+        "null"
+      ],
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     }
   },

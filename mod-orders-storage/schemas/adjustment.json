@@ -3,37 +3,51 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": ["string", "null"],
-      "description": "UUID",
+      "description": "UUID of this adjustment record",
+      "type": [
+        "string",
+        "null"
+      ],
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     },
-    "shipment": {
-      "type": "number"
-    },
-    "insurance": {
+    "credit": {
+      "description": "",
       "type": "number"
     },
     "discount": {
+      "description": "",
       "type": "number"
     },
-    "overhead": {
-      "type": "number"
-    },
-    "credit": {
-      "type": "number"
-    },
-    "tax_1": {
-      "type": "number"
-    },
-    "tax_2": {
+    "insurance": {
+      "description": "",
       "type": "number"
     },
     "invoice_id": {
-      "type": ["string", "null"],
-      "description": "UUID",
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "UUID of the invoice record associated with this adjustment",
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     },
+    "overhead": {
+      "description": "",
+      "type": "number"
+    },
+    "shipment": {
+      "description": "",
+      "type": "number"
+    },
+    "tax_1": {
+      "description": "",
+      "type": "number"
+    },
+    "tax_2": {
+      "description": "",
+      "type": "number"
+    },
     "use_pro_rate": {
+      "description": "",
       "type": "boolean"
     }
   },

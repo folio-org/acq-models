@@ -2,59 +2,89 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
+    "description": "UUID of this purchase order",
     "id": {
-      "type": ["string", "null"],
-      "description": "UUID",
+      "type": [
+        "string",
+        "null"
+      ],
       "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     },
-    "po_number": {
-      "type": "string",
-      "pattern": "^[a-zA-Z0-9]{5,16}$"
+    "adjustments": {
+      "description": "price adjustments for this purchase order",
+      "type": "string"
+    },
+    "approved": {
+      "description": "whether or not the purchase order has been approved",
+      "type": "boolean"
+    },
+    "assigned_to": {
+      "description": "UUID of the user this purchase order his assigned to",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     },
     "created": {
+      "description": "date/time when this purchase order was created",
       "type": "string",
       "format": "date-time"
     },
-    "comments": {
-      "type": "string"
+    "created_by": {
+      "description": "UUID of the user this purchase order was created by",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     },
-    "total_items": {
-      "type": "integer"
+    "notes": {
+      "description": "free-form notes associated with this purchase order",
+      "id": "notes",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "po_number": {
+      "description": "A human readable ID assigned to this purchase order",
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9]{5,16}$"
+    },
+    "order_type": {
+      "description": "the purchase order type",
+      "type": "string",
+      "enum": [
+        "One-Time",
+        "Ongoing"
+      ]
+    },
+    "re_encumber": {
+      "description": "indicates this purchase order should be re-encumbered each fiscal year. Only applies to ongoing orders",
+      "type": "boolean"
     },
     "total_estimated_price": {
+      "description": "total estimated price of this purchase order",
       "type": "number"
     },
-    "adjustments": {
-      "type": "string"
+    "total_items": {
+      "description": "total number of items included in the purchase order",
+      "type": "integer"
     },
-    "assigned_to": {
-      "type": ["string", "null"],
-      "description": "UUID",
+    "vendor": {
+      "description": "UUID of the vendor_details record",
+      "type": "string",
       "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     },
-    "created_by": {
-      "type": ["string", "null"],
-      "description": "UUID",
-      "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
-    },
-    "transmission_date": {
-      "type": "string"
-    },
-    "transmission_method": {
-      "type": "string"
-    },
-    "po_workflow_status_id": {
-      "type": ["string", "null"],
-      "description": "UUID",
-      "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
-    },
-    "po_receipt_status": {
-      "type": ["string", "null"],
-      "description": "UUID",
-      "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
-    },
-    "po_payment_status": {
-      "type": "string"
+    "workflow_status": {
+      "description": "the workflow status for this purchase order",
+      "type": "string",
+      "enum": [
+        "Pending",
+        "Open",
+        "Closed"
+      ]
     }
   },
   "additionalProperties": false

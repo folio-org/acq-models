@@ -3,25 +3,39 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": ["string", "null"],
-      "description": "UUID",
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "UUID of this purchase order line cost record",
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     },
     "list_price": {
-      "type": "number"
+      "type": "number",
+      "description": "the per-item list price"
     },
     "currency": {
-      "type": "string"
+      "type": "string",
+      "description": "a currency code"
     },
-    "quantity": {
-      "type": "integer"
+    "quantity_ordered_physical": {
+      "type": "integer",
+      "description": "quantity of physical items in this purchase order line"
     },
-    "estimated_price": {
-      "type": "number"
+    "quantity_ordered_electronic": {
+      "type": "integer",
+      "description": "quantity of electronic items in this purchase order line"
+    },
+    "po_line_estimated_price": {
+      "type": "number",
+      "description": "the total estimated price for this purchase order line"
     },
     "po_line_id": {
-      "type": ["string", "null"],
-      "description": "UUID",
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "UUID of the purchase order line this cost record is associated with",
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     }
   },

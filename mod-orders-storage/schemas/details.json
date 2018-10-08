@@ -3,39 +3,86 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": ["string", "null"],
-      "description": "UUID",
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "UUID for this details record",
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     },
-    "title": {
-      "type": "string"
-    },
     "receiving_note": {
-      "type": "string"
+      "type": "string",
+      "description": "notes regarding receiving instructions"
     },
-    "product_id": {
-      "type": "string"
+    "product_ids": {
+      "id": "product_ids",
+      "type": "array",
+      "description": "a list of product identifiers",
+      "items": {
+        "type": "object",
+        "description": "a product identifier",
+        "properties": {
+          "product_id": {
+            "type": "string",
+            "description": "the actual id"
+          },
+          "product_id_type": {
+            "type": "string",
+            "description": "the type of id",
+            "enum": [
+              "ISBN",
+              "ISSN",
+              "ISMN",
+              "EAN",
+              "Other Standard Identifier",
+              "Standard Technical Report Number",
+              "Publisher Number",
+              "CODEN",
+              "GPO Item Number",
+              "Locally-defined identifiers",
+              "Vendor Title Number",
+              "Vendor Item Number"
+            ]
+          }
+        }
+      }
+    },
+    "material_types": {
+      "id": "material_type",
+      "type": "array",
+      "description": "a list of material type ids",
+      "items": {
+        "type": "string",
+        "description": "UUID associated with this material's type",
+        "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+      }
     },
     "subscription_from": {
-      "type": ["string", "null"],
-      "format": "date-time"
-    },
-    "material_type": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "the start date of the subscription"
     },
     "subscription_interval": {
-      "type": "integer"
+      "type": "integer",
+      "description": "the subscription interval in days"
     },
     "subscription_to": {
-      "type": ["string", "null"],
-      "format": "date-time"
-    },
-    "description": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "the end date of the subscription"
     },
     "po_line_id": {
-      "type": ["string", "null"],
-      "description": "UUID",
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "UUID of the purchase order line these details relate to",
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     }
   },

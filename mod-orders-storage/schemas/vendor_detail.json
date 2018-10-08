@@ -2,29 +2,47 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
+    "description": "UUID of this vendor details record",
     "id": {
-      "type": ["string", "null"],
-      "description": "UUID",
+      "type": [
+        "string",
+        "null"
+      ],
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     },
-    "ref_number": {
-      "type": "string"
-    },
-    "ref_no_type": {
-      "type": "string"
-    },
     "instructions": {
-      "type": "string"
-    },
-    "vendor_account": {
+      "description": "special instructions for the vendor",
       "type": "string"
     },
     "note_from_vendor": {
+      "description": "free-form notes from the vendor",
+      "type": "string"
+    },
+    "ref_number": {
+      "description": "a reference number for this purchase order line",
+      "type": "string"
+    },
+    "ref_number_type": {
+      "description": "the reference number type",
+      "type": "string",
+      "enum": [
+        "Supplier's continuation order",
+        "Supplier's unique order line reference number",
+        "Agent's unique subscription reference number",
+        "Library's continuation order number",
+        "Internal vendor number"
+      ]
+    },
+    "vendor_account": {
+      "description": "the accound number on the vendor's end associated with this purchase order line",
       "type": "string"
     },
     "po_line_id": {
-      "type": ["string", "null"],
-      "description": "UUID",
+      "description": "UUID of the purchase order line this record is associated with",
+      "type": [
+        "string",
+        "null"
+      ],
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     }
   },

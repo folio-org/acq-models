@@ -3,22 +3,40 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": ["string", "null"],
-      "description": "UUID",
-      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
-    },
-    "quantity": {
-      "type": "integer"
+      "description": "UUID of this (orders) location record",
+      "type": [
+        "null",
+        "string"
+      ],
+      "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     },
     "location_id": {
-      "type": ["string", "null"],
-      "description": "UUID",
+      "description": "UUID of the (inventory) location record",
+      "type": [
+        "null",
+        "string"
+      ],
       "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     },
     "po_line_id": {
-      "type": ["string", "null"],
-      "description": "UUID",
+      "description": "UUID of the purchase order line this location record is associated with",
+      "type": [
+        "null",
+        "string"
+      ],
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+    },
+    "quantity": {
+      "description": "combined/total quanitity of physical and electronic items",
+      "type": "integer"
+    },
+    "quantity_electronic": {
+      "description": "quantity of electronic items",
+      "type": "integer"
+    },
+    "quantity_physical": {
+      "description": "quantity of physical items",
+      "type": "integer"
     }
   },
   "additionalProperties": false,

@@ -3,28 +3,37 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": ["string", "null"],
-      "description": "UUID",
+      "description": "UUID of this claim record",
+      "type": [
+        "string",
+        "null"
+      ],
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     },
-    "claim": {
+    "claimed": {
+      "description": "whether or not this purchase order line has been claimed",
       "type": "boolean"
     },
     "sent": {
-      "type": ["string", "null"],
+      "description": "date a claim was sent",
+      "type": [
+        "string",
+        "null"
+      ],
       "format": "date-time"
     },
     "grace": {
+      "description": "the number of days after the expected receipt date during which claims should not be processed",
       "type": "integer"
     },
     "po_line_id": {
-      "type": ["string", "null"],
-      "description": "UUID",
+      "description": "UUID of the purchase order line this record is associated with",
+      "type": [
+        "string",
+        "null"
+      ],
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     }
   },
-  "additionalProperties": false,
-  "required": [
-    "po_line_id"
-  ]
+  "additionalProperties": false
 }

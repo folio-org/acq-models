@@ -3,6 +3,7 @@
   "type": "object",
   "properties": {
     "composite_purchase_orders": {
+      "description": "an array of composite purchase order records",
       "id": "composite_purchase_orders",
       "type": "array",
       "items": {
@@ -11,6 +12,7 @@
       }
     },
     "totalRecords": {
+      "description": "total number of records in the array",
       "type": "integer"
     }
   },

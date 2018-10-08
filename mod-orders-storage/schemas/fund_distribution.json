@@ -1,30 +1,46 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "additionalProperties": false,
   "type": "object",
   "properties": {
     "id": {
-      "type": ["string", "null"],
-      "description": "UUID",
+      "description": "UUID of this fund distribution record",
+      "type": [
+        "null",
+        "string"
+      ],
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     },
     "amount": {
+      "description": "the monetary amount associated with this fund",
       "type": "number"
     },
-    "percent": {
-      "type": "number"
-    },
-    "fund_id": {
-      "type": ["string", "null"],
-      "description": "UUID",
+    "encumbrance": {
+      "description": "UUID of the encumbrance record",
+      "type": "string",
       "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     },
+    "fund": {
+      "description": "UUID of the fund record this fund distribution is associated with",
+      "type": [
+        "null",
+        "string"
+      ],
+      "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+    },
+    "percentage": {
+      "description": "the percentage of the total po line cost associated with this fund",
+      "type": "number"
+    },
     "po_line_id": {
-      "type": ["string", "null"],
-      "description": "UUID",
+      "description": "UUID of the purchase order line this fund distribution record is associated with",
+      "type": [
+        "null",
+        "string"
+      ],
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     }
   },
-  "additionalProperties": false,
   "required": [
     "amount"
   ]

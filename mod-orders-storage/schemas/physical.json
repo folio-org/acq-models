@@ -3,35 +3,39 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": ["string", "null"],
-      "description": "UUID",
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "UUID of this physical details record",
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     },
-    "expected_receipt_date": {
-      "type": ["string", "null"],
-      "format": "date-time"
-    },
-    "receipt_due": {
-      "type": ["string", "null"],
-      "format": "date-time"
-    },
-    "expected_receipt_interval": {
-      "type": "integer"
-    },
-    "volumes": {
-      "type": "integer"
-    },
-    "material_id": {
-      "type": "string"
-    },
     "material_supplier": {
-      "type": ["string", "null"],
-      "description": "UUID",
+      "description": "UUID of the material supplier record",
+      "type": [
+        "string",
+        "null"
+      ],
       "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     },
+    "receipt_due": {
+      "description": "date item should be received by",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "volumes": {
+      "description": "the number of volumes included",
+      "type": "integer"
+    },
     "po_line_id": {
-      "type": ["string", "null"],
-      "description": "UUID",
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "UUID of the purchase order line this record is associated with",
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     }
   },

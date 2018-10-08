@@ -1,13 +1,16 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
+  "description": "a completely de-referenced purchase order, complete with ALL relevant details",
   "properties": {
     "purchase_order": {
+      "description": "a completely de-referenced purchase order",
       "id": "purchase_order",
       "type": "object",
       "$ref": "mod-orders-storage/schemas/purchase_order.json"
     },
     "po_lines": {
+      "description": "a list of completely de-referenced purchase order lines",
       "id": "po_lines",
       "type": "array",
       "items": {
