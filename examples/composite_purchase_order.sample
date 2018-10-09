@@ -35,7 +35,7 @@
       "cancellation_restriction_note": "ABCDEFGHIJKLMNOPQRSTUVW",
       "claims": [
         {
-          "id": f7d7d4e4-255e-46dc-9f08-b953fb1e872d,
+          "id": "f7d7d4e4-255e-46dc-9f08-b953fb1e872d",
           "claimed": false,
           "sent": "2018-10-09T00:00:00.000Z",
           "grace": 30,
