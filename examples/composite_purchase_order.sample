@@ -1,7 +1,7 @@
 {
   "purchase_order": {
-    "id": null,
-    "created": "2008-03-15T03:53:00Z",
+    "id": "0804ddec-6545-404a-b54d-a693f505681d",
+    "created": "2010-10-08T03:53:00.000Z",
     "po_number": "HISTCONN2017",
     "assigned_to": "ab18897b-0e40-4f31-896b-9c9adc979a88",
     "created_by": "ab18897b-0e40-4f31-896b-9c9adc979a88",
@@ -9,132 +9,157 @@
   },
   "po_lines": [
     {
-      "id": "f97355de-9a18-4bbb-ac47-066d6a52e27a",
-      "po_line_number": "HISTCONN2017-1",
-      "acquisition_method": "Approval Plan",
-      "owner": "Joe Smith",
-      "source": {
-        "id": "d68eb3af-7de2-46b1-9047-810232cbfc6a",
-        "code": "ACME",
-        "description" : ""
+      "id": "4e16BdFa-bD01-2cA3-A0cE-BeeDEFC3Ccde",
+      "account_number": "8910-10",
+      "acquisition_method": "Purchase At Vendor System",
+      "adjustment": {
+        "invoice_id": "cd27af4d-82f1-45d0-b912-55e87d42cd15",
+        "id": "AEC2Cec8-6AcE-2Eeb-CE3C-fEEc2ED4bbEd",
+        "credit": 0.0,
+        "discount": 0.0,
+        "insurance": 0.0,
+        "overhead": 0.0,
+        "shipment": 0.0,
+        "tax_1": 0.0,
+        "tax_2": 0.0,
+        "use_pro_rate": true
       },
-      "selector": "Nathan Pick",
-      "requester": "John Castillo",
+      "alerts": [
+        {
+          "alert": "Receipt overdue",
+          "id": "9a665b22-9fe5-4c95-b4ee-837a5433c95d",
+          "po_line_id": "4e16BdFa-bD01-2cA3-A0cE-BeeDEFC3Ccde"
+        }
+      ],
       "cancellation_restriction": false,
+      "cancellation_restriction_note": "ABCDEFGHIJKLMNOPQRSTUVW",
+      "claims": [
+        {
+          "id": f7d7d4e4-255e-46dc-9f08-b953fb1e872d,
+          "claimed": false,
+          "sent": "2018-10-09T00:00:00.000Z",
+          "grace": 30,
+          "po_line_id": "4e16BdFa-bD01-2cA3-A0cE-BeeDEFC3Ccde"
+        }
+      ],
       "collection": false,
+      "contributors": [
+        {
+          "contributor": "Ed Mashburn",
+          "contributor_type": "15fe4ce4-2ABb-Eecf-BeeB-Cd3BCCdDAD05"
+        }
+      ],
       "cost": {
-        "id": "776d9efa-b471-4e82-81eb-831a4aa114f1",
-        "list_price": 32.36,
-        "currency": "CAD",
-        "quantity_physical": 1,
-        "quantity_electronic": 5,
-        "po_line_estimated_price": 32.36
-       },
-      "details": {
-        "id": "b5b2d27f-b0d0-493a-9e4b-04f7a18a8d0a",
-        "receiving_note": "Please shelve in B5-History",
-        "product_ids": [
-          {
-            "product_id": "0156028263",
-            "prodcut_id_type": "ISBN"
-          }
-        ],
-        "material_types": [
-          "d9515576-aec5-44f1-b724-010eb858f7b6"
-        ],
-        "subscription_to": null,
-        "subscription_from": null,
-        "subscription_interval": 6
-      },
-      "description": "The bible for historians and archaeologists studying the final days of the Inca. For the past thirty years, The Conquest of the Incas has remained the most influential book for Inca scholars. There is no other book which is even in the same class.",
-      "physical": {
-        "id": "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
-        "receipt_due": null,
-        "material_supplier": "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
-        "volumes": 1,
-        "material_supplier": null
-      },
-      "eresource": {
-        "id": "32bc025e-872b-404c-acd5-2af7d30e02aa",
-        "activated": false,
-        "activation_due": 4,
-        "create_inventory": false,
-        "trial": false,
-        "expected_activation": null,
-        "user_limit": 5,
-        "access_provider": null
-      },
-      "location": {
-        "id": "7fc8b711-49fb-4692-af0e-1ffa3d280e7e",
-        "quantity_physical": 1,
-        "quantity_electronic": 5,
-        "location_id": null
-      },
-      "title": "The Conquest of the Incas"
-    },
-    {
-      "id": "d51772fd-582e-41bd-9073-712f5fb399f1",
-      "po_line_number": "HISTCONN2017-2",
-      "acquisition_method": "Approval Plan",
-      "owner": "Joe Smith",
-      "source": {
-        "id": "d68eb3af-7de2-46b1-9047-810232cbfc6a",
-        "code": "ACME",
-        "description": ""
-      },
-      "selector": "Nathan Pick",
-      "requester": "John Castillo",
-      "cancellation_restriction": false,
-      "collection": false,
-      "cost": {
-        "id": "211554b8-ff1e-478c-849c-eba21fcdb029",
-        "list_price": 15.99,
+        "list_price": 24.99,
+        "id": "0deeEcD9-c7dF-C5DF-D6A0-2bed47EAC71C",
         "currency": "USD",
         "quantity_physical": 1,
-        "quantity_electronic": 5,
-        "po_line_estimated_price": 19.99
+        "quantity_electronic": 1,
+        "po_line_estimated_price": 49.98,
+        "po_line_id": "4e16BdFa-bD01-2cA3-A0cE-BeeDEFC3Ccde"
       },
+      "description": "ABCDEFGH",
       "details": {
-        "id": "6d9907cf-e179-409c-a9e3-b0f9c9a2bf41",
-        "receiving_note": "Please shelve in B5-History",
+        "id": "a4dEe3cB-FDeA-CECD-eA40-bCcB1e8D2Def",
+        "receiving_note": "ABCDEFGHIJKL",
         "product_ids": [
           {
-            "product_id": "0156028264",
-            "prodcut_id_type": "ISBN"
+            "product_id": "9780764354113",
+            "product_id_type": "ISBN"
           }
         ],
         "material_types": [
-          "d9515576-aec5-44f1-b724-010eb858f7b6"
+          "fBB1Adc3-3cCe-cEFA-FDFA-Ce1cFFF0A8bB"
         ],
-        "subscription_to": null,
-        "subscription_from": null,
-        "subscription_interval": 6
+        "subscription_from": "ABCDEFGHIJKLMNOPQRSTUV",
+        "subscription_interval": 824,
+        "subscription_to": "ABCDEFGHIJKLMNOPQR",
+        "po_line_id": "4e16BdFa-bD01-2cA3-A0cE-BeeDEFC3Ccde"
       },
-      "description": "The second volume bible for historians and archaeologists studying the final days of the Inca. For the past thirty years, The Conquest of the Incas has remained the most influential book for Inca scholars. There is no other book which is even in the same class.",
-      "physical": {
-        "id": "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
-        "receipt_due": null,
-        "material_supplier": "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
-        "volumes": 1,
-        "material_supplier": null
-      },
+      "donor": "ABCDEFGHIJKLM",
       "eresource": {
-        "id": "32bc025e-872b-404c-acd5-2af7d30e02aa",
+        "id": "E7db632B-6a98-bFee-FcEB-b0BCBAeA2CDB",
         "activated": false,
-        "activation_due": 4,
-        "create_inventory": false,
+        "activation_due": 10,
+        "create_inventory": true,
         "trial": false,
-        "expected_activation": null,
-        "user_limit": 5,
-        "access_provider": null
+        "expected_activation": "2018-10-09T00:00:00.000Z",
+        "user_limit": 10,
+        "access_provider": "395debe5-ccAD-eeDc-8ED1-7DDFaDCAeB0C",
+        "po_line_id": "4e16BdFa-bD01-2cA3-A0cE-BeeDEFC3Ccde",
+        "license": "ce131ee6-3BD1-dDa1-4DC2-9Ae7BB6CCdCc"
       },
+      "fund_distribution": [
+        "8b9b37cd-6Dee-ADA6-67Cf-37bCaBabfDEA"
+      ],
       "location": {
-        "id": "7fc8b711-49fb-4692-af0e-1ffa3d280e7e",
-        "quantity_physical": 1,
-        "quantity_electronic": 5,
-        "location_id": null
+        "id": "8b1dc7ee-bEDC-CD45-eA14-CDabEED2eBb8",
+        "location_id": "d2e7e5bb-A3Ef-cb5b-EcaD-775B2Ee5eBDC",
+        "po_line_id": "4e16BdFa-bD01-2cA3-A0cE-BeeDEFC3Ccde",
+        "quantity": 2,
+        "quantity_electronic": 1,
+        "quantity_physical": 1
       },
-      "title": "The Conquest of the Incas, Vol. 2"
+      "order_format": "Physical Resource",
+      "owner": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
+      "payment_status": "Awaiting Payment",
+      "physical": {
+        "volumes": 1,
+        "id": "5ee243f9-72e5-4464-bdbc-43a21873d648",
+        "material_supplier": null,
+        "receipt_due": null,
+        "po_line_id": "4e16BdFa-bD01-2cA3-A0cE-BeeDEFC3Ccde"
+      },
+      "po_line_description": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+      "po_line_number": "268758-03",
+      "po_line_workflow_status": "Approved",
+      "publication_date": "2017",
+      "publisher": "Schiffer Publishing",
+      "purchase_order_id": "D79b0bcc-DcAD-1E4E-Abb7-DbFcaD5BB3bb",
+      "receipt_date": "2018-10-09T00:00:00.000Z",
+      "receipt_status": "Awaiting Receipt",
+      "renewal": {
+        "interval": 182,
+        "id": "0DDADaB3-7CaF-dA6B-EAaC-E8CE37e8edE7",
+        "cycle": "6 Months",
+        "manual_renewal": true,
+        "review_period": 30,
+        "renewal_date": "2019-04-09T00:00:00.000Z",
+        "po_line_id": "cbaFF3DD-7Ac6-Ebdb-ECDD-9CBeDbdE8AB8"
+      },      
+      "reporting_codes": [
+        {
+          "code": "CODE1",
+          "id": null,
+          "description": "ABCDEF"
+        },
+        {
+          "code": "CODE2",
+          "id": "5EFd1EEF-6dbD-DBC7-BcfF-CCDDCBBcC8dF",
+          "description": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        },
+        {
+          "code": "CODE3",
+          "id": "e9eDB5eB-b5Df-ACDB-BeCC-ceeBD8C4EcCc",
+          "description": "ABCDE"
+        }
+      ],
+      "requester": "Leo Bulero",
+      "rush": true,
+      "selector": "ABCD",
+      "source": {
+        "code": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
+        "id": "024b6f41-c5c6-4280-858e-33fba452a334",
+        "description": "ABCDEFGHIJKLMNO",
+        "po_line_id": "4e16BdFa-bD01-2cA3-A0cE-BeeDEFC3Ccde"
+      },
+      "tags": [
+        "ABCDEFGHIJKLMNOPQRSTU",
+        "ABCDEFG",
+        "ABCDEFGHIJKLMNOPQRSTU",
+        "ABCDEFGHIJKLMNO"
+      ],
+      "title": "Kayak Fishing in the Northern Gulf Coast"
     }
   ]
 }
