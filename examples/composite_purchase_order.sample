@@ -71,9 +71,9 @@
         "material_types": [
           "fBB1Adc3-3cCe-cEFA-FDFA-Ce1cFFF0A8bB"
         ],
-        "subscription_from": "ABCDEFGHIJKLMNOPQRSTUV",
+        "subscription_from": "2018-10-09T00:00:00.000Z",
         "subscription_interval": 824,
-        "subscription_to": "ABCDEFGHIJKLMNOPQR",
+        "subscription_to": "2020-10-09T00:00:00.000Z",
         "po_line_id": "4e16BdFa-bD01-2cA3-A0cE-BeeDEFC3Ccde"
       },
       "donor": "ABCDEFGHIJKLM",
