@@ -2,9 +2,9 @@
   "composite_purchase_orders": [
     {
       "purchase_order": {
-        "id": null,
+        "id": "02bea027-5b42-4659-a2e3-2a06ad217755",
         "created": "2008-03-15T03:53:00Z",
-        "po_number": "HISTCONN2017",
+        "po_number": "268758",
         "assigned_to": "ab18897b-0e40-4f31-896b-9c9adc979a88",
         "created_by": "ab18897b-0e40-4f31-896b-9c9adc979a88",
         "vendor": "f34e218f-e05a-4c9b-8820-34dd6ed63b18"
