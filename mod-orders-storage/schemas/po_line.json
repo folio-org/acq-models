@@ -171,12 +171,9 @@
       ]
     },
     "publication_date": {
-      "description": "date the material's publication",
-      "type": [
-        "null",
-        "string"
-      ],
-      "format": "date-time"
+      "description": "date (year) of the material's publication",
+      "type": "string",
+      "format": "^[0-9]{4}$"
     },
     "publisher": {
       "description": "publisher of the material",
