@@ -13,7 +13,7 @@
     "code": {
       "description": "a reporting code",
       "type": "string",
-      "pattern": "^[a-fA-F0-9]{4}[a-fA-F0-9]*$"
+      "pattern": "^[a-zA-Z0-9]{4}[a-zA-Z0-9]*$"
     },
     "description": {
       "description": "description of this reporting code",
