@@ -8,21 +8,27 @@
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     },
     "amount_encumbered": {
+      "description": "The amount of this encumbrance",
       "type": "number"
     },
     "current_encumbered": {
+      "description": "The amount currently encumbered",
       "type": "number"
     },
     "amount_expended": {
+      "description": "The amount currently expended by this encumbrance",
       "type": "number"
     },
     "encumbrance_status": {
+      "description": "The status of this encumbrance",
       "type": "string"
     },
     "currency": {
+      "description": "The currency type used by this encumbrance",
       "type": "string"
     },
     "exchange_rate": {
+      "description": "The exchange rate used by this encumbrance",
       "type": "string"
     },
     "po_line_id": {

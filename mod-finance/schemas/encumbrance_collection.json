@@ -3,20 +3,25 @@
   "type": "object",
   "properties": {
     "encumbrances": {
+      "description": "The list of encumbrance objects in this collection",
       "type": "array",
       "id": "encumbrances",
       "items": {
+        "description": "The encumbrance items",
         "type": "object",
         "$ref": "encumbrance.json"
       }
     },
     "total_records": {
+      "description": "The number of objects in this collection",
       "type": "integer"
     },
     "first": {
+      "description": "The index of the first object in this collection",
       "type": "integer"
     },
     "last": {
+      "description": "The index of the last object in this collection",
       "type": "integer"
     }
   },
