@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "composite purchase order line with dereferenced/expanded orders fields",
   "type": "object",
   "properties": {
     "id": {
@@ -107,7 +108,7 @@
       "items": {
         "description": "UUID of a fund distribution record",
         "type": "string",
-        "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
       }
     },
     "location": {

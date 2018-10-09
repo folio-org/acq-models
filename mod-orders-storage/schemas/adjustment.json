@@ -1,53 +1,48 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "purchase order adjustments",
   "type": "object",
   "properties": {
     "id": {
       "description": "UUID of this adjustment record",
-      "type": [
-        "string",
-        "null"
-      ],
-      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
     "credit": {
-      "description": "",
+      "description": "amount of credits",
       "type": "number"
     },
     "discount": {
-      "description": "",
+      "description": "amount of discounts",
       "type": "number"
     },
     "insurance": {
-      "description": "",
+      "description": "amount of insurance cost",
       "type": "number"
     },
     "invoice_id": {
-      "type": [
-        "string",
-        "null"
-      ],
       "description": "UUID of the invoice record associated with this adjustment",
-      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
     "overhead": {
-      "description": "",
+      "description": "amount of overhead costs",
       "type": "number"
     },
     "shipment": {
-      "description": "",
+      "description": "amount of shipment costs",
       "type": "number"
     },
     "tax_1": {
-      "description": "",
+      "description": "amount of taxes (line 1, e.g. state)",
       "type": "number"
     },
     "tax_2": {
-      "description": "",
+      "description": "amount of taxes (line 2, e.g. federal)",
       "type": "number"
     },
     "use_pro_rate": {
-      "description": "",
+      "description": "whether or not to pro-rate the order cost",
       "type": "boolean"
     }
   },

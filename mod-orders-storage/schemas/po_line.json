@@ -1,11 +1,12 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "purchase order line",
   "type": "object",
   "properties": {
     "id": {
       "description": "UUID identifying this purchase order line",
       "type": "string",
-      "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
     "account_number": {
       "description": "the account number used to place this purchase order line",
@@ -33,7 +34,7 @@
       "items": {
         "description": "UUID of an alert record",
         "type": "string",
-        "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
       }
     },
     "cancellation_restriction": {
@@ -51,7 +52,7 @@
       "items": {
         "description": "UUID of a claim record",
         "type": "string",
-        "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
       }
     },
     "collection": {
@@ -72,7 +73,7 @@
           "contributor_type": {
             "description": "UUID of the contributor type",
             "type": "string",
-            "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+            "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
           }
         }
       }
@@ -80,7 +81,7 @@
     "cost": {
       "description": "UUID of the cost record",
       "type": "string",
-      "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
     "description": {
       "description": "description of the material",
@@ -89,7 +90,7 @@
     "details": {
       "description": "UUID of the details record",
       "type": "string",
-      "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
     "donor": {
       "description": "the donor contributing to this purchase order line",
@@ -98,7 +99,7 @@
     "eresource": {
       "description": "UUID of the eresource record",
       "type": "string",
-      "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
     "fund_distribution": {
       "description": "the UUIDs of the fund distribution records for this purchase order line",
@@ -107,13 +108,13 @@
       "items": {
         "description": "UUID of a fund distribution record",
         "type": "string",
-        "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
       }
     },
     "location": {
       "description": "UUID of the location record",
       "type": "string",
-      "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
     "order_format": {
       "description": "The purchase order line format",
@@ -145,7 +146,7 @@
     "physical": {
       "description": "UUID of the physical (details) record",
       "type": "string",
-      "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
     "po_line_description": {
       "description": "purchase order line description",
@@ -177,7 +178,7 @@
     "purchase_order_id": {
       "description": "UUID of the purchase order",
       "type": "string",
-      "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
     "receipt_date": {
       "description": "date the purchase order line was received",
@@ -202,7 +203,7 @@
     "renewal": {
       "description": "UUID of the renewal record",
       "type": "string",
-      "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
     "reporting_codes": {
       "description": "a list of reporting codes associated with this purchase order line",
@@ -211,7 +212,7 @@
       "items": {
         "description": "UUID of the reporting code",
         "type": "string",
-        "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
       }
     },
     "requester": {
@@ -229,7 +230,7 @@
     "source": {
       "description": "UUID of the source record",
       "type": "string",
-      "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
     "tags": {
       "description": "arbitrary tags associated with this purchase order line",

@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "collection of composite purchase order records",
   "type": "object",
   "properties": {
     "composite_purchase_orders": {
