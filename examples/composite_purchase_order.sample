@@ -1,34 +1,45 @@
 {
   "purchase_order": {
     "id": "0804ddec-6545-404a-b54d-a693f505681d",
-    "created": "2010-10-08T03:53:00.000Z",
-    "po_number": "HISTCONN2017",
+    "adjustment": {
+      "invoice_id": "cd27af4d-82f1-45d0-b912-55e87d42cd15",
+      "id": "aec2cec8-6AcE-2Eeb-CE3C-fEEc2ED4bbEd",
+      "credit": 0.0,
+      "discount": 0.0,
+      "insurance": 0.0,
+      "overhead": 0.0,
+      "shipment": 0.0,
+      "tax_1": 0.0,
+      "tax_2": 0.0,
+      "use_pro_rate": false
+    },
+    "approved": true,
     "assigned_to": "ab18897b-0e40-4f31-896b-9c9adc979a88",
+    "created": "2010-10-08T03:53:00.000Z",
     "created_by": "ab18897b-0e40-4f31-896b-9c9adc979a88",
-    "vendor": "f34e218f-e05a-4c9b-8820-34dd6ed63b18"
+    "notes": [
+      "ABCDEFGHIJKLMNO",
+      "ABCDEFGHIJKLMNOPQRST",
+      "ABCDEFGHIJKLMNOPQRSTUV"
+    ],
+    "order_type": "Ongoing",
+    "po_number": "268758",
+    "re_encumber": false,
+    "total_estimated_price": 49.98,
+    "total_items": 2,
+    "vendor": "6c28d4bb-de6d-6BEB-6efE-CBa6CDBE1fdC",
+    "workflow_status": "Open"    
   },
   "po_lines": [
     {
-      "id": "4e16BdFa-bD01-2cA3-A0cE-BeeDEFC3Ccde",
+      "id": "4e16bdfa-bD01-2cA3-A0cE-BeeDEFC3Ccde",
       "account_number": "8910-10",
       "acquisition_method": "Purchase At Vendor System",
-      "adjustment": {
-        "invoice_id": "cd27af4d-82f1-45d0-b912-55e87d42cd15",
-        "id": "AEC2Cec8-6AcE-2Eeb-CE3C-fEEc2ED4bbEd",
-        "credit": 0.0,
-        "discount": 0.0,
-        "insurance": 0.0,
-        "overhead": 0.0,
-        "shipment": 0.0,
-        "tax_1": 0.0,
-        "tax_2": 0.0,
-        "use_pro_rate": true
-      },
       "alerts": [
         {
           "alert": "Receipt overdue",
           "id": "9a665b22-9fe5-4c95-b4ee-837a5433c95d",
-          "po_line_id": "4e16BdFa-bD01-2cA3-A0cE-BeeDEFC3Ccde"
+          "po_line_id": "4e16bdfa-bD01-2cA3-A0cE-BeeDEFC3Ccde"
         }
       ],
       "cancellation_restriction": false,
@@ -39,7 +50,7 @@
           "claimed": false,
           "sent": "2018-10-09T00:00:00.000Z",
           "grace": 30,
-          "po_line_id": "4e16BdFa-bD01-2cA3-A0cE-BeeDEFC3Ccde"
+          "po_line_id": "4e16bdfa-bD01-2cA3-A0cE-BeeDEFC3Ccde"
         }
       ],
       "collection": false,
@@ -51,16 +62,16 @@
       ],
       "cost": {
         "list_price": 24.99,
-        "id": "0deeEcD9-c7dF-C5DF-D6A0-2bed47EAC71C",
+        "id": "0deeecd9-c7dF-C5DF-D6A0-2bed47EAC71C",
         "currency": "USD",
         "quantity_physical": 1,
         "quantity_electronic": 1,
         "po_line_estimated_price": 49.98,
-        "po_line_id": "4e16BdFa-bD01-2cA3-A0cE-BeeDEFC3Ccde"
+        "po_line_id": "4e16bdfa-bD01-2cA3-A0cE-BeeDEFC3Ccde"
       },
       "description": "ABCDEFGH",
       "details": {
-        "id": "a4dEe3cB-FDeA-CECD-eA40-bCcB1e8D2Def",
+        "id": "a4dee3cb-FDeA-CECD-eA40-bCcB1e8D2Def",
         "receiving_note": "ABCDEFGHIJKL",
         "product_ids": [
           {
@@ -69,16 +80,16 @@
           }
         ],
         "material_types": [
-          "fBB1Adc3-3cCe-cEFA-FDFA-Ce1cFFF0A8bB"
+          "fbb1adc3-3cCe-cEFA-FDFA-Ce1cFFF0A8bB"
         ],
         "subscription_from": "2018-10-09T00:00:00.000Z",
         "subscription_interval": 824,
         "subscription_to": "2020-10-09T00:00:00.000Z",
-        "po_line_id": "4e16BdFa-bD01-2cA3-A0cE-BeeDEFC3Ccde"
+        "po_line_id": "4e16bdfa-bD01-2cA3-A0cE-BeeDEFC3Ccde"
       },
       "donor": "ABCDEFGHIJKLM",
       "eresource": {
-        "id": "E7db632B-6a98-bFee-FcEB-b0BCBAeA2CDB",
+        "id": "e7db632B-6a98-bFee-FcEB-b0BCBAeA2CDB",
         "activated": false,
         "activation_due": 10,
         "create_inventory": true,
@@ -86,7 +97,7 @@
         "expected_activation": "2018-10-09T00:00:00.000Z",
         "user_limit": 10,
         "access_provider": "395debe5-ccAD-eeDc-8ED1-7DDFaDCAeB0C",
-        "po_line_id": "4e16BdFa-bD01-2cA3-A0cE-BeeDEFC3Ccde",
+        "po_line_id": "4e16bdfa-bD01-2cA3-A0cE-BeeDEFC3Ccde",
         "license": "ce131ee6-3BD1-dDa1-4DC2-9Ae7BB6CCdCc"
       },
       "fund_distribution": [
@@ -95,10 +106,10 @@
       "location": {
         "id": "8b1dc7ee-bEDC-CD45-eA14-CDabEED2eBb8",
         "location_id": "d2e7e5bb-A3Ef-cb5b-EcaD-775B2Ee5eBDC",
-        "po_line_id": "4e16BdFa-bD01-2cA3-A0cE-BeeDEFC3Ccde",
         "quantity": 2,
         "quantity_electronic": 1,
-        "quantity_physical": 1
+        "quantity_physical": 1,
+        "po_line_id": "4e16bdfa-bD01-2cA3-A0cE-BeeDEFC3Ccde"
       },
       "order_format": "Physical Resource",
       "owner": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
@@ -108,14 +119,14 @@
         "id": "5ee243f9-72e5-4464-bdbc-43a21873d648",
         "material_supplier": null,
         "receipt_due": null,
-        "po_line_id": "4e16BdFa-bD01-2cA3-A0cE-BeeDEFC3Ccde"
+        "po_line_id": "4e16bdfa-bD01-2cA3-A0cE-BeeDEFC3Ccde"
       },
       "po_line_description": "ABCDEFGHIJKLMNOPQRSTUVWXY",
       "po_line_number": "268758-03",
       "po_line_workflow_status": "Open",
       "publication_date": "2017",
       "publisher": "Schiffer Publishing",
-      "purchase_order_id": "D79b0bcc-DcAD-1E4E-Abb7-DbFcaD5BB3bb",
+      "purchase_order_id": "d79b0bcc-DcAD-1E4E-Abb7-DbFcaD5BB3bb",
       "receipt_date": "2018-10-09T00:00:00.000Z",
       "receipt_status": "Awaiting Receipt",
       "renewal": {
@@ -125,7 +136,7 @@
         "manual_renewal": true,
         "review_period": 30,
         "renewal_date": "2019-04-09T00:00:00.000Z",
-        "po_line_id": "cbaFF3DD-7Ac6-Ebdb-ECDD-9CBeDbdE8AB8"
+        "po_line_id": "cbaff3dd-7Ac6-Ebdb-ECDD-9CBeDbdE8AB8"
       },      
       "reporting_codes": [
         {
@@ -135,12 +146,12 @@
         },
         {
           "code": "CODE2",
-          "id": "5EFd1EEF-6dbD-DBC7-BcfF-CCDDCBBcC8dF",
+          "id": "5bfd1eef-6dbD-DBC7-BcfF-CCDDCBBcC8dF",
           "description": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         },
         {
           "code": "CODE3",
-          "id": "e9eDB5eB-b5Df-ACDB-BeCC-ceeBD8C4EcCc",
+          "id": "e9edb5eb-b5Df-ACDB-BeCC-ceeBD8C4EcCc",
           "description": "ABCDE"
         }
       ],
@@ -150,8 +161,7 @@
       "source": {
         "code": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
         "id": "024b6f41-c5c6-4280-858e-33fba452a334",
-        "description": "ABCDEFGHIJKLMNO",
-        "po_line_id": "4e16BdFa-bD01-2cA3-A0cE-BeeDEFC3Ccde"
+        "description": "ABCDEFGHIJKLMNO"
       },
       "tags": [
         "ABCDEFGHIJKLMNOPQRSTU",

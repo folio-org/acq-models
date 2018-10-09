@@ -26,11 +26,6 @@
         "Technical"
       ]
     },
-    "adjustment": {
-      "description": "adjustments associated with this purchase order line",
-      "type": "object",
-      "$ref": "mod-orders-storage/schemas/adjustment.json"
-    },
     "alerts": {
       "description": "alerts associated with this purchase order line",
       "id": "alerts",
