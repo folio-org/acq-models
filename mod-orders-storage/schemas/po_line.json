@@ -27,6 +27,11 @@
         "Technical"
       ]
     },
+    "adjustment": {
+      "description": "UUID of the adjustment record associated with this purchase order line",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
     "alerts": {
       "description": "an array of alert record IDs",
       "id": "alerts",

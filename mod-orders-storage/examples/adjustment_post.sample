@@ -1,10 +1,12 @@
 {
-    "shipment": 0,
-    "insurance": 0,
-    "discount": 0,
-    "overhead": 0,
-    "credit": 0,
-    "tax": 1.62,
-    "invoice_id": null,
-    "use_pro_rate": false
+  "credit": 0.0,
+  "discount": 0.0,
+  "insurance": 0.0,
+  "invoice_id": "2d6d495c-c237-476f-aa48-57f7cbf74ca4",
+  "overhead": 0.0,
+  "shipment": 0.0,
+  "tax_1": 0.0,
+  "tax_2": 0.0,
+  "use_pro_rate": false,
+  "po_line_id": "8c778aee-97fa-4586-b131-3ea588a728e2"
 }
