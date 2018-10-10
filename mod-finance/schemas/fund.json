@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A fund to track financial transactions",
   "type": "object",
   "properties": {
     "id": {
