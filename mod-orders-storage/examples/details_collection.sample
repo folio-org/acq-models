@@ -1,23 +1,23 @@
 {
     "details":
         [
-            {
-            	"id": "da0272e4-7ff7-4ea8-9bc9-9d9cd5c81580",
-                "receiving_note": "Please shelve in B5-History",
-                "product_ids": [
-                  {
-                    "product_id": "0156028263",
-                    "prodcut_id_type": "ISBN"
-                  }
-                ],
-                "material_types": [
-                 "d9515576-aec5-44f1-b724-010eb858f7b6"
-                ],
-                "subscription_to": null,
-                "subscription_from": null,
-                "subscription_interval": null,
-                "description": "The bible for historians and archaeologists studying the final days of the Inca. For the past thirty years, The Conquest of the Incas has remained the most influential book for Inca scholars. There is no other book which is even in the same class."
-            }
+          {
+            "id": "349d9438-12bd-4e2e-9eb6-dfa830ab99a4",
+            "receiving_note": "ABCDEFGHIJKL",
+            "product_ids": [
+              {
+                "product_id": "9780764354113",
+                "product_id_type": "ISBN"
+              }
+            ],
+            "material_types": [
+              "f7e72403-2a13-43a4-a069-aaabe6c9dea8"
+            ],
+            "subscription_from": "2018-10-09T00:00:00.000Z",
+            "subscription_interval": 824,
+            "subscription_to": "2020-10-09T00:00:00.000Z",
+            "po_line_id": "8c778aee-97fa-4586-b131-3ea588a728e2"
+          }
         ],
     "total_records": 1,
     "first": 1,

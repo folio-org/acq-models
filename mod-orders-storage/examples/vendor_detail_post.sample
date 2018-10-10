@@ -1,7 +1,8 @@
 {
-    "ref_number": "123456-78",
-    "ref_no_type": "HIST_ACQ",
-    "instructions": null,
-    "vendor_account": "MYLIB-ACCT-GOBI-12",
-    "note_from_vendor": null
+  "instructions": "ABCDEFG",
+  "note_from_vendor": "ABCDEFGHIKJKLMNOP",
+  "ref_number": "123456-78",
+  "ref_number_type": "Supplier's unique order line reference number",
+  "vendor_account": "8910-25",
+  "po_line_id": "e64c2756-6441-4db4-ac30-b45c0d2d2194"
 }
