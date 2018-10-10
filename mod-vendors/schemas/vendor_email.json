@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "An email record for a vendor",
   "type": "object",
   "properties": {
     "email": {

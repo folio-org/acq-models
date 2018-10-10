@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A vendor EDI record",
   "type": "object",
   "properties": {
     "vendor_edi_code": {

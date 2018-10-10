@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A vendor alias",
   "type": "object",
   "properties": {
     "value": {

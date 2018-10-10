@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A contact person record for a vendor",
   "type": "object",
   "properties": {
     "contact_person": {

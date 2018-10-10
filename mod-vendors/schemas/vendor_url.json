@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The URL record for a vendor website",
   "type": "object",
   "properties": {
     "url": {
