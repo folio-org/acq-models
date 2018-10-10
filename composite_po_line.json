@@ -1,35 +1,160 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "composite purchase order line with dereferenced/expanded orders fields",
   "type": "object",
   "properties": {
     "id": {
+      "description": "UUID identifying this purchase order line",
       "type": "string",
-      "description": "UUID",
       "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
-    "acquisition_method": {
+    "account_number": {
+      "description": "the account number used to place this purchase order line",
       "type": "string"
     },
-    "barcode": {
-      "type": "string"
+    "acquisition_method": {
+      "description": "the acquisition method for this purchase order line",
+      "type": "string",
+      "enum": [
+        "Approval Plan",
+        "Demand Driven Acquisitions (DDA)",
+        "Depository",
+        "Evidence Based Acquisitions (EBA)",
+        "Exchange",
+        "Gift",
+        "Purchase At Vendor System",
+        "Purchase",
+        "Technical"
+      ]
+    },
+    "adjustment": {
+      "description": "the adjustment record associated with this purchase order line",
+      "type": "object",
+      "$ref": "mod-orders-storage/schemas/adjustment.json"
+    },
+    "alerts": {
+      "description": "alerts associated with this purchase order line",
+      "id": "alerts",
+      "type": "array",
+      "items": {
+        "description": "an alert record",
+        "type": "object",
+        "$ref": "mod-orders-storage/schemas/alert.json"
+      }
     },
     "cancellation_restriction": {
+      "description": "whether or not there are cancellation restrictions for this purchase order line",
       "type": "boolean"
     },
-    "cancellation_restriction_comment": {
+    "cancellation_restriction_note": {
+      "description": "free-form notes related to cancellation restrictions",
       "type": "string"
     },
-    "receipt_date": {
-      "type": ["string", "null"],
-      "format": "date-time"
+    "claims": {
+      "description": "claims associated with this purchase order line",
+      "id": "claims",
+      "type": "array",
+      "items": {
+        "description": "a claim record",
+        "type": "object",
+        "$ref": "mod-orders-storage/schemas/claim.json"
+      }
     },
     "collection": {
+      "description": "whether or not this purchase order line is for a collection",
       "type": "boolean"
     },
-    "owner": {
+    "contributors": {
+      "description": "list of contributors to the material",
+      "id": "contributors",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "contributor": {
+            "description": "the name of a contributor to the material",
+            "type": "string"
+          },
+          "contributor_type": {
+            "description": "UUID of the contributor type",
+            "type": "string",
+            "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+          }
+        }
+      }
+    },
+    "cost": {
+      "description": "cost details associated with this purchase order line",
+      "type": "object",
+      "$ref": "mod-orders-storage/schemas/cost.json"
+    },
+    "description": {
+      "description": "description of the material",
       "type": "string"
     },
+    "details": {
+      "description": "details about this purchase order line",
+      "type": "object",
+      "$ref": "mod-orders-storage/schemas/details.json"
+    },
+    "donor": {
+      "description": "the donor contributing to this purchase order line",
+      "type": "string"
+    },
+    "eresource": {
+      "description": "eresource-related details of this purchase order line",
+      "type": "object",
+      "$ref": "mod-orders-storage/schemas/eresource.json"
+    },
+    "fund_distribution": {
+      "description": "the UUIDs of the fund distribution records for this purchase order line",
+      "id": "fund_distribution",
+      "type": "array",
+      "items": {
+        "description": "UUID of a fund distribution record",
+        "type": "string",
+        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      }
+    },
+    "location": {
+      "description": "location details of this purchase order line",
+      "type": "object",
+      "$ref": "mod-orders-storage/schemas/location.json"
+    },
+    "order_format": {
+      "description": "The purchase order line format",
+      "type": "string",
+      "enum": [
+        "Container",
+        "Electronic Resource",
+        "P/E Mix",
+        "Physical Resource",
+        "Service"
+      ]
+    },
+    "owner": {
+      "description": "the owner of this purchase order line",
+      "type": "string"
+    },
+    "payment_status": {
+      "description": "The purchase order line payment status",
+      "type": "string",
+      "enum": [
+        "Awaiting Payment",
+        "Cancelled",
+        "Fully Paid",
+        "Partially Paid",
+        "Payment Not Required",
+        "Pending"
+      ]
+    },
+    "physical": {
+      "description": "details of this purchase order line relating to physical materials",
+      "type": "object",
+      "$ref": "mod-orders-storage/schemas/physical.json"
+    },
     "po_line_description": {
+      "description": "purchase order line description",
       "type": "string"
     },
     "po_line_number": {
@@ -37,93 +162,90 @@
       "type": "string",
       "pattern": "^[a-zA-Z0-9]{5,16}-[0-9]{1,3}$"
     },
-    "adjustment": {
-      "type": "object",
-      "$ref": "mod-orders-storage/schemas/adjustment.json"
+    "po_line_workflow_status": {
+      "description": "The status of this purchase order line",
+      "type": "string",
+      "enum": [
+        "Closed",
+        "Open",
+        "Pending"
+      ]
     },
-    "alerts": {
-      "id": "alerts",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "$ref": "mod-orders-storage/schemas/alert.json"
-      }
+    "publication_date": {
+      "description": "date (year) of the material's publication",
+      "type": "string",
+      "pattern": "^[0-9]{4}$"
     },
-    "claims": {
-      "id": "claims",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "$ref": "mod-orders-storage/schemas/claim.json"
-      }
-    },
-    "cost": {
-      "type": "object",
-      "$ref": "mod-orders-storage/schemas/cost.json"
-    },
-    "details": {
-      "type": "object",
-      "$ref": "mod-orders-storage/schemas/details.json"
-    },
-    "eresource": {
-      "type": "object",
-      "$ref": "mod-orders-storage/schemas/eresource.json"
-    },
-    "license": {
-      "type": "object",
-      "$ref": "mod-orders-storage/schemas/license.json"
-    },
-    "location": {
-      "type": "object",
-      "$ref": "mod-orders-storage/schemas/location.json"
-    },
-    "order_format": {
-      "type": "object",
-      "$ref": "mod-orders-storage/schemas/order_format.json"
-    },
-    "order_type": {
-      "type": "object",
-      "$ref": "mod-orders-storage/schemas/order_type.json"
-    },
-    "physical": {
-      "type": "object",
-      "$ref": "mod-orders-storage/schemas/physical.json"
+    "publisher": {
+      "description": "publisher of the material",
+      "type": "string"
     },
     "purchase_order_id": {
+      "description": "UUID of this parent purchase order",
       "type": "string",
-      "description": "UUID",
       "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
+    "receipt_date": {
+      "description": "date the purchase order line was received",
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
     "receipt_status": {
-      "type": "object",
-      "$ref": "mod-orders-storage/schemas/receipt_status.json"
+      "description": "The purchase order line receipt status",
+      "type": "string",
+      "enum": [
+        "Awaiting Receipt",
+        "Cancelled",
+        "Fully Received",
+        "Partially Received",
+        "Pending",
+        "Receipt Not Required"
+      ]
     },
     "renewal": {
+      "description": "renewal information assoicated with this purchase order line",
       "type": "object",
       "$ref": "mod-orders-storage/schemas/renewal.json"
     },
+    "reporting_codes": {
+      "description": "a list of reporting codes associated with this purchase order line",
+      "id": "reporting_codes",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "mod-orders-storage/schemas/reporting_code.json"
+      }
+    },
+    "requester": {
+      "description": "who requested this purchase order line",
+      "type": "string"
+    },
+    "rush": {
+      "description": "whether or not this is a rush order",
+      "type": "boolean"
+    },
+    "selector": {
+      "description": "who selected this material",
+      "type": "string"
+    },
     "source": {
+      "description": "details related to the soruce of this purchase order line",
       "type": "object",
       "$ref": "mod-orders-storage/schemas/source.json"
     },
-    "vendor": {
-      "type": "object",
-      "$ref": "mod-orders-storage/schemas/vendor_detail.json"
+    "tags": {
+      "description": "arbitrary tags associated with this purchase order line",
+      "id": "tags",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     },
-    "workflow_status": {
-      "type": "object",
-      "$ref": "mod-orders-storage/schemas/workflow_status.json"
-    },
-    "selector": {
-      "type": "string"
-    },
-    "requester": {
-      "type": "string"
-    },
-    "account_number": {
-      "type": "string"
-    },
-    "donor": {
+    "title": {
+      "description": "title of the material",
       "type": "string"
     }
   },

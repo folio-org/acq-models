@@ -1,43 +1,52 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "purchase order line e-resource details",
   "type": "object",
   "properties": {
     "id": {
-      "type": ["string", "null"],
-      "description": "UUID",
-      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+      "description": "UUID of this eresource record",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
-    "activation_status": {
-      "type": "string"
+    "activated": {
+      "description": "whether or not this resource is activated",
+      "type": "boolean"
     },
     "activation_due": {
+      "description": "number of days until activation, from date of order placement",
       "type": "integer"
     },
     "create_inventory": {
+      "description": "whether or not to create an inventory record for this resource",
       "type": "boolean"
     },
     "trial": {
+      "description": "whether or not this is a trial",
       "type": "boolean"
     },
     "expected_activation": {
-      "type": ["string", "null"],
+      "description": "expected date the resource will be activated",
+      "type": "string",
       "format": "date-time"
     },
     "user_limit": {
+      "description": "the concurrent user-limit",
       "type": "integer"
     },
-    "material_id": {
-      "type": "string"
-    },
     "access_provider": {
-      "type": ["string", "null"],
-      "description": "UUID",
-      "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+      "description": "UUID of the access provider",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
     "po_line_id": {
-      "type": ["string", "null"],
-      "description": "UUID",
-      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+      "description": "UUID of the purchase order line this record is associated with",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
+    "license": {
+      "description": "UUID of the license record",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     }
   },
   "additionalProperties": false

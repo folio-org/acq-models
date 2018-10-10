@@ -1,6 +1,5 @@
 {
     "acquisition_method": "Approval Plan",
-    "barcode": "1234",
     "cancellation_restriction": false,
     "cancellation_restriction_comment": null,
     "receipt_date": null,
