@@ -1,11 +1,14 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A URL record",
   "type": "object",
   "properties": {
     "value": {
+      "description": "The value for this URL",
       "type": "string"
     },
     "description": {
+      "description": "The description for this URL",
       "type": "string"
     }
   },

@@ -1,22 +1,27 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The URL record for a vendor website",
   "type": "object",
   "properties": {
     "url": {
+      "description": "The URL object for this vendor URL",
       "type": "object",
       "$ref": "url.json"
     },
     "language": {
+      "description": "The language for this vendor URL",
       "type": "string"
     },
     "categories": {
       "id": "category",
+      "description": "The list of categories for this vendor URL",
       "type": "array",
       "items": {
         "type": "string"
       }
     },
     "notes": {
+      "description": "The notes for this vendor URL",
       "type": "string"
     }
   },

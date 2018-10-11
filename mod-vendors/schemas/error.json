@@ -1,9 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "An error record",
   "type": "object",
   "additionalProperties": false,
   "properties": {
     "error": {
+      "description": "The message for this error",
       "type": "string"
     }
   },

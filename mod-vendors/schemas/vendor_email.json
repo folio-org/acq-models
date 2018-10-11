@@ -1,19 +1,23 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "An email record for a vendor",
   "type": "object",
   "properties": {
     "email": {
+      "description": "The email object for this vendor email",
       "type": "object",
       "$ref": "email.json"
     },
     "categories": {
       "id": "category",
+      "description": "The list of categories for this vendor email",
       "type": "array",
       "items": {
         "type": "string"
       }
     },
     "language": {
+      "description": "The language for this vendor email",
       "type": "string"
     }
   },
