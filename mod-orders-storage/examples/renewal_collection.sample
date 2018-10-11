@@ -1,17 +1,17 @@
 {
-    "renewals":
-        [
-          {
-            "id": "8e414baa-8cf2-4916-a90f-d1da4009e06e",
-            "interval": 182,
-            "cycle": "6 Months",
-            "manual_renewal": true,
-            "review_period": 30,
-            "renewal_date": "2019-04-09T00:00:00.000Z",
-            "po_line_id": "8c778aee-97fa-4586-b131-3ea588a728e2"
-          }
-        ],
-    "total_records": 1,
-    "first": 1,
-    "last": 1
+  "renewals":
+    [
+      {
+        "id": "8e414baa-8cf2-4916-a90f-d1da4009e06e",
+        "interval": 182,
+        "cycle": "6 Months",
+        "manual_renewal": true,
+        "review_period": 30,
+        "renewal_date": "2019-04-09T00:00:00.000Z",
+        "po_line_id": "8c778aee-97fa-4586-b131-3ea588a728e2"
+      }
+    ],
+  "total_records": 1,
+  "first": 1,
+  "last": 1
 }

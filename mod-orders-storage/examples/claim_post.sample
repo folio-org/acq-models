@@ -1,6 +1,6 @@
 {
-    "po_line_id": null,
-    "date": null,
-    "sent": null,
-    "grace": null
+  "claimed": false,
+  "sent": "2018-10-09T00:00:00.000Z",
+  "grace": 30,
+  "po_line_id": "8c778aee-97fa-4586-b131-3ea588a728e2"
 }
