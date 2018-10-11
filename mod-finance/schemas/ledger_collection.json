@@ -3,6 +3,7 @@
   "type": "object",
   "properties": {
     "ledgers": {
+      "description": "The list of objects contained in this collection",
       "type": "array",
       "id": "ledgers",
       "items": {
@@ -11,12 +12,15 @@
       }
     },
     "total_records": {
+      "description": "The number of objects contained in this collection",
       "type": "integer"
     },
     "first": {
+      "description": "The index of the first object in the collection",
       "type": "integer"
     },
     "last": {
+      "description": "The index of the last object in the collection",
       "type": "integer"
     }
   },
