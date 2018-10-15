@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "collection of fund distribution records",
+  "type": "object",
+  "properties": {
+    "fund_distributions": {
+      "description": "collection of fund distribution records",
+      "type": "array",
+      "id": "fund_distribution",
+      "items": {
+        "type": "object",
+        "$ref": "fund_distribution.json"
+      }
+    },
+    "total_records": {
+      "description": "The number of objects contained in this collection",
+      "type": "integer"
+    },
+    "first": {
+      "description": "The index of the first object contained in this collection",
+      "type": "integer"
+    },
+    "last": {
+      "description": "The index of the last object contained in this collection",
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "fund_distributions",
+    "total_records"
+  ]
+}

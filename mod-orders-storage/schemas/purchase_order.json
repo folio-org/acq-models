@@ -32,6 +32,10 @@
       "type": "string",
       "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
+    "manual_po": {
+      "description": "if true, order cannot be sent automatically, e.g. via EDI",
+      "type": "boolean"
+    },
     "notes": {
       "description": "free-form notes associated with this purchase order",
       "id": "notes",

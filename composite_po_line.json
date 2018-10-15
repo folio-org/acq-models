@@ -8,10 +8,6 @@
       "type": "string",
       "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
-    "account_number": {
-      "description": "the account number used to place this purchase order line",
-      "type": "string"
-    },
     "acquisition_method": {
       "description": "the acquisition method for this purchase order line",
       "type": "string",
@@ -111,9 +107,9 @@
       "id": "fund_distribution",
       "type": "array",
       "items": {
-        "description": "UUID of a fund distribution record",
-        "type": "string",
-        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+        "description": "a fund distribution record",
+        "type": "object",
+        "$ref": "mod-orders-storage/schemas/fund_distribution.json"
       }
     },
     "location": {
@@ -232,7 +228,7 @@
       "type": "string"
     },
     "source": {
-      "description": "details related to the soruce of this purchase order line",
+      "description": "details related to the source of this purchase order line",
       "type": "object",
       "$ref": "mod-orders-storage/schemas/source.json"
     },
@@ -247,6 +243,11 @@
     "title": {
       "description": "title of the material",
       "type": "string"
+    },
+    "vendor_detail": {
+      "description": "details related to the vendor of this purchase order line",
+      "type": "object",
+      "$ref": "mod-orders-storage/schemas/vendor_detail.json"
     }
   },
   "additionalProperties": false

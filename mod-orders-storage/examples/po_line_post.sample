@@ -1,5 +1,4 @@
 {
-  "account_number": "8910-10",
   "acquisition_method": "Purchase At Vendor System",
   "adjustment": "1363467f-eb47-4e09-9e28-e25aa464adb7",
   "alerts": [
@@ -54,5 +53,7 @@
     "ABCDEFGHIJKLMNOPQRSTU",
     "ABCDEFGHIJKLMNO"
   ],
-  "title": "Kayak Fishing in the Northern Gulf Coast"
+  "title": "Kayak Fishing in the Northern Gulf Coast",
+  "vendor_detail": "d5065f0d-fb88-4d23-b0c1-57e754fba40e"
+  
 }

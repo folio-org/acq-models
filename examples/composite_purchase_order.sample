@@ -31,7 +31,6 @@
   "po_lines": [
     {
       "id": "c0d08448-347b-418a-8c2f-5fb50248d67e",
-      "account_number": "8910-10",
       "acquisition_method": "Purchase At Vendor System",
       "adjustment": {
         "id": "1363467f-eb47-4e09-9e28-e25aa464adb7",
@@ -112,7 +111,20 @@
         "license": "7c063655-b384-4a6f-b367-3c2f95f7a49c"
       },
       "fund_distribution": [
-        "d10879e8-8c2d-4850-bcb9-0ec8e2e10021"
+        {
+          "id": "64774a83-fd1d-469e-a4d9-ed4033082799", 
+          "code": "HIST",
+          "percentage": 80.0,
+          "encumbrance": "eb506834-6c70-4239-8d1a-6414a5b08ac3",
+          "po_line_id": "c0d08448-347b-418a-8c2f-5fb50248d67e"
+        },
+        {
+          "id": "0d1b2d39-512f-4e0f-a497-b89eba6ecae9",
+          "code": "GENRL",
+          "percentage": 20.0,
+          "encumbrance": "0466cb77-0344-43c6-85eb-0a64aa2934e5",
+          "po_line_id": "c0d08448-347b-418a-8c2f-5fb50248d67e"
+        } 
       ],
       "location": {
         "id": "a4e65e03-99a4-4b39-8e6a-ae666ac52bea",
@@ -180,7 +192,16 @@
         "ABCDEFGHIJKLMNOPQRSTU",
         "ABCDEFGHIJKLMNO"
       ],
-      "title": "Kayak Fishing in the Northern Gulf Coast"
+      "title": "Kayak Fishing in the Northern Gulf Coast",
+      "vendor_detail": {
+        "id": "d5065f0d-fb88-4d23-b0c1-57e754fba40e",
+        "instructions": "ABCDEFG",
+        "note_from_vendor": "ABCDEFGHIKJKLMNOP",
+        "ref_number": "123456-78",
+        "ref_number_type": "Supplier's unique order line reference number",
+        "vendor_account": "8910-10",
+        "po_line_id": "8c778aee-97fa-4586-b131-3ea588a728e2"
+      }
     }
   ]
 }
