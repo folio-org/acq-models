@@ -25,9 +25,5 @@
       "type": "integer"
     }
   },
-  "additionalProperties": false,
-  "required": [
-    "licenses",
-    "total_records"
-  ]
+  "additionalProperties": false
 }

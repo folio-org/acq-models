@@ -25,9 +25,5 @@
       "type": "integer"
     }
   },
-  "additionalProperties": false,
-  "required": [
-    "order_types",
-    "total_records"
-  ]
+  "additionalProperties": false
 }
