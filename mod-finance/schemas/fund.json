@@ -40,6 +40,7 @@
     },
     "allocation_from": {
       "id": "allocation_from",
+      "description": "The originating fund of the allocation",
       "type": "array",
       "items": {
         "type": "string",
@@ -49,6 +50,7 @@
     },
     "allocation_to": {
       "id": "allocation_to",
+      "description": "The target fund of the allocation",
       "type": "array",
       "items": {
         "type": "string",
