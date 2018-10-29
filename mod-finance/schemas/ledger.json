@@ -20,6 +20,10 @@
       "description": "The description of the ledger",
       "type": "string"
     },
+    "ledger_status": {
+      "description": "The status of the ledger",
+      "type": "string"
+    },
     "period_start": {
       "description": "The start date for the ledger",
       "type": "string",

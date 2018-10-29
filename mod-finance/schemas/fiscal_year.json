@@ -13,8 +13,8 @@
       "type": "string"
     },
     "code": {
-      "description": "The numeric code of the fiscal year",
-      "type": "integer"
+      "description": "The code of the fiscal year",
+      "type": "string"
     },
     "description": {
       "description": "The description of the fiscal year",
