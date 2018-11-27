@@ -15,6 +15,14 @@
         "type": "string"
       }
     },
+    "types": {
+      "id": "types",
+      "description": "The list of types for this vendor phone",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "language": {
       "description": "The language for this vendor phone",
       "type": "string"
