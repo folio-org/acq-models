@@ -85,25 +85,33 @@
             "last_name": "Fury",
             "language": "en-us",
             "notes": "SHIELD's Big Kahuna",
-            "phone_number": {
-              "phone_number": "19789999999"
-            },
-            "email": {
-              "value": "noreply@folio.org",
-              "description": "Main"
-            },
-            "address": {
-              "addressLine1": "10 Estes Street",
-              "addressLine2": "",
-              "city": "Ipswich",
-              "stateRegion": "MA",
-              "zipCode": "01938",
-              "country": "USA"
-            },
-            "url": {
-              "value": "noreply@folio.org",
-              "description": ""
-            }
+            "phone_numbers": [
+              {
+                "phone_number": "19789999999"
+              }
+            ],
+            "emails": [
+              {
+                "value": "noreply@folio.org",
+                "description": "Main"
+              }
+            ],
+            "addresses": [
+              {
+                "addressLine1": "10 Estes Street",
+                "addressLine2": "",
+                "city": "Ipswich",
+                "stateRegion": "MA",
+                "zipCode": "01938",
+                "country": "USA"
+              }
+            ],
+            "urls": [
+              {
+                "value": "noreply@folio.org",
+                "description": ""
+              }
+            ]
           },
           "categories": [
             "08e0eb27-b57f-4638-a703-9a2c57bd8708",
