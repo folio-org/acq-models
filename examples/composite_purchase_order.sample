@@ -26,7 +26,7 @@
   "total_items": 2,
   "vendor": "168f8a86-d26c-406e-813f-c7527f241ac3",
   "workflow_status": "Open",
-  "po_lines": [
+  "composite_po_lines": [
     {
       "id": "c0d08448-347b-418a-8c2f-5fb50248d67e",
       "acquisition_method": "Purchase At Vendor System",
