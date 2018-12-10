@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "collection of receivings",
+  "type": "object",
+  "properties": {
+    "receivings": {
+      "description": "an array of receivings",
+      "id": "receivings",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "po_line_id": {
+            "description": "UUID of po line this receiving is related to",
+            "type": "string",
+            "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+          },
+          "received": {
+            "description": "number of items received",
+            "type": "integer"
+          },
+          "items": {
+            "description": "an array of items details",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "barcode": {
+                  "description": "the barcode assigned to the item",
+                  "type": "string"
+                },
+                "note": {
+                  "description": "free form notes pertaining to the item",
+                  "type": "string"
+                },
+                "enumeration": {
+                  "description": "the volume/caption of the item",
+                  "type": "string"
+                },
+                "location": {
+                  "description": "UUID of the location record",
+                  "type": "string",
+                  "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "totalRecords": {
+      "description": "total number of records in the array",
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "receivings",
+    "totalRecords"
+  ]
+}
