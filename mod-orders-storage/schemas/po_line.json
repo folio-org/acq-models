@@ -8,9 +8,33 @@
       "type": "string",
       "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
-    "account_number": {
-      "description": "the account number used to place this purchase order line",
+    "created": {
+      "description": "date/time when this purchase order line was created",
+      "type": "string",
+      "format": "date-time"
+    },
+    "created_by": {
+      "description": "UUID of the user this purchase order line was created by",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
+    "edition": {
+      "description": "edition of the material",
       "type": "string"
+    },
+    "checkin_items": {
+      "description": "whether or not this purchase order line is for checkin items",
+      "type": "boolean"
+    },
+    "instance_id": {
+      "description": "UUID of the instance record this purchase order line is related to",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
+    "agreement_id": {
+      "description": "UUID of the agreement this purchase order line is related to",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
     "acquisition_method": {
       "description": "the acquisition method for this purchase order line",
