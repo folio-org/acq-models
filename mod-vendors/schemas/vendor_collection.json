@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "collection of vendor records",
+  "type": "object",
+  "properties": {
+    "vendors": {
+      "description": "The list of vendors in this collection",
+      "type": "array",
+      "id": "vendorData",
+      "items": {
+        "type": "object",
+        "$ref": "vendor.json"
+      }
+    },
+    "total_records": {
+      "description": "The number of vendor records returned in this collection",
+      "type": "integer"
+    },
+    "first": {
+      "description": "The index of the first object in the collection",
+      "type": "integer"
+    },
+    "last": {
+      "description": "The index of the last object in the collection",
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "vendors",
+    "total_records"
+  ]
+}
