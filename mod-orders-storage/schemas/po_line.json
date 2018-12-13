@@ -23,7 +23,7 @@
       "type": "string"
     },
     "checkin_items": {
-      "description": "whether or not this purchase order line is for checkin items",
+      "description": "if true this will toggle the Check-in workflow for details associated with this PO line",
       "type": "boolean"
     },
     "instance_id": {
