@@ -1,47 +1,82 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "collection of check-ins",
+  "description": "A collection of check-in",
   "type": "object",
   "properties": {
-    "checkins": {
-      "description": "an array of check-ins",
-      "id": "checkins",
+    "checkinItems": {
+      "description": "List of checkin",
+      "id": "checkinItem",
       "type": "array",
-      "items": {
+      "checkinItems": {
         "type": "object",
         "properties": {
           "po_line_id": {
-            "description": "UUID of po line this check-in is related to",
+            "description": "The id of the checkin po_line",
             "type": "string",
             "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
           },
-          "received": {
-            "description": "number of pieces received",
+          "numberOfItemsCheckedin": {
+            "description": "The number of items to check-in",
             "type": "integer"
           },
           "pieces": {
-            "description": "an array of pieces details",
+            "description": "A collection of piece details",
             "type": "array",
-            "items": {
+            "piece": {
               "type": "object",
               "properties": {
                 "barcode": {
-                  "description": "the barcode assigned to the piece",
+                  "description": "The barcode assigned to the piece",
                   "type": "string"
                 },
-                "note": {
-                  "description": "free form notes pertaining to the piece",
+                "comment": {
+                  "description": "The free form notes pertaining to the piece",
                   "type": "string"
                 },
-                "enumeration": {
-                  "description": "the volume/caption of the piece",
+                "caption": {
+                  "description": "The caption of the piece",
                   "type": "string"
                 },
-                "location": {
-                  "description": "UUID of the location record",
+                "createItem": {
+                  "description": "Whether or not to create an item record for this piece",
+                  "type": "boolean"
+                },   
+                "isSupplement": {
+                  "description": "Whether or not this is a supplementary material for this piece",
+                  "type": "boolean"
+                }, 
+                "locationId": {
+                  "description": "The id of the location",
                   "type": "string",
                   "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
-                }
+                },
+                "materialTypeId": {
+                  "description": "The id of the materialType",
+                  "type": "string",
+                  "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+                },
+                "productId": {
+                  "description": "The id of the Product",
+                  "type": "string",
+                  "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+                },
+                "productIdType": {
+                  "description": "The id of the productType",
+                  "type": "string",
+                  "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+                },
+                "accessionNumber": {
+                  "description": "The number referencing physical item acquired by the library",
+                  "type": "string"
+                },
+                "itemDescription": {
+                  "description": "The description associated with the item record",
+                  "type": "string"
+                },
+                "electronicBookPlate": {
+                  "description": "A text that relates to the owner of the book",
+                  "type": "string"
+                }                                
               },
               "additionalProperties": false
             }
@@ -51,13 +86,15 @@
       }
     },
     "totalRecords": {
-      "description": "total number of records in the array",
+      "description": "The total number of checkin items in the list",
       "type": "integer"
     }
   },
   "additionalProperties": false,
   "required": [
-    "checkins",
+    "checkinItems",
+    "caption",
+    "locationId",
     "totalRecords"
   ]
 }
