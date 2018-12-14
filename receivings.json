@@ -5,7 +5,7 @@
   "properties": {
     "receivingItems": {
       "description": "List of receivings",
-      "id": "receivingItem",
+      "id": "receivingItems",
       "type": "array",
       "receivingItems": {
         "type": "object",
@@ -19,10 +19,11 @@
             "description": "The number of items received",
             "type": "integer"
           },
-          "listOfItems": {
+          "items": {
             "description": "List of recieving items details",
+            "id": "items",
             "type": "array",
-            "items": {
+            "item": {
               "type": "object",
               "properties": {
                 "barcode": {

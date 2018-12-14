@@ -5,7 +5,7 @@
   "properties": {
     "checkinItems": {
       "description": "List of checkin",
-      "id": "checkinItem",
+      "id": "checkinItems",
       "type": "array",
       "checkinItems": {
         "type": "object",
@@ -21,6 +21,7 @@
           },
           "pieces": {
             "description": "A collection of piece details",
+            "id": "pieces",
             "type": "array",
             "piece": {
               "type": "object",
@@ -33,8 +34,8 @@
                   "description": "The free form notes pertaining to the piece",
                   "type": "string"
                 },
-                "caption": {
-                  "description": "The caption of the piece",
+                "enumeration": {
+                  "description": "The enumeration caption of the piece",
                   "type": "string"
                 },
                 "createItem": {
@@ -55,12 +56,11 @@
                   "type": "string",
                   "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
                 },
-                "productId": {
-                  "description": "The id of the Product",
-                  "type": "string",
-                  "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+                "productType": {
+                  "description": "The type of the Product",
+                  "type": "string"
                 },
-                "productIdType": {
+                "productTypeId": {
                   "description": "The id of the productType",
                   "type": "string",
                   "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
@@ -93,7 +93,7 @@
   "additionalProperties": false,
   "required": [
     "checkinItems",
-    "caption",
+    "enumeration",
     "locationId",
     "totalRecords"
   ]
