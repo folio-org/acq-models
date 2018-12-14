@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "A collection of check-in",
+  "description": "A collection of check-ins",
   "type": "object",
   "properties": {
     "checkinItems": {
