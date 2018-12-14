@@ -1,0 +1,24 @@
+{
+    "edi_jobs": [
+        {
+            "id": "588b5c42-8634-4af7-bc9b-5e0116ed96b6",
+            "schedule_edi": false,
+            "date": null,
+            "time": null,
+            "is_monday": false,
+            "is_tuesday": false,
+            "is_wednesday": false,
+            "is_thursday": false,
+            "is_friday": false,
+            "is_saturday": false,
+            "is_sunday": false,
+            "send_to_emails": "email1@site.com, email2@site.com",
+            "notify_all_edi": true,
+            "notify_invoice_only": true,
+            "notify_error_only": false
+        }
+    ],
+    "total_records": 1,
+    "first": 1,
+    "last": 1
+}
