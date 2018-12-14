@@ -22,8 +22,12 @@
       "format": "date-time"
     },
     "volumes": {
-      "description": "the number of volumes included",
-      "type": "integer"
+      "description": "list of volumes included to the physical material",
+      "type": "array",
+      "items": {
+        "description": "the identifier of volume",
+        "type": "string"
+      }
     },
     "po_line_id": {
       "description": "UUID of the purchase order line this record is associated with",

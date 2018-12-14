@@ -33,6 +33,12 @@
   "po_lines": [
     {
       "id": "c0d08448-347b-418a-8c2f-5fb50248d67e",
+      "created": "2010-10-08T03:53:00.000Z",
+      "created_by": "55bac7fc-fed8-11e8-8eb2-f2801f1b9fd1",
+      "edition": "First edition",
+      "checkin_items": false,
+      "instance_id": "8343e5a0-fed8-11e8-8eb2-f2801f1b9fd1",
+      "agreement_id": "bdc75fea-fed8-11e8-8eb2-f2801f1b9fd1",
       "acquisition_method": "Purchase At Vendor System",
       "adjustment": {
         "id": "1363467f-eb47-4e09-9e28-e25aa464adb7",
@@ -114,7 +120,7 @@
       },
       "fund_distribution": [
         {
-          "id": "64774a83-fd1d-469e-a4d9-ed4033082799", 
+          "id": "64774a83-fd1d-469e-a4d9-ed4033082799",
           "code": "HIST",
           "percentage": 80.0,
           "encumbrance": "eb506834-6c70-4239-8d1a-6414a5b08ac3",
@@ -126,7 +132,7 @@
           "percentage": 20.0,
           "encumbrance": "0466cb77-0344-43c6-85eb-0a64aa2934e5",
           "po_line_id": "c0d08448-347b-418a-8c2f-5fb50248d67e"
-        } 
+        }
       ],
       "location": {
         "id": "a4e65e03-99a4-4b39-8e6a-ae666ac52bea",
@@ -140,7 +146,9 @@
       "owner": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
       "payment_status": "Awaiting Payment",
       "physical": {
-        "volumes": 1,
+        "volumes": [
+          "vol. 1"
+        ],
         "id": "5ee243f9-72e5-4464-bdbc-43a21873d648",
         "material_supplier": "73d14bc5-d131-48c6-b380-f8e62f63c8b6",
         "receipt_due": "2018-10-10T00:00:00.000Z",
@@ -162,7 +170,7 @@
         "review_period": 30,
         "renewal_date": "2019-04-09T00:00:00.000Z",
         "po_line_id": "8c778aee-97fa-4586-b131-3ea588a728e2"
-      },      
+      },
       "reporting_codes": [
         {
           "code": "CODE1",
