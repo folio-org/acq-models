@@ -2,6 +2,10 @@
   "adjustment": "9b3be694-6716-4e14-b81d-8d76f0ae4146",
   "approved": true,
   "assigned_to": "ab18897b-0e40-4f31-896b-9c9adc979a88",
+  "close_reason": {
+    "reason" : "Insufficient funds",
+    "note" : "We have reached monthly expense limit"
+  },
   "created": "2010-10-08T03:53:00.000Z",
   "created_by": "ab18897b-0e40-4f31-896b-9c9adc979a88",
   "manual_po": false,
