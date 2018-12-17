@@ -27,7 +27,7 @@
     },
     "additionalProperties": false,
     "required": [
-      "edi_ftp",
+      "edi_ftps",
       "total_records"
     ]
   }
