@@ -3,11 +3,11 @@
   "description": "A collection of receivings",
   "type": "object",
   "properties": {
-    "receivingItems": {
+    "received_items": {
       "description": "List of receivings",
-      "id": "receivingItems",
+      "id": "received_items",
       "type": "array",
-      "receivingItems": {
+      "items": {
         "type": "object",
         "properties": {
           "po_line_id": {
@@ -15,7 +15,7 @@
             "type": "string",
             "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
           },
-          "numberOfItemsReceived": {
+          "received": {
             "description": "The number of items received",
             "type": "integer"
           },
@@ -38,7 +38,7 @@
                   "description": "The volume or caption of the item",
                   "type": "string"
                 },
-                "locationId": {
+                "location_id": {
                   "description": "The id of the location",
                   "type": "string",
                   "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
@@ -51,14 +51,14 @@
         "additionalProperties": false
       }
     },
-    "totalReceivingItems": {
+    "total_records": {
       "description": "The total number of receiving items in the list",
       "type": "integer"
     }
   },
   "additionalProperties": false,
   "required": [
-    "receivingItems",
-    "totalReceivingItems"
+    "received_items",
+    "total_records"
   ]
 }

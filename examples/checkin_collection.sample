@@ -1,13 +1,14 @@
 {
-  "checkinItems": [
+  "check_in_items": [
     {
       "po_line_id": "0804ddec-6545-404a-b54d-a693f505681d",
-      "numberOfItemsCheckedin": 2,
+      "checked_in": 2,
       "pieces": [
         {
+          "id": "5e317dc2-deeb-4429-b2a1-91e5cd0fd5f7",
           "barcode": "0987654321",
           "comment": "Very important note",
-          "enumeration": "Vol. 1",
+          "caption": "Vol. 1",
           "createItem": true,
           "isSupplement": false,
           "locationId": "eb2d063a-5b4c-4cab-8db1-5fc5c5941df6",
@@ -19,6 +20,7 @@
           "electronicBookPlate": "This book is from the Harvard University library"
         },
         {
+          "id": "71d9322b-5cdd-45d8-ad45-c7f3044802e7",
           "barcode": "0987654111",
           "comment": "Very important note",
           "enumeration": "Vol. 2",
@@ -35,5 +37,5 @@
       ]
     }
   ],
-  "totalRecords": 1
+  "total_records": 1
 }

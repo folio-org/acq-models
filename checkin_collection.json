@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A collection of check-in",
+  "type": "object",
+  "properties": {
+    "check_in_items": {
+      "description": "List of checkin",
+      "id": "check_in_items",
+      "type": "array",
+      "check_in_items": {
+        "type": "object",
+        "properties": {
+          "po_line_id": {
+            "description": "The id of the checkin po_line",
+            "type": "string",
+            "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+          },
+          "checked_in": {
+            "description": "The number of items to check-in",
+            "type": "integer"
+          },
+          "pieces": {
+            "description": "A collection of piece records",
+            "type": "array",
+            "id": "pieces",
+            "piece": {
+              "type": "object",
+              "$ref": "mod-orders-storage/schemas/piece.json"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "total_records": {
+      "description": "The total number of checkin items in the list",
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "check_in_items",
+    "total_records"
+  ]
+}
