@@ -4,10 +4,10 @@
   "type": "object",
   "properties": {
     "check_in_items": {
-      "description": "List of checkin",
+      "description": "List of check-in",
       "id": "check_in_items",
       "type": "array",
-      "check_in_items": {
+      "items": {
         "type": "object",
         "properties": {
           "po_line_id": {
