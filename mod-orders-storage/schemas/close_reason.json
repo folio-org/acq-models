@@ -3,7 +3,7 @@
   "description": "purchase order closing reason record",
   "type": "object",
   "properties": {
-    "reason ": {
+    "reason": {
       "description": "close reason description",
       "type": "string"
     },
