@@ -3,9 +3,9 @@
   "description": "A collection of receivings",
   "type": "object",
   "properties": {
-    "received_items": {
+    "to_be_received": {
       "description": "List of receivings",
-      "id": "received_items",
+      "id": "to_be_received",
       "type": "array",
       "items": {
         "type": "object",
@@ -61,7 +61,7 @@
   },
   "additionalProperties": false,
   "required": [
-    "received_items",
+    "to_be_received",
     "total_records"
   ]
 }
