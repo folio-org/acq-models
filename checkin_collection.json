@@ -82,7 +82,12 @@
                   "description": "A text that relates to the owner of the book",
                   "type": "string"
                 }                                
-              }     
+              },
+              "additionalProperties": false,
+              "required": [
+                "caption",
+                "location_id"
+              ]   
             }
           }
         },
@@ -99,8 +104,6 @@
   },
   "additionalProperties": false,
   "required": [
-    "caption",
-    "location_id",
     "check_in_items",
     "total_records"
   ]
