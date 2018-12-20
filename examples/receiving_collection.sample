@@ -1,0 +1,23 @@
+{
+  "to_be_received": [
+    {
+      "po_line_id": "0804ddec-6545-404a-b54d-a693f505681d",
+      "received": 2,
+      "items": [
+        {
+          "barcode": "0987654321",
+          "comment": "Very important note",
+          "caption": "Vol. 1",
+          "location_id": "eb2d063a-5b4c-4cab-8db1-5fc5c5941df6"
+        },
+        {
+          "barcode": "0987654111",
+          "comment": "Very important note",
+          "caption": "Vol. 2",
+          "location_id": "eb2d063a-5b4c-4cab-8db1-5fc5c5941df6"
+        }
+      ]
+    }
+  ],
+  "total_records": 1
+}

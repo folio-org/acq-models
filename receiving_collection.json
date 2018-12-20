@@ -1,63 +1,67 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "collection of check-ins",
+  "description": "A collection of receivings",
   "type": "object",
   "properties": {
-    "checkins": {
-      "description": "an array of check-ins",
-      "id": "checkins",
+    "to_be_received": {
+      "description": "List of receivings",
+      "id": "to_be_received",
       "type": "array",
       "items": {
         "type": "object",
         "properties": {
           "po_line_id": {
-            "description": "UUID of po line this check-in is related to",
+            "description": "The id of the receiving po line",
             "type": "string",
             "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
           },
           "received": {
-            "description": "number of pieces received",
+            "description": "The number of items received",
             "type": "integer"
           },
-          "pieces": {
-            "description": "an array of pieces details",
+          "items": {
+            "description": "List of recieving items details",
+            "id": "items",
             "type": "array",
             "items": {
               "type": "object",
               "properties": {
                 "barcode": {
-                  "description": "the barcode assigned to the piece",
+                  "description": "The barcode assigned to the item",
                   "type": "string"
                 },
-                "note": {
-                  "description": "free form notes pertaining to the piece",
+                "comment": {
+                  "description": "The free form notes pertaining to this item",
                   "type": "string"
                 },
-                "enumeration": {
-                  "description": "the volume/caption of the piece",
+                "caption": {
+                  "description": "The volume or caption of the item",
                   "type": "string"
                 },
-                "location": {
-                  "description": "UUID of the location record",
+                "location_id": {
+                  "description": "The id of the location",
                   "type": "string",
                   "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
                 }
               },
-              "additionalProperties": false
+              "additionalProperties": false,
+              "required": [
+                "po_line_id"
+              ]
             }
           }
         },
         "additionalProperties": false
       }
     },
-    "totalRecords": {
-      "description": "total number of records in the array",
+    "total_records": {
+      "description": "The total number of receiving items in the list",
       "type": "integer"
     }
   },
   "additionalProperties": false,
   "required": [
-    "checkins",
-    "totalRecords"
+    "to_be_received",
+    "total_records"
   ]
 }
