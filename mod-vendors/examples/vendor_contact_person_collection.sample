@@ -1,75 +1,73 @@
 {
-    "vencor_contact_persons": [
+    "vendor_contact_persons": [
         {
             "id": "588b5c42-8634-4af7-bc9b-5e0116ed96b6",
-            "prefix": "Director",
-            "first_name": "Nick",
-            "last_name": "Fury",
-            "language": "en-us",
-            "notes": "SHIELD's Big Kahuna",
-            "phone_numbers": [
-                {
-                    "phone_number": {
-                        "id": "588b5c42-8634-4af7-bc9b-5e0116ed96b6",
-                        "phone_number": "19789999999"
-                    },
-                    "categories": [
-                        "0e3f9680-ab06-4565-af64-609b7364e6eb",
-                        "996ecd31-7ca4-4d8d-9bbf-bc94dff5f6c6"
-                    ],
-                    "language": "en-us"
-                }
-            ],
-            "emails": [
-                {
-                    "email": {
-                        "id": "588b5c42-8634-4af7-bc9b-5e0116ed96b6",
-                        "value": "noreply@folio.org",
-                        "description": "Main"
-                    },
-                    "categories": [
-                        "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
-                        "56288fe8-8037-44da-8395-01d2d106dc54"
-                    ],
-                    "language": "en-us"
-                }
-            ],
-            "addresses": [
-                {
-                    "address": {
-                        "id": "588b5c42-8634-4af7-bc9b-5e0116ed96b6",
-                        "addressLine1": "10 Estes Street",
-                        "addressLine2": "",
-                        "city": "Ipswich",
-                        "stateRegion": "MA",
-                        "zipCode": "01938",
-                        "country": "USA"
-                    },
-                    "categories": [
-                        "0e3f9680-ab06-4565-af64-609b7364e6eb",
-                        "996ecd31-7ca4-4d8d-9bbf-bc94dff5f6c6",
-                        "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
-                        "56288fe8-8037-44da-8395-01d2d106dc54"
-                    ],
-                    "language": "en",
-                    "san_code": "1234567"
-                }
-            ],
-            "urls": [
-                {
-                    "url": {
-                        "id": "588b5c42-8634-4af7-bc9b-5e0116ed96b6",
-                        "value": "noreply@folio.org",
-                        "description": ""
-                    },
-                    "language": "en-us",
-                    "categories": [
-                        "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
-                        "56288fe8-8037-44da-8395-01d2d106dc54"
-                    ],
-                    "notes": ""
-                }
-            ]
+            "contact_person": {
+                "prefix": "Director",
+                "first_name": "Nick",
+                "last_name": "Fury",
+                "language": "en-us",
+                "notes": "SHIELD's Big Kahuna",
+                "phone_numbers": [
+                    {
+                        "phone_number": {
+                            "phone_number": "19789999999"
+                        },
+                        "categories": [
+                            "0e3f9680-ab06-4565-af64-609b7364e6eb",
+                            "996ecd31-7ca4-4d8d-9bbf-bc94dff5f6c6"
+                        ],
+                        "language": "en-us"
+                    }
+                ],
+                "emails": [
+                    {
+                        "email": {
+                            "value": "noreply@folio.org",
+                            "description": "Main"
+                        },
+                        "categories": [
+                            "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
+                            "56288fe8-8037-44da-8395-01d2d106dc54"
+                        ],
+                        "language": "en-us"
+                    }
+                ],
+                "addresses": [
+                    {
+                        "address": {
+                            "addressLine1": "10 Estes Street",
+                            "addressLine2": "",
+                            "city": "Ipswich",
+                            "stateRegion": "MA",
+                            "zipCode": "01938",
+                            "country": "USA"
+                        },
+                        "categories": [
+                            "0e3f9680-ab06-4565-af64-609b7364e6eb",
+                            "996ecd31-7ca4-4d8d-9bbf-bc94dff5f6c6",
+                            "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
+                            "56288fe8-8037-44da-8395-01d2d106dc54"
+                        ],
+                        "language": "en",
+                        "san_code": "1234567"
+                    }
+                ],
+                "urls": [
+                    {
+                        "url": {
+                            "value": "noreply@folio.org",
+                            "description": ""
+                        },
+                        "language": "en-us",
+                        "categories": [
+                            "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
+                            "56288fe8-8037-44da-8395-01d2d106dc54"
+                        ],
+                        "notes": ""
+                    }
+                ]
+            }
         }
     ],
     "total_records": 1,
