@@ -3,7 +3,7 @@
     "description": "collection of agreement records",
     "type": "object",
     "properties": {
-      "aggreements": {
+      "agreements": {
         "description": "The list of agreements in this collection",
         "type": "array",
         "id": "agreements",
