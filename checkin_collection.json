@@ -23,7 +23,7 @@
             "description": "A collection of piece records",
             "type": "array",
             "id": "pieces",
-            "piece": {
+            "items": {
               "type": "object",
               "properties": {
                 "id": {
@@ -86,7 +86,10 @@
             }
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "required": [
+          "po_line_id"
+        ]
       }
     },
     "total_records": {
