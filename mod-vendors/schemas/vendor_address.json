@@ -25,10 +25,6 @@
     "language": {
       "description": "The language for this vendor address",
       "type": "string"
-    },
-    "san_code": {
-      "description": "The SAN code for this vendor address",
-      "type": "string"
     }
   },
   "additionalProperties": false,
