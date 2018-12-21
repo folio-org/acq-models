@@ -3,6 +3,12 @@
   "description": "A job record for a vendor EDI",
   "type": "object",
   "properties": {
+    "id": {
+      "description": "The unique id of this category",
+      "type": ["string", "null"],
+      "description": "UUID",
+      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+    },
     "schedule_edi": {
       "description": "The schedule for this EDI job",
       "type": "boolean"

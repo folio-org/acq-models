@@ -184,6 +184,19 @@
         "$ref": "account.json"
       }
     },
+    "vendor_types": {
+      "id": "vendor_types",
+      "description": "The list of vendor types for this vendor",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "vendor_type.json"
+      }
+    },
+    "san_code": {
+      "description": "The SAN code for this vendor address",
+      "type": "string"
+    },
     "changelogs": {
       "id": "changelogs",
       "description": "The list of changes applied to this vendor",

@@ -3,6 +3,12 @@
   "description": "A contact person record",
   "type": "object",
   "properties": {
+    "id": {
+      "description": "The unique id of this category",
+      "type": ["string", "null"],
+      "description": "UUID",
+      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+    },
     "prefix": {
       "description": "The prefix for this contact person",
       "type": "string"
