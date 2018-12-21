@@ -184,6 +184,10 @@
         "$ref": "account.json"
       }
     },
+    "san_code": {
+      "description": "The SAN code for this vendor address",
+      "type": "string"
+    },
     "changelogs": {
       "id": "changelogs",
       "description": "The list of changes applied to this vendor",
