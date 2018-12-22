@@ -27,16 +27,6 @@
       "type": "object",
       "$ref": "close_reason.json"
     },
-    "created": {
-      "description": "date/time when this purchase order was created",
-      "type": "string",
-      "format": "date-time"
-    },
-    "created_by": {
-      "description": "UUID of the user this purchase order was created by",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
-    },
     "manual_po": {
       "description": "if true, order cannot be sent automatically, e.g. via EDI",
       "type": "boolean"
@@ -87,6 +77,11 @@
         "Open",
         "Closed"
       ]
+    },
+    "metadata": {
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
     }
   },
   "additionalProperties": false
