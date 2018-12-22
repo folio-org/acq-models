@@ -19,10 +19,10 @@
             "description": "The number of items to check-in",
             "type": "integer"
           },
-          "pieces": {
+          "check_in_pieces": {
             "description": "A collection of piece records",
             "type": "array",
-            "id": "pieces",
+            "id": "check_in_pieces",
             "items": {
               "type": "object",
               "properties": {

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "A collection of receivings",
+  "description": "A collection of receiving items",
   "type": "object",
   "properties": {
     "to_be_received": {
@@ -19,9 +19,9 @@
             "description": "The number of items received",
             "type": "integer"
           },
-          "items": {
+          "received_items": {
             "description": "List of recieving items details",
-            "id": "items",
+            "id": "received_items",
             "type": "array",
             "items": {
               "type": "object",
@@ -42,15 +42,23 @@
                   "description": "The id of the location",
                   "type": "string",
                   "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+                },
+                "piece_id": {
+                  "description": "UUID of this piece record",
+                  "type": "string",
+                  "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
                 }
               },
-              "additionalProperties": false,
               "required": [
-                "po_line_id"
-              ]
+                "piece_id"
+              ],
+              "additionalProperties": false
             }
           }
         },
+        "required": [
+          "po_line_id"
+        ],
         "additionalProperties": false
       }
     },

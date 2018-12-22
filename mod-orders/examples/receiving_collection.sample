@@ -1,0 +1,38 @@
+{
+  "to_be_received": [
+    {
+      "po_line_id": "0804ddec-6545-404a-b54d-a693f505681d",
+      "received": 2,
+      "received_items": [
+        {
+          "barcode": "0987654321",
+          "comment": "Very important note",
+          "caption": "Vol. 1",
+          "location_id": "eb2d063a-5b4c-4cab-8db1-5fc5c5941df6",
+          "piece_id": "c18c49b7-d970-44d6-b5d4-bd76c1c62d83"
+        },
+        {
+          "barcode": "0987654111",
+          "comment": "Very important note",
+          "caption": "Vol. 2",
+          "location_id": "eb2d063a-5b4c-4cab-8db1-5fc5c5941df6"
+          "piece_id": "cb9b0468-f2b4-4a13-b64c-662c4c9ec3ed"
+        }
+      ]
+    },
+    {
+      "po_line_id": "7f0c4975-885e-47d5-8d5a-793dffbba9b2",
+      "received": 1,
+      "received_items": [
+        {
+          "barcode": "0987654333",
+          "comment": "Very important note",
+          "caption": "Vol. 286",
+          "location_id": "279f42ce-17d1-463e-b890-deeebd1baeee"
+          "piece_id": "20241b8c-9076-4cf5-817b-f2c1e2cb242f"
+        }
+      ]
+    }
+  ],
+  "total_records": 3
+}

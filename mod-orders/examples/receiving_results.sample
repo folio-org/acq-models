@@ -1,0 +1,37 @@
+{
+  "receiving_results": [
+    {
+      "po_line_id": "0804ddec-6545-404a-b54d-a693f505681d",
+      "processed_successfully": 2,
+      "processed_with_error": 0,
+      "receiving_item_results": [
+        {
+          "piece_id": "c18c49b7-d970-44d6-b5d4-bd76c1c62d83",
+          "processing_status": {
+            "type": "success"
+          }
+        },
+        {
+          "piece_id": "cb9b0468-f2b4-4a13-b64c-662c4c9ec3ed",
+          "processing_status": {
+            "type": "success"
+          }
+        }
+      ]
+    },
+    {
+      "po_line_id": "7f0c4975-885e-47d5-8d5a-793dffbba9b2",
+      "processed_successfully": 1,
+      "processed_with_error": 0,
+      "receiving_item_results": [
+        {
+          "piece_id": "20241b8c-9076-4cf5-817b-f2c1e2cb242f",
+          "processing_status": {
+            "type": "success"
+          }
+        }
+      ]
+    }
+  ],
+  "total_records": 3
+}

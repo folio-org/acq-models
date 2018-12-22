@@ -3,7 +3,7 @@
     {
       "po_line_id": "0804ddec-6545-404a-b54d-a693f505681d",
       "checked_in": 2,
-      "pieces": [
+      "check_in_pieces": [
         {
           "id": "5e317dc2-deeb-4429-b2a1-91e5cd0fd5f7",
           "barcode": "0987654321",
@@ -37,5 +37,5 @@
       ]
     }
   ],
-  "total_records": 1
+  "total_records": 2
 }
