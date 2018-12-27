@@ -41,9 +41,9 @@
       "description": "if true, order cannot be sent automatically, e.g. via EDI",
       "type": "boolean"
     },
-    "renewal_review_period": {
-      "description": "time prior to renewal where changes can be made to subscription",
-      "type": "integer"
+    "manual_renewal": {
+      "description": "whether or not this is a manual renewal",
+      "type": "boolean"
     },
     "notes": {
       "description": "free-form notes associated with this purchase order",
@@ -86,9 +86,9 @@
       "description": "renewal interval (in days?)",
       "type": "integer"
     },
-    "manual_renewal": {
-      "description": "whether or not this is a manual renewal",
-      "type": "boolean"
+    "renewal_review_period": {
+      "description": "time prior to renewal where changes can be made to subscription",
+      "type": "integer"
     },
     "renewal_date": {
       "description": "date renewal was confirmed by vendor or sent to vendor",
