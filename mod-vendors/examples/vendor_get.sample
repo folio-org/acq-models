@@ -63,14 +63,14 @@
     {
       "url": {
         "value": "noreply@folio.org",
-        "description": ""
+        "description": "corporate"
       },
       "language": "en-us",
       "categories": [
         "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
         "56288fe8-8037-44da-8395-01d2d106dc54"
       ],
-      "notes": ""
+      "notes": "note"
     }
   ],
   "contacts": [
@@ -130,14 +130,14 @@
           {
             "url": {
               "value": "noreply@folio.org",
-              "description": ""
+              "description": "corporate"
             },
             "language": "en-us",
             "categories": [
               "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
               "56288fe8-8037-44da-8395-01d2d106dc54"
             ],
-            "notes": ""
+            "notes": "note"
           }
         ]
       },
@@ -227,10 +227,7 @@
       "notes": "This is the store-front for GOBI.",
       "available": true,
       "delivery_method": "Online",
-      "statistics_format": "PDF",
-      "locally_stored": "",
-      "online_location": "",
-      "statistics_notes": ""
+      "statistics_format": "PDF"
     }
   ],
   "accounts": [
@@ -244,7 +241,7 @@
       "contact_info": "Some basic contact information note.",
       "library_code": "My Library",
       "library_edi_code": "MY-LIB-1",
-      "notes": ""
+      "notes": "note"
     }
   ],
   "san_code": "1234567",
