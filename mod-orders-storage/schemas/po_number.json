@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Generated PO number",
+  "type": "object",
+  "properties": {
+    "po_number": {
+      "type": "string"
+    }
+  }
+}
