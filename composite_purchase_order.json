@@ -41,10 +41,6 @@
       "description": "if true, order cannot be sent automatically, e.g. via EDI",
       "type": "boolean"
     },
-    "manual_renewal": {
-      "description": "whether or not this is a manual renewal",
-      "type": "boolean"
-    },
     "notes": {
       "description": "free-form notes associated with this purchase order",
       "id": "notes",
@@ -70,33 +66,10 @@
       "description": "indicates this purchase order should be re-encumbered each fiscal year. Only applies to ongoing orders",
       "type": "boolean"
     },
-    "renewal_cycle": {
-      "description": "length of the renewal cycle",
-      "type": "string",
-      "enum": [
-        "Two Years",
-        "One Year",
-        "3 Months",
-        "6 Months",
-        "1 Month",
-        "Manual"
-      ]
-    },
-    "renewal_interval": {
-      "description": "renewal interval (in days?)",
-      "type": "integer"
-    },    
-    "renewal_review_period": {
-      "description": "time prior to renewal where changes can be made to subscription",
-      "type": "integer"
-    },
-    "renewal_date": {
-      "description": "date renewal was confirmed by vendor or sent to vendor",
-      "type": [
-        "string",
-        "null"
-      ],
-      "format": "date-time"
+    "renewal": {
+      "description": "Renewal details for the order",
+      "type": "object",
+      "$ref": "mod-orders-storage/schemas/renewal.json"
     },
     "total_estimated_price": {
       "description": "total estimated price of this purchase order",
