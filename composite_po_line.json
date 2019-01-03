@@ -219,11 +219,6 @@
         "Receipt Not Required"
       ]
     },
-    "renewal": {
-      "description": "renewal information assoicated with this purchase order line",
-      "type": "object",
-      "$ref": "mod-orders-storage/schemas/renewal.json"
-    },
     "reporting_codes": {
       "description": "a list of reporting codes associated with this purchase order line",
       "id": "reporting_codes",

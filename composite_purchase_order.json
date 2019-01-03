@@ -56,6 +56,11 @@
       "description": "indicates this purchase order should be re-encumbered each fiscal year. Only applies to ongoing orders",
       "type": "boolean"
     },
+    "renewal": {
+      "description": "Renewal information associated with this order",
+      "type": "object",
+      "$ref": "mod-orders-storage/schemas/renewal.json"
+    },
     "total_estimated_price": {
       "description": "total estimated price of this purchase order",
       "type": "number"
