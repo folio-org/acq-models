@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Generated PO number object",
+  "type": "object",
+  "properties": {
+    "po_number": {
+      "description": "generated purchase order number",
+      "type": "string",
+      "pattern": "^[0-9]{5,16}$"
+    }
+  }
+}
