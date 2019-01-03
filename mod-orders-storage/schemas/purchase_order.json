@@ -67,7 +67,7 @@
       "type": "boolean"
     },
     "renewal": {
-      "description": "Renewal details for the order",
+      "description": "Renewal information associated with this order",
       "type": "object",
       "$ref": "renewal.json"
     },
