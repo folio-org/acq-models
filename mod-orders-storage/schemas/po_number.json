@@ -6,7 +6,7 @@
     "po_number": {
       "description": "generated purchase order number",
       "type": "string",
-      "pattern": "^[0-9]{5,16}$"
+      "pattern": "^[a-zA-Z0-9]{5,16}$"
     }
   }
 }
