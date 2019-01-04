@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "collection of receiving history",
+  "type": "object",
+  "properties": {
+    "receiving_history": {
+      "description": "collection of receiving history",
+      "type": "array",
+      "id": "receiving_history",
+      "items": {
+        "type": "object",
+        "$ref": "receiving_history.json"
+      }
+    },
+    "total_records": {
+      "description": "The number of objects contained in this collection",
+      "type": "integer"
+    },
+    "first": {
+      "description": "The index of the first object contained in this collection",
+      "type": "integer"
+    },
+    "last": {
+      "description": "The index of the last object contained in this collection",
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "receiving_history",
+    "total_records"
+  ]
+}
