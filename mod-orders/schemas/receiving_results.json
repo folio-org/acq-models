@@ -40,6 +40,7 @@
                   "type": "object",
                   "properties": {
                     "type": {
+                      "description": "Resulting status of the processed piece record",
                       "type": "string",
                       "enum": [
                         "success",
@@ -47,6 +48,7 @@
                       ]
                     },
                     "message": {
+                      "description": "The message describing processed piece record",
                       "type": "string"
                     }
                   },
