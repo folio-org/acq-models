@@ -3,10 +3,24 @@
   "description": "Generated PO number object",
   "type": "object",
   "properties": {
+    "po_number_prefix": {
+      "description": "An optional prefix to this purchase order number. This allows the user to add the desired context to the PO number without needing to edit the sequential number that the system has generated",
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9]{0,11}$"
+    },
     "po_number": {
-      "description": "generated purchase order number",
+      "description": "A human readable generated or manually entered ID assigned to the purchase order",
       "type": "string",
       "pattern": "^[a-zA-Z0-9]{5,16}$"
+    },
+    "po_number_suffix": {
+      "description": "An optional suffix to this purchase order number. This allows the user to add the desired context to the PO number without needing to edit the sequential number that the system has generated",
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9]{0,11}$"
     }
-  }
+  },
+  "required": [
+    "po_number"
+  ],
+  "additionalProperties": false
 }

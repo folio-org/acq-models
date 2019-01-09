@@ -22,7 +22,9 @@
     "ABCDEFGHIJKLMNOPQRSTUV"
   ],
   "order_type": "Ongoing",
+  "po_number_prefix": "ABC",
   "po_number": "268758",
+  "po_number_suffix": "XYZ",
   "re_encumber": false,
   "renewal": {
      "cycle": "6 Months",
@@ -162,7 +164,7 @@
         "po_line_id": "8c778aee-97fa-4586-b131-3ea588a728e2"
       },
       "po_line_description": "ABCDEFGHIJKLMNOPQRSTUVWXY",
-      "po_line_number": "268758-03",
+      "po_line_number": "ABC268758XYZ-03",
       "po_line_workflow_status": "Open",
       "publication_date": "2017",
       "publisher": "Schiffer Publishing",
