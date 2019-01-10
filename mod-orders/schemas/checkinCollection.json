@@ -3,26 +3,26 @@
   "description": "A collection of check-in",
   "type": "object",
   "properties": {
-    "check_in_items": {
+    "checkInItems": {
       "description": "List of check-in",
-      "id": "check_in_items",
+      "id": "checkInItems",
       "type": "array",
       "items": {
         "type": "object",
         "properties": {
-          "po_line_id": {
-            "description": "The id of the checkin po_line",
+          "poLineId": {
+            "description": "The id of the checkin PO line",
             "type": "string",
             "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
           },
-          "checked_in": {
+          "checkedIn": {
             "description": "The number of items to check-in",
             "type": "integer"
           },
-          "check_in_pieces": {
+          "checkInPieces": {
             "description": "A collection of piece records",
             "type": "array",
-            "id": "check_in_pieces",
+            "id": "checkInPieces",
             "items": {
               "type": "object",
               "properties": {
@@ -43,7 +43,7 @@
                   "description": "The enumeration caption of the piece",
                   "type": "string"
                 },
-                "create_item": {
+                "createItem": {
                   "description": "Whether or not to create an item record for this piece",
                   "type": "boolean"
                 },   
@@ -51,34 +51,34 @@
                   "description": "Whether or not this is a supplementary material for this piece",
                   "type": "boolean"
                 }, 
-                "location_id": {
+                "locationId": {
                   "description": "The id of the location",
                   "type": "string",
                   "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
                 },
-                "material_type_id": {
+                "materialTypeId": {
                   "description": "The id of the materialType",
                   "type": "string",
                   "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
                 },
-                "product_id": {
+                "productId": {
                   "description": "The id of the Product",
                   "type": "string"
                 },
-                "product_id_type": {
+                "productIdType": {
                   "description": "The UUID corresponding to the type of product id",
                   "type": "string",
                   "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
                 },
-                "accession_number": {
+                "accessionNumber": {
                   "description": "The number referencing physical item acquired by the library",
                   "type": "string"
                 },
-                "item_description": {
+                "itemDescription": {
                   "description": "The description associated with the item record",
                   "type": "string"
                 },
-                "electronic_bookplate": {
+                "electronicBookplate": {
                   "description": "A text that relates to the owner of the book",
                   "type": "string"
                 }                                
@@ -86,25 +86,25 @@
               "additionalProperties": false,
               "required": [
                 "caption",
-                "location_id"
+                "locationId"
               ]   
             }
           }
         },
         "additionalProperties": false,
         "required": [
-          "po_line_id"
+          "poLineId"
         ]
       }
     },
-    "total_records": {
+    "totalRecords": {
       "description": "The total number of checkin items in the list",
       "type": "integer"
     }
   },
   "additionalProperties": false,
   "required": [
-    "check_in_items",
-    "total_records"
+    "checkInItems",
+    "totalRecords"
   ]
 }

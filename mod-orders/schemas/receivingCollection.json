@@ -3,15 +3,15 @@
   "description": "A collection of receiving items",
   "type": "object",
   "properties": {
-    "to_be_received": {
+    "toBeReceived": {
       "description": "List of receivings",
-      "id": "to_be_received",
+      "id": "toBeReceived",
       "type": "array",
       "items": {
         "type": "object",
         "properties": {
-          "po_line_id": {
-            "description": "The id of the receiving po line",
+          "poLineId": {
+            "description": "The id of the receiving PO line",
             "type": "string",
             "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
           },
@@ -19,9 +19,9 @@
             "description": "The number of items received",
             "type": "integer"
           },
-          "received_items": {
-            "description": "List of recieving items details",
-            "id": "received_items",
+          "receivedItems": {
+            "description": "List of receiving items details",
+            "id": "receivedItems",
             "type": "array",
             "items": {
               "type": "object",
@@ -38,38 +38,38 @@
                   "description": "The volume or caption of the item",
                   "type": "string"
                 },
-                "location_id": {
+                "locationId": {
                   "description": "The id of the location",
                   "type": "string",
                   "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
                 },
-                "piece_id": {
+                "pieceId": {
                   "description": "UUID of this piece record",
                   "type": "string",
                   "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
                 }
               },
               "required": [
-                "piece_id"
+                "pieceId"
               ],
               "additionalProperties": false
             }
           }
         },
         "required": [
-          "po_line_id"
+          "poLineId"
         ],
         "additionalProperties": false
       }
     },
-    "total_records": {
+    "totalRecords": {
       "description": "The total number of receiving items in the list",
       "type": "integer"
     }
   },
   "additionalProperties": false,
   "required": [
-    "to_be_received",
-    "total_records"
+    "toBeReceived",
+    "totalRecords"
   ]
 }

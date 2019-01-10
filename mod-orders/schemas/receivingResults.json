@@ -3,39 +3,39 @@
   "description": "A collection of receiving results",
   "type": "object",
   "properties": {
-    "receiving_results": {
-      "description": "List of receivings",
-      "id": "receiving_results",
+    "receivingResults": {
+      "description": "List of receiving results",
+      "id": "receivingResults",
       "type": "array",
       "items": {
         "type": "object",
         "properties": {
-          "po_line_id": {
+          "poLineId": {
             "description": "The id of the receiving po line",
             "type": "string",
             "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
           },
-          "processed_successfully": {
+          "processedSuccessfully": {
             "description": "The number of items processed successfully",
             "type": "integer"
           },
-          "processed_with_error": {
+          "processedWithError": {
             "description": "The number of items processed with error",
             "type": "integer"
           },
-          "receiving_item_results": {
+          "receivingItemResults": {
             "description": "List of processed receiving item details",
-            "id": "receiving_item_results",
+            "id": "receivingItemResults",
             "type": "array",
             "items": {
               "type": "object",
               "properties": {
-                "piece_id": {
+                "pieceId": {
                   "description": "UUID of this piece record",
                   "type": "string",
                   "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
                 },
-                "processing_status": {
+                "processingStatus": {
                   "description": "The status describing item processing result",
                   "type": "object",
                   "properties": {
@@ -59,28 +59,28 @@
                 }
               },
               "required": [
-                "piece_id",
-                "processing_status"
+                "pieceId",
+                "processingStatus"
               ],
               "additionalProperties": false
             }
           }
         },
         "required": [
-          "po_line_id",
-          "receiving_item_results"
+          "poLineId",
+          "receivingItemResults"
         ],
         "additionalProperties": false
       }
     },
-    "total_records": {
+    "totalRecords": {
       "description": "The total number of receiving items in the list",
       "type": "integer"
     }
   },
   "additionalProperties": false,
   "required": [
-    "receiving_results",
-    "total_records"
+    "receivingResults",
+    "totalRecords"
   ]
 }
