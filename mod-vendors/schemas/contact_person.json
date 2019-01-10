@@ -84,6 +84,10 @@
         "type": "object",
         "$ref": "vendor_url.json"
       }
+    },
+    "inactive": {
+      "description": "Used to indicate that a contact is no longer active",
+      "type": "boolean"
     }
   },
   "additionalProperties": false,
