@@ -1,15 +1,15 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "collection of renewal records",
+  "description": "collection of receiving history",
   "type": "object",
   "properties": {
-    "renewals": {
-      "description": "collection of renewal records",
+    "receiving_history": {
+      "description": "collection of receiving history",
       "type": "array",
-      "id": "renewals",
+      "id": "receiving_history",
       "items": {
         "type": "object",
-        "$ref": "renewal.json"
+        "$ref": "receiving_history.json"
       }
     },
     "total_records": {
@@ -27,7 +27,7 @@
   },
   "additionalProperties": false,
   "required": [
-    "renewals",
+    "receiving_history",
     "total_records"
   ]
 }

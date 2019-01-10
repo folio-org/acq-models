@@ -8,16 +8,6 @@
       "type": "string",
       "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
-    "created": {
-      "description": "date/time when this purchase order line was created",
-      "type": "string",
-      "format": "date-time"
-    },
-    "created_by": {
-      "description": "UUID of the user this purchase order line was created by",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
-    },
     "edition": {
       "description": "edition of the material",
       "type": "string"
@@ -149,11 +139,10 @@
       "description": "The purchase order line format",
       "type": "string",
       "enum": [
-        "Container",
         "Electronic Resource",
         "P/E Mix",
         "Physical Resource",
-        "Service"
+        "Other"
       ]
     },
     "owner": {
@@ -229,11 +218,6 @@
         "Receipt Not Required"
       ]
     },
-    "renewal": {
-      "description": "renewal information assoicated with this purchase order line",
-      "type": "object",
-      "$ref": "mod-orders-storage/schemas/renewal.json"
-    },
     "reporting_codes": {
       "description": "a list of reporting codes associated with this purchase order line",
       "id": "reporting_codes",
@@ -276,6 +260,11 @@
       "description": "details related to the vendor of this purchase order line",
       "type": "object",
       "$ref": "mod-orders-storage/schemas/vendor_detail.json"
+    },
+    "metadata": {
+      "type": "object",
+      "$ref": "../raml-util/schemas/metadata.schema",
+      "readonly": true
     }
   },
   "additionalProperties": false

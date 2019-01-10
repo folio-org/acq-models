@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Generated PO number object",
+  "type": "object",
+  "properties": {
+    "poNumberPrefix": {
+      "description": "An optional prefix to the purchase order number. This allows to add the desired context to the PO number without needing to edit the generated sequential number",
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9]{0,11}$"
+    },
+    "po_number": {
+      "description": "A human readable generated or manually entered ID assigned to the purchase order",
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9]{5,16}$"
+    },
+    "poNumberSuffix": {
+      "description": "An optional suffix to the purchase order number. This allows to add the desired context to the PO number without needing to edit the generated sequential number",
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9]{0,11}$"
+    }
+  },
+  "required": [
+    "po_number"
+  ],
+  "additionalProperties": false
+}

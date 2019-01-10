@@ -27,16 +27,6 @@
       "type": "object",
       "$ref": "close_reason.json"
     },
-    "created": {
-      "description": "date/time when this purchase order was created",
-      "type": "string",
-      "format": "date-time"
-    },
-    "created_by": {
-      "description": "UUID of the user this purchase order was created by",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
-    },
     "manual_po": {
       "description": "if true, order cannot be sent automatically, e.g. via EDI",
       "type": "boolean"
@@ -49,10 +39,20 @@
         "type": "string"
       }
     },
+    "poNumberPrefix": {
+      "description": "An optional prefix to this purchase order number. This allows to add the desired context to the PO number without needing to edit the generated sequential number",
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9]{0,11}$"
+    },
     "po_number": {
       "description": "A human readable ID assigned to this purchase order",
       "type": "string",
       "pattern": "^[a-zA-Z0-9]{5,16}$"
+    },
+    "poNumberSuffix": {
+      "description": "An optional suffix to this purchase order number. This allows to add the desired context to the PO number without needing to edit the generated sequential number",
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9]{0,11}$"
     },
     "order_type": {
       "description": "the purchase order type",
@@ -65,6 +65,11 @@
     "re_encumber": {
       "description": "indicates this purchase order should be re-encumbered each fiscal year. Only applies to ongoing orders",
       "type": "boolean"
+    },
+    "renewal": {
+      "description": "Renewal information associated with this order",
+      "type": "object",
+      "$ref": "renewal.json"
     },
     "total_estimated_price": {
       "description": "total estimated price of this purchase order",
@@ -87,6 +92,11 @@
         "Open",
         "Closed"
       ]
+    },
+    "metadata": {
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
     }
   },
   "additionalProperties": false

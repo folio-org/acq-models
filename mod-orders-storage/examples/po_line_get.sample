@@ -1,7 +1,5 @@
 {
   "id": "c0d08448-347b-418a-8c2f-5fb50248d67e",
-  "created": "2010-10-08T03:53:00.000Z",
-  "created_by": "55bac7fc-fed8-11e8-8eb2-f2801f1b9fd1",
   "edition": "First edition",
   "checkin_items": false,
   "instance_id": "8343e5a0-fed8-11e8-8eb2-f2801f1b9fd1",
@@ -44,7 +42,6 @@
   "purchase_order_id": "d79b0bcc-DcAD-1E4E-Abb7-DbFcaD5BB3bb",
   "receipt_date": "2018-10-09T00:00:00.000Z",
   "receipt_status": "Awaiting Receipt",
-  "renewal": "8e414baa-8cf2-4916-a90f-d1da4009e06e",
   "reporting_codes": [
     "5926dcd7-85f5-4504-8283-712595ebc38b",
     "fa316c04-8101-4e72-8aaf-01281bac718f",
@@ -61,5 +58,9 @@
     "ABCDEFGHIJKLMNO"
   ],
   "title": "Kayak Fishing in the Northern Gulf Coast",
-  "vendor_detail": "d5065f0d-fb88-4d23-b0c1-57e754fba40e"
+  "vendor_detail": "d5065f0d-fb88-4d23-b0c1-57e754fba40e",
+  "metadata": {
+    "createdDate": "2018-07-19T00:00:00.000+0000",
+    "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
+  }
 }

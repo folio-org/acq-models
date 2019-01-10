@@ -1,12 +1,5 @@
 {
-    "vendor_types": [
-        {
-            "id": "588b5c42-8634-4af7-bc9b-5e0116ed96b6",
-            "value": "Service Provider",
-            "locked": false
-        }
-    ],
-    "total_records": 1,
-    "first": 1,
-    "last": 1
+    "id": "588b5c42-8634-4af7-bc9b-5e0116ed96b6",
+    "value": "Service Provider",
+    "locked": false
 }
