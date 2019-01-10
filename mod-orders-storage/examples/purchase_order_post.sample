@@ -2,10 +2,6 @@
   "adjustment": "9b3be694-6716-4e14-b81d-8d76f0ae4146",
   "approved": true,
   "assigned_to": "ab18897b-0e40-4f31-896b-9c9adc979a88",
-  "close_reason": {
-    "reason" : "Insufficient funds",
-    "note" : "We have reached monthly expense limit"
-  },
   "manual_po": false,
   "notes": [
     "ABCDEFGHIJKLMNO",
@@ -13,7 +9,9 @@
     "ABCDEFGHIJKLMNOPQRSTUV"
   ],
   "order_type": "Ongoing",
+  "poNumberPrefix": "FEB",
   "po_number": "268758",
+  "poNumberSuffix": "2019",
   "re_encumber": false,
   "renewal": {
      "cycle": "6 Months",
@@ -25,5 +23,5 @@
   "total_estimated_price": 49.98,
   "total_items": 2,
   "vendor": "168f8a86-d26c-406e-813f-c7527f241ac3",
-  "workflow_status": "Open"
+  "workflow_status": "Pending"
 }

@@ -14,7 +14,9 @@
     "ABCDEFGHIJKLMNOPQRSTUV"
   ],
   "order_type": "Ongoing",
+  "poNumberPrefix": "ABC",
   "po_number": "268758",
+  "poNumberSuffix": "XYZ",
   "re_encumber": false,
   "renewal": {
      "cycle": "6 Months",
@@ -26,7 +28,7 @@
   "total_estimated_price": 49.98,
   "total_items": 2,
   "vendor": "168f8a86-d26c-406e-813f-c7527f241ac3",
-  "workflow_status": "Open",
+  "workflow_status": "Closed",
   "metadata": {
     "createdDate": "2018-07-19T00:00:00.000+0000",
     "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
