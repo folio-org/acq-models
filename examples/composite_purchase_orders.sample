@@ -24,9 +24,9 @@
         "ABCDEFGHIJKLMNOPQRSTUV"
       ],
       "order_type": "Ongoing",
-      "po_number_prefix": "AAA",
+      "poNumberPrefix": "AAA",
       "po_number": "268758",
-      "po_number_suffix": "BBB",
+      "poNumberSuffix": "BBB",
       "re_encumber": false,
       "renewal": {
          "cycle": "6 Months",

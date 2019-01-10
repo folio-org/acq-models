@@ -39,8 +39,8 @@
         "type": "string"
       }
     },
-    "po_number_prefix": {
-      "description": "An optional prefix to this purchase order number. This allows the user to add the desired context to the PO number without needing to edit the sequential number that the system has generated",
+    "poNumberPrefix": {
+      "description": "An optional prefix to this purchase order number. This allows to add the desired context to the PO number without needing to edit the generated sequential number",
       "type": "string",
       "pattern": "^[a-zA-Z0-9]{0,11}$"
     },
@@ -49,8 +49,8 @@
       "type": "string",
       "pattern": "^[a-zA-Z0-9]{5,16}$"
     },
-    "po_number_suffix": {
-      "description": "An optional suffix to this purchase order number. This allows the user to add the desired context to the PO number without needing to edit the sequential number that the system has generated",
+    "poNumberSuffix": {
+      "description": "An optional suffix to this purchase order number. This allows to add the desired context to the PO number without needing to edit the generated sequential number",
       "type": "string",
       "pattern": "^[a-zA-Z0-9]{0,11}$"
     },
