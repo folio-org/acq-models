@@ -14,9 +14,9 @@
     "ABCDEFGHIJKLMNOPQRSTUV"
   ],
   "order_type": "Ongoing",
-  "poNumberPrefix": "ABC",
-  "po_number": "268758",
-  "poNumberSuffix": "XYZ",
+  "poNumberPrefixLen": "2",
+  "po_number": "AB268758XYZ",
+  "poNumberSuffixLen": "3",
   "re_encumber": false,
   "renewal": {
      "cycle": "6 Months",
