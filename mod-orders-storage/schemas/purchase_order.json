@@ -39,22 +39,10 @@
         "type": "string"
       }
     },
-    "poNumberPrefixLen": {
-      "description": "An optional prefix length of the purchase order number",
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 11
-    },
     "po_number": {
       "description": "A human readable ID assigned to this purchase order",
       "type": "string",
       "pattern": "^[a-zA-Z0-9]{5,16}$"
-    },
-    "poNumberSuffixLen": {
-      "description": "An optional suffix length of the purchase order number",
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 11
     },
     "order_type": {
       "description": "the purchase order type",

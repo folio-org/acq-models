@@ -9,9 +9,7 @@
     "ABCDEFGHIJKLMNOPQRSTUV"
   ],
   "order_type": "Ongoing",
-  "poNumberPrefixLen": "3",
-  "po_number": "FEB2687582019",
-  "poNumberSuffixLen": "4",
+  "po_number": "2687582019",
   "re_encumber": false,
   "renewal": {
      "cycle": "6 Months",
