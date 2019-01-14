@@ -1,7 +1,6 @@
 * Incremental Release Notes here.
 # 2019 Q1
  * [MODORDERS-90](https://issues.folio.org/browse/MODORDERS-90)
- * [MODORDERS-108](https://issues.folio.org/browse/MODORDERS-108) Define po_number prefix and suffix
  * [MODORDSTOR-31](https://issues.folio.org/browse/MODORDSTOR-31)
 
 # 2018 Q4
