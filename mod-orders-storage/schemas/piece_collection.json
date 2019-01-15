@@ -12,7 +12,7 @@
         "$ref": "piece.json"
       }
     },
-    "totalRecords": {
+    "total_records": {
       "description": "The number of objects contained in this collection",
       "type": "integer"
     },
