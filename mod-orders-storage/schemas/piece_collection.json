@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "collection of piece records",
+  "type": "object",
+  "properties": {
+    "pieces": {
+      "description": "collection of piece records",
+      "type": "array",
+      "id": "pieces",
+      "items": {
+        "type": "object",
+        "$ref": "piece.json"
+      }
+    },
+    "total_records": {
+      "description": "The number of objects contained in this collection",
+      "type": "integer"
+    },
+    "first": {
+      "description": "The index of the first object contained in this collection",
+      "type": "integer"
+    },
+    "last": {
+      "description": "The index of the last object contained in this collection",
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false
+}

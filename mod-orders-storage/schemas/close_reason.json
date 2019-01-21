@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "purchase order closing reason record",
+  "type": "object",
+  "properties": {
+    "reason": {
+      "description": "close reason description",
+      "type": "string"
+    },
+    "note": {
+      "description": "free-form notes related to closing reason",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

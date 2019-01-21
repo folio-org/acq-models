@@ -3,6 +3,12 @@
   "description": "a vendor phone record",
   "type": "object",
   "properties": {
+    "id": {
+      "description": "The unique id of this category",
+      "type": ["string", "null"],
+      "description": "UUID",
+      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+    },
     "phone_number": {
       "description": "The phone number object for this vendor phone",
       "type": "object",

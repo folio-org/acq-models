@@ -1,0 +1,20 @@
+{
+    "edi_ftps": [
+        {
+            "id": "588b5c42-8634-4af7-bc9b-5e0116ed96b6",
+            "ftp_format": "SFTP",
+            "server_address": "http://127.0.0.1",
+            "username": "edi_username",
+            "password": "edi_password",
+            "ftp_mode": "ASCII",
+            "ftp_conn_mode": "Active",
+            "ftp_port": "22",
+            "order_directory": "/path/to/order/directory",
+            "invoice_directory": "/path/to/invoice/directory",
+            "notes": "My FTP notes"
+        }
+    ],
+    "total_records": 1,
+    "first": 1,
+    "last": 1
+}

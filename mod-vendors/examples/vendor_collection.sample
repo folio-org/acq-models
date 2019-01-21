@@ -33,8 +33,7 @@
             "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
             "56288fe8-8037-44da-8395-01d2d106dc54"
           ],
-          "language": "en",
-          "san_code": "1234567"
+          "language": "en"
         }
       ],
       "phone_numbers": [
@@ -73,7 +72,7 @@
             "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
             "56288fe8-8037-44da-8395-01d2d106dc54"
           ],
-          "notes": ""
+          "notes": "note"
         }
       ],
       "contacts": [
@@ -126,22 +125,21 @@
                   "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
                   "56288fe8-8037-44da-8395-01d2d106dc54"
                 ],
-                "language": "en",
-                "san_code": "1234567"
+                "language": "en"
               }
             ],
             "urls": [
               {
                 "url": {
                   "value": "noreply@folio.org",
-                  "description": ""
+                  "description": "corporate"
                 },
                 "language": "en-us",
                 "categories": [
                   "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
                   "56288fe8-8037-44da-8395-01d2d106dc54"
                 ],
-                "notes": ""
+                "notes": "note"
               }
             ]
           },
@@ -158,7 +156,7 @@
           "name": "History Follower Incentive",
           "discount": 10,
           "reference_url": "http://my_sample_agreement.com",
-          "notes": ""
+          "notes": "note"
         }
       ],
       "erp_code": "AQ-GOBI-HIST",
@@ -188,7 +186,7 @@
         "lib_edi_type": "014/EAN",
         "prorate_tax": true,
         "prorate_fees": true,
-        "edi_naming_convention": "",
+        "edi_naming_convention": "name",
         "send_acct_num": true,
         "support_order": true,
         "support_invoice": true,
@@ -231,10 +229,7 @@
           "notes": "This is the store-front for GOBI.",
           "available": true,
           "delivery_method": "Online",
-          "statistics_format": "PDF",
-          "locally_stored": "",
-          "online_location": "",
-          "statistics_notes": ""
+          "statistics_format": "PDF"
         }
       ],
       "accounts": [
@@ -248,7 +243,7 @@
           "contact_info": "Some basic contact information note.",
           "library_code": "My Library",
           "library_edi_code": "MY-LIB-1",
-          "notes": ""
+          "notes": "note"
         }
       ],
       "changelogs": [
