@@ -83,9 +83,9 @@
         "Closed"
       ]
     },
-    "composite_po_lines": {
+    "compositePoLines": {
       "description": "a list of completely de-referenced purchase order lines",
-      "id": "composite_po_lines",
+      "id": "compositePoLines",
       "type": "array",
       "items": {
         "type": "object",
