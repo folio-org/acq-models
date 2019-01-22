@@ -90,8 +90,7 @@
       "items": {
         "type": "object",
         "$ref": "composite_po_line.json"
-      },
-      "default": null
+      }
     },
     "metadata": {
       "type": "object",
