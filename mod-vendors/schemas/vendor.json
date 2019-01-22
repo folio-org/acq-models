@@ -44,7 +44,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "vendor_address.json"
+        "$ref": "address.json"
       }
     },
     "phone_numbers": {
@@ -53,7 +53,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "vendor_phone.json"
+        "$ref": "phone_number.json"
       }
     },
     "emails": {
@@ -62,7 +62,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "vendor_email.json"
+        "$ref": "email.json"
       }
     },
     "urls": {
@@ -71,7 +71,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "vendor_url.json"
+        "$ref": "url.json"
       }
     },
     "contacts": {
