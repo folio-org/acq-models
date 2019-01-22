@@ -43,6 +43,11 @@
         "$ref": "phone_number.json"
       }
     },
+    "primary_email": {
+      "description": "The email for this contact person",
+      "type": "object",
+      "$ref": "email.json"
+    },
     "emails": {
       "id": "email_addresses",
       "description": "The list of emails for this contact person",
