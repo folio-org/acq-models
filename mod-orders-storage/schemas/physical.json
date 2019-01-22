@@ -13,6 +13,14 @@
       "type": "string",
       "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
+    "expectedReceiptDate": {
+      "description": "vendor agreed date prior to the Receipt Due date item is expected to be received by",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
     "receipt_due": {
       "description": "date item should be received by",
       "type": [
