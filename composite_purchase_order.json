@@ -81,7 +81,8 @@
         "Pending",
         "Open",
         "Closed"
-      ]
+      ],
+      "default": "Pending"
     },
     "po_lines": {
       "description": "a list of completely de-referenced purchase order lines",
