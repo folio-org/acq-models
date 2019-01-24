@@ -5,6 +5,7 @@
   "description": "This is Yankee Book Peddler.",
   "vendor_status": "Active",
   "language": "en-us",
+  "san_code": "1234567",
   "aliases": [
     {
       "value": "YBP",
@@ -17,29 +18,24 @@
   ],
   "addresses": [
     {
-      "address": {
-        "addressLine1": "10 Estes Street",
-        "addressLine2": "",
-        "city": "Ipswich",
-        "stateRegion": "MA",
-        "zipCode": "01938",
-        "country": "USA"
-      },
+      "addressLine1": "10 Estes Street",
+      "addressLine2": "",
+      "city": "Ipswich",
+      "stateRegion": "MA",
+      "zipCode": "01938",
+      "country": "USA",
       "categories": [
         "0e3f9680-ab06-4565-af64-609b7364e6eb",
         "996ecd31-7ca4-4d8d-9bbf-bc94dff5f6c6",
         "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
         "56288fe8-8037-44da-8395-01d2d106dc54"
       ],
-      "language": "en",
-      "san_code": "1234567"
+      "language": "en"
     }
   ],
   "phone_numbers": [
     {
-      "phone_number": {
-        "phone_number": "19789999999"
-      },
+      "phone_number": "19789999999",
       "categories": [
         "0e3f9680-ab06-4565-af64-609b7364e6eb",
         "996ecd31-7ca4-4d8d-9bbf-bc94dff5f6c6"
@@ -49,10 +45,8 @@
   ],
   "emails": [
     {
-      "email": {
-        "value": "noreply@folio.org",
-        "description": "Main"
-      },
+      "value": "noreply@folio.org",
+      "description": "Main",
       "categories": [
         "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
         "56288fe8-8037-44da-8395-01d2d106dc54"
@@ -62,10 +56,8 @@
   ],
   "urls": [
     {
-      "url": {
-        "value": "noreply@folio.org",
-        "description": ""
-      },
+      "value": "noreply@folio.org",
+      "description": "",
       "language": "en-us",
       "categories": [
         "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
@@ -85,9 +77,7 @@
         "notes": "SHIELD's Big Kahuna",
         "phone_numbers": [
           {
-            "phone_number": {
-              "phone_number": "19789999999"
-            },
+            "phone_number": "19789999999",
             "categories": [
               "0e3f9680-ab06-4565-af64-609b7364e6eb",
               "996ecd31-7ca4-4d8d-9bbf-bc94dff5f6c6"
@@ -97,10 +87,8 @@
         ],
         "emails": [
           {
-            "email": {
-              "value": "noreply@folio.org",
-              "description": "Main"
-            },
+            "value": "noreply@folio.org",
+            "description": "Main",
             "categories": [
               "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
               "56288fe8-8037-44da-8395-01d2d106dc54"
@@ -110,30 +98,25 @@
         ],
         "addresses": [
           {
-            "address": {
-              "addressLine1": "10 Estes Street",
-              "addressLine2": "",
-              "city": "Ipswich",
-              "stateRegion": "MA",
-              "zipCode": "01938",
-              "country": "USA"
-            },
+            "addressLine1": "10 Estes Street",
+            "addressLine2": "",
+            "city": "Ipswich",
+            "stateRegion": "MA",
+            "zipCode": "01938",
+            "country": "USA",
             "categories": [
               "0e3f9680-ab06-4565-af64-609b7364e6eb",
               "996ecd31-7ca4-4d8d-9bbf-bc94dff5f6c6",
               "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
               "56288fe8-8037-44da-8395-01d2d106dc54"
             ],
-            "language": "en",
-            "san_code": "1234567"
+            "language": "en"
           }
         ],
         "urls": [
           {
-            "url": {
-              "value": "noreply@folio.org",
-              "description": ""
-            },
+            "value": "noreply@folio.org",
+            "description": "",
             "language": "en-us",
             "categories": [
               "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
