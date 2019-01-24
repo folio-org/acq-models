@@ -32,7 +32,7 @@
     "primary_phone_number": {
       "description": "The contact phone number for this contact person",
       "type": "object",
-      "$ref": "vendor_phone.json"
+      "$ref": "phone_number.json"
     },
     "phone_numbers": {
       "id": "phone_numbers",
@@ -40,13 +40,13 @@
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "vendor_phone.json"
+        "$ref": "phone_number.json"
       }
     },
     "primary_email": {
       "description": "The email for this contact person",
       "type": "object",
-      "$ref": "vendor_email.json"
+      "$ref": "email.json"
     },
     "emails": {
       "id": "email_addresses",
@@ -54,13 +54,13 @@
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "vendor_email.json"
+        "$ref": "email.json"
       }
     },
     "primary_address": {
       "description": "The address for this contact person",
       "type": "object",
-      "$ref": "vendor_address.json"
+      "$ref": "address.json"
     },
     "addresses": {
       "id": "addresses",
@@ -68,13 +68,13 @@
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "vendor_address.json"
+        "$ref": "address.json"
       }
     },
     "primary_url": {
       "description": "The website url for this contact person",
       "type": "object",
-      "$ref": "vendor_url.json"
+      "$ref": "url.json"
     },
     "urls": {
       "id": "urls",
@@ -82,7 +82,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "vendor_url.json"
+        "$ref": "url.json"
       }
     },
     "inactive": {
