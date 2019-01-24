@@ -38,11 +38,6 @@
         "$ref": "alias.json"
       }
     },
-    "primary_address": {
-      "description": "The primary address object for this vendor",
-      "type": "object",
-      "$ref": "address.json"
-    },
     "addresses": {
       "id": "addresses",
       "description": "The list of addresses for this vendor",
@@ -51,11 +46,6 @@
         "type": "object",
         "$ref": "address.json"
       }
-    },
-    "primary_phone": {
-      "description": "The primary phone number object for this vendor",
-      "type": "object",
-      "$ref": "phone_number.json"
     },
     "phone_numbers": {
       "id": "phone_numbers",
@@ -66,11 +56,6 @@
         "$ref": "phone_number.json"
       }
     },
-    "primary_email": {
-      "description": "The primary email object for this vendor",
-      "type": "object",
-      "$ref": "email.json"
-    },
     "emails": {
       "id": "email_addresses",
       "description": "The list of emails for this vendor",
@@ -79,11 +64,6 @@
         "type": "object",
         "$ref": "email.json"
       }
-    },
-    "primary_url": {
-      "description": "The primary url object for this vendor",
-      "type": "object",
-      "$ref": "url.json"
     },
     "urls": {
       "id": "urls",
@@ -112,7 +92,6 @@
         "$ref": "agreement.json"
       }
     },
-
     "erp_code": {
       "description": "The ERP code for this venodr",
       "type": "string"

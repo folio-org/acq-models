@@ -20,6 +20,10 @@
       "description": "The language for this vendor URL",
       "type": "string"
     },
+    "isPrimary": {
+      "description": "Used to set this url as primary for the contact",
+      "type": "boolean"
+    },
     "categories": {
       "id": "categories",
       "description": "The list of categories for this vendor URL",

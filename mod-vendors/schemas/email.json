@@ -16,6 +16,10 @@
       "description": "The description for this email",
       "type": "string"
     },
+    "isPrimary": {
+      "description": "Used to set this email as primary for the contact",
+      "type": "boolean"
+    },
     "categories": {
       "id": "categories",
       "description": "The list of categories for this vendor email",

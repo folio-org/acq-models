@@ -32,6 +32,10 @@
       "description": "The country for this address",
       "type": "string"
     },
+    "isPrimary": {
+      "description": "Used to set this address as primary for the contact",
+      "type": "boolean"
+    },
     "categories": {
       "id": "categories",
       "description": "The list of categories for this vendor address",
