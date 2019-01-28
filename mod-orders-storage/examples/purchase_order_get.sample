@@ -7,6 +7,7 @@
     "reason" : "Shipping delay",
     "note" : "Two years is too long for shipping of 'Calendar for Year 2017'"
   },
+  "dateOrdered": "2018-08-20T00:00:00.000+0000",
   "manual_po": false,
   "notes": [
     "ABCDEFGHIJKLMNO",
@@ -28,7 +29,7 @@
   "vendor": "168f8a86-d26c-406e-813f-c7527f241ac3",
   "workflow_status": "Closed",
   "metadata": {
-    "createdDate": "2018-07-19T00:00:00.000+0000",
+    "createdDate": "2018-08-19T00:00:00.000+0000",
     "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
   }
 }
