@@ -148,6 +148,10 @@
       "description": "The subscription interval for this vendor",
       "type": "integer"
     },
+    "expected_receipt_interval": {
+      "description": "The receipt interval for this vendor",
+      "type": "integer"
+    },
     "tax_id": {
       "description": "The tax ID for this vendor",
       "type": "string"
