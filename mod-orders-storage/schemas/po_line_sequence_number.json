@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Purchase order line sequence number object",
+  "type": "object",
+  "properties": {
+    "po-line-number": {
+      "description": "Purchase order line sequence number",
+      "type": "string",
+      "pattern": "^[0-9]{1,3}$"
+    }
+  },
+  "required": [
+    "po-line-number"
+  ],
+  "additionalProperties": false
+}
