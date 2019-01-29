@@ -5,7 +5,7 @@
   "properties": {
     "sequenceNumber": {
       "description": "Sequence number",
-      "type": "integer"
+      "type": "string"
     }
   },
   "required": [
