@@ -3,14 +3,14 @@
   "description": "Purchase order sequence number object",
   "type": "object",
   "properties": {
-    "po-number": {
+    "sequenceNumber": {
       "description": "Purchase order sequence number",
       "type": "string",
       "pattern": "^[0-9]{5,16}$"
     }
   },
   "required": [
-    "po-number"
+    "sequenceNumber"
   ],
   "additionalProperties": false
 }
