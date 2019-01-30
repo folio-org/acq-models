@@ -86,7 +86,8 @@
         "Pending",
         "Open",
         "Closed"
-      ]
+      ],
+      "default": "Pending"
     },
     "metadata": {
       "type": "object",
