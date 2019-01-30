@@ -133,23 +133,23 @@
       "type": "number"
     },
     "expected_activation_interval": {
-      "description": "The expected activation interval for this vendor",
+      "description": "The expected activation interval (in days) for this vendor",
       "type": "integer"
     },
     "expected_invoice_interval": {
-      "description": "The expected invoice interval for this vendor",
+      "description": "The expected invoice interval (in days) for this vendor",
       "type": "integer"
     },
     "renewal_activation_interval": {
-      "description": "The revewal activation interval for this vendor",
+      "description": "The revewal activation interval (in days) for this vendor",
       "type": "integer"
     },
     "subscription_interval": {
-      "description": "The subscription interval for this vendor",
+      "description": "The subscription interval (in days) for this vendor",
       "type": "integer"
     },
     "expected_receipt_interval": {
-      "description": "The receipt interval for this vendor",
+      "description": "The receipt interval (in days) for this vendor",
       "type": "integer"
     },
     "tax_id": {
