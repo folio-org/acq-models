@@ -1,10 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "A contact person record",
+  "description": "A contact record",
   "type": "object",
   "properties": {
     "id": {
-      "description": "The unique id of this category",
       "type": ["string", "null"],
       "description": "UUID",
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
@@ -83,6 +82,14 @@
       "items": {
         "type": "object",
         "$ref": "url.json"
+      }
+    },
+    "categories": {
+      "id": "contact_category",
+      "description": "The list of contact categories for this vendor contact person",
+      "type": "array",
+      "items": {
+        "type": "string"
       }
     },
     "inactive": {

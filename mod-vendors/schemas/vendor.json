@@ -80,7 +80,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "vendor_contact_person.json"
+        "$ref": "contact.json"
       }
     },
     "agreements": {
