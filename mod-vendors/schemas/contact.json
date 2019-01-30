@@ -89,7 +89,8 @@
       "description": "The list of contact categories for this vendor contact person",
       "type": "array",
       "items": {
-        "type": "string"
+        "type": "object",
+        "$ref": "category.json"
       }
     },
     "inactive": {

@@ -54,7 +54,7 @@
             "urls": [
                 {
                     "url": {
-                        "value": "noreply@folio.org",
+                        "value": "http://folio.org",
                         "description": ""
                     },
                     "language": "en-us",

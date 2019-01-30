@@ -86,7 +86,7 @@
       ],
       "emails": [
         {
-          "value": "noreply@folio.org",
+          "value": "http://folio.org",
           "description": "Main",
           "categories": [
             "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
@@ -114,7 +114,7 @@
       ],
       "urls": [
         {
-          "value": "noreply@folio.org",
+          "value": "http://folio.org",
           "description": "corporate",
           "language": "en-us",
           "categories": [
