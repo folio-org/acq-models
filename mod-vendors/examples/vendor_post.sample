@@ -159,6 +159,7 @@
   "expected_invoice_interval": 5,
   "renewal_activation_interval": 1,
   "subscription_interval": 365,
+  "expected_receipt_interval": 1,
   "liable_for_vat": false,
   "tax_id": "TX-GOBI-HIST",
   "tax_percentage": 5,

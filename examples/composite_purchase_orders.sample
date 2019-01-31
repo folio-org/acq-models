@@ -18,6 +18,7 @@
         "reason" : "No longer available",
         "note" : "Items are no longer available to purchase"
       },
+      "dateOrdered": "2018-07-20T00:00:00.000+0000",
       "notes": [
         "ABCDEFGHIJKLMNO",
         "ABCDEFGHIJKLMNOPQRST",
@@ -41,7 +42,7 @@
         "createdDate": "2018-07-19T00:00:00.000+0000",
         "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
       },
-      "po_lines": [
+      "compositePoLines": [
         {
           "id": "f97355de-9a18-4bbb-ac47-066d6a52e27a"
         },

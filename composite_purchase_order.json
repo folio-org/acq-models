@@ -27,6 +27,12 @@
       "type": "object",
       "$ref": "mod-orders-storage/schemas/close_reason.json"
     },
+    "dateOrdered": {
+      "description": "Date and time when purchase order was opened",
+      "type": "string",
+      "format": "date-time",
+      "readonly": true
+    },
     "manual_po": {
       "description": "if true, order cannot be sent automatically, e.g. via EDI",
       "type": "boolean"
@@ -84,9 +90,9 @@
       ],
       "default": "Pending"
     },
-    "po_lines": {
+    "compositePoLines": {
       "description": "a list of completely de-referenced purchase order lines",
-      "id": "po_lines",
+      "id": "compositePoLines",
       "type": "array",
       "items": {
         "type": "object",

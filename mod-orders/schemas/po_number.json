@@ -3,14 +3,14 @@
   "description": "Generated PO number object",
   "type": "object",
   "properties": {
-    "po_number": {
+    "poNumber": {
       "description": "A human readable generated or manually entered ID assigned to the purchase order",
       "type": "string",
       "pattern": "^[a-zA-Z0-9]{5,16}$"
     }
   },
   "required": [
-    "po_number"
+    "poNumber"
   ],
   "additionalProperties": false
 }
