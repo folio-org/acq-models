@@ -90,9 +90,9 @@
       ],
       "default": "Pending"
     },
-    "po_lines": {
+    "compositePoLines": {
       "description": "a list of completely de-referenced purchase order lines",
-      "id": "po_lines",
+      "id": "compositePoLines",
       "type": "array",
       "items": {
         "type": "object",
