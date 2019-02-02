@@ -32,8 +32,8 @@
      "review_period": 30,
      "renewal_date": "2019-04-09T00:00:00.000Z"
   },
-  "total_estimated_price": 49.98,
-  "total_items": 2,
+  "total_estimated_price": 74.97,
+  "total_items": 3,
   "vendor": "168f8a86-d26c-406e-813f-c7527f241ac3",
   "workflow_status": "Open",
   "metadata": {
@@ -42,7 +42,7 @@
   },
   "compositePoLines": [
     {
-      "id": "c0d08448-347b-418a-8c2f-5fb50248d67e",
+      "id": "8c778aee-97fa-4586-b131-3ea588a728e2",
       "edition": "First edition",
       "checkin_items": false,
       "instance_id": "8343e5a0-fed8-11e8-8eb2-f2801f1b9fd1",
@@ -90,9 +90,9 @@
         "list_price": 24.99,
         "id": "e047212b-c94f-4cb1-84b0-367848381494",
         "currency": "USD",
-        "quantity_physical": 1,
-        "quantity_electronic": 1,
-        "po_line_estimated_price": 49.98,
+        "quantity_physical": 3,
+        "quantity_electronic": 0,
+        "po_line_estimated_price": 74.97,
         "po_line_id": "8c778aee-97fa-4586-b131-3ea588a728e2"
       },
       "description": "ABCDEFGH",
@@ -118,7 +118,7 @@
         "id": "468b679c-378b-4009-9a17-a6711cefc85f",
         "activated": false,
         "activation_due": 10,
-        "create_inventory": true,
+        "create_inventory": false,
         "trial": false,
         "expected_activation": "2018-10-09T00:00:00.000Z",
         "user_limit": 10,
@@ -132,24 +132,34 @@
           "code": "HIST",
           "percentage": 80.0,
           "encumbrance": "eb506834-6c70-4239-8d1a-6414a5b08ac3",
-          "po_line_id": "c0d08448-347b-418a-8c2f-5fb50248d67e"
+          "po_line_id": "8c778aee-97fa-4586-b131-3ea588a728e2"
         },
         {
           "id": "0d1b2d39-512f-4e0f-a497-b89eba6ecae9",
           "code": "GENRL",
           "percentage": 20.0,
           "encumbrance": "0466cb77-0344-43c6-85eb-0a64aa2934e5",
-          "po_line_id": "c0d08448-347b-418a-8c2f-5fb50248d67e"
+          "po_line_id": "8c778aee-97fa-4586-b131-3ea588a728e2"
         }
       ],
-      "location": {
-        "id": "a4e65e03-99a4-4b39-8e6a-ae666ac52bea",
-        "location_id": "eb2d063a-5b4c-4cab-8db1-5fc5c5941df6",
-        "quantity": 2,
-        "quantity_electronic": 1,
-        "quantity_physical": 1,
-        "po_line_id": "8c778aee-97fa-4586-b131-3ea588a728e2"
-      },
+      "locations": [
+        {
+          "id": "a4e65e03-99a4-4b39-8e6a-ae666ac52bea",
+          "location_id": "b241764c-1466-4e1d-a028-1a3684a5da87",
+          "quantity": 2,
+          "quantity_electronic": 0,
+          "quantity_physical": 2,
+          "po_line_id": "8c778aee-97fa-4586-b131-3ea588a728e2"
+        },
+        {
+          "id": "7d23e4e3-5043-44b0-9507-66e58d236f20",
+          "location_id": "fcd64ce1-6995-48f0-840e-89ffa2288371",
+          "quantity": 1,
+          "quantity_electronic": 0,
+          "quantity_physical": 1,
+          "po_line_id": "8c778aee-97fa-4586-b131-3ea588a728e2"
+        }
+      ],
       "order_format": "Physical Resource",
       "owner": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
       "payment_status": "Awaiting Payment",

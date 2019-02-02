@@ -130,10 +130,15 @@
         "$ref": "mod-orders-storage/schemas/fund_distribution.json"
       }
     },
-    "location": {
-      "description": "location details of this purchase order line",
-      "type": "object",
-      "$ref": "mod-orders-storage/schemas/location.json"
+    "locations": {
+      "description": "a list of the location records for this purchase order line",
+      "id": "locations",
+      "type": "array",
+      "items": {
+        "description": "The location details",
+        "type": "object",
+        "$ref": "mod-orders-storage/schemas/location.json"
+      }
     },
     "order_format": {
       "description": "The purchase order line format",

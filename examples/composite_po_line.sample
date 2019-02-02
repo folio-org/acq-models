@@ -47,9 +47,9 @@
     "list_price": 24.99,
     "id": "e047212b-c94f-4cb1-84b0-367848381494",
     "currency": "USD",
-    "quantity_physical": 1,
+    "quantity_physical": 6,
     "quantity_electronic": 1,
-    "po_line_estimated_price": 49.98,
+    "po_line_estimated_price": 174.93,
     "po_line_id": "8c778aee-97fa-4586-b131-3ea588a728e2"
   },
   "description": "ABCDEFGH",
@@ -99,15 +99,25 @@
       "po_line_id": "c0d08448-347b-418a-8c2f-5fb50248d67e"
     }
   ],
-  "location": {
-    "id": "a4e65e03-99a4-4b39-8e6a-ae666ac52bea",
-    "location_id": "eb2d063a-5b4c-4cab-8db1-5fc5c5941df6",
-    "quantity": 2,
-    "quantity_electronic": 1,
-    "quantity_physical": 1,
-    "po_line_id": "8c778aee-97fa-4586-b131-3ea588a728e2"
-  },
-  "order_format": "Physical Resource",
+  "locations": [
+    {
+      "id": "a4e65e03-99a4-4b39-8e6a-ae666ac52bea",
+      "location_id": "b241764c-1466-4e1d-a028-1a3684a5da87",
+      "quantity": 5,
+      "quantity_electronic": 1,
+      "quantity_physical": 4,
+      "po_line_id": "8c778aee-97fa-4586-b131-3ea588a728e2"
+    },
+    {
+      "id": "7d23e4e3-5043-44b0-9507-66e58d236f20",
+      "location_id": "fcd64ce1-6995-48f0-840e-89ffa2288371",
+      "quantity": 2,
+      "quantity_electronic": 0,
+      "quantity_physical": 2,
+      "po_line_id": "8c778aee-97fa-4586-b131-3ea588a728e2"
+    }
+  ],
+  "order_format": "P/E Mix",
   "owner": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
   "payment_status": "Awaiting Payment",
   "physical": {
