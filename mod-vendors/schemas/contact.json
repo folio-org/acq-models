@@ -1,10 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "A contact person record",
+  "description": "A contact record",
   "type": "object",
   "properties": {
     "id": {
-      "description": "The unique id of this category",
       "type": ["string", "null"],
       "description": "UUID",
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
@@ -29,11 +28,6 @@
       "description": "The notes for this contact person",
       "type": "string"
     },
-    "primary_phone_number": {
-      "description": "The contact phone number for this contact person",
-      "type": "object",
-      "$ref": "phone_number.json"
-    },
     "phone_numbers": {
       "id": "phone_numbers",
       "description": "The list of phone numbers for this contact person",
@@ -42,11 +36,6 @@
         "type": "object",
         "$ref": "phone_number.json"
       }
-    },
-    "primary_email": {
-      "description": "The email for this contact person",
-      "type": "object",
-      "$ref": "email.json"
     },
     "emails": {
       "id": "email_addresses",
@@ -57,11 +46,6 @@
         "$ref": "email.json"
       }
     },
-    "primary_address": {
-      "description": "The address for this contact person",
-      "type": "object",
-      "$ref": "address.json"
-    },
     "addresses": {
       "id": "addresses",
       "description": "The list of addresses for this contact person",
@@ -71,11 +55,6 @@
         "$ref": "address.json"
       }
     },
-    "primary_url": {
-      "description": "The website url for this contact person",
-      "type": "object",
-      "$ref": "url.json"
-    },
     "urls": {
       "id": "urls",
       "description": "The list of URLs for this contact person",
@@ -83,6 +62,15 @@
       "items": {
         "type": "object",
         "$ref": "url.json"
+      }
+    },
+    "categories": {
+      "id": "contact_category",
+      "description": "The list of contact categories for this vendor contact person",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "category.json"
       }
     },
     "inactive": {

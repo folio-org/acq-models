@@ -1,19 +1,19 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "collection of vendor contact person records",
+    "description": "collection of contact records",
     "type": "object",
     "properties": {
-      "vendor_contact_persons": {
-        "description": "The list of vendor contact persons in this collection",
+      "contacts": {
+        "description": "The list of contactss in this collection",
         "type": "array",
-        "id": "vendor_contact_persons",
+        "id": "contacts",
         "items": {
           "type": "object",
-          "$ref": "vendor_contact_person.json"
+          "$ref": "contact.json"
         }
       },
       "total_records": {
-        "description": "The number of vendor contact person records returned in this collection",
+        "description": "The number of contact person records returned in this collection",
         "type": "integer"
       },
       "first": {
@@ -27,7 +27,7 @@
     },
     "additionalProperties": false,
     "required": [
-      "vendor_contact_persons",
+      "contacts",
       "total_records"
     ]
   }

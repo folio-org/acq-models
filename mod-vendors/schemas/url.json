@@ -10,7 +10,8 @@
     },
     "value": {
       "description": "The value for this URL",
-      "type": "string"
+      "type": ["string", "null"],
+      "pattern": "^(?i)(http|ftp)(s)?://.+$"
     },
     "description": {
       "description": "The description for this URL",
