@@ -15,7 +15,7 @@
     },
     "server_address": {
       "description": "The server address for this EDI",
-      "type": ["string", "null"],
+      "type": "string",
       "pattern": "^(?i)(http|ftp)(s)?://.+$"
     },
     "username": {
