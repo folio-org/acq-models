@@ -3,13 +3,13 @@
     "description": "collection of contact records",
     "type": "object",
     "properties": {
-      "contact_persons": {
-        "description": "The list of vendor addresses in this collection",
+      "contacts": {
+        "description": "The list of contactss in this collection",
         "type": "array",
-        "id": "contact_persons",
+        "id": "contacts",
         "items": {
           "type": "object",
-          "$ref": "contact_person.json"
+          "$ref": "contact.json"
         }
       },
       "total_records": {
@@ -27,7 +27,7 @@
     },
     "additionalProperties": false,
     "required": [
-      "contact_persons",
+      "contacts",
       "total_records"
     ]
   }
