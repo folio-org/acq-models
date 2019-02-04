@@ -28,11 +28,6 @@
       "description": "The notes for this contact person",
       "type": "string"
     },
-    "primary_phone_number": {
-      "description": "The contact phone number for this contact person",
-      "type": "object",
-      "$ref": "phone_number.json"
-    },
     "phone_numbers": {
       "id": "phone_numbers",
       "description": "The list of phone numbers for this contact person",
@@ -41,11 +36,6 @@
         "type": "object",
         "$ref": "phone_number.json"
       }
-    },
-    "primary_email": {
-      "description": "The email for this contact person",
-      "type": "object",
-      "$ref": "email.json"
     },
     "emails": {
       "id": "email_addresses",
@@ -56,11 +46,6 @@
         "$ref": "email.json"
       }
     },
-    "primary_address": {
-      "description": "The address for this contact person",
-      "type": "object",
-      "$ref": "address.json"
-    },
     "addresses": {
       "id": "addresses",
       "description": "The list of addresses for this contact person",
@@ -69,11 +54,6 @@
         "type": "object",
         "$ref": "address.json"
       }
-    },
-    "primary_url": {
-      "description": "The website url for this contact person",
-      "type": "object",
-      "$ref": "url.json"
     },
     "urls": {
       "id": "urls",

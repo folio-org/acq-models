@@ -75,7 +75,7 @@
       }
     },
     "contacts": {
-      "id": "vendor_contact_person",
+      "id": "contact",
       "description": "The list of contacts for this vendor",
       "type": "array",
       "items": {
