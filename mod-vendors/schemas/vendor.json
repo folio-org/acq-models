@@ -167,7 +167,167 @@
     "edi": {
       "description": "The EDI object for this vendor",
       "type": "object",
-      "$ref": "edi.json"
+      "properties": {
+        "vendor_edi_code": {
+          "description": "The vendor code for this EDI",
+          "type": "string"
+        },
+        "vendor_edi_type": {
+          "description": "The vendor type for this EDI",
+          "type": "string"
+        },
+        "lib_edi_code": {
+          "description": "The library code for this EDI",
+          "type": "string"
+        },
+        "lib_edi_type": {
+          "description": "The library type for this EDI",
+          "type": "string"
+        },
+        "prorate_tax": {
+          "description": "The setting to prorate tax for this EDI",
+          "type": "boolean"
+        },
+        "prorate_fees": {
+          "description": "The setting to prorate fees for this EDI",
+          "type": "boolean"
+        },
+        "edi_naming_convention": {
+          "description": "The naming convention for this EDI",
+          "type": "string"
+        },
+        "send_acct_num": {
+          "description": "The setting to send the account number for this EDI",
+          "type": "boolean"
+        },
+        "support_order": {
+          "description": "The setting to support order for this EDI",
+          "type": "boolean"
+        },
+        "support_invoice": {
+          "description": "The setting to support invoice for this EDI",
+          "type": "boolean"
+        },
+        "notes": {
+          "description": "The notes for this EDI",
+          "type": "string"
+        },
+        "edi_ftp": {
+          "description": "The FTP object for this EDI",
+          "type": "object",
+          "properties": {
+            "ftp_format": {
+              "description": "The FTP format for this EDI",
+              "type": "string"
+            },
+            "server_address": {
+              "description": "The server address for this EDI",
+              "type": ["string", "null"],
+              "pattern": "^(?i)(http|ftp)(s)?://.+$"
+            },
+            "username": {
+              "description": "The login username for this EDI",
+              "type": "string"
+            },
+            "password": {
+              "description": "The login password for this EDI",
+              "type": "string"
+            },
+            "ftp_mode": {
+              "description": "The FTP mode for this EDI",
+              "type": "string"
+            },
+            "ftp_conn_mode": {
+              "description": "The FTP connection mode for this EDI",
+              "type": "string"
+            },
+            "ftp_port": {
+              "description": "The port for this EDI",
+              "type": "string"
+            },
+            "order_directory": {
+              "description": "The order directory for this EDI",
+              "type": "string"
+            },
+            "invoice_directory": {
+              "description": "The invoice directory for this EDI",
+              "type": "string"
+            },
+            "notes": {
+              "description": "The notes for this EDI",
+              "type": "string"
+            }
+          }
+        },
+        "edi_job": {
+          "description": "The job object for this EDI",
+          "type": "object",
+          "properties": {
+            "schedule_edi": {
+              "description": "The schedule for this EDI job",
+              "type": "boolean"
+            },
+            "date": {
+              "description": "The date for this EDI job",
+              "type": ["string", "null"],
+              "format": "date-time"
+            },
+            "time": {
+              "description": "The time for this EDI job",
+              "type": ["string", "null"],
+              "format": "date-time"
+            },
+            "is_monday": {
+              "description": "The setting to run this EDI job on Mondays",
+              "type": "boolean"
+            },
+            "is_tuesday": {
+              "description": "The setting to run this EDI job on Tuesdays",
+              "type": "boolean"
+            },
+            "is_wednesday": {
+              "description": "The setting to run this EDI job on Wednesdays",
+              "type": "boolean"
+            },
+            "is_thursday": {
+              "description": "The setting to run this EDI job on Thursdays",
+              "type": "boolean"
+            },
+            "is_friday": {
+              "description": "The setting to run this EDI job on Fridays",
+              "type": "boolean"
+            },
+            "is_saturday": {
+              "description": "The setting to run this EDI job on Saturdays",
+              "type": "boolean"
+            },
+            "is_sunday": {
+              "description": "The setting to run this EDI job on Sundays",
+              "type": "boolean"
+            },
+            "send_to_emails": {
+              "description": "The email addresses to notify when this EDI job runs",
+              "type": "string"
+            },
+            "notify_all_edi": {
+              "description": "The setting to notify all receivers when this EDI job runs",
+              "type": "boolean"
+            },
+            "notify_invoice_only": {
+              "description": "The setting to notify only the invoice receiver when this EDI job runs",
+              "type": "boolean"
+            },
+            "notify_error_only": {
+              "description": "The setting to notiry on the error receiver when this EDI job runs",
+              "type": "boolean"
+            },
+            "scheduling_notes": {
+              "description": "The schedule notes for this EDI job",
+              "type": "string"
+            }
+          }
+        }
+      }
     },
     "interfaces": {
       "id": "interfaces",
