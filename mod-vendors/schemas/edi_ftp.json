@@ -6,7 +6,6 @@
     "id": {
       "description": "The unique id of this category",
       "type": ["string", "null"],
-      "description": "UUID",
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     },
     "ftp_format": {
@@ -15,8 +14,8 @@
     },
     "server_address": {
       "description": "The server address for this EDI",
-      "type": ["string", "null"],
-      "pattern": "^(?i)(http|ftp)(s)?://.+$"
+      "type": "string",
+      "pattern": "^([Hh][Tt][Tt][Pp]|[Ff][Tt][Pp])([Ss])?://.+$"
     },
     "username": {
       "description": "The login username for this EDI",
