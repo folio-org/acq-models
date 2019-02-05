@@ -11,7 +11,7 @@
     "value": {
       "description": "The value for this URL",
       "type": "string",
-      "pattern": "^(?i)(http|ftp)(s)?:\/\/.+$"
+      "pattern": "^([Hh][Tt][Tt][Pp]|[Ff][Tt][Pp])([Ss])?://.+$"
     },
     "description": {
       "description": "The description for this URL",
