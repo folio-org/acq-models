@@ -205,7 +205,7 @@
         },
         "edi_job": {
           "schedule_edi": false,
-          "date": null,
+          "scheduling_date": null,
           "time": null,
           "is_monday": false,
           "is_tuesday": false,
