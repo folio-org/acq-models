@@ -180,14 +180,14 @@
       "password": "edi_password",
       "ftp_mode": "ASCII",
       "ftp_conn_mode": "Active",
-      "ftp_port": "22",
+      "ftp_port": 22,
       "order_directory": "/path/to/order/directory",
       "invoice_directory": "/path/to/invoice/directory",
       "notes": "My FTP notes"
     },
     "edi_job": {
       "schedule_edi": false,
-      "date": null,
+      "scheduling_date": null,
       "time": null,
       "is_monday": false,
       "is_tuesday": false,
