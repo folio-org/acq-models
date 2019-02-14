@@ -15,14 +15,6 @@
     "total_records": {
       "description": "The number of objects contained in this collection",
       "type": "integer"
-    },
-    "first": {
-      "description": "The index of the first object contained in this collection",
-      "type": "integer"
-    },
-    "last": {
-      "description": "The index of the last object contained in this collection",
-      "type": "integer"
     }
   },
   "additionalProperties": false
