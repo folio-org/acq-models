@@ -38,6 +38,10 @@
                   "description": "The volume or caption of the item",
                   "type": "string"
                 },
+                "itemStatus": {
+                  "description": "The status of the item",
+                  "type": "string"
+                },
                 "locationId": {
                   "description": "The id of the location",
                   "type": "string",
@@ -50,6 +54,7 @@
                 }
               },
               "required": [
+                "itemStatus",
                 "pieceId"
               ],
               "additionalProperties": false
