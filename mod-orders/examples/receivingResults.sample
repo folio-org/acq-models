@@ -15,7 +15,10 @@
           "pieceId": "cb9b0468-f2b4-4a13-b64c-662c4c9ec3ed",
           "processingStatus": {
             "type": "failure",
-            "message": "The item has not been updated in the inventory"
+            "error": {
+              "code": "pieceAlreadyReceived",
+              "message": "The piece record is already received"
+            }
           }
         }
       ]
