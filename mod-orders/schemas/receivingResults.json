@@ -47,9 +47,11 @@
                         "failure"
                       ]
                     },
-                    "message": {
-                      "description": "The message describing processed piece record",
-                      "type": "string"
+                    "error": {
+                      "description": "Error details in case receiving process for the piece record has failed",
+                      "type": "object",
+                      "$ref": "../../../raml-util/schemas/error.schema",
+                      "readonly": true
                     }
                   },
                   "required": [
