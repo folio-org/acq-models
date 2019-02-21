@@ -212,7 +212,8 @@
         "Partially Received",
         "Pending",
         "Receipt Not Required"
-      ]
+      ],
+      "default": "Pending"
     },
     "reporting_codes": {
       "description": "a list of reporting codes associated with this purchase order line",
