@@ -12,7 +12,7 @@
         "$ref": "alert.json"
       }
     },
-    "total_records": {
+    "totalRecords": {
       "description": "The number of objects contained in this collection",
       "type": "integer"
     }
@@ -20,6 +20,6 @@
   "additionalProperties": false,
   "required": [
     "alerts",
-    "total_records"
+    "totalRecords"
   ]
 }

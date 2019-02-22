@@ -3,24 +3,19 @@
   "description": "purchase order line vendor details",
   "type": "object",
   "properties": {
-    "id": {
-      "description": "UUID of this vendor details record",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
-    },
     "instructions": {
       "description": "special instructions for the vendor",
       "type": "string"
     },
-    "note_from_vendor": {
+    "noteFromVendor": {
       "description": "free-form notes from the vendor",
       "type": "string"
     },
-    "ref_number": {
+    "refNumber": {
       "description": "a reference number for this purchase order line",
       "type": "string"
     },
-    "ref_number_type": {
+    "refNumberType": {
       "description": "the reference number type",
       "type": "string",
       "enum": [
@@ -31,14 +26,9 @@
         "Internal vendor number"
       ]
     },
-    "vendor_account": {
+    "vendorAccount": {
       "description": "the accound number on the vendor's end associated with this purchase order line",
       "type": "string"
-    },
-    "po_line_id": {
-      "description": "UUID of the purchase order line this record is associated with",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     }
   },
   "additionalProperties": false,

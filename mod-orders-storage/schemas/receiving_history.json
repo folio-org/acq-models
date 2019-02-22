@@ -52,7 +52,7 @@
       "format": "date-time"
     },
     "receivingNote": {
-      "description": "A note at the po_line level pertaining to receiving/check-in",
+      "description": "A note at the poLine level pertaining to receiving/check-in",
       "type": "string"
     },
     "receivingStatus": {
@@ -68,7 +68,7 @@
       "type": "boolean"
     },
     "title": {
-      "description": "Title of the instance this po_line is associated with",
+      "description": "Title of the instance this poLine is associated with",
       "type": "string"
     }
   },

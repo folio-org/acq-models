@@ -3,23 +3,23 @@
   "description": "collection of reporting code records",
   "type": "object",
   "properties": {
-    "reporting_codes": {
+    "reportingCodes": {
       "description": "collection of reporting code records",
       "type": "array",
-      "id": "reporting_codes",
+      "id": "reportingCodes",
       "items": {
         "type": "object",
         "$ref": "reporting_code.json"
       }
     },
-    "total_records": {
+    "totalRecords": {
       "description": "The number of objects contained in this collection",
       "type": "integer"
     }
   },
   "additionalProperties": false,
   "required": [
-    "reporting_codes",
-    "total_records"
+    "reportingCodes",
+    "totalRecords"
   ]
 }
