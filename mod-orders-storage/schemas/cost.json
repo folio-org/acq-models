@@ -15,7 +15,7 @@
       "description": "quantity of physical items in this purchase order line",
       "type": "integer"
     },
-    "quantityPlectronic": {
+    "quantityElectronic": {
       "description": "quantity of electronic items in this purchase order line",
       "type": "integer"
     },
