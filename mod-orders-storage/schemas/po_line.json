@@ -43,8 +43,8 @@
     },
     "adjustment": {
       "description": "adjustment record associated with this purchase order line",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "type": "object",
+      "$ref": "adjustment.json"
     },
     "alerts": {
       "description": "an array of alert record IDs",
@@ -70,8 +70,8 @@
       "type": "array",
       "items": {
         "description": "claim record",
-        "type": "string",
-        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+        "type": "object",
+        "$ref": "claim.json"
       }
     },
     "collection": {
@@ -84,23 +84,13 @@
       "type": "array",
       "items": {
         "type": "object",
-        "properties": {
-          "contributor": {
-            "description": "the name of a contributor to the material",
-            "type": "string"
-          },
-          "contributorType": {
-            "description": "UUID of the contributor type",
-            "type": "string",
-            "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
-          }
-        }
+        "$ref": "contributor.json"
       }
     },
     "cost": {
       "description": "cost record",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "type": "object",
+      "$ref": "cost.json"
     },
     "description": {
       "description": "description of the material",
@@ -108,8 +98,8 @@
     },
     "details": {
       "description": "details record",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "type": "object",
+      "$ref": "details.json"
     },
     "donor": {
       "description": "the donor contributing to this purchase order line",
@@ -117,8 +107,8 @@
     },
     "eresource": {
       "description": "eresource record",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "type": "object",
+      "$ref": "eresource.json"
     },
     "fundDistribution": {
       "description": "Fund distribution records for this purchase order line",
@@ -126,8 +116,8 @@
       "type": "array",
       "items": {
         "description": "fund distribution record",
-        "type": "string",
-        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+        "type": "object",
+        "$ref": "fund_distribution.json"
       }
     },
     "locations": {
@@ -136,8 +126,8 @@
       "type": "array",
       "items": {
         "description": "location record",
-        "type": "string",
-        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+        "type": "object",
+        "$ref": "location.json"
       }
     },
     "orderFormat": {
@@ -168,8 +158,8 @@
     },
     "physical": {
       "description": "UUID of the physical (details) record",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "type": "object",
+      "$ref": "physical.json"
     },
     "poLineDescription": {
       "description": "purchase order line description",
@@ -238,8 +228,8 @@
     },
     "source": {
       "description": "source record",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "type": "object",
+      "$ref": "source.json"
     },
     "tags": {
       "description": "arbitrary tags associated with this purchase order line",

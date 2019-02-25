@@ -3,8 +3,7 @@
         [
           {
             "alert": "Receipt overdue",
-            "id": "9a665b22-9fe5-4c95-b4ee-837a5433c95d",
-            "poLineId": "8c778aee-97fa-4586-b131-3ea588a728e2"
+            "id": "9a665b22-9fe5-4c95-b4ee-837a5433c95d"
           }
         ],
     "totalRecords": 1
