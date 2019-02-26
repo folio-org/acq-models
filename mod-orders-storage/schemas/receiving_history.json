@@ -31,6 +31,11 @@
       "type": "string",
       "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
+    "orderFormat": {
+      "description": "The purchase order line format",
+      "type": "object",
+      "$ref": "order_format.json"
+    },
     "poLineId": {
       "description": "UUID of the purchase order line this record is associated with",
       "type": "string",
@@ -45,6 +50,11 @@
       "description": "UUID of associated purchase order",
       "type": "string",
       "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
+    "receiptStatus": {
+      "description": "The purchase order line receipt status",
+      "type": "object",
+      "$ref": "receipt_status.json"
     },
     "receivedDate": {
       "description": "date received",
