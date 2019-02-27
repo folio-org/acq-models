@@ -8,6 +8,7 @@
           "barcode": "0987654321",
           "comment": "Very important note",
           "caption": "Vol. 1",
+          "itemStatus": "Received",
           "locationId": "eb2d063a-5b4c-4cab-8db1-5fc5c5941df6",
           "pieceId": "c18c49b7-d970-44d6-b5d4-bd76c1c62d83"
         },
@@ -15,7 +16,8 @@
           "barcode": "0987654111",
           "comment": "Very important note",
           "caption": "Vol. 2",
-          "locationId": "eb2d063a-5b4c-4cab-8db1-5fc5c5941df6"
+          "itemStatus": "Received",
+          "locationId": "eb2d063a-5b4c-4cab-8db1-5fc5c5941df6",
           "pieceId": "cb9b0468-f2b4-4a13-b64c-662c4c9ec3ed"
         }
       ]
@@ -28,7 +30,8 @@
           "barcode": "0987654333",
           "comment": "Very important note",
           "caption": "Vol. 286",
-          "locationId": "279f42ce-17d1-463e-b890-deeebd1baeee"
+          "itemStatus": "In transit",
+          "locationId": "279f42ce-17d1-463e-b890-deeebd1baeee",
           "pieceId": "20241b8c-9076-4cf5-817b-f2c1e2cb242f"
         }
       ]
