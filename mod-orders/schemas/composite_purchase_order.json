@@ -11,7 +11,7 @@
     "adjustment": {
       "description": "the adjustment record associated with this order",
       "type": "object",
-      "$ref": "mod-orders-storage/schemas/adjustment.json"
+      "$ref": "../../mod-orders-storage/schemas/adjustment.json"
     },
     "approved": {
       "description": "whether or not the purchase order has been approved",
@@ -25,7 +25,7 @@
     "close_reason": {
       "description": "Close reason for purchase order",
       "type": "object",
-      "$ref": "mod-orders-storage/schemas/close_reason.json"
+      "$ref": "../../mod-orders-storage/schemas/close_reason.json"
     },
     "dateOrdered": {
       "description": "Date and time when purchase order was opened",
@@ -65,7 +65,7 @@
     "renewal": {
       "description": "Renewal information associated with this order",
       "type": "object",
-      "$ref": "mod-orders-storage/schemas/renewal.json"
+      "$ref": "../../mod-orders-storage/schemas/renewal.json"
     },
     "total_estimated_price": {
       "description": "total estimated price of this purchase order",
@@ -101,7 +101,7 @@
     },
     "metadata": {
       "type": "object",
-      "$ref": "../raml-util/schemas/metadata.schema",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
       "readonly": true
     }
   },

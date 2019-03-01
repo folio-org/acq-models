@@ -44,7 +44,7 @@
     "adjustment": {
       "description": "the adjustment record associated with this purchase order line",
       "type": "object",
-      "$ref": "mod-orders-storage/schemas/adjustment.json"
+      "$ref": "../../mod-orders-storage/schemas/adjustment.json"
     },
     "alerts": {
       "description": "alerts associated with this purchase order line",
@@ -53,7 +53,7 @@
       "items": {
         "description": "an alert record",
         "type": "object",
-        "$ref": "mod-orders-storage/schemas/alert.json"
+        "$ref": "../../mod-orders-storage/schemas/alert.json"
       }
     },
     "cancellation_restriction": {
@@ -71,7 +71,7 @@
       "items": {
         "description": "a claim record",
         "type": "object",
-        "$ref": "mod-orders-storage/schemas/claim.json"
+        "$ref": "../../mod-orders-storage/schemas/claim.json"
       }
     },
     "collection": {
@@ -100,7 +100,7 @@
     "cost": {
       "description": "cost details associated with this purchase order line",
       "type": "object",
-      "$ref": "mod-orders-storage/schemas/cost.json"
+      "$ref": "../../mod-orders-storage/schemas/cost.json"
     },
     "description": {
       "description": "description of the material",
@@ -109,7 +109,7 @@
     "details": {
       "description": "details about this purchase order line",
       "type": "object",
-      "$ref": "mod-orders-storage/schemas/details.json"
+      "$ref": "../../mod-orders-storage/schemas/details.json"
     },
     "donor": {
       "description": "the donor contributing to this purchase order line",
@@ -118,7 +118,7 @@
     "eresource": {
       "description": "eresource-related details of this purchase order line",
       "type": "object",
-      "$ref": "mod-orders-storage/schemas/eresource.json"
+      "$ref": "../../mod-orders-storage/schemas/eresource.json"
     },
     "fund_distribution": {
       "description": "the UUIDs of the fund distribution records for this purchase order line",
@@ -127,7 +127,7 @@
       "items": {
         "description": "a fund distribution record",
         "type": "object",
-        "$ref": "mod-orders-storage/schemas/fund_distribution.json"
+        "$ref": "../../mod-orders-storage/schemas/fund_distribution.json"
       }
     },
     "locations": {
@@ -137,7 +137,7 @@
       "items": {
         "description": "The location details",
         "type": "object",
-        "$ref": "mod-orders-storage/schemas/location.json"
+        "$ref": "../../mod-orders-storage/schemas/location.json"
       }
     },
     "order_format": {
@@ -169,7 +169,7 @@
     "physical": {
       "description": "details of this purchase order line relating to physical materials",
       "type": "object",
-      "$ref": "mod-orders-storage/schemas/physical.json"
+      "$ref": "../../mod-orders-storage/schemas/physical.json"
     },
     "po_line_description": {
       "description": "purchase order line description",
@@ -222,7 +222,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "mod-orders-storage/schemas/reporting_code.json"
+        "$ref": "../../mod-orders-storage/schemas/reporting_code.json"
       }
     },
     "requester": {
@@ -240,7 +240,7 @@
     "source": {
       "description": "details related to the source of this purchase order line",
       "type": "object",
-      "$ref": "mod-orders-storage/schemas/source.json"
+      "$ref": "../../mod-orders-storage/schemas/source.json"
     },
     "tags": {
       "description": "arbitrary tags associated with this purchase order line",
@@ -257,11 +257,11 @@
     "vendor_detail": {
       "description": "details related to the vendor of this purchase order line",
       "type": "object",
-      "$ref": "mod-orders-storage/schemas/vendor_detail.json"
+      "$ref": "../../mod-orders-storage/schemas/vendor_detail.json"
     },
     "metadata": {
       "type": "object",
-      "$ref": "../raml-util/schemas/metadata.schema",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
       "readonly": true
     }
   },
