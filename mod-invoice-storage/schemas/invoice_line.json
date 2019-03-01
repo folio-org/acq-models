@@ -23,7 +23,7 @@
       }
     },
     "invoiceLineNumber": {
-      "description": "Sequenstially generated and not editable by the user.",
+      "description": "Sequentially generated and not editable by the user.",
       "type": "string",
       "readonly": true
     },
@@ -135,6 +135,7 @@
   "additionalProperties": false,
   "required": [
     "description",
+    "invoiceLineNumber",
     "invoiceLineStatus",
     "price",
     "quantity",
