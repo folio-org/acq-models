@@ -142,13 +142,8 @@
     },
     "order_format": {
       "description": "The purchase order line format",
-      "type": "string",
-      "enum": [
-        "Electronic Resource",
-        "P/E Mix",
-        "Physical Resource",
-        "Other"
-      ]
+      "type": "object",
+      "$ref": "order_format.json"
     },
     "owner": {
       "description": "the owner of this purchase order line",
@@ -204,16 +199,8 @@
     },
     "receipt_status": {
       "description": "The purchase order line receipt status",
-      "type": "string",
-      "enum": [
-        "Awaiting Receipt",
-        "Cancelled",
-        "Fully Received",
-        "Partially Received",
-        "Pending",
-        "Receipt Not Required"
-      ],
-      "default": "Pending"
+      "type": "object",
+      "$ref": "receipt_status.json"
     },
     "reporting_codes": {
       "description": "a list of reporting codes associated with this purchase order line",
