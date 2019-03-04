@@ -143,7 +143,7 @@
     "order_format": {
       "description": "The purchase order line format",
       "type": "object",
-      "$ref": "mod-orders-storage/schemas/order_format.json"
+      "$ref": "../../mod-orders-storage/schemas/order_format.json"
     },
     "owner": {
       "description": "the owner of this purchase order line",
@@ -201,7 +201,7 @@
     "receipt_status": {
       "description": "The purchase order line receipt status",
       "type": "object",
-      "$ref": "mod-orders-storage/schemas/receipt_status.json"
+      "$ref": "../../mod-orders-storage/schemas/receipt_status.json"
     },
     "reporting_codes": {
       "description": "a list of reporting codes associated with this purchase order line",
