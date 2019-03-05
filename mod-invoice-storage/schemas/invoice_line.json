@@ -12,9 +12,9 @@
       "description": "Title as capured in the Purchase Order Line. In the absence of a POL link this could be used to describe the POL",
       "type": "string"
     },
-    "poLineId": {
+    "poLineIds": {
       "description": "List of UUID`s of the POL",
-      "id": "poLineId",
+      "id": "poLineIds",
       "type": "array",
       "items": {
         "description": "UUID of the purchase order line associated with invoice",
@@ -103,19 +103,28 @@
       "type": "string",
       "format": "date-time"
     },
-    "pieceId": {
-      "description": "UUID fo piece",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    "pieceIds": {
+      "description": "Uuids for associated pieces as link through the POL",
+      "id": "pieceIds",
+      "type": "array",
+      "items": {
+        "description": "UUID of the piece",
+        "type": "string",
+        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      }
     },
-    "invoiceUuid": {
+    "invoiceId": {
       "description": "UUID of this parent invoice",
       "type": "string",
       "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
-    "fundDistribution": {
-      "description": "Fund distribution",
-      "type": "string"
+    "fundDistributions": {
+      "description": "List of fund distributions",
+      "id": "fundDistributions",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     },
     "adjustmentsFieldSet": {
       "description": "Defined in settings - the amount field will be editable and pro-rate toggle will be editable if enabled for that adjustment",
@@ -140,8 +149,8 @@
     "price",
     "quantity",
     "doNotReleaseEncumbrance",
-    "pieceId",
-    "invoiceUuid",
-    "fundDistribution"
+    "pieceIds",
+    "invoiceId",
+    "fundDistributions"
   ]
 }
