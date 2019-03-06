@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Adjustment",
+  "type": "object",
+  "properties": {
+    "adjustmentLabel": {
+      "description": "Displayed in invoice line as a name for the input",
+      "type": "string"
+    },
+    "adjustmentType": {
+      "description": "Adjustment type",
+      "type": "string",
+      "enum": [
+        "Percentage",
+        "Amount"
+      ]
+    },
+    "adjustmentValue": {
+      "description": "Adjustment value",
+      "type": "number"
+    },
+    "proRateAdjustment":{
+      "description": "Displayed in invoice line per adjustment in toggled on in settings",
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}
