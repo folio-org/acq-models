@@ -26,21 +26,8 @@
           },
           "product_id_type": {
             "description": "the type of id",
-            "type": "string",
-            "enum": [
-              "ISBN",
-              "ISSN",
-              "ISMN",
-              "EAN",
-              "Other Standard Identifier",
-              "Standard Technical Report Number",
-              "Publisher Number",
-              "CODEN",
-              "GPO Item Number",
-              "Locally-defined identifiers",
-              "Vendor Title Number",
-              "Vendor Item Number"
-            ]
+            "type": "object",
+            "$ref": "../../common/schemas/product_id_type.json"
           }
         }
       }

@@ -48,22 +48,9 @@
       "type": "string"
     },
     "productIdType": {
-      "description": "the type of id",
-      "type": "string",
-      "enum": [
-        "ISBN",
-        "ISSN",
-        "ISMN",
-        "EAN",
-        "Other Standard Identifier",
-        "Standard Technical Report Number",
-        "Publisher Number",
-        "CODEN",
-        "GPO Item Number",
-        "Locally-defined identifiers",
-        "Vendor Title Number",
-        "Vendor Item Number"
-      ]
+      "description": "the type of product id",
+      "type": "object",
+      "$ref": "../../common/schemas/product_id_type.json"
     },
     "invoiceLineTax": {
       "description": "Invoice line tax",
@@ -79,7 +66,7 @@
     },
     "quantity": {
       "description": "quantity",
-      "type": "number"
+      "type": "integer"
     },
     "doNotReleaseEncumbrance": {
       "description": "If this is intended to not only release encumbrances but to indicate that this is the final invoice. Should the label be changed? This should take into account the fiscal year. We may release encumbrance for this FY but for on-going orders expect to encumber again next year.",
@@ -90,7 +77,7 @@
       "type": "number"
     },
     "subscriptionInfo": {
-      "description": "Information on the subscription",
+      "description": "The user should use this field to provide info on the subscription (eg. which volumes are being invoiced). It is MANDATORY if the chk_subscription_overlap is FALSE AND there is no start date provided",
       "type": "string"
     },
     "subscriptionStart": {

@@ -80,10 +80,10 @@
     },
     "totalAmount": {
       "description": "Total amount",
-      "type": "integer"
+      "type": "number"
     },
     "vendorInvoiceNo": {
-      "description": "This is the number from the vendor's invoice this may or may not be the same as the invoice_no",
+      "description": "This is the number from the vendor's invoice this may or may not be the same as the folioInvoiceNo",
       "type": "string"
     },
     "disbursementNumber": {
