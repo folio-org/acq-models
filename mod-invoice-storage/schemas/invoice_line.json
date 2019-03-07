@@ -1,0 +1,143 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "invoice line",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "UUID of this invoice line",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
+    "description": {
+      "description": "Title as capured in the Purchase Order Line. In the absence of a POL link this could be used to describe the POL",
+      "type": "string"
+    },
+    "poLineIds": {
+      "description": "List of UUID`s of the POL",
+      "id": "poLineIds",
+      "type": "array",
+      "items": {
+        "description": "UUID of the purchase order line associated with invoice",
+        "type": "string",
+        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      }
+    },
+    "invoiceLineNumber": {
+      "description": "Sequentially generated and not editable by the user.",
+      "type": "string",
+      "readonly": true
+    },
+    "invoiceLineStatus": {
+      "description": "Invoice line status",
+      "type": "string",
+      "enum": [
+        "Open",
+        "Reviewed",
+        "Approved",
+        "Paid",
+        "Cancelled",
+        "Error"
+      ]
+    },
+    "vendorRefNo": {
+      "description": "This is the number used to match POLs created by import to invoices created by import",
+      "type": "string"
+    },
+    "productId": {
+      "description": "product identifier",
+      "type": "string"
+    },
+    "productIdType": {
+      "description": "the type of product id",
+      "type": "object",
+      "$ref": "../../common/schemas/product_id_type.json"
+    },
+    "invoiceLineTax": {
+      "description": "Invoice line tax",
+      "type": "number"
+    },
+    "comment": {
+      "description": "Free form commentary",
+      "type": "string"
+    },
+    "price": {
+      "description": "Invoice line price",
+      "type": "number"
+    },
+    "quantity": {
+      "description": "quantity",
+      "type": "integer"
+    },
+    "doNotReleaseEncumbrance": {
+      "description": "If this is intended to not only release encumbrances but to indicate that this is the final invoice. Should the label be changed? This should take into account the fiscal year. We may release encumbrance for this FY but for on-going orders expect to encumber again next year.",
+      "type": "boolean"
+    },
+    "reportTax": {
+      "description": "Report tax",
+      "type": "number"
+    },
+    "subscriptionInfo": {
+      "description": "The user should use this field to provide info on the subscription (eg. which volumes are being invoiced). It is MANDATORY if the chk_subscription_overlap is FALSE AND there is no start date provided",
+      "type": "string"
+    },
+    "subscriptionStart": {
+      "description": "Subscription start date",
+      "type": "string",
+      "format": "date-time"
+    },
+    "subscriptionEnd": {
+      "description": "Subscription end date",
+      "type": "string",
+      "format": "date-time"
+    },
+    "pieceIds": {
+      "description": "Uuids for associated pieces as link through the POL",
+      "id": "pieceIds",
+      "type": "array",
+      "items": {
+        "description": "UUID of the piece",
+        "type": "string",
+        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      }
+    },
+    "invoiceId": {
+      "description": "UUID of this parent invoice",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
+    "fundDistributions": {
+      "description": "List of fund distributions",
+      "id": "fundDistributions",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "adjustmentsFieldSet": {
+      "description": "Defined in settings - the amount field will be editable and pro-rate toggle will be editable if enabled for that adjustment",
+      "id": "adjustmentsFieldSet",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "adjustment.json"
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "description",
+    "invoiceLineNumber",
+    "invoiceLineStatus",
+    "price",
+    "quantity",
+    "doNotReleaseEncumbrance",
+    "pieceIds",
+    "invoiceId",
+    "fundDistributions"
+  ]
+}
