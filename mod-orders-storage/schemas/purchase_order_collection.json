@@ -3,23 +3,23 @@
   "description": "collection of purchase order records",
   "type": "object",
   "properties": {
-    "purchase_orders": {
+    "purchaseOrders": {
       "description": "collection of purchase order records",
       "type": "array",
-      "id": "purchase_orders",
+      "id": "purchaseOrders",
       "items": {
         "type": "object",
         "$ref": "purchase_order.json"
       }
     },
-    "total_records": {
+    "totalRecords": {
       "description": "The number of objects contained in this collection",
       "type": "integer"
     }
   },
   "additionalProperties": false,
   "required": [
-    "purchase_orders",
-    "total_records"
+    "purchaseOrders",
+    "totalRecords"
   ]
 }

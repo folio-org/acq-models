@@ -3,9 +3,9 @@
   "description": "collection of composite purchase order records",
   "type": "object",
   "properties": {
-    "composite_purchase_orders": {
+    "compositePurchaseOrders": {
       "description": "an array of composite purchase order records",
-      "id": "composite_purchase_orders",
+      "id": "compositePurchaseOrders",
       "type": "array",
       "items": {
         "type": "object",
@@ -18,7 +18,7 @@
     }
   },
   "required": [
-    "composite_purchase_orders",
+    "compositePurchaseOrders",
     "totalRecords"
   ]
 }

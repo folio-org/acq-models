@@ -3,23 +3,23 @@
   "description": "collection of receiving history",
   "type": "object",
   "properties": {
-    "receiving_history": {
+    "receivingHistory": {
       "description": "collection of receiving history",
       "type": "array",
-      "id": "receiving_history",
+      "id": "receivingHistory",
       "items": {
         "type": "object",
         "$ref": "receiving_history.json"
       }
     },
-    "total_records": {
+    "totalRecords": {
       "description": "The number of objects contained in this collection",
       "type": "integer"
     }
   },
   "additionalProperties": false,
   "required": [
-    "receiving_history",
-    "total_records"
+    "receivingHistory",
+    "totalRecords"
   ]
 }

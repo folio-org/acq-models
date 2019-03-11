@@ -19,15 +19,15 @@
       "description": "renewal interval (in days?)",
       "type": "integer"
     },
-    "manual_renewal": {
+    "manualRenewal": {
       "description": "whether or not this is a manual renewal",
       "type": "boolean"
     },
-    "review_period": {
+    "reviewPeriod": {
       "description": "time prior to renewal where changes can be made to subscription",
       "type": "integer"
     },
-    "renewal_date": {
+    "renewalDate": {
       "description": "date renewal was confirmed by vendor or sent to vendor",
       "type": [
         "string",

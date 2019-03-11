@@ -3,11 +3,6 @@
   "description": "purchase order fund distribution",
   "type": "object",
   "properties": {
-    "id": {
-      "description": "UUID of this fund distribution record",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
-    },
     "code": {
       "description": "the fund code",
       "type": "string"
@@ -20,11 +15,6 @@
     "percentage": {
       "description": "the percentage of the cost to be applied to this fund",
       "type": "number"
-    },
-    "po_line_id": {
-      "description": "UUID of the purchase order line this alert is associated with",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     }
   },
   "additionalProperties": false,

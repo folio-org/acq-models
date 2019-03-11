@@ -3,28 +3,23 @@
   "description": "purchase order line details",
   "type": "object",
   "properties": {
-    "id": {
-      "description": "UUID for this details record",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
-    },
-    "receiving_note": {
+    "receivingNote": {
       "description": "notes regarding receiving instructions",
       "type": "string"
     },
-    "product_ids": {
+    "productIds": {
       "description": "a list of product identifiers",
-      "id": "product_ids",
+      "id": "productIds",
       "type": "array",
       "items": {
         "description": "a product identifier",
         "type": "object",
         "properties": {
-          "product_id": {
+          "productId": {
             "description": "the actual id",
             "type": "string"
           },
-          "product_id_type": {
+          "productIdType": {
             "description": "the type of id",
             "type": "object",
             "$ref": "../../common/schemas/product_id_type.json"
@@ -32,9 +27,9 @@
         }
       }
     },
-    "material_types": {
+    "materialTypes": {
       "description": "a list of material type ids",
-      "id": "material_type",
+      "id": "materialType",
       "type": "array",
       "items": {
         "description": "UUID associated with this material's type",
@@ -42,7 +37,7 @@
         "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
       }
     },
-    "subscription_from": {
+    "subscriptionFrom": {
       "description": "the start date of the subscription",
       "type": [
         "string",
@@ -50,22 +45,17 @@
       ],
       "format": "date-time"
     },
-    "subscription_interval": {
+    "subscriptionInterval": {
       "description": "the subscription interval in days",
       "type": "integer"
     },
-    "subscription_to": {
+    "subscriptionTo": {
       "description": "the end date of the subscription",
       "type": [
         "string",
         "null"
       ],
       "format": "date-time"
-    },
-    "po_line_id": {
-      "description": "UUID of the purchase order line these details relate to",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     }
   },
   "additionalProperties": false

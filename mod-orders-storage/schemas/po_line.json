@@ -12,21 +12,21 @@
       "description": "edition of the material",
       "type": "string"
     },
-    "checkin_items": {
+    "checkinItems": {
       "description": "if true this will toggle the Check-in workflow for details associated with this PO line",
       "type": "boolean"
     },
-    "instance_id": {
+    "instanceId": {
       "description": "UUID of the instance record this purchase order line is related to",
       "type": "string",
       "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
-    "agreement_id": {
+    "agreementId": {
       "description": "UUID of the agreement this purchase order line is related to",
       "type": "string",
       "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
-    "acquisition_method": {
+    "acquisitionMethod": {
       "description": "the acquisition method for this purchase order line",
       "type": "string",
       "enum": [
@@ -42,9 +42,9 @@
       ]
     },
     "adjustment": {
-      "description": "UUID of the adjustment record associated with this purchase order line",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "description": "adjustment record associated with this purchase order line",
+      "type": "object",
+      "$ref": "adjustment.json"
     },
     "alerts": {
       "description": "an array of alert record IDs",
@@ -56,22 +56,22 @@
         "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
       }
     },
-    "cancellation_restriction": {
+    "cancellationRestriction": {
       "description": "whether or not there are cancellation restrictions for this purchase order line",
       "type": "boolean"
     },
-    "cancellation_restriction_note": {
+    "cancellationRestrictionNote": {
       "description": "free-form notes related to cancellation restrictions",
       "type": "string"
     },
     "claims": {
-      "description": "an array of claim record IDs",
+      "description": "list of claims",
       "id": "claims",
       "type": "array",
       "items": {
-        "description": "UUID of a claim record",
-        "type": "string",
-        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+        "description": "claim record",
+        "type": "object",
+        "$ref": "claim.json"
       }
     },
     "collection": {
@@ -84,63 +84,53 @@
       "type": "array",
       "items": {
         "type": "object",
-        "properties": {
-          "contributor": {
-            "description": "the name of a contributor to the material",
-            "type": "string"
-          },
-          "contributor_type": {
-            "description": "UUID of the contributor type",
-            "type": "string",
-            "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
-          }
-        }
+        "$ref": "contributor.json"
       }
     },
     "cost": {
-      "description": "UUID of the cost record",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "description": "cost record",
+      "type": "object",
+      "$ref": "cost.json"
     },
     "description": {
       "description": "description of the material",
       "type": "string"
     },
     "details": {
-      "description": "UUID of the details record",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "description": "details record",
+      "type": "object",
+      "$ref": "details.json"
     },
     "donor": {
       "description": "the donor contributing to this purchase order line",
       "type": "string"
     },
     "eresource": {
-      "description": "UUID of the eresource record",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "description": "eresource record",
+      "type": "object",
+      "$ref": "eresource.json"
     },
-    "fund_distribution": {
-      "description": "the UUIDs of the fund distribution records for this purchase order line",
-      "id": "fund_distribution",
+    "fundDistribution": {
+      "description": "Fund distribution records for this purchase order line",
+      "id": "fundDistribution",
       "type": "array",
       "items": {
-        "description": "UUID of a fund distribution record",
-        "type": "string",
-        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+        "description": "fund distribution record",
+        "type": "object",
+        "$ref": "fund_distribution.json"
       }
     },
     "locations": {
-      "description": "the UUIDs of the location records for this purchase order line",
+      "description": "Location records for this purchase order line",
       "id": "locations",
       "type": "array",
       "items": {
-        "description": "UUID of the location record",
-        "type": "string",
-        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+        "description": "location record",
+        "type": "object",
+        "$ref": "location.json"
       }
     },
-    "order_format": {
+    "orderFormat": {
       "description": "The purchase order line format",
       "type": "object",
       "$ref": "order_format.json"
@@ -149,7 +139,7 @@
       "description": "the owner of this purchase order line",
       "type": "string"
     },
-    "payment_status": {
+    "paymentStatus": {
       "description": "The purchase order line payment status",
       "type": "string",
       "enum": [
@@ -163,19 +153,19 @@
     },
     "physical": {
       "description": "UUID of the physical (details) record",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "type": "object",
+      "$ref": "physical.json"
     },
-    "po_line_description": {
+    "poLineDescription": {
       "description": "purchase order line description",
       "type": "string"
     },
-    "po_line_number": {
+    "poLineNumber": {
       "description": "A human readable number assigned to this PO line",
       "type": "string",
       "pattern": "^[a-zA-Z0-9]{5,16}-[0-9]{1,3}$"
     },
-    "publication_date": {
+    "publicationDate": {
       "description": "date (year) of the material's publication",
       "type": "string",
       "pattern": "^[0-9]{4}$"
@@ -184,12 +174,12 @@
       "description": "publisher of the material",
       "type": "string"
     },
-    "purchase_order_id": {
+    "purchaseOrderId": {
       "description": "UUID of the purchase order",
       "type": "string",
       "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
-    "receipt_date": {
+    "receiptDate": {
       "description": "date the purchase order line was received",
       "type": [
         "null",
@@ -197,14 +187,14 @@
       ],
       "format": "date-time"
     },
-    "receipt_status": {
+    "receiptStatus": {
       "description": "The purchase order line receipt status",
       "type": "object",
       "$ref": "receipt_status.json"
     },
-    "reporting_codes": {
+    "reportingCodes": {
       "description": "a list of reporting codes associated with this purchase order line",
-      "id": "reporting_codes",
+      "id": "reportingCodes",
       "type": "array",
       "items": {
         "description": "UUID of the reporting code",
@@ -225,9 +215,9 @@
       "type": "string"
     },
     "source": {
-      "description": "UUID of the source record",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "description": "source record",
+      "type": "object",
+      "$ref": "source.json"
     },
     "tags": {
       "description": "arbitrary tags associated with this purchase order line",
@@ -241,10 +231,10 @@
       "description": "title of the material",
       "type": "string"
     },
-    "vendor_detail": {
-      "description": "UUID of the vendor detail record",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    "vendorDetail": {
+      "description": "Vendor detail record",
+      "type": "object",
+      "$ref": "vendor_detail.json"
     },
     "metadata": {
       "type": "object",

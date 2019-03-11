@@ -3,23 +3,23 @@
   "description": "collection of purchase order line records",
   "type": "object",
   "properties": {
-    "po_lines": {
+    "poLines": {
       "description": "collection of purchase order line records",
       "type": "array",
-      "id": "po_lines",
+      "id": "poLines",
       "items": {
         "type": "object",
         "$ref": "po_line.json"
       }
     },
-    "total_records": {
+    "totalRecords": {
       "description": "The number of objects contained in this collection",
       "type": "integer"
     }
   },
   "additionalProperties": false,
   "required": [
-    "po_lines",
-    "total_records"
+    "poLines",
+    "totalRecords"
   ]
 }
