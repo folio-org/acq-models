@@ -6,6 +6,8 @@
         "caption": "Tutorial Volume 10",
         "comment": "Special Edition",
         "dateOrdered": "2018-09-09T00:00:00.000",
+        "checkinItems": true,
+        "instanceId": "8343e5a0-fed8-11e8-8eb2-f2801f1b9fd1",
         "itemId": "1c92433e-916d-452e-ac76-5268d0ec3f66",
         "locationId": "53cf956f-c1df-410b-8bea-27f712cca7c0",
         "poLineId": "c1498090-538a-4470-9525-27e4e0c74b07",
