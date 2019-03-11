@@ -21,12 +21,12 @@
       "type": "string",
       "format": "date-time"
     },
-    "checkinItems": {
-      "description": "if true this will toggle the Check-in workflow for details associated with this PO line",
+    "checkin": {
+      "description": "If true this piece is for the Check-in workflow",
       "type": "boolean"
     },
     "instanceId": {
-      "description": "UUID of the instance record this purchase order line is related to",
+      "description": "UUID of the instance record this piece is related to",
       "type": "string",
       "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
