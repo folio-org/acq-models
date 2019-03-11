@@ -84,7 +84,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "mod-orders-storage/schemas/contributor.json"
+        "$ref": "../../mod-orders-storage/schemas/contributor.json"
       }
     },
     "cost": {
