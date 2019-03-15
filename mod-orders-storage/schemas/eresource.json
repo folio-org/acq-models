@@ -19,8 +19,7 @@
         "INSTANCE_HOLDING",
         "INSTANCE",
         "NONE"
-      ],
-      "default": "INSTANCE_HOLDING"
+      ]
     },
     "trial": {
       "description": "whether or not this is a trial",
