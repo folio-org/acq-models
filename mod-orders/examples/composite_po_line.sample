@@ -65,7 +65,7 @@
   "eresource": {
     "activated": false,
     "activationDue": 10,
-    "createInventory": "INSTANCE_HOLDING",
+    "createInventory": "Instance, Holding",
     "trial": false,
     "expectedActivation": "2018-10-09T00:00:00.000Z",
     "userLimit": 10,
@@ -105,7 +105,7 @@
   "owner": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
   "paymentStatus": "Awaiting Payment",
   "physical": {
-    "createInventory": "INSTANCE_HOLDING_ITEM",
+    "createInventory": "Instance, Holding, Item",
     "volumes": [
       "vol. 1"
     ],

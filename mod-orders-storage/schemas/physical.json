@@ -7,10 +7,10 @@
       "description": "Shows what inventory objects need to be created for physical resource",
       "type": "string",
       "enum": [
-        "INSTANCE_HOLDING_ITEM",
-        "INSTANCE_HOLDING",
-        "INSTANCE",
-        "NONE"
+        "Instance, Holding, Item",
+        "Instance, Holding",
+        "Instance",
+        "None"
       ]
     },
     "materialSupplier": {
