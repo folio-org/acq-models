@@ -3,9 +3,9 @@
   "description": "A collection of check-in",
   "type": "object",
   "properties": {
-    "checkInItems": {
+    "toBeCheckedIn": {
       "description": "List of check-in",
-      "id": "checkInItems",
+      "id": "toBeCheckedIn",
       "type": "array",
       "items": {
         "type": "object",
@@ -16,7 +16,7 @@
             "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
           },
           "checkedIn": {
-            "description": "The number of items to check-in",
+            "description": "The number of pieces to check-in",
             "type": "integer"
           },
           "checkInPieces": {
@@ -81,11 +81,15 @@
                 "electronicBookplate": {
                   "description": "A text that relates to the owner of the book",
                   "type": "string"
-                }                                
+                },
+                "itemStatus": {
+                  "description": "The status of the Check in piece",
+                  "type": "string"
+                }                              
               },
               "additionalProperties": false,
               "required": [
-                "caption",
+                "itemStatus",
                 "locationId"
               ]   
             }
@@ -98,13 +102,13 @@
       }
     },
     "totalRecords": {
-      "description": "The total number of checkin items in the list",
+      "description": "The total number of pieces to check-in in the list",
       "type": "integer"
     }
   },
   "additionalProperties": false,
   "required": [
-    "checkInItems",
+    "toBeCheckedIn",
     "totalRecords"
   ]
 }
