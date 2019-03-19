@@ -2,7 +2,6 @@
   "purchaseOrders": [
     {
       "id": "0804ddec-6545-404a-b54d-a693f505681d",
-      "adjustment": "9b3be694-6716-4e14-b81d-8d76f0ae4146",
       "approved": true,
       "assignedTo": "ab18897b-0e40-4f31-896b-9c9adc979a88",
       "closeReason": {

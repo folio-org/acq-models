@@ -4,12 +4,33 @@
   "type": "object",
   "properties": {
     "listPrice": {
-      "description": "the per-item list price",
+      "description": "The per-item list price",
+      "type": "number"
+    },
+    "listUnitPriceElectronic": {
+      "description": "The e-resource per-item list price",
       "type": "number"
     },
     "currency": {
-      "description": "a currency code",
+      "description": "An ISO currency code",
       "type": "string"
+    },
+    "additionalCost": {
+      "description": "Lump sum that is added to the total estimated cost - not affected by discount",
+      "type": "number"
+    },
+    "discount": {
+      "description": "Percentage or amount that is subtracted from the list price time quantities calculation before additional cost",
+      "type": "number"
+    },
+    "discountType": {
+      "description": "Percentage or amount discount type",
+      "type": "string",
+      "enum": [
+        "amount",
+        "percentage"
+      ],
+      "default": "percentage"
     },
     "quantityPhysical": {
       "description": "quantity of physical items in this purchase order line",
@@ -26,6 +47,6 @@
   },
   "additionalProperties": false,
   "required": [
-    "listPrice"
+    "currency"
   ]
 }
