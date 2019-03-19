@@ -39,7 +39,7 @@
             "currency": "USD",
             "discount": 2,
             "discountType": "percentage",
-            "listPrice": 5.00,
+            "listUnitPrice": 5.00,
             "listUnitPriceElectronic": 3.00,
             "quantityPhysical": 2,
             "quantityElectronic": 1,
@@ -53,7 +53,7 @@
             "currency": "USD",
             "discount": 2.00,
             "discountType": "amount",
-            "listPrice": 15.00,
+            "listUnitPrice": 15.00,
             "quantityPhysical": 2,
             "poLineEstimatedPrice": 28.00
           },

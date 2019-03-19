@@ -29,7 +29,7 @@
     "currency": "USD",
     "discount": 5,
     "discountType": "percentage",
-    "listPrice": 24.99,
+    "listUnitPrice": 24.99,
     "listUnitPriceElectronic": 14.99,
     "quantityElectronic": 1,
     "quantityPhysical": 2,

@@ -61,14 +61,6 @@
       "type": "object",
       "$ref": "renewal.json"
     },
-    "totalEstimatedPrice": {
-      "description": "total estimated price of this purchase order",
-      "type": "number"
-    },
-    "totalItems": {
-      "description": "total number of items included in the purchase order",
-      "type": "integer"
-    },
     "vendor": {
       "description": "UUID of the vendor record",
       "type": "string",

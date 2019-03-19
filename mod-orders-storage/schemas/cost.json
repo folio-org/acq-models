@@ -3,7 +3,7 @@
   "description": "purchase order line cost record",
   "type": "object",
   "properties": {
-    "listPrice": {
+    "listUnitPrice": {
       "description": "The per-item list price",
       "type": "number"
     },
