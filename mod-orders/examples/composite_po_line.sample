@@ -5,17 +5,6 @@
   "instanceId": "8343e5a0-fed8-11e8-8eb2-f2801f1b9fd1",
   "agreementId": "bdc75fea-fed8-11e8-8eb2-f2801f1b9fd1",
   "acquisitionMethod": "Purchase At Vendor System",
-  "adjustment": {
-    "credit": 0.0,
-    "discount": 0.0,
-    "insurance": 0.0,
-    "invoiceId": "2d6d495c-c237-476f-aa48-57f7cbf74ca4",
-    "overhead": 0.0,
-    "shipment": 0.0,
-    "tax1": 0.0,
-    "tax2": 0.0,
-    "useProRate": false
-  },
   "alerts": [
     {
       "alert": "Receipt overdue",
@@ -39,11 +28,15 @@
     }
   ],
   "cost": {
-    "listPrice": 24.99,
+    "additionalCost": 4.99,
     "currency": "USD",
+    "discount": 5,
+    "discountType": "percentage",
+    "listUnitPrice": 24.99,
+    "listUnitPriceElectronic": 18.99,
     "quantityPhysical": 6,
     "quantityElectronic": 1,
-    "poLineEstimatedPrice": 174.93
+    "poLineEstimatedPrice": 165.47
   },
   "description": "ABCDEFGH",
   "details": {

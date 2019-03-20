@@ -1,16 +1,6 @@
 {
   "compositePurchaseOrders": [
     {
-      "adjustment": {
-        "credit": 0.0,
-        "discount": 0.0,
-        "insurance": 0.0,
-        "overhead": 0.0,
-        "shipment": 0.0,
-        "tax1": 0.0,
-        "tax2": 0.0,
-        "useProRate": false
-      },
       "approved": true,
       "assignedTo": "ab18897b-0e40-4f31-896b-9c9adc979a88",
       "closeReason": {
@@ -33,8 +23,8 @@
          "reviewPeriod": 30,
          "renewalDate": "2019-04-09T00:00:00.000Z"
       },
-      "totalEstimatedPrice": 49.98,
-      "totalItems": 2,
+      "totalEstimatedPrice": 103.47,
+      "totalItems": 5,
       "vendor": "168f8a86-d26c-406e-813f-c7527f241ac3",
       "workflowStatus": "Open",
       "metadata": {
@@ -43,10 +33,31 @@
       },
       "compositePoLines": [
         {
-          "id": "f97355de-9a18-4bbb-ac47-066d6a52e27a"
+          "id": "f97355de-9a18-4bbb-ac47-066d6a52e27a",
+          "cost": {
+            "additionalCost": 2.00,
+            "currency": "USD",
+            "discount": 2,
+            "discountType": "percentage",
+            "listUnitPrice": 5.00,
+            "listUnitPriceElectronic": 3.00,
+            "quantityPhysical": 2,
+            "quantityElectronic": 1,
+            "poLineEstimatedPrice": 75.47
+          },
+          "orderFormat": "P/E Mix"
         },
         {
-          "id": "d51772fd-582e-41bd-9073-712f5fb399f1"
+          "id": "d51772fd-582e-41bd-9073-712f5fb399f1",
+          "cost": {
+            "currency": "USD",
+            "discount": 2.00,
+            "discountType": "amount",
+            "listUnitPrice": 15.00,
+            "quantityPhysical": 2,
+            "poLineEstimatedPrice": 28.00
+          },
+          "orderFormat": "Physical Resource"
         }
       ]
     }
