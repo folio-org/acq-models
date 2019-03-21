@@ -76,11 +76,12 @@
     },
     "contacts": {
       "id": "contact",
-      "description": "The list of contacts for this vendor",
+      "description": "An array of contact record IDs",
       "type": "array",
       "items": {
-        "type": "object",
-        "$ref": "contact.json"
+        "description": "UUID of a contact record",
+        "type": "string",
+        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
       }
     },
     "agreements": {
