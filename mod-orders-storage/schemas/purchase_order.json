@@ -8,11 +8,6 @@
       "type": "string",
       "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
-    "adjustment": {
-      "description": "UUID of the adjustment record associated with this order",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
-    },
     "approved": {
       "description": "whether or not the purchase order has been approved",
       "type": "boolean"
@@ -65,14 +60,6 @@
       "description": "Renewal information associated with this order",
       "type": "object",
       "$ref": "renewal.json"
-    },
-    "totalEstimatedPrice": {
-      "description": "total estimated price of this purchase order",
-      "type": "number"
-    },
-    "totalItems": {
-      "description": "total number of items included in the purchase order",
-      "type": "integer"
     },
     "vendor": {
       "description": "UUID of the vendor record",
