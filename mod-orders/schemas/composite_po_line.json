@@ -14,7 +14,8 @@
     },
     "checkinItems": {
       "description": "if true this will toggle the Check-in workflow for details associated with this PO line",
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "instanceId": {
       "description": "UUID of the instance record this purchase order line is related to",
