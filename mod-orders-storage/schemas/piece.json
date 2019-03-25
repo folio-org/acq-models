@@ -16,6 +16,11 @@
       "description": "Free form commentary",
       "type": "string"
     },
+    "format": {
+      "description": "The format of the piece",
+      "type": "object",
+      "$ref": "piece_format.json"
+    },
     "itemId": {
       "description": "UUID of the associated item record",
       "type": "string",
