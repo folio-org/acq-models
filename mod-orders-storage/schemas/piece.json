@@ -18,7 +18,7 @@
     },
     "format": {
       "description": "The format of the piece",
-      "type": "object",
+      "type": "string",
       "$ref": "piece_format.json"
     },
     "itemId": {
@@ -58,6 +58,7 @@
   "additionalProperties": false,
   "required": [
     "poLineId",
-    "receivingStatus"
+    "receivingStatus",
+    "format"
   ]
 }
