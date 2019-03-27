@@ -1,5 +1,5 @@
 {
-  "checkInItems": [
+  "toBeCheckedIn": [
     {
       "poLineId": "0804ddec-6545-404a-b54d-a693f505681d",
       "checkedIn": 2,
@@ -17,7 +17,8 @@
           "productIdType": "bae22dfa-5ea8-43aa-b61d-8da89ba339c4",
           "accessionNumber": "1956.1",
           "itemDescription": "This is the piece item one to checkin",
-          "electronicBookplate": "This book is from the Harvard University library"
+          "electronicBookplate": "This book is from the Harvard University library",
+          "itemStatus": "Received"
         },
         {
           "id": "71d9322b-5cdd-45d8-ad45-c7f3044802e7",
@@ -32,7 +33,8 @@
           "productIdType": "31dcaba7-bce1-4a12-bd06-9ce901422285",
           "accessionNumber": "2002.4",
           "itemDescription": "This is the piece item two to checkin",
-          "electronicBookplate": "This book is from the Florida University library"
+          "electronicBookplate": "This book is from the Florida University library",
+          "itemStatus":"Received"
         }
       ]
     }

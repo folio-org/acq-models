@@ -3,6 +3,16 @@
   "description": "purchase order line physical material details",
   "type": "object",
   "properties": {
+  "createInventory": {
+      "description": "Shows what inventory objects need to be created for physical resource",
+      "type": "string",
+      "enum": [
+        "Instance, Holding, Item",
+        "Instance, Holding",
+        "Instance",
+        "None"
+      ]
+    },
     "materialType": {
       "description": "UUID of the material Type",
       "type": "string",
