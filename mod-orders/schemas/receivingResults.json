@@ -48,7 +48,7 @@
                       ]
                     },
                     "error": {
-                      "description": "Error details in case receiving/checkin process for the piece record has failed",
+                      "description": "Error details in case receiving/check-in process for the piece record has failed",
                       "type": "object",
                       "$ref": "../../../raml-util/schemas/error.schema",
                       "readonly": true
@@ -76,7 +76,7 @@
       }
     },
     "totalRecords": {
-      "description": "The total number of receiving/checkin items in the list",
+      "description": "The total number of receiving/check-in items in the list",
       "type": "integer"
     }
   },
