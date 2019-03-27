@@ -34,6 +34,7 @@
       "compositePoLines": [
         {
           "id": "f97355de-9a18-4bbb-ac47-066d6a52e27a",
+          "checkinItems": false,
           "cost": {
             "additionalCost": 2.00,
             "currency": "USD",
@@ -49,6 +50,7 @@
         },
         {
           "id": "d51772fd-582e-41bd-9073-712f5fb399f1",
+          "checkinItems": false,
           "cost": {
             "currency": "USD",
             "discount": 2.00,
