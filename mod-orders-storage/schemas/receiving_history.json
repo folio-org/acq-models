@@ -57,7 +57,7 @@
     },
     "pieceFormat": {
       "description": "The format of the piece",
-      "type": "object",
+      "type": "string",
       "$ref": "piece_format.json"
     },
     "purchaseOrderId": {
