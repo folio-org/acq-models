@@ -5,7 +5,7 @@
       "name": "GOBI",
       "code": "AQ-GOBI",
       "description": "This is Yankee Book Peddler.",
-      "vendor_status": "Active",
+      "status": "Active",
       "language": "en-us",
       "isVendor": true,
       "aliases": [

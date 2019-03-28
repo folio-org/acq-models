@@ -21,7 +21,7 @@
       "description": "The description for this organization",
       "type": "string"
     },
-    "vendor_status": {
+    "status": {
       "description": "The status of this organization",
       "type": "string"
     },
