@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "A vendor category",
+  "description": "A organization category",
   "type": "object",
   "properties": {
     "id": {

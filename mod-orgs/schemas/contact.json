@@ -66,7 +66,7 @@
     },
     "categories": {
       "id": "contact_category",
-      "description": "The list of contact categories for this vendor contact person",
+      "description": "The list of contact categories for this organization contact person",
       "type": "array",
       "items": {
         "type": "object",

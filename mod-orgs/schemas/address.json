@@ -38,14 +38,14 @@
     },
     "categories": {
       "id": "categories",
-      "description": "The list of categories for this vendor address",
+      "description": "The list of categories for this organization address",
       "type": "array",
       "items": {
         "type": "string"
       }
     },
     "language": {
-      "description": "The language for this vendor address",
+      "description": "The language for this organization address",
       "type": "string"
     }
   },
