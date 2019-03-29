@@ -166,7 +166,7 @@
       "type": "number"
     },
     "edi": {
-      "description": "The EDI object for this organization",
+      "description": "The EDI object for this organization (only applicable when isVendor is true)",
       "type": "object",
       "properties": {
         "vendor_edi_code": {
