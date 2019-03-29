@@ -12,8 +12,14 @@
       "type": "integer"
     },
     "createInventory": {
-      "description": "whether or not to create an inventory record for this resource",
-      "type": "boolean"
+      "description": "Shows what inventory objects need to be created for electronic resource",
+      "type": "string",
+      "enum": [
+        "Instance, Holding, Item",
+        "Instance, Holding",
+        "Instance",
+        "None"
+      ]
     },
     "trial": {
       "description": "whether or not this is a trial",

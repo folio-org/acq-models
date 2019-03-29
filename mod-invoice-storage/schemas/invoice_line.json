@@ -24,8 +24,7 @@
     },
     "invoiceLineNumber": {
       "description": "Sequentially generated and not editable by the user.",
-      "type": "string",
-      "readonly": true
+      "type": "string"
     },
     "invoiceLineStatus": {
       "description": "Invoice line status",
