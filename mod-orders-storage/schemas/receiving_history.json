@@ -55,6 +55,11 @@
       "type": "object",
       "$ref": "receipt_status.json"
     },
+    "pieceFormat": {
+      "description": "The format of the piece",
+      "type": "string",
+      "$ref": "piece_format.json"
+    },
     "purchaseOrderId": {
       "description": "UUID of associated purchase order",
       "type": "string",
