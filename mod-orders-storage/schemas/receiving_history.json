@@ -50,11 +50,6 @@
       "type": "string",
       "pattern": "^[a-zA-Z0-9]{5,16}-[0-9]{1,3}$"
     },
-    "poLineOrderFormat": {
-      "description": "The purchase order line format",
-      "type": "object",
-      "$ref": "order_format.json"
-    },
     "poLineReceiptStatus": {
       "description": "The purchase order line receipt status",
       "type": "object",
