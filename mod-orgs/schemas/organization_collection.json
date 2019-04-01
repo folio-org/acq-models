@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "collection of organization records",
+  "type": "object",
+  "properties": {
+    "organizations": {
+      "description": "The list of organizations in this collection",
+      "type": "array",
+      "id": "organizationData",
+      "items": {
+        "type": "object",
+        "$ref": "organization.json"
+      }
+    },
+    "total_records": {
+      "description": "The number of organization records returned in this collection",
+      "type": "integer"
+    },
+    "first": {
+      "description": "The index of the first object in the collection",
+      "type": "integer"
+    },
+    "last": {
+      "description": "The index of the last object in the collection",
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "organizations",
+    "total_records"
+  ]
+}

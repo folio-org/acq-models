@@ -1,0 +1,12 @@
+{
+    "emails": [
+        {
+            "id": "588b5c42-8634-4af7-bc9b-5e0116ed96b6",
+            "value": "noreply@folio.org",
+            "description": "Main"
+        }
+    ],
+    "total_records": 1,
+    "first": 1,
+    "last": 1
+}
