@@ -3,7 +3,7 @@
   "description": "purchase order line physical material details",
   "type": "object",
   "properties": {
-    "createInventory": {
+  "createInventory": {
       "description": "Shows what inventory objects need to be created for physical resource",
       "type": "string",
       "enum": [
