@@ -50,15 +50,15 @@
       "type": "string",
       "pattern": "^[a-zA-Z0-9]{5,16}-[0-9]{1,3}$"
     },
-    "poLineOrderFormat": {
-      "description": "The purchase order line format",
-      "type": "object",
-      "$ref": "order_format.json"
-    },
     "poLineReceiptStatus": {
       "description": "The purchase order line receipt status",
       "type": "object",
       "$ref": "receipt_status.json"
+    },
+    "pieceFormat": {
+      "description": "The format of the piece",
+      "type": "string",
+      "$ref": "piece_format.json"
     },
     "purchaseOrderId": {
       "description": "UUID of associated purchase order",
