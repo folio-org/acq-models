@@ -240,6 +240,7 @@
   },
   "additionalProperties": false,
   "required": [
+    "orderFormat"
     "source"
   ]
 }
