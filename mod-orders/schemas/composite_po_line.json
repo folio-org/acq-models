@@ -240,7 +240,7 @@
   },
   "additionalProperties": false,
   "required": [
-    "orderFormat"
+    "orderFormat",
     "source"
   ]
 }
