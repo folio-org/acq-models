@@ -3,14 +3,14 @@
         {
             "id": "08e0eb27-b57f-4638-a703-9a2c57bd8708",
             "prefix": "Director",
-            "first_name": "Nick",
-            "last_name": "Fury",
+            "firstName": "Nick",
+            "lastName": "Fury",
             "language": "en-us",
             "notes": "SHIELD's Big Kahuna",
-            "phone_numbers": [
+            "phoneNumbers": [
                 {
-                    "phone_number": {
-                        "phone_number": "19789999999"
+                    "phoneNumber": {
+                        "phoneNumber": "19789999999"
                     },
                     "categories": [
                         "0e3f9680-ab06-4565-af64-609b7364e6eb",
@@ -73,7 +73,5 @@
             ]
         }
     ],
-    "total_records": 1,
-    "first": 1,
-    "last": 1
+    "totalRecords": 1
 }

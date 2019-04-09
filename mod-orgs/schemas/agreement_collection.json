@@ -12,23 +12,14 @@
           "$ref": "agreement.json"
         }
       },
-      "total_records": {
+      "totalRecords": {
         "description": "The number of agreement records returned in this collection",
-        "type": "integer"
-      },
-      "first": {
-        "description": "The index of the first object in the collection",
-        "type": "integer"
-      },
-      "last": {
-        "description": "The index of the last object in the collection",
         "type": "integer"
       }
     },
     "additionalProperties": false,
     "required": [
       "agreements",
-      "total_records"
+      "totalRecords"
     ]
   }
-  

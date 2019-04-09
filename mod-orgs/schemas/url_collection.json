@@ -12,23 +12,14 @@
           "$ref": "url.json"
         }
       },
-      "total_records": {
+      "totalRecords": {
         "description": "The number of URL records returned in this collection",
-        "type": "integer"
-      },
-      "first": {
-        "description": "The index of the first object in the collection",
-        "type": "integer"
-      },
-      "last": {
-        "description": "The index of the last object in the collection",
         "type": "integer"
       }
     },
     "additionalProperties": false,
     "required": [
       "urls",
-      "total_records"
+      "totalRecords"
     ]
   }
-  

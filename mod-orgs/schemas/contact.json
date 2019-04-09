@@ -12,11 +12,11 @@
       "description": "The prefix for this contact person",
       "type": "string"
     },
-    "first_name": {
+    "firstName": {
       "description": "The first name of this contact person",
       "type": "string"
     },
-    "last_name": {
+    "lastName": {
       "description": "The last name of this contact person",
       "type": "string"
     },
@@ -28,8 +28,8 @@
       "description": "The notes for this contact person",
       "type": "string"
     },
-    "phone_numbers": {
-      "id": "phone_numbers",
+    "phoneNumbers": {
+      "id": "phoneNumbers",
       "description": "The list of phone numbers for this contact person",
       "type": "array",
       "items": {
@@ -38,7 +38,7 @@
       }
     },
     "emails": {
-      "id": "email_addresses",
+      "id": "emailAddresses",
       "description": "The list of emails for this contact person",
       "type": "array",
       "items": {
@@ -65,7 +65,7 @@
       }
     },
     "categories": {
-      "id": "contact_category",
+      "id": "contactCategory",
       "description": "The list of contact categories for this organization contact person",
       "type": "array",
       "items": {
@@ -80,7 +80,7 @@
   },
   "additionalProperties": false,
   "required": [
-    "first_name",
-    "last_name"
+    "firstName",
+    "lastName"
   ]
 }
