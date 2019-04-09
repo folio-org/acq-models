@@ -89,8 +89,7 @@
               },
               "additionalProperties": false,
               "required": [
-                "itemStatus",
-                "locationId"
+                "itemStatus"
               ]   
             }
           }
