@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "collection of phone numbers",
+    "description": "Collection of phone numbers",
     "type": "object",
     "properties": {
       "phoneNumbers": {

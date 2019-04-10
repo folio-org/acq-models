@@ -6,7 +6,6 @@
     "id": {
       "description": "The unique UUID for this organization",
       "type": ["string", "null"],
-      "description": "UUID",
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     },
     "name": {

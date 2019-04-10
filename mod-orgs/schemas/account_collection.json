@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "collection of account records",
+    "description": "Collection of account records",
     "type": "object",
     "properties": {
       "accounts": {

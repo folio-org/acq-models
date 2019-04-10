@@ -4,7 +4,7 @@
   "type": "object",
   "properties": {
     "categories": {
-      "description": "The list of categores in this collection",
+      "description": "The list of categories in this collection",
       "type": "array",
       "id": "categories",
       "items": {

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "collection of organization records",
+  "description": "Collection of organization records",
   "type": "object",
   "properties": {
     "organizations": {
