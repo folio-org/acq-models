@@ -1,13 +1,13 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "A organization account",
+  "description": "An organization account",
   "type": "object",
   "properties": {
     "name": {
       "description": "The unique name of this account",
       "type": "string"
     },
-    "account_no": {
+    "accountNo": {
       "description": "The unique number of this account",
       "type": "string"
     },
@@ -15,27 +15,37 @@
       "description": "The description of this account",
       "type": "string"
     },
-    "app_system_no": {
+    "appSystemNo": {
       "description": "The unique name of this group",
       "type": "string"
     },
-    "payment_method": {
+    "paymentMethod": {
       "description": "The method of payment for this account",
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "Cash",
+        "Credit Card",
+        "EFT",
+        "Deposit Account",
+        "Physical Check",
+        "Bank Draft",
+        "Internal Transfer",
+        "Other"
+      ]
     },
-    "account_status": {
+    "accountStatus": {
       "description": "The status of this account",
       "type": "string"
     },
-    "contact_info": {
+    "contactInfo": {
       "description": "The contact info for the account",
       "type": "string"
     },
-    "library_code": {
+    "libraryCode": {
       "description": "The library code for this account",
       "type": "string"
     },
-    "library_edi_code": {
+    "libraryEdiCode": {
       "description": "The EDI code for this account",
       "type": "string"
     },
@@ -47,10 +57,10 @@
   "additionalProperties": false,
   "required": [
     "name",
-    "account_no",
-    "payment_method",
-    "account_status",
-    "library_code",
-    "library_edi_code"
+    "accountNo",
+    "paymentMethod",
+    "accountStatus",
+    "libraryCode",
+    "libraryEdiCode"
   ]
 }

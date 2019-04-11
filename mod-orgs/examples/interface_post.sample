@@ -5,9 +5,9 @@
     "password": "my_password",
     "notes": "This is the store-front for GOBI.",
     "available": true,
-    "delivery_method": "Online",
-    "statistics_format": "PDF",
-    "locally_stored": "",
-    "online_location": "",
-    "statistics_notes": ""
+    "deliveryMethod": "Online",
+    "statisticsFormat": "PDF",
+    "locallyStored": "",
+    "onlineLocation": "",
+    "statisticsNotes": ""
 }

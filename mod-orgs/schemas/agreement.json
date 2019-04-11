@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "A organization agreement",
+  "description": "An organization agreement",
   "type": "object",
   "properties": {
     "name": {
@@ -11,7 +11,7 @@
       "description": "The discount amount of this agreement",
       "type": "number"
     },
-    "reference_url": {
+    "referenceUrl": {
       "description": "The reference url for this agreement",
       "type": "string"
     },
