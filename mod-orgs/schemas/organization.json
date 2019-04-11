@@ -6,7 +6,6 @@
     "id": {
       "description": "The unique UUID for this organization",
       "type": ["string", "null"],
-      "description": "UUID",
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     },
     "name": {
@@ -47,8 +46,8 @@
         "$ref": "address.json"
       }
     },
-    "phone_numbers": {
-      "id": "phone_numbers",
+    "phoneNumbers": {
+      "id": "phoneNumbers",
       "description": "The list of phone numbers for this organization",
       "type": "array",
       "items": {
@@ -57,7 +56,7 @@
       }
     },
     "emails": {
-      "id": "email_addresses",
+      "id": "emailAddresses",
       "description": "The list of emails for this organization",
       "type": "array",
       "items": {
@@ -93,15 +92,15 @@
         "$ref": "agreement.json"
       }
     },
-    "erp_code": {
+    "erpCode": {
       "description": "The ERP code for this organization",
       "type": "string"
     },
-    "payment_method": {
+    "paymentMethod": {
       "description": "The payment method for this organization",
       "type": "string"
     },
-    "access_provider": {
+    "accessProvider": {
       "description": "The access provider for this organization",
       "type": "boolean"
     },
@@ -113,55 +112,55 @@
       "description": "The setting to mark this organization as a licensor",
       "type": "boolean"
     },
-    "material_supplier": {
+    "materialSupplier": {
       "description": "The setting to mark this organization as a material supplier",
       "type": "boolean"
     },
-    "vendor_currencies": {
-      "id": "vendor_currencies",
+    "vendorCurrencies": {
+      "id": "vendorCurrencies",
       "description": "The list of currencies used by this organization",
       "type": "array",
       "items": {
         "type": "string"
       }
     },
-    "claiming_interval": {
+    "claimingInterval": {
       "description": "The claim interval for this organization",
       "type": "integer"
     },
-    "discount_percent": {
+    "discountPercent": {
       "description": "The discount percentage for this organization",
       "type": "number"
     },
-    "expected_activation_interval": {
+    "expectedActivationInterval": {
       "description": "The expected activation interval (in days) for this organization",
       "type": "integer"
     },
-    "expected_invoice_interval": {
+    "expectedInvoiceInterval": {
       "description": "The expected invoice interval (in days) for this organization",
       "type": "integer"
     },
-    "renewal_activation_interval": {
+    "renewalActivationInterval": {
       "description": "The revewal activation interval (in days) for this organization",
       "type": "integer"
     },
-    "subscription_interval": {
+    "subscriptionInterval": {
       "description": "The subscription interval (in days) for this organization",
       "type": "integer"
     },
-    "expected_receipt_interval": {
+    "expectedReceiptInterval": {
       "description": "The receipt interval (in days) for this organization",
       "type": "integer"
     },
-    "tax_id": {
+    "taxId": {
       "description": "The tax ID for this organization",
       "type": "string"
     },
-    "liable_for_vat": {
+    "liableForVat": {
       "description": "The setting to mark this organization liable to collect VAT",
       "type": "boolean"
     },
-    "tax_percentage": {
+    "taxPercentage": {
       "description": "The tax percentage value for this organization",
       "type": "number"
     },
@@ -169,11 +168,11 @@
       "description": "The EDI object for this organization (only applicable when isVendor is true)",
       "type": "object",
       "properties": {
-        "vendor_edi_code": {
+        "vendorEdiCode": {
           "description": "The organization code for this EDI",
           "type": "string"
         },
-        "vendor_edi_type": {
+        "vendorEdiType": {
           "description": "The organization type for this EDI",
           "type": "string",
           "enum": [
@@ -183,11 +182,11 @@
             "092/Customer-assigned"
           ]
         },
-        "lib_edi_code": {
+        "libEdiCode": {
           "description": "The library code for this EDI",
           "type": "string"
         },
-        "lib_edi_type": {
+        "libEdiType": {
           "description": "The library type for this EDI",
           "type": "string",
           "enum": [
@@ -197,27 +196,27 @@
             "092/Customer-assigned"
           ]
         },
-        "prorate_tax": {
+        "prorateTax": {
           "description": "The setting to prorate tax for this EDI",
           "type": "boolean"
         },
-        "prorate_fees": {
+        "prorateFees": {
           "description": "The setting to prorate fees for this EDI",
           "type": "boolean"
         },
-        "edi_naming_convention": {
+        "ediNamingConvention": {
           "description": "The naming convention for this EDI",
           "type": "string"
         },
-        "send_acct_num": {
+        "sendAcctNum": {
           "description": "The setting to send the account number for this EDI",
           "type": "boolean"
         },
-        "support_order": {
+        "supportOrder": {
           "description": "The setting to support order for this EDI",
           "type": "boolean"
         },
-        "support_invoice": {
+        "supportInvoice": {
           "description": "The setting to support invoice for this EDI",
           "type": "boolean"
         },
@@ -225,11 +224,11 @@
           "description": "The notes for this EDI",
           "type": "string"
         },
-        "edi_ftp": {
+        "ediFtp": {
           "description": "The FTP object for this EDI",
           "type": "object",
           "properties": {
-            "ftp_format": {
+            "ftpFormat": {
               "description": "The FTP format for this EDI",
               "type": "string",
               "enum": [
@@ -237,7 +236,7 @@
                 "FTP"
               ]
             },
-            "server_address": {
+            "serverAddress": {
               "description": "The server address for this EDI",
               "type": ["string", "null"],
               "pattern": "^$|(([Hh][Tt][Tt][Pp]|[Ff][Tt][Pp])([Ss])?://.+$)"
@@ -250,7 +249,7 @@
               "description": "The login password for this EDI",
               "type": "string"
             },
-            "ftp_mode": {
+            "ftpMode": {
               "description": "The FTP mode for this EDI",
               "type": "string",
               "enum": [
@@ -258,7 +257,7 @@
                 "Binary"
               ]
             },
-            "ftp_conn_mode": {
+            "ftpConnMode": {
               "description": "The FTP connection mode for this EDI",
               "type": "string",
               "enum": [
@@ -266,15 +265,15 @@
                 "Passive"
               ]
             },
-            "ftp_port": {
+            "ftpPort": {
               "description": "The port for this EDI",
               "type": "integer"
             },
-            "order_directory": {
+            "orderDirectory": {
               "description": "The order directory for this EDI",
               "type": "string"
             },
-            "invoice_directory": {
+            "invoiceDirectory": {
               "description": "The invoice directory for this EDI",
               "type": "string"
             },
@@ -284,15 +283,15 @@
             }
           }
         },
-        "edi_job": {
+        "ediJob": {
           "description": "The job object for this EDI",
           "type": "object",
           "properties": {
-            "schedule_edi": {
+            "scheduleEdi": {
               "description": "Activate the schedule for this EDI job",
               "type": "boolean"
             },
-            "scheduling_date": {
+            "schedulingDate": {
               "description": "The date (MM/DD/YYYY) for this EDI job to start running",
               "type": ["string", "null"],
               "format": "date-time"
@@ -302,51 +301,51 @@
               "type": ["string", "null"],
               "format": "time"
             },
-            "is_monday": {
+            "isMonday": {
               "description": "The setting to run this EDI job on Mondays",
               "type": "boolean"
             },
-            "is_tuesday": {
+            "isTuesday": {
               "description": "The setting to run this EDI job on Tuesdays",
               "type": "boolean"
             },
-            "is_wednesday": {
+            "isWednesday": {
               "description": "The setting to run this EDI job on Wednesdays",
               "type": "boolean"
             },
-            "is_thursday": {
+            "isThursday": {
               "description": "The setting to run this EDI job on Thursdays",
               "type": "boolean"
             },
-            "is_friday": {
+            "isFriday": {
               "description": "The setting to run this EDI job on Fridays",
               "type": "boolean"
             },
-            "is_saturday": {
+            "isSaturday": {
               "description": "The setting to run this EDI job on Saturdays",
               "type": "boolean"
             },
-            "is_sunday": {
+            "isSunday": {
               "description": "The setting to run this EDI job on Sundays",
               "type": "boolean"
             },
-            "send_to_emails": {
+            "sendToEmails": {
               "description": "The comma delimited list of email addresses to notify when this EDI job runs",
               "type": "string"
             },
-            "notify_all_edi": {
+            "notifyAllEdi": {
               "description": "The setting to notify all receivers when this EDI job runs",
               "type": "boolean"
             },
-            "notify_invoice_only": {
+            "notifyInvoiceOnly": {
               "description": "The setting to notify only the invoice receiver when this EDI job runs",
               "type": "boolean"
             },
-            "notify_error_only": {
+            "notifyErrorOnly": {
               "description": "The setting to notiry on the error receiver when this EDI job runs",
               "type": "boolean"
             },
-            "scheduling_notes": {
+            "schedulingNotes": {
               "description": "The schedule notes for this EDI job",
               "type": "string"
             }
@@ -377,7 +376,7 @@
       "description": "Used to indicate that this organization is also a vendor",
       "type": "boolean"
     },
-    "san_code": {
+    "sanCode": {
       "description": "The SAN code for this organization address",
       "type": "string"
     },
