@@ -145,7 +145,8 @@
         "Partially Paid",
         "Payment Not Required",
         "Pending"
-      ]
+      ],
+      "default": "Pending"
     },
     "physical": {
       "description": "UUID of the physical (details) record",
@@ -240,6 +241,7 @@
   },
   "additionalProperties": false,
   "required": [
+    "orderFormat",
     "source"
   ]
 }

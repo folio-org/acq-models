@@ -145,7 +145,8 @@
         "Partially Paid",
         "Payment Not Required",
         "Pending"
-      ]
+      ],
+      "default": "Pending"
     },
     "physical": {
       "description": "details of this purchase order line relating to physical materials",
@@ -240,6 +241,7 @@
   },
   "additionalProperties": false,
   "required": [
+    "orderFormat",
     "source"
   ]
 }
