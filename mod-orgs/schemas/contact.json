@@ -4,7 +4,10 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": ["string", "null"],
+      "type": [
+        "string",
+        "null"
+      ],
       "description": "The unique id of this contact",
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     },
@@ -69,8 +72,7 @@
       "description": "The list of contact categories for this organization contact person",
       "type": "array",
       "items": {
-        "type": "object",
-        "$ref": "category.json"
+        "type": "string"
       }
     },
     "inactive": {
