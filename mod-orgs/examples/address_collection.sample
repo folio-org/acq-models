@@ -10,7 +10,5 @@
             "country": "USA"
         }
     ],
-    "total_records": 1,
-    "first": 1,
-    "last": 1
+    "totalRecords": 1
 }

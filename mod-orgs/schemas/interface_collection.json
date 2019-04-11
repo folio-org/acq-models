@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "collection of interface records",
+    "description": "Collection of interface records",
     "type": "object",
     "properties": {
       "interfaces": {
@@ -12,23 +12,14 @@
           "$ref": "interface.json"
         }
       },
-      "total_records": {
+      "totalRecords": {
         "description": "The number of interface records returned in this collection",
-        "type": "integer"
-      },
-      "first": {
-        "description": "The index of the first object in the collection",
-        "type": "integer"
-      },
-      "last": {
-        "description": "The index of the last object in the collection",
         "type": "integer"
       }
     },
     "additionalProperties": false,
     "required": [
       "interfaces",
-      "total_records"
+      "totalRecords"
     ]
   }
-  

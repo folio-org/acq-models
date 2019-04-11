@@ -1,34 +1,25 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "collection of phone numbers",
+    "description": "Collection of phone numbers",
     "type": "object",
     "properties": {
-      "phone_numbers": {
+      "phoneNumbers": {
         "description": "The list of phone numbers in this collection",
         "type": "array",
-        "id": "phone_numbers",
+        "id": "phoneNumbers",
         "items": {
           "type": "object",
           "$ref": "phone_number.json"
         }
       },
-      "total_records": {
+      "totalRecords": {
         "description": "The number of phone numbers returned in this collection",
-        "type": "integer"
-      },
-      "first": {
-        "description": "The index of the first object in the collection",
-        "type": "integer"
-      },
-      "last": {
-        "description": "The index of the last object in the collection",
         "type": "integer"
       }
     },
     "additionalProperties": false,
     "required": [
-      "phone_numbers",
-      "total_records"
+      "phoneNumbers",
+      "totalRecords"
     ]
   }
-  

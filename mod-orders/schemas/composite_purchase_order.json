@@ -100,5 +100,8 @@
       "readonly": true
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "required": [
+    "vendor"
+  ]
 }
