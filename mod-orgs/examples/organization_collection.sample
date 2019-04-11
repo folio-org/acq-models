@@ -37,11 +37,9 @@
           "language": "en"
         }
       ],
-      "phone_numbers": [
+      "phoneNumbers": [
         {
-          "phone_number": {
-            "phone_number": "19789999999"
-          },
+          "phoneNumber": "19789999999",
           "categories": [
             "0e3f9680-ab06-4565-af64-609b7364e6eb",
             "996ecd31-7ca4-4d8d-9bbf-bc94dff5f6c6"
@@ -83,69 +81,69 @@
         {
           "name": "History Follower Incentive",
           "discount": 10,
-          "reference_url": "http://my_sample_agreement.com",
+          "referenceUrl": "http://my_sample_agreement.com",
           "notes": "note"
         }
       ],
-      "erp_code": "AQ-GOBI-HIST",
-      "payment_method": "EFT",
-      "access_provider": true,
+      "erpCode": "AQ-GOBI-HIST",
+      "paymentMethod": "EFT",
+      "accessProvider": true,
       "governmental": true,
       "licensor": true,
-      "material_supplier": true,
-      "vendor_currencies": [
+      "materialSupplier": true,
+      "vendorCurrencies": [
         "USD",
         "CAD",
         "GBP"
       ],
-      "claiming_interval": 30,
-      "discount_percent": 10,
-      "expected_activation_interval": 1,
-      "expected_invoice_interval": 5,
-      "renewal_activation_interval": 1,
-      "subscription_interval": 365,
-      "liable_for_vat": false,
-      "tax_id": "TX-GOBI-HIST",
-      "tax_percentage": 5,
+      "claimingInterval": 30,
+      "discountPercent": 10,
+      "expectedActivationInterval": 1,
+      "expectedInvoiceInterval": 5,
+      "renewalActivationInterval": 1,
+      "subscriptionInterval": 365,
+      "liableForVat": false,
+      "taxId": "TX-GOBI-HIST",
+      "taxPercentage": 5,
       "edi": {
-        "vendor_edi_code": "AQ-GOBI-HIST",
-        "vendor_edi_type": "014/EAN",
-        "lib_edi_code": "MY-LIB-1",
-        "lib_edi_type": "014/EAN",
-        "prorate_tax": true,
-        "prorate_fees": true,
-        "edi_naming_convention": "name",
-        "send_acct_num": true,
-        "support_order": true,
-        "support_invoice": true,
+        "vendorEdiCode": "AQ-GOBI-HIST",
+        "vendorEdiType": "014/EAN",
+        "libEdiCode": "MY-LIB-1",
+        "libEdiType": "014/EAN",
+        "prorateTax": true,
+        "prorateFees": true,
+        "ediNamingConvention": "name",
+        "sendAcctNum": true,
+        "supportOrder": true,
+        "supportInvoice": true,
         "notes": "",
-        "edi_ftp": {
-          "ftp_format": "SFTP",
-          "server_address": "http://127.0.0.1",
+        "ediFtp": {
+          "ftpFormat": "SFTP",
+          "serverAddress": "http://127.0.0.1",
           "username": "edi_username",
           "password": "edi_password",
-          "ftp_mode": "ASCII",
-          "ftp_conn_mode": "Active",
-          "ftp_port": 22,
-          "order_directory": "/path/to/order/directory",
-          "invoice_directory": "/path/to/invoice/directory",
+          "ftpMode": "ASCII",
+          "ftpConnMode": "Active",
+          "ftpPort": 22,
+          "orderDirectory": "/path/to/order/directory",
+          "invoiceDirectory": "/path/to/invoice/directory",
           "notes": "My FTP notes"
         },
-        "edi_job": {
-          "schedule_edi": false,
-          "scheduling_date": null,
+        "ediJob": {
+          "scheduleEdi": false,
+          "schedulingDate": null,
           "time": null,
-          "is_monday": false,
-          "is_tuesday": false,
-          "is_wednesday": false,
-          "is_thursday": false,
-          "is_friday": false,
-          "is_saturday": false,
-          "is_sunday": false,
-          "send_to_emails": "email1@site.com, email2@site.com",
-          "notify_all_edi": true,
-          "notify_invoice_only": true,
-          "notify_error_only": false
+          "isMonday": false,
+          "isTuesday": false,
+          "isWednesday": false,
+          "isThursday": false,
+          "isFriday": false,
+          "isSaturday": false,
+          "isSunday": false,
+          "sendToEmails": "email1@site.com, email2@site.com",
+          "notifyAllEdi": true,
+          "notifyInvoiceOnly": true,
+          "notifyErrorOnly": false
         }
       },
       "interfaces": [
@@ -156,21 +154,21 @@
           "password": "my_password",
           "notes": "This is the store-front for GOBI.",
           "available": true,
-          "delivery_method": "Online",
-          "statistics_format": "PDF"
+          "deliveryMethod": "Online",
+          "statisticsFormat": "PDF"
         }
       ],
       "accounts": [
         {
           "name": "History Account",
-          "account_no": "GOBI-HIST-12",
+          "accountNo": "GOBI-HIST-12",
           "description": "This is my account description.",
-          "app_system_no": "FIN-GOBI-HIST-12",
-          "payment_method": "EFT",
-          "account_status": "Active",
-          "contact_info": "Some basic contact information note.",
-          "library_code": "My Library",
-          "library_edi_code": "MY-LIB-1",
+          "appSystemNo": "FIN-GOBI-HIST-12",
+          "paymentMethod": "EFT",
+          "accountStatus": "Active",
+          "contactInfo": "Some basic contact information note.",
+          "libraryCode": "My Library",
+          "libraryEdiCode": "MY-LIB-1",
           "notes": "note"
         }
       ],
@@ -182,7 +180,5 @@
       ]
     }
   ],
-  "total_records": 1,
-  "first": 1,
-  "last": 1
+  "totalRecords": 1
 }

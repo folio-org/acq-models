@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "collection of alias records",
+    "description": "Collection of alias records",
     "type": "object",
     "properties": {
       "aliases": {
@@ -12,23 +12,14 @@
           "$ref": "alias.json"
         }
       },
-      "total_records": {
+      "totalRecords": {
         "description": "The number of alias records returned in this collection",
-        "type": "integer"
-      },
-      "first": {
-        "description": "The index of the first object in the collection",
-        "type": "integer"
-      },
-      "last": {
-        "description": "The index of the last object in the collection",
         "type": "integer"
       }
     },
     "additionalProperties": false,
     "required": [
       "aliases",
-      "total_records"
+      "totalRecords"
     ]
   }
-  

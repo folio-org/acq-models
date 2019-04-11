@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "collection of account records",
+    "description": "Collection of account records",
     "type": "object",
     "properties": {
       "accounts": {
@@ -12,23 +12,14 @@
           "$ref": "account.json"
         }
       },
-      "total_records": {
+      "totalRecords": {
         "description": "The number of account records returned in this collection",
-        "type": "integer"
-      },
-      "first": {
-        "description": "The index of the first object in the collection",
-        "type": "integer"
-      },
-      "last": {
-        "description": "The index of the last object in the collection",
         "type": "integer"
       }
     },
     "additionalProperties": false,
     "required": [
       "accounts",
-      "total_records"
+      "totalRecords"
     ]
   }
-  
