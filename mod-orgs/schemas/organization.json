@@ -355,11 +355,12 @@
     },
     "interfaces": {
       "id": "interfaces",
-      "description": "The list of interfaces for this organization",
+      "description": "The list of interfaces assigned to this organization",
       "type": "array",
       "items": {
-        "type": "object",
-        "$ref": "interface.json"
+        "description": "UUID of an interface record",
+        "type": "string",
+        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
       }
     },
     "accounts": {
