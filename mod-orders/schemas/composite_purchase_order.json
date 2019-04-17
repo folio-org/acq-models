@@ -102,6 +102,7 @@
   },
   "additionalProperties": false,
   "required": [
-    "vendor"
+    "vendor",
+    "orderType"
   ]
 }

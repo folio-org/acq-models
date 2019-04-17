@@ -241,7 +241,10 @@
   },
   "additionalProperties": false,
   "required": [
+    "acquisitionMethod",
+    "cost",
     "orderFormat",
-    "source"
+    "source",
+    "title"
   ]
 }
