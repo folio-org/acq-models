@@ -20,21 +20,19 @@
       ],
       "addresses": [
         {
-          "address": {
             "addressLine1": "10 Estes Street",
             "addressLine2": "",
             "city": "Ipswich",
             "stateRegion": "MA",
             "zipCode": "01938",
-            "country": "USA"
-          },
-          "categories": [
-            "0e3f9680-ab06-4565-af64-609b7364e6eb",
-            "996ecd31-7ca4-4d8d-9bbf-bc94dff5f6c6",
-            "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
-            "56288fe8-8037-44da-8395-01d2d106dc54"
-          ],
-          "language": "en"
+            "country": "USA",
+            "categories": [
+              "0e3f9680-ab06-4565-af64-609b7364e6eb",
+              "996ecd31-7ca4-4d8d-9bbf-bc94dff5f6c6",
+              "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
+              "56288fe8-8037-44da-8395-01d2d106dc54"
+            ],
+            "language": "en"
         }
       ],
       "phoneNumbers": [
@@ -49,27 +47,23 @@
       ],
       "emails": [
         {
-          "email": {
-            "value": "noreply@folio.org",
-            "description": "Main"
-          },
-          "categories": [
-            "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
-            "56288fe8-8037-44da-8395-01d2d106dc54"
+          "value": "noreply@folio.org",
+          "description": "Main",
+          "categories": [	
+            "112ae2e4-88ae-4fa5-a75b-2379d2035e52",	
+            "56288fe8-8037-44da-8395-01d2d106dc54"	
           ],
           "language": "en-us"
         }
       ],
       "urls": [
         {
-          "url": {
-            "value": "http://folio.org",
-            "description": ""
-          },
+          "value": "http://folio.org",
+          "description": "",
           "language": "en-us",
-          "categories": [
-            "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
-            "56288fe8-8037-44da-8395-01d2d106dc54"
+          "categories": [	
+            "112ae2e4-88ae-4fa5-a75b-2379d2035e52",	
+            "56288fe8-8037-44da-8395-01d2d106dc54"	
           ],
           "notes": "note"
         }
