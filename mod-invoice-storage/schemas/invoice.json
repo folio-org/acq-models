@@ -83,7 +83,7 @@
       "type": "number"
     },
     "vendorInvoiceNo": {
-      "description": "This is the number from the vendor's invoice this may or may not be the same as the folioInvoiceNo",
+      "description": "This is the number from the vendor's invoice, which is different from the folioInvoiceNo",
       "type": "string"
     },
     "disbursementNumber": {
