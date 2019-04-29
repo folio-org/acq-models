@@ -132,7 +132,6 @@
   "additionalProperties": false,
   "required": [
     "currency",
-    "folioInvoiceNo",
     "invoiceDate",
     "paymentMethod",
     "approvalDate",
