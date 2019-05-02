@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "voucher line",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "UUID of this voucher line",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
+    "externalAccountNumber": {
+      "description": "All distributions that come flrom funds with the same account number are grouped by voucher line",
+      "type": "string"
+    },
+    "voucherLineAmount": {
+      "description": "Total amount of this voucher",
+      "type": "number"
+    },
+    "sourceId": {
+      "description": "UUID of source",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
+    "disbursementNumber": {
+      "description": "Total amount of this voucher",
+      "type": "number"
+    },
+    "disbursementDate": {
+      "description": "Date payment was made from financial system",
+      "type": "string",
+      "format": "date-time"
+    },
+    "disbursementAmount": {
+      "description": "The amount of the payment made outside of FOLIO",
+      "type": "number"
+    },
+    "fundId": {
+      "description": "The fund id",
+      "type": "string"
+    },
+    "fundDistributions": {
+        "description": "UUID of the fund distributions associated with invoice;referenced from the invoice",
+        "type": "string",
+        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
+    "subTransactionId": {
+      "description": "UUID of sub transactions",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
+    "metadata": {
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "externalAccountNumber",
+    "voucherLineAmount",
+    "sourceId",
+    "fundId",
+    "fundDistributions",
+    "subTransactionId"
+  ]
+}

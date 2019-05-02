@@ -1,0 +1,94 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "voucher",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "UUID of this voucher",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
+    "systemCurrency": {
+      "description": "The currency in which the voucher was paid",
+      "type": "string"
+    },
+    "invoiceCurrency": {
+      "description": "The currency in which invoice was originally defined",
+      "type": "string"
+    },
+    "exchangeRate": {
+      "description": "Exchange rate used to generate transaction",
+      "type": "number"
+    },
+    "exportToAccounting": {
+      "description": "Export this payment record to a financial system",
+      "type": "boolean"
+    },
+    "voucherType":{
+      "description": "Indicates type of payment to account",
+      "type": "string"
+    },
+    "voucherStatus":{
+      "description": "status of the voucher",
+      "type": "string"
+    },
+    "voucherAmount": {
+      "description": "The amount that is actually paid",
+      "type": "number"
+    },
+    "voucherDate": {
+      "description": "The date the invoice status changes to approved",
+      "type": "string",
+      "format": "date-time"
+    },
+    "voucherNumber": {
+      "description": "Invoice number in folio system",
+      "type": "string"
+    },
+    "batchNumber": {
+      "description": "Only required when voucher is being output automatically",
+      "type": "string"
+    },
+    "invoiceId": {
+      "description": "Corresponding invoce Id",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
+    "userId": {
+      "description": "ID of the user who transitioned the invoice to approved",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
+     "voucherLines": {
+      "description": "references the voucher lines associated to the voucher",
+      "id": "voucherLines",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "voucher_line.json"
+      }
+    },
+    "accountingCode": {
+      "description": "Number that represents the vendor is an external accounting system;This is the number as stated on the invoice",
+      "type": "string"
+    },
+    "metadata": {
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+     "systemCurrency",
+     "invoiceCurrency",
+     "exportToAccounting",
+     "voucherType",
+     "voucherStatus",
+     "voucherAmount",
+     "voucherNumber",
+     "batchNumber",
+     "invoiceId",
+     "accountingCode"
+  ]
+}
