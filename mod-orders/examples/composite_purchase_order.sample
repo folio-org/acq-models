@@ -13,6 +13,7 @@
     "ABCDEFGHIJKLMNOPQRSTUV"
   ],
   "orderType": "Ongoing",
+  "owner": "Cataloging",
   "poNumber": "A268758XYZ",
   "reEncumber": false,
   "renewal": {
@@ -112,7 +113,6 @@
         }
       ],
       "orderFormat": "Physical Resource",
-      "owner": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
       "paymentStatus": "Awaiting Payment",
       "physical": {
        "createInventory": "Instance, Holding, Item",

@@ -93,7 +93,6 @@
     }
   ],
   "orderFormat": "P/E Mix",
-  "owner": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
   "paymentStatus": "Awaiting Payment",
   "physical": {
     "createInventory": "Instance, Holding, Item",
