@@ -1,7 +1,7 @@
 {
   "id": "a9b99f8a-7100-47f2-9903-6293d44a9905",
-  "systemCurreny": "USD",
-  "invoiceCurreny": "EUR",
+  "systemCurrency": "USD",
+  "invoiceCurrency": "EUR",
   "exchangeRate": 1.12,
   "exportToAccounting": false,
   "voucherType": "Payment",
@@ -10,7 +10,7 @@
   "voucherDate": "2019-05-06T00:00:00.000+0000",
   "voucherNumber": "1000",
   "batchNumber": "101",
-  invoiceId": "c0d08448-347b-418a-8c2f-5fb50248d67e",
+  "invoiceId": "c0d08448-347b-418a-8c2f-5fb50248d67e",
   "userId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1",
   "voucherLines": [
      {
