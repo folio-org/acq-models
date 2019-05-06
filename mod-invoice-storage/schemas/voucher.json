@@ -26,11 +26,21 @@
     },
     "voucherType":{
       "description": "Indicates type of payment to account",
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "Payment",
+        "Pre-Payment",
+        "Credit",
+        "Voucher"
+      ]
     },
     "voucherStatus":{
       "description": "status of the voucher",
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "Awaiting Payment",
+        "Paid"
+      ]
     },
     "voucherAmount": {
       "description": "The amount that is actually paid",
@@ -70,7 +80,20 @@
     },
     "accountingCode": {
       "description": "Number that represents the vendor is an external accounting system;This is the number as stated on the invoice",
+      "type": "String"
+    },
+    "disbursementNumber": {
+      "description": "The identifier for the physical transaction corresponding to a payment;Brought in from external source",
       "type": "string"
+    },
+    "disbursementDate":{
+      "description": "Date payment was made from financia system",
+      "type": "string",
+      "format": "date-time"
+    },
+    "disbursementAmount":{
+      "description": "The amount of the payment made outside of FOLIO",
+      "type": "number"
     },
     "metadata": {
       "type": "object",
