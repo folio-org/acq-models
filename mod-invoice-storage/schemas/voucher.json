@@ -69,7 +69,7 @@
       "type": "string",
       "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
-     "voucherLines": {
+    "voucherLines": {
       "description": "references the voucher lines associated to the voucher",
       "id": "voucherLines",
       "type": "array",
@@ -80,7 +80,7 @@
     },
     "accountingCode": {
       "description": "Number that represents the vendor is an external accounting system;This is the number as stated on the invoice",
-      "type": "String"
+      "type": "string"
     },
     "disbursementNumber": {
       "description": "The identifier for the physical transaction corresponding to a payment;Brought in from external source",
