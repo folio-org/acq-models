@@ -4,6 +4,7 @@
     "lastName": "Fury",
     "language": "en-us",
     "notes": "SHIELD's Big Kahuna",
+    "inactive": false,
     "phoneNumbers": [
      {
          "phoneNumber": "19789999999",
