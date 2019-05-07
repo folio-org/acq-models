@@ -53,7 +53,8 @@
     },
     "voucherNumber": {
       "description": "Invoice number in folio system",
-      "type": "string"
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9]*$"
     },
     "batchNumber": {
       "description": "Only required when voucher is being output automatically",
@@ -61,11 +62,6 @@
     },
     "invoiceId": {
       "description": "Corresponding invoice Id",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
-    },
-    "userId": {
-      "description": "ID of the user who transitioned the invoice to approved",
       "type": "string",
       "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
