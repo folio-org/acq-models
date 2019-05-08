@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "voucher line",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "UUID of this voucher line",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
+    "externalAccountNumber": {
+      "description": "All distributions that come from funds with the same account number are grouped by voucher line",
+      "type": "string"
+    },
+    "voucherLineAmount": {
+      "description": "Total amount of this voucher",
+      "type": "number"
+    },
+    "sourceId": {
+      "description": "UUID of source, grouped on a voucher line based on External Account Number",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
+    "fundId": {
+      "description": "The fund Id",
+      "type": "string"
+    },
+    "fundDistributions": {
+      "description": "UUID of the fund distribution amount associated with particular fund;referenced from the invoice",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
+    "subTransactionId": {
+      "description": "UUID of sub transactions",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
+    "metadata": {
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "externalAccountNumber",
+    "voucherLineAmount",
+    "sourceId",
+    "fundId",
+    "fundDistributions",
+    "subTransactionId"
+  ]
+}
