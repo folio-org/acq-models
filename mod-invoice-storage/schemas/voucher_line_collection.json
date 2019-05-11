@@ -3,7 +3,7 @@
   "description": "collection of voucher lines",
   "type": "object",
   "properties": {
-    "invoiceLines": {
+    "voucherLines": {
       "description": "an array of voucher line records",
       "id": "voucherLines",
       "type": "array",
