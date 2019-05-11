@@ -52,6 +52,10 @@
         "Ongoing"
       ]
     },
+    "owner": {
+      "description": "The team owner of this purchase order",
+      "type": "string"
+    },
     "reEncumber": {
       "description": "indicates this purchase order should be re-encumbered each fiscal year. Only applies to ongoing orders",
       "type": "boolean"

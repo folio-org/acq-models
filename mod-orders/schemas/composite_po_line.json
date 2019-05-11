@@ -131,10 +131,6 @@
       "type": "object",
       "$ref": "../../mod-orders-storage/schemas/order_format.json"
     },
-    "owner": {
-      "description": "the owner of this purchase order line",
-      "type": "string"
-    },
     "paymentStatus": {
       "description": "The purchase order line payment status",
       "type": "string",
