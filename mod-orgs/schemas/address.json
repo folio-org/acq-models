@@ -49,8 +49,5 @@
       "type": "string"
     }
   },
-  "additionalProperties": false,
-  "required": [
-    "country"
-  ]
+  "additionalProperties": false
 }

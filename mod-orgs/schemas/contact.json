@@ -79,7 +79,8 @@
     },
     "inactive": {
       "description": "Used to indicate that a contact is no longer active",
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     }
   },
   "additionalProperties": false,
