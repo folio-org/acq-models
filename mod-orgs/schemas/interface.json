@@ -57,6 +57,15 @@
     "statisticsNotes": {
       "description": "The notes regarding the statistics for this interface",
       "type": "string"
+    },
+    "type": {
+      "description": "Interface types",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "interface_type.json"
+      }
+
     }
   },
   "additionalProperties": false
