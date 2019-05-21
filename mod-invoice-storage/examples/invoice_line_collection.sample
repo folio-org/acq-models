@@ -1,43 +1,49 @@
 {
-  "invoiceLines": {
-    "id": "e0d08448-343b-118a-8c2f-4fb50248d672",
-    "description": "Some description",
-    "poLineIds": [
-      "c0d08448-347b-418a-8c2f-5fb50248d67e"
-    ],
-    "invoiceLineNumber": "123invoicenumber45-1",
-    "invoiceLineStatus": "Open",
-    "vendorRefNo": "1",
-    "productId": "9780764354113",
-    "productIdType": "ISBN",
-    "invoiceLineTax": 11.2,
-    "comment": "Sample invoice line",
-    "price": 2.2,
-    "quantity": 3.0,
-    "doNotReleaseEncumbrance": true,
-    "reportTax": 3.5,
-    "subscriptionInfo": "Subscription information",
-    "subscriptionStart": "2018-08-01T00:00:00.000+0000",
-    "subscriptionEnd": "2019-01-01T00:00:00.000+0000",
-    "pieceIds": [
-      "5e317dc2-deeb-4429-b2a1-91e5cd0fd5f7"
-    ],
-    "invoiceId": "c0d08448-347b-418a-8c2f-5fb50248d67e",
-    "fundDistributions": [
-      "HIST"
-    ],
-    "adjustmentsFieldSet": [
-      {
-        "adjustmentLabel": "Adjustment label",
-        "adjustmentType": "Percentage",
-        "adjustmentValue": 10.1,
-        "proRateAdjustment": true
+  "invoiceLines": [
+    {
+      "id": "e0d08448-343b-118a-8c2f-4fb50248d672",
+      "adjustments": [
+        {
+          "adjustmentLabel": "Service Fee",
+          "adjustmentType": "Amount",
+          "adjustmentValue": 2.25
+        },
+        {
+          "adjustmentLabel": "Shipping",
+          "adjustmentType": "Amount",
+          "adjustmentValue": 2.75
+        }
+      ],
+      "adjustmentsTotal": 5.00,
+      "description": "Some description",
+      "fundDistributions": [
+        {
+          "code": "USHIST",
+          "encumbrance": "949c9e5d-2c7d-45d6-bd7f-8e82a0b27889",
+          "fundId": "1d1574f1-9196-4a57-8d1f-3b2e4309eb81",
+          "percentage": 50
+        }
+      ],
+      "poLineId": "c0d08448-347b-418a-8c2f-5fb50248d67e",
+      "invoiceId": "c0d08448-347b-418a-8c2f-5fb50248d67e",
+      "invoiceLineNumber": "123invoicenumber45-1",
+      "invoiceLineStatus": "Open",
+      "vendorRefNo": "2019-184",
+      "productId": "9780764354113",
+      "productIdType": "ISBN",
+      "comment": "Sample invoice line",
+      "quantity": 3,
+      "releaseEncumbrance": true,
+      "subscriptionInfo": "Subscription information",
+      "subscriptionStart": "2018-08-01T00:00:00.000+0000",
+      "subscriptionEnd": "2020-01-01T00:00:00.000+0000",
+      "subTotal": 125.00,
+      "total": 130.00,
+      "metadata": {
+        "createdDate": "2018-07-19T00:00:00.000+0000",
+        "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
       }
-    ],
-    "metadata": {
-      "createdDate": "2018-07-19T00:00:00.000+0000",
-      "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
     }
-  },
+  ],
   "totalRecords": 1
 }
