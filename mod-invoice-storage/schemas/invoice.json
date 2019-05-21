@@ -152,13 +152,9 @@
     "currency",
     "invoiceDate",
     "paymentMethod",
-    "approvalDate",
     "status",
     "source",
-    "total",
     "vendorInvoiceNo",
-    "voucherNumber",
-    "paymentId",
     "vendorId"
   ]
 }

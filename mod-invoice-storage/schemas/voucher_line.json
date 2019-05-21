@@ -55,7 +55,6 @@
     "externalAccountNumber",
     "fundDistributions",
     "sourceIds",
-    "subTransactionId",
     "voucherId"
   ]
 }
