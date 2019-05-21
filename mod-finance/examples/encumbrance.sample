@@ -1,11 +1,10 @@
 {
-  "id": "47Ac60b4-159D-4e1c-9aCB-8293Df67D16d",
-  "amount_encumbered": 12.50,
-  "current_encumbered": 12.50,
-  "amount_expended": 1567.92,
-  "encumbrance_status": "unknown",
-  "currency": "CAD",
-  "exchange_rate": "1",
-  "po_line_id": "47Ac60b4-159D-4e1c-9aCB-8293Df67D16d",
-  "fund_id": "47Ac60b4-159D-4e1c-9aCB-8293Df67D16d"
+  "id": "47ac60b4-159d-4e1c-9acb-8293df67d16d",
+  "amountEncumbered": 12.50,
+  "amountAwaitingPayment": 12.50,
+  "amountExpended": 1567.92,
+  "budgetId": "e4030833-52c7-48c8-96f7-be2ca4e945ad",
+  "fundId": "01c1ab4b-83b0-467a-b81f-21c535d3f18b",
+  "poLineId": "e35daa9c-546f-46d2-aa92-f3223a05fb25",
+  "status": "Unreleased"
 }

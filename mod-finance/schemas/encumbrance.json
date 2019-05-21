@@ -4,47 +4,69 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": ["string", "null"],
+      "type": [
+        "string",
+        "null"
+      ],
       "description": "UUID",
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     },
-    "amount_encumbered": {
+    "amountAwaitingPayment": {
+      "description": "The amount of awaiting for payment",
+      "type": "number"
+    },
+    "amountEncumbered": {
       "description": "The amount of this encumbrance",
       "type": "number"
     },
-    "current_encumbered": {
-      "description": "The amount currently encumbered",
-      "type": "number"
-    },
-    "amount_expended": {
+    "amountExpended": {
       "description": "The amount currently expended by this encumbrance",
       "type": "number"
     },
-    "encumbrance_status": {
+    "budgetId": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "UUID",
+      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+    },
+    "fundId": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "UUID",
+      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+    },
+    "note": {
+      "description": "Note associated with this encumbrance",
+      "type": "string"
+    },
+    "poLineId": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "UUID",
+      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+    },
+    "status": {
       "description": "The status of this encumbrance",
-      "type": "string"
-    },
-    "currency": {
-      "description": "The currency type used by this encumbrance",
-      "type": "string"
-    },
-    "exchange_rate": {
-      "description": "The exchange rate used by this encumbrance",
-      "type": "string"
-    },
-    "po_line_id": {
-      "type": ["string", "null"],
-      "description": "UUID",
-      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
-    },
-    "fund_id": {
-      "type": ["string", "null"],
-      "description": "UUID",
-      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+      "type": "string",
+      "enum": [
+        "Released",
+        "Unreleased"
+      ],
+      "default": "Unreleased"
     }
   },
   "additionalProperties": false,
   "required": [
-    "currency"
+    "amountEncumbered",
+    "budgetId",
+    "fundId",
+    "poLineId",
+    "status"
   ]
 }
