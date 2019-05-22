@@ -25,16 +25,14 @@
     },
     "budgetId": {
       "type": [
-        "string",
-        "null"
+        "string"
       ],
       "description": "UUID",
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
     },
     "fundId": {
       "type": [
-        "string",
-        "null"
+        "string"
       ],
       "description": "UUID",
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
@@ -45,8 +43,7 @@
     },
     "poLineId": {
       "type": [
-        "string",
-        "null"
+        "string"
       ],
       "description": "UUID",
       "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
@@ -66,7 +63,6 @@
     "amountEncumbered",
     "budgetId",
     "fundId",
-    "poLineId",
-    "status"
+    "poLineId"
   ]
 }
