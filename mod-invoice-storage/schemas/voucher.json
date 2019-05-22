@@ -54,7 +54,7 @@
       "description": "Status of the voucher",
       "type": "string",
       "enum": [
-        "Awaiting Payment",
+        "Awaiting payment",
         "Paid"
       ]
     },
@@ -67,7 +67,7 @@
       "type": "string",
       "enum": [
         "Payment",
-        "Pre-Payment",
+        "Pre-payment",
         "Credit",
         "Voucher"
       ]

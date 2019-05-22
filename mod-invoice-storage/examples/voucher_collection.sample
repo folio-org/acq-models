@@ -12,9 +12,9 @@
       "invoiceId": "c0d08448-347b-418a-8c2f-5fb50248d67e",
       "exchangeRate": 1.12,
       "exportToAccounting": false,
-      "status": "Awaiting Payment",
+      "status": "Paid",
       "systemCurrency": "USD",
-      "type": "Payment",
+      "type": "Pre-payment",
       "voucherDate": "2019-05-06T00:00:00.000+0000",
       "voucherNumber": "1000",
       "metadata": {
