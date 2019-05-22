@@ -57,7 +57,7 @@
       "description": "Invoice note",
       "type": "string"
     },
-    "owner": {
+    "acquisitionsUnit": {
       "description": "The location/branch/division etc that's responsible for this invoice. This may or may not be the same as the PO. ie. North Branch",
       "type": "string",
       "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"

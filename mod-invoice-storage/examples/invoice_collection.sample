@@ -18,7 +18,7 @@
       "invoiceDate": "2018-07-20T00:00:00.000+0000",
       "lockTotal": false,
       "note": "Some note",
-      "owner": "d79b0bcc-dcad-1e4e-abb7-dbfcad5bb3bb",
+      "acquisitionsUnit": "d79b0bcc-dcad-1e4e-abb7-dbfcad5bb3bb",
       "paymentDue": "2018-08-29T00:00:00.000+0000",
       "paymentTerms": "Payment in Advance",
       "paymentMethod": "EFT",
