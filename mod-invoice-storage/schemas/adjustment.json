@@ -41,7 +41,7 @@
         "Included in",
         "Separate from"
       ],
-      "default" : "Not prorated"
+      "default" : "In addition to"
     },
     "type": {
       "description": "Adjustment type",
