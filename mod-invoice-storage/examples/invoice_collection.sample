@@ -4,9 +4,12 @@
       "id": "c0d08448-347b-418a-8c2f-5fb50248d67e",
       "adjustments": [
         {
-          "adjustmentLabel": "Shipping",
-          "adjustmentType": "Amount",
-          "adjustmentValue": 4.50
+          "id":"14263aab-b22b-4ddc-9ecc-3434427c2c8f"
+          "description":"Shipping",
+          "type":"Amount",
+          "value":4.50,
+          "prorate":"By line",
+          "relationToTotal":"In addition to"
         }
       ],
       "adjustmentsTotal": 4.50,

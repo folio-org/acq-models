@@ -4,14 +4,18 @@
       "id": "e0d08448-343b-118a-8c2f-4fb50248d672",
       "adjustments": [
         {
-          "adjustmentLabel": "Service Fee",
-          "adjustmentType": "Amount",
-          "adjustmentValue": 2.25
+          "description":"Service Fee",
+          "type":"Amount",
+          "value":2.25,
+          "prorate":"Not Prorated",
+          "relationToTotal":"In addition to"
         },
         {
-          "adjustmentLabel": "Shipping",
-          "adjustmentType": "Amount",
-          "adjustmentValue": 2.75
+          "description":"Shipping",
+          "type":"Amount",
+          "value":2.75,
+          "prorate":"Not Prorated",
+          "relationToTotal":"In addition to"
         }
       ],
       "adjustmentsTotal": 5.00,

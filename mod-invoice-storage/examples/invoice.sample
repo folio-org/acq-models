@@ -2,14 +2,12 @@
   "id": "733cafd3-895f-4e33-87b7-bf40dc3c8069",
   "adjustments": [
     {
-      "adjustmentLabel": "Sales Tax",
-      "adjustmentType": "Percentage",
-      "adjustmentValue": 6
-    },
-    {
-      "adjustmentLabel": "Shipping",
-      "adjustmentType": "Amount",
-      "adjustmentValue": 8.50
+        "id":"14263aab-b22b-4ddc-9ecc-3434427c2c8f"
+        "description":"Shipping",
+        "type":"Amount",
+        "value":4.50,
+        "prorate":"By line",
+        "relationToTotal":"In addition to"
     }
   ],
   "adjustmentsTotal": 11.50,
