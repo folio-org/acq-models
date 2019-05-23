@@ -8,19 +8,40 @@
       "type": "string",
       "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
-    "description": {
-      "description": "Title as capured in the Purchase Order Line. In the absence of a POL link this could be used to describe the POL",
-      "type": "string"
-    },
-    "poLineIds": {
-      "description": "List of UUID`s of the POL",
-      "id": "poLineIds",
+    "adjustments": {
+      "description": "Defined in settings - the amount field will be editable and pro-rate toggle will be editable if enabled for that adjustment",
       "type": "array",
       "items": {
-        "description": "UUID of the purchase order line associated with invoice",
-        "type": "string",
-        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+        "type": "object",
+        "$ref": "adjustment.json"
       }
+    },
+    "adjustmentsTotal": {
+      "description": "Sum of all invoice line adjustments. The value is calculated \"on the fly\" and never persisted",
+      "type": "number",
+      "readonly": true
+    },
+    "comment": {
+      "description": "Free form commentary",
+      "type": "string"
+    },
+    "description": {
+      "description": "Title as captured in the Purchase Order Line. In the absence of a POL link this could be used to describe the POL",
+      "type": "string"
+    },
+    "fundDistributions": {
+      "description": "List of fund distributions",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "fund_distribution.json"
+      },
+      "minItems": 1
+    },
+    "invoiceId": {
+      "description": "UUID of this parent invoice",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
     "invoiceLineNumber": {
       "description": "Sequentially generated and not editable by the user.",
@@ -38,9 +59,10 @@
         "Error"
       ]
     },
-    "vendorRefNo": {
-      "description": "This is the number used to match POLs created by import to invoices created by import",
-      "type": "string"
+    "poLineId": {
+      "description": "UUID of the corresponding purchase order line this invoice line is based on",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
     "productId": {
       "description": "product identifier",
@@ -48,32 +70,17 @@
     },
     "productIdType": {
       "description": "the type of product id",
-      "type": "object",
+      "type": "string",
       "$ref": "../../common/schemas/product_id_type.json"
-    },
-    "invoiceLineTax": {
-      "description": "Invoice line tax",
-      "type": "number"
-    },
-    "comment": {
-      "description": "Free form commentary",
-      "type": "string"
-    },
-    "price": {
-      "description": "Invoice line price",
-      "type": "number"
     },
     "quantity": {
       "description": "quantity",
       "type": "integer"
     },
-    "doNotReleaseEncumbrance": {
-      "description": "If this is intended to not only release encumbrances but to indicate that this is the final invoice. Should the label be changed? This should take into account the fiscal year. We may release encumbrance for this FY but for on-going orders expect to encumber again next year.",
-      "type": "boolean"
-    },
-    "reportTax": {
-      "description": "Report tax",
-      "type": "number"
+    "releaseEncumbrance": {
+      "description": "This is intended to not only release encumbrances but to indicate that this is the final invoice line for corresponding order line. This should take into account the fiscal year. We may release encumbrance for this FY but for on-going orders expect to encumber again next year.",
+      "type": "boolean",
+      "default": true
     },
     "subscriptionInfo": {
       "description": "The user should use this field to provide info on the subscription (eg. which volumes are being invoiced). It is MANDATORY if the chk_subscription_overlap is FALSE AND there is no start date provided",
@@ -89,37 +96,17 @@
       "type": "string",
       "format": "date-time"
     },
-    "pieceIds": {
-      "description": "Uuids for associated pieces as link through the POL",
-      "id": "pieceIds",
-      "type": "array",
-      "items": {
-        "description": "UUID of the piece",
-        "type": "string",
-        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
-      }
+    "subTotal": {
+      "description": "Invoice line amount before adjustments are applied",
+      "type": "number"
     },
-    "invoiceId": {
-      "description": "UUID of this parent invoice",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    "total": {
+      "description": "Invoice line total amount",
+      "type": "number"
     },
-    "fundDistributions": {
-      "description": "List of fund distributions",
-      "id": "fundDistributions",
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "adjustmentsFieldSet": {
-      "description": "Defined in settings - the amount field will be editable and pro-rate toggle will be editable if enabled for that adjustment",
-      "id": "adjustmentsFieldSet",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "$ref": "adjustment.json"
-      }
+    "vendorRefNo": {
+      "description": "This is the number used to match POLs created by import to invoices created by import",
+      "type": "string"
     },
     "metadata": {
       "type": "object",
@@ -130,13 +117,11 @@
   "additionalProperties": false,
   "required": [
     "description",
-    "invoiceLineNumber",
-    "invoiceLineStatus",
-    "price",
-    "quantity",
-    "doNotReleaseEncumbrance",
-    "pieceIds",
+    "fundDistributions",
     "invoiceId",
-    "fundDistributions"
+    "invoiceLineStatus",
+    "subTotal",
+    "quantity",
+    "releaseEncumbrance"
   ]
 }
