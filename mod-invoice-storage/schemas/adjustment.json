@@ -13,7 +13,7 @@
       "type": "string"
     },
     "fundDistributions": {
-      "description": "Fund distribution records for this purchase order line",
+      "description": "Fund distribution records from which this adjustment will be paid; only valid at invoice level",
       "id": "fundDistributions",
       "type": "array",
       "items": {
