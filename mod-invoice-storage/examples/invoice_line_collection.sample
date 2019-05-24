@@ -7,14 +7,14 @@
           "description":"Service Fee",
           "type":"Amount",
           "value":2.25,
-          "prorate":"Not Prorated",
+          "prorate":"Not prorated",
           "relationToTotal":"In addition to"
         },
         {
           "description":"Shipping",
           "type":"Amount",
           "value":2.75,
-          "prorate":"Not Prorated",
+          "prorate":"Not prorated",
           "relationToTotal":"In addition to"
         }
       ],

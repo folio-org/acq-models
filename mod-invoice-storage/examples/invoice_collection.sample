@@ -4,7 +4,7 @@
       "id": "c0d08448-347b-418a-8c2f-5fb50248d67e",
       "adjustments": [
         {
-          "id":"14263aab-b22b-4ddc-9ecc-3434427c2c8f"
+          "id":"14263aab-b22b-4ddc-9ecc-3434427c2c8f",
           "description":"Shipping",
           "type":"Amount",
           "value":4.50,
