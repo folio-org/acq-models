@@ -13,22 +13,14 @@
         "$ref": "encumbrance.json"
       }
     },
-    "total_records": {
+    "totalRecords": {
       "description": "The number of objects in this collection",
-      "type": "integer"
-    },
-    "first": {
-      "description": "The index of the first object in this collection",
-      "type": "integer"
-    },
-    "last": {
-      "description": "The index of the last object in this collection",
       "type": "integer"
     }
   },
   "additionalProperties": false,
   "required": [
     "encumbrances",
-    "total_records"
+    "totalRecords"
   ]
 }
