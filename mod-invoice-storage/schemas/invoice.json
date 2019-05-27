@@ -93,8 +93,7 @@
     },
     "subTotal": {
       "description": "Invoice amount before adjustments are applied. This is sum of all subTotal amounts of the corresponding invoice lines. The value is calculated \"on the fly\" and never persisted",
-      "type": "number",
-      "readonly": true
+      "type": "number"
     },
     "total": {
       "description": "The total amount of this invoice which is sum of subTotal and adjustmentsTotal. If lockTotal is true, then total is persisted and never replaced with a calculated value. Otherwise total is calculated \"on the fly\" and never persisted.",
