@@ -2,6 +2,7 @@
   "id": "0804ddec-6545-404a-b54d-a693f505681d",
   "approved": true,
   "assignedTo": "ab18897b-0e40-4f31-896b-9c9adc979a88",
+  "billTo": "1df71bab-818c-46ea-988b-a23676d91ae6",
   "closeReason": {
     "reason" : "No longer available",
     "note" : "Items are no longer available to purchase"
@@ -23,6 +24,7 @@
      "reviewPeriod": 30,
      "renewalDate": "2019-04-09T00:00:00.000Z"
   },
+  "shipTo": "0830111e-dcf1-4897-9eee-dcd1ab44adce",
   "totalEstimatedPrice": 75.47,
   "totalItems": 3,
   "vendor": "168f8a86-d26c-406e-813f-c7527f241ac3",
