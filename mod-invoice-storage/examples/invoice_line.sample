@@ -16,7 +16,7 @@
       "relationToTotal":"In addition to"
     },
     {
-      "id":"14263aab-b22b-4ddc-9ecc-3434427c2c8f",
+      "adjustmentId": "14263aab-b22b-4ddc-9ecc-3434427c2c8f",
       "description":"Shipping",
       "type":"Amount",
       "value":2.50,
