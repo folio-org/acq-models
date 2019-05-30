@@ -2,17 +2,29 @@
   "id": "733cafd3-895f-4e33-87b7-bf40dc3c8069",
   "adjustments": [
     {
-      "adjustmentLabel": "Sales Tax",
-      "adjustmentType": "Percentage",
-      "adjustmentValue": 6
+       "id":"14263aab-b22b-4ddc-9ecc-3434427c2c8f",
+       "description":"Shipping",
+       "type":"Amount",
+       "value":4.50,
+       "prorate":"By line",
+       "relationToTotal":"In addition to"
     },
     {
-      "adjustmentLabel": "Shipping",
-      "adjustmentType": "Amount",
-      "adjustmentValue": 8.50
+       "description":"Some Tax",
+       "fundDistributions": [
+       {
+            "code": "USHIST",
+      		"encumbrance": "1c8fc9f4-d2cc-4bd1-aa9a-cb02291cbe65",
+      		"fundId": "1d1574f1-9196-4a57-8d1f-3b2e4309eb81",
+      		"percentage": 100
+       }],
+       "type":"Amount",
+       "value":10,
+       "prorate":"Not prorated",
+       "relationToTotal":"In addition to"
     }
   ],
-  "adjustmentsTotal": 11.50,
+  "adjustmentsTotal": 14.50,
   "chkSubscriptionOverlap": false,
   "currency": "USD",
   "folioInvoiceNo": "123invoicenumber45",
@@ -26,7 +38,7 @@
   "status": "Reviewed",
   "source": "024b6f41-c5c6-4280-858e-33fba452a334",
   "subTotal": 50.00,
-  "total": 61.50,
+  "total": 64.50,
   "vendorInvoiceNo": "YK75851",
   "disbursementNumber": "58",
   "voucherNumber": "478",

@@ -3,11 +3,52 @@
   "description": "Adjustment",
   "type": "object",
   "properties": {
-    "adjustmentLabel": {
+    "id": {
+      "description": "UUID of this adjustment",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
+    "adjustmentId": {
+      "description": "UUID of the Invoice adjustment incase of prorated adjustments",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
+    "description": {
       "description": "Displayed in invoice line as a name for the input",
       "type": "string"
     },
-    "adjustmentType": {
+    "fundDistributions": {
+      "description": "Fund distribution records from which this adjustment will be paid; only valid at invoice level",
+      "id": "fundDistributions",
+      "type": "array",
+      "items": {
+        "description": "fund distribution record",
+        "type": "object",
+        "$ref": "fund_distribution.json"
+      }
+    },
+    "prorate": {
+      "description": "Displayed in invoice line per adjustment in toggled on in settings",
+      "type": "string",
+      "enum": [
+        "By line",
+        "By amount",
+        "By quantity",
+        "Not prorated"
+      ],
+      "default" : "Not prorated"
+    },
+    "relationToTotal": {
+      "description": "Relationship of this adjustment to the total;In addition to: added to subtotal;Included in: reported as subtotal portion;Separate from:calculated from subtotal",
+      "type": "string",
+      "enum": [
+        "In addition to",
+        "Included in",
+        "Separate from"
+      ],
+      "default" : "In addition to"
+    },
+    "type": {
       "description": "Adjustment type",
       "type": "string",
       "enum": [
@@ -15,14 +56,17 @@
         "Amount"
       ]
     },
-    "adjustmentValue": {
+    "value": {
       "description": "Adjustment value",
       "type": "number"
-    },
-    "proRateAdjustment":{
-      "description": "Displayed in invoice line per adjustment in toggled on in settings",
-      "type": "boolean"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "required": [
+     "description",
+     "prorate",
+     "relationToTotal",
+     "type",
+     "value"
+  ]
 }
