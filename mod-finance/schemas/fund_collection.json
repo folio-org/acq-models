@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "A collection of funcds",
+  "description": "A collection of funds",
   "type": "object",
   "properties": {
     "funds": {
@@ -12,22 +12,15 @@
         "$ref": "fund.json"
       }
     },
-    "total_records": {
+    "totalRecords": {
       "description": "The number of objects contained in this collection",
-      "type": "integer"
-    },
-    "first": {
-      "description": "The index of the first object in this collection",
-      "type": "integer"
-    },
-    "last": {
-      "description": "The index of the last object in this collection",
-      "type": "integer"
+      "type": "integer",
+      "minimum": 0
     }
   },
   "additionalProperties": false,
   "required": [
     "funds",
-    "total_records"
+    "totalRecords"
   ]
 }
