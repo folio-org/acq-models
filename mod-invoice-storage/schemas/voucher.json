@@ -8,13 +8,39 @@
       "type": "string",
       "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
-    "systemCurrency": {
-      "description": "The currency in which the voucher was paid",
+    "accountingCode": {
+      "description": "Number that represents the vendor is an external accounting system which may include details like \"Address code\" in it. This is the number as stated on the invoice",
       "type": "string"
+    },
+    "amount": {
+      "description": "The amount that is actually paid",
+      "type": "number"
+    },
+    "batchNumber": {
+      "description": "Only required when voucher is being output automatically; date formatted or allow library to specify structure and start",
+      "type": "string"
+    },
+    "disbursementNumber": {
+      "description": "The identifier for the physical transaction corresponding to a payment;Brought in from external source",
+      "type": "string"
+    },
+    "disbursementDate": {
+      "description": "Date payment was made from financial system",
+      "type": "string",
+      "format": "date-time"
+    },
+    "disbursementAmount": {
+      "description": "The amount of the payment made outside of FOLIO",
+      "type": "number"
     },
     "invoiceCurrency": {
       "description": "The currency in which invoice was originally defined",
       "type": "string"
+    },
+    "invoiceId": {
+      "description": "Corresponding invoice Id",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
     "exchangeRate": {
       "description": "Exchange rate used to generate transaction",
@@ -24,27 +50,27 @@
       "description": "Export this payment record to a financial system",
       "type": "boolean"
     },
-    "voucherType":{
+    "status": {
+      "description": "Status of the voucher",
+      "type": "string",
+      "enum": [
+        "Awaiting payment",
+        "Paid"
+      ]
+    },
+    "systemCurrency": {
+      "description": "The currency in which the voucher was paid",
+      "type": "string"
+    },
+    "type": {
       "description": "Indicates type of payment to account",
       "type": "string",
       "enum": [
         "Payment",
-        "Pre-Payment",
+        "Pre-payment",
         "Credit",
         "Voucher"
       ]
-    },
-    "voucherStatus":{
-      "description": "Status of the voucher",
-      "type": "string",
-      "enum": [
-        "Awaiting Payment",
-        "Paid"
-      ]
-    },
-    "voucherAmount": {
-      "description": "The amount that is actually paid",
-      "type": "number"
     },
     "voucherDate": {
       "description": "The date the invoice status changes to approved",
@@ -56,41 +82,6 @@
       "type": "string",
       "pattern": "^[a-zA-Z0-9]*$"
     },
-    "batchNumber": {
-      "description": "Only required when voucher is being output automatically",
-      "type": "string"
-    },
-    "invoiceId": {
-      "description": "Corresponding invoice Id",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
-    },
-    "voucherLines": {
-      "description": "references the voucher lines associated to the voucher",
-      "id": "voucherLines",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "$ref": "voucher_line.json"
-      }
-    },
-    "accountingCode": {
-      "description": "Number that represents the vendor is an external accounting system;This is the number as stated on the invoice",
-      "type": "string"
-    },
-    "disbursementNumber": {
-      "description": "The identifier for the physical transaction corresponding to a payment;Brought in from external source",
-      "type": "string"
-    },
-    "disbursementDate":{
-      "description": "Date payment was made from financial system",
-      "type": "string",
-      "format": "date-time"
-    },
-    "disbursementAmount":{
-      "description": "The amount of the payment made outside of FOLIO",
-      "type": "number"
-    },
     "metadata": {
       "type": "object",
       "$ref": "../../../raml-util/schemas/metadata.schema",
@@ -99,15 +90,14 @@
   },
   "additionalProperties": false,
   "required": [
-     "systemCurrency",
-     "invoiceCurrency",
-     "exportToAccounting",
-     "voucherType",
-     "voucherStatus",
-     "voucherAmount",
-     "voucherNumber",
-     "batchNumber",
-     "invoiceId",
-     "accountingCode"
+    "accountingCode",
+    "amount",
+    "exportToAccounting",
+    "invoiceCurrency",
+    "invoiceId",
+    "type",
+    "status",
+    "systemCurrency",
+    "voucherNumber"
   ]
 }
