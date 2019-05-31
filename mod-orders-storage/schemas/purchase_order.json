@@ -57,9 +57,10 @@
         "Ongoing"
       ]
     },
-    "owner": {
-      "description": "The team owner of this purchase order",
-      "type": "string"
+    "acquisitionsUnit": {
+      "description": "The acquisitions unit of this purchase order",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
     "reEncumber": {
       "description": "indicates this purchase order should be re-encumbered each fiscal year. Only applies to ongoing orders",
