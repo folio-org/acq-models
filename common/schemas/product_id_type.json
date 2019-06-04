@@ -1,19 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "the type of product id",
+  "description": "The UUID corresponding to the type of product id",
   "type": "string",
-  "enum": [
-    "ISBN",
-    "ISSN",
-    "ISMN",
-    "EAN",
-    "Other Standard Identifier",
-    "Standard Technical Report Number",
-    "Publisher Number",
-    "CODEN",
-    "GPO Item Number",
-    "Locally-defined identifiers",
-    "Vendor Title Number",
-    "Vendor Item Number"
-  ]
+  "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
 }

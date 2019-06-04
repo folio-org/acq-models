@@ -34,7 +34,7 @@
       "invoiceLineStatus": "Open",
       "vendorRefNo": "2019-184",
       "productId": "9780764354113",
-      "productIdType": "ISBN",
+      "productIdType": "368757b8-6fe2-4989-b08e-5328cc2c291a",
       "comment": "Sample invoice line",
       "quantity": 3,
       "releaseEncumbrance": true,
