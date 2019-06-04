@@ -241,7 +241,6 @@
     "cost",
     "orderFormat",
     "source",
-    "title",
-    "purchaseOrderId"
+    "title"
   ]
 }
