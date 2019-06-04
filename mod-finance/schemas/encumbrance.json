@@ -52,7 +52,6 @@
   "additionalProperties": false,
   "required": [
     "amountEncumbered",
-    "budgetId",
     "fundId",
     "poLineId"
   ]
