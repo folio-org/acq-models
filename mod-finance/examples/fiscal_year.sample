@@ -2,5 +2,7 @@
   "id": "AC2164c7-Ba3d-1bC2-a12C-e35CeCcbfaF2",
   "name": "Fiscal Year 2017",
   "code": "2017",
-  "description": "July 1 - June 31"
+  "description": "January 1 - December 30",
+  "startDate": "2017-01-01T00:00:00Z",
+  "endDate": "2017-12-30T23:59:59Z"
 }
