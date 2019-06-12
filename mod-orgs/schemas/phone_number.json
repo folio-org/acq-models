@@ -20,14 +20,6 @@
         "type": "string"
       }
     },
-    "types": {
-      "id": "types",
-      "description": "The list of types for this organization phone",
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
     "isPrimary": {
       "description": "Used to set this phone number as primary for the contact",
       "type": "boolean"
