@@ -22,7 +22,13 @@
     },
     "type": {
       "description": "The type of this phone number",
-      "type": "string"
+      "type": "string",
+       "enum": [
+         "Office",
+         "Mobile",
+         "Fax",
+         "Other"
+      ]
     },
     "isPrimary": {
       "description": "Used to set this phone number as primary for the contact",
