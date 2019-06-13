@@ -1,0 +1,7 @@
+{
+  "name": "main",
+  "protectCreate": true,
+  "protectRead": false,
+  "protectUpdate": true,
+  "protectDelete": true
+}
