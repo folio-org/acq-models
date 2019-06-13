@@ -15,22 +15,22 @@
     "protectCreate": {
       "description": "if true, only members can create records associated with this acq unit.",
       "type": "boolean",
-      "default": "true"
+      "default": true
     },
     "protectRead": {
       "description": "if true, only members can read/view records associated with this acq unit.",
       "type": "boolean",
-      "default": "false"
+      "default": false
     },
     "protectUpdate": {
       "description": "if true, only members can update records associated with this acq unit.",
       "type": "boolean",
-      "default": "true"
+      "default": true
     },
     "protectDelete": {
       "description": "if true, only members can delete records associated with this acq unit.",
       "type": "boolean",
-      "default": "true"
+      "default": true
     },
     "metadata": {
       "type": "object",
