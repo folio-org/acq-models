@@ -3,17 +3,17 @@
      [
        {
           "name": "main",
-          "protectCreate": "true",
-          "protectRead": "false",
-          "protectUpdate": "true",
-          "protectDelete": "true"
+          "protectCreate": true,
+          "protectRead": false,
+          "protectUpdate": true,
+          "protectDelete": true
        },
        {
           "name": "law",
-          "protectCreate": "true",
-          "protectRead": "true",
-          "protectUpdate": "true",
-          "protectDelete": "true"
+          "protectCreate": true,
+          "protectRead": true,
+          "protectUpdate": true,
+          "protectDelete": true
        }
      ],
    "totalRecords": 2
