@@ -20,13 +20,15 @@
         "type": "string"
       }
     },
-    "types": {
-      "id": "types",
-      "description": "The list of types for this organization phone",
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+    "type": {
+      "description": "The type of this phone number",
+      "type": "string",
+       "enum": [
+         "Office",
+         "Mobile",
+         "Fax",
+         "Other"
+      ]
     },
     "isPrimary": {
       "description": "Used to set this phone number as primary for the contact",
@@ -37,7 +39,7 @@
       "type": "string"
     }
   },
-  "additionalProperties": true,
+  "additionalProperties": false,
   "required": [
     "phoneNumber"
   ]
