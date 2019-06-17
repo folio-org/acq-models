@@ -4,12 +4,12 @@
       "id": "c0d08448-347b-418a-8c2f-5fb50248d67e",
       "adjustments": [
         {
-          "id":"14263aab-b22b-4ddc-9ecc-3434427c2c8f",
-          "description":"Shipping",
-          "type":"Amount",
-          "value":4.50,
-          "prorate":"By line",
-          "relationToTotal":"In addition to"
+          "id": "14263aab-b22b-4ddc-9ecc-3434427c2c8f",
+          "description": "Shipping",
+          "type": "Amount",
+          "value": 4.50,
+          "prorate": "By line",
+          "relationToTotal": "In addition to"
         }
       ],
       "adjustmentsTotal": 4.50,
@@ -21,7 +21,6 @@
       "invoiceDate": "2018-07-20T00:00:00.000+0000",
       "lockTotal": false,
       "note": "Some note",
-      "acquisitionsUnit": "d79b0bcc-dcad-1e4e-abb7-dbfcad5bb3bb",
       "paymentDue": "2018-08-29T00:00:00.000+0000",
       "paymentTerms": "Payment in Advance",
       "paymentMethod": "EFT",
