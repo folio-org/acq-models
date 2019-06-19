@@ -1,15 +1,15 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "collection of alert records",
+  "description": "collection of acquisition unit membership records",
   "type": "object",
   "properties": {
-    "acquisitionUnitMemberships": {
+    "acquisitionsUnitMemberships": {
       "description": "collection of alert records",
       "type": "array",
       "id": "acquisitionUnitMemberships",
       "items": {
         "type": "object",
-        "$ref": "acquistion_unit_membership.json"
+        "$ref": "acquisitions_unit_membership.json"
       }
     },
     "totalRecords": {
