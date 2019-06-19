@@ -19,7 +19,7 @@
   },
   "additionalProperties": false,
   "required": [
-    "acquisitionUnitMemberships",
+    "acquisitionsUnitMemberships",
     "totalRecords"
   ]
 }
