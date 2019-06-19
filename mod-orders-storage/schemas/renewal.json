@@ -21,7 +21,8 @@
     },
     "manualRenewal": {
       "description": "whether or not this is a manual renewal",
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "reviewPeriod": {
       "description": "time prior to renewal where changes can be made to subscription",

@@ -28,6 +28,7 @@
   "adjustmentsTotal": 14.50,
   "chkSubscriptionOverlap": false,
   "currency": "USD",
+  "exportToAccounting": true,
   "folioInvoiceNo": "123invoicenumber45",
   "invoiceDate": "2018-07-20T00:00:00.000+0000",
   "lockTotal": true,

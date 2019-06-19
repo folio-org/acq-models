@@ -72,7 +72,8 @@
     },
     "collection": {
       "description": "whether or not this purchase order line is for a collection",
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "contributors": {
       "description": "list of contributors to the material",
@@ -201,7 +202,8 @@
     },
     "rush": {
       "description": "whether or not this is a rush order",
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "selector": {
       "description": "who selected this material",
