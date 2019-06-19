@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Acquisitions unit assignment",
+  "description": "Relationship between a record (purchase order, invoice, etc...) and acquisition unit",
   "type": "object",
   "properties": {
     "id": {
