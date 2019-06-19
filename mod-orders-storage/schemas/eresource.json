@@ -5,7 +5,8 @@
   "properties": {
     "activated": {
       "description": "whether or not this resource is activated",
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "activationDue": {
       "description": "number of days until activation, from date of order placement",
@@ -23,7 +24,8 @@
     },
     "trial": {
       "description": "whether or not this is a trial",
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "expectedActivation": {
       "description": "expected date the resource will be activated",
