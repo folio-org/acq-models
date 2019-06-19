@@ -4,9 +4,9 @@
   "type": "object",
   "properties": {
     "acquisitionsUnitMemberships": {
-      "description": "collection of alert records",
+      "description": "collection of acquistitions unit membership records",
       "type": "array",
-      "id": "acquisitionUnitMemberships",
+      "id": "acquisitionsUnitMemberships",
       "items": {
         "type": "object",
         "$ref": "acquisitions_unit_membership.json"
