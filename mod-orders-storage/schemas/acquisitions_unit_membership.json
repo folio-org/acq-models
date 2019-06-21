@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Relationship between a user and acquistionUnit",
+  "description": "Relationship between a user and an acquistions Unit",
   "type": "object",
   "properties": {
     "id": {
