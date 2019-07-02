@@ -31,6 +31,11 @@
       "type": "string",
       "format": "date-time"
     },
+    "billTo": {
+      "description": "UUID of the billing address",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
     "chkSubscriptionOverlap": {
       "description": "IF TRUE the system will check if there is another invoice for this subscription and whether the dates overlap. IF the dates overlap, the system should issue an alert.",
       "type": "boolean"
@@ -38,6 +43,11 @@
     "currency":{
       "description": "Ideally this is the ISO code and not something the user defines",
       "type": "string"
+    },
+    "exportToAccounting": {
+      "description": "This would keep the invoice from being feed into the batch process (i.e. not generate an external voucher/payment) but would still move values in the system. This might be defined by the vendor relationship and exposed for override on the invoice.",
+      "type": "boolean",
+      "default": false
     },
     "folioInvoiceNo": {
       "description": "Invoice number in folio system",
@@ -56,11 +66,6 @@
     "note": {
       "description": "Invoice note",
       "type": "string"
-    },
-    "acquisitionsUnit": {
-      "description": "The location/branch/division etc that's responsible for this invoice. This may or may not be the same as the PO. ie. North Branch",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
     "paymentDue": {
       "description": "When this is required to be paid. Generally governed by the relationship with the Vendor",
@@ -93,7 +98,8 @@
     },
     "subTotal": {
       "description": "Invoice amount before adjustments are applied. This is sum of all subTotal amounts of the corresponding invoice lines. The value is calculated \"on the fly\" and never persisted",
-      "type": "number"
+      "type": "number",
+      "readonly": true
     },
     "total": {
       "description": "The total amount of this invoice which is sum of subTotal and adjustmentsTotal. If lockTotal is true, then total is persisted and never replaced with a calculated value. Otherwise total is calculated \"on the fly\" and never persisted.",

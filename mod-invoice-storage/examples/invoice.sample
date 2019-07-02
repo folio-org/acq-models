@@ -2,36 +2,37 @@
   "id": "733cafd3-895f-4e33-87b7-bf40dc3c8069",
   "adjustments": [
     {
-       "id":"14263aab-b22b-4ddc-9ecc-3434427c2c8f",
-       "description":"Shipping",
-       "type":"Amount",
-       "value":4.50,
-       "prorate":"By line",
-       "relationToTotal":"In addition to"
+      "id": "14263aab-b22b-4ddc-9ecc-3434427c2c8f",
+      "description": "Shipping",
+      "type": "Amount",
+      "value": 4.50,
+      "prorate": "By line",
+      "relationToTotal": "In addition to"
     },
     {
-       "description":"Some Tax",
-       "fundDistributions": [
-       {
-            "code": "USHIST",
-      		"encumbrance": "1c8fc9f4-d2cc-4bd1-aa9a-cb02291cbe65",
-      		"fundId": "1d1574f1-9196-4a57-8d1f-3b2e4309eb81",
-      		"percentage": 100
-       }],
-       "type":"Amount",
-       "value":10,
-       "prorate":"Not prorated",
-       "relationToTotal":"In addition to"
+      "description": "Some Tax",
+      "fundDistributions": [
+        {
+          "code": "USHIST",
+          "encumbrance": "1c8fc9f4-d2cc-4bd1-aa9a-cb02291cbe65",
+          "fundId": "1d1574f1-9196-4a57-8d1f-3b2e4309eb81",
+          "percentage": 100
+        }
+      ],
+      "type": "Amount",
+      "value": 10,
+      "prorate": "Not prorated",
+      "relationToTotal": "In addition to"
     }
   ],
   "adjustmentsTotal": 14.50,
   "chkSubscriptionOverlap": false,
   "currency": "USD",
+  "exportToAccounting": true,
   "folioInvoiceNo": "123invoicenumber45",
   "invoiceDate": "2018-07-20T00:00:00.000+0000",
   "lockTotal": true,
   "note": "Some note",
-  "acquisitionsUnit": "d79b0bcc-dcad-1e4e-abb7-dbfcad5bb3bb",
   "paymentDue": "2018-08-29T00:00:00.000+0000",
   "paymentTerms": "Payment in Advance",
   "paymentMethod": "EFT",

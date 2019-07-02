@@ -15,7 +15,6 @@
     "ABCDEFGHIJKLMNOPQRSTUV"
   ],
   "orderType": "Ongoing",
-  "owner": "Cataloging",
   "poNumber": "AB268758XYZ",
   "reEncumber": false,
   "renewal": {
@@ -26,6 +25,7 @@
      "renewalDate": "2019-04-09T00:00:00.000Z"
   },
   "shipTo": "0830111e-dcf1-4897-9eee-dcd1ab44adce",
+  "template": "678323d2-3d86-4a69-8674-bbd4f8eecb33",
   "vendor": "168f8a86-d26c-406e-813f-c7527f241ac3",
   "workflowStatus": "Closed",
   "metadata": {

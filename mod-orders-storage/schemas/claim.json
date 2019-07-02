@@ -5,7 +5,8 @@
   "properties": {
     "claimed": {
       "description": "whether or not this purchase order line has been claimed",
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "sent": {
       "description": "date a claim was sent",

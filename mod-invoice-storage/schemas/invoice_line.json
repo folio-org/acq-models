@@ -101,8 +101,9 @@
       "type": "number"
     },
     "total": {
-      "description": "Invoice line total amount",
-      "type": "number"
+      "description": "Invoice line total amount which is sum of subTotal and adjustmentsTotal. The value is calculated \"on the fly\" and never persisted",
+      "type": "number",
+      "readonly": true
     },
     "vendorRefNo": {
       "description": "This is the number used to match POLs created by import to invoices created by import",

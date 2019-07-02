@@ -34,6 +34,7 @@
   "additionalProperties": false,
   "required": [
     "name",
-    "code"
+    "startDate",
+    "endDate"
   ]
 }
