@@ -118,7 +118,6 @@
   "additionalProperties": false,
   "required": [
     "description",
-    "fundDistributions",
     "invoiceId",
     "invoiceLineStatus",
     "subTotal",
