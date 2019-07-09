@@ -57,6 +57,11 @@
         "type": "object",
         "$ref": "interface_type.json"
       }
+    },
+    "metadata": {
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
     }
   },
   "additionalProperties": false

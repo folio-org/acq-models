@@ -394,6 +394,11 @@
         "type": "object",
         "$ref": "changelog.json"
       }
+    },
+    "metadata": {
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
     }
   },
   "additionalProperties": false,
