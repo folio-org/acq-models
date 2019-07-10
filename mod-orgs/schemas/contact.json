@@ -81,6 +81,11 @@
       "description": "Used to indicate that a contact is no longer active",
       "type": "boolean",
       "default": false
+    },
+    "metadata": {
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
     }
   },
   "additionalProperties": false,
