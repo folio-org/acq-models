@@ -112,10 +112,7 @@
   "requester": "Leo Bulero",
   "rush": true,
   "selector": "ABCD",
-  "source": {
-    "code": "Code1",
-    "description": ""
-  },
+  "source": "User",
   "tags": [
     "ABCDEFGHIJKLMNOPQRSTU",
     "ABCDEFG",

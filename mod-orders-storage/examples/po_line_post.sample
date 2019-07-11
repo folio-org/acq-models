@@ -95,10 +95,7 @@
   "requester": "Leo Bulero",
   "rush": true,
   "selector": "ABCD",
-  "source": {
-    "code": "Code1",
-    "description": ""
-  },
+  "source": "EDI",
   "tags": [
     "ABCDEFGHIJKLMNOPQRSTU",
     "ABCDEFG",
