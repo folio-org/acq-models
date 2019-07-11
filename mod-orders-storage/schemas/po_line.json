@@ -211,8 +211,13 @@
     },
     "source": {
       "description": "source record",
-      "type": "object",
-      "$ref": "source.json"
+      "type": "string",
+      "enum": [
+         "User",
+         "API",
+         "EDI",
+         "MARC"
+      ]
     },
     "tags": {
       "description": "arbitrary tags associated with this purchase order line",

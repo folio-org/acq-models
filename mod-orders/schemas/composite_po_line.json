@@ -209,8 +209,13 @@
     },
     "source": {
       "description": "details related to the source of this purchase order line",
-      "type": "object",
-      "$ref": "../../mod-orders-storage/schemas/source.json"
+      "type": "string",
+      "enum": [
+         "User",
+         "API",
+         "EDI",
+         "MARC"
+      ]
     },
     "tags": {
       "description": "arbitrary tags associated with this purchase order line",
