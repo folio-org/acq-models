@@ -28,7 +28,7 @@
       "template": "678323d2-3d86-4a69-8674-bbd4f8eecb33",
       "totalEstimatedPrice": 103.47,
       "totalItems": 5,
-      "units": [
+      "acqUnitIds": [
         "1895e539-8dac-441e-b1f5-aab62b3fde60",
         "47f504bd-0c1b-498e-a2ae-e2f0a0cea273"
       ],

@@ -109,8 +109,8 @@
         "$ref": "composite_po_line.json"
       }
     },
-    "units": {
-      "description": "unit ids associated with this purchase order",
+    "acqUnitIds": {
+      "description": "acquisition unit ids associated with this purchase order",
       "id": "units",
       "type": "array",
       "items": {
