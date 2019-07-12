@@ -150,6 +150,10 @@
       "type": "object",
       "$ref": "../../../raml-util/schemas/metadata.schema",
       "readonly": true
+    },
+    "tags": {
+      "type" : "object",
+      "$ref" : "../../../raml-util/schemas/tags.schema"
     }
   },
   "additionalProperties": false,
