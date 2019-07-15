@@ -153,6 +153,7 @@
     },
     "tags": {
       "type" : "object",
+      "description": "arbitrary tags associated with this invoice",
       "$ref" : "../../../raml-util/schemas/tags.schema"
     }
   },
