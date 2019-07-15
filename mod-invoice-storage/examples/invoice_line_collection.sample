@@ -43,6 +43,11 @@
       "subscriptionEnd": "2020-01-01T00:00:00.000+0000",
       "subTotal": 125.00,
       "total": 130.00,
+      "tags": {
+          "tagList": [
+            "tag"
+           ]
+       },
       "metadata": {
         "createdDate": "2018-07-19T00:00:00.000+0000",
         "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
