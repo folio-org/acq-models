@@ -1,19 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "purchase order line source",
-  "type": "object",
-  "properties": {
-    "code": {
-      "description": "the source code",
-      "type": "string"
-    },
-    "description": {
-      "description": "description of the source",
-      "type": "string"
-    }
-  },
-  "additionalProperties": false,
-  "required": [
-    "code"
-  ]
+  "description": "The source of the Order",
+  "type": "string",
+  "enum": [
+     "User",
+     "API",
+     "EDI",
+     "MARC"
+   ]
 }
