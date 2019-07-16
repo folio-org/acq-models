@@ -210,14 +210,9 @@
       "type": "string"
     },
     "source": {
-      "description": "source record",
-      "type": "string",
-      "enum": [
-         "User",
-         "API",
-         "EDI",
-         "MARC"
-      ]
+      "description": "the source of this purchase order line",
+      "type": "object",
+      "$ref": "source.json"
     },
     "tags": {
       "description": "arbitrary tags associated with this purchase order line",
