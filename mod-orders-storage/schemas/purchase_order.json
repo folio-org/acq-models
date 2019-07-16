@@ -93,6 +93,11 @@
       ],
       "default": "Pending"
     },
+    "tags": {
+      "type": "object",
+      "description": "arbitrary tags associated with this purchase order",
+      "$ref": "../../../raml-util/schemas/tags.schema"
+    },
     "metadata": {
       "type": "object",
       "$ref": "../../../raml-util/schemas/metadata.schema",

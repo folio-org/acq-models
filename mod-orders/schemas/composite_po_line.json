@@ -220,10 +220,8 @@
     "tags": {
       "description": "arbitrary tags associated with this purchase order line",
       "id": "tags",
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/tags.schema"
     },
     "title": {
       "description": "title of the material",
