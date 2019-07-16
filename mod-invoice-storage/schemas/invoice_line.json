@@ -120,6 +120,11 @@
       "type": "object",
       "$ref": "../../../raml-util/schemas/metadata.schema",
       "readonly": true
+    },
+    "tags": {
+      "type" : "object",
+      "description": "arbitrary tags associated with this invoice line",
+      "$ref" : "../../../raml-util/schemas/tags.schema"
     }
   },
   "additionalProperties": false,
