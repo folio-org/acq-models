@@ -1,5 +1,6 @@
 {
   "id": "733cafd3-895f-4e33-87b7-bf40dc3c8069",
+  "accountingCode" : "0206",
   "adjustments": [
     {
       "id": "14263aab-b22b-4ddc-9ecc-3434427c2c8f",
@@ -37,7 +38,7 @@
   "paymentTerms": "Payment in Advance",
   "paymentMethod": "EFT",
   "status": "Reviewed",
-  "source": "024b6f41-c5c6-4280-858e-33fba452a334",
+  "source": "User",
   "subTotal": 50.00,
   "total": 64.50,
   "vendorInvoiceNo": "YK75851",

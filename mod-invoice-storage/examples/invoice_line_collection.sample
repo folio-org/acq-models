@@ -2,6 +2,8 @@
   "invoiceLines": [
     {
       "id": "e0d08448-343b-118a-8c2f-4fb50248d672",
+      "accountingCode" : "0206",
+      "accountNumber":"GOBI-HIST-12",
       "adjustments": [
         {
           "description":"Service Fee",
