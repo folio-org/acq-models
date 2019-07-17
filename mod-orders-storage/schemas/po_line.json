@@ -210,7 +210,7 @@
       "type": "string"
     },
     "source": {
-      "description": "source record",
+      "description": "the source of this purchase order line",
       "type": "object",
       "$ref": "source.json"
     },
