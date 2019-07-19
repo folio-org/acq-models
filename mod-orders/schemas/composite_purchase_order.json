@@ -116,6 +116,7 @@
       "items": {
         "$ref": "../../common/schemas/uuid.json"
       }
+    },
     "tags": {
       "type": "object",
       "description": "arbitrary tags associated with this purchase order",
