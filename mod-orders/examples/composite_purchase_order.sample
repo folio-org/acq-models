@@ -127,7 +127,7 @@
         "expectedReceiptDate": "2018-10-05T00:00:00.000Z",
         "receiptDue": "2018-10-10T00:00:00.000Z",
         "materialType": "f7e72403-2a13-43a4-a069-aaabe6c9dea8"
-        
+
       },
       "poLineDescription": "ABCDEFGHIJKLMNOPQRSTUVWXY",
       "poLineNumber": "ABC268758XYZ-03",
@@ -156,16 +156,7 @@
       "requester": "Leo Bulero",
       "rush": true,
       "selector": "ABCD",
-      "source": {
-        "code": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
-        "description": "ABCDEFGHIJKLMNO"
-      },
-      "tags": [
-        "ABCDEFGHIJKLMNOPQRSTU",
-        "ABCDEFG",
-        "ABCDEFGHIJKLMNOPQRSTU",
-        "ABCDEFGHIJKLMNO"
-      ],
+      "source": "EDI",
       "title": "Kayak Fishing in the Northern Gulf Coast",
       "acqUnitIds": [
         "1895e539-8dac-441e-b1f5-aab62b3fde60",
@@ -177,6 +168,11 @@
         "refNumber": "123456-78",
         "refNumberType": "Supplier's unique order line reference number",
         "vendorAccount": "8910-10"
+      },
+      "tags" : {
+        "tagList" : [
+          "important"
+        ]
       },
       "metadata": {
         "createdDate": "2018-07-19T00:00:00.000+0000",

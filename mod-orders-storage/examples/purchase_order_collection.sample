@@ -29,6 +29,11 @@
       "template": "678323d2-3d86-4a69-8674-bbd4f8eecb33",
       "vendor": "168f8a86-d26c-406e-813f-c7527f241ac3",
       "workflowStatus": "Pending",
+      "tags": {
+         "tagList": [
+             "important"
+         ]
+      },
       "metadata": {
         "createdDate": "2018-07-19T00:00:00.000+0000",
         "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"

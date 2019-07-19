@@ -208,17 +208,15 @@
       "type": "string"
     },
     "source": {
-      "description": "details related to the source of this purchase order line",
+      "description": "the source of this purchase order line",
       "type": "object",
       "$ref": "../../mod-orders-storage/schemas/source.json"
     },
     "tags": {
       "description": "arbitrary tags associated with this purchase order line",
       "id": "tags",
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/tags.schema"
     },
     "title": {
       "description": "title of the material",
