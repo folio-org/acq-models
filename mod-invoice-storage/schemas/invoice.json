@@ -96,7 +96,7 @@
       ]
     },
     "source": {
-      "description": "This does not denote a user ID but describes how the record was created. Eg. Manually, EDIFACT, MARC etc",
+      "description": "This does not denote a user ID but describes how the record was created. Eg. User, API, EDI",
       "type": "string",
       "enum": [
         "User",
