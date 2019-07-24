@@ -4,7 +4,7 @@
   "type": "object",
   "properties": {
     "name": {
-      "description": "The original document name for display purposes (filename or link \"nickname\")",
+      "description": "The original document name for display purposes (filename or link 'nickname')",
       "type": "string"
     },
     "invoiceId": {
