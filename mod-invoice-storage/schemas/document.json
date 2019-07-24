@@ -13,6 +13,7 @@
       "$ref": "document_metadata.json"
     },
     "contents": {
+      "description": "Base64 encoded file data",
       "type": "object",
       "$ref": "document_data.json"
     }
