@@ -1,5 +1,7 @@
 {
   "id": "2be1e551-be27-4b03-b770-30e5e8211d19",
+  "accountingCode": "0206",
+  "accountNumber": "GOBI-HIST-12",
   "adjustments": [
     {
       "description":"Service Fee",
