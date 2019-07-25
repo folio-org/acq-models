@@ -157,6 +157,11 @@
       "notes": ""
     }
   ],
+  "tags" : {
+     "tagList" : [
+        "important"
+      ]
+  },
   "changelogs": [
     {
       "description": "This is a sample note.",
