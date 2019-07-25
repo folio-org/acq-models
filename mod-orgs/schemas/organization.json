@@ -395,6 +395,11 @@
         "$ref": "changelog.json"
       }
     },
+    "tags": {
+      "type": "object",
+      "description": "arbitrary tags associated with this organization",
+      "$ref": "../../../raml-util/schemas/tags.schema"
+    },
     "metadata": {
       "type": "object",
       "$ref": "../../../raml-util/schemas/metadata.schema",
