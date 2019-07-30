@@ -109,6 +109,14 @@
         "$ref": "composite_po_line.json"
       }
     },
+    "acqUnitIds": {
+      "description": "acquisition unit ids associated with this purchase order",
+      "id": "units",
+      "type": "array",
+      "items": {
+        "$ref": "../../common/schemas/uuid.json"
+      }
+    },
     "tags": {
       "type": "object",
       "description": "arbitrary tags associated with this purchase order",
