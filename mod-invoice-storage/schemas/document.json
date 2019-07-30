@@ -4,6 +4,7 @@
   "type": "object",
   "properties": {
     "documentMetadata": {
+      "description" : "Document metadata",
       "$ref": "document_metadata.json"
     },
     "contents": {
