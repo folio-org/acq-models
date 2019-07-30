@@ -4,13 +4,19 @@
   "type": "object",
   "properties": {
     "documentMetadata": {
-      "description" : "Document metadata",
+      "description": "Document metadata",
+      "type": "object",
       "$ref": "document_metadata.json"
     },
     "contents": {
       "description": "Base64 encoded file data",
       "type": "object",
       "$ref": "document_data.json"
+    },
+    "metadata": {
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
     }
   },
   "additionalProperties": false,
