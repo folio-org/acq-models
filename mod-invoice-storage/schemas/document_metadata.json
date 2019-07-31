@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Document metadata",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "UUID of the attached document",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "name": {
+      "description": "The original document name for display purposes (filename or link 'nickname')",
+      "type": "string"
+    },
+    "invoiceId": {
+      "description": "UUID of the invoice the document is attached to",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "url": {
+      "description": "URL pointing to the document",
+      "type": "string",
+      "pattern": "\\b((?:[a-z][\\w-]+:(?:\/{1,3}|[a-z0-9%])|www\\d{0,3}[.]|[a-z0-9.\\-]+[.][a-z]{2,4}\/)(?:[^\\s()<>]+|\\(([^\\s()<>]+|(\\([^\\s()<>]+\\)))*\\))+(?:\\(([^\\s()<>]+|(\\([^\\s()<>]+\\)))*\\)|[^\\s`!()\\[\\]{};:'\".,<>?]))"
+    },
+    "metadata": {
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "name",
+    "invoiceId"
+  ]
+}
