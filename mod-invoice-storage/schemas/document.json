@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Document",
+  "description": "Document attached/associated with an invoice either via a hyperlink to the document or by direct upload and storage within FOLIO",
   "type": "object",
   "properties": {
     "documentMetadata": {
@@ -21,7 +21,6 @@
   },
   "additionalProperties": false,
   "required": [
-    "name",
-    "invoiceId"
+    "documentMetadata"
   ]
 }
