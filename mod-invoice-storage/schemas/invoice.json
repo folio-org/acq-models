@@ -156,7 +156,6 @@
     },
     "acqUnitIds": {
       "description": "acquisition unit ids associated with this invoice",
-      "id": "units",
       "type": "array",
       "items": {
         "$ref": "../../common/schemas/uuid.json"

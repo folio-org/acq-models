@@ -84,7 +84,6 @@
     },
     "acqUnitIds": {
       "description": "acquisition unit ids associated with this voucher",
-      "id": "units",
       "type": "array",
       "items": {
         "$ref": "../../common/schemas/uuid.json"
