@@ -154,6 +154,13 @@
       "description": "This would keep the invoice from being feed into the batch process (Not generate a external voucher/payment) but would still move values in the system. Note: this is ideally defined by the vendor relationship and exposed for override on the invoice.",
       "type": "boolean"
     },
+    "acqUnitIds": {
+      "description": "acquisition unit ids associated with this invoice",
+      "type": "array",
+      "items": {
+        "$ref": "../../common/schemas/uuid.json"
+      }
+    },
     "metadata": {
       "type": "object",
       "$ref": "../../../raml-util/schemas/metadata.schema",
