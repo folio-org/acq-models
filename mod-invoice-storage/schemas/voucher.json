@@ -82,6 +82,13 @@
       "type": "string",
       "pattern": "^[a-zA-Z0-9]*$"
     },
+    "acqUnitIds": {
+      "description": "acquisition unit ids associated with this voucher",
+      "type": "array",
+      "items": {
+        "$ref": "../../common/schemas/uuid.json"
+      }
+    },
     "metadata": {
       "type": "object",
       "$ref": "../../../raml-util/schemas/metadata.schema",
