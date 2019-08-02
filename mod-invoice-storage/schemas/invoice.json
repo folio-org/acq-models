@@ -21,7 +21,7 @@
       }
     },
     "adjustmentsTotal": {
-      "description": "Total amount which is sum of all invoice line adjustments and all non-prorated invoice level adjustments.",
+      "description": "Total amount which is sum of all invoice line adjustments and all non-prorated invoice level adjustments. This amount is always calculated by system.",
       "type": "number"
     },
     "approvedBy": {
@@ -104,7 +104,7 @@
       ]
     },
     "subTotal": {
-      "description": "Invoice amount before adjustments are applied. This is sum of all subTotal amounts of the corresponding invoice lines.",
+      "description": "Invoice amount before adjustments are applied. This is sum of all subTotal amounts of the corresponding invoice lines. This amount is always calculated by system.",
       "type": "number"
     },
     "total": {

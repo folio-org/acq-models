@@ -25,7 +25,7 @@
       }
     },
     "adjustmentsTotal": {
-      "description": "Sum of all invoice line adjustments.",
+      "description": "Sum of all invoice line adjustments. This amount is always calculated by system.",
       "type": "number"
     },
     "comment": {
@@ -107,7 +107,7 @@
       "type": "number"
     },
     "total": {
-      "description": "Invoice line total amount which is sum of subTotal and adjustmentsTotal.",
+      "description": "Invoice line total amount which is sum of subTotal and adjustmentsTotal. This amount is always calculated by system.",
       "type": "number"
     },
     "vendorRefNo": {
