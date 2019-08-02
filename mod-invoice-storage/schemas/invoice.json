@@ -21,9 +21,8 @@
       }
     },
     "adjustmentsTotal": {
-      "description": "Total amount which is sum of all invoice line adjustments and all non-prorated invoice level adjustments. The value is calculated \"on the fly\" and never persisted",
-      "type": "number",
-      "readonly": true
+      "description": "Total amount which is sum of all invoice line adjustments and all non-prorated invoice level adjustments.",
+      "type": "number"
     },
     "approvedBy": {
       "description": "UUID of user that approved this invoice",
@@ -105,9 +104,8 @@
       ]
     },
     "subTotal": {
-      "description": "Invoice amount before adjustments are applied. This is sum of all subTotal amounts of the corresponding invoice lines. The value is calculated \"on the fly\" and never persisted",
-      "type": "number",
-      "readonly": true
+      "description": "Invoice amount before adjustments are applied. This is sum of all subTotal amounts of the corresponding invoice lines.",
+      "type": "number"
     },
     "total": {
       "description": "The total amount of this invoice which is sum of subTotal and adjustmentsTotal. If lockTotal is true, then total is persisted and never replaced with a calculated value. Otherwise total is calculated \"on the fly\" and never persisted.",
