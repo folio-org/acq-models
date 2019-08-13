@@ -105,7 +105,6 @@
     },
     "acqUnitIds": {
       "description": "acquisition unit ids associated with this purchase order",
-      "id": "units",
       "type": "array",
       "items": {
         "$ref": "../../common/schemas/uuid.json"
