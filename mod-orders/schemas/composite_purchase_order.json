@@ -10,7 +10,8 @@
     },
     "approved": {
       "description": "whether or not the purchase order has been approved",
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "approvedById": {
       "description": "UUID of the user approving the order",
