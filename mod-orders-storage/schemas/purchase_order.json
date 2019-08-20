@@ -13,6 +13,16 @@
       "type": "boolean",
       "default": false
     },
+    "approvedById": {
+      "description": "UUID of the user approving the order",
+      "type": "object",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "approvalDate": {
+      "description": "Date and time when purchase order was approved",
+      "type": "string",
+      "format": "date-time"
+    },
     "assignedTo": {
       "description": "UUID of the user this purchase order his assigned to",
       "type": "string",
