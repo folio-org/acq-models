@@ -1,20 +1,29 @@
 {
   "id": "47Ac60b4-159D-4e1c-9aCB-8293Df67D16d",
   "name": "History 2017",
-  "code": "HIST-2017",
   "budgetStatus": "Active",
-  "limitEncPercent": 95,
-  "limitExpPercent": 100,
-  "allocation": 20000,
+  "allowableEncumbrance": 95,
+  "allowableExpenditure": 100,
+  "allocated": 20000,
   "awaitingPayment": 3500,
   "available": 10000,
   "encumbered": 2000,
   "expenditures": 4500,
+  "unavailable": 10000,
   "overEncumbrance": 0,
+  "overExpended": 0,
   "fundId": "172364c7-AaAa-10C2-b12C-e35CeCcbfaF2",
   "fiscalYearId": "AC2164c7-Ba3d-2bC2-a12C-e35CeCcbfaF2",
-  "tags": [
-    "570c60b4-159F-4e1c-9ECB-8293Df67D16d",
-    "b981e3e2-cd26-5CE2-a6Cd-159eAEfb351d"
-  ]
+  "acqUnitIds": [
+    "7ec2ed06-0504-40dc-bc53-7515955ff0cb"
+  ],
+  "tags": {
+    "tagList": [
+      "important"
+    ]
+  },
+  "metadata": {
+    "createdDate": "2018-07-19T00:00:00.000+0000",
+    "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
+  }
 }
