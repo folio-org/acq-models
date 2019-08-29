@@ -1,7 +1,7 @@
 {
   "transactions": [
     {
-      "id": "12Ac70A4-5C9D-112F-9aCB-852aDf67D7e1",
+      "id": "12ac70a4-5c9d-112f-9acb-852adf67d7e1",
       "allocated": 0,
       "amount": 25,
       "awaitingPayment": 0,
@@ -9,9 +9,9 @@
       "expenditures": 0,
       "note": "PO_Line: History of Incas",
       "timestamp": "2017-07-01T19:03:02.778Z",
-      "sourceId": "906eb7a4-8BbC-1CCf-acAF-de909eABeedd",
+      "sourceId": "906eb7a4-8bbc-1ccf-acaf-de909eabeedd",
       "transactionType": "PO-Line-Encumbrance",
-      "budgetId": "47Ac60b4-159D-4e1c-9aCB-8293Df67D16d"
+      "budgetId": "47ac60b4-159d-4e1c-9acb-8293df67d16d"
     }
   ],
   "totalRecords": 1

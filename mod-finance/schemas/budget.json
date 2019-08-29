@@ -4,9 +4,8 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": ["string", "null"],
-      "description": "UUID",
-      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[1-5][a-fA-F0-9]{3}-[89abAB][a-fA-F0-9]{3}-[a-fA-F0-9]{12}$"
+      "description": "UUID of this budget",
+      "$ref": "../../common/schemas/uuid.json"
     },
     "name": {
       "description": "The name of the budget",
@@ -14,21 +13,23 @@
     },
     "budgetStatus": {
       "description": "The status of the budget",
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "Active",
+        "Frozen",
+        "Planned",
+        "Closed"
+      ]
     },
-    "code": {
-      "description": "The code of the budget",
-      "type": "string"
-    },
-    "limitEncPercent": {
+    "allowableEncumbrance": {
       "description": "The encumbrance percentage limit for this budget",
       "type": "number"
     },
-    "limitExpPercent": {
+    "allowableExpenditure": {
       "description": "The expenditure percentage limit for this budget",
       "type": "number"
     },
-    "allocation": {
+    "allocated": {
       "description": "The amount currently allocated to this budget",
       "type": "number"
     },
@@ -48,34 +49,50 @@
       "description": "The amount currently expended for this budget",
       "type": "number"
     },
+    "unavailable" : {
+      "description": "Unavailable amount for this budget",
+      "type": "number"
+    },
     "overEncumbrance": {
       "description": "The amount currently over-encumbered for this budget",
       "type": "number"
     },
+    "overExpended": {
+      "description": "Amount the budget is over expended.",
+      "type": "number"
+    },
     "fundId": {
-      "type": ["string", "null"],
-      "description": "UUID",
-      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[1-5][a-fA-F0-9]{3}-[89abAB][a-fA-F0-9]{3}-[a-fA-F0-9]{12}$"
+      "description": "UUID of fund",
+      "$ref": "../../common/schemas/uuid.json"
     },
     "fiscalYearId": {
-      "type": ["string", "null"],
-      "description": "UUID",
-      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[1-5][a-fA-F0-9]{3}-[89abAB][a-fA-F0-9]{3}-[a-fA-F0-9]{12}$"
+      "description": "UUID of fiscal year",
+      "$ref": "../../common/schemas/uuid.json"
     },
-    "tags": {
-      "id": "tags",
-      "description": "The list of tags associated with this budget",
+    "acqUnitIds": {
+      "description": "acquisition unit ids associated with this budget",
       "type": "array",
       "items": {
-        "type": "string",
-        "description": "UUID",
-        "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[1-5][a-fA-F0-9]{3}-[89abAB][a-fA-F0-9]{3}-[a-fA-F0-9]{12}$"
+        "$ref": "../../common/schemas/uuid.json"
       }
+    },
+    "tags": {
+      "type": "object",
+      "description": "arbitrary tags associated with this budget",
+      "$ref": "../../../raml-util/schemas/tags.schema"
+    },
+    "metadata": {
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
     }
   },
   "additionalProperties": false,
   "required": [
+    "allocated",
+    "budgetStatus",
     "name",
-    "code"
+    "fundId",
+    "fiscalYearId"
   ]
 }
