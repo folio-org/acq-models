@@ -50,7 +50,7 @@
       "type": "number"
     },
     "unavailable" : {
-      "description": "TBD",
+      "description": "Unavailable amount of the fund within a specific fiscal year",
       "type": "number"
     },
     "overEncumbrance": {
