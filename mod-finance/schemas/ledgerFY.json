@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A financial ledger for a Fiscal Year",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "UUID of the ledger FY",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "ledgerId": {
+      "description": "UUID of the ledger",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "fiscalYearId": {
+      "description": "UUID of the Fiscal Year",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "allocated": {
+      "description": "The amount currently allocated to this ledger in the FY",
+      "type": "number"
+    },
+    "available": {
+      "description": "The amount currently available in this ledger in the FY",
+      "type": "number"
+    },
+    "unavailable": {
+      "description": "The amount already utilized from the allocated amount",
+      "type": "number"
+    },
+    "currency":{
+      "description": "Ideally this is the currency ISO code for FY",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "ledgerId",
+    "fiscalYearId",
+    "currency"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "df2f5cfd-ae6b-437a-be4d-9808f7529bad",
+  "ledgerId": "5029701f-4220-447e-8ca8-94eb9d97479f",
+  "fiscalYearId": "MAIN-LIB",
+  "allocated": 2000,
+  "available": 1000,
+  "unavailable": 1000,
+  "currency": "USD"
+  "acqUnitIds": [
+    "AC2164c7-Ba3d-1bC2-912C-e35CeCcbfaF2"
+  ]
+}
