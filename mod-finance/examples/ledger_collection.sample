@@ -1,14 +1,14 @@
 {
   "ledgers": [
     {
-      "id": "7cef8378-7CBd-1FaE-BCdd-8b9d7c0af9De",
+      "id": "7cef8378-7cbd-1fae-bcdd-8b9d7c0af9de",
       "name": "Main Library",
       "code": "MAIN-LIB",
       "description": "This is the ledger for the Main Library",
       "periodStart": "2017-07-01T00:00:00Z",
       "periodEnd": "2017-06-30T23:59:59Z",
       "fiscalYears": [
-        "AC2164c7-Ba3d-1bC2-b12C-e35CeCcbfaF2"
+        "ac2164c7-ba3d-1bc2-b12c-e35ceccbfaf2"
       ]
     }
   ],
