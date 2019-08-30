@@ -8,7 +8,7 @@
       "description": "UUID of this transaction"
     },
     "amount": {
-      "description": "The amount of this transaction",
+      "description": "The amount of this transaction. For encumbrances: This is initialAmountEncumbered - (amountAwaitingPayment + amountExpended)",
       "type": "number"
     },
     "currency": {
@@ -38,7 +38,13 @@
     },
     "source": {
       "description": "The readable identifier of the record that resulted in the creation of this transaction",
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "Credit",
+        "Manual",
+        "User",
+        "Voucher"
+      ]
     },
     "sourceFiscalYearId": {
       "$ref": "../../common/schemas/uuid.json",
@@ -62,6 +68,7 @@
       "enum": [
         "Allocation",
         "Credit",
+        "Encumbrance",
         "Payment",
         "Transfer"
       ],

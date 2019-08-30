@@ -3,12 +3,6 @@
   "amount": 25,
   "currency": "USD",
   "description": "PO_Line: History of Incas",
-  "encumbrance": {
-    "amountExpended": 1567.92,
-    "amountAwaitingPayment": 12.50,
-    "initialAmountEncumbered": 12.50,
-    "status": "Unreleased"
-  },
   "fiscalYearId": "4438bc3b-4b4a-4e5e-9886-5f69b48a7a32",
   "fromFundId": "27f27438-3197-4281-a353-511829421d6e",
   "paymentEncumbranceId": "80c28fb4-c34e-48d6-b8c2-de6660c3e0aa",

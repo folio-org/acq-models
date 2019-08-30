@@ -16,6 +16,7 @@
       "type": "number"
     },
     "status": {
+      "default": "Unreleased",
       "description": "The status of this encumbrance",
       "type": "string",
       "enum": [
