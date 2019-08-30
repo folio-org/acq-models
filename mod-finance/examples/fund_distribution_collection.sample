@@ -1,13 +1,13 @@
 {
   "distributions": [
     {
-      "id": "4c58e097-3bef-17f9-B4B3-e1Fa4CCbF12D",
+      "id": "4c58e097-3bef-17f9-b4b3-e1fa4ccbf12d",
       "amount": 25,
       "currency": "USD",
       "percent": 100,
       "sourceType": "PO Line",
-      "sourceId": "906eb7a4-8BbC-1CCf-9cAF-de909eABeedd",
-      "budgetId": "47Ac60b4-159D-4e1c-9aCB-8293Df67D16d"
+      "sourceId": "906eb7a4-8bbc-1ccf-9caf-de909eabeedd",
+      "budgetId": "47ac60b4-159d-4e1c-9acb-8293df67d16d"
     }
 
   ],
