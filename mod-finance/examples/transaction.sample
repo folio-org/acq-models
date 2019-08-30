@@ -1,13 +1,29 @@
 {
   "id": "12ac70a4-5c9d-112f-9acb-852adf67d7e1",
-  "allocated": 0,
   "amount": 25,
-  "awaitingPayment": 0,
-  "encumbered": 25,
-  "expenditures": 0,
-  "note": "PO_Line: History of Incas",
-  "timestamp": "2017-07-01T19:03:02.778Z",
-  "sourceId": "906eb7a4-8bbc-1ccf-bcaf-de909eabeedd",
-  "transactionType": "PO-Line-Encumbrance",
-  "budgetId": "47ac60b4-159d-4e1c-9acb-8293df67d16d"
+  "currency": "USD",
+  "description": "PO_Line: History of Incas",
+  "encumbrance": {
+    "amountExpended": 1567.92,
+    "amountAwaitingPayment": 12.50,
+    "initialAmountEncumbered": 12.50,
+    "status": "Unreleased"
+  },
+  "fiscalYearId": "4438bc3b-4b4a-4e5e-9886-5f69b48a7a32",
+  "fromFundId": "27f27438-3197-4281-a353-511829421d6e",
+  "paymentEncumbranceId": "80c28fb4-c34e-48d6-b8c2-de6660c3e0aa",
+  "source": "Voucher",
+  "sourceFiscalYearId": "01705ce5-3c3d-4c30-b23d-a36feec28259",
+  "sourceInvoiceId": "b360db6c-b825-4d74-ac63-5be506892e2b",
+  "tags": {
+    "tagList": [
+      "important"
+    ]
+  },
+  "toFundId": "2e51c019-97f3-4523-87e9-59250e3b48bc",
+  "transactionType": "Payment",
+  "metadata": {
+    "createdDate": "2018-07-19T00:00:00.000+0000",
+    "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
+  }
 }

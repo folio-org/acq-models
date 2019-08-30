@@ -4,64 +4,81 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": ["string", "null"],
-      "description": "UUID",
-      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[1-5][a-fA-F0-9]{3}-[89abAB][a-fA-F0-9]{3}-[a-fA-F0-9]{12}$"
-    },
-    "allocated": {
-      "description": "The amount allocated by this transaction",
-      "type": "number"
+      "$ref": "../../common/schemas/uuid.json",
+      "description": "UUID of this transaction"
     },
     "amount": {
       "description": "The amount of this transaction",
       "type": "number"
     },
-    "available": {
-      "description": "The amount available of this transaction",
-      "type": "number"
-    },
-    "awaitingPayment": {
-      "description": "The amount awaiting payment of this transaction",
-      "type": "number"
-    },
-    "encumbered": {
-      "description": "The amount encumbred by this transaction",
-      "type": "number"
-    },
-    "expenditures": {
-      "description": "The amount expended by this transaction",
-      "type": "number"
-    },
-    "note": {
-      "description": "The note for this transaction",
+    "currency": {
+      "description": "Currency code for this transaction - from the system currency",
       "type": "string"
     },
-    "overcharge": {
-      "description": "The amount overcharged by this transaction",
-      "type": "number"
+    "description": {
+      "description": "Description of this transaction",
+      "type": "string"
     },
-    "timestamp": {
-      "description": "The timestamp of the transaction",
-      "type": "string",
-      "format": "date-time"
+    "encumbrance": {
+      "$ref": "encumbrance.json",
+      "description": "Encumbrance sub-object - holds encumbrance-specific information not applicable to other transaction types",
+      "type": "object"
     },
-    "sourceId": {
-      "type": ["string", "null"],
-      "description": "UUID",
-      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[1-5][a-fA-F0-9]{3}-[89abAB][a-fA-F0-9]{3}-[a-fA-F0-9]{12}$"
+    "fiscalYearId": {
+      "$ref": "../../common/schemas/uuid.json",
+      "description": "UUID of the fiscal year that the transaction is taking place in"
+    },
+    "fromFundId": {
+      "$ref": "../../common/schemas/uuid.json",
+      "description": "UUID of the fund money is moving from"
+    },
+    "paymentEncumbranceId": {
+      "$ref": "../../common/schemas/uuid.json",
+      "description": "UUID of the encumbrance associated with this payment/credit taking place."
+    },
+    "source": {
+      "description": "The readable identifier of the record that resulted in the creation of this transaction",
+      "type": "string"
+    },
+    "sourceFiscalYearId": {
+      "$ref": "../../common/schemas/uuid.json",
+      "description": "UUID of the fiscal year that triggered the creation of this transaction (Used during fiscal year rollover)"
+    },
+    "sourceInvoiceId": {
+      "$ref": "../../common/schemas/uuid.json",
+      "description": "UUID of the Invoice that triggered the creation of this transaction"
+    },
+    "tags": {
+      "$ref": "../../../raml-util/schemas/tags.schema",
+      "description": "Arbitrary tags associated with this transaction",
+      "type": "object"
+    },
+    "toFundId": {
+      "$ref": "../../common/schemas/uuid.json",
+      "description": "UUID of the fund money is moving to"
     },
     "transactionType": {
-      "description": "The type of this transaction",
+      "description": "This describes the type of transaction",
+      "enum": [
+        "Allocation",
+        "Credit",
+        "Payment",
+        "Transfer"
+      ],
       "type": "string"
     },
-    "budgetId": {
-      "type": ["string", "null"],
-      "description": "UUID",
-      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[1-5][a-fA-F0-9]{3}-[89abAB][a-fA-F0-9]{3}-[a-fA-F0-9]{12}$"
+    "metadata": {
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true,
+      "type": "object"
     }
   },
-  "additionalProperties": false,
   "required": [
-    "amount"
-  ]
+    "amount",
+    "currency",
+    "fiscalYearId",
+    "source",
+    "transactionType"
+  ],
+  "additionalProperties": false
 }
