@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A collection of ledgerFY",
+  "type": "object",
+  "properties": {
+    "ledgerFY": {
+      "description": "Collection of ledgerFY records",
+      "type": "array",
+      "id": "ledgerFY",
+      "items": {
+        "type": "object",
+        "$ref": "ledgerFY.json"
+      }
+    },
+    "totalRecords": {
+      "description": "The number of objects contained in this collection",
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "ledgerFY",
+    "totalRecords"
+  ]
+}
