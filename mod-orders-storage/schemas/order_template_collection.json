@@ -4,7 +4,7 @@
   "type": "object",
   "properties": {
     "templates": {
-      "description": "collection of order templates",
+      "description": "Collection of order templates",
       "type": "array",
       "id": "templates",
       "items": {
