@@ -1,0 +1,5 @@
+{
+   "name": "Amazon book orders",
+   "code": "Amazon-B",
+   "description": "Use to create orders in FOLIO after they are placed on Amazon"
+}
