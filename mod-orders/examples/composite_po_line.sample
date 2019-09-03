@@ -134,11 +134,11 @@
   "rush": true,
   "selector": "ABCD",
   "source": "User",
-   "tags": {
-     "tagList": [
-       "important"
-     ]
-   },
+  "tags": {
+    "tagList": [
+     "important"
+    ]
+  },
   "title": "Kayak Fishing in the Northern Gulf Coast",
   "vendorDetail": {
     "instructions": "ABCDEFG",
