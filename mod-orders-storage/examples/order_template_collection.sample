@@ -1,9 +1,9 @@
 {
    "templates":[
       {
-         "name": "Amazon book orders",
-         "code": "Amazon-B",
-         "description": "Use to create orders in FOLIO after they are placed on Amazon"
+         "templateName": "Amazon book orders",
+         "templateCode": "Amazon-B",
+         "templateDescription": "Use to create orders in FOLIO after they are placed on Amazon"
       }
    ],
    "totalRecords":1

@@ -3,21 +3,21 @@
   "description": "order template",
   "type": "object",
   "properties": {
-    "name": {
+    "templateName": {
       "description": "The order template name",
       "type": "string"
     },
-    "code": {
+    "templateCode": {
       "description": "The order template code",
       "type": "string"
     },
-    "description": {
+    "templateDescription": {
       "description": "The order template description",
       "type": "string"
     }
   },
   "additionalProperties": true,
   "required": [
-    "name"
+    "templateName"
   ]
 }
