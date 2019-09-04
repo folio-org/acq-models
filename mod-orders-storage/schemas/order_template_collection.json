@@ -6,7 +6,7 @@
     "templates": {
       "description": "Collection of order templates",
       "type": "array",
-      "id": "templates",
+      "id": "orderTemplates",
       "items": {
         "type": "object",
         "$ref": "order_template.json"
@@ -19,7 +19,7 @@
   },
   "additionalProperties": false,
   "required": [
-    "templates",
+    "orderTemplates",
     "totalRecords"
   ]
 }
