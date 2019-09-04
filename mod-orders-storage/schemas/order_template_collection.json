@@ -3,7 +3,7 @@
   "description": "Collection of order templates",
   "type": "object",
   "properties": {
-    "templates": {
+    "orderTemplates": {
       "description": "Collection of order templates",
       "type": "array",
       "id": "orderTemplates",
