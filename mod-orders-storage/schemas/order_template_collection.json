@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "collection of order templates",
+  "description": "Collection of order templates",
   "type": "object",
   "properties": {
     "templates": {

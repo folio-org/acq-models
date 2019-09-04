@@ -1,8 +1,12 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "order template",
+  "description": "Order template",
   "type": "object",
   "properties": {
+    "id": {
+      "description": "UUID of order template",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "templateName": {
       "description": "The order template name",
       "type": "string"
