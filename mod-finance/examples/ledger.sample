@@ -3,9 +3,12 @@
   "name": "Main Library",
   "code": "MAIN-LIB",
   "description": "This is the ledger for the Main Library",
-  "periodStart": "2017-07-01T00:00:00Z",
-  "periodEnd": "2017-06-30T23:59:59Z",
-  "fiscalYears": [
+  "ledgerStatus": "Active",
+  "allocated": 2000,
+  "available": 1000,
+  "unavailable": 1000,
+  "currency": "USD",
+  "acqUnitIds": [
     "ac2164c7-ba3d-1bc2-912c-e35ceccbfaf2"
   ]
 }

@@ -1,15 +1,15 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "A collection of ledgers",
+  "description": "A collection of ledgerFY",
   "type": "object",
   "properties": {
-    "ledgers": {
-      "description": "Collection of ledger records",
+    "ledgerFY": {
+      "description": "Collection of ledgerFY records",
       "type": "array",
-      "id": "ledgers",
+      "id": "ledgerFY",
       "items": {
         "type": "object",
-        "$ref": "ledger.json"
+        "$ref": "ledgerFY.json"
       }
     },
     "totalRecords": {
@@ -19,7 +19,7 @@
   },
   "additionalProperties": false,
   "required": [
-    "ledgers",
+    "ledgerFY",
     "totalRecords"
   ]
 }
