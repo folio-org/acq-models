@@ -1,0 +1,5 @@
+{
+   "templateName": "Amazon book orders",
+   "templateCode": "Amazon-B",
+   "templateDescription": "Use to create orders in FOLIO after they are placed on Amazon"
+}
