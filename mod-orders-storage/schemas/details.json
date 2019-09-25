@@ -21,8 +21,11 @@
           },
           "productIdType": {
             "description": "the type of id",
-            "type": "object",
             "$ref": "../../common/schemas/product_id_type.json"
+          },
+          "qualifier": {
+            "description": "Information about the binding, format, volume numbers, part of a set, publisher, distributor, etc. which might be enclosed in parenthesis",
+            "type": "string"
           }
         }
       }
