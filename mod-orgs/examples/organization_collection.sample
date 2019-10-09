@@ -164,6 +164,8 @@
           "timestamp": "2008-05-15T03:53:00-07:00"
         }
       ],
+      "acqUnitIds": [
+      ],
       "tags" : {
          "tagList" : [
            "important"
