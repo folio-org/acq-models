@@ -78,8 +78,7 @@
     {
       "code": "GENRL",
       "fundId": "3652829d-a625-4c84-b297-9bd9955d6bc9",
-      "distributionType": "amount",
-      "value": 33.09,
+      "percentage": 20.0,
       "encumbrance": "0466cb77-0344-43c6-85eb-0a64aa2934e5"
     }
   ],
