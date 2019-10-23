@@ -4,6 +4,7 @@
   "type": "object",
   "properties": {
     "fund": {
+      "description": "Fund to track financial transactions",
       "type": "object",
       "$ref": "fund.json"
     },
