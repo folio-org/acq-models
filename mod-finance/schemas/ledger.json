@@ -19,6 +19,10 @@
       "description": "The description of the ledger",
       "type": "string"
     },
+    "fiscalYearOneId": {
+      "description": "UUID of the first fiscal year associated with this ledger",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "ledgerStatus": {
       "description": "The status of the ledger",
       "type": "string",
@@ -61,6 +65,7 @@
   "required": [
     "name",
     "code",
+    "fiscalYearOneId",
     "ledgerStatus"
   ]
 }
