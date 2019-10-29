@@ -15,5 +15,9 @@
         "$ref": "../../common/schemas/uuid.json"
       }
     }
-  }
+  },
+  "additionalProperties": false,
+  "required": [
+    "fund"
+  ]
 }
