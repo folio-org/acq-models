@@ -7,6 +7,10 @@
       "description": "UUID of the record",
       "$ref": "../../common/schemas/uuid.json"
     },
+    "budgetId": {
+      "description": "UUID of the budget record",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "groupId": {
       "description": "UUID of the group record",
       "$ref": "../../common/schemas/uuid.json"
