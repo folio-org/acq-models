@@ -54,6 +54,10 @@
       "$ref": "../../common/schemas/uuid.json",
       "description": "UUID of the Invoice that triggered the creation of this transaction"
     },
+    "sourceInvoiceLineId": {
+      "$ref": "../../common/schemas/uuid.json",
+      "description": "UUID of the Invoice Line that triggered the creation of this transaction"
+    },
     "tags": {
       "$ref": "../../../raml-util/schemas/tags.schema",
       "description": "Arbitrary tags associated with this transaction",
