@@ -17,6 +17,7 @@
       "enum": [
         "Active",
         "Frozen",
+        "Inactive",
         "Planned",
         "Closed"
       ]

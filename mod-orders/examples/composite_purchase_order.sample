@@ -82,7 +82,8 @@
         "productIds": [
           {
             "productId": "9780764354113",
-            "productIdType": "8261054f-be78-422d-bd51-4ed9f33c3422"
+            "productIdType": "8261054f-be78-422d-bd51-4ed9f33c3422",
+            "qualifier": "(paperback)"
           }
         ],
         "subscriptionFrom": "2018-10-09T00:00:00.000Z",
@@ -94,13 +95,15 @@
         {
           "code": "HIST",
           "fundId": "63157e96-0693-426d-b0df-948bacdfdb08",
-          "percentage": 80.0,
+          "distributionType": "percentage",
+          "value": 80.0,
           "encumbrance": "eb506834-6c70-4239-8d1a-6414a5b08ac3"
         },
         {
           "code": "GENRL",
           "fundId": "3652829d-a625-4c84-b297-9bd9955d6bc9",
-          "percentage": 20.0,
+          "distributionType": "percentage",
+          "value": 20.0,
           "encumbrance": "0466cb77-0344-43c6-85eb-0a64aa2934e5"
         }
       ],

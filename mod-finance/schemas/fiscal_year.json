@@ -20,7 +20,8 @@
     },
     "code": {
       "description": "The code of the fiscal year",
-      "type": "string"
+      "type": "string",
+      "pattern": "^[a-zA-Z]+[0-9]{4}$"
     },
     "currency": {
       "description": "Currency code which is recorded when the FY ends, otherwise the system currency can be assumed",
@@ -39,6 +40,10 @@
       "description": "The end date of the fiscal year",
       "type": "string",
       "format": "date-time"
+    },
+    "series": {
+      "description": "The fiscal year series",
+      "type": "string"
     },
     "metadata": {
       "type": "object",
