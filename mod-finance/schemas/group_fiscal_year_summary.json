@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A group fiscal year summary",
+  "type": "object",
+  "properties": {
+    "groupId": {
+      "description": "UUID of the group record",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "fiscalYearId": {
+      "description": "UUID of the fiscal year record",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "allocated": {
+      "description": "An amount of the fund within a specific fiscal year",
+      "type": "number"
+    },
+    "available": {
+      "description": "Currently available amount of the fund within a specific fiscal year",
+      "type": "number"
+    },
+    "unavailable": {
+      "description": "Unavailable amount of the fund within a specific fiscal year",
+      "type": "number"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "groupId",
+    "fiscalYearId",
+    "allocated",
+    "available",
+    "unavailable"
+  ]
+}
