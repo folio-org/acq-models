@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Invoice transactions Summary",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "UUID of the invoice these payments are associated with",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "numEncumbrances": {
+      "description": "Total number of encumbrances(transactions) expected for this invoice",
+      "type": "number"
+    },
+    "numPaymentsCredits": {
+      "description": "Total number of payments/credits(transactions) expected for this invoice",
+      "type": "number"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "numEncumbrances",
+    "numPaymentsCredits"
+  ]
+}

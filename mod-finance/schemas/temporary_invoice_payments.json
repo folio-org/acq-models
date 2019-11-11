@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Invoice transactions Summary",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "UUID of the payment (Unique)",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "invoiceId": {
+      "description": "UUID of the invoice these payments are associated with",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "transaction": {
+      "description": "The payment or credit transaction",
+      "type": "object",
+      "$ref": "transaction.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "invoiceId",
+    "transaction"
+  ]
+}
