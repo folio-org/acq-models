@@ -23,11 +23,40 @@
         "Released",
         "Unreleased"
       ]
+    },
+    "orderType": {
+     "description": "Taken from the purchase order",
+     "type": "string",
+      "enum": [
+        "One-Time",
+        "Ongoing"
+      ]
+    },
+    "subscription": {
+     "description": "Taken from the purchase Order,for fiscal year rollover",
+     "type": "boolean"
+    },
+    "reEncumber": {
+     "description": "Taken from the purchase Order,for fiscal year rollover",
+     "type": "boolean"
+    },
+    "sourcePurchaseOrderId": {
+     "description": "UUID of the purchase order associated with this encumbrance",
+     "$ref": "../../common/schemas/uuid.json"
+    },
+    "sourcePoLineId": {
+     "description": "UUID of the poLine associated with this encumbrance",
+     "$ref": "../../common/schemas/uuid.json"
     }
   },
   "additionalProperties": false,
   "required": [
     "initialAmountEncumbered",
-    "status"
+    "status",
+    "orderType",
+    "subscription",
+    "reEncumber",
+    "sourcePurchaseOrderId",
+    "sourcePoLineId"
   ]
 }
