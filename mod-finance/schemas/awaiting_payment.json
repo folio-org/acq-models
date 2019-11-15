@@ -12,7 +12,7 @@
       "type": "number"
     },
     "releaseEncumbrance": {
-      "description": "Whether or not remaining encumbered money should be released ",
+      "description": "Whether or not remaining encumbered money should be released",
       "type": "boolean"
     }
   },
