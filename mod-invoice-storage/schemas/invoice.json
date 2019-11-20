@@ -135,7 +135,7 @@
       "type": "array",
       "items": {
         "description": "A human readable ID assigned to this purchase order",
-        "$ref": "../../common/schemas/uuid.json"
+        "pattern": "^[a-zA-Z0-9]{1,16}$"
       }
     },
     "vendorId": {
