@@ -5,8 +5,7 @@
   "properties": {
     "id": {
       "description": "UUID of this invoice",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "$ref": "../../common/schemas/uuid.json"
     },
     "accountingCode": {
       "description": "Number that represents the vendor is an external accounting system which may include details like \"Address code\" in it. This is the number as stated on the invoice",
@@ -26,8 +25,7 @@
     },
     "approvedBy": {
       "description": "UUID of user that approved this invoice",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "$ref": "../../common/schemas/uuid.json"
     },
     "approvalDate": {
       "description": "Date the invoice was approved for processing",
@@ -36,8 +34,7 @@
     },
     "billTo": {
       "description": "UUID of the billing address",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "$ref": "../../common/schemas/uuid.json"
     },
     "chkSubscriptionOverlap": {
       "description": "IF TRUE the system will check if there is another invoice for this subscription and whether the dates overlap. IF the dates overlap, the system should issue an alert.",
@@ -125,8 +122,7 @@
     },
     "paymentId": {
       "description": "Id of payment",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "$ref": "../../common/schemas/uuid.json"
     },
     "disbursementDate": {
       "description": "Date payment was made from financial system (eg. corresponding check date)",
@@ -139,14 +135,12 @@
       "type": "array",
       "items": {
         "description": "A human readable ID assigned to this purchase order",
-        "type": "string",
-        "pattern": "^[a-zA-Z0-9]{5,16}$"
+        "$ref": "../../common/schemas/uuid.json"
       }
     },
     "vendorId": {
       "description": "UUID of vendor",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "$ref": "../../common/schemas/uuid.json"
     },
     "manualPayment": {
       "description": "This would keep the invoice from being feed into the batch process (Not generate a external voucher/payment) but would still move values in the system. Note: this is ideally defined by the vendor relationship and exposed for override on the invoice.",

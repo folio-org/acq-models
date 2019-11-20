@@ -5,8 +5,7 @@
   "properties": {
     "id": {
       "description": "UUID of this voucher",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "$ref": "../../common/schemas/uuid.json"
     },
     "accountingCode": {
       "description": "Number that represents the vendor is an external accounting system which may include details like \"Address code\" in it. This is the number as stated on the invoice",
@@ -39,8 +38,7 @@
     },
     "invoiceId": {
       "description": "Corresponding invoice Id",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "$ref": "../../common/schemas/uuid.json"
     },
     "exchangeRate": {
       "description": "Exchange rate used to generate transaction",
