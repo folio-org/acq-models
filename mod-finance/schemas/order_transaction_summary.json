@@ -9,7 +9,8 @@
     },
     "numTransactions": {
       "description": "Total number of transactions (encumbrances) expected for this order",
-      "type": "integer"
+      "type": "integer",
+      "minimum": 1
     }
   },
   "additionalProperties": false,
