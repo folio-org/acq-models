@@ -9,17 +9,14 @@
     },
     "encumbrance": {
       "description": "UUID of encumbrance record associated with this fund distribution",
-      "type": "string",
       "$ref": "../../common/schemas/uuid.json"
     },
     "fundId": {
       "description": "UUID of the fund associated with this fund distribution",
-      "type": "string",
       "$ref": "../../common/schemas/uuid.json"
     },
     "invoiceLineId": {
       "description": "UUID of the invoice line associated with this fund distribution",
-      "type": "string",
       "$ref": "../../common/schemas/uuid.json"
     },
     "distributionType": {
