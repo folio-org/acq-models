@@ -4,14 +4,17 @@
   "type": "object",
   "properties": {
     "amountAwaitingPayment": {
+      "default": 0,
       "description": "The amount of awaiting for payment",
       "type": "number"
     },
     "amountExpended": {
+      "default": 0,
       "description": "The amount currently expended by this encumbrance",
       "type": "number"
     },
     "initialAmountEncumbered": {
+      "default": 0,
       "description": "The initial amount of this encumbrance. Shouldn't change once create",
       "type": "number"
     },
