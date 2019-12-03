@@ -71,7 +71,8 @@
     },
     "reEncumber": {
       "description": "indicates this purchase order should be re-encumbered each fiscal year. Only applies to ongoing orders",
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "renewal": {
       "description": "Renewal information associated with this order",
