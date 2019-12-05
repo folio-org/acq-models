@@ -23,42 +23,52 @@
       ]
     },
     "allowableEncumbrance": {
+      "default": 0,
       "description": "The encumbrance percentage limit for this budget",
       "type": "number"
     },
     "allowableExpenditure": {
+      "default": 0,
       "description": "The expenditure percentage limit for this budget",
       "type": "number"
     },
     "allocated": {
+      "default": 0,
       "description": "The amount currently allocated to this budget",
       "type": "number"
     },
     "awaitingPayment": {
+      "default": 0,
       "description": "The amount currently awaiting payment for this budget",
       "type": "number"
     },
     "available": {
+      "default": 0,
       "description": "The amount currently available for this budge",
       "type": "number"
     },
     "encumbered": {
+      "default": 0,
       "description": "The amount currently encumbered for this budget",
       "type": "number"
     },
     "expenditures": {
+      "default": 0,
       "description": "The amount currently expended for this budget",
       "type": "number"
     },
     "unavailable" : {
+      "default": 0,
       "description": "Unavailable amount for this budget",
       "type": "number"
     },
     "overEncumbrance": {
+      "default": 0,
       "description": "The amount currently over-encumbered for this budget",
       "type": "number"
     },
     "overExpended": {
+      "default": 0,
       "description": "Amount the budget is over expended.",
       "type": "number"
     },
