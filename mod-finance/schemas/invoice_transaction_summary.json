@@ -4,16 +4,16 @@
   "type": "object",
   "properties": {
     "id": {
-      "description": "UUID of the invoice these payments are associated with",
+      "description": "UUID of the invoice these payments/credits are associated with",
       "$ref": "../../common/schemas/uuid.json"
     },
     "numEncumbrances": {
       "description": "Total number of encumbrances(transactions) expected for this invoice",
-      "type": "number"
+      "type": "integer"
     },
     "numPaymentsCredits": {
       "description": "Total number of payments/credits(transactions) expected for this invoice",
-      "type": "number"
+      "type": "integer"
     }
   },
   "additionalProperties": false,
