@@ -34,20 +34,23 @@
     },
     "allocated": {
       "description": "The amount currently allocated to this ledger",
-      "type": "number"
+      "type": "number",
+      "readonly": true
     },
     "available": {
       "description": "The amount currently available in this ledger",
-      "type": "number"
+      "type": "number",
+      "readonly": true
     },
     "unavailable": {
       "description": "The amount already utilized from the allocated amount",
-      "type": "number"
+      "type": "number",
+      "readonly": true
     },
     "currency":{
       "description": "The ISO code for currency",
       "type": "string"
-    },    
+    },
     "acqUnitIds": {
       "description": "acquisition unit ids associated with this ledger",
       "type": "array",
