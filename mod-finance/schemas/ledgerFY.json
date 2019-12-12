@@ -17,15 +17,18 @@
     },
     "allocated": {
       "description": "The amount currently allocated to this ledger in the FY",
-      "type": "number"
+      "type": "number",
+      "default": 0
     },
     "available": {
       "description": "The amount currently available in this ledger in the FY",
-      "type": "number"
+      "type": "number",
+      "default": 0
     },
     "unavailable": {
       "description": "The amount already utilized from the allocated amount",
-      "type": "number"
+      "type": "number",
+      "default": 0
     },
     "currency":{
       "description": "Ideally this is the currency ISO code for FY",
