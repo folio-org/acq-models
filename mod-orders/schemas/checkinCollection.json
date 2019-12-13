@@ -36,7 +36,7 @@
                   "type": "string"
                 },
                 "callNumber": {
-                  "description": "The call number assigned to the piece. The call number represents what the book is about and acts like the book's address on the library's shelves or stacks",
+                  "description": "The call number assigned to the piece",
                   "type": "string"
                 },
                 "comment": {
