@@ -4,9 +4,8 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": ["string", "null"],
       "description": "The unique id of this url",
-      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+      "$ref": "../../common/schemas/uuid.json"
     },
     "value": {
       "description": "The value for this URL",

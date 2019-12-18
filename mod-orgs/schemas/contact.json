@@ -4,12 +4,8 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": [
-        "string",
-        "null"
-      ],
       "description": "The unique id of this contact",
-      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+      "$ref": "../../common/schemas/uuid.json"
     },
     "prefix": {
       "description": "The prefix for this contact person",
@@ -73,8 +69,7 @@
       "type": "array",
       "items": {
         "description": "UUID of the contact category",
-        "type": "string",
-        "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+        "$ref": "../../common/schemas/uuid.json"
       }
     },
     "inactive": {

@@ -35,6 +35,10 @@
                   "description": "The barcode assigned to the piece",
                   "type": "string"
                 },
+                "callNumber": {
+                  "description": "The call number assigned to the piece",
+                  "type": "string"
+                },
                 "comment": {
                   "description": "The free form notes pertaining to the piece",
                   "type": "string"
@@ -85,12 +89,12 @@
                 "itemStatus": {
                   "description": "The status of the Check in piece",
                   "type": "string"
-                }                              
+                }
               },
               "additionalProperties": false,
               "required": [
                 "itemStatus"
-              ]   
+              ]
             }
           }
         },

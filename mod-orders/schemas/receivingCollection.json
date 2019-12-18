@@ -30,6 +30,10 @@
                   "description": "The barcode assigned to the item",
                   "type": "string"
                 },
+                "callNumber": {
+                  "description": "The call number assigned to the piece",
+                  "type": "string"
+                },
                 "comment": {
                   "description": "The free form notes pertaining to this item",
                   "type": "string"
