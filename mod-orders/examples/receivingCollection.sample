@@ -6,6 +6,7 @@
       "receivedItems": [
         {
           "barcode": "0987654321",
+          "callNumber": "PR 8923 W6 L36 1990 c.3",
           "comment": "Very important note",
           "caption": "Vol. 1",
           "itemStatus": "Received",
@@ -14,6 +15,7 @@
         },
         {
           "barcode": "0987654111",
+          "callNumber": "BF2050 .M335 1999",
           "comment": "Very important note",
           "caption": "Vol. 2",
           "itemStatus": "Received",
@@ -28,6 +30,7 @@
       "receivedItems": [
         {
           "barcode": "0987654333",
+          "callNumber": "PR 8923 W6 L36 1990 c.4",
           "comment": "Very important note",
           "caption": "Vol. 286",
           "itemStatus": "In transit",
