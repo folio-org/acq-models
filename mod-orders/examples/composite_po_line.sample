@@ -2,7 +2,7 @@
   "id": "c0d08448-347b-418a-8c2f-5fb50248d67e",
   "edition": "First edition",
   "checkinItems": false,
-  "instanceId": "8343e5a0-fed8-11e8-8eb2-f2801f1b9fd1",
+  "isPackage": false,
   "agreementId": "bdc75fea-fed8-11e8-8eb2-f2801f1b9fd1",
   "acquisitionMethod": "Purchase At Vendor System",
   "alerts": [
@@ -141,7 +141,7 @@
      "important"
     ]
   },
-  "title": "Kayak Fishing in the Northern Gulf Coast",
+  "titleOrPackage": "Kayak Fishing in the Northern Gulf Coast",
   "vendorDetail": {
     "instructions": "ABCDEFG",
     "noteFromVendor": "ABCDEFGHIKJKLMNOP",

@@ -55,7 +55,9 @@
             "quantityElectronic": 1,
             "poLineEstimatedPrice": 75.47
           },
-          "orderFormat": "P/E Mix"
+          "isPackage": false,
+          "orderFormat": "P/E Mix",
+          "titleOrPackage": "Kayak Fishing in the Northern Gulf Coast"
         },
         {
           "id": "d51772fd-582e-41bd-9073-712f5fb399f1",
@@ -68,7 +70,9 @@
             "quantityPhysical": 2,
             "poLineEstimatedPrice": 28.00
           },
-          "orderFormat": "Physical Resource"
+          "isPackage": true,
+          "orderFormat": "Physical Resource",
+          "titleOrPackage": "The Girl on the Train"
         }
       ]
     }
