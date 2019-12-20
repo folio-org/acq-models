@@ -5,8 +5,7 @@
   "properties": {
     "id": {
       "description": "UUID of this piece record",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "$ref": "../../common/schemas/uuid.json"
     },
     "caption": {
       "description": "Volume/enumeration information",
@@ -27,23 +26,19 @@
     },
     "instanceId": {
       "description": "UUID of the instance record this piece is related to",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "$ref": "../../common/schemas/uuid.json"
     },
     "itemId": {
       "description": "UUID of the associated item record",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "$ref": "../../common/schemas/uuid.json"
     },
     "locationId": {
       "description": "UUID of the (inventory) location record",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "$ref": "../../common/schemas/uuid.json"
     },
     "poLineId": {
       "description": "UUID of the purchase order line this record is associated with",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "$ref": "../../common/schemas/uuid.json"
     },
     "poLineNumber": {
       "description": "A human readable number assigned to this PO line",
@@ -62,8 +57,12 @@
     },
     "purchaseOrderId": {
       "description": "UUID of associated purchase order",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "receiptDate": {
+      "description": "Date that this item is expected to arrive",
       "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "format": "date-time"
     },
     "receivedDate": {
       "description": "date received",
