@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Title",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "UUID of this title",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "title": {
+      "description": "The title name",
+      "type": "string"
+    },
+    "poLineId": {
+      "description": "UUID of the purchase order line this Title is associated with",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "instanceId": {
+      "description": "UUID of the instance associated with this Title",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "productIds": {
+      "description": "List of product identifiers",
+      "id": "productIds",
+      "type": "array",
+      "items": {
+        "$ref": "product_identifier.json"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "title",
+    "poLineId"
+  ]
+}
