@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Invoice transactions Summary",
+  "description": "Temporary Invoice transactions",
   "type": "object",
   "properties": {
     "id": {
@@ -8,7 +8,7 @@
       "$ref": "../../common/schemas/uuid.json"
     },
     "invoiceId": {
-      "description": "UUID of the invoice these payments are associated with",
+      "description": "UUID of the invoice these payments/credits are associated with",
       "$ref": "../../common/schemas/uuid.json"
     },
     "transaction": {
