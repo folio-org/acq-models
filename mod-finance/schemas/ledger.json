@@ -30,30 +30,43 @@
         "Active",
         "Inactive",
         "Frozen"
-        ]
+      ]
     },
     "allocated": {
       "description": "The amount currently allocated to this ledger",
-      "type": "number"
+      "type": "number",
+      "readonly": true
     },
     "available": {
       "description": "The amount currently available in this ledger",
-      "type": "number"
+      "type": "number",
+      "readonly": true
     },
     "unavailable": {
       "description": "The amount already utilized from the allocated amount",
-      "type": "number"
+      "type": "number",
+      "readonly": true
     },
-    "currency":{
+    "currency": {
       "description": "The ISO code for currency",
       "type": "string"
-    },    
+    },
     "acqUnitIds": {
       "description": "acquisition unit ids associated with this ledger",
       "type": "array",
       "items": {
         "$ref": "../../common/schemas/uuid.json"
       }
+    },
+    "restrictEncumbrance": {
+      "description": "If true, imposes restrictions on encumbrances",
+      "type": "boolean",
+      "default": true
+    },
+    "restrictExpenditures": {
+      "description": "If true, imposes restrictions on payments",
+      "type": "boolean",
+      "default": true
     },
     "metadata": {
       "type": "object",
@@ -66,6 +79,8 @@
     "name",
     "code",
     "fiscalYearOneId",
-    "ledgerStatus"
+    "ledgerStatus",
+    "restrictEncumbrance",
+    "restrictExpenditures"
   ]
 }
