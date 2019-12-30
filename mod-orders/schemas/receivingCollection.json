@@ -43,6 +43,7 @@
                   "type": "string"
                 },
                 "itemStatus": {
+                  "default": "In process",
                   "description": "The status of the item",
                   "type": "string"
                 },
