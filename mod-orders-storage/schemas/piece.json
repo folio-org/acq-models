@@ -46,12 +46,12 @@
       "type": "boolean"
     },
     "receiptDate": {
-      "description": "Date that this item is expected to arrive",
+      "description": "Date that associated item is expected to arrive",
       "type": "string",
       "format": "date-time"
     },
     "receivedDate": {
-      "description": "date received",
+      "description": "The date associated item is actually received",
       "type": "string",
       "format": "date-time"
     }
