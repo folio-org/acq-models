@@ -87,15 +87,11 @@
                   "type": "string"
                 },
                 "itemStatus": {
-                  "default": "In process",
                   "description": "The status of the Check in piece",
                   "type": "string"
                 }
               },
-              "additionalProperties": false,
-              "required": [
-                "itemStatus"
-              ]
+              "additionalProperties": false
             }
           }
         },
