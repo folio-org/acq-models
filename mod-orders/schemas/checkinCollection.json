@@ -88,13 +88,11 @@
                 },
                 "itemStatus": {
                   "description": "The status of the Check in piece",
-                  "type": "string"
+                  "type": "string",
+                  "default": "In process"
                 }
               },
-              "additionalProperties": false,
-              "required": [
-                "itemStatus"
-              ]
+              "additionalProperties": false
             }
           }
         },

@@ -12,7 +12,7 @@
   "pieceFormat": "Physical",
   "poLineReceiptStatus": "Partially Received",
   "purchaseOrderId": "0804ddec-6545-404a-b54d-a693f505681d",
-  "receivedDate": "2018-10-09T00:00:00.000Z",
+  "receiptDate": "2018-10-08T00:00:00.000Z",
   "receivingNote": "ASD FGH ABCDEFGHIJKLMNOPQ",
   "receivingStatus": "Expected",
   "supplement": true,
