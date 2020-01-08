@@ -44,7 +44,8 @@
                 },
                 "itemStatus": {
                   "description": "The status of the item",
-                  "type": "string"
+                  "type": "string",
+                  "default": "In process"
                 },
                 "locationId": {
                   "description": "The id of the location",
@@ -58,7 +59,6 @@
                 }
               },
               "required": [
-                "itemStatus",
                 "pieceId"
               ],
               "additionalProperties": false
