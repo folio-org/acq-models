@@ -12,7 +12,9 @@
   "sourceInvoiceLineId": "ee60ee78-f487-4940-adcf-fa0726989823",
   "transactionType": "Payment",
   "metadata": {
-    "createdDate": "2020-01-09T20:53:44.615+0000",
-    "updatedDate": "2020-01-09T20:53:44.615+0000"
+    "createdDate": "2020-01-09T20:53:43.984+0000",
+    "createdByUserId": "28d0fb04-d137-11e8-a8d5-f2801f1b9fd1",
+    "updatedDate": "2020-01-09T20:53:43.984+0000",
+    "updatedByUserId": "28d0fb04-d137-11e8-a8d5-f2801f1b9fd1"
   }
 }
