@@ -45,7 +45,7 @@
       "type": "string"
     },
     "publishedDate": {
-      "description": "Edition of the material",
+      "description": "Year of the material's publication",
       "type": "string",
       "pattern": "^[0-9]{4}$"
     },
