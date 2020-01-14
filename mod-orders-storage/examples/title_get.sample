@@ -14,7 +14,8 @@
   "edition": "Third Edt.",
   "subscriptionFrom": "2018-10-09T00:00:00.000Z",
   "subscriptionInterval": 824,
-  "subscriptionTo": "2020-10-09T00:00:00.000Z"
+  "subscriptionTo": "2020-10-09T00:00:00.000Z",
+  "isAcknowledged": true,
   "productIds": [
     {
       "productId": "9780764354113",

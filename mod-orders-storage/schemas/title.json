@@ -62,6 +62,11 @@
     "subscriptionInterval": {
       "description": "The subscription interval in days",
       "type": "integer"
+    },
+    "isAcknowledged": {
+      "description": "Flag for acknowledge receiving note",
+      "type": "boolean",
+      "default": false
     }
   },
   "additionalProperties": false,
