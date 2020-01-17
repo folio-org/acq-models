@@ -44,7 +44,7 @@
                 },
                 "itemStatus": {
                   "description": "The status of the item",
-                  "type": "string",
+                  "$ref": "item_status.json",
                   "default": "In process"
                 },
                 "locationId": {

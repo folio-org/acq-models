@@ -50,11 +50,11 @@
                 "createItem": {
                   "description": "Whether or not to create an item record for this piece",
                   "type": "boolean"
-                },   
+                },
                 "supplement": {
                   "description": "Whether or not this is a supplementary material for this piece",
                   "type": "boolean"
-                }, 
+                },
                 "locationId": {
                   "description": "The id of the location",
                   "type": "string",
@@ -88,7 +88,7 @@
                 },
                 "itemStatus": {
                   "description": "The status of the Check in piece",
-                  "type": "string",
+                  "$ref": "item_status.json",
                   "default": "In process"
                 }
               },
