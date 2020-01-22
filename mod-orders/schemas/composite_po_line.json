@@ -116,6 +116,11 @@
         "$ref": "../../mod-orders-storage/schemas/fund_distribution.json"
       }
     },
+    "isPackage": {
+      "description": "Indicates that this POL is for a package",
+      "type": "boolean",
+      "default": false
+    },
     "locations": {
       "description": "a list of the location records for this purchase order line",
       "id": "locations",
@@ -218,7 +223,7 @@
       "type": "object",
       "$ref": "../../../raml-util/schemas/tags.schema"
     },
-    "title": {
+    "titleOrPackage": {
       "description": "title of the material",
       "type": "string"
     },
@@ -239,6 +244,6 @@
     "cost",
     "orderFormat",
     "source",
-    "title"
+    "titleOrPackage"
   ]
 }
