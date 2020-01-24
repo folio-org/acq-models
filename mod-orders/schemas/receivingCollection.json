@@ -44,7 +44,6 @@
                 },
                 "itemStatus": {
                   "description": "The status of the item",
-                  "type": "object",
                   "$ref": "item_status.json"
                 },
                 "locationId": {

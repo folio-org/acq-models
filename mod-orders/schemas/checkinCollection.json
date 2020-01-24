@@ -88,7 +88,6 @@
                 },
                 "itemStatus": {
                   "description": "The status of the Check in piece",
-                  "type": "object",
                   "$ref": "item_status.json"
                 }
               },
