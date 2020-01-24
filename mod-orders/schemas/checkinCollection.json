@@ -88,8 +88,7 @@
                 },
                 "itemStatus": {
                   "description": "The status of the Check in piece",
-                  "$ref": "item_status.json",
-                  "default": "In process"
+                  "$ref": "item_status.json"
                 }
               },
               "additionalProperties": false
