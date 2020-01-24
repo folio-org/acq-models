@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The status of the Item",
+  "type": "string",
+  "enum": [
+    "In process",
+    "On order",
+    "Available",
+    "In transit",
+    "Undefined"
+  ]
+}
