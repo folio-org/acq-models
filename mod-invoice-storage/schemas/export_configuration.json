@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Configuration information for a voucher export - there's only one of these for a given batchGroup",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "UUID of the configuration record - System generated if not specified",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "batchGroupId": {
+      "description": "UUID of the batch associated with this export configuration",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "startTime": {
+      "description": "The time of day to trigger an export if enableDailyExport == true.  Format: HH:MM",
+      "type": "string",
+      "pattern": "^([0-9]|0[0-9]|1[0-9]|2[0-3])[:][0-5][0-9]$",
+      "default": "00:00"
+    },
+    "sunday": {
+      "description": "Whether or not a batch voucher export should be triggered at startTime on this day of the week",
+      "type": "boolean",
+      "default": false
+    },
+    "monday": {
+      "description": "Whether or not a batch voucher export should be triggered at startTime on this day of the week",
+      "type": "boolean",
+      "default": false
+    },
+    "tuesday": {
+      "description": "Whether or not a batch voucher export should be triggered at startTime on this day of the week",
+      "type": "boolean",
+      "default": false
+    },
+    "wednesday": {
+      "description": "Whether or not a batch voucher export should be triggered at startTime on this day of the week",
+      "type": "boolean",
+      "default": false
+    },
+    "thursday": {
+      "description": "Whether or not a batch voucher export should be triggered at startTime on this day of the week",
+      "type": "boolean",
+      "default": false
+    },
+    "friday": {
+      "description": "Whether or not a batch voucher export should be triggered at startTime on this day of the week",
+      "type": "boolean",
+      "default": false
+    },
+    "saturday": {
+      "description": "Whether or not a batch voucher export should be triggered at startTime on this day of the week",
+      "type": "boolean",
+      "default": false
+    },
+    "enableScheduledExport": {
+      "description": "Whether or not to enable scheduled batch voucher exports",
+      "type": "boolean",
+      "default": false
+    },
+    "format": {
+      "description": "Desired format (MIME type) of the batch voucher",
+      "type": "string",
+      "enum": [
+        "Application/json",
+        "Application/xml"
+      ],
+      "default": "Application/json"
+    },
+    "uploadURI": {
+      "description": "URI batch vouchers should be uploaded to.  Limited to FTP initially",
+      "type": "string",
+      "pattern": "^ftp://([\\.a-z0-9]+)(/([\\./a-z0-9]?)+)?$"
+    },
+    "metadata": {
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
+    }
+  ],
+  "additionalProperties": false,
+  "required": [
+    "batchGroupId"
+  ]
+}

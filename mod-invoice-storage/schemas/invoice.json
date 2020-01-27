@@ -32,6 +32,10 @@
       "type": "string",
       "format": "date-time"
     },
+    "batchGroupId": {
+      "description": "UUID of the batch group to use when generating batch vouchers",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "billTo": {
       "description": "UUID of the billing address",
       "$ref": "../../common/schemas/uuid.json"
@@ -167,6 +171,7 @@
   },
   "additionalProperties": false,
   "required": [
+    "batchGroupId",
     "currency",
     "invoiceDate",
     "paymentMethod",
