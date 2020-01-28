@@ -1,0 +1,102 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A single voucher which is part of a batch voucher",
+  "type": "object",
+  "properties": {
+    "accountingCode": {
+      "description": "Number that represents the vendor is an external accounting system which may include details like \"Address code\" in it. This is the number as stated on the invoice",
+      "type": "string"
+    },
+    "amount": {
+      "description": "The amount that is actually paid",
+      "type": "number"
+    },
+    "batchedVoucherLines": {
+      "description": "an array of batched voucher line records",
+      "id": "batchedVoucherLines",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "batched_voucher_line.json"
+      }
+    },
+    "disbursementNumber": {
+      "description": "The identifier for the physical transaction corresponding to a payment;Brought in from external source",
+      "type": "string"
+    },
+    "disbursementDate": {
+      "description": "Date payment was made from financial system",
+      "type": "string",
+      "format": "date-time"
+    },
+    "disbursementAmount": {
+      "description": "The amount of the payment made outside of FOLIO",
+      "type": "number"
+    },
+    "exchangeRate": {
+      "description": "Exchange rate used to generate transaction",
+      "type": "number"
+    },
+    "invoiceCurrency": {
+      "description": "The currency in which invoice was originally defined",
+      "type": "string"
+    },
+    "invoiceNote": {
+      "description": "Free-form notes from the invoice",
+      "type": "string"
+    },
+    "status": {
+      "description": "Status of the voucher",
+      "type": "string",
+      "enum": [
+        "Awaiting payment",
+        "Paid"
+      ]
+    },
+    "systemCurrency": {
+      "description": "The currency in which the voucher was paid",
+      "type": "string"
+    },
+    "type": {
+      "description": "Indicates type of payment to account",
+      "type": "string",
+      "enum": [
+        "Payment",
+        "Pre-payment",
+        "Credit",
+        "Voucher"
+      ]
+    },
+    "vendorInvoiceNo": {
+      "description": "Corresponding invoice's vendorInvoiceNo",
+      "type": "string"
+    },
+    "vendorName": {
+      "description": "The name of the vendor",
+      "type": "string"
+    },
+    "voucherDate": {
+      "description": "The date the invoice status changes to approved",
+      "type": "string",
+      "format": "date-time"
+    },
+    "voucherNumber": {
+      "description": "Invoice number in FOLIO system",
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9]*$"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "accountingCode",
+    "amount",
+    "batchedVoucherLines",
+    "invoiceCurrency",
+    "status",
+    "systemCurrency",
+    "type",
+    "vendorInvoiceNo",
+    "vendorName",
+    "voucherNumber"
+  ]
+}
