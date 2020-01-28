@@ -36,40 +36,14 @@
       "type": "string",
       "pattern": "^ftp://([\\.a-z0-9]+)(/([\\./a-z0-9]?)+)?$"
     },
-    "sunday": {
-      "description": "Whether or not a batch voucher export should be triggered at startTime on this day of the week",
-      "type": "boolean",
-      "default": false
-    },
-    "monday": {
-      "description": "Whether or not a batch voucher export should be triggered at startTime on this day of the week",
-      "type": "boolean",
-      "default": false
-    },
-    "tuesday": {
-      "description": "Whether or not a batch voucher export should be triggered at startTime on this day of the week",
-      "type": "boolean",
-      "default": false
-    },
-    "wednesday": {
-      "description": "Whether or not a batch voucher export should be triggered at startTime on this day of the week",
-      "type": "boolean",
-      "default": false
-    },
-    "thursday": {
-      "description": "Whether or not a batch voucher export should be triggered at startTime on this day of the week",
-      "type": "boolean",
-      "default": false
-    },
-    "friday": {
-      "description": "Whether or not a batch voucher export should be triggered at startTime on this day of the week",
-      "type": "boolean",
-      "default": false
-    },
-    "saturday": {
-      "description": "Whether or not a batch voucher export should be triggered at startTime on this day of the week",
-      "type": "boolean",
-      "default": false
+    "weekdays": {
+      "description": "An array of weekdays (enum: Sunday, Monday, etc.) indicating which days to trigger exports on.  If empty, indicates daily exports",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ],
+        "uniqueItems": true
+      }
     },
     "metadata": {
       "type": "object",
