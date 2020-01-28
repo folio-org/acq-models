@@ -34,7 +34,8 @@
     },
     "batchGroupId": {
       "description": "UUID of the batch group to use when generating batch vouchers",
-      "$ref": "../../common/schemas/uuid.json"
+      "$ref": "../../common/schemas/uuid.json",
+      "default": "2a2cb998-1437-41d1-88ad-01930aaeadd5"
     },
     "billTo": {
       "description": "UUID of the billing address",
@@ -171,7 +172,6 @@
   },
   "additionalProperties": false,
   "required": [
-    "batchGroupId",
     "currency",
     "invoiceDate",
     "paymentMethod",

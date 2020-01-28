@@ -17,7 +17,8 @@
     },
     "batchGroupId": {
       "description": "UUID of the batch group to use when generating batch vouchers",
-      "$ref": "../../common/schemas/uuid.json"
+      "$ref": "../../common/schemas/uuid.json",
+      "default": "2a2cb998-1437-41d1-88ad-01930aaeadd5"
     },
     "batchNumber": {
       "description": "Only required when voucher is being output automatically; date formatted or allow library to specify structure and start",
@@ -101,7 +102,6 @@
   "required": [
     "accountingCode",
     "amount",
-    "batchGroupId",
     "exportToAccounting",
     "invoiceCurrency",
     "invoiceId",
