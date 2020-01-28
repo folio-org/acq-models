@@ -407,6 +407,7 @@
   "additionalProperties": false,
   "required": [
     "name",
-    "status"
+    "status",
+    "code"
   ]
 }
