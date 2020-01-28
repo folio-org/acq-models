@@ -3,10 +3,6 @@
   "description": "One line of a batched voucher",
   "type": "object",
   "properties": {
-    "id": {
-      "description": "UUID of this voucher line",
-      "$ref": "../../common/schemas/uuid.json"
-    },
     "amount": {
       "description": "Total amount of this voucher",
       "type": "number"

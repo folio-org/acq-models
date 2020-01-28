@@ -3,6 +3,10 @@
   "description": "top-level batch voucher, i.e. a collection of batched vouchers",
   "type": "object",
   "properties": {
+    "id": {
+      "description": "UUID of batch voucher",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "batchGroup": {
       "description": "The human-readable name of the batch group used when generating this batch voucher",
       "type": "string"

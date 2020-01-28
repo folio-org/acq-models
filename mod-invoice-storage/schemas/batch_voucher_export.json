@@ -45,7 +45,7 @@
       "$ref": "../../../raml-util/schemas/metadata.schema",
       "readonly": true
     }
-  ],
+  },
   "additionalProperties": false,
   "required": [
     "status",

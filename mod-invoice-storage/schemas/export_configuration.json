@@ -4,11 +4,7 @@
   "type": "object",
   "properties": {
     "id": {
-      "description": "UUID of the configuration record - System generated if not specified",
-      "$ref": "../../common/schemas/uuid.json"
-    },
-    "batchGroupId": {
-      "description": "UUID of the batch associated with this export configuration",
+      "description": "UUID of the configuration record - this is the batchGroupId that this configuration is associated with",
       "$ref": "../../common/schemas/uuid.json"
     },
     "enableScheduledExport": {
@@ -50,9 +46,9 @@
       "$ref": "../../../raml-util/schemas/metadata.schema",
       "readonly": true
     }
-  ],
+  },
   "additionalProperties": false,
   "required": [
-    "batchGroupId"
+    "id"
   ]
 }
