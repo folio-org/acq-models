@@ -102,6 +102,7 @@
   "required": [
     "accountingCode",
     "amount",
+    "batchGroupId",
     "exportToAccounting",
     "invoiceCurrency",
     "invoiceId",

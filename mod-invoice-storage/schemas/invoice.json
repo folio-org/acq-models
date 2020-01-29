@@ -172,6 +172,7 @@
   },
   "additionalProperties": false,
   "required": [
+    "batchGroupId",
     "currency",
     "invoiceDate",
     "paymentMethod",
