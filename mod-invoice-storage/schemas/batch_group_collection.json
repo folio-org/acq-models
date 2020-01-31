@@ -3,7 +3,7 @@
   "description": "collection of batch groups",
   "type": "object",
   "properties": {
-    "vouchers": {
+    "batchGroups": {
       "description": "an array of batch group records",
       "id": "batchGroups",
       "type": "array",
