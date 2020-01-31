@@ -21,10 +21,6 @@
       "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$",
       "default": "2a2cb998-1437-41d1-88ad-01930aaeadd5"
     },
-    "batchNumber": {
-      "description": "Only required when voucher is being output automatically; date formatted or allow library to specify structure and start",
-      "type": "string"
-    },
     "disbursementNumber": {
       "description": "The identifier for the physical transaction corresponding to a payment;Brought in from external source",
       "type": "string"
