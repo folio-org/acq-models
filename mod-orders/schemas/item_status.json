@@ -8,5 +8,6 @@
     "Available",
     "In transit",
     "Undefined"
-  ]
+  ],
+  "default": "In process"
 }
