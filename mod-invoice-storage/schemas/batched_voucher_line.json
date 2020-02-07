@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "One line of a batched voucher",
+  "type": "object",
+  "properties": {
+    "amount": {
+      "description": "Total amount of this voucher",
+      "type": "number"
+    },
+    "fundCodes": {
+      "description": "an array of fund codes",
+      "id": "fundCodes",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "externalAccountNumber": {
+      "description": "All distributions that come from funds with the same account number are grouped by voucher line",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "amount",
+    "externalAccountNumber",
+    "fundCodes"
+  ]
+}
