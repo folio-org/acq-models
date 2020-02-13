@@ -30,7 +30,7 @@
     "uploadURI": {
       "description": "URI batch vouchers should be uploaded to.  Limited to FTP initially",
       "type": "string",
-      "pattern": "^ftp://([\.\_\-a-z0-9]+)(/([\./\-\_\.a-z0-9]?)+)?$"
+      "pattern": "^ftp://([\\.\\_\\-a-z0-9]+)(/([\\./\\-\\_\\.a-z0-9]?)+)?$"
     },
     "weekdays": {
       "description": "An array of weekdays (enum: Sunday, Monday, etc.) indicating which days to trigger exports on.  If empty, indicates daily exports",
