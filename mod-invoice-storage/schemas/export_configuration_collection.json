@@ -3,7 +3,7 @@
   "description": "collection of batch voucher export configurations",
   "type": "object",
   "properties": {
-    "batchGroups": {
+    "exportConfigs": {
       "description": "an array of batch voucher export configuration records",
       "id": "exportConfigs",
       "type": "array",
