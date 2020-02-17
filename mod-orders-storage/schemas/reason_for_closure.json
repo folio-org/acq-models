@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Reason for closure object",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "UUID identifying this reason for closure",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "reasonForClosure": {
+      "description": "Reason for closure",
+      "type": "string"
+    },
+    "isSystem": {
+      "description": "Reason for closure is system",
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "reasonForClosure"
+  ],
+  "additionalProperties": false
+}
