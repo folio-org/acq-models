@@ -74,10 +74,10 @@
       "type": "boolean",
       "default": false
     },
-    "renewal": {
-      "description": "Renewal information associated with this order",
+    "ongoing": {
+      "description": "Ongoing information associated with this order",
       "type": "object",
-      "$ref": "../../mod-orders-storage/schemas/renewal.json"
+      "$ref": "../../mod-orders-storage/schemas/ongoing.json"
     },
     "shipTo": {
       "description": "UUID of the shipping address",
