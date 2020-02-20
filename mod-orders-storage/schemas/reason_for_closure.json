@@ -17,8 +17,8 @@
       "default": false
     }
   },
+  "additionalProperties": false,
   "required": [
     "reasonForClosure"
-  ],
-  "additionalProperties": false
+  ]
 }
