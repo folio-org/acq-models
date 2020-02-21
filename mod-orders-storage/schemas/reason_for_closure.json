@@ -7,18 +7,23 @@
       "description": "UUID identifying this reason for closure",
       "$ref": "../../common/schemas/uuid.json"
     },
-    "reasonForClosure": {
+    "reason": {
       "description": "Reason for closure",
       "type": "string"
     },
-    "isSystem": {
-      "description": "Reason for closure is system",
-      "type": "boolean",
-      "default": false
+    "source": {
+      "description": "Source of reason for closure",
+      "type": "string",
+      "enum": [
+        "User",
+        "System"
+      ],
+      "default": "User"
     }
   },
   "additionalProperties": false,
   "required": [
-    "reasonForClosure"
+    "reason",
+    "source"
   ]
 }

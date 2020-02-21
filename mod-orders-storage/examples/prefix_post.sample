@@ -1,3 +1,4 @@
 {
-  "prefix": "Custom prefix"
+  "name": "Custom prefix",
+  "description": "Custom prefix description"
 }

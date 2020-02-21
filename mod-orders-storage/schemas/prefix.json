@@ -7,13 +7,18 @@
       "description": "UUID identifying this prefix",
       "$ref": "../../common/schemas/uuid.json"
     },
-    "prefix": {
-      "description": "Prefix",
+    "name": {
+      "description": "Prefix name",
+      "type": "string"
+    },
+    "description": {
+      "description": "Prefix description",
       "type": "string"
     }
   },
   "additionalProperties": false,
   "required": [
-    "prefix"
+    "name",
+    "description"
   ]
 }

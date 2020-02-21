@@ -1,4 +1,4 @@
 {
-  "reasonForClosure": "Lack of funds",
-  "isSystem": true
+  "reason": "Lack of funds",
+  "source": "System"
 }
