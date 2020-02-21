@@ -6,8 +6,8 @@
   "assignedTo": "ab18897b-0e40-4f31-896b-9c9adc979a88",
   "billTo": "1df71bab-818c-46ea-988b-a23676d91ae6",
   "closeReason": {
-    "reason" : "No longer available",
-    "note" : "Items are no longer available to purchase"
+    "reason": "No longer available",
+    "note": "Items are no longer available to purchase"
   },
   "dateOrdered": "2018-07-20T00:00:00.000+0000",
   "notes": [
@@ -18,12 +18,12 @@
   "orderType": "Ongoing",
   "poNumber": "A268758XYZ",
   "reEncumber": false,
-  "renewal": {
-     "cycle": "6 Months",
-     "interval": 182,
-     "manualRenewal": true,
-     "reviewPeriod": 30,
-     "renewalDate": "2019-04-09T00:00:00.000Z"
+  "ongoing": {
+    "interval": 182,
+    "isSubscription": true,
+    "manualRenewal": true,
+    "reviewPeriod": 30,
+    "renewalDate": "2019-04-09T00:00:00.000Z"
   },
   "shipTo": "0830111e-dcf1-4897-9eee-dcd1ab44adce",
   "template": "678323d2-3d86-4a69-8674-bbd4f8eecb33",
@@ -125,7 +125,7 @@
       "orderFormat": "Physical Resource",
       "paymentStatus": "Awaiting Payment",
       "physical": {
-       "createInventory": "Instance, Holding, Item",
+        "createInventory": "Instance, Holding, Item",
         "volumes": [
           "vol. 1"
         ],
@@ -133,7 +133,6 @@
         "expectedReceiptDate": "2018-10-05T00:00:00.000Z",
         "receiptDue": "2018-10-10T00:00:00.000Z",
         "materialType": "f7e72403-2a13-43a4-a069-aaabe6c9dea8"
-
       },
       "poLineDescription": "ABCDEFGHIJKLMNOPQRSTUVWXY",
       "poLineNumber": "ABC268758XYZ-03",
@@ -175,8 +174,8 @@
         "refNumberType": "Supplier's unique order line reference number",
         "vendorAccount": "8910-10"
       },
-      "tags" : {
-        "tagList" : [
+      "tags": {
+        "tagList": [
           "important"
         ]
       },
