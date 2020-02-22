@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Ongoing details for Purchase Order",
+  "type": "object",
+  "properties": {
+    "interval": {
+      "description": "Renewal interval (in days)",
+      "type": "integer"
+    },
+    "isSubscription": {
+      "description": "Whether or not this is a subscription",
+      "type": "boolean",
+      "default": "false"
+    },
+    "manualRenewal": {
+      "description": "Whether or not this is a manual renewal",
+      "type": "boolean"
+    },
+    "reviewPeriod": {
+      "description": "Time prior to renewal where changes can be made to subscription",
+      "type": "integer"
+    },
+    "renewalDate": {
+      "description": "The date this Ongoing PO's order lines were renewed",
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false
+}
