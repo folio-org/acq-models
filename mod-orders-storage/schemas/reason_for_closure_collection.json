@@ -3,7 +3,7 @@
   "description": "Collection of reasons for closure",
   "type": "object",
   "properties": {
-    "reasonForClosure": {
+    "reasonsForClosure": {
       "description": "Collection of reasons for closure",
       "type": "array",
       "id": "reasonsForClosure",
@@ -19,7 +19,7 @@
   },
   "additionalProperties": false,
   "required": [
-    "reasonForClosure",
+    "reasonsForClosure",
     "totalRecords"
   ]
 }

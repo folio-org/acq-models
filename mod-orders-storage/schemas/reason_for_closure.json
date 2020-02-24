@@ -2,6 +2,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Reason for closure object",
   "type": "object",
+  "javaType" : "org.folio.rest.jaxrs.model.ReasonForClosure",
   "properties": {
     "id": {
       "description": "UUID identifying this reason for closure",
