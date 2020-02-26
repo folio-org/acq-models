@@ -16,12 +16,24 @@
       "description": "Whether or not this is a manual renewal",
       "type": "boolean"
     },
+    "notes": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "reviewPeriod": {
       "description": "Time prior to renewal where changes can be made to subscription",
       "type": "integer"
     },
     "renewalDate": {
-      "description": "The date this Ongoing PO's order lines were renewed",
+      "description": "The date this Ongoing Purchase Order's order lines will renew",
+      "type": "string",
+      "format": "date-time"
+    },
+    "reviewDate": {
+      "description": "Date when Order has to be reviewed",
       "type": "string",
       "format": "date-time"
     }
