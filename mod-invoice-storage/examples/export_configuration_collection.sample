@@ -1,7 +1,8 @@
 {
   "exportConfigs": [
     {
-      "id": "e91d44e4-ae4f-401a-b355-3ea44f57a628",
+      "id": "3e3a52b2-9097-49ad-8ff1-8135af0db573",
+      "batchGroupId": "e91d44e4-ae4f-401a-b355-3ea44f57a628",
       "startTime": "00:00",
       "weekdays": [ "Monday", "Wednesday" ],
       "enableScheduledExport": true,

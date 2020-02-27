@@ -4,7 +4,11 @@
   "type": "object",
   "properties": {
     "id": {
-      "description": "UUID of the configuration record - this is the batchGroupId that this configuration is associated with",
+      "description": "UUID of the configuration record",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "batchGroupId": {
+      "description": "UUID of the batch group this configuration is associated with",
       "$ref": "../../common/schemas/uuid.json"
     },
     "enableScheduledExport": {
@@ -49,6 +53,6 @@
   },
   "additionalProperties": false,
   "required": [
-    "id"
+    "batchGroupId"
   ]
 }
