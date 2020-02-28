@@ -25,7 +25,7 @@
       "type": "integer"
     },
     "renewalDate": {
-      "description": "The date this Ongoing Purchase Order's order lines will renew",
+      "description": "The date this Ongoing PO's order lines were renewed",
       "type": "string",
       "format": "date-time"
     },
