@@ -23,8 +23,10 @@
     "interval": 182,
     "isSubscription": true,
     "manualRenewal": true,
+    "notes" : "Some note",
     "reviewPeriod": 30,
-    "renewalDate": "2019-04-09T00:00:00.000Z"
+    "renewalDate": "2019-04-09T00:00:00.000Z",
+    "reviewDate" : "2019-03-09T00:00:00.000Z"
   },
   "shipTo": "0830111e-dcf1-4897-9eee-dcd1ab44adce",
   "template": "678323d2-3d86-4a69-8674-bbd4f8eecb33",
