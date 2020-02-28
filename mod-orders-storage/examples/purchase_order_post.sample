@@ -17,9 +17,7 @@
     "interval": 182,
     "isSubscription": false,
     "manualRenewal": true,
-    "notes" : [
-      "Some note"
-    ],
+    "notes" : "Some note",
     "reviewPeriod": 30,
     "renewalDate": "2019-04-09T00:00:00.000Z",
     "reviewDate" : "2019-03-09T00:00:00.000Z"

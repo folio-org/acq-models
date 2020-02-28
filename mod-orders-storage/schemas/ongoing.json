@@ -17,11 +17,8 @@
       "type": "boolean"
     },
     "notes": {
-      "description": "",
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+      "description": "Notes associated with the Ongoing order",
+      "type": "string"
     },
     "reviewPeriod": {
       "description": "Time prior to renewal where changes can be made to subscription",
