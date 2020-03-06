@@ -1,5 +1,7 @@
 {
   "encumbranceId": "12ac70a4-5c9d-112f-9acb-852adf67d7e1",
   "amountAwaitingPayment": "25.17",
+  "invoiceId": "5925e966-f242-4842-9d5e-b33a651bb390",
+  "invoiceLineId": "ee60ee78-f487-4940-adcf-fa0726989823",
   "releaseEncumbrance": "true"
 }
