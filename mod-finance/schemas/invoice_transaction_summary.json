@@ -14,11 +14,6 @@
     "numPaymentsCredits": {
       "description": "Total number of payments/credits(transactions) expected for this invoice",
       "type": "integer"
-    },
-    "isProcessed": {
-      "description": "If true no more transactions expected for processing",
-      "type": "boolean",
-      "default": false
     }
   },
   "additionalProperties": false,
