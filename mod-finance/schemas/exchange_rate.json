@@ -5,15 +5,15 @@
   "properties": {
     "from": {
       "description": "From currency code",
-      "type": "string"
+      "$ref": "../../common/schemas/currency_code.json"
     },
     "to": {
       "description": "To currency code",
-      "type": "string"
+      "$ref": "../../common/schemas/currency_code.json"
     },
     "exchangeRate": {
       "description": "Exchange rate value",
-      "type": "string"
+      "$ref": "../../common/schemas/floating_point_string.json"
     }
   },
   "additionalProperties": false,
