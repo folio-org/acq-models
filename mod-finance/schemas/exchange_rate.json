@@ -13,7 +13,8 @@
     },
     "exchangeRate": {
       "description": "Exchange rate value",
-      "$ref": "../../common/schemas/floating_point_string.json"
+      "type": "string",
+      "pattern": "^\\d*\\.?\\d*$"
     }
   },
   "additionalProperties": false,
