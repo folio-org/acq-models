@@ -5,6 +5,7 @@
   "adjustments": [
     {
       "description":"Service Fee",
+      "exportToAccounting" : false,
       "type":"Amount",
       "value":4.00,
       "prorate":"Not prorated",
@@ -12,6 +13,7 @@
     },
     {
       "description":"Sales Tax",
+      "exportToAccounting" : false,
       "type":"Percentage",
       "value":8,
       "prorate":"Not prorated",
@@ -19,6 +21,7 @@
     },
     {
       "adjustmentId": "14263aab-b22b-4ddc-9ecc-3434427c2c8f",
+      "exportToAccounting" : false,
       "description":"Shipping",
       "type":"Amount",
       "value":2.50,

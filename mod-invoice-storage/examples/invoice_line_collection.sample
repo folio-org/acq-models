@@ -7,6 +7,7 @@
       "adjustments": [
         {
           "description":"Service Fee",
+          "exportToAccounting" : false,
           "type":"Amount",
           "value":2.25,
           "prorate":"Not prorated",
@@ -14,6 +15,7 @@
         },
         {
           "description":"Shipping",
+          "exportToAccounting" : false,
           "type":"Amount",
           "value":2.75,
           "prorate":"Not prorated",
