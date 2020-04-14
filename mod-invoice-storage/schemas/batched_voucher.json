@@ -33,9 +33,18 @@
       "description": "The amount of the payment made outside of FOLIO",
       "type": "number"
     },
+    "enclosureNeeded": {
+      "description": "Indicates that an enclosure is needed",
+      "type": "boolean",
+      "default": false
+    },
     "exchangeRate": {
       "description": "Exchange rate used to generate transaction",
       "type": "number"
+    },
+    "folioInvoiceNo": {
+      "description": "Represents associated invoice number",
+      "type": "string"
     },
     "invoiceCurrency": {
       "description": "The currency in which invoice was originally defined",
@@ -91,6 +100,7 @@
     "accountingCode",
     "amount",
     "batchedVoucherLines",
+    "folioInvoiceNo",
     "invoiceCurrency",
     "status",
     "systemCurrency",

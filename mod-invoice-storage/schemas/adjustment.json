@@ -16,6 +16,11 @@
       "description": "Displayed in invoice line as a name for the input",
       "type": "string"
     },
+    "exportToAccounting": {
+      "description": "Whether or not to show this adjustment in batchedVoucherLines",
+      "type": "boolean",
+      "default": false
+    },
     "fundDistributions": {
       "description": "Fund distribution records from which this adjustment will be paid; only valid at invoice level",
       "id": "fundDistributions",
@@ -35,7 +40,7 @@
         "By quantity",
         "Not prorated"
       ],
-      "default" : "Not prorated"
+      "default": "Not prorated"
     },
     "relationToTotal": {
       "description": "Relationship of this adjustment to the total;In addition to: added to subtotal;Included in: reported as subtotal portion;Separate from:calculated from subtotal",
@@ -45,7 +50,7 @@
         "Included in",
         "Separate from"
       ],
-      "default" : "In addition to"
+      "default": "In addition to"
     },
     "type": {
       "description": "Adjustment type",
@@ -62,10 +67,11 @@
   },
   "additionalProperties": false,
   "required": [
-     "description",
-     "prorate",
-     "relationToTotal",
-     "type",
-     "value"
+    "description",
+    "exportToAccounting",
+    "prorate",
+    "relationToTotal",
+    "type",
+    "value"
   ]
 }
