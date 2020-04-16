@@ -2,11 +2,12 @@
   "invoices": [
     {
       "id": "c0d08448-347b-418a-8c2f-5fb50248d67e",
-      "accountingCode" : "0206",
+      "accountingCode": "0206",
       "adjustments": [
         {
           "id": "14263aab-b22b-4ddc-9ecc-3434427c2c8f",
           "description": "Shipping",
+          "exportToAccounting": false,
           "type": "Amount",
           "value": 4.50,
           "prorate": "By line",
@@ -20,6 +21,8 @@
       "billTo": "1df71bab-818c-46ea-988b-a23676d91ae6",
       "chkSubscriptionOverlap": false,
       "currency": "USD",
+      "enclosureNeeded" : false,
+      "exchangeRate" : 1.092,
       "folioInvoiceNo": "123invoicenumber45",
       "invoiceDate": "2018-07-20T00:00:00.000+0000",
       "lockTotal": false,

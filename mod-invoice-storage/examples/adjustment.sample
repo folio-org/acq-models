@@ -1,8 +1,9 @@
-{  
-      "id":"14263aab-b22b-4ddc-9ecc-3434427c2c8f",
-      "description":"Service Fee",
-      "type":"Amount",
-      "value":10,
-      "prorate":"By line",
-      "relationToTotal":"In addition to"
+{
+  "id": "14263aab-b22b-4ddc-9ecc-3434427c2c8f",
+  "description": "Service Fee",
+  "exportToAccounting": false,
+  "type": "Amount",
+  "value": 10,
+  "prorate": "By line",
+  "relationToTotal": "In addition to"
 }

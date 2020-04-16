@@ -46,9 +46,18 @@
       "description": "IF TRUE the system will check if there is another invoice for this subscription and whether the dates overlap. IF the dates overlap, the system should issue an alert.",
       "type": "boolean"
     },
-    "currency":{
+    "currency": {
       "description": "Ideally this is the ISO code and not something the user defines",
       "type": "string"
+    },
+    "enclosureNeeded": {
+      "description": "Indicates that an enclosure is needed",
+      "type": "boolean",
+      "default": false
+    },
+    "exchangeRate": {
+      "description": "Exchange rate",
+      "type": "number"
     },
     "exportToAccounting": {
       "description": "This would keep the invoice from being feed into the batch process (i.e. not generate an external voucher/payment) but would still move values in the system. This might be defined by the vendor relationship and exposed for override on the invoice.",
@@ -166,9 +175,9 @@
       "readonly": true
     },
     "tags": {
-      "type" : "object",
+      "type": "object",
       "description": "arbitrary tags associated with this invoice",
-      "$ref" : "../../../raml-util/schemas/tags.schema"
+      "$ref": "../../../raml-util/schemas/tags.schema"
     }
   },
   "additionalProperties": false,

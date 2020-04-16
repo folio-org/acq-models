@@ -23,17 +23,17 @@
     "created": {
       "description": "When this batch voucher was created",
       "type": "string",
-      "format": "datetime"
+      "format": "date-time"
     },
     "start": {
       "description": "This export is for all vouchers between start and end",
       "type": "string",
-      "format": "datetime"
+      "format": "date-time"
     },
     "end": {
       "description": "This export is for all vouchers between start and end",
       "type": "string",
-      "format": "datetime"
+      "format": "date-time"
     },
     "totalRecords": {
       "description": "total number of records in the array",
