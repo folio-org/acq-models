@@ -18,6 +18,8 @@
       ],
       "orderType": "Ongoing",
       "poNumber": "AAA268758B",
+      "poNumberPrefix": "AAA",
+      "poNumberSuffix": "B",
       "reEncumber": false,
       "ongoing": {
         "interval": 182,
