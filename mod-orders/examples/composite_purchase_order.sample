@@ -17,6 +17,8 @@
   ],
   "orderType": "Ongoing",
   "poNumber": "A268758XYZ",
+  "poNumberPrefix": "A",
+  "poNumberSuffix": "XYZ",
   "reEncumber": false,
   "ongoing": {
     "interval": 182,
