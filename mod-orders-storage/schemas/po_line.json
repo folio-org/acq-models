@@ -109,6 +109,11 @@
         "$ref": "fund_distribution.json"
       }
     },
+    "instanceId": {
+      "description": "UUID of the instance record this purchase order line is related to",
+      "type": "string",
+      "format": "uuid"
+    },
     "isPackage": {
       "description": "Indicates that this POL is for a package",
       "type": "boolean",
