@@ -111,8 +111,7 @@
     },
     "instanceId": {
       "description": "UUID of the instance record this purchase order line is related to",
-      "type": "string",
-      "format": "uuid"
+      "$ref": "../../common/schemas/uuid.json"
     },
     "isPackage": {
       "description": "Indicates that this POL is for a package",
