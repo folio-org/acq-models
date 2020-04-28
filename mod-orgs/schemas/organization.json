@@ -394,6 +394,13 @@
         "$ref": "changelog.json"
       }
     },
+    "acqUnitIds": {
+      "description": "Acquisition unit UUIDs associated with this organization",
+      "type": "array",
+      "items": {
+        "$ref": "../../common/schemas/uuid.json"
+      }
+    },
     "tags": {
       "type": "object",
       "description": "arbitrary tags associated with this organization",

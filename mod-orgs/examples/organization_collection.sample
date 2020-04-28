@@ -49,9 +49,9 @@
         {
           "value": "noreply@folio.org",
           "description": "Main",
-          "categories": [	
-            "112ae2e4-88ae-4fa5-a75b-2379d2035e52",	
-            "56288fe8-8037-44da-8395-01d2d106dc54"	
+          "categories": [
+            "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
+            "56288fe8-8037-44da-8395-01d2d106dc54"
           ],
           "language": "en-us"
         }
@@ -61,9 +61,9 @@
           "value": "http://folio.org",
           "description": "",
           "language": "en-us",
-          "categories": [	
-            "112ae2e4-88ae-4fa5-a75b-2379d2035e52",	
-            "56288fe8-8037-44da-8395-01d2d106dc54"	
+          "categories": [
+            "112ae2e4-88ae-4fa5-a75b-2379d2035e52",
+            "56288fe8-8037-44da-8395-01d2d106dc54"
           ],
           "notes": "note"
         }
@@ -163,6 +163,10 @@
           "description": "This is a sample note.",
           "timestamp": "2008-05-15T03:53:00-07:00"
         }
+      ],
+      "acqUnitIds": [
+        "1895e539-8dac-441e-b1f5-aab62b3fde60",
+        "47f504bd-0c1b-498e-a2ae-e2f0a0cea273"
       ],
       "tags" : {
          "tagList" : [
