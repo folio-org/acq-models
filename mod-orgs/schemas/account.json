@@ -52,6 +52,13 @@
     "notes": {
       "description": "The notes for this account",
       "type": "string"
+    },
+    "acqUnitIds": {
+      "description": "Acquisition unit UUIDs associated with this organizations account",
+      "type": "array",
+      "items": {
+        "$ref": "../../common/schemas/uuid.json"
+      }
     }
   },
   "additionalProperties": false,
