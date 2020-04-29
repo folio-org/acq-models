@@ -156,7 +156,11 @@
       "contactInfo": "Some basic contact information note.",
       "libraryCode": "My Library",
       "libraryEdiCode": "MY-LIB-1",
-      "notes": "note"
+      "notes": "note",
+      "acqUnitIds": [
+        "1895e539-8dac-441e-b1f5-aab62b3fde60",
+        "47f504bd-0c1b-498e-a2ae-e2f0a0cea273"
+      ]
     }
   ],
   "changelogs": [
@@ -164,6 +168,10 @@
       "description": "This is a sample note.",
       "timestamp": "2008-05-15T03:53:00-07:00"
     }
+  ],
+  "acqUnitIds": [
+    "1895e539-8dac-441e-b1f5-aab62b3fde60",
+    "47f504bd-0c1b-498e-a2ae-e2f0a0cea273"
   ],
   "tags" : {
      "tagList" : [
