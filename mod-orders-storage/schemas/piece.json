@@ -32,6 +32,10 @@
       "description": "UUID of the purchase order line this record is associated with",
       "$ref": "../../common/schemas/uuid.json"
     },
+    "titleId": {
+      "description": "UUID of the title record",
+      "$ref": "../../common/schemas/uuid.json"
+    },
      "receivingStatus": {
       "description": "the status of this piece",
       "type": "string",
