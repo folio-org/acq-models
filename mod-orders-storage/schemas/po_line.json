@@ -133,6 +133,10 @@
       "type": "object",
       "$ref": "order_format.json"
     },
+    "packagePoLineId": {
+      "description": "UUID referencing the poLine that represents the package that this POLs title belongs to",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "paymentStatus": {
       "description": "The purchase order line payment status",
       "type": "string",
