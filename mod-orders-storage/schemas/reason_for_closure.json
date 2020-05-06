@@ -3,11 +3,10 @@
   "description": "Reason for closure object",
   "type": "object",
   "javaType" : "org.folio.rest.jaxrs.model.ReasonForClosure",
+  "extends" : {
+    "$ref" : "../../common/schemas/entity.json"
+  },
   "properties": {
-    "id": {
-      "description": "UUID identifying this reason for closure",
-      "$ref": "../../common/schemas/uuid.json"
-    },
     "reason": {
       "description": "Reason for closure",
       "type": "string"
