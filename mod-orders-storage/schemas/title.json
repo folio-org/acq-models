@@ -7,6 +7,11 @@
       "description": "UUID of this title",
       "$ref": "../../common/schemas/uuid.json"
     },
+    "expectedReceiptDate": {
+      "description": "Vendor agreed date prior to the Receipt Due date item is expected to be received by",
+      "type": "string",
+      "format": "date-time"
+    },
     "title": {
       "description": "The title name",
       "type": "string"
@@ -44,10 +49,23 @@
       "description": "Edition of the material",
       "type": "string"
     },
+    "packageName": {
+      "description": "The name of the package",
+      "type": "string"
+    },
+    "poLineNumber": {
+      "description": "The number of the POL identified by poLineId",
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9]{1,16}-[0-9]{1,3}$"
+    },
     "publishedDate": {
       "description": "Year of the material's publication",
       "type": "string",
       "pattern": "^[0-9]{4}$"
+    },
+    "receivingNote": {
+      "description": "Receiving note of the POL identified by poLineId",
+      "type": "string"
     },
     "subscriptionFrom": {
       "description": "The start date of the subscription",
@@ -67,6 +85,11 @@
       "description": "Flag for acknowledge receiving note",
       "type": "boolean",
       "default": false
+    },
+    "metadata": {
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
     }
   },
   "additionalProperties": false,
