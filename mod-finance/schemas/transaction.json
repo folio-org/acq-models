@@ -41,7 +41,6 @@
       "type": "string",
       "enum": [
         "User",
-        "FiscalYear",
         "PoLine",
         "Invoice"
       ]
