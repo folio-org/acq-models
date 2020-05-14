@@ -2,11 +2,10 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Purchase order number suffix",
   "type": "object",
+  "extends" : {
+    "$ref" : "../../common/schemas/entity.json"
+  },
   "properties": {
-    "id": {
-      "description": "UUID identifying this suffix",
-      "$ref": "../../common/schemas/uuid.json"
-    },
     "name": {
       "description": "Suffix name",
       "type": "string"
