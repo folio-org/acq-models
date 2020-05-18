@@ -7,28 +7,10 @@
       "description": "UUID of the encumbrance to updated",
       "$ref": "../../common/schemas/uuid.json"
     },
-    "amountAwaitingPayment": {
-      "description": "The amount of money moving from encumbered to awaitingPayment",
-      "type": "number"
-    },
-    "invoiceId": {
-      "description": "Id of invoice associated with encumbrance",
-      "$ref": "../../common/schemas/uuid.json"
-    },
-    "invoiceLineId": {
-      "description": "Id of invoice line associated with encumbrance",
-      "$ref": "../../common/schemas/uuid.json"
-    },
     "releaseEncumbrance": {
       "description": "Whether or not remaining encumbered money should be released",
       "type": "boolean"
     }
   },
-  "additionalProperties": false,
-  "required": [
-    "encumbranceId",
-    "amountAwaitingPayment",
-    "invoiceId",
-    "releaseEncumbrance"
-  ]
+  "additionalProperties": false
 }
