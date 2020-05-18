@@ -12,7 +12,7 @@
       "type": "number"
     },
     "awaitingPayment": {
-      "description": "",
+      "description": "Pending payment sub-object - holds awaiting payment-specific information not applicable to other transaction types",
       "$ref": "awaiting_payment.json"
     },
     "currency": {
