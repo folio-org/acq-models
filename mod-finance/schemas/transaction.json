@@ -11,6 +11,10 @@
       "description": "The amount of this transaction. For encumbrances: This is initialAmountEncumbered - (amountAwaitingPayment + amountExpended)",
       "type": "number"
     },
+    "awaitingPayment": {
+      "description": "Pending payment sub-object - holds awaiting payment-specific information not applicable to other transaction types",
+      "$ref": "awaiting_payment.json"
+    },
     "currency": {
       "description": "Currency code for this transaction - from the system currency",
       "type": "string"
@@ -73,6 +77,7 @@
         "Credit",
         "Encumbrance",
         "Payment",
+        "Pending payment",
         "Transfer"
       ],
       "type": "string"

@@ -5,7 +5,7 @@
   "properties": {
     "amountAwaitingPayment": {
       "default": 0,
-      "description": "The amount of awaiting for payment",
+      "description": "Deprecated! Going to be removed in next release. The amount of awaiting for payment",
       "type": "number"
     },
     "amountExpended": {
