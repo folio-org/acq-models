@@ -2,11 +2,10 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "A financial transaction",
   "type": "object",
+  "extends" : {
+    "$ref" : "../../common/schemas/entity.json"
+  },
   "properties": {
-    "id": {
-      "$ref": "../../common/schemas/uuid.json",
-      "description": "UUID of this transaction"
-    },
     "amount": {
       "description": "The amount of this transaction. For encumbrances: This is initialAmountEncumbered - (amountAwaitingPayment + amountExpended)",
       "type": "number"

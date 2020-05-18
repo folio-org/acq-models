@@ -2,11 +2,10 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Order transactions summary",
   "type": "object",
+  "extends" : {
+    "$ref" : "../../common/schemas/entity.json"
+  },
   "properties": {
-    "id": {
-      "description": "UUID of the order these payments are associated with",
-      "$ref": "../../common/schemas/uuid.json"
-    },
     "numTransactions": {
       "description": "Total number of transactions (encumbrances) expected for this order",
       "type": "integer"

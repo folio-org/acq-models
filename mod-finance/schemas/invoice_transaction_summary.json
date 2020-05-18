@@ -2,13 +2,12 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Invoice transactions Summary",
   "type": "object",
+  "extends" : {
+    "$ref" : "../../common/schemas/entity.json"
+  },
   "properties": {
-    "id": {
-      "description": "UUID of the invoice these payments/credits are associated with",
-      "$ref": "../../common/schemas/uuid.json"
-    },
-    "numEncumbrances": {
-      "description": "Total number of encumbrances(transactions) expected for this invoice",
+    "numPendingPayments": {
+      "description": "Total number of pending payments(transactions) expected for this invoice",
       "type": "integer"
     },
     "numPaymentsCredits": {
@@ -19,7 +18,7 @@
   "additionalProperties": false,
   "required": [
     "id",
-    "numEncumbrances",
+    "numPendingPayments",
     "numPaymentsCredits"
   ]
 }
