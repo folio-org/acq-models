@@ -2,10 +2,11 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "A group",
   "type": "object",
-  "extends" : {
-    "$ref" : "../../common/schemas/entity.json"
-  },
   "properties": {
+    "id": {
+      "description": "UUID of the group record",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "acqUnitIds": {
       "description": "UUIDs of the acquisition units associated with this group",
       "type": "array",

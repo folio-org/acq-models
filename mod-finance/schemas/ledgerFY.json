@@ -2,10 +2,11 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "A financial ledger for a Fiscal Year",
   "type": "object",
-  "extends" : {
-    "$ref" : "../../common/schemas/entity.json"
-  },
   "properties": {
+    "id": {
+      "description": "UUID of the ledger FY",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "ledgerId": {
       "description": "UUID of the ledger",
       "$ref": "../../common/schemas/uuid.json"

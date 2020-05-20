@@ -2,10 +2,11 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "A budget",
   "type": "object",
-  "extends" : {
-    "$ref" : "../../common/schemas/entity.json"
-  },
   "properties": {
+    "id": {
+      "description": "UUID of this budget",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "name": {
       "description": "The name of the budget",
       "type": "string"

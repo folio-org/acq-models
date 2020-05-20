@@ -2,10 +2,11 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "A fund to track financial transactions",
   "type": "object",
-  "extends" : {
-    "$ref" : "../../common/schemas/entity.json"
-  },
   "properties": {
+    "id": {
+      "description": "UUID of this fund",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "allocatedFromIds": {
       "description": "All the funds that this fund is allowed to receive money from. This would be 1 fund or none. If this field is blank their is no restriction on allocating to this fund",
       "type": "array",

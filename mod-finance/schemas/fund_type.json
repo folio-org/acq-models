@@ -2,10 +2,11 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Simple controlled vocabulary for fund types",
   "type": "object",
-  "extends" : {
-    "$ref" : "../../common/schemas/entity.json"
-  },
   "properties": {
+    "id": {
+      "description": "UUID of fund type",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "name": {
       "description": "Name of fund type",
       "type": "string"

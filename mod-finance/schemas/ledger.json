@@ -2,12 +2,10 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "A financial ledger",
   "type": "object",
-  "extends" : {
-    "$ref" : "../../common/schemas/entity.json"
-  },
   "properties": {
-    "extends" : {
-      "$ref" : "../../common/schemas/entity.json"
+    "id": {
+      "description": "UUID of this ledger",
+      "$ref": "../../common/schemas/uuid.json"
     },
     "name": {
       "description": "The name of the ledger",
