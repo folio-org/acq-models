@@ -6,8 +6,8 @@
     "$ref" : "../../common/schemas/entity.json"
   },
   "properties": {
-    "numPendingPayments": {
-      "description": "Total number of pending payments(transactions) expected for this invoice",
+    "numEncumbrances": {
+      "description": "Total number of encumbrances(transactions) expected for this invoice",
       "type": "integer"
     },
     "numPaymentsCredits": {
@@ -18,7 +18,7 @@
   "additionalProperties": false,
   "required": [
     "id",
-    "numPendingPayments",
+    "numEncumbrances",
     "numPaymentsCredits"
   ]
 }
