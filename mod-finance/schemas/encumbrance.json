@@ -24,7 +24,8 @@
       "type": "string",
       "enum": [
         "Released",
-        "Unreleased"
+        "Unreleased",
+        "Pending"
       ]
     },
     "orderType": {
