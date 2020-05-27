@@ -23,6 +23,7 @@
       "description": "The status of this encumbrance",
       "type": "string",
       "enum": [
+        "Pending",
         "Released",
         "Unreleased"
       ]
