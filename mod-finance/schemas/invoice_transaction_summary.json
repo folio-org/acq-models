@@ -6,19 +6,19 @@
     "$ref" : "../../common/schemas/entity.json"
   },
   "properties": {
-    "numEncumbrances": {
-      "description": "Total number of encumbrances(transactions) expected for this invoice",
+    "numPendingPayments": {
+      "description": "Total number of pending payments(transactions) expected for this invoice. Negative value indicates that all transactions have been processed",
       "type": "integer"
     },
     "numPaymentsCredits": {
-      "description": "Total number of payments/credits(transactions) expected for this invoice",
+      "description": "Total number of payments/credits(transactions) expected for this invoice. Negative value indicates that all transactions have been processed",
       "type": "integer"
     }
   },
   "additionalProperties": false,
   "required": [
     "id",
-    "numEncumbrances",
+    "numPendingPayments",
     "numPaymentsCredits"
   ]
 }

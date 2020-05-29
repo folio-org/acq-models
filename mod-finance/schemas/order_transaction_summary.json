@@ -11,7 +11,7 @@
       "$ref": "../../common/schemas/uuid.json"
     },
     "numTransactions": {
-      "description": "Total number of transactions (encumbrances) expected for this order",
+      "description": "Total number of transactions (encumbrances) expected for this order. Negative value indicates that all transactions have been processed",
       "type": "integer"
     }
   },
