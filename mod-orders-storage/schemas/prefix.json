@@ -6,6 +6,10 @@
     "$ref" : "../../common/schemas/entity.json"
   },
   "properties": {
+    "id": {
+      "description": "UUID of this prefix",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "name": {
       "description": "Prefix name",
       "type": "string"

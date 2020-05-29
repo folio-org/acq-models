@@ -6,6 +6,10 @@
     "$ref" : "../../common/schemas/entity.json"
   },
   "properties": {
+    "id": {
+      "description": "UUID of this purchase order",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "approved": {
       "description": "whether or not the purchase order has been approved",
       "type": "boolean",
