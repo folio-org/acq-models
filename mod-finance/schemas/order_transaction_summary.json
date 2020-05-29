@@ -6,6 +6,10 @@
     "$ref" : "../../common/schemas/entity.json"
   },
   "properties": {
+    "id": {
+      "description": "UUID of this summary",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "numTransactions": {
       "description": "Total number of transactions (encumbrances) expected for this order. Negative value indicates that all transactions have been processed",
       "type": "integer"

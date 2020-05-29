@@ -6,6 +6,10 @@
     "$ref" : "../../common/schemas/entity.json"
   },
   "properties": {
+    "id": {
+      "description": "UUID of this suffix",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "name": {
       "description": "Suffix name",
       "type": "string"
