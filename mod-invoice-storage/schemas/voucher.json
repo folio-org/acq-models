@@ -97,7 +97,6 @@
   },
   "additionalProperties": false,
   "required": [
-    "accountingCode",
     "amount",
     "batchGroupId",
     "exportToAccounting",
