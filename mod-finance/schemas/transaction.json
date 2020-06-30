@@ -28,6 +28,11 @@
       "description": "Encumbrance sub-object - holds encumbrance-specific information not applicable to other transaction types",
       "type": "object"
     },
+    "expenseClassId": {
+      "description": "UUID of the associated expense class",
+      "type": "string",
+      "format": "uuid"
+    },
     "fiscalYearId": {
       "$ref": "../../common/schemas/uuid.json",
       "description": "UUID of the fiscal year that the transaction is taking place in"
