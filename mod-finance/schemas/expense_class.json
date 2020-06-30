@@ -17,7 +17,7 @@
       "type": "string"
     },
     "name": {
-      "description": "The name of the group",
+      "description": "The name of the expense class",
       "type": "string"
     },
     "metadata": {
