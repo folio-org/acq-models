@@ -2,11 +2,14 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "An expense class",
   "type": "object",
+  "extends" : {
+    "$ref" : "../../common/schemas/entity.json"
+  },
   "properties": {
     "id": {
       "description": "UUID of the expense class record",
       "type": "string",
-      "format": "uuid"
+      "$ref": "../../common/schemas/uuid.json"
     },
     "code": {
       "description": "The code of the expense class",

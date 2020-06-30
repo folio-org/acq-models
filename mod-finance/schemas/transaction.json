@@ -31,7 +31,7 @@
     "expenseClassId": {
       "description": "UUID of the associated expense class",
       "type": "string",
-      "format": "uuid"
+      "$ref": "../../common/schemas/uuid.json"
     },
     "fiscalYearId": {
       "$ref": "../../common/schemas/uuid.json",
