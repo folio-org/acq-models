@@ -28,6 +28,10 @@
       ],
       "default": "percentage"
     },
+    "expenseClassId": {
+      "description": "UUID of the expense class associated with this fund distribution",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "value": {
       "description": "The percentage of the cost to be applied to this fund",
       "type": "number"
