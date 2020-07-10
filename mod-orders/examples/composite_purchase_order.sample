@@ -97,6 +97,7 @@
       "fundDistribution": [
         {
           "code": "HIST",
+          "expenseClassId" : "5b5ebe3a-cf8b-4f16-a880-46873ef21388",
           "fundId": "63157e96-0693-426d-b0df-948bacdfdb08",
           "distributionType": "percentage",
           "value": 80.0,
