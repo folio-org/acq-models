@@ -9,7 +9,7 @@
       "id": "budgets",
       "items": {
         "type": "object",
-        "$ref": "budget-expense-class.json"
+        "$ref": "budget_expense_class.json"
       }
     },
     "totalRecords": {
