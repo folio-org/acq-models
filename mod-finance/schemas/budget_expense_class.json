@@ -11,7 +11,7 @@
       "type": "string",
       "$ref": "../../common/schemas/uuid.json"
     },
-    "budgetId ": {
+    "budgetId": {
       "description": "UUID of the budget record",
       "$ref": "../../common/schemas/uuid.json"
     },
