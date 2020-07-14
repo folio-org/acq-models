@@ -15,7 +15,7 @@
       "description": "UUID of the budget record",
       "$ref": "../../common/schemas/uuid.json"
     },
-    "expenseClassId ": {
+    "expenseClassId": {
       "description": "UUID of the expense class record",
       "$ref": "../../common/schemas/uuid.json"
     },
