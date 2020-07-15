@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Budget expense class totals schema",
+  "type": "object",
+  "properties": {
+    "expenseClassName": {
+      "description": "The name of the expense class",
+      "type": "string"
+    },
+    "expenseClassStatus": {
+      "description": "Status for expense class within the budget ",
+      "type": "string",
+      "enum": [
+        "Active",
+        "Inactive"
+      ]
+    },
+    "encumbered": {
+      "description": "Total encumbered for expense class within a given budget",
+      "type": "number"
+    },
+    "awaitingPayment": {
+      "description": "Total awaitingPayment for expense class within a given budget",
+      "type": "number"
+    },
+    "expended": {
+      "description": "Total expended for expense class within a given budget",
+      "type": "number"
+    },
+    "percentageExpended": {
+      "description": "The percentage expended for the class on the total spent on a given budget",
+      "type": "number"
+    }
+  },
+  "additionalProperties": false
+}
