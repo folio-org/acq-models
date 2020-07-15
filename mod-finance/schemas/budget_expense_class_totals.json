@@ -2,6 +2,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Budget expense class totals schema",
   "type": "object",
+  "javaType" : "org.folio.rest.jaxrs.model.ReasonForClosure",
   "properties": {
     "expenseClassName": {
       "description": "The name of the expense class",
