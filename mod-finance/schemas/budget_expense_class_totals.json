@@ -12,12 +12,8 @@
       "type": "string"
     },
     "expenseClassStatus": {
-      "description": "Status for expense class within the budget ",
-      "type": "string",
-      "enum": [
-        "Active",
-        "Inactive"
-      ]
+      "javaType": "org.folio.rest.jaxrs.model.ExpenseClassStatus.Status",
+      "description": "Status for expense class within the budget"
     },
     "encumbered": {
       "description": "Total encumbered for expense class within a given budget",
