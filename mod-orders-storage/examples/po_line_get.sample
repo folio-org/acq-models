@@ -64,7 +64,7 @@
     "materialType": "4920caaf-871f-4f08-9bd5-b897203fd7fb",
     "trial": false,
     "userLimit": 10,
-    "resourceUrl": "http://sample.com/document.pdf"
+    "resourceUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
   },
   "fundDistribution": [
     {
