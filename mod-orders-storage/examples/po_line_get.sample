@@ -63,7 +63,8 @@
     },
     "materialType": "4920caaf-871f-4f08-9bd5-b897203fd7fb",
     "trial": false,
-    "userLimit": 10
+    "userLimit": 10,
+    "resourceUrl": "http://sample.com/document.pdf"
   },
   "fundDistribution": [
     {
