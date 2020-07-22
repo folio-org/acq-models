@@ -15,6 +15,10 @@
       "description": "UUID of the fund associated with this fund distribution",
       "$ref": "../../common/schemas/uuid.json"
     },
+    "expenseClassId": {
+      "description": "UUID of the expense class associated with this fund distribution",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "distributionType": {
       "description": "Percentage or amount type of the value property",
       "type": "string",
