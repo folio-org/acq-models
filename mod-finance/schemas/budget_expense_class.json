@@ -20,8 +20,13 @@
       "$ref": "../../common/schemas/uuid.json"
     },
     "status": {
-      "javaType": "org.folio.rest.jaxrs.model.ExpenseClassStatus.Status",
-      "description": "Status for expense class within the budget"
+      "description": "Status for expense class within the budget ",
+      "type": "string",
+      "enum": [
+        "Active",
+        "Inactive"
+      ],
+      "default": "Active"
     }
   },
   "additionalProperties": false,
