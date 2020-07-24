@@ -26,7 +26,7 @@
         "Active",
         "Inactive"
       ],
-      "default": "Inactive"
+      "default": "Active"
     }
   },
   "additionalProperties": false,
