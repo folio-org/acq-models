@@ -6,7 +6,7 @@
     "$ref" : "../../mod-finance/schemas/budget.json"
   },
   "properties": {
-    "expenseClasses": {
+    "statusExpenseClasses": {
       "description": "Expense classes associated with this budget",
       "type": "array",
       "items": {
