@@ -2,6 +2,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "A budget",
   "type": "object",
+  "javaName": "budget",
   "extends" : {
     "$ref" : "../../common/schemas/entity.json"
   },
