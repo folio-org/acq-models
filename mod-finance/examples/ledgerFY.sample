@@ -4,6 +4,7 @@
   "fiscalYearId": "002c948a-8269-41c9-8733-8dc07ffd038e",
   "allocated": 2000,
   "available": 1000,
+  "netTransfers": 0,
   "unavailable": 1000,
   "currency": "USD"
 }

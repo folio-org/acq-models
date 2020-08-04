@@ -59,6 +59,11 @@
       "description": "The amount currently expended for this budget",
       "type": "number"
     },
+    "netTransfers": {
+      "default": 0,
+      "description": "Summing all the transfers on this budget",
+      "type": "number"
+    },
     "unavailable" : {
       "default": 0,
       "description": "Unavailable amount for this budget",
