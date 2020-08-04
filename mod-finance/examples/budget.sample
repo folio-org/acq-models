@@ -5,6 +5,7 @@
   "allowableEncumbrance": 95,
   "allowableExpenditure": 100,
   "allocated": 20000,
+  "netTransfers": 0,
   "awaitingPayment": 3500,
   "available": 10000,
   "encumbered": 2000,
