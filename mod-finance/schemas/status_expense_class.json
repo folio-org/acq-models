@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Budget expense class totals schema",
+  "type": "object",
+  "properties": {
+    "expenseClassId": {
+      "description": "UUID of related expense class",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "status": {
+      "description": "Status for expense class within the budget ",
+      "type": "string",
+      "enum": [
+        "Active",
+        "Inactive"
+      ],
+      "default": "Active"
+    }
+  },
+  "required": [
+    "expenseClassId"
+  ],
+  "additionalProperties": false
+}
