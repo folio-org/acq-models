@@ -6,7 +6,6 @@
     "budgetExpenseClassTotals": {
       "description": "The list of budget expense class total objects contained in this collection",
       "type": "array",
-      "id": "budgets",
       "items": {
         "type": "object",
         "$ref": "budget_expense_class_totals.json"
