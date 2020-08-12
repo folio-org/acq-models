@@ -1,14 +1,14 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "A collection of budget expense class records",
+  "description": "A collection of group expense class total records",
   "type": "object",
   "properties": {
-    "budgetExpenseClasses": {
-      "description": "The list of budget expense class objects contained in this collection",
+    "groupExpenseClassTotals": {
+      "description": "The list of group expense class total objects contained in this collection",
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "budget_expense_class.json"
+        "$ref": "group_expense_class_totals.json"
       }
     },
     "totalRecords": {
@@ -18,7 +18,7 @@
   },
   "additionalProperties": false,
   "required": [
-    "budgetExpenseClasses",
+    "groupExpenseClassTotals",
     "totalRecords"
   ]
 }
