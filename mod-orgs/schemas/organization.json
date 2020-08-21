@@ -20,6 +20,11 @@
       "description": "The description for this organization",
       "type": "string"
     },
+    "exportToAccounting": {
+      "description": "This would keep the invoice from being feed into the batch process (i.e. not generate an external voucher/payment) but would still move values in the system. This might be defined by the vendor relationship and exposed for override on the invoice.",
+      "type": "boolean",
+      "default": false
+    },
     "status": {
       "description": "The status of this organization",
       "type": "string",

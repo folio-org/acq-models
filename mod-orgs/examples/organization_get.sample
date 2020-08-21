@@ -3,6 +3,7 @@
   "name": "GOBI",
   "code": "AQ-GOBI",
   "description": "This is Yankee Book Peddler.",
+  "exportToAccounting" : true,
   "status": "Active",
   "language": "en-us",
   "isVendor": true,
