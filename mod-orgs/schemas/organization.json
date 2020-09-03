@@ -14,7 +14,7 @@
     "code": {
       "description": "The code for this organization",
       "type": "string",
-      "pattern": "^\\S+$"
+      "pattern": "[\\S ]{1,}"
     },
     "description": {
       "description": "The description for this organization",
