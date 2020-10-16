@@ -11,6 +11,14 @@
       "description": "The name of the expense class",
       "type": "string"
     },
+    "encumbered": {
+      "description": "Total encumbered for expense class within a given group",
+      "type": "number"
+    },
+    "awaitingPayment": {
+      "description": "Total awaitingPayment for expense class within a given group",
+      "type": "number"
+    },
     "expended": {
       "description": "Total expended for expense class within a given group",
       "type": "number"
