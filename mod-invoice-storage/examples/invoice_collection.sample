@@ -25,7 +25,6 @@
       "exchangeRate" : 1.092,
       "folioInvoiceNo": "123invoicenumber45",
       "invoiceDate": "2018-07-20T00:00:00.000+0000",
-      "lockTotal": false,
       "note": "Some note",
       "paymentDue": "2018-08-29T00:00:00.000+0000",
       "paymentTerms": "Payment in Advance",
