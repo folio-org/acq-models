@@ -115,11 +115,13 @@
       ]
     },
     "subTotal": {
+      "default": 0,
       "description": "Invoice amount before adjustments are applied. This is sum of all subTotal amounts of the corresponding invoice lines. This amount is always calculated by system.",
       "type": "number",
       "readonly": true
     },
     "total": {
+      "default": 0,
       "description": "The total amount is calculated \"on the fly\" of this invoice which is sum of subTotal and adjustmentsTotal. Must be the same with existed \"lockTotal\", when approve invoice.",
       "type": "number",
       "readonly": true
