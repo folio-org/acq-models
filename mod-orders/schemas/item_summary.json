@@ -16,6 +16,7 @@
     },
     "poLineReceiptStatus": {
       "description": "Receipt status of the PO line",
+      "type": "string",
       "enum": [
         "Pending",
         "Open",
