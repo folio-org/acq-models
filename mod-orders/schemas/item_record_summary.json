@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Order summary detailed information",
+  "type": "object",
+  "properties": {
+    "poLineNumber": {
+      "description": "A human readable number assigned to the PO line",
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9]{1,22}-[0-9]{1,3}$",
+      "readonly": true
+    },
+    "poLineLink": {
+      "description": "Hyperlink to the PO line",
+      "type": "string",
+      "default": "Undefined"
+    },
+    "poLineReceiptStatus": {
+      "description": "Receipt status of the PO line",
+      "enum": [
+        "Pending",
+        "Open",
+        "Closed"
+      ],
+      "default": "Pending"
+    },
+    "poLinePaymentStatus": {
+      "description": "Receipt status of the PO line",
+      "type": "string",
+      "enum": [
+        "Pending",
+        "Open",
+        "Closed"
+      ],
+      "default": "Pending"
+    },
+    "poLineTotalEstimatedPrice": {
+      "description": "The total estimated price of the purchase order",
+      "type": "number",
+      "default": null
+    },
+    "poOrderDate": {
+      "description": "The date and time when the purchase order was opened",
+      "type": "string",
+      "format": "date-time",
+      "readonly": true
+    },
+    "poOrderStatus": {
+      "description": "Order status of this PO line",
+      "type": "string",
+      "enum": [
+        "Pending",
+        "Open",
+        "Closed"
+      ],
+      "default": "Pending"
+    }
+  },
+  "required": [
+    "poLineNumber",
+    "poLineLink",
+    "poLineReceiptStatus",
+    "poLinePaymentStatus",
+    "poLineTotalEstimatedPrice",
+    "poOrderDate",
+    "poOrderStatus"
+  ]
+}
