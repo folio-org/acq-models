@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Ledger fiscal year rollover",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "ledgerId": {
+      "description": "",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "fromFiscalYearId": {
+      "description": "",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "toFiscalYearId": {
+      "description": "",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "restrictEncumbrance": {
+      "description": "",
+      "type": "boolean",
+      "default": false
+    },
+    "restrictExpenditures": {
+      "description": "",
+      "type": "boolean",
+      "default": false
+    },
+    "needCloseBudgets": {
+      "description": "",
+      "type": "boolean",
+      "default": true
+    },
+    "budgetsRollover": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "budget_rollover.json"
+      }
+    },
+    "encumbrancesRollover": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "encumbrance_rollover.json"
+      }
+    },
+    "metadata": {
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true,
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "ledgerId",
+    "fromFiscalYearId",
+    "toFiscalYearId",
+    "budgetsRollover",
+    "encumbrancesRollover"
+  ]
+}

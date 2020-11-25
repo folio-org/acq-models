@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "fundTypeId": {
+      "description": "",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "rolloverAllocation": {
+      "description": "",
+      "type": "boolean",
+      "default": true
+    },
+    "rolloverAvailable": {
+      "description": "",
+      "type": "boolean",
+      "default": true
+    },
+    "adjustAllocation": {
+      "description": "",
+      "type": "number",
+      "default": 0
+    },
+    "addAvailableTo": {
+      "description": "",
+      "type": "string",
+      "enum": [
+        "Available",
+        "Allocation"
+      ],
+      "default": "Available"
+    },
+    "allowableEncumbrance": {
+      "description": "",
+      "type": "number",
+      "default": 100
+    },
+    "allowableExpenditure": {
+      "description": "",
+      "type": "number",
+      "default": 100
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "fundTypeId"
+  ]
+}
