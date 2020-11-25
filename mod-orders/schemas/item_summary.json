@@ -37,7 +37,7 @@
     "poLineTotalEstimatedPrice": {
       "description": "The total estimated price of the purchase order",
       "type": "number",
-      "default": null
+      "default": 0
     },
     "poOrderDate": {
       "description": "The date and time when the purchase order was opened",
