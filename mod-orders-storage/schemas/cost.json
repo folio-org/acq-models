@@ -43,6 +43,10 @@
     "poLineEstimatedPrice": {
       "description": "The calculated total estimated price for this purchase order line: list price time quantities minus discount amount plus additional cost",
       "type": "number"
+    },
+    "fyroAdjustmentAmount": {
+      "description": "Adjustment amount if rollover was happen",
+      "type": "number"
     }
   },
   "additionalProperties": false,
