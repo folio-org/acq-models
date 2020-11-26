@@ -11,33 +11,23 @@
     },
     "poLineLink": {
       "description": "Hyperlink to the PO line",
-      "type": "string",
-      "default": "Undefined"
+      "type": "string"
     },
     "poLineReceiptStatus": {
       "description": "Receipt status of the PO line",
-      "type": "string",
-      "enum": [
-        "Pending",
-        "Open",
-        "Closed"
-      ],
-      "default": "Pending"
+      "type": "string"
     },
     "poLinePaymentStatus": {
       "description": "Receipt status of the PO line",
-      "type": "string",
-      "enum": [
-        "Pending",
-        "Open",
-        "Closed"
-      ],
-      "default": "Pending"
+      "type": "string"
     },
     "poLineTotalEstimatedPrice": {
       "description": "The total estimated price of the purchase order",
-      "type": "number",
-      "default": 0
+      "type": "number"
+    },
+    "poCurrency": {
+      "description": "The currency of the purchase order",
+      "type": "string"
     },
     "poOrderDate": {
       "description": "The date and time when the purchase order was opened",
@@ -47,22 +37,7 @@
     },
     "poOrderStatus": {
       "description": "Order status of this PO line",
-      "type": "string",
-      "enum": [
-        "Pending",
-        "Open",
-        "Closed"
-      ],
-      "default": "Pending"
+      "type": "string"
     }
-  },
-  "required": [
-    "poLineNumber",
-    "poLineLink",
-    "poLineReceiptStatus",
-    "poLinePaymentStatus",
-    "poLineTotalEstimatedPrice",
-    "poOrderDate",
-    "poOrderStatus"
-  ]
+  }
 }
