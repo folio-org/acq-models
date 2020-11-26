@@ -18,11 +18,11 @@
       "type": "string"
     },
     "poLinePaymentStatus": {
-      "description": "Receipt status of the PO line",
+      "description": "Payment status of the PO line",
       "type": "string"
     },
     "poLineTotalEstimatedPrice": {
-      "description": "The total estimated price of the purchase order",
+      "description": "The total estimated price of the purchase order line",
       "type": "number"
     },
     "poLineCurrency": {
