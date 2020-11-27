@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Order summary detailed information",
+  "type": "object",
+  "properties": {
+    "poLineNumber": {
+      "description": "A human readable number assigned to the PO line",
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9]{1,22}-[0-9]{1,3}$",
+      "readonly": true
+    },
+    "poLineLink": {
+      "description": "Hyperlink to the PO line",
+      "type": "string"
+    },
+    "poLineReceiptStatus": {
+      "description": "Receipt status of the PO line",
+      "type": "string"
+    },
+    "poLinePaymentStatus": {
+      "description": "Payment status of the PO line",
+      "type": "string"
+    },
+    "poLineTotalEstimatedPrice": {
+      "description": "The total estimated price of the purchase order line",
+      "type": "number"
+    },
+    "poLineCurrency": {
+      "description": "The currency of the PO line",
+      "type": "string"
+    },
+    "poOrderDate": {
+      "description": "The date and time when the purchase order was opened",
+      "type": "string",
+      "format": "date-time",
+      "readonly": true
+    },
+    "poOrderStatus": {
+      "description": "Order status of this PO line",
+      "type": "string"
+    }
+  }
+}
