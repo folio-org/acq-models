@@ -39,6 +39,7 @@
       "type": "array",
       "id": "budgetsRollover",
       "items": {
+        "type": "object",
         "$ref": "budget_rollover.json"
       }
     },
@@ -47,6 +48,7 @@
       "id": "encumbrancesRollover",
       "type": "array",
       "items": {
+        "type": "object",
         "$ref": "encumbrance_rollover.json"
       }
     },
