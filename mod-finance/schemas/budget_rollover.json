@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Budget rollover info",
+  "javaType" : "org.folio.rest.jaxrs.model.BudgetRollover",
   "type": "object",
   "properties": {
     "fundTypeId": {
