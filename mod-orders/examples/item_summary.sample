@@ -1,8 +1,8 @@
 {
   "poLineNumber": "268758-03",
   "poLineLink": "http://storage/pol-13",
-  "poLineReceiptStatus": "Awaiting Receipt",
-  "poLinePaymentStatus": "Open",
+  "poLineReceiptStatus": "Open",
+  "poLinePaymentStatus": "Closed",
   "poLineTotalEstimatedPrice": 100,
   "poLineCurrency": "USD",
   "poOrderDate" : "2018-07-19T00:00:00.000Z",
