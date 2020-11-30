@@ -153,7 +153,7 @@
         "Success",
         "Error"
       ],
-      "readOnly" : true
+      "readonly": true
     }
   },
   "additionalProperties": false,
