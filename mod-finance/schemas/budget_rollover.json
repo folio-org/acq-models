@@ -1,29 +1,29 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "",
+  "description": "Budget rollover info",
   "type": "object",
   "properties": {
     "fundTypeId": {
-      "description": "",
+      "description": "Fund type UUID",
       "$ref": "../../common/schemas/uuid.json"
     },
     "rolloverAllocation": {
-      "description": "",
+      "description": "Should allocated amount needs to be rollover",
       "type": "boolean",
       "default": true
     },
     "rolloverAvailable": {
-      "description": "",
+      "description": "Should available amount needs to be rollover",
       "type": "boolean",
       "default": true
     },
     "adjustAllocation": {
-      "description": "",
+      "description": "How much should we increase the allocation",
       "type": "number",
       "default": 0
     },
     "addAvailableTo": {
-      "description": "",
+      "description": "Where to add available : Available or Allocation",
       "type": "string",
       "enum": [
         "Available",
@@ -32,18 +32,15 @@
       "default": "Available"
     },
     "allowableEncumbrance": {
-      "description": "",
+      "description": "The encumbrance percentage limit for this budget",
       "type": "number",
       "default": 100
     },
     "allowableExpenditure": {
-      "description": "",
+      "description": "The expenditure percentage limit for this budget",
       "type": "number",
       "default": 100
     }
   },
-  "additionalProperties": false,
-  "required": [
-    "fundTypeId"
-  ]
+  "additionalProperties": false
 }

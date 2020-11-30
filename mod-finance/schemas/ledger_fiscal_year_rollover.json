@@ -4,46 +4,48 @@
   "type": "object",
   "properties": {
     "id": {
-      "description": "",
+      "description": "id of ledger fiscal year rollover",
       "$ref": "../../common/schemas/uuid.json"
     },
     "ledgerId": {
-      "description": "",
+      "description": "Ledger UUID for which rollover was started",
       "$ref": "../../common/schemas/uuid.json"
     },
     "fromFiscalYearId": {
-      "description": "",
+      "description": "UUID of the fiscal year from which rollover will be happened",
       "$ref": "../../common/schemas/uuid.json"
     },
     "toFiscalYearId": {
-      "description": "",
+      "description": "UUID of the fiscal year to which rollover will be happened",
       "$ref": "../../common/schemas/uuid.json"
     },
     "restrictEncumbrance": {
-      "description": "",
+      "description": "Imposes restrictions on encumbrances",
       "type": "boolean",
       "default": false
     },
     "restrictExpenditures": {
-      "description": "",
+      "description": "Imposes restrictions on payments",
       "type": "boolean",
       "default": false
     },
     "needCloseBudgets": {
-      "description": "",
+      "description": "Control that all budget must be closed in rollover time",
       "type": "boolean",
       "default": true
     },
     "budgetsRollover": {
-      "description": "",
+      "description": "Budget rollover info",
       "type": "array",
+      "id": "budgetsRollover",
       "items": {
         "type": "object",
         "$ref": "budget_rollover.json"
       }
     },
     "encumbrancesRollover": {
-      "description": "",
+      "description": "Encumbrances rollover info",
+      "id": "encumbrancesRollover",
       "type": "array",
       "items": {
         "type": "object",
