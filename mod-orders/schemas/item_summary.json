@@ -15,11 +15,21 @@
     },
     "poLineReceiptStatus": {
       "description": "Receipt status of the PO line",
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "Pending",
+        "Open",
+        "Closed"
+      ]
     },
     "poLinePaymentStatus": {
       "description": "Payment status of the PO line",
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "Pending",
+        "Open",
+        "Closed"
+      ]
     },
     "poLineTotalEstimatedPrice": {
       "description": "The total estimated price of the purchase order line",
@@ -37,7 +47,12 @@
     },
     "poOrderStatus": {
       "description": "Order status of this PO line",
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "Pending",
+        "Open",
+        "Closed"
+      ]
     }
   }
 }
