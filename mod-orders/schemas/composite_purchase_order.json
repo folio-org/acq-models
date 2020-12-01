@@ -145,6 +145,15 @@
       "type": "object",
       "$ref": "../../../raml-util/schemas/metadata.schema",
       "readonly": true
+    },
+    "rolloverStatus": {
+      "description": "Rollover status for current fiscal year",
+      "type": "string",
+      "enum": [
+        "Success",
+        "Error"
+      ],
+      "readonly": true
     }
   },
   "additionalProperties": false,
