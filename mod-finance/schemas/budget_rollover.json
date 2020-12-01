@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Budget rollover info",
+  "javaType" : "org.folio.rest.jaxrs.model.BudgetRollover",
+  "type": "object",
+  "properties": {
+    "fundTypeId": {
+      "description": "Fund type UUID",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "rolloverAllocation": {
+      "description": "Should allocated amount needs to be rollover",
+      "type": "boolean",
+      "default": true
+    },
+    "rolloverAvailable": {
+      "description": "Should available amount needs to be rollover",
+      "type": "boolean",
+      "default": true
+    },
+    "adjustAllocation": {
+      "description": "How much should we increase the allocation",
+      "type": "number",
+      "default": 0
+    },
+    "addAvailableTo": {
+      "description": "Where to add available : Available or Allocation",
+      "type": "string",
+      "enum": [
+        "Available",
+        "Allocation"
+      ],
+      "default": "Available"
+    },
+    "allowableEncumbrance": {
+      "description": "The encumbrance percentage limit for this budget",
+      "type": "number",
+      "default": 100
+    },
+    "allowableExpenditure": {
+      "description": "The expenditure percentage limit for this budget",
+      "type": "number",
+      "default": 100
+    }
+  },
+  "additionalProperties": false
+}
