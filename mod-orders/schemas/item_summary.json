@@ -40,7 +40,7 @@
     "poOrderStatus": {
       "description": "Order status of this PO line",
       "type": "string",
-      "$ref": "workflow_status.json"
+      "$ref": "../../mod-orders-storage/schemas/workflow_status.json"
     }
   }
 }

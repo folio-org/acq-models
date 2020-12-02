@@ -106,7 +106,7 @@
     "workflowStatus": {
       "description": "the workflow status for this purchase order",
       "type": "string",
-      "$ref": "../../mod-orders/schemas/workflow_status.json"
+      "$ref": "workflow_status.json"
     },
     "acqUnitIds": {
       "description": "acquisition unit ids associated with this purchase order",
