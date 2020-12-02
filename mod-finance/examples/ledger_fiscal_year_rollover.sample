@@ -18,18 +18,16 @@
     }
   ],
   "encumbrancesRollover": [
-    [
-      {
-        "orderType": "Ongoing",
-        "basedOn": "Expended",
-        "increaseBy": 5
-      },
-      {
-        "orderType": "One-time",
-        "basedOn": "Expended",
-        "increaseBy": 4
-      }
-    ]
+    {
+      "orderType": "Ongoing",
+      "basedOn": "Expended",
+      "increaseBy": 5
+    },
+    {
+      "orderType": "One-time",
+      "basedOn": "Expended",
+      "increaseBy": 4
+    }
   ]
 }
 
