@@ -113,12 +113,7 @@
     "workflowStatus": {
       "description": "the workflow status for this purchase order",
       "type": "string",
-      "enum": [
-        "Pending",
-        "Open",
-        "Closed"
-      ],
-      "default": "Pending"
+      "$ref": "workflow_status.json"
     },
     "compositePoLines": {
       "description": "a list of completely de-referenced purchase order lines",
@@ -144,6 +139,15 @@
     "metadata": {
       "type": "object",
       "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
+    },
+    "rolloverStatus": {
+      "description": "Rollover status for current fiscal year",
+      "type": "string",
+      "enum": [
+        "Success",
+        "Error"
+      ],
       "readonly": true
     }
   },
