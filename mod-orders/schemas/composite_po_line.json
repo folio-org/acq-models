@@ -143,15 +143,7 @@
     "paymentStatus": {
       "description": "The purchase order line payment status",
       "type": "string",
-      "enum": [
-        "Awaiting Payment",
-        "Cancelled",
-        "Fully Paid",
-        "Partially Paid",
-        "Payment Not Required",
-        "Pending"
-      ],
-      "default": "Pending"
+      "$ref": "../../mod-orders-storage/schemas/payment_status.json"
     },
     "physical": {
       "description": "details of this purchase order line relating to physical materials",

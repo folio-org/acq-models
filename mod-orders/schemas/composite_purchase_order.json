@@ -113,12 +113,7 @@
     "workflowStatus": {
       "description": "the workflow status for this purchase order",
       "type": "string",
-      "enum": [
-        "Pending",
-        "Open",
-        "Closed"
-      ],
-      "default": "Pending"
+      "$ref": "../../mod-orders-storage/schemas/workflow_status.json"
     },
     "compositePoLines": {
       "description": "a list of completely de-referenced purchase order lines",
