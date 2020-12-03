@@ -1,0 +1,10 @@
+{
+  "id": "e7ed4439-a5ea-4976-b7e6-264e495fbfe8",
+  "ledgerRolloverId": "e7ed4439-a5ea-4976-b7e6-264e495fbfe8",
+  "fromFiscalYearId": "ac2164c7-ba3d-1bc2-a12c-e35ceccbfaf2",
+  "toFiscalYearId": "517efc6a-f218-4d25-a832-10de4dc32f25",
+  "overallRolloverStatus": "In Progress",
+  "budgetsClosingRolloverStatus": "Success",
+  "financialRolloverStatus": "In Progress",
+  "ordersRolloverStatus": "Not Started"
+}

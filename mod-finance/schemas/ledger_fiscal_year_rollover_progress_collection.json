@@ -3,7 +3,7 @@
   "description": "A collection of ledger fiscal year rollovers progress",
   "type": "object",
   "properties": {
-    "ledgerFiscalYearRolloversProgress": {
+    "ledgerFiscalYearRolloverProgresses": {
       "description": "The list of ledger fiscal year rollovers progress",
       "type": "array",
       "items": {
