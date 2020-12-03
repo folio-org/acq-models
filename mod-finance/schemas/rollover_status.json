@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Rollover statuses",
+  "type": "string",
+  "enum": [
+    "Not Started",
+    "In Progress",
+    "Error",
+    "Success"
+  ],
+  "default": "Not Started"
+}
