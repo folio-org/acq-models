@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Order rollover error detail",
+  "type": "object",
+  "properties": {
+    "purchaseOrderId": {
+      "description": "UUID of purchase order for which the rollover failed",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "poLineId": {
+      "description": "UUID of specific PO line that causes an error",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "polNumber": {
+      "description": "Number of specific PO line that causes an error",
+      "type": "string"
+    },
+    "amount": {
+      "description": "PO line amount",
+      "type": "number"
+    },
+    "fundId": {
+      "description": "UUID of fund ",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "fundCode": {
+      "description": "Fund code",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "purchaseOrderId",
+    "poLineId",
+    "fundId"
+  ]
+}

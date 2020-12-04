@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Fund rollover error detail",
+  "type": "object",
+  "properties": {
+    "fundId": {
+      "description": "UUID of fund for which the rollover failed",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "fundCode": {
+      "description": "Fund code",
+      "type": "string"
+    },
+    "amount": {
+      "description": "Wrong amount",
+      "type": "number"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "fundId"
+  ]
+}
