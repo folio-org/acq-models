@@ -36,6 +36,16 @@
         "Ongoing"
       ]
     },
+    "orderStatus": {
+      "description": "Taken from the purchase order",
+      "type": "string",
+      "default": "Open",
+      "enum": [
+        "Pending",
+        "Open",
+        "Closed"
+      ]
+    },
     "subscription": {
      "description": "Taken from the purchase Order,for fiscal year rollover",
      "type": "boolean"
