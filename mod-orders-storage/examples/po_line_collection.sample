@@ -12,7 +12,7 @@
           "9a665b22-9fe5-4c95-b4ee-837a5433c95d"
         ],
         "cancellationRestriction": false,
-        "cancellationRestrictionRote": "ABCDEFGHIJKLMNOPQRSTUVW",
+        "cancellationRestrictionNote": "ABCDEFGHIJKLMNOPQRSTUVW",
         "claims": [
           {
             "claimed": false,
