@@ -14,6 +14,47 @@
         "type": "object",
         "$ref": "status_expense_class.json"
       }
+    },
+    "allocated": {
+      "default": 0,
+      "description": "The amount currently allocated to this budget (initialAllocation + allocationTo + allocationFrom)",
+      "type": "number"
+    },
+    "initialAllocation": {
+      "default": 0,
+      "description": "The amount of the first allocation made to this budget",
+      "type": "number",
+      "readonly": true
+    },
+    "allocationTo": {
+      "default": 0,
+      "description": "The sum of all allocation transaction amounts made TO this budget not including the Initial allocation",
+      "type": "number",
+      "readonly": true
+    },
+    "allocationFrom": {
+      "default": 0,
+      "description": "The sum of all allocation transaction amounts made FROM this budget not including the Initial allocation",
+      "type": "number",
+      "readonly": true
+    },
+    "totalFunding": {
+      "default": 0,
+      "description": "budget.allocated + budget.netTransfers",
+      "type": "number",
+      "readonly": true
+    },
+    "cashBalance": {
+      "default": 0,
+      "description": "Total Funding minus Expended",
+      "type": "number",
+      "readonly": true
+    },
+    "availableBalance": {
+      "default": 0,
+      "description": "Total Funding minus Unavailable",
+      "type": "number",
+      "readonly": true
     }
   },
   "additionalProperties": false
