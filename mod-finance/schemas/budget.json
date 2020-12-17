@@ -35,7 +35,6 @@
       "type": "number"
     },
     "allocated": {
-      "default": 0,
       "description": "The amount currently allocated to this budget",
       "type": "number",
       "readonly": true
