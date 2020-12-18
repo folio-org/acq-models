@@ -118,6 +118,21 @@
       "default": 0,
       "description": "The sum of all allocation transaction amounts made FROM this budget not including the Initial allocation",
       "type": "number"
+    },
+    "totalFunding": {
+      "description": "budget.allocated + budget.netTransfers",
+      "type": "number",
+      "readonly": true
+    },
+    "cashBalance": {
+      "description": "Total Funding minus Expended",
+      "type": "number",
+      "readonly": true
+    },
+    "availableBalance": {
+      "description": "Total Funding minus Unavailable",
+      "type": "number",
+      "readonly": true
     }
   },
   "additionalProperties": false,
