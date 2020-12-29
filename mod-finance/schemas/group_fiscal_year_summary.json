@@ -12,24 +12,79 @@
       "$ref": "../../common/schemas/uuid.json"
     },
     "allocated": {
-      "description": "An amount of the fund within a specific fiscal year",
-      "type": "number"
+      "desc   ription": "An amount of the fund within a specific fiscal year",
+      "type": "number",
+      "readonly": true
     },
     "available": {
       "description": "Currently available amount of the fund within a specific fiscal year",
-      "type": "number"
+      "type": "number",
+      "readonly": true
     },
     "unavailable": {
       "description": "Unavailable amount of the fund within a specific fiscal year",
-      "type": "number"
+      "type": "number",
+      "readonly": true
+    },
+    "netTransfers": {
+      "description": "Summing all related budgets netTransfers within a specific fiscal year",
+      "type": "number",
+      "readonly": true
+    },
+    "initialAllocation": {
+      "description": "Summary of all related budgets initialAllocation within a specific fiscal year",
+      "type": "number",
+      "readonly": true
+    },
+    "allocationTo": {
+      "description": "Summary of all related budgets allocationTo within a specific fiscal year",
+      "type": "number",
+      "readonly": true
+    },
+    "allocationFrom": {
+      "description": "Summary of all related budgets allocationFrom within a specific fiscal year",
+      "type": "number",
+      "readonly": true
+    },
+    "totalFunding": {
+      "description": "Summary of all related budgets totalFunding within a specific fiscal year",
+      "type": "number",
+      "readonly": true
+    },
+    "cashBalance": {
+      "description": "Summary of all related budgets cashBalance",
+      "type": "number",
+      "readonly": true
+    },
+    "awaitingPayment": {
+      "description": "Summary of all related budgets awaitingPayment within a specific fiscal year",
+      "type": "number",
+      "readonly": true
+    },
+    "encumbered": {
+      "description": "Summary of all related budgets encumbered within a specific fiscal year",
+      "type": "number",
+      "readonly": true
+    },
+    "expenditures": {
+      "description": "Summary of all related budgets expenditures within a specific fiscal year",
+      "type": "number",
+      "readonly": true
+    },
+    "overEncumbrance": {
+      "description": "Summary of all related budgets overEncumbrance within a specific fiscal year",
+      "type": "number",
+      "readonly": true
+    },
+    "overExpended": {
+      "description": "Summary of all related budgets overExpended within a specific fiscal year",
+      "type": "number",
+      "readonly": true
     }
   },
   "additionalProperties": false,
   "required": [
     "groupId",
-    "fiscalYearId",
-    "allocated",
-    "available",
-    "unavailable"
+    "fiscalYearId"
   ]
 }
