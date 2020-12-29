@@ -12,7 +12,7 @@
       "$ref": "../../common/schemas/uuid.json"
     },
     "allocated": {
-      "desc   ription": "An amount of the fund within a specific fiscal year",
+      "description": "An amount of the fund within a specific fiscal year",
       "type": "number",
       "readonly": true
     },
