@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Funding information and Financial activity",
+  "type": "object",
+  "properties": {
+    "allocated": {
+      "description": "Summary of all related to this fiscal year budgets allocated",
+      "type": "number",
+      "readonly": true
+    },
+    "available": {
+      "description": "Summary of all related to this fiscal year budgets available",
+      "type": "number",
+      "readonly": true
+    },
+    "unavailable": {
+      "description": "Summary of all related to this fiscal year budgets unavailable",
+      "type": "number",
+      "readonly": true
+    },
+    "initialAllocation": {
+      "description": "Summary of all related to this fiscal year budgets initialAllocation",
+      "type": "number",
+      "readonly": true
+    },
+    "allocationTo": {
+      "description": "Summary of all related to this fiscal year budgets allocationTo",
+      "type": "number",
+      "readonly": true
+    },
+    "allocationFrom": {
+      "description": "Summary of all related to this fiscal year budgets allocationFrom",
+      "type": "number",
+      "readonly": true
+    },
+    "totalFunding": {
+      "description": "Summary of all related to this fiscal year budgets totalFunding",
+      "type": "number",
+      "readonly": true
+    },
+    "cashBalance": {
+      "description": "Summary of all related to this fiscal year budgets cashBalance",
+      "type": "number",
+      "readonly": true
+    },
+    "awaitingPayment": {
+      "description": "Summary of all related to this fiscal year budgets awaitingPayment",
+      "type": "number",
+      "readonly": true
+    },
+    "encumbered": {
+      "description": "Summary of all related to this fiscal year budgets encumbered",
+      "type": "number",
+      "readonly": true
+    },
+    "expenditures": {
+      "description": "Summary of all related to this ledger budgets expenditures",
+      "type": "number",
+      "readonly": true
+    },
+    "overEncumbrance": {
+      "description": "Summary of all related to this ledger budgets overEncumbrance",
+      "type": "number",
+      "readonly": true
+    },
+    "overExpended": {
+      "description": "Summary of all related to this ledger budgets overExpended",
+      "type": "number",
+      "readonly": true
+    }
+  },
+  "additionalProperties": false
+}
