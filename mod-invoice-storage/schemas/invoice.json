@@ -86,7 +86,7 @@
       "type": "string",
       "format": "date-time"
     },
-    "paymentDate": {
+    "paidDate": {
       "description": "When the invoice was actually paid",
       "type": "string",
       "format": "date-time"

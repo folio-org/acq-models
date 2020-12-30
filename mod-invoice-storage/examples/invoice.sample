@@ -41,7 +41,7 @@
   "lockTotal": 64.50,
   "note": "Some note",
   "paymentDue": "2018-08-29T00:00:00.000+0000",
-  "paymentDate": "2018-08-29T00:10:00.000+0000",
+  "paidDate": "2018-08-29T00:10:00.000+0000",
   "paymentTerms": "Payment in Advance",
   "paymentMethod": "EFT",
   "status": "Reviewed",
