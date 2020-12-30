@@ -1,7 +1,18 @@
 {
   "groupId": "f33ed99b-852a-4f90-9891-5efe0feab165",
   "fiscalYearId": "ac2164c7-ba3d-1bc2-a12c-e35ceccbfaf2",
-  "allocated": 100000.00,
-  "available": 60000.00,
-  "unavailable": 40000.00
+  "allocated": 24500,
+  "initialAllocation": 11000,
+  "allocationTo": 13500,
+  "allocationFrom": 0,
+  "available": 21990,
+  "netTransfers": 2500,
+  "unavailable": 10,
+  "expenditures": 10,
+  "encumbered": 0,
+  "awaitingPayment": 0,
+  "overEncumbrance": 0,
+  "overExpended": 0,
+  "totalFunding": 22000,
+  "cashBalance": 21990
 }

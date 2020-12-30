@@ -45,9 +45,9 @@
       "type": "number"
     },
     "available": {
-      "default": 0,
       "description": "The amount currently available for this budge",
-      "type": "number"
+      "type": "number",
+      "readonly": true
     },
     "encumbered": {
       "default": 0,
@@ -65,19 +65,19 @@
       "type": "number"
     },
     "unavailable" : {
-      "default": 0,
       "description": "Unavailable amount for this budget",
-      "type": "number"
+      "type": "number",
+      "readonly": true
     },
     "overEncumbrance": {
-      "default": 0,
       "description": "The amount currently over-encumbered for this budget",
-      "type": "number"
+      "type": "number",
+      "readonly": true
     },
     "overExpended": {
-      "default": 0,
       "description": "Amount the budget is over expended.",
-      "type": "number"
+      "type": "number",
+      "readonly": true
     },
     "fundId": {
       "description": "UUID of fund",
@@ -118,11 +118,20 @@
       "default": 0,
       "description": "The sum of all allocation transaction amounts made FROM this budget not including the Initial allocation",
       "type": "number"
+    },
+    "totalFunding": {
+      "description": "budget.allocated + budget.netTransfers",
+      "type": "number",
+      "readonly": true
+    },
+    "cashBalance": {
+      "description": "Total Funding minus Expended",
+      "type": "number",
+      "readonly": true
     }
   },
   "additionalProperties": false,
   "required": [
-    "allocated",
     "budgetStatus",
     "name",
     "fundId",
