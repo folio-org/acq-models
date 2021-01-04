@@ -33,6 +33,7 @@
     "currency": "USD",
     "discount": 5,
     "discountType": "percentage",
+    "exchangeRate": 1.12,
     "listUnitPrice": 24.99,
     "listUnitPriceElectronic": 18.99,
     "quantityPhysical": 6,

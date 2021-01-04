@@ -28,6 +28,7 @@
     "additionalCost": 1.99,
     "discount": 5.00,
     "discountType": "amount",
+    "exchangeRate": 1.12,
     "currency": "USD",
     "listUnitPrice": 24.99,
     "quantityPhysical": 3,

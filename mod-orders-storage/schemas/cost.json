@@ -32,6 +32,10 @@
       ],
       "default": "percentage"
     },
+    "exchangeRate": {
+      "description": "Exchange rate",
+      "type": "number"
+    },
     "quantityPhysical": {
       "description": "Quantity of physical items or resources of 'Other' order format in this purchase order line",
       "type": "integer"
