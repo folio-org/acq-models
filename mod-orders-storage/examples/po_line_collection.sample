@@ -32,6 +32,7 @@
           "currency": "USD",
           "discount": 10,
           "discountType": "percentage",
+          "exchangeRate": 1.12,
           "listUnitPriceElectronic": 24.99,
           "quantityElectronic": 2,
           "poLineEstimatedPrice": 49.97

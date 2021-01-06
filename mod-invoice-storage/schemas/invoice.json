@@ -86,6 +86,11 @@
       "type": "string",
       "format": "date-time"
     },
+    "paymentDate": {
+      "description": "When the invoice was actually paid",
+      "type": "string",
+      "format": "date-time"
+    },
     "paymentTerms": {
       "description": "Invoice payment terms",
       "type": "string"
@@ -158,6 +163,10 @@
     "vendorId": {
       "description": "UUID of vendor",
       "$ref": "../../common/schemas/uuid.json"
+    },
+    "accountNo": {
+      "description": "The unique number of the organization account",
+      "type": "string"
     },
     "manualPayment": {
       "description": "This would keep the invoice from being feed into the batch process (Not generate a external voucher/payment) but would still move values in the system. Note: this is ideally defined by the vendor relationship and exposed for override on the invoice.",
