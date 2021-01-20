@@ -8,7 +8,8 @@
     "Fully Received",
     "Partially Received",
     "Pending",
-    "Receipt Not Required"
+    "Receipt Not Required",
+    "Ongoing"
   ],
   "default": "Pending"
 }
