@@ -18,6 +18,11 @@
       "type": "boolean",
       "default": true
     },
+    "setAllowances": {
+      "description": "Indicate to get Allowances from previous year budget if false and if true then values will be specified",
+      "type": "boolean",
+      "default": false
+    },
     "adjustAllocation": {
       "description": "How much should we increase the allocation",
       "type": "number",
