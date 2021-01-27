@@ -39,13 +39,11 @@
     },
     "allowableEncumbrance": {
       "description": "The encumbrance percentage limit for this budget",
-      "type": "number",
-      "default": 100
+      "type": "number"
     },
     "allowableExpenditure": {
       "description": "The expenditure percentage limit for this budget",
-      "type": "number",
-      "default": 100
+      "type": "number"
     }
   },
   "additionalProperties": false
