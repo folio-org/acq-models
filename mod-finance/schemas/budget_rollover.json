@@ -11,12 +11,12 @@
     "rolloverAllocation": {
       "description": "Should allocated amount needs to be rollover",
       "type": "boolean",
-      "default": true
+      "default": false
     },
     "rolloverAvailable": {
       "description": "Should available amount needs to be rollover",
       "type": "boolean",
-      "default": true
+      "default": false
     },
     "setAllowances": {
       "description": "Indicate to get Allowances from previous year budget if false and if true then values will be specified",
