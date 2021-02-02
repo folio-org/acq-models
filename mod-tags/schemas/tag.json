@@ -7,7 +7,7 @@
     "id": {
       "description": "The UUID of this tag",
       "type": "string",
-      "$ref": "raml-util/schemas/uuid.schema"
+      "$ref": "../../common/schemas/uuid.json"
     },
     "label": {
       "description": "The short label of this tag",
@@ -19,7 +19,7 @@
     },
     "metadata": {
       "type": "object",
-      "$ref": "raml-util/schemas/metadata.schema"
+      "$ref": "../../../raml-util/schemas/metadata.schema"
     }
   },
   "required": [
