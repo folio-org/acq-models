@@ -11,24 +11,13 @@
       "description": "free-form notes from the vendor",
       "type": "string"
     },
-    "refNumber": {
-      "description": "a reference number for this purchase order line",
-      "type": "string"
-    },
-    "refNumberType": {
-      "description": "the reference number type",
-      "type": "string",
-      "enum": [
-        "Supplier's continuation order",
-        "Supplier's unique order line reference number",
-        "Agent's unique subscription reference number",
-        "Library's continuation order number",
-        "Internal vendor number"
-      ]
-    },
     "vendorAccount": {
       "description": "the accound number on the vendor's end associated with this purchase order line",
       "type": "string"
+    },
+    "referenceNumbers": {
+      "description": "Collection of reference number items",
+      "$ref": "../../common/schemas/reference_numbers.json"
     }
   },
   "additionalProperties": false,
