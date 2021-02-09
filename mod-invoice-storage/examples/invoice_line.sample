@@ -58,6 +58,13 @@
   "productId": "9780764354113",
   "productIdType": "8261054f-be78-422d-bd51-4ed9f33c3422",
   "quantity": 3,
+  "referenceNumbers": [
+    {
+      "refNumber": "refNumExample",
+      "refNumberType": "Vendor title number",
+      "vendorDetailsSource": "InvoiceLine"
+    }
+  ],
   "releaseEncumbrance": true,
   "subscriptionInfo": "Subscription information",
   "subscriptionStart": "2018-08-01T00:00:00.000+0000",
