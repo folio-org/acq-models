@@ -101,6 +101,16 @@
       "description": "total estimated price of this purchase order",
       "type": "number"
     },
+    "totalEncumbered": {
+      "description": "Total encumbered for the order",
+      "type": "number",
+      "readonly": true
+    },
+    "totalExpended": {
+      "description": "Total expended for the order",
+      "type": "number",
+      "readonly": true
+    },
     "totalItems": {
       "description": "total number of items included in the purchase order",
       "type": "integer"
