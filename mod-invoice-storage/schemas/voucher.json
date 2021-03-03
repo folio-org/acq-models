@@ -11,6 +11,10 @@
       "description": "Number that represents the vendor is an external accounting system which may include details like \"Address code\" in it. This is the number as stated on the invoice",
       "type": "string"
     },
+    "accountNo": {
+      "description": "The unique number of the organization account",
+      "type": "string"
+    },
     "amount": {
       "description": "The amount that is actually paid",
       "type": "number"
@@ -33,6 +37,11 @@
     "disbursementAmount": {
       "description": "The amount of the payment made outside of FOLIO",
       "type": "number"
+    },
+    "enclosureNeeded": {
+      "description": "Indicates that an enclosure is needed",
+      "type": "boolean",
+      "default": false
     },
     "invoiceCurrency": {
       "description": "The currency in which invoice was originally defined",
