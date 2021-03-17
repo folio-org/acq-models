@@ -134,5 +134,8 @@
       }
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "required": [
+    "allocated"
+  ]
 }
