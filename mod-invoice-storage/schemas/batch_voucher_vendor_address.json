@@ -3,10 +3,6 @@
   "description": "An address record",
   "type": "object",
   "properties": {
-    "id": {
-      "description": "UUID",
-      "$ref": "../../common/schemas/uuid.json"
-    },
     "addressLine1": {
       "description": "The first line of this address",
       "type": "string"
