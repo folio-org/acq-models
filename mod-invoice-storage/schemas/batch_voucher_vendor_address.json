@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "An address record",
+  "type": "object",
+  "properties": {
+    "addressLine1": {
+      "description": "The first line of this address",
+      "type": "string"
+    },
+    "addressLine2": {
+      "description": "The second line of this address",
+      "type": "string"
+    },
+    "city": {
+      "description": "The city for this address",
+      "type": "string"
+    },
+    "stateRegion": {
+      "description": "The state or region for this address",
+      "type": "string"
+    },
+    "zipCode": {
+      "description": "The zip code for this address",
+      "type": "string"
+    },
+    "country": {
+      "description": "The country for this address",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
