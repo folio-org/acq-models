@@ -91,6 +91,16 @@
       "type": "string",
       "pattern": "^[a-zA-Z0-9]*$"
     },
+    "vendorId":  {
+      "description": "UUID of vendor related to the voucher",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "vendorAddress": {
+      "description": "Primary address of the vendor.",
+      "type": "object",
+      "$ref": "batch_voucher_vendor_address.json",
+      "readonly": true
+    },
     "acqUnitIds": {
       "description": "acquisition unit ids associated with this voucher",
       "type": "array",
