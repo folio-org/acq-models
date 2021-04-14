@@ -230,6 +230,13 @@
       "readonly": true
     }
   },
+  "holdingIds": {
+    "description": "Holding ids associated with this purchase order",
+    "type": "array",
+    "items": {
+      "$ref": "../../common/schemas/uuid.json"
+    }
+  },
   "additionalProperties": false,
   "required": [
     "orderFormat",
