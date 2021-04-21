@@ -236,6 +236,7 @@
     "holdingIds": {
       "description": "Holding ids associated with order line",
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "$ref": "../../common/schemas/uuid.json"
       }
