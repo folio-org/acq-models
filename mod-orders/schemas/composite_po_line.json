@@ -232,14 +232,6 @@
       "type": "object",
       "$ref": "../../../raml-util/schemas/metadata.schema",
       "readonly": true
-    },
-    "holdingIds": {
-      "description": "Holding ids associated with order line",
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "$ref": "../../common/schemas/uuid.json"
-      }
     }
   },
   "additionalProperties": false,
