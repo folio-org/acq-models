@@ -8,24 +8,33 @@
       "type": "string",
       "$ref": "../../common/schemas/uuid.json"
     },
+    "polReceiptStatus": {
+      "description": "The purchase order line receipt status",
+      "type": "object",
+      "$ref": "../../mod-orders-storage/schemas/receipt_status.json"
+    },
+    "orderType": {
+      "description": "the purchase order type",
+      "type": "string",
+      "enum": [
+        "One-Time",
+        "Ongoing"
+      ]
+    },
     "orderStatus": {
       "description": "Order status",
       "type": "string",
       "$ref": "../../mod-orders-storage/schemas/workflow_status.json"
     },
-    "orderStatusDate": {
-      "description": "Order status date",
+    "orderSentDate": {
+      "description": "Order sent date",
       "type": "string",
       "format": "date-time"
     },
-    "price": {
-      "description": "Order summary price",
-      "type": "number"
-    },
-    "currency": {
-      "description": "ISO currency code",
-      "type": "string",
-      "$ref": "../../common/schemas/currency_code.json"
+    "orderCloseReason": {
+      "description": "Close reason for purchase order",
+      "type": "object",
+      "$ref": "../../mod-orders-storage/schemas/close_reason.json"
     }
   },
   "additionalProperties": false
