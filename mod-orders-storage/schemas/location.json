@@ -26,8 +26,5 @@
       "type": "integer"
     }
   },
-  "additionalProperties": false,
-  "required": [
-    "locationId"
-  ]
+  "additionalProperties": false
 }
