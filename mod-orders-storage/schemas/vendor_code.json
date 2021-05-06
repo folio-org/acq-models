@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "v",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "UUID of this suffix",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "externalVendorId": {
+      "description": "UUID of this suffix",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "vendorCode": {
+      "description": "the accound number on the vendor's end associated with this purchase order line",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

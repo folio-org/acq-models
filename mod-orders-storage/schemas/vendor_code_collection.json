@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Collection of titles",
+  "type": "object",
+  "properties": {
+    "vendorCodes": {
+      "description": "Collection of titles",
+      "type": "array",
+      "id": "vendorCode",
+      "items": {
+        "$ref": "vendor_code.json"
+      }
+    },
+    "totalRecords": {
+      "description": "The number of objects contained in this collection",
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "vendorCodes",
+    "totalRecords"
+  ]
+}
