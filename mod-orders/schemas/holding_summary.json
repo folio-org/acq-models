@@ -1,20 +1,24 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Inventory order summary",
+  "description": "Holding summary",
   "type": "object",
   "properties": {
-    "polNumber": {
-      "description": "POL number ",
+    "poLineId": {
+      "description": "Purchase order line id",
       "type": "string",
       "$ref": "../../common/schemas/uuid.json"
     },
+    "poLineNumber": {
+      "description": "Purchase order line number",
+      "type": "string"
+    },
     "polReceiptStatus": {
-      "description": "The purchase order line receipt status",
+      "description": "Purchase order line receipt status",
       "type": "object",
       "$ref": "../../mod-orders-storage/schemas/receipt_status.json"
     },
     "orderType": {
-      "description": "the purchase order type",
+      "description": "Purchase order type",
       "type": "string",
       "enum": [
         "One-Time",
