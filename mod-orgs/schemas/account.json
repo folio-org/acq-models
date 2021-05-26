@@ -65,9 +65,6 @@
   "required": [
     "name",
     "accountNo",
-    "paymentMethod",
-    "accountStatus",
-    "libraryCode",
-    "libraryEdiCode"
+    "accountStatus"
   ]
 }
