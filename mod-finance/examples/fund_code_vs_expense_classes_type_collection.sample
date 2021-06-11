@@ -1,0 +1,10 @@
+{
+    "delimiter" : ":",
+    [
+        {
+            "fundCode" : "HIST",
+            "ledgerCode" : "MAIN-LIB",
+            ["HIST", "HIST:ExpClassPrn", "HIST:ExpClassElec"]
+        }
+    ]
+}

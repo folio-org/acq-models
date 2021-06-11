@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Combination of fundCode, ledgerCode and fundCodeVsExpClasses",
+  "type": "object",
+  "properties": {
+    "fundCode": {
+      "description": "A unique code associated with the fund",
+      "type": "string"
+    },
+    "ledgerCode": {
+      "description": "A unique code associated with the ledger",
+      "type": "string"
+    },
+    "fundCodeVsExpClasses": {
+      "description": "Combination of the fund code and expense classes ",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": ["fundCode", "ledgerCode", "fundCodeVsExpClasses"]
+}
