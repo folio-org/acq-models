@@ -1,0 +1,15 @@
+{
+    delimiter : ":",
+    [
+        {
+            fundCode : "Fund1",
+            ledgerCode : "Ledger1",
+            [Fund1, Fund1:ExpClassPrn, Fund1:ExpClassElec]
+        },
+        {
+            fundCode : "Fund2",
+            ledgerCode : "Ledger2",
+            [Fund2, Fund2:ExpClassPrn, Fund2:ExpClassElec]
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+{
+  fundCode : "Fund1",
+  ledgerCode : "Ledger1",
+  [Fund1, Fund1:ExpClassPrn, Fund1:ExpClassElec]
+}
