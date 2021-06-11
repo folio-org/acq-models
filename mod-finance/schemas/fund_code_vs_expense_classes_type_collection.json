@@ -5,10 +5,10 @@
   "properties": {
     "delimiter": {
       "description": "Special character to separate Fund Code and Expense class code.",
-      "type": "string",
-      "pattern": ":"
+      "type": "string"
     },
     "fundCodeVsExpClassesTypes": {
+      "description": "List of combinations of Fund Code and Expense class code.",
       "type": "array",
       "items": {
         "$ref": "fund_code_vs_expense_classes_type.json"
