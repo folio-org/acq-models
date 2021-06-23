@@ -11,8 +11,15 @@
       "description": "A unique code associated with the ledger",
       "type": "string"
     },
-    "fundCodeVsExpClasses": {
-      "description": "Combination of the fund code and expense classes ",
+    "activeFundCodeVsExpClasses": {
+      "description": "Combination of the fund code and active expense classes",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+      "inactiveFundCodeVsExpClasses": {
+      "description": "Combination of the fund code and inactive expense classes",
       "type": "array",
       "items": {
         "type": "string"
@@ -20,5 +27,5 @@
     }
   },
   "additionalProperties": false,
-  "required": ["fundCode", "ledgerCode", "fundCodeVsExpClasses"]
+  "required": ["fundCode", "ledgerCode", "activeFundCodeVsExpClasses", "fundCodeVsExpClasses"]
 }

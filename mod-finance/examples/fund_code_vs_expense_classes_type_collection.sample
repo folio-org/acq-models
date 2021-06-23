@@ -4,6 +4,8 @@
         {
             "fundCode" : "HIST",
             "ledgerCode" : "MAIN-LIB",
+            "activeFundCodeVsExpClasses" : "FUND1:ExpClassPrn",
+            "inactiveFundCodeVsExpClasses" : "FUND1:ExpClassElec",
             ["HIST", "HIST:ExpClassPrn", "HIST:ExpClassElec"]
         }
     ]
