@@ -2,11 +2,16 @@
     "delimiter" : ":",
     [
         {
-            "fundCode" : "HIST",
-            "ledgerCode" : "MAIN-LIB",
-            "activeFundCodeVsExpClasses" : "FUND1:ExpClassPrn",
-            "inactiveFundCodeVsExpClasses" : "FUND1:ExpClassElec",
-            ["HIST", "HIST:ExpClassPrn", "HIST:ExpClassElec"]
+                    fundCode : "Fund1",
+                    ledgerCode : "Ledger1",
+                    activeFundCodeVsExpClasses : [Fund1:ExpClassPrn, Fund1:ExpClassElec],
+                    inactiveFundCodeVsExpClasses: [Fund1:ExpClassElec]
+        },
+        {
+                    fundCode : "Fund2",
+                    ledgerCode : "Ledger2",
+                    activeFundCodeVsExpClasses : [Fund2:ExpClassPrn],
+                    inactiveFundCodeVsExpClasses: [Fund2:ExpClassElec]
         }
     ]
 }

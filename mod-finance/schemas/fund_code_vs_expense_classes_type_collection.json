@@ -8,7 +8,7 @@
       "type": "string"
     },
     "fundCodeVsExpClassesTypes": {
-      "description": "List of combinations of Fund Code and Expense class code.",
+      "description": "Pairs of the fund code and expense classes.",
       "type": "array",
       "items": {
         "$ref": "fund_code_vs_expense_classes_type.json"
