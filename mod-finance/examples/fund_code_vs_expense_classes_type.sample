@@ -2,6 +2,5 @@
   "fundCode" : "HIST",
   "ledgerCode" : "MAIN-LIB",
   "activeFundCodeVsExpClasses" : ["FUND1:ExpClassPrn"],
-  "inactiveFundCodeVsExpClasses" : ["FUND1:ExpClassElec"],
-  "required": ["fundCode", "ledgerCode", "activeFundCodeVsExpClasses", " inactiveFundCodeVsExpClasses"]
+  "inactiveFundCodeVsExpClasses" : ["FUND1:ExpClassElec"]
 }
