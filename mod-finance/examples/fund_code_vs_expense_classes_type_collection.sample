@@ -13,6 +13,5 @@
                     "activeFundCodeVsExpClasses" : "[Fund2:ExpClassPrn]",
                     "inactiveFundCodeVsExpClasses": "[Fund2:ExpClassElec]"
         }
-    ],
-    "required": ["fundCodeVsExpClassesTypes"]
+    ]
 }
