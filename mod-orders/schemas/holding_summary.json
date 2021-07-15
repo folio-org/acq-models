@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Holding summary",
+  "type": "object",
+  "properties": {
+    "poLineId": {
+      "description": "Purchase order line id",
+      "type": "string",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "poLineNumber": {
+      "description": "Purchase order line number",
+      "type": "string"
+    },
+    "polReceiptStatus": {
+      "description": "Purchase order line receipt status",
+      "type": "object",
+      "$ref": "../../mod-orders-storage/schemas/receipt_status.json"
+    },
+    "orderType": {
+      "description": "Purchase order type",
+      "type": "string",
+      "enum": [
+        "One-Time",
+        "Ongoing"
+      ]
+    },
+    "orderStatus": {
+      "description": "Order status",
+      "type": "string",
+      "$ref": "../../mod-orders-storage/schemas/workflow_status.json"
+    },
+    "orderSentDate": {
+      "description": "Order sent date",
+      "type": "string",
+      "format": "date-time"
+    },
+    "orderCloseReason": {
+      "description": "Close reason for purchase order",
+      "type": "object",
+      "$ref": "../../mod-orders-storage/schemas/close_reason.json"
+    }
+  },
+  "additionalProperties": false
+}
