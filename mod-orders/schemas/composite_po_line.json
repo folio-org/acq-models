@@ -162,8 +162,7 @@
     },
     "publicationDate": {
       "description": "date (year) of the material's publication",
-      "type": "string",
-      "pattern": "^[0-9]{4}$"
+      "type": "string"
     },
     "publisher": {
       "description": "publisher of the material",
