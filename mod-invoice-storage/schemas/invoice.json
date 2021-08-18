@@ -47,7 +47,7 @@
       "type": "boolean"
     },
     "cancellationNote": {
-      "description": "The reason of the invoice cancellation",
+      "description": "The reason of the invoice cancellation.",
       "type": "string"
     },
     "currency": {
