@@ -25,7 +25,8 @@
     },
     "code": {
       "description": "A unique code associated with the fund",
-      "type": "string"
+      "type": "string",
+      "pattern": "^[^:]+$"
     },
     "description": {
       "description": "The description of this fund",
