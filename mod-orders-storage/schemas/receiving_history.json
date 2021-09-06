@@ -11,63 +11,80 @@
       "description": "Volume/enumeration information",
       "type": "string"
     },
+    "checkin": {
+      "description": "If true this piece is for the Check-in workflow",
+      "type": "boolean"
+    },
+    "chronology": {
+      "description": "Chronology is the descriptive information for the dating scheme of a serial. Synchronized with inventory item.",
+      "type": "string"
+    },
     "comment": {
       "description": "Free form commentary",
       "type": "string"
     },
     "dateOrdered": {
       "description": "Date and time when purchase order was opened",
-      "type": "string",
-      "format": "date-time"
+      "format": "date-time",
+      "type": "string"
     },
-    "checkin": {
-      "description": "If true this piece is for the Check-in workflow",
+    "discoverySuppress": {
+      "description": "Records the fact that the record should not be displayed in a discovery system",
       "type": "boolean"
     },
+    "displayOnHolding": {
+      "default": "false",
+      "description": "Whether or not receiving history should be displayed in holding record view",
+      "type": "boolean"
+    },
+    "enumeration": {
+      "description": "Enumeration is the descriptive information for the numbering scheme of a serial. Synchronized with inventory item.",
+      "type": "string"
+    },
     "instanceId": {
-      "description": "UUID of the instance record this piece is related to",
-      "$ref": "../../common/schemas/uuid.json"
+      "$ref": "../../common/schemas/uuid.json",
+      "description": "UUID of the instance record this piece is related to"
     },
     "itemId": {
-      "description": "UUID of the associated item record",
-      "$ref": "../../common/schemas/uuid.json"
+      "$ref": "../../common/schemas/uuid.json",
+      "description": "UUID of the associated item record"
     },
     "locationId": {
-      "description": "UUID of the (inventory) location record",
-      "$ref": "../../common/schemas/uuid.json"
+      "$ref": "../../common/schemas/uuid.json",
+      "description": "UUID of the (inventory) location record"
+    },
+    "pieceFormat": {
+      "$ref": "piece_format.json",
+      "description": "The format of the piece",
+      "type": "string"
     },
     "poLineId": {
-      "description": "UUID of the purchase order line this record is associated with",
-      "$ref": "../../common/schemas/uuid.json"
+      "$ref": "../../common/schemas/uuid.json",
+      "description": "UUID of the purchase order line this record is associated with"
     },
     "poLineNumber": {
       "description": "A human readable number assigned to this PO line",
-      "type": "string",
-      "pattern": "^[a-zA-Z0-9]{1,16}-[0-9]{1,3}$"
+      "pattern": "^[a-zA-Z0-9]{1,16}-[0-9]{1,3}$",
+      "type": "string"
     },
     "poLineReceiptStatus": {
+      "$ref": "receipt_status.json",
       "description": "The purchase order line receipt status",
-      "type": "object",
-      "$ref": "receipt_status.json"
-    },
-    "pieceFormat": {
-      "description": "The format of the piece",
-      "type": "string",
-      "$ref": "piece_format.json"
+      "type": "object"
     },
     "purchaseOrderId": {
-      "description": "UUID of associated purchase order",
-      "$ref": "../../common/schemas/uuid.json"
+      "$ref": "../../common/schemas/uuid.json",
+      "description": "UUID of associated purchase order"
     },
     "receiptDate": {
       "description": "Date that this item is expected to arrive",
-      "type": "string",
-      "format": "date-time"
+      "format": "date-time",
+      "type": "string"
     },
     "receivedDate": {
       "description": "date received",
-      "type": "string",
-      "format": "date-time"
+      "format": "date-time",
+      "type": "string"
     },
     "receivingNote": {
       "description": "A note at the poLine level pertaining to receiving/check-in",
@@ -75,11 +92,11 @@
     },
     "receivingStatus": {
       "description": "the status of this piece",
-      "type": "string",
       "enum": [
         "Received",
         "Expected"
-      ]
+      ],
+      "type": "string"
     },
     "supplement": {
       "description": "Whether or not this is supplementary material",
