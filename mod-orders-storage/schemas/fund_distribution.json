@@ -5,7 +5,7 @@
   "properties": {
     "code": {
       "description": "the fund code",
-      "type": "string"
+      "$ref": "../../common/schemas/fund_code.json"
     },
     "encumbrance": {
       "description": "UUID of encumbrance record associated with this fund distribution",
