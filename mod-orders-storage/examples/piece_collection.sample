@@ -14,6 +14,7 @@
         "enumeration": "Volume 1",
         "chronology": "2021",
         "discoverySuppress": "false",
+        "copyNumber": "175143",
         "receiptDate": "2020-01-10T00:00:00.000Z",
         "receivingStatus": "Expected",
         "supplement": true
@@ -31,6 +32,7 @@
         "enumeration": "Volume 2",
         "chronology": "2021",
         "discoverySuppress": "false",
+        "copyNumber": "186323",
         "receiptDate": "2018-10-11T00:00:00.000Z",
         "receivingStatus": "Received",
         "supplement": true,
@@ -48,6 +50,7 @@
         "enumeration": "Volume 3",
         "chronology": "2022",
         "discoverySuppress": "true",
+        "copyNumber": "108572",
         "receivingStatus": "Received",
         "supplement": true,
         "receiptDate": "2018-10-11T00:00:00.000Z",
