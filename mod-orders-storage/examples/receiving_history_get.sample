@@ -6,6 +6,7 @@
   "discoverySuppress" : false,
   "enumeration": "TEST",
   "displayOnHolding": false,
+  "copyNumber": "94753",
   "chronology" : "FTF",
   "checkin": false,
   "instanceId": "8343e5a0-fed8-11e8-8eb2-f2801f1b9fd1",
