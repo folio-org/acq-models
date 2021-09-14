@@ -41,6 +41,10 @@
       "description": "Enumeration is the descriptive information for the numbering scheme of a serial. Synchronized with inventory item.",
       "type": "string"
     },
+    "copyNumber": {
+      "type": "string",
+      "description": "Copy number of the piece"
+    },
     "instanceId": {
       "$ref": "../../common/schemas/uuid.json",
       "description": "UUID of the instance record this piece is related to"
