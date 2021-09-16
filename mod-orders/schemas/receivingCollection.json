@@ -68,6 +68,10 @@
                   "type": "string",
                   "description": "Chronology is the descriptive information for the dating scheme of a serial. Synchronized with inventory item."
                 },
+                "copyNumber": {
+                  "type": "string",
+                  "description": "Copy number of the piece"
+                },
                 "pieceId": {
                   "description": "UUID of this piece record",
                   "type": "string",
