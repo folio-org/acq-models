@@ -6,7 +6,7 @@
     "$ref" : "../../common/schemas/entity.json"
   },
   "properties": {
-    "summaryId": {
+    "transactionSummaryId": {
       "$ref": "../../common/schemas/uuid.json",
       "description": "\"id\" from the table \"order_transaction_summaries\""
     },
