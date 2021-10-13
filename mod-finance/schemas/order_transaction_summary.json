@@ -7,6 +7,10 @@
       "description": "UUID of this summary",
       "$ref": "../../common/schemas/uuid.json"
     },
+    "orderId": {
+      "description": "UUID of purchase order for which the summary is created",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "numTransactions": {
       "description": "Total number of transactions (encumbrances) expected for this order. Negative value indicates that all transactions have been processed",
       "type": "integer"
@@ -15,6 +19,7 @@
   "additionalProperties": false,
   "required": [
     "id",
+    "orderId",
     "numTransactions"
   ]
 }
