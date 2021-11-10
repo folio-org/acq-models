@@ -14,11 +14,12 @@
       ]
     },
     "basedOn": {
-      "description": "Based on Expended to Remaining",
+      "description": "Based on Expended, Remaining or Initial encumbrance",
       "type": "string",
       "enum": [
         "Expended",
-        "Remaining"
+        "Remaining",
+        "InitialAmountEncumbered"
       ]
     },
     "increaseBy": {
