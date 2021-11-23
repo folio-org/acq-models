@@ -11,6 +11,15 @@
       "description": "The value of this acquisition method",
       "type": "string"
     },
+    "source": {
+      "description": "Source of acquisition method",
+      "type": "string",
+      "enum": [
+        "User",
+        "System"
+      ],
+      "default": "User"
+    },
     "metadata": {
       "type": "object",
       "$ref": "../../../raml-util/schemas/metadata.schema",
@@ -19,6 +28,7 @@
   },
   "additionalProperties": false,
   "required": [
-    "value"
+    "value",
+    "source"
   ]
 }
