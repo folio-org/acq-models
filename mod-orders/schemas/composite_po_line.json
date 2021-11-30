@@ -28,19 +28,9 @@
       "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
     "acquisitionMethod": {
-      "description": "the acquisition method for this purchase order line",
+      "description": "UUID of the acquisition method for this purchase order line",
       "type": "string",
-      "enum": [
-        "Approval Plan",
-        "Demand Driven Acquisitions (DDA)",
-        "Depository",
-        "Evidence Based Acquisitions (EBA)",
-        "Exchange",
-        "Gift",
-        "Purchase At Vendor System",
-        "Purchase",
-        "Technical"
-      ]
+      "$ref": "../../common/schemas/uuid.json"
     },
     "alerts": {
       "description": "alerts associated with this purchase order line",

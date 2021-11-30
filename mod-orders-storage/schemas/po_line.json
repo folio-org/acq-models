@@ -21,19 +21,9 @@
       "$ref": "../../common/schemas/uuid.json"
     },
     "acquisitionMethod": {
-      "description": "the acquisition method for this purchase order line",
+      "description": "UUID of the acquisition method for this purchase order line",
       "type": "string",
-      "enum": [
-        "Approval Plan",
-        "Demand Driven Acquisitions (DDA)",
-        "Depository",
-        "Evidence Based Acquisitions (EBA)",
-        "Exchange",
-        "Gift",
-        "Purchase At Vendor System",
-        "Purchase",
-        "Technical"
-      ]
+      "$ref": "../../common/schemas/uuid.json"
     },
     "alerts": {
       "description": "an array of alert record IDs",
