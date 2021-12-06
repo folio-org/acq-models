@@ -3,10 +3,10 @@
   "description": "collection of acquisition method line records",
   "type": "object",
   "properties": {
-    "acquisition_methods": {
+    "acquisitionMethods": {
       "description": "collection of acquisition method line records",
       "type": "array",
-      "id": "acquisition_methods",
+      "id": "acquisitionMethods",
       "items": {
         "type": "object",
         "$ref": "acquisition_method.json"
@@ -19,7 +19,7 @@
   },
   "additionalProperties": false,
   "required": [
-    "acquisition_methods",
+    "acquisitionMethods",
     "totalRecords"
   ]
 }
