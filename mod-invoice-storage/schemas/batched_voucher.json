@@ -54,6 +54,15 @@
       "description": "The currency in which invoice was originally defined",
       "type": "string"
     },
+    "invoiceDate": {
+      "description": "Invoice date",
+      "type": "string",
+      "format": "date-time"
+    },
+    "invoiceTerms": {
+      "description": "Invoice payment terms",
+      "type": "string"
+    },
     "invoiceNote": {
       "description": "Free-form notes from the invoice",
       "type": "string"
