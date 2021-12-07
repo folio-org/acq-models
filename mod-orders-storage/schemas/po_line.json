@@ -25,6 +25,11 @@
       "type": "string",
       "$ref": "../../common/schemas/uuid.json"
     },
+    "automaticExport": {
+      "description": "if true then line will be marked as available to export in the EDIFACT format or other format",
+      "type": "boolean",
+      "default": false
+    },
     "alerts": {
       "description": "an array of alert record IDs",
       "id": "alerts",
