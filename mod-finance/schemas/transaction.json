@@ -99,6 +99,10 @@
       "$ref": "../../../raml-util/schemas/metadata.schema",
       "readonly": true,
       "type": "object"
+    },
+    "voidedAmount": {
+      "description": "Voided amount, not to be counted in budget totals",
+      "type": "number"
     }
   },
   "required": [
