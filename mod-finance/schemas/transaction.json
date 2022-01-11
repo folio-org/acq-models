@@ -95,6 +95,10 @@
       ],
       "type": "string"
     },
+    "voidedAmount": {
+      "description": "Voided amount, not to be counted in budget totals",
+      "type": "number"
+    },
     "metadata": {
       "$ref": "../../../raml-util/schemas/metadata.schema",
       "readonly": true,

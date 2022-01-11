@@ -31,6 +31,7 @@
       },
       "toFundId": "2e51c019-97f3-4523-87e9-59250e3b48bc",
       "transactionType": "Encumbrance",
+      "voidedAmount" : 15,
       "metadata": {
         "createdDate": "2018-07-19T00:00:00.000+0000",
         "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
@@ -54,7 +55,8 @@
         ]
       },
       "toFundId": "69640328-788e-43fc-9c3c-af39e243f3b7",
-      "transactionType": "Payment"
+      "transactionType": "Payment",
+      "voidedAmount" : 0
     }
   ],
   "totalRecords": 2
