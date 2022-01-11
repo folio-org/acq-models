@@ -18,9 +18,9 @@
   },
   "toFundId": "2e51c019-97f3-4523-87e9-59250e3b48bc",
   "transactionType": "Payment",
+  "voidedAmount" : 15
   "metadata": {
     "createdDate": "2018-07-19T00:00:00.000+0000",
     "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
-  },
-  "voidedAmount" : 15
+  }
 }
