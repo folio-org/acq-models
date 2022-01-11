@@ -34,7 +34,8 @@
       "metadata": {
         "createdDate": "2018-07-19T00:00:00.000+0000",
         "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
-      }
+      },
+      "voidedAmount" : 15
     },
     {
       "id": "a4780d61-e9c7-4206-b203-a8b22a6d5c38",
@@ -54,7 +55,8 @@
         ]
       },
       "toFundId": "69640328-788e-43fc-9c3c-af39e243f3b7",
-      "transactionType": "Payment"
+      "transactionType": "Payment",
+      "voidedAmount" : 0
     }
   ],
   "totalRecords": 2
