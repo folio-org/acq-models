@@ -125,7 +125,8 @@
     },
     "lastEDIExportDate": {
       "description": "The last date when line was exported in the EDIFACT file",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "orderFormat": {
       "description": "The purchase order line format",
