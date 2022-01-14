@@ -123,6 +123,11 @@
         "$ref": "location.json"
       }
     },
+    "lastEDIExportDate": {
+      "description": "The last date when line was exported in the EDIFACT file",
+      "type": "string",
+      "format": "date-time"
+    },
     "orderFormat": {
       "description": "The purchase order line format",
       "type": "object",
