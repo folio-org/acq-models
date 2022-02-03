@@ -60,7 +60,7 @@
     },
     "publishedDate": {
       "description": "Year of the material's publication",
-      "type": "string",
+      "type": "string"
     },
     "receivingNote": {
       "description": "Receiving note of the POL identified by poLineId",
