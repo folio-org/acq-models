@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Sequence numbers array",
+  "type": "array",
+  "items": {
+    "$ref": "sequence_number.json"
+  },
+  "additionalProperties": false
+}
