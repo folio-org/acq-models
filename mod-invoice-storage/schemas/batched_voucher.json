@@ -24,6 +24,14 @@
         "$ref": "batched_voucher_line.json"
       }
     },
+    "adjustments": {
+      "description": "Defined in settings - the amount field will be editable and pro-rate toggle will be editable if enabled for that adjustment",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "adjustment.json"
+      }
+    },
     "disbursementNumber": {
       "description": "The identifier for the physical transaction corresponding to a payment;Brought in from external source",
       "type": "string"
