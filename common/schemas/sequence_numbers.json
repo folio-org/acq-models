@@ -3,7 +3,7 @@
   "description": "Sequence numbers array",
   "type": "array",
   "items": {
-    "$ref": "sequence_number.json"
+    "type": "string"
   },
   "additionalProperties": false
 }
