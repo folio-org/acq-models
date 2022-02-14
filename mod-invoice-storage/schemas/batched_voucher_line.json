@@ -15,14 +15,6 @@
         "type": "string"
       }
     },
-    "adjustments": {
-      "description": "Defined in settings - the amount field will be editable and pro-rate toggle will be editable if enabled for that adjustment",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "$ref": "adjustment.json"
-      }
-    },
     "externalAccountNumber": {
       "description": "All distributions that come from funds with the same account number are grouped by voucher line",
       "type": "string"
