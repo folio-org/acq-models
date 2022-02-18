@@ -1,9 +1,14 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Sequence numbers array",
-  "type": "array",
-  "items": {
-    "type": "string"
+  "description": "A collection of sequence numbers",
+  "type": "object",
+  "properties": {
+    "sequenceNumbers":{
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
   },
   "additionalProperties": false
 }
