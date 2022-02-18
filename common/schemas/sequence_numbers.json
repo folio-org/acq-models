@@ -4,6 +4,7 @@
   "type": "object",
   "properties": {
     "sequenceNumbers":{
+      "description": "The list of sequence numbers",
       "type": "array",
       "items": {
         "type": "string"
