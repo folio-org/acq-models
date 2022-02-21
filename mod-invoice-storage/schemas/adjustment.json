@@ -63,6 +63,10 @@
     "value": {
       "description": "Adjustment value",
       "type": "number"
+    },
+    "totalAmount": {
+      "description": "Total adjustment amount",
+      "type": "number"
     }
   },
   "additionalProperties": false,
