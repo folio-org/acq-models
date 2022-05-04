@@ -1,22 +1,22 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "purchase order line vs invoice line",
+  "description": "purchase order line vs invoice line - practical task",
   "type": "object",
   "properties": {
     "id": {
-      "description": "Unique identifier.",
+      "description": "Unique identifier the order line number with which the invoice line is associated",
       "$ref": "../../common/schemas/uuid.json"
     },
-	"poLineId": {
-      "description": "Reference on order line ",
+    "poLineId": {
+      "description": "Reference on order line.",
       "$ref": "../../common/schemas/uuid.json"
     },
-	"poLineNumber": {
-      "description": "Number of the order line",
+    "poLineNumber": {
+      "description": "A human readable number assigned to this PO line",
       "type": "string",
       "pattern": "^[a-zA-Z0-9]{1,22}-[0-9]{1,3}$"
     },
-	"invoiceLineId": {
+    "invoiceLineId": {
       "description": "Reference on invoice line",
       "$ref": "../../common/schemas/uuid.json"
     },
