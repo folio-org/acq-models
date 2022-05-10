@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Patch order line request",
+  "type": "object",
+  "properties": {
+    "newInstanceId": {
+      "description": "Reference to new instance",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "holdings": {
+      "description": "Holding references for replacement in the locations and pieces",
+      "id": "holdings",
+      "type": "array",
+      "items": {
+        "description": "Pair of previous and new holding references",
+        "type": "object",
+        "$ref": "storage_replace_order_line_holding_refs.json"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "newInstanceId"
+  ]
+}

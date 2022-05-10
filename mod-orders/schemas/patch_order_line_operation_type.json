@@ -1,0 +1,8 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Type of a partial order line modification",
+  "type": "string",
+  "enum": [
+    "Replace Instance Ref"
+  ]
+}
