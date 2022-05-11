@@ -7,6 +7,10 @@
       "description": "UUID of the fiscal year record",
       "$ref": "../../common/schemas/uuid.json"
     },
+    "_version": {
+      "type": "integer",
+      "description": "Record version for optimistic locking"
+    },
     "acqUnitIds": {
       "description": "UUIDs of the acquisition units associated with this fiscal year",
       "type": "array",
