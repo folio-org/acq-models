@@ -16,7 +16,8 @@
       "type": "string",
       "enum": [
         "Fund",
-        "Order"
+        "Order",
+        "Other"
       ]
     },
     "failedAction": {
