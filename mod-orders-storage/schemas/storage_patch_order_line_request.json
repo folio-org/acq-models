@@ -5,11 +5,11 @@
   "properties": {
     "operation": {
       "description": "Type of a partial order line modification",
-      "$ref": "patch_order_line_operation_type.json"
+      "$ref": "../../mod-orders/schemas/patch_order_line_operation_type.json"
     },
     "replaceInstanceRef": {
       "description": "Replace instance reference operation",
-      "$ref": "replace_order_line_instance_ref.json"
+      "$ref": "../../mod-orders/schemas/replace_order_line_instance_ref.json"
     }
   },
   "additionalProperties": false,
