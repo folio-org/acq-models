@@ -5,7 +5,7 @@
     "holdings": [
       {
         "fromHoldingId": "b0d08448-347b-228a-8c2f-4fb40248d87e",
-        "toHoldingId": "b0d08558-347b-418a-8c2f-4fb40248d47e"
+        "toLocationId": "b0d08558-347b-418a-8c2f-4fb40248d47e"
       },
       {
         "fromHoldingId": "b0d08448-347b-228a-8c2f-4fb40248d97e",

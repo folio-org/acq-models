@@ -9,7 +9,7 @@
     },
     "replaceInstanceRef": {
       "description": "Replace instance reference operation",
-      "$ref": "../../mod-orders/schemas/replace_order_line_instance_ref.json"
+      "$ref": "storage_replace_order_line_instance_ref.json"
     }
   },
   "additionalProperties": false,

@@ -10,11 +10,14 @@
     "toHoldingId": {
       "description": "Reference to new holding",
       "$ref": "../../common/schemas/uuid.json"
+    },
+    "toLocationId": {
+      "description": "Reference to new location",
+      "$ref": "../../common/schemas/uuid.json"
     }
   },
   "additionalProperties": false,
   "required": [
-    "fromHoldingId",
-    "toHoldingId"
+    "fromHoldingId"
   ]
 }
