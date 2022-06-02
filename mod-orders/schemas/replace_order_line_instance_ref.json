@@ -25,6 +25,7 @@
   "additionalProperties": false,
   "required": [
     "newInstanceId",
+    "holdingsOperation",
     "deleteAbandonedHoldings"
   ]
 }
