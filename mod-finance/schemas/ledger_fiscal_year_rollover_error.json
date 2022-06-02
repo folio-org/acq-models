@@ -17,6 +17,8 @@
       "enum": [
         "Fund",
         "Order",
+        "Order rollover",
+        "Financial rollover",
         "Other"
       ]
     },
@@ -41,7 +43,6 @@
   },
   "additionalProperties": false,
   "required": [
-    "details",
     "errorType",
     "errorMessage",
     "failedAction",
