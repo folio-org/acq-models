@@ -20,8 +20,5 @@
       "$ref": "../../common/schemas/reference_numbers.json"
     }
   },
-  "additionalProperties": false,
-  "required": [
-    "instructions"
-  ]
+  "additionalProperties": false
 }
