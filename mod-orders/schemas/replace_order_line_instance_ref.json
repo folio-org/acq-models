@@ -17,8 +17,7 @@
         "None"
       ],
       "default": "None"
-    }
-  },
+    },
     "deleteAbandonedHoldings": {
       "description": "If abandoned holdings will be deleted",
       "type": "boolean",
