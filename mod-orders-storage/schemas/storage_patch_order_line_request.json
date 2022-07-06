@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Patch order line request",
+  "type": "object",
+  "properties": {
+    "operation": {
+      "description": "Type of a partial order line modification",
+      "$ref": "../../mod-orders/schemas/patch_order_line_operation_type.json"
+    },
+    "replaceInstanceRef": {
+      "description": "Replace instance reference operation",
+      "$ref": "storage_replace_order_line_instance_ref.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "operation"
+  ]
+}

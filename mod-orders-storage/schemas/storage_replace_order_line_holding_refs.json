@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Patch order line request",
+  "type": "object",
+  "properties": {
+    "fromHoldingId": {
+      "description": "Reference to previous holding",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "toHoldingId": {
+      "description": "Reference to new holding",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "toLocationId": {
+      "description": "Reference to new location",
+      "$ref": "../../common/schemas/uuid.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "fromHoldingId"
+  ]
+}

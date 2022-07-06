@@ -33,7 +33,7 @@
       "type": "boolean"
     },
     "displayOnHolding": {
-      "default": "false",
+      "default": false,
       "description": "Whether or not receiving history should be displayed in holding record view",
       "type": "boolean"
     },

@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Patch order line request",
+  "type": "object",
+  "properties": {
+    "newInstanceId": {
+      "description": "Reference to new instance",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "holdingsOperation": {
+      "description": "How to process connected holdings",
+      "type": "string",
+      "enum": [
+        "Move",
+        "Create",
+        "Find or Create",
+        "None"
+      ],
+      "default": "None"
+    },
+    "deleteAbandonedHoldings": {
+      "description": "If abandoned holdings will be deleted",
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "newInstanceId",
+    "holdingsOperation",
+    "deleteAbandonedHoldings"
+  ]
+}

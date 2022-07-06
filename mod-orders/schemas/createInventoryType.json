@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Shows what inventory objects need to be created for electronic resource",
+  "type": "string",
+  "enum": [
+    "Instance, Holding, Item",
+    "Instance, Holding",
+    "Instance",
+    "None"
+  ]
+}
