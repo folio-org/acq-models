@@ -1,0 +1,19 @@
+{
+  "lines": [
+ {
+    "id": "1073d02c-68c4-42e8-a796-b4c3aaac8971",
+    "poLineId": "0f40d80d-a622-4bc7-8671-fa5c66be5497",
+    "poLineNumber": "268758-03",
+    "invoiceLineId" : "7d78bfa1-bcab-445b-b1a6-2a4d670456e6",
+    "invoiceLineNumber": "111"
+ },
+  {
+     "id": "80053de7-cbed-4e3f-91f0-79a8a99a634c",
+     "poLineId": "0d7a046a-0cc6-4e1d-83c0-3a0d1414f54e",
+     "poLineNumber": "123456-04",
+     "invoiceLineId" : "e27a76aa-b09e-4d30-8b75-be58027306d2",
+     "invoiceLineNumber": "222"
+  }
+]
+  "totalRecords": 1
+}

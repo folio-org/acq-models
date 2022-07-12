@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "po_line_vs_invoce_line_exampl",
+  "description": "line",
   "type": "object",
   "properties": {
     "id": {

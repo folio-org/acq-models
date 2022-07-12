@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "lines",
+  "type": "object",
+  "properties": {
+    "lines": {
+      "description": "an array of lines records",
+      "id": "lines",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "po_line_vs_invoice_line.json"
+      }
+    },
+    "totalRecords": {
+      "description": "total number of records in the array",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "lines",
+    "totalRecords"
+  ]
+}
