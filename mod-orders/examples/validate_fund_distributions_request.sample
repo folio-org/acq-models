@@ -1,5 +1,6 @@
 {
   "cost": {
+    "poLineEstimatedPrice": 100.00,
     "additionalCost": 0,
     "currency": "USD",
     "discount": 0,
@@ -15,13 +16,13 @@
       "code": "HIST",
       "fundId": "63157e96-0693-426d-b0df-948bacdfdb08",
       "distributionType": "percentage",
-      "value": 50.0,
+      "value": 50.0
     },
     {
       "code": "EUROHIST",
       "fundId": "e9285a1c-1dfc-4380-868c-e74073003f43",
       "distributionType": "amount",
-      "value": 50.00,
+      "value": 50.00
     }
-  ],
+  ]
 }
