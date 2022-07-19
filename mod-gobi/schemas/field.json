@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Field description",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "Name of the field",
+      "type": "string"
+    },
+    "path": {
+      "description": "Path to field",
+      "type": "string"
+    },
+    "description": {
+      "description": "Description of the field",
+      "type": "string"
+    }
+  }
+}
