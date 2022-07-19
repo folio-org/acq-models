@@ -16,7 +16,7 @@
       "type": "object",
       "readonly": true,
       "description": "Gobi mapping",
-      "$ref": "mapping.json"
+      "$ref": "../../../../src/main/resources/mapping.json"
     }
   },
   "additionalProperties": false,
