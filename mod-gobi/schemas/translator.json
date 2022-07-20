@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Translator description",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "Name of the translator",
+      "type": "string"
+    },
+    "translator": {
+      "description": "Path to java method to process",
+      "type": "string"
+    },
+    "description": {
+      "description": "Description of the translator",
+      "type": "string"
+    }
+  }
+}

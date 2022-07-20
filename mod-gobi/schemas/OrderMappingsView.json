@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "mappingType": {
+      "type": "string",
+      "readonly": true,
+      "description": "The type of the GOBI mapping",
+      "enum": [
+        "Default",
+        "Custom"
+      ],
+      "default": "Default"
+    },
+    "mapping": {
+      "type": "object",
+      "readonly": true,
+      "description": "Gobi mapping",
+      "$ref": "../../../../src/main/resources/mapping.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "mappingType",
+    "mapping"
+  ]
+}
