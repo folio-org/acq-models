@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Order mapping view",
   "type": "object",
   "properties": {
     "mappingType": {
