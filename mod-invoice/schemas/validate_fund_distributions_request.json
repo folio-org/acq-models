@@ -12,7 +12,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "adjustment.json"
+        "$ref": "../../mod-invoice-storage/schemas/adjustment.json"
       }
     },
     "fundDistribution": {
@@ -29,6 +29,6 @@
     "additionalProperties": false,
     "required": [
       "subTotal",
-      "fundDistribution",
+      "fundDistribution"
     ]
 }
