@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Type of rollover. Action Commit means run real rollover",
+  "type": "string",
+  "enum": [
+    "Preview",
+    "Commit",
+    "Rollback"
+  ],
+  "javaEnums": [
+    {
+      "name": "PREVIEW",
+      "title": "Preview",
+      "description": "Run only budget and encumbrance rollover. Result will be not saved in real tables."
+    },
+    {
+      "name": "COMMIT",
+      "title": "Commit",
+      "description": "Run real for budgets, encumbrances and orders rollover. Result will be saved in real tables."
+    },
+    {
+      "name": "ROLLBACK",
+      "title": "Rollback",
+      "description": "Rollback budgets, encumbrances and orders rollover."
+    }
+  ],
+  "default": "Commit"
+}
