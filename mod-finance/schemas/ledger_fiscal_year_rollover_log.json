@@ -30,15 +30,15 @@
       "type": "string",
       "readonly": true
     },
+    "rolloverStatus": {
+      "description": "Final status of the rollover",
+      "type": "object",
+      "$ref": "../../mod-finance/schemas/rollover_status.json"
+    },
     "ledgerRolloverType": {
       "description": "Type of rollover. Action Commit means run real rollover",
       "type": "object",
       "$ref": "../../mod-finance/schemas/ledger_rollover_type.json",
-      "readonly": true
-    },
-    "metadata": {
-      "type": "object",
-      "$ref": "../../../raml-util/schemas/metadata.schema",
       "readonly": true
     }
   },
@@ -46,7 +46,7 @@
   "required": [
     "ledgerRolloverId",
     "startDate",
-    "status",
+    "rolloverStatus",
     "ledgerRolloverType"
   ]
 }

@@ -15,7 +15,7 @@
       "description": "Ledger UUID for which rollover was started",
       "$ref": "../../common/schemas/uuid.json"
     },
-    "action": {
+    "rolloverType": {
       "description": "Type of rollover. Action Commit means run real rollover",
       "type": "object",
       "$ref": "../../mod-finance/schemas/ledger_rollover_type.json"
