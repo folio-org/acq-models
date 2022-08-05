@@ -3,7 +3,7 @@
   "description": "Contains a list of budgets generated during the rollover. Also budgets include all calculated mounts",
   "type": "object",
   "properties": {
-    "budgets": {
+    "ledgerFiscalYearRolloverBudgets": {
       "description": "The list of fiscal year rollover errors",
       "type": "array",
       "items": {
@@ -18,7 +18,7 @@
   },
   "additionalProperties": false,
   "required": [
-    "budgets",
+    "ledgerFiscalYearRolloverBudgets",
     "totalRecords"
   ]
 }
