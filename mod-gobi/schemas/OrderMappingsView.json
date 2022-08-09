@@ -13,7 +13,7 @@
       ],
       "default": "Default"
     },
-    "mapping": {
+    "orderMapping": {
       "type": "object",
       "readonly": true,
       "description": "Gobi mapping",
