@@ -13,11 +13,11 @@
       ],
       "default": "Default"
     },
-    "mapping": {
+    "orderMappings": {
       "type": "object",
       "readonly": true,
       "description": "Gobi mapping",
-      "$ref": "../../../../src/main/resources/mapping.json"
+      "$ref": "order_mappings.json"
     }
   },
   "additionalProperties": false,

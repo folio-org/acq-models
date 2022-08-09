@@ -9,7 +9,7 @@
       "id": "orderMappingsViews",
       "items": {
         "type": "object",
-        "$ref": "OrderMappingsView.json"
+        "$ref": "order_mappings_view.json"
       }
     },
     "totalRecords": {
