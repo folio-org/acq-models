@@ -17,7 +17,7 @@
       "type": "object",
       "readonly": true,
       "description": "Gobi mapping",
-      "$ref": "OrderMappings.json"
+      "$ref": "order_mappings.json"
     }
   },
   "additionalProperties": false,
