@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Set of mapping fields",
   "type": "object",
   "properties": {
     "field": {
@@ -617,6 +618,7 @@
       ]
     },
     "dataSource": {
+      "description": "Set of data sources for translations",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -789,6 +791,7 @@
         },
         "dataSourceFieldName": {
           "from": {
+            "description": "Data source field name",
             "type": "string",
             "description": "GOBI field name"
           }
