@@ -790,8 +790,8 @@
           "$comment": "in the config json, the order of dataSource is important as this field refers to previous dataSource objects."
         },
         "dataSourceFieldName": {
+          "description": "Data source field name",
           "from": {
-            "description": "Data source field name",
             "type": "string",
             "description": "GOBI field name"
           }
