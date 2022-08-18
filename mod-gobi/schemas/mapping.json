@@ -655,37 +655,37 @@
             {
               "name": "LOOKUP_CONTRIBUTOR_NAME_TYPE_ID",
               "title": "lookupContributorNameTypeId",
-              "description": "Lookup contributions UUID"
+              "description": "Lookup contributor by name"
             },
             {
               "name": "LOOKUP_EXPENSE_CLASS_ID",
               "title": "lookupExpenseClassId",
-              "description": "Lookup expense class UUID"
+              "description": "Lookup expense class by code"
             },
             {
               "name": "LOOKUP_ACQUISITION_METHOD_IDS",
               "title": "lookupAcquisitionMethodIds",
-              "description": "Lookup acquisition method UUIDs"
+              "description": "Lookup acquisition method by value"
             },
             {
               "name": "LOOKUP_ACQUISITION_UNIT_DEFAULT_ACQ_UNIT_NAME",
               "title": "lookupAcquisitionUnitDefaultAcqUnitName",
-              "description": "Lookup acquisition unit UUIDs associated with this organizations account"
+              "description": "Lookup acquisition unit associated with this organizations account by name"
             },
             {
               "name": "LOOKUP_LOCATION_ID",
               "title": "lookupLocationId",
-              "description": "Lookup UUID of the (inventory) location record"
+              "description": "Lookup (inventory) location record by code"
             },
             {
               "name": "LOOKUP_MATERIAL_TYPE_ID",
               "title": "lookupMaterialTypeId",
-              "description": "Lookup UUID of the material Type"
+              "description": "Lookup material type by code"
             },
             {
               "name": "LOOKUP_FUND_ID",
               "title": "lookupFundId",
-              "description": "Lookup fund UUID"
+              "description": "Lookup fund by code"
             },
             {
               "name": "LOOKUP_MOCK",
@@ -695,42 +695,42 @@
             {
               "name": "LOOKUP_ORGANIZATION",
               "title": "lookupOrganization",
-              "description": "Lookup organization"
+              "description": "Lookup organization by vendor code"
             },
             {
               "name": "LOOKUP_PRODUCT_ID_TYPE",
               "title": "lookupProductIdType",
-              "description": "Lookup UUID corresponding to the type of product id"
+              "description": "Lookup corresponding product id type by name"
             },
             {
               "name": "LOOKUP_BILL_TO",
               "title": "lookupConfigAddress",
-              "description": "Lookup config address"
+              "description": "Lookup bill config address by ship-to name"
             },
             {
               "name": "LOOKUP_SHIP_TO",
               "title": "lookupConfigAddress",
-              "description": "Lookup config address"
+              "description": "Lookup ship config address by ship-to name"
             },
             {
               "name": "LOOKUP_SUFFIX",
               "title": "lookupSuffix",
-              "description": "Lookup suffix UUID for purchase order number"
+              "description": "Lookup suffix for purchase order number by name"
             },
             {
               "name": "LOOKUP_PREFIX",
               "title": "lookupPrefix",
-              "description": "Lookup prefix UUID for purchase order number"
+              "description": "Lookup prefix for purchase order number by name"
             },
             {
               "name": "LOOKUP_LINKED_PACKAGE",
               "title": "lookupLinkedPackage",
-              "description": "Lookup purchase order line UUID by order line number"
+              "description": "Lookup purchase order line by linked po line number"
             },
             {
               "name": "LOOKUP_CONFIG_ADDRESS",
               "title": "lookupConfigAddress",
-              "description": "Lookup config address"
+              "description": "Lookup config address by ship-to name"
             },
             {
               "name": "SEPARATE_ISBN_QUALIFIER",
