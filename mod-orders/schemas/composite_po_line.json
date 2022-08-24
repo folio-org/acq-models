@@ -37,16 +37,6 @@
       "type": "boolean",
       "default": false
     },
-    "alerts": {
-      "description": "alerts associated with this purchase order line",
-      "id": "alerts",
-      "type": "array",
-      "items": {
-        "description": "an alert record",
-        "type": "object",
-        "$ref": "../../mod-orders-storage/schemas/alert.json"
-      }
-    },
     "cancellationRestriction": {
       "description": "whether or not there are cancellation restrictions for this purchase order line",
       "type": "boolean"
@@ -54,16 +44,6 @@
     "cancellationRestrictionNote": {
       "description": "free-form notes related to cancellation restrictions",
       "type": "string"
-    },
-    "claims": {
-      "description": "claims associated with this purchase order line",
-      "id": "claims",
-      "type": "array",
-      "items": {
-        "description": "a claim record",
-        "type": "object",
-        "$ref": "../../mod-orders-storage/schemas/claim.json"
-      }
     },
     "collection": {
       "description": "whether or not this purchase order line is for a collection",
@@ -189,15 +169,6 @@
     "renewalNote": {
       "description": "Renewal note for this purchase order line",
       "type": "string"
-    },
-    "reportingCodes": {
-      "description": "a list of reporting codes associated with this purchase order line",
-      "id": "reportingCodes",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "$ref": "../../mod-orders-storage/schemas/reporting_code.json"
-      }
     },
     "requester": {
       "description": "who requested this purchase order line",
