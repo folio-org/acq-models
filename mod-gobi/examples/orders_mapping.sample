@@ -45,7 +45,7 @@
             "default": "USD"
           }
         },
-        .{
+        {
           "field": "FUND_ID",
           "dataSource": {
             "from": "//FundCode",
