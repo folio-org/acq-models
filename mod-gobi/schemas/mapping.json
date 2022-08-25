@@ -15,27 +15,21 @@
         "ACTIVATION_DUE",
         "ADDITIONAL_COST",
         "AGGREMENT_ID",
-        "ALERTS",
         "APPROVED",
         "ASSIGNED_TO",
         "BILL_TO",
         "CANCELLATION_RESTRICTION",
         "CANCELLATION_RESTRICTION_NOTE",
-        "CLAIMED",
-        "CLAIM_GRACE",
-        "CLAIM_SENT",
         "COLLECTION",
         "CONTRIBUTOR",
         "CONTRIBUTOR_NAME_TYPE",
         "CREATE_INVENTORY",
         "CURRENCY",
-        "DATE_ORDERED",
         "DESCRIPTION",
         "DISCOUNT",
         "DISCOUNT_TYPE",
         "DONOR",
         "EDITION",
-        "ENCUMBRANCE",
         "EXCHANGE_RATE",
         "EXPECTED_ACTIVATION",
         "EXPECTED_RECEIPT_DATE",
@@ -43,9 +37,6 @@
         "FUND_ID",
         "FUND_CODE",
         "FUND_PERCENTAGE",
-        "LICENSE_CODE",
-        "LICENSE_DESCRIPTION",
-        "LICENSE_REFERENCE",
         "LINKED_PACKAGE",
         "LIST_UNIT_PRICE",
         "LIST_UNIT_PRICE_ELECTRONIC",
@@ -54,7 +45,6 @@
         "MATERIAL_SUPPLIER",
         "MATERIAL_TYPE",
         "NOTES",
-        "NOTE_FROM_VENDOR",
         "ORDER_TYPE",
         "PACKAGE_DESIGNATION",
         "PO_LINE_DESCRIPTION",
@@ -68,7 +58,6 @@
         "PRODUCT_QUALIFIER",
         "PUBLICATION_DATE",
         "PUBLISHER",
-        "PURCHASE_ORDER_ID",
         "QUANTITY_ELECTRONIC",
         "QUANTITY_PHYSICAL",
         "RECEIPT_DATE",
@@ -82,8 +71,6 @@
         "ONGOING_NOTES",
         "ONGOING_REVIEW_DATE",
         "RECEIVING_WORKFLOW",
-        "REPORTING_CODE",
-        "REPORTING_DESCRIPTION",
         "REQUESTER",
         "RE_ENCUMBER",
         "RUSH",
@@ -151,11 +138,6 @@
           "description": "UUID of the agreement this purchase order line is related to"
         },
         {
-          "name": "ALERTS",
-          "title": "poLine.alerts",
-          "description": "Alerts associated with this purchase order line"
-        },
-        {
           "name": "APPROVED",
           "title": "po.approved",
           "description": "Whether or not the purchase order has been approved"
@@ -179,21 +161,6 @@
           "name": "CANCELLATION_RESTRICTION_NOTE",
           "title": "poLine.cancellationRestrictionNote",
           "description": "Free-form notes related to cancellation restrictions"
-        },
-        {
-          "name": "CLAIMED",
-          "title": "poLine.claims.claimed",
-          "description": "Whether or not this purchase order line has been claimed"
-        },
-        {
-          "name": "CLAIM_GRACE",
-          "title": "poLine.claims.grace",
-          "description": "The number of days after the expected receipt date during which claims should not be processed"
-        },
-        {
-          "name": "CLAIM_SENT",
-          "title": "poLine.claims.sent",
-          "description": "Date a claim was sent"
         },
         {
           "name": "COLLECTION",
@@ -221,11 +188,6 @@
           "description": "An ISO currency code"
         },
         {
-          "name": "DATE_ORDERED",
-          "title": "po.dateOrdered",
-          "description": "Date and time when purchase order was opened"
-        },
-        {
           "name": "DESCRIPTION",
           "title": "poLine.description",
           "description": "Description of the material"
@@ -249,11 +211,6 @@
           "name": "EDITION",
           "title": "poLine.edition",
           "description": "edition of the material"
-        },
-        {
-          "name": "ENCUMBRANCE",
-          "title": "poLine.fundDistribution.encumbrance",
-          "description": "The encumbrance Id UUID format"
         },
         {
           "name": "EXCHANGE_RATE",
@@ -289,21 +246,6 @@
           "name": "FUND_PERCENTAGE",
           "title": "poLine.fundDistribution.distributionType",
           "description": "Percentage or amount type of the value property"
-        },
-        {
-          "name": "LICENSE_CODE",
-          "title": "poLine.eresource.license.code",
-          "description": "License code"
-        },
-        {
-          "name": "LICENSE_DESCRIPTION",
-          "title": "poLine.eresource.license.description",
-          "description": "License description"
-        },
-        {
-          "name": "LICENSE_REFERENCE",
-          "title": "poLine.eresource.license.reference",
-          "description": "License reference"
         },
         {
           "name": "LINKED_PACKAGE",
@@ -344,11 +286,6 @@
           "name": "NOTES",
           "title": "po.notes",
           "description": "Free-form notes associated with this purchase order"
-        },
-        {
-          "name": "NOTE_FROM_VENDOR",
-          "title": "poLine.vendorDetail.noteFromVendor",
-          "description": "Free-form notes from the vendor"
         },
         {
           "name": "ORDER_TYPE",
@@ -416,11 +353,6 @@
           "description": "Publisher of the material"
         },
         {
-          "name": "PURCHASE_ORDER_ID",
-          "title": "poLine.purchaseOrderId",
-          "description": "UUID of this parent purchase order"
-        },
-        {
           "name": "QUANTITY_ELECTRONIC",
           "title": "poLine.cost.quantityElectronic",
           "description": "Quantity of electronic items in this purchase order line"
@@ -484,16 +416,6 @@
           "name": "RECEIVING_WORKFLOW",
           "title": "po.checkinItems",
           "description": "If true this will toggle the Check-in workflow for details associated with this PO line"
-        },
-        {
-          "name": "REPORTING_CODE",
-          "title": "poLine.reportingCodes.code",
-          "description": "A reporting code"
-        },
-        {
-          "name": "REPORTING_DESCRIPTION",
-          "title": "poLine.reportingCodes.description",
-          "description": "Description of this reporting code"
         },
         {
           "name": "REQUESTER",
