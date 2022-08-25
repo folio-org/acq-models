@@ -687,7 +687,7 @@
           "description": "Method to combine the specified type with other values"
         },
         "default": {
-          "type": " string",
+          "type": "string",
           "description": "default value"
         },
         "defaultMapping": {
