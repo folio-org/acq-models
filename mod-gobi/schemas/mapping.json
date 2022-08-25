@@ -17,7 +17,6 @@
         "AGGREMENT_ID",
         "APPROVED",
         "ASSIGNED_TO",
-        "BILL_TO",
         "CANCELLATION_RESTRICTION",
         "CANCELLATION_RESTRICTION_NOTE",
         "COLLECTION",
@@ -75,7 +74,6 @@
         "RE_ENCUMBER",
         "RUSH",
         "SELECTOR",
-        "SHIP_TO",
         "SOURCE",
         "SUBSCRIPTION_FROM",
         "SUBSCRIPTION_INTERVAL",
@@ -146,11 +144,6 @@
           "name": "ASSIGNED_TO",
           "title": "po.assignedTo",
           "description": "The UUID format string"
-        },
-        {
-          "name": "BILL_TO",
-          "title": "po.billTo",
-          "description": "The bill to Id UUID format"
         },
         {
           "name": "CANCELLATION_RESTRICTION",
@@ -438,11 +431,6 @@
           "description": "Who selected this material"
         },
         {
-          "name": "SHIP_TO",
-          "title": "po.shipTo",
-          "description": "The UUID format string"
-        },
-        {
           "name": "SOURCE",
           "title": "poLine.source",
           "description": "The source of the Order"
@@ -560,8 +548,6 @@
             "lookupMock",
             "lookupOrganization",
             "lookupProductIdType",
-            "lookupBillTo",
-            "lookupShipTo",
             "lookupSuffix",
             "lookupPrefix",
             "lookupLinkedPackage",
@@ -623,16 +609,6 @@
               "name": "LOOKUP_PRODUCT_ID_TYPE",
               "title": "lookupProductIdType",
               "description": "Lookup UUID corresponding to the type of product id"
-            },
-            {
-              "name": "LOOKUP_BILL_TO",
-              "title": "lookupConfigAddress",
-              "description": "Lookup config address"
-            },
-            {
-              "name": "LOOKUP_SHIP_TO",
-              "title": "lookupConfigAddress",
-              "description": "Lookup config address"
             },
             {
               "name": "LOOKUP_SUFFIX",
