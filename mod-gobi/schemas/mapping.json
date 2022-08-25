@@ -15,6 +15,7 @@
         "ACTIVATION_DUE",
         "ADDITIONAL_COST",
         "AGGREMENT_ID",
+        "BILL_TO",
         "APPROVED",
         "ASSIGNED_TO",
         "CANCELLATION_RESTRICTION",
@@ -74,6 +75,7 @@
         "RE_ENCUMBER",
         "RUSH",
         "SELECTOR",
+        "SHIP_TO",
         "SOURCE",
         "SUBSCRIPTION_FROM",
         "SUBSCRIPTION_INTERVAL",
@@ -139,6 +141,11 @@
           "name": "APPROVED",
           "title": "po.approved",
           "description": "Whether or not the purchase order has been approved"
+        },
+        {
+          "name": "BILL_TO",
+          "title": "po.billTo",
+          "description": "The bill to Id UUID format"
         },
         {
           "name": "ASSIGNED_TO",
@@ -431,6 +438,11 @@
           "description": "Who selected this material"
         },
         {
+          "name": "SHIP_TO",
+          "title": "po.shipTo",
+          "description": "The UUID format string"
+        },
+        {
           "name": "SOURCE",
           "title": "poLine.source",
           "description": "The source of the Order"
@@ -675,7 +687,7 @@
           "description": "Method to combine the specified type with other values"
         },
         "default": {
-          "type": "string",
+          "type": " string",
           "description": "default value"
         },
         "defaultMapping": {
