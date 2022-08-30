@@ -583,14 +583,14 @@
               "description": "Lookup acquisition method UUIDs"
             },
             {
-              "name": "LOOKUP_ACQUISITION_UNIT_DEFAULT",
-              "title": "lookupAcquisitionUnitDefault",
-              "description": "Lookup acquisition unit UUIDs associated with default name"
+              "name": "LOOKUP_ACQUISITION_UNIT_BY_NAME",
+              "title": "lookupAcquisitionUnitByName",
+              "description": "Lookup acquisition unit UUIDs associated with name"
             },
             {
               "name": "LOOKUP_ACQUISITION_UNIT_BY_ACCOUNT",
               "title": "lookupAcquisitionUnitByAccount",
-              "description": "Lookup acquisition unit UUIDs associated with organization's account"
+              "description": "Lookup acquisition unit UUIDs associated with account"
             },
             {
               "name": "LOOKUP_LOCATION_ID",
