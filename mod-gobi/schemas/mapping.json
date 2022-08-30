@@ -548,7 +548,7 @@
             "lookupExpenseClassId",
             "lookupAcquisitionMethodIds",
             "lookupAcquisitionUnitIdsByName",
-            "lookupAcquisitionUnitByIdsAccount",
+            "lookupAcquisitionUnitIdsByAccount",
             "lookupLocationId",
             "lookupMaterialTypeId",
             "lookupFundId",
@@ -589,7 +589,7 @@
             },
             {
               "name": "LOOKUP_ACQUISITION_UNIT_IDS_BY_ACCOUNT",
-              "title": "lookupAcquisitionUnitByIdsAccount",
+              "title": "lookupAcquisitionUnitIdsByAccount",
               "description": "Lookup acquisition unit UUIDs associated with account"
             },
             {
