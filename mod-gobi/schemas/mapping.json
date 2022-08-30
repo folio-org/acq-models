@@ -9,8 +9,7 @@
       "enum": [
         "ACCESS_PROVIDER",
         "ACQUISITION_METHOD",
-        "LOOKUP_ACQUISITION_UNIT_DEFAULT_ACQ_UNIT_NAME",
-        "LOOKUP_ACQUISITION_UNIT_BY_VENDOR_ACC_NUMBER",
+        "ACQUISITION_UNIT",
         "ACTIVATED",
         "ACTIVATION_DUE",
         "ADDITIONAL_COST",
@@ -108,14 +107,9 @@
           "description": "UUID of the acquisition method for this purchase order line"
         },
         {
-          "name": "LOOKUP_ACQUISITION_UNIT_DEFAULT_ACQ_UNIT_NAME",
+          "name": "ACQUISITION_UNIT",
           "title": "po.acqUnitIds",
           "description": "Acquisition unit UUIDs associated with this organizations account"
-        },
-        {
-          "name": "LOOKUP_ACQUISITION_UNIT_BY_VENDOR_ACC_NUMBER",
-          "title": "po.acqUnitIds",
-          "description": "Acquisition unit ids associated with this purchase order"
         },
         {
           "name": "ACTIVATED",
@@ -553,7 +547,8 @@
             "lookupContributorNameTypeId",
             "lookupExpenseClassId",
             "lookupAcquisitionMethodIds",
-            "lookupAcquisitionUnitDefaultAcqUnitName",
+            "lookupAcquisitionUnitIdsByName",
+            "lookupAcquisitionUnitIdsByAccount",
             "lookupLocationId",
             "lookupMaterialTypeId",
             "lookupFundId",
@@ -588,9 +583,14 @@
               "description": "Lookup acquisition method UUIDs"
             },
             {
-              "name": "LOOKUP_ACQUISITION_UNIT_DEFAULT_ACQ_UNIT_NAME",
-              "title": "lookupAcquisitionUnitDefaultAcqUnitName",
-              "description": "Lookup acquisition unit UUIDs associated with this organizations account"
+              "name": "LOOKUP_ACQUISITION_UNIT_IDS_BY_NAME",
+              "title": "lookupAcquisitionUnitIdsByName",
+              "description": "Lookup acquisition unit UUIDs associated with name"
+            },
+            {
+              "name": "LOOKUP_ACQUISITION_UNIT_IDS_BY_ACCOUNT",
+              "title": "lookupAcquisitionUnitIdsByAccount",
+              "description": "Lookup acquisition unit UUIDs associated with account"
             },
             {
               "name": "LOOKUP_LOCATION_ID",
