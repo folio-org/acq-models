@@ -3,7 +3,7 @@
   "description": "Contains a list of rollover runs",
   "type": "object",
   "properties": {
-    "logs": {
+    "ledgerFiscalYearRolloverLogs": {
       "description": "The list of  rollover runs",
       "type": "array",
       "items": {

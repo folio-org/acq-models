@@ -4,8 +4,6 @@
       "ledgerRolloverId": "56ac60b4-122d-1e1c-9acb-8293df12d16d",
       "startDate": "2022-01-01T00:00:00Z",
       "endDate": "2022-01-01T00:10:12Z",
-      "errorsLink": "/finance/ledger-rollovers-errors?query=ledgerRolloverId==56ac60b4-122d-1e1c-9acb-8293df12d16d",
-      "budgetsLink": "/finance/ledger-rollovers-budgets?query=ledgerRolloverId==56ac60b4-122d-1e1c-9acb-8293df12d16d",
       "rolloverStatus": "Success",
       "ledgerRolloverType": "Commit"
     }

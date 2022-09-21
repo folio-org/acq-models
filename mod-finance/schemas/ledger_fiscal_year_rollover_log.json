@@ -20,16 +20,6 @@
       "format": "date-time",
       "readonly": true
     },
-    "errorsLink": {
-      "description": "The name of the ledger",
-      "type": "string",
-      "readonly": true
-    },
-    "budgetsLink": {
-      "description": "The name of the ledger",
-      "type": "string",
-      "readonly": true
-    },
     "rolloverStatus": {
       "description": "Final status of the rollover",
       "type": "object",
