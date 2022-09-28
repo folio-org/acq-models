@@ -22,7 +22,7 @@
     "fundDetails": {
       "description": "Fund details for a budget",
       "type": "object",
-      "$ref": "ledger_fiscal_year_rollover_fund_details.json"
+      "$ref": "fund_details.json"
     },
     "budgetStatus": {
       "description": "The status of the budget",

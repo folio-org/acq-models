@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Fund details for ledger fiscal year rollover budget",
+  "description": "Fund details dto",
   "type": "object",
   "properties": {
     "id": {
