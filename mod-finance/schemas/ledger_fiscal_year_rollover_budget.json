@@ -24,6 +24,11 @@
       "type": "object",
       "$ref": "fund_details.json"
     },
+    "expenseClassDetails": {
+      "description": "Expense class details for a budget",
+      "type": "object",
+      "$ref": "budget_expense_class_totals.json"
+    },
     "budgetStatus": {
       "description": "The status of the budget",
       "type": "string",
