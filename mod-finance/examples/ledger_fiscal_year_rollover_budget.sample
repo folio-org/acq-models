@@ -30,6 +30,16 @@
       "47f504bd-0c1b-498e-a2ae-e2f0a0cea273"
     ]
   },
+  "expenseClassDetails": {
+     "id": "9e662186-7d3e-4732-baaa-93967ccc597e",
+     "expenseClassName": "Electronic",
+     "expenseClassCode": "Elec",
+     "expenseClassStatus": "Active",
+     "encumbered": "30.05",
+     "awaitingPayment": "0.0",
+     "expended": "103.0",
+     "percentageExpended": "51.5"
+  },
   "budgetStatus": "Active",
   "allowableEncumbrance": 95,
   "allowableExpenditure": 100,
