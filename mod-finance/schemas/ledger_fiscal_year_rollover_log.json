@@ -8,6 +8,11 @@
       "$ref": "../../common/schemas/uuid.json",
       "readonly": true
     },
+    "ledgerId": {
+      "description": "Ledger UUID",
+      "$ref": "../../common/schemas/uuid.json",
+      "readonly": true
+    },
     "startDate": {
       "description": "This is \"createdDate\" from rollover metadata. ",
       "type": "string",

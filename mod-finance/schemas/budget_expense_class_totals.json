@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Budget expense class totals schema",
+  "javaType": "org.folio.rest.jaxrs.model.BudgetExpenseClassTotal",
   "type": "object",
   "properties": {
     "id": {
@@ -8,6 +9,10 @@
       "$ref": "../../common/schemas/uuid.json"
     },
     "expenseClassName": {
+      "description": "The name of the expense class",
+      "type": "string"
+    },
+    "expenseClassCode": {
       "description": "The name of the expense class",
       "type": "string"
     },

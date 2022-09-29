@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Fund details dto",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "UUID of this fund",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "name": {
+      "description": "The name of the fund",
+      "type": "string"
+    },
+    "code": {
+      "description": "The code of the fund",
+      "type": "string"
+    },
+    "fundStatus": {
+      "description": "The current status of this fund",
+      "type": "string",
+      "enum": [
+        "Active",
+        "Frozen",
+        "Inactive"
+      ]
+    },
+    "fundTypeId": {
+      "description": "UUID of the fund type associated with this fund",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "fundTypeName": {
+      "description": "Name of the fund type associated with this fund",
+      "type": "string"
+    },
+    "externalAccountNo": {
+      "description": "Corresponding account in the financial system. Will be recorded in payment generated as well.",
+      "type": "string"
+    },
+    "description": {
+      "description": "The description of this fund",
+      "type": "string"
+    },
+    "acqUnitIds": {
+      "description": "acquisition unit ids associated with this fund",
+      "type": "array",
+      "items": {
+        "$ref": "../../common/schemas/uuid.json"
+      }
+    },
+    "allocatedFromIds": {
+      "description": "All the funds ids that this fund is allowed to receive money from. This would be 1 fund or none. If this field is blank their is no restriction on allocating to this fund",
+      "type": "array",
+      "items": {
+        "description": "UUID of the fund this fund is allowed to receive money from",
+        "$ref": "../../common/schemas/uuid.json"
+      }
+    },
+    "allocatedFromNames": {
+      "description": "All the funds names that this fund is allowed to receive money from. This would be 1 fund or none. If this field is blank their is no restriction on allocating to this fund",
+      "type": "array",
+      "items": {
+        "description": "UUID of the fund this fund is allowed to receive money from",
+        "type": "string"
+      }
+    },
+    "allocatedToIds": {
+      "description": "All the fund ids that this fund is allowed to send money to. This could be one or many.",
+      "type": "array",
+      "items": {
+        "description": "UUID of the fund this fund is allowed to send money to",
+        "$ref": "../../common/schemas/uuid.json"
+      }
+    },
+    "allocatedToNames": {
+      "description": "All the fund names that this fund is allowed to send money to. This could be one or many.",
+      "type": "array",
+      "items": {
+        "description": "UUID of the fund this fund is allowed to send money to",
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "code",
+    "fundStatus",
+    "name"
+  ]
+}
