@@ -15,7 +15,27 @@
       "description": "Export type",
       "type": "string"
     },
-   "exportDate": {
+    "jobStatus": {
+      "description": "Job status",
+      "type": "string"
+    },
+    "exportMethod": {
+      "description": "Export method name",
+      "type": "string"
+    },
+    "exportFileName": {
+      "description": "Export file name",
+      "type": "string"
+    },
+    "vendorId": {
+      "description": "UUID of vendor",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "vendorName": {
+      "description": "Vendor name",
+      "type": "string"
+    },
+    "exportDate": {
       "description": "Export date",
       "type": "string",
       "format": "date-time"
