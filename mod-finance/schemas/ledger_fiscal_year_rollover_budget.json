@@ -26,8 +26,11 @@
     },
     "expenseClassDetails": {
       "description": "Expense class details for a budget",
-      "type": "object",
-      "$ref": "budget_expense_class_totals.json"
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "budget_expense_class_totals.json"
+      }
     },
     "budgetStatus": {
       "description": "The status of the budget",
