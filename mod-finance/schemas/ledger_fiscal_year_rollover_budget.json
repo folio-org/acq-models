@@ -11,6 +11,10 @@
       "type": "integer",
       "description": "Record version for optimistic locking"
     },
+    "budgetId": {
+      "description": "Ledger fiscal year rollover budget UUID",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "ledgerRolloverId": {
       "description": "Ledger fiscal year rollover UUID",
       "$ref": "../../common/schemas/uuid.json"
