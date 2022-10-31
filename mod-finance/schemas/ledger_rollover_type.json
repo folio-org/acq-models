@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Type of rollover. Action Commit means run real rollover",
-  "javaType": "org.folio.rest.jaxrs.model.RolloverType",
+  "javaName": "RolloverType",
   "type": "string",
   "enum": [
     "Preview",
