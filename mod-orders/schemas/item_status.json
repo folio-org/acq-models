@@ -7,8 +7,23 @@
     "On order",
     "Available",
     "In transit",
-    "Undefined",
-    "Order closed"
+    "Order closed",
+    "Aged to lost",
+    "Awaiting pickup",
+    "Awaiting delivery",
+    "Checked out",
+    "Claimed returned",
+    "Declared lost",
+    "In process (non-requestable)",
+    "Intellectual item",
+    "Long missing",
+    "Lost and paid",
+    "Missing",
+    "Paged",
+    "Restricted",
+    "Unavailable",
+    "Unknown",
+    "Withdrawn"
   ],
   "default": "In process"
 }
