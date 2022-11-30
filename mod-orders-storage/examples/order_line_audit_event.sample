@@ -1,0 +1,112 @@
+{
+  "id": "99fb699a-cdf1-11e9-a9d9-f2801f1b9aa1",
+  "action": "Edit",
+  "orderId": "c4abf6c3-4bd5-4464-999b-c66cfb6f1cf9",
+  "orderLineId": "c4abf6c3-4bd5-4464-999b-c66cfb6f1cf9",
+  "userId": "58edf8c3-89e4-559c-9aed-aae637a3f40b",
+  "eventDate": "2022-11-10T10:16:53.804Z",
+  "actionDate": "2022-11-10T10:17:53.807Z",
+  "orderLineSnapshot":
+    {
+      "id": "b86ee25c-2ba5-4c08-a2c2-7b5f6b9547de",
+      "cost": {
+        "currency": "USD",
+        "discount": 1,
+        "discountType": "percentage",
+        "listUnitPrice": 10,
+        "additionalCost": 3,
+        "quantityPhysical": 1,
+        "poLineEstimatedPrice": 12.9
+      },
+      "rush": true,
+      "tags": {
+        "tagList": [
+          "important"
+        ]
+      },
+      "donor": "donor",
+      "alerts": [],
+      "claims": [],
+      "source": "User",
+      "details": {
+        "productIds": [
+          {
+            "productId": "123",
+            "qualifier": "Qualifier",
+            "productIdType": "7f907515-a1bf-4513-8a38-92e1a07c539d"
+          }
+        ],
+        "receivingNote": "Some receiving note",
+        "subscriptionTo": "2022-11-11T00:00:00.000+00:00",
+        "subscriptionFrom": "2022-11-03T00:00:00.000+00:00",
+        "subscriptionInterval": 0
+      },
+      "edition": "rew",
+      "metadata": {
+        "createdDate": "2022-11-10T09:28:08.367Z",
+        "updatedDate": "2022-11-10T10:16:53.804Z",
+        "createdByUserId": "58edf8c3-89e4-559c-9aed-aae637a3f40b",
+        "updatedByUserId": "58edf8c3-89e4-559c-9aed-aae637a3f40b"
+      },
+      "physical": {
+        "volumes": [],
+        "receiptDue": "2022-11-24T00:00:00.000+00:00",
+        "materialType": "1a54b431-2e4f-452d-9cae-9cee66c9a892",
+        "createInventory": "Instance, Holding, Item",
+        "materialSupplier": "e0fb5df2-cdf1-11e8-a8d5-f2801f1b9fd1",
+        "expectedReceiptDate": "2022-11-30T00:00:00.000+00:00"
+      },
+      "selector": "selector",
+      "isPackage": false,
+      "locations": [
+        {
+          "quantity": 1,
+          "locationId": "fcd64ce1-6995-48f0-840e-89ffa2288371",
+          "quantityPhysical": 1
+        }
+      ],
+      "publisher": "Library",
+      "requester": "requester",
+      "collection": true,
+      "description": "internal note",
+      "orderFormat": "Physical Resource",
+      "receiptDate": "2022-11-11T00:00:00.000+00:00",
+      "checkinItems": false,
+      "contributors": [
+        {
+          "contributor": "Sport",
+          "contributorNameTypeId": "2e48e713-17f3-4c13-a9f8-23845bb210aa"
+        }
+      ],
+      "poLineNumber": "pref10000suf-1",
+      "vendorDetail": {
+        "instructions": "Instructions to vendor\n",
+        "vendorAccount": "1234",
+        "referenceNumbers": [
+          {
+            "refNumber": "1234",
+            "refNumberType": "Vendor continuation reference number"
+          }
+        ]
+      },
+      "paymentStatus": "Payment Not Required",
+      "receiptStatus": "Pending",
+      "reportingCodes": [],
+      "titleOrPackage": "Sport",
+      "automaticExport": true,
+      "purchaseOrderId": "c4abf6c3-4bd5-4464-999b-c66cfb6f1cf9",
+      "fundDistribution": [
+        {
+          "code": "AFRICAHIST",
+          "value": 100,
+          "fundId": "7fbd5d84-62d1-44c6-9c45-6cb173998bbd",
+          "expenseClassId": "1bcc3247-99bf-4dca-9b0f-7bc51a2998c2",
+          "distributionType": "percentage"
+        }
+      ],
+      "acquisitionMethod": "306489dd-0053-49ee-a068-c316444a8f55",
+      "poLineDescription": "Line description\n",
+      "cancellationRestriction": true,
+      "cancellationRestrictionNote": "Cancellation description\n"
+    }
+}
