@@ -1,0 +1,39 @@
+{
+  "id": "99fb699a-cdf1-11e9-a9d9-f2801f1b9aa1",
+  "action": "Edit",
+  "orderId": "c4abf6c3-4bd5-4464-999b-c66cfb6f1cf9",
+  "userId": "58edf8c3-89e4-559c-9aed-aae637a3f40b",
+  "eventDate": "2022-11-10T09:30:00.333Z",
+  "actionDate": "2022-11-10T09:29:00.578Z",
+  "orderSnapshot":
+    {
+      "id": "c4abf6c3-4bd5-4464-999b-c66cfb6f1cf9",
+      "tags": {
+        "tagList": [
+          "amazon"
+        ]
+      },
+      "notes": [
+        "Check credit card statement to make sure payment shows up"
+      ],
+      "billTo": "5f8a321e-6b38-4d90-92d4-bf08f91a2242",
+      "shipTo": "f7c36792-05f7-4c8c-969d-103ac6763187",
+      "vendor": "e0fb5df2-cdf1-11e8-a8d5-f2801f1b9fd1",
+      "approved": true,
+      "manualPo": false,
+      "metadata": {
+        "createdDate": "2022-11-10T09:22:15.808Z",
+        "updatedDate": "2022-11-10T09:29:00.578Z",
+        "createdByUserId": "58edf8c3-89e4-559c-9aed-aae637a3f40b",
+        "updatedByUserId": "58edf8c3-89e4-559c-9aed-aae637a3f40b"
+      },
+      "poNumber": "pref10000suf",
+      "template": "4dee318b-f5b3-40dc-be93-cc89b8c45b6f",
+      "orderType": "One-Time",
+      "acqUnitIds": [],
+      "reEncumber": true,
+      "poNumberPrefix": "pref",
+      "poNumberSuffix": "suf",
+      "workflowStatus": "Pending"
+    }
+}
