@@ -552,7 +552,6 @@
             "lookupLocationId",
             "lookupMaterialTypeId",
             "lookupFundId",
-            "lookupMock",
             "lookupOrganization",
             "lookupProductIdType",
             "lookupSuffix",
@@ -606,11 +605,6 @@
               "name": "LOOKUP_FUND_ID",
               "title": "lookupFundId",
               "description": "Lookup fund UUID"
-            },
-            {
-              "name": "LOOKUP_MOCK",
-              "title": "lookupMock",
-              "description": "Lookup mock"
             },
             {
               "name": "LOOKUP_ORGANIZATION",
