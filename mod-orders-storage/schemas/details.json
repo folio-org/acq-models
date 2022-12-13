@@ -7,6 +7,11 @@
       "description": "notes regarding receiving instructions",
       "type": "string"
     },
+    "isAcknowledged": {
+      "description": "Flag for acknowledge receiving note",
+      "type": "boolean",
+      "default": false
+    },
     "productIds": {
       "description": "a list of product identifiers",
       "id": "productIds",
