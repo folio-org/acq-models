@@ -7,6 +7,20 @@
       "description": "Invoice line amount before adjustments are applied",
       "type": "number"
     },
+    "currency": {
+      "description": "An ISO currency code",
+      "type": "string"
+    },
+    "fundDistribution": {
+      "description": "fund distribution records for this purchase order line",
+      "id": "fundDistribution",
+      "type": "array",
+      "items": {
+        "description": "a fund distribution record",
+        "type": "object",
+        "$ref": "../../mod-invoice-storage/schemas/fund_distribution.json"
+      }
+    },
     "adjustments": {
       "description": "Defined in settings - the amount field will be editable and pro-rate toggle will be editable if enabled for that adjustment",
       "type": "array",
@@ -14,21 +28,12 @@
         "type": "object",
         "$ref": "../../mod-invoice-storage/schemas/adjustment.json"
       }
-    },
-    "fundDistribution": {
-      "description": "the UUIDs of the fund distribution records for this purchase order line",
-      "id": "fundDistribution",
-      "type": "array",
-      "items": {
-        "description": "a fund distribution record",
-        "type": "object",
-        "$ref": "../../mod-orders-storage/schemas/fund_distribution.json"
-      }
     }
-   },
-    "additionalProperties": false,
-    "required": [
-      "subTotal",
-      "fundDistribution"
-    ]
+  },
+  "additionalProperties": false,
+  "required": [
+    "subTotal",
+    "currency",
+    "fundDistribution"
+  ]
 }
