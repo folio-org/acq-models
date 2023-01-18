@@ -107,6 +107,10 @@
       "$ref": "../../../raml-util/schemas/metadata.schema",
       "readonly": true,
       "type": "object"
+    },
+    "deleted": {
+      "description": "Indicates that the specified transaction was soft deleted",
+      "type": "boolean"
     }
   },
   "required": [
