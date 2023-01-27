@@ -103,10 +103,6 @@
       "description": "Voided amount, not to be counted in budget totals",
       "type": "number"
     },
-    "deleted": {
-      "description": "Indicates that the specified transaction was soft deleted",
-      "type": "boolean"
-    },
     "metadata": {
       "$ref": "../../../raml-util/schemas/metadata.schema",
       "readonly": true,
