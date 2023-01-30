@@ -13,10 +13,15 @@
       "type": "boolean",
       "default": false
     },
-    "rolloverAvailable": {
-      "description": "Should available amount needs to be rollover",
-      "type": "boolean",
-      "default": false
+    "rolloverBasedOn": {
+      "description": "Which type of value to be rollover: None, CashBalance or Available",
+      "type": "string",
+      "enum": [
+        "None",
+        "CashBalance",
+        "Available"
+      ],
+      "default": "None"
     },
     "setAllowances": {
       "description": "Indicate to get Allowances from previous year budget if false and if true then values will be specified",
