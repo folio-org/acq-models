@@ -13,7 +13,7 @@
       "type": "boolean",
       "default": false
     },
-    "rolloverBasedOn": {
+    "rolloverBudgetValue": {
       "description": "Which type of value to be rollover: None, CashBalance or Available",
       "type": "string",
       "enum": [
