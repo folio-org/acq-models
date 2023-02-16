@@ -14,7 +14,7 @@ name: api-schema-lint
 
 env:
   API_DIRECTORIES: '.'
-  API_EXCLUDES: ''
+  API_EXCLUDES: 'folio-tools'
 
 on: [push, pull_request]
 
