@@ -67,6 +67,14 @@
         "$ref": "../../common/schemas/uuid.json"
       }
     },
+    "donorOrganizationIds": {
+      "description": "donor organization ids associated with this fund",
+      "type": "array",
+      "items": {
+        "description": "UUID of an donor organization record",
+        "$ref": "../../common/schemas/uuid.json"
+      }
+    },
     "tags": {
       "type" : "object",
       "description": "arbitrary tags associated with this fund",
