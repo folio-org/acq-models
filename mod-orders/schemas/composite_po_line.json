@@ -96,6 +96,14 @@
       "description": "the donor contributing to this purchase order line",
       "type": "string"
     },
+    "donorOrganizationIds": {
+      "description": "donor organization ids associated with this fund",
+      "type": "array",
+      "items": {
+        "description": "UUID of an donor organization record",
+        "$ref": "../../common/schemas/uuid.json"
+      }
+    },
     "eresource": {
       "description": "eresource-related details of this purchase order line",
       "type": "object",
