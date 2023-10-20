@@ -102,8 +102,7 @@
       "items": {
         "description": "UUID of an donor organization record",
         "$ref": "../../common/schemas/uuid.json"
-      },
-      "index": true
+      }
     },
     "eresource": {
       "description": "eresource-related details of this purchase order line",
