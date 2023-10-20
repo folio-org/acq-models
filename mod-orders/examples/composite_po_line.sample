@@ -57,8 +57,8 @@
   },
   "donor": "ABCDEFGHIJKLM",
   "donorOrganizationIds": [
-      "d926d900-e27d-46d6-bba8-31e9d5c2cf44",
-      "077274ad-6b4f-4c28-9779-6d381e7a1ca1"
+    "d926d900-e27d-46d6-bba8-31e9d5c2cf44",
+    "077274ad-6b4f-4c28-9779-6d381e7a1ca1"
   ],
   "eresource": {
     "activated": false,
