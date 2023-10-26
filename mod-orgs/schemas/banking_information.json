@@ -11,6 +11,14 @@
       "description": "The unique id of organization",
       "$ref": "../../common/schemas/uuid.json"
     },
+    "addressId": {
+      "description": "The unique id of address",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "accountTypeId": {
+      "description": "The unique id of accountType",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "bankName": {
       "description": "The bank name",
       "type": "string"
