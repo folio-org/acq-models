@@ -101,6 +101,14 @@
         "$ref": "../../common/schemas/uuid.json"
       }
     },
+    "privilegedContacts": {
+      "description": "An array of privileged contact record IDs",
+      "type": "array",
+      "items": {
+        "description": "UUID of a privileged contact record",
+        "$ref": "../../common/schemas/uuid.json"
+      }
+    },
     "agreements": {
       "id": "agreement",
       "description": "The the list of agreements for this organization",
