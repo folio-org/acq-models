@@ -1,0 +1,31 @@
+{
+  "bankingInformation": [
+    {
+      "id": "c59680de-3e0e-46d6-a0a1-62528e8e92ae",
+      "organizationId": "fde0af0b-9735-45c9-b9cb-3f3ee989bba9",
+      "bankName": "TRC",
+      "bankAccountNumber": "123456",
+      "transitNumber": "654321",
+      "notes": "Best one",
+      "isPrimaryBankingInformation": false,
+      "metadata": {
+        "createdDate": "2023-10-11T00:00:00.000+0000",
+        "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
+      }
+    },
+    {
+      "id": "b6f4aba8-fe60-43f4-bd7b-2ce60bb0f60b",
+      "organizationId": "1efbd4e0-748c-465a-82fc-8ce520f849ac",
+      "bankName": "GOR",
+      "bankAccountNumber": "56789",
+      "transitNumber": "98765",
+      "notes": "Second",
+      "isPrimaryBankingInformation": false,
+      "metadata": {
+        "createdDate": "2023-10-11T00:00:00.000+0000",
+        "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
+      }
+    }
+  ],
+  "totalRecords": 2
+}
