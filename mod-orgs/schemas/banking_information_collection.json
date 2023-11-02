@@ -3,10 +3,10 @@
   "description": "Collection of banking information records",
   "type": "object",
   "properties": {
-    "bankingInformation": {
+    "bankingInformationCollection": {
       "description": "The list of banking information in this collection",
       "type": "array",
-      "id": "bankingInformation",
+      "id": "bankingInformationCollection",
       "items": {
         "type": "object",
         "$ref": "banking_information.json"
@@ -19,7 +19,7 @@
   },
   "additionalProperties": false,
   "required": [
-    "bankingInformation",
+    "bankingInformationCollection",
     "totalRecords"
   ]
 }
