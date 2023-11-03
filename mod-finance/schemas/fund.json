@@ -75,6 +75,14 @@
         "$ref": "../../common/schemas/uuid.json"
       }
     },
+    "locationIds": {
+      "description": "location ids associated with this fund",
+      "type": "array",
+      "items": {
+        "description": "UUID of an location record",
+        "$ref": "../../common/schemas/uuid.json"
+      }
+    },
     "tags": {
       "type" : "object",
       "description": "arbitrary tags associated with this fund",
