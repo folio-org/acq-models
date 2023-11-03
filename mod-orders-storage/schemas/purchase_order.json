@@ -3,9 +3,6 @@
   "description": "purchase order",
   "type": "object",
   "javaName": "PurchaseOrder",
-  "extends" : {
-    "$ref" : "../../common/schemas/entity.json"
-  },
   "properties": {
     "id": {
       "description": "UUID of this purchase order",
