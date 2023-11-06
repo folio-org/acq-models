@@ -27,6 +27,8 @@
       "donor": "donor",
       "alerts": [],
       "claims": [],
+      "claimingActive": false,
+      "claimingInterval": 0,
       "source": "User",
       "details": {
         "productIds": [

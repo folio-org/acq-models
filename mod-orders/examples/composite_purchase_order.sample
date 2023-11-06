@@ -64,6 +64,8 @@
           "grace": 30
         }
       ],
+      "claimingActive": false,
+      "claimingInterval": 0,
       "collection": false,
       "contributors": [
         {
