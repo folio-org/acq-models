@@ -95,6 +95,13 @@
       "type": "boolean",
       "default": false
     },
+    "acqUnitIds": {
+      "description": "acquisition unit ids associated with this title",
+      "type": "array",
+      "items": {
+        "$ref": "../../common/schemas/uuid.json"
+      }
+    },
     "metadata": {
       "type": "object",
       "$ref": "../../../raml-util/schemas/metadata.schema",
