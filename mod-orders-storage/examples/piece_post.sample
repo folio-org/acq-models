@@ -13,5 +13,7 @@
   "copyNumber": "94753",
   "receivingStatus": "Claim delayed",
   "supplement": true,
-  "receiptDate": "2018-10-11T00:00:00.000Z"
+  "receiptDate": "2018-10-11T00:00:00.000Z",
+  "claimingInterval": 0,
+  "statusUpdatedDate": "2018-10-11T00:00:00.000Z"
 }

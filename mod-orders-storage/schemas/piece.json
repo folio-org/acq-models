@@ -87,6 +87,16 @@
       "description": "The date associated item is actually received",
       "type": "string",
       "format": "date-time"
+    },
+    "statusUpdatedDate": {
+      "description": "Date when the status of this piece was last updated",
+      "type": "string",
+      "format": "date-time"
+    },
+    "claimingInterval": {
+      "description": "Time interval (in days) for processing claims related to this piece",
+      "type": "integer",
+      "default": 0
     }
   },
   "additionalProperties": false,
