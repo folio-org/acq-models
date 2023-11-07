@@ -17,7 +17,7 @@
         "copyNumber": "175143",
         "receiptDate": "2020-01-10T00:00:00.000Z",
         "receivingStatus": "Unreceivable",
-        "claimProcessingInterval": 0,
+        "claimingInterval": 0,
         "statusUpdatedDate": "2020-01-10T00:00:00.000Z"
         "supplement": true
      },
@@ -39,7 +39,7 @@
         "receivingStatus": "Received",
         "supplement": true,
         "receivedDate": "2018-10-10T00:00:00.000Z",
-        "claimProcessingInterval": 0,
+        "claimingInterval": 0,
         "statusUpdatedDate": "2018-10-10T00:00:00.000Z"
       },
       {
@@ -59,7 +59,7 @@
         "supplement": true,
         "receiptDate": "2018-10-11T00:00:00.000Z",
         "receivedDate": "2018-10-10T00:00:00.000Z",
-        "claimProcessingInterval": 0,
+        "claimingInterval": 0,
         "statusUpdatedDate": "2018-10-11T00:00:00.000Z"
       }
     ],

@@ -93,7 +93,7 @@
       "type": "string",
       "format": "date-time"
     },
-    "claimProcessingInterval": {
+    "claimingInterval": {
       "description": "Time interval (in days) for processing claims related to this piece",
       "type": "integer",
       "default": 0

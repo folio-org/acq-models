@@ -15,6 +15,6 @@
   "receivingStatus": "Expected",
   "supplement": true,
   "receiptDate": "2018-10-11T00:00:00.000Z",
-  "claimProcessingInterval": 0,
+  "claimingInterval": 0,
   "statusUpdatedDate": "2018-10-11T00:00:00.000Z"
 }
