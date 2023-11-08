@@ -12,7 +12,8 @@
       "type": "string",
       "enum": [
         "Order",
-        "OrderLine"
+        "OrderLine",
+        "Piece"
       ]
     },
     "action": {
