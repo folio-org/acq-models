@@ -16,5 +16,9 @@
   "supplement": true,
   "receiptDate": "2018-10-11T00:00:00.000Z",
   "claimingInterval": 0,
-  "statusUpdatedDate": "2018-10-11T00:00:00.000Z"
+  "statusUpdatedDate": "2018-10-11T00:00:00.000Z",
+  "metadata": {
+    "createdDate": "2018-08-19T00:00:00.000+0000",
+    "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
+  }
 }

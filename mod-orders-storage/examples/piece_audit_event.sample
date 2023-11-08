@@ -1,0 +1,35 @@
+{
+  "id": "99fb699a-cdf1-11e9-a9d9-f2801f1b9aa1",
+  "action": "Edit",
+  "pieceId": "c4abf6c3-4bd5-4464-999b-c66cfb6f1cf9",
+  "userId": "58edf8c3-89e4-559c-9aed-aae637a3f40b",
+  "eventDate": "2022-11-10T09:30:00.333Z",
+  "actionDate": "2022-11-10T09:29:00.578Z",
+  "pieceSnapshot":
+    {
+      "id": "5e317dc2-deeb-4429-b2a1-91e5cd0fd5f7",
+      "caption": "Tutorial Volume 5",
+      "comment": "Special Edition",
+      "format": "Electronic",
+      "itemId": "522a501a-56b5-48d9-b28a-3a8f02482d97",
+      "locationId": "53cf956f-c1df-410b-8bea-27f712cca7c0",
+      "poLineId": "d471d766-8dbb-4609-999a-02681dea6c22",
+      "titleId": "9a665b22-9fe5-4c95-b4ee-837a5433c95d",
+      "displayOnHolding": false,
+      "enumeration": "Volume 1",
+      "chronology": "2021",
+      "discoverySuppress": false,
+      "copyNumber": "94753",
+      "receivingStatus": "Expected",
+      "supplement": true,
+      "receiptDate": "2018-10-11T00:00:00.000Z",
+      "claimingInterval": 0,
+      "statusUpdatedDate": "2018-10-11T00:00:00.000Z",
+      "metadata": {
+        "createdDate": "2022-11-10T09:22:15.808Z",
+        "updatedDate": "2022-11-10T09:29:00.578Z",
+        "createdByUserId": "58edf8c3-89e4-559c-9aed-aae637a3f40b",
+        "updatedByUserId": "58edf8c3-89e4-559c-9aed-aae637a3f40b"
+      }
+    }
+}

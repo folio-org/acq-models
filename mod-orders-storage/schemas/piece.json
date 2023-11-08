@@ -2,6 +2,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Piece details",
   "type": "object",
+  "javaName": "Piece",
   "properties": {
     "id": {
       "description": "UUID of this piece record",
@@ -97,6 +98,11 @@
       "description": "Time interval (in days) for processing claims related to this piece",
       "type": "integer",
       "default": 0
+    },
+    "metadata": {
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
     }
   },
   "additionalProperties": false,
