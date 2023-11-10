@@ -9,7 +9,7 @@
       "bankAccountNumber": "123456",
       "transitNumber": "654321",
       "notes": "Best one",
-      "isPrimaryBankingInformation": false,
+      "isPrimary": false,
       "metadata": {
         "createdDate": "2023-10-11T00:00:00.000+0000",
         "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
@@ -24,7 +24,7 @@
       "bankAccountNumber": "56789",
       "transitNumber": "98765",
       "notes": "Second",
-      "isPrimaryBankingInformation": false,
+      "isPrimary": false,
       "metadata": {
         "createdDate": "2023-10-11T00:00:00.000+0000",
         "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"

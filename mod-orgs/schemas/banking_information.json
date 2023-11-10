@@ -39,7 +39,7 @@
       "description": "The notes",
       "type": "string"
     },
-    "isPrimaryBankingInformation": {
+    "isPrimary": {
       "description": "Is primary banking information",
       "type": "boolean",
       "default": false
