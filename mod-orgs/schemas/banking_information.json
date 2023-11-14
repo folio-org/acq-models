@@ -15,8 +15,8 @@
       "description": "The unique id of organization",
       "$ref": "../../common/schemas/uuid.json"
     },
-    "addressId": {
-      "description": "The unique id of address",
+    "categoryId": {
+      "description": "The unique id of category",
       "$ref": "../../common/schemas/uuid.json"
     },
     "accountTypeId": {
