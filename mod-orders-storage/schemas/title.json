@@ -87,8 +87,7 @@
     },
     "claimingInterval": {
       "description": "Specifies the time interval, in days, within which claims or disputes must be initiated",
-      "type": "integer",
-      "default": 0
+      "type": "integer"
     },
     "isAcknowledged": {
       "description": "Flag for acknowledge receiving note",

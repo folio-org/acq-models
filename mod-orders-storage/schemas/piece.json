@@ -96,8 +96,7 @@
     },
     "claimingInterval": {
       "description": "Time interval (in days) for processing claims related to this piece",
-      "type": "integer",
-      "default": 0
+      "type": "integer"
     },
     "metadata": {
       "type": "object",

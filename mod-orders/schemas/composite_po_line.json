@@ -72,8 +72,7 @@
     },
     "claimingInterval": {
       "description": "Specifies the time interval, in days, within which claims or disputes must be initiated",
-      "type": "integer",
-      "default": 0
+      "type": "integer"
     },
     "collection": {
       "description": "whether or not this purchase order line is for a collection",
