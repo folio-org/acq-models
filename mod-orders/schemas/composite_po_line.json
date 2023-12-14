@@ -248,6 +248,11 @@
       "type": "object",
       "$ref": "../../mod-orders-storage/schemas/vendor_detail.json"
     },
+    "customFields" : {
+      "description": "Object that contains custom field",
+      "type": "object",
+      "additionalProperties": true
+    },
     "metadata": {
       "type": "object",
       "$ref": "../../../raml-util/schemas/metadata.schema",
