@@ -99,11 +99,11 @@
       "type": "integer"
     },
     "internalNote": {
-      "description": "internal note",
+      "description": "Internal note for Send Claim action",
       "type": "string"
     },
     "externalNote": {
-      "description": "external note",
+      "description": "External note for Send Claim action to share with Vendor",
       "type": "string"
     },
     "metadata": {
