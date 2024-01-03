@@ -24,6 +24,8 @@
       "supplement": true,
       "receiptDate": "2018-10-11T00:00:00.000Z",
       "claimingInterval": 0,
+      "internalNote": "Internal note for Send Claim action",
+      "externalNote": "External note for Send Claim action to share with Vendor",
       "statusUpdatedDate": "2018-10-11T00:00:00.000Z",
       "metadata": {
         "createdDate": "2022-11-10T09:22:15.808Z",
