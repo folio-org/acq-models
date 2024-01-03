@@ -98,6 +98,14 @@
       "description": "Time interval (in days) for processing claims related to this piece",
       "type": "integer"
     },
+    "internalNote": {
+      "description": "internal note",
+      "type": "string"
+    },
+    "externalNote": {
+      "description": "external note",
+      "type": "string"
+    },
     "metadata": {
       "type": "object",
       "$ref": "../../../raml-util/schemas/metadata.schema",

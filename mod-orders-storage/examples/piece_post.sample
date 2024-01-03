@@ -15,5 +15,7 @@
   "supplement": true,
   "receiptDate": "2018-10-11T00:00:00.000Z",
   "claimingInterval": 0,
+  "internalNote": "Should be edited bit later",
+  "externalNote": "Not up-to-date piece information",
   "statusUpdatedDate": "2018-10-11T00:00:00.000Z"
 }
