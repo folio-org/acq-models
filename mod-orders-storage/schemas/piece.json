@@ -62,9 +62,9 @@
       "type": "string",
       "description": "AccessionNumber is the descriptive information for the accession number of a serial. Synchronized with inventory item."
     },
-    "itemLevelCallNumber": {
+    "callNumber": {
       "type": "string",
-      "description": "ItemLevelCallNumber is the descriptive information for the call number of a serial. Synchronized with inventory item."
+      "description": "CallNumber is the descriptive information for the call number of a serial. Synchronized with inventory item."
     },
     "discoverySuppress": {
       "type": "boolean",
