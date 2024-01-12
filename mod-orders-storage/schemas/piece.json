@@ -54,6 +54,18 @@
       "type": "string",
       "description": "Chronology is the descriptive information for the dating scheme of a serial. Synchronized with inventory item."
     },
+    "barcode": {
+      "type": "string",
+      "description": "Barcode is the descriptive information for the barcode of a serial. Synchronized with inventory item."
+    },
+    "accessionNumber": {
+      "type": "string",
+      "description": "AccessionNumber is the descriptive information for the accession number of a serial. Synchronized with inventory item."
+    },
+    "itemLevelCallNumber": {
+      "type": "string",
+      "description": "ItemLevelCallNumber is the descriptive information for the call number of a serial. Synchronized with inventory item."
+    },
     "discoverySuppress": {
       "type": "boolean",
       "description": "Records the fact that the record should not be displayed in a discovery system"
