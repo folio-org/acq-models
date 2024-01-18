@@ -1,0 +1,29 @@
+{
+  "toBeExpected": [
+    {
+      "poLineId": "3f4f61ab-d3c2-47a9-baa6-c903a4cfba57",
+      "expected": 2,
+      "expectPieces": [
+        {
+          "id": "fe729e0b-5c56-4f0a-bb3a-33bc405d71a0",
+          "comment": "Captivating cover art for the first edition"
+        },
+        {
+          "id": "4d6b8cf9-73bd-4b3d-8f1b-5b7cbf02d03a",
+          "comment": "Intriguing chapter titles and compelling storyline"
+        }
+      ]
+    },
+    {
+      "poLineId": "7d9fe888-bc7e-4d4e-9241-0b5f2457e0a3",
+      "expected": 1,
+      "expectPieces": [
+        {
+          "id": "9a2e97e3-5f8b-4b2c-9e27-16c8e8993018",
+          "comment": "A thought-provoking conclusion in the final chapter"
+        }
+      ]
+    }
+  ],
+  "totalRecords": 3
+}
