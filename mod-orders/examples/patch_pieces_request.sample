@@ -1,7 +1,0 @@
-{
-  "pieces": ["c6a7f2d7-8c11-4f7e-9a86-1b4a6f21de3c", "e2b1d88b-3c4d-4c1d-b71f-8d2d9c5f68a1"],
-  "receivingStatus": "Claim sent",
-  "claimingInterval": 7,
-  "internalNote": "This piece requires further inspection.",
-  "externalNote": "Please be aware of the inspection delay for the specified pieces."
-}
