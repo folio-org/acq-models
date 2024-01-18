@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Patch piece request",
+  "type": "object",
+  "properties": {
+    "pieces": {
+      "description": "An array of piece record IDs",
+      "type": "array",
+      "items": {
+        "description": "UUID of an piece record",
+        "$ref": "../../common/schemas/uuid.json"
+      },
+      "uniqueItems": true
+    },
+    "receivingStatus": {
+      "description": "The status to be applied to the specified pieces",
+      "type": "string",
+      "enum": [
+        "Received",
+        "Expected",
+        "Late",
+        "Claim delayed",
+        "Claim sent",
+        "Unreceivable"
+      ]
+    },
+    "claimingInterval": {
+      "description": "Time interval (in days) for processing claims related to this piece",
+      "type": ["integer", "null"]
+    },
+    "internalNote": {
+      "description": "Internal note for Send Claim action",
+      "type": ["string", "null"]
+    },
+    "externalNote": {
+      "description": "External note for Send Claim action to share with Vendor",
+      "type": ["string", "null"]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "pieces",
+    "receivingStatus"
+  ]
+}
