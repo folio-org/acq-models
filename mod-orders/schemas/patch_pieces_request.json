@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Patch piece request",
+  "description": "Patch pieces request",
   "type": "object",
   "properties": {
     "pieces": {
