@@ -8,8 +8,8 @@
       "description": "UUID of this piece record",
       "$ref": "../../common/schemas/uuid.json"
     },
-      "caption": {
-      "description": "Volume/enumeration information",
+      "displaySummary": {
+      "description": "Summary information to display",
       "type": "string"
     },
       "comment": {

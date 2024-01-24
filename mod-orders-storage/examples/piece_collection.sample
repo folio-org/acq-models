@@ -3,7 +3,7 @@
     [
      {
         "id": "5e317dc2-deeb-4429-b2a1-91e5cd0fd5f7",
-        "caption": "Tutorial Volume 1",
+        "displaySummary": "Tutorial Volume 1",
         "comment": "Special Edition",
         "format": "Electronic",
         "itemId": "522a501a-56b5-48d9-b28a-3a8f02482d97",
@@ -28,7 +28,7 @@
      },
      {
         "id": "9ff85e44-a7e2-44b8-86e4-1ab8e9862f22",
-        "caption": "Tutorial Volume 2",
+        "displaySummary": "Tutorial Volume 2",
         "comment": "Limited edition",
         "format": "Physical",
         "itemId": "fefa55b1-a4b3-4f2f-b7a0-39efd7cab54c",
@@ -52,7 +52,7 @@
       },
       {
         "id": "fabc8ce7-e168-43e6-a079-b214231b8001",
-        "caption": "Tutorial Volume 3",
+        "displaySummary": "Tutorial Volume 3",
         "comment": "Deluxe Edition",
         "format": "Other",
         "poLineId": "d471d766-8dbb-4609-999a-02681dea6c22",
