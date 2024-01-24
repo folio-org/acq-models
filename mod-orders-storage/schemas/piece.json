@@ -9,7 +9,7 @@
       "$ref": "../../common/schemas/uuid.json"
     },
       "displaySummary": {
-      "description": "Summary information to display",
+      "description": "Display summary information",
       "type": "string"
     },
       "comment": {
