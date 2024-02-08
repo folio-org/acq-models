@@ -35,6 +35,11 @@
                   "description": "The barcode assigned to the piece",
                   "type": "string"
                 },
+                "receiptDate": {
+                  "description": "The date when associated piece is expected to arrive",
+                  "type": "string",
+                  "format": "date-time"
+                },
                 "callNumber": {
                   "description": "The call number assigned to the piece",
                   "type": "string"
