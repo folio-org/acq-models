@@ -28,6 +28,7 @@
         "DISCOUNT",
         "DISCOUNT_TYPE",
         "DONOR",
+        "DONOR_DEPRECATED",
         "EDITION",
         "EXCHANGE_RATE",
         "EXPECTED_ACTIVATION",
@@ -71,6 +72,8 @@
         "ONGOING_REVIEW_DATE",
         "RECEIVING_WORKFLOW",
         "REQUESTER",
+        "CLAIM_ACTIVE",
+        "CLAIM_INTERVAL",
         "RE_ENCUMBER",
         "RUSH",
         "SELECTOR",
@@ -200,6 +203,11 @@
           "name": "DONOR",
           "title": "poLine.donor",
           "description": "The donor contributing to this purchase order line"
+        },
+        {
+          "name": "DONOR_DEPRECATED",
+          "title": "poLine.donorDeprecated",
+          "description": "The donor contributing to this purchase order line (Deprecated)"
         },
         {
           "name": "EDITION",
@@ -415,6 +423,16 @@
           "name": "REQUESTER",
           "title": "poLine.requester",
           "description": "Who requested this purchase order line"
+        },
+        {
+          "name": "CLAIM_ACTIVE",
+          "title": "poLine.claimActive",
+          "description": "Indicates the claim active status"
+        },
+        {
+          "name": "CLAIM_INTERVAL",
+          "title": "poLine.claimInterval",
+          "description": "Indicates the periodic claim interval"
         },
         {
           "name": "RE_ENCUMBER",
