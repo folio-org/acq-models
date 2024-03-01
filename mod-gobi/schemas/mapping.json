@@ -201,12 +201,12 @@
         },
         {
           "name": "DONOR",
-          "title": "poLine.donor",
+          "title": "poLine.donorOrganizationIds",
           "description": "The donor contributing to this purchase order line"
         },
         {
           "name": "DONOR_DEPRECATED",
-          "title": "poLine.donorDeprecated",
+          "title": "poLine.donor",
           "description": "The donor contributing to this purchase order line (Deprecated)"
         },
         {

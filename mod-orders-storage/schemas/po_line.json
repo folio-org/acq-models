@@ -99,10 +99,6 @@
       "description": "the donor contributing to this purchase order line",
       "type": "string"
     },
-    "donorDeprecated": {
-      "description": "the donor contributing to this purchase order line (Deprecated)",
-      "type": "string"
-    },
     "donorOrganizationIds": {
       "description": "donor organization ids associated with this fund",
       "type": "array",
