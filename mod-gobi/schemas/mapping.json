@@ -426,13 +426,13 @@
         },
         {
           "name": "CLAIM_ACTIVE",
-          "title": "poLine.claimActive",
-          "description": "Indicates the claim active status"
+          "title": "poLine.claimingActive",
+          "description": "Indicates if there is an active claim or dispute"
         },
         {
           "name": "CLAIM_INTERVAL",
-          "title": "poLine.claimInterval",
-          "description": "Indicates the periodic claim interval"
+          "title": "poLine.claimingInterval",
+          "description": "Specifies the time interval, in days, within which claims or disputes must be initiated"
         },
         {
           "name": "RE_ENCUMBER",

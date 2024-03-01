@@ -224,14 +224,6 @@
       "description": "who requested this purchase order line",
       "type": "string"
     },
-    "claimActive": {
-      "description": "claim active indicator",
-      "type": "boolean"
-    },
-    "claimInterval": {
-      "description": "periodic claim interval indicator",
-      "type": "integer"
-    },
     "rush": {
       "description": "whether or not this is a rush order",
       "type": "boolean"
