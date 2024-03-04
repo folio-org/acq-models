@@ -19,6 +19,8 @@
         "ASSIGNED_TO",
         "CANCELLATION_RESTRICTION",
         "CANCELLATION_RESTRICTION_NOTE",
+        "CLAIM_ACTIVE",
+        "CLAIM_INTERVAL",
         "COLLECTION",
         "CONTRIBUTOR",
         "CONTRIBUTOR_NAME_TYPE",
@@ -157,6 +159,16 @@
           "description": "Free-form notes related to cancellation restrictions"
         },
         {
+          "name": "CLAIM_ACTIVE",
+          "title": "poLine.claimingActive",
+          "description": "Indicates if there is an active claim or dispute"
+        },
+        {
+          "name": "CLAIM_INTERVAL",
+          "title": "poLine.claimingInterval",
+          "description": "Specifies the time interval, in days, within which claims or disputes must be initiated"
+        },
+        {
           "name": "COLLECTION",
           "title": "poLine.collection",
           "description": "Whether or not this purchase order line is for a collection"
@@ -198,8 +210,8 @@
         },
         {
           "name": "DONOR",
-          "title": "poLine.donor",
-          "description": "The donor contributing to this purchase order line"
+          "title": "poLine.donorOrganizationIds",
+          "description": "The donor organization contributing to this purchase order line"
         },
         {
           "name": "EDITION",
