@@ -30,7 +30,6 @@
         "DISCOUNT",
         "DISCOUNT_TYPE",
         "DONOR",
-        "DONOR_DEPRECATED",
         "EDITION",
         "EXCHANGE_RATE",
         "EXPECTED_ACTIVATION",
@@ -213,11 +212,6 @@
           "name": "DONOR",
           "title": "poLine.donorOrganizationIds",
           "description": "The donor organization contributing to this purchase order line"
-        },
-        {
-          "name": "DONOR_DEPRECATED",
-          "title": "poLine.donor",
-          "description": "The donor contributing to this purchase order line (Deprecated)"
         },
         {
           "name": "EDITION",
