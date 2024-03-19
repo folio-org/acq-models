@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "routing list",
+  "type": "object",
+  "javaName": "RoutingList",
+  "properties": {
+    "id": {
+      "description": "UUID identifying this routing list entity",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "name": {
+      "description": "name of the list",
+      "type": "string"
+    },
+    "notes": {
+      "description": "notes associated with the routing list",
+      "type": "string"
+    },
+    "userIds": {
+      "description": "UUIDs of associated users",
+      "id": "userIds",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "../../common/schemas/uuid.json"
+      }
+    },
+    "poLineId": {
+      "description": "UUIDs of the associated PO Line",
+      "$ref": "../../common/schemas/uuid.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "userIds",
+    "poLineId"
+  ]
+}
