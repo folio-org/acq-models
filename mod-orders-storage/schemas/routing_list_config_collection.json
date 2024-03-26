@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "collection of routing list config records",
+  "type": "object",
+  "javaName": "RoutingListConfigCollection",
+  "properties": {
+    "routingLists": {
+      "description": "collection of routing list config records",
+      "type": "array",
+      "id": "routingListConfigs",
+      "items": {
+        "type": "object",
+        "$ref": "routing_list_config.json"
+      }
+    },
+    "totalRecords": {
+      "description": "The number of objects contained in this collection",
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "routingListConfigs",
+    "totalRecords"
+  ]
+}

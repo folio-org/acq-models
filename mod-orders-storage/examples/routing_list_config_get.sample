@@ -1,0 +1,11 @@
+{
+  "id": "095d397f-fb3d-4553-a6d9-0809b8a9a160",
+  "name": "Paperback routing list config",
+  "description": "Config will help to convert paperback size",
+  "active": true,
+  "templateId": "571dbcc0-9f41-43a2-a9a4-b91489ff1e4d",
+  "metadata": {
+    "createdDate": "2018-07-19T00:00:00.000+0000",
+    "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
+  }
+}

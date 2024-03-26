@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Routing list config",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "UUID of this title",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "name": {
+      "description": "Routing list config name",
+      "type": "string"
+    },
+    "description": {
+      "description": "Staff slip description",
+      "type": "string"
+    },
+    "active": {
+      "description": "Flag that indicates whether routing config is active",
+      "type": "boolean"
+    },
+    "templateId": {
+      "description": "UUID of the purchase order line this Title is associated with",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "metadata": {
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "name",
+    "templateId"
+  ]
+}
