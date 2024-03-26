@@ -8,6 +8,10 @@
       "description": "UUID identifying this routing list entity",
       "$ref": "../../common/schemas/uuid.json"
     },
+    "_version": {
+      "type": "integer",
+      "description": "Record version for optimistic locking"
+    },
     "name": {
       "description": "name of the list",
       "type": "string"
