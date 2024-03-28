@@ -5,7 +5,7 @@
   "properties": {
     "id": {
       "description": "The unique id of this setting",
-      "$ref": "../../common/schemas/uuid.json"
+      "$ref": "uuid.json"
     },
     "_version": {
       "type": "integer",
