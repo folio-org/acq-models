@@ -96,13 +96,15 @@
       "locationId": "b241764c-1466-4e1d-a028-1a3684a5da87",
       "quantity": 5,
       "quantityElectronic": 1,
-      "quantityPhysical": 4
+      "quantityPhysical": 4,
+      "tenantId": "d572c162-7ce1-5c15-d7ac-234c149a125b"
     },
     {
       "locationId": "fcd64ce1-6995-48f0-840e-89ffa2288371",
       "quantity": 2,
       "quantityElectronic": 0,
-      "quantityPhysical": 2
+      "quantityPhysical": 2,
+      "tenantId": "d572c162-7ce1-5c15-d7ac-234c149a125c"
     }
   ],
   "lastEDIExportDate": "2018-10-05T00:00:00.000Z",
