@@ -41,6 +41,11 @@
       "description": "UUID of the holding record",
       "$ref": "../../common/schemas/uuid.json"
     },
+    "receivingTenantId": {
+      "description": "UUID of the receiving tenant",
+      "type": "string",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "displayOnHolding": {
       "description": "Whether or not receiving history should be displayed in holding record view",
       "type": "boolean",

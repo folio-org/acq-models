@@ -24,6 +24,11 @@
     "quantityPhysical": {
       "description": "quantity of physical items",
       "type": "integer"
+    },
+    "tenantId": {
+      "description": "UUID of the associated tenant",
+      "type": "string",
+      "$ref": "../../common/schemas/uuid.json"
     }
   },
   "additionalProperties": false
