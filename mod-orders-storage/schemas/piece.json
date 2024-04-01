@@ -41,8 +41,17 @@
       "description": "UUID of the holding record",
       "$ref": "../../common/schemas/uuid.json"
     },
+    "receivingTenantId": {
+      "description": "Receiving tenant for ECS-enabled clusters",
+      "type": "string"
+    },
     "displayOnHolding": {
       "description": "Whether or not receiving history should be displayed in holding record view",
+      "type": "boolean",
+      "default": false
+    },
+    "displayToPublic": {
+      "description": "Whether or not the piece data should display to patrons at point of receipt",
       "type": "boolean",
       "default": false
     },
@@ -75,7 +84,7 @@
       "description": "Copy number of the piece"
     },
     "receivingStatus": {
-      "description": "the status of this piece",
+      "description": "The status of this piece",
       "type": "string",
       "enum": [
         "Received",

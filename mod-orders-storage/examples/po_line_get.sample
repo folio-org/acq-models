@@ -95,13 +95,15 @@
       "locationId": "eb2d063a-5b4c-4cab-8db1-5fc5c5941df6",
       "quantity": 1,
       "quantityElectronic": 1,
-      "quantityPhysical": 0
+      "quantityPhysical": 0,
+      "tenantId": "diku"
     },
     {
       "locationId": "53cf956f-c1df-410b-8bea-27f712cca7c0",
       "quantity": 2,
       "quantityElectronic": 0,
-      "quantityPhysical": 2
+      "quantityPhysical": 2,
+      "tenantId": "diku"
     }
   ],
   "lastEDIExportDate": "2018-10-05T00:00:00.000Z",
