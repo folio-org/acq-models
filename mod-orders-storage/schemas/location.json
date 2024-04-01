@@ -14,19 +14,19 @@
       "$ref": "../../common/schemas/uuid.json"
     },
     "quantity": {
-      "description": "combined/total quanitity of physical and electronic items",
+      "description": "Combined/total quanitity of physical and electronic items",
       "type": "integer"
     },
     "quantityElectronic": {
-      "description": "quantity of electronic items",
+      "description": "Quantity of electronic items",
       "type": "integer"
     },
     "quantityPhysical": {
-      "description": "quantity of physical items",
+      "description": "Quantity of physical items",
       "type": "integer"
     },
     "tenantId": {
-      "description": "associated tenant for ECS-enabled clusters",
+      "description": "Associated tenant for ECS-enabled clusters",
       "type": "string"
     }
   },

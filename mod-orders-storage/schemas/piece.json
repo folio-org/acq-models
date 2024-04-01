@@ -42,7 +42,7 @@
       "$ref": "../../common/schemas/uuid.json"
     },
     "receivingTenantId": {
-      "description": "receiving tenant for ECS-enabled clusters",
+      "description": "Receiving tenant for ECS-enabled clusters",
       "type": "string"
     },
     "displayOnHolding": {
@@ -84,7 +84,7 @@
       "description": "Copy number of the piece"
     },
     "receivingStatus": {
-      "description": "the status of this piece",
+      "description": "The status of this piece",
       "type": "string",
       "enum": [
         "Received",
