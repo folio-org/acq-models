@@ -42,9 +42,8 @@
       "$ref": "../../common/schemas/uuid.json"
     },
     "receivingTenantId": {
-      "description": "UUID of the receiving tenant",
-      "type": "string",
-      "$ref": "../../common/schemas/uuid.json"
+      "description": "receiving tenant for ECS-enabled clusters",
+      "type": "string"
     },
     "displayOnHolding": {
       "description": "Whether or not receiving history should be displayed in holding record view",

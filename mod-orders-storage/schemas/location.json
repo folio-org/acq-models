@@ -26,7 +26,7 @@
       "type": "integer"
     },
     "tenantId": {
-      "description": "UUID of the associated tenant",
+      "description": "UUID of the associated tenant for ECS-enabled clusters",
       "type": "string",
       "$ref": "../../common/schemas/uuid.json"
     }
