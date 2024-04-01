@@ -70,14 +70,14 @@
       "quantity": 1,
       "quantityElectronic": 0,
       "quantityPhysical": 1,
-      "tenantId": "d572c162-7ce1-5c15-d7ac-234c149a125b"
+      "tenantId": "diku"
     },
     {
       "locationId": "53cf956f-c1df-410b-8bea-27f712cca7c0",
       "quantity": 2,
       "quantityElectronic": 0,
       "quantityPhysical": 2,
-      "tenantId": "d572c162-7ce1-5c15-d7ac-234c149a125c"
+      "tenantId": "diku"
     }
   ],
   "orderFormat": "Physical Resource",

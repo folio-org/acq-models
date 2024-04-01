@@ -97,14 +97,14 @@
       "quantity": 5,
       "quantityElectronic": 1,
       "quantityPhysical": 4,
-      "tenantId": "d572c162-7ce1-5c15-d7ac-234c149a125b"
+      "tenantId": "diku"
     },
     {
       "locationId": "fcd64ce1-6995-48f0-840e-89ffa2288371",
       "quantity": 2,
       "quantityElectronic": 0,
       "quantityPhysical": 2,
-      "tenantId": "d572c162-7ce1-5c15-d7ac-234c149a125c"
+      "tenantId": "diku"
     }
   ],
   "lastEDIExportDate": "2018-10-05T00:00:00.000Z",
