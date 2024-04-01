@@ -9,6 +9,7 @@
   "titleId": "9a665b22-9fe5-4c95-b4ee-837a5433c95d",
   "receivingTenantId": "d572c162-7ce1-5c15-d7ac-234c149a125b",
   "displayOnHolding": false,
+  "displayToPublic": false,
   "enumeration": "Volume 1",
   "chronology": "2021",
   "barcode": "0987654111",
