@@ -60,12 +60,25 @@
       "type": "boolean",
       "default": false
     },
-    "locationIds": {
-      "description": "location ids associated with this fund",
+    "locations": {
+      "description": "Locations associated with this fund",
       "type": "array",
       "items": {
-        "description": "UUID of an location record",
-        "$ref": "../../common/schemas/uuid.json"
+        "type": "object",
+        "properties": {
+          "locationId": {
+            "description": "UUID of the associated location",
+            "$ref": "../../common/schemas/uuid.json"
+          },
+          "tenantId": {
+            "description": "Tenant id of the associated location",
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "locationId"
+        ]
       }
     },
     "allocatedFromIds": {
