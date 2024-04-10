@@ -100,6 +100,10 @@
       "description": "Whether or not this is supplementary material",
       "type": "boolean"
     },
+    "isBound": {
+      "description": "Whether or not piece has already been bound",
+      "type": "boolean"
+    },
     "receiptDate": {
       "description": "Date that associated item is expected to arrive",
       "type": "string",
