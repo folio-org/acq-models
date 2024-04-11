@@ -94,7 +94,6 @@
   "locations": [
     {
       "locationId": "b241764c-1466-4e1d-a028-1a3684a5da87",
-      "searchLocationId": "b241764c-1466-4e1d-a028-1a3684a5da87",
       "quantity": 5,
       "quantityElectronic": 1,
       "quantityPhysical": 4,
@@ -102,12 +101,15 @@
     },
     {
       "locationId": "fcd64ce1-6995-48f0-840e-89ffa2288371",
-      "searchLocationId": "fcd64ce1-6995-48f0-840e-89ffa2288371",
       "quantity": 2,
       "quantityElectronic": 0,
       "quantityPhysical": 2,
       "tenantId": "diku"
     }
+  ],
+  "searchLocationIds": [
+    "b241764c-1466-4e1d-a028-1a3684a5da87",
+    "fcd64ce1-6995-48f0-840e-89ffa2288371"
   ],
   "lastEDIExportDate": "2018-10-05T00:00:00.000Z",
   "orderFormat": "P/E Mix",
