@@ -95,7 +95,6 @@
     {
       "locationId": "b241764c-1466-4e1d-a028-1a3684a5da87",
       "searchLocationId": "b241764c-1466-4e1d-a028-1a3684a5da87",
-      "searchHoldingId": "8ab32696-4140-4c43-8a1f-19f8145fc73c",
       "quantity": 5,
       "quantityElectronic": 1,
       "quantityPhysical": 4,
@@ -104,7 +103,6 @@
     {
       "locationId": "fcd64ce1-6995-48f0-840e-89ffa2288371",
       "searchLocationId": "fcd64ce1-6995-48f0-840e-89ffa2288371",
-      "searchHoldingId": "7e612ba3-c016-45d1-b370-d49168cf3ee0",
       "quantity": 2,
       "quantityElectronic": 0,
       "quantityPhysical": 2,
