@@ -13,6 +13,14 @@
       "type": "string",
       "$ref": "../../common/schemas/uuid.json"
     },
+    "searchLocationId": {
+      "description": "UUID of the (inventory) location record used for search",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "searchHoldingId": {
+      "description": "Holding UUID associated with order line used for search",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "quantity": {
       "description": "Combined/total quanitity of physical and electronic items",
       "type": "integer"
