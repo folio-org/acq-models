@@ -106,6 +106,10 @@
       "tenantId": "diku"
     }
   ],
+  "searchLocationIds": [
+    "eb2d063a-5b4c-4cab-8db1-5fc5c5941df6",
+    "53cf956f-c1df-410b-8bea-27f712cca7c0"
+  ],
   "lastEDIExportDate": "2018-10-05T00:00:00.000Z",
   "orderFormat": "P/E Mix",
   "paymentStatus": "Awaiting Payment",
