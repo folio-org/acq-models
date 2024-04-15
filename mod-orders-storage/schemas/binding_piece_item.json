@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Binding Piece Item table",
   "type": "object",
-  "javaName": "BindingItemPiece",
+  "javaName": "BindingPieceItem",
   "properties": {
     "id": {
       "description": "UUID is identifying this binding piece entity",
@@ -28,8 +28,8 @@
   "additionalProperties": false,
   "required": [
     "id",
+    "pieceId",
     "itemId",
-    "pieceIds",
     "titleId"
   ]
 }
