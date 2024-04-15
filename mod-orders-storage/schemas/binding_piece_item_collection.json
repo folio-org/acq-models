@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "collection of binding piece item records",
   "type": "object",
-  "javaName": "BindPieceItemCollection",
+  "javaName": "BindingPieceItemCollection",
   "properties": {
     "routingLists": {
       "description": "collection of binding piece item records",
