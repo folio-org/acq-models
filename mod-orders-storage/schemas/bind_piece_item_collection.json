@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "collection of bind piece item records",
+  "type": "object",
+  "javaName": "BindPieceItemCollection",
+  "properties": {
+    "routingLists": {
+      "description": "collection of bind piece item records",
+      "type": "array",
+      "id": "bindPieceItems",
+      "items": {
+        "type": "object",
+        "$ref": "bind_piece_item.json"
+      }
+    },
+    "totalRecords": {
+      "description": "The number of objects contained in this collection",
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "bindItemPieces",
+    "totalRecords"
+  ]
+}
