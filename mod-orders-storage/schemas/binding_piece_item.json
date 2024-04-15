@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Bind piece item table",
+  "description": "Binding Piece Item table",
   "type": "object",
-  "javaName": "BindItemPiece",
+  "javaName": "BindingItemPiece",
   "properties": {
     "id": {
       "description": "UUID is identifying this binding piece entity",
@@ -13,15 +13,15 @@
       "description": "Record version for optimistic locking"
     },
     "pieceId": {
-      "description": "UUID is identifying piece bind with item and title",
+      "description": "UUID is identifying piece that is binding with item and title",
       "$ref": "../../common/schemas/uuid.json"
     },
     "itemId": {
-      "description": "UUID is identifying item bind with piece and title",
+      "description": "UUID is identifying item that is binding with piece and title",
       "$ref": "../../common/schemas/uuid.json"
     },
     "titleId": {
-      "description": "UUID is identifying title bind with piece and item",
+      "description": "UUID is identifying title that is binding with piece and item",
       "$ref": "../../common/schemas/uuid.json"
     }
   },
@@ -29,6 +29,7 @@
   "required": [
     "id",
     "itemId",
-    "pieceIds"
+    "pieceIds",
+    "titleId"
   ]
 }
