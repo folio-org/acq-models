@@ -134,6 +134,10 @@
           "quantityPhysical": 1
         }
       ],
+      "searchLocationIds": [
+        "b241764c-1466-4e1d-a028-1a3684a5da87",
+        "fcd64ce1-6995-48f0-840e-89ffa2288371"
+      ],
       "orderFormat": "Physical Resource",
       "paymentStatus": "Awaiting Payment",
       "physical": {
