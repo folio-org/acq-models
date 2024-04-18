@@ -4,7 +4,7 @@
   "type": "object",
   "javaName": "BindingPieceItemCollection",
   "properties": {
-    "routingLists": {
+    "bindingPieceItems": {
       "description": "collection of binding piece item records",
       "type": "array",
       "id": "bindingPieceItems",
