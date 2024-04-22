@@ -11,7 +11,6 @@
         "alerts": [
           "9a665b22-9fe5-4c95-b4ee-837a5433c95d"
         ],
-        "isBindaryActive" : true,
         "cancellationRestriction": false,
         "cancellationRestrictionNote": "ABCDEFGHIJKLMNOPQRSTUVW",
         "claims": [
@@ -43,6 +42,7 @@
         "description": "ABCDEFGH",
         "details": {
           "receivingNote": "ABCDEFGHIJKL",
+          "isBindaryActive" : true,
           "productIds": [
             {
               "productId": "9780764354113",

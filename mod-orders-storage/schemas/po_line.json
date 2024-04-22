@@ -131,11 +131,6 @@
       "type": "boolean",
       "default": false
     },
-    "isBindaryActive":{
-      "description": "Indicates that this POL is designated as required binding",
-      "type": "boolean",
-      "default": false
-    },
     "locations": {
       "description": "Location records for this purchase order line",
       "id": "locations",

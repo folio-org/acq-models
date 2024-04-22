@@ -128,11 +128,6 @@
         "$ref": "../../mod-orders-storage/schemas/fund_distribution.json"
       }
     },
-    "isBindaryActive":{
-      "description": "Indicates that this POL is designated as required binding",
-      "type": "boolean",
-      "default": false
-    },
     "isPackage": {
       "description": "Indicates that this POL is for a package",
       "type": "boolean",
