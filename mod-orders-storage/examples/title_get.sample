@@ -29,6 +29,10 @@
       "qualifier": "(paperback)"
     }
   ],
+  "bindItemIds": [
+    "12975eb3-a6e4-486a-b773-0c79ec611a32",
+    "f02e8503-a5e2-4cc4-8f6b-034a1140de67"
+  ],
   "acqUnitIds": [
     "1895e539-8dac-441e-b1f5-aab62b3fde60",
     "47f504bd-0c1b-498e-a2ae-e2f0a0cea273"
