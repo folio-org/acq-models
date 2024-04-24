@@ -94,6 +94,13 @@
       "type": "boolean",
       "default": false
     },
+    "bindItemIds": {
+      "description": "item ids bound to this title",
+      "type": "array",
+      "items": {
+        "$ref": "../../common/schemas/uuid.json"
+      }
+    },
     "acqUnitIds": {
       "description": "acquisition unit ids associated with this title",
       "type": "array",
