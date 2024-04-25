@@ -9,7 +9,11 @@
           "d926d900-e27d-46d6-bba8-31e9d5c2cf44",
           "077274ad-6b4f-4c28-9779-6d381e7a1ca1"
         ],
-        "poLineId": "8343e5a0-fed8-11e8-8eb2-f2801f1b9fd1"
+        "poLineId": "8343e5a0-fed8-11e8-8eb2-f2801f1b9fd1",
+        "metadata": {
+          "createdDate": "2018-07-19T00:00:00.000+0000",
+          "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
+        }
       }
     ],
     "totalRecords": 1

@@ -32,6 +32,11 @@
     "poLineId": {
       "description": "UUIDs of the associated PO Line",
       "$ref": "../../common/schemas/uuid.json"
+    },
+    "metadata": {
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
     }
   },
   "additionalProperties": false,
