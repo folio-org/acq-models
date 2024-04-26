@@ -41,7 +41,6 @@
   },
   "additionalProperties": false,
   "required": [
-    "id",
     "name",
     "userIds",
     "poLineId"
