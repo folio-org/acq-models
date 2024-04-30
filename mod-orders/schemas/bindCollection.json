@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A collection of binding pieces",
+  "type": "object",
+  "properties": {
+    "toBeBound": {
+      "description": "List of binding pieces",
+      "id": "toBeBound",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "poLineId": {
+            "description": "The id of the binding PO line",
+            "type": "string",
+            "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+          },
+          "binding": {
+            "description": "The number of binding pieces",
+            "type": "integer"
+          },
+          "bindPieces": {
+            "description": "A collection of binding piece records",
+            "type": "array",
+            "id": "bindPieces",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "description": "The id of the piece",
+                  "type": "string",
+                  "$ref": "../../common/schemas/uuid.json"
+                },
+                "comment": {
+                  "description": "The free form notes pertaining to the piece",
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false,
+              "required": [
+                "id"
+              ]
+            }
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "poLineId"
+        ]
+      }
+    },
+    "totalRecords": {
+      "description": "The total number of pieces to bind in the list",
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "toBeBound",
+    "totalRecords"
+  ]
+}
