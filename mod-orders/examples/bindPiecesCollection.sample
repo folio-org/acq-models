@@ -5,12 +5,10 @@
       "bound": 2,
       "bindPieces": [
         {
-          "id": "fe729e0b-5c56-4f0a-bb3a-33bc405d71a0",
-          "comment": "Captivating cover art for the first edition"
+          "id": "fe729e0b-5c56-4f0a-bb3a-33bc405d71a0"
         },
         {
-          "id": "4d6b8cf9-73bd-4b3d-8f1b-5b7cbf02d03a",
-          "comment": "Intriguing chapter titles and compelling storyline"
+          "id": "4d6b8cf9-73bd-4b3d-8f1b-5b7cbf02d03a"
         }
       ]
     },
@@ -19,8 +17,7 @@
       "bound": 1,
       "bindPieces": [
         {
-          "id": "9a2e97e3-5f8b-4b2c-9e27-16c8e8993018",
-          "comment": "A thought-provoking conclusion in the final chapter"
+          "id": "9a2e97e3-5f8b-4b2c-9e27-16c8e8993018"
         }
       ]
     }
