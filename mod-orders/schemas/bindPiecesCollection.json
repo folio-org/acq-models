@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A collection of binding pieces",
+  "type": "object",
+  "properties": {
+    "toBeBound": {
+      "description": "List of binding pieces, item and poLine details",
+      "id": "toBeBound",
+      "type": "object",
+      "properties": {
+        "poLineId": {
+          "description": "The id of the binding PoLine",
+          "type": "string",
+          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+        },
+        "bindItem": {
+          "description": "The new binding item details",
+          "type": "object",
+          "properties": {
+            "barcode": {
+              "type": "string",
+              "description": "Barcode is the descriptive information for the barcode of a serial. Synchronized with inventory item."
+            },
+            "materialTypeId": {
+              "description": "UUID of the material type",
+              "type": "string",
+              "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+            },
+            "callNumber": {
+              "type": "string",
+              "description": "CallNumber is the descriptive information for the call number of a serial. Synchronized with inventory item."
+            },
+            "permanentLoanTypeId": {
+              "description": "UUID of the permanent loan type",
+              "type": "string",
+              "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+            },
+            "permanentLocationId": {
+              "description": "UUID of the permanent location Id",
+              "type": "string",
+              "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+            }
+          }
+        },
+        "bindPieceIds": {
+          "description": "A collection of IDs of binding piece records",
+          "type": "array",
+          "id": "bindPieceIds",
+          "items": {
+            "type": "string",
+            "$ref": "../../common/schemas/uuid.json"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "poLineId",
+        "bindItem",
+        "bindPieceIds"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "toBeBound"
+  ]
+}
