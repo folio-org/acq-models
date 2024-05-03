@@ -19,7 +19,7 @@
             "type": "string",
             "description": "Barcode is the descriptive information for the barcode of a serial. Synchronized with inventory item."
           },
-          "materialType": {
+          "materialTypeId": {
             "description": "UUID of the material Type",
             "type": "string",
             "pattern": "../../common/schemas/uuid.json"
@@ -28,12 +28,12 @@
             "type": "string",
             "description": "CallNumber is the descriptive information for the call number of a serial. Synchronized with inventory item."
           },
-          "permanentLoanTypes": {
+          "permanentLoanTypeId": {
             "description": "UUID of the permanent loan type",
             "type": "string",
             "pattern": "../../common/schemas/uuid.json"
           },
-          "permanentLocation": {
+          "permanentLocationId": {
             "description": "UUID of the permanent location Id",
             "type": "string",
             "pattern": "../../common/schemas/uuid.json"
