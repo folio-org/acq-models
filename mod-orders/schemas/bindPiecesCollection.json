@@ -4,7 +4,7 @@
   "type": "object",
   "properties": {
     "toBeBound": {
-      "description": "List of binding pieces",
+      "description": "List of binding pieces, item and poLine details",
       "id": "toBeBound",
       "type": "object",
       "properties": {
