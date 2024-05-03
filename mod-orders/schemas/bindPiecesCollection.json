@@ -15,6 +15,29 @@
             "type": "string",
             "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
           },
+          "barcode": {
+            "type": "string",
+            "description": "Barcode is the descriptive information for the barcode of a serial. Synchronized with inventory item."
+          },
+          "materialType": {
+            "description": "UUID of the material Type",
+            "type": "string",
+            "pattern": "../../common/schemas/uuid.json"
+          },
+          "callNumber": {
+            "type": "string",
+            "description": "CallNumber is the descriptive information for the call number of a serial. Synchronized with inventory item."
+          },
+          "permanentLoanTypes": {
+            "description": "UUID of the permanent loan type",
+            "type": "string",
+            "pattern": "../../common/schemas/uuid.json"
+          },
+          "permanentLocation": {
+            "description": "UUID of the permanent location Id",
+            "type": "string",
+            "pattern": "../../common/schemas/uuid.json"
+          },
           "bound": {
             "description": "The number of binding pieces",
             "type": "integer"
