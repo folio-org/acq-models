@@ -42,10 +42,6 @@
             }
           }
         },
-        "bound": {
-          "description": "The number of binding pieces",
-          "type": "integer"
-        },
         "bindPieceIds": {
           "description": "A collection of IDs of binding piece records",
           "type": "array",
@@ -64,13 +60,8 @@
       ]
     }
   },
-  "totalRecords": {
-    "description": "The total number of pieces to bind in the list",
-    "type": "integer"
-  },
   "additionalProperties": false,
   "required": [
-    "toBeBound",
-    "totalRecords"
+    "toBeBound"
   ]
 }

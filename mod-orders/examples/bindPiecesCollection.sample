@@ -8,11 +8,9 @@
       "permanentLoanTypeId": "41673a86-ebab-4a5a-8b1b-76110a6f86f4",
       "permanentLocationId": "02cc63e9-dda0-4b49-bbc6-6253edffcc67"
     },
-    "bound": 2,
     "bindPieceIds": [
       "fe729e0b-5c56-4f0a-bb3a-33bc405d71a0",
       "4d6b8cf9-73bd-4b3d-8f1b-5b7cbf02d03a"
     ]
-  },
-  "totalRecords": 2
+  }
 }
