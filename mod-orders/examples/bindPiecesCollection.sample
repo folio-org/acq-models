@@ -3,10 +3,10 @@
     {
       "poLineId": "3f4f61ab-d3c2-47a9-baa6-c903a4cfba57",
       "barcode": "0987654111",
-      "materialType": "a058cb27-a77d-4cb3-b76b-2adc931fb0c9",
+      "materialTypeId": "a058cb27-a77d-4cb3-b76b-2adc931fb0c9",
       "callNumber": "BF2050 .M335 2000",
-      "permanentLoanTypes": "41673a86-ebab-4a5a-8b1b-76110a6f86f4",
-      "permanentLocation": "02cc63e9-dda0-4b49-bbc6-6253edffcc67",
+      "permanentLoanTypeId": "41673a86-ebab-4a5a-8b1b-76110a6f86f4",
+      "permanentLocationId": "02cc63e9-dda0-4b49-bbc6-6253edffcc67",
       "bound": 2,
       "bindPieces": [
         {

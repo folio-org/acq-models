@@ -22,7 +22,7 @@
           "materialTypeId": {
             "description": "UUID of the material Type",
             "type": "string",
-            "pattern": "../../common/schemas/uuid.json"
+            "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
           },
           "callNumber": {
             "type": "string",
@@ -31,12 +31,12 @@
           "permanentLoanTypeId": {
             "description": "UUID of the permanent loan type",
             "type": "string",
-            "pattern": "../../common/schemas/uuid.json"
+            "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
           },
           "permanentLocationId": {
             "description": "UUID of the permanent location Id",
             "type": "string",
-            "pattern": "../../common/schemas/uuid.json"
+            "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
           },
           "bound": {
             "description": "The number of binding pieces",
