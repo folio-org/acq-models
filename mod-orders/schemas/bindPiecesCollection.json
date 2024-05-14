@@ -49,7 +49,8 @@
     },
     "transferRequests": {
       "description": "A flag to determine if the outstanding circulation requests should be transferred to new items or not",
-      "type": "boolean"
+      "type": "object",
+      "$ref": "transferRequest.json"
     }
   },
   "additionalProperties": false,
