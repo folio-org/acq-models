@@ -47,10 +47,10 @@
         "$ref": "../../common/schemas/uuid.json"
       }
     },
-    "transferRequests": {
+    "requestsAction": {
       "description": "A flag to determine if the outstanding circulation requests should be transferred to new items or not",
       "type": "object",
-      "$ref": "transferRequest.json"
+      "$ref": "requestsAction.json"
     }
   },
   "additionalProperties": false,
