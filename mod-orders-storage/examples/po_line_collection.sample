@@ -42,7 +42,7 @@
         "description": "ABCDEFGH",
         "details": {
           "receivingNote": "ABCDEFGHIJKL",
-          "isBindaryActive": false,
+          "isBinderyActive": false,
           "productIds": [
             {
               "productId": "9780764354113",
