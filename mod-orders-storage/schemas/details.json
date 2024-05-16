@@ -12,7 +12,7 @@
       "type": "boolean",
       "default": false
     },
-    "isBindaryActive":{
+    "isBinderyActive":{
       "description": "Indicates that this POL is designated as required binding",
       "type": "boolean",
       "default": false
