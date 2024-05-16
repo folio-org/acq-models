@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Determines whether outstanding circulation requests should be transferred to a new item or not",
+  "type": "string",
+  "enum": [
+    "Transfer",
+    "Cancel",
+    "Do Nothing"
+  ]
+}
