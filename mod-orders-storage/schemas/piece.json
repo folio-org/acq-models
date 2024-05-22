@@ -102,7 +102,8 @@
     },
     "isBound": {
       "description": "Whether or not piece has already been bound",
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "receiptDate": {
       "description": "Date that associated item is expected to arrive",
