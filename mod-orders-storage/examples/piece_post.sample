@@ -18,6 +18,7 @@
   "copyNumber": "94753",
   "receivingStatus": "Claim delayed",
   "supplement": true,
+  "isBound": false,
   "receiptDate": "2018-10-11T00:00:00.000Z",
   "claimingInterval": 0,
   "internalNote": "Internal note for Send Claim action",
