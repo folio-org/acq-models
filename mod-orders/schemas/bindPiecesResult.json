@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Result of Binding Pieces",
+  "type": "object",
+  "properties": {
+    "poLineId": {
+      "description": "The id of the PoLine associated with bound pieces",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+    },
+    "boundPieceIds": {
+      "description": "A collection of IDs of Piece that were bound",
+      "type": "array",
+      "id": "boundPieceIds",
+      "items": {
+        "type": "string",
+        "$ref": "../../common/schemas/uuid.json"
+      }
+    },
+    "requestsAction": {
+      "description": "Action to determine whether the open circulation requests should be transferred to a new item or not",
+      "type": "object",
+      "$ref": "requestsAction.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "poLineId",
+    "boundPieceIds"
+  ]
+}
