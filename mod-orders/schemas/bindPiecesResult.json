@@ -8,13 +8,47 @@
       "type": "string",
       "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     },
-    "boundPieceIds": {
-      "description": "A collection of IDs of Piece that were bound",
+    "bindingResults": {
+      "description": "A collection of IDs of Piece that were to be bound",
       "type": "array",
-      "id": "boundPieceIds",
       "items": {
-        "type": "string",
-        "$ref": "../../common/schemas/uuid.json"
+        "type": "object",
+        "properties": {
+          "pieceId": {
+            "description": "UUID of this piece record",
+            "type": "string",
+            "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+          },
+          "processingStatus": {
+            "description": "The status describing item processing result",
+            "type": "object",
+            "properties": {
+              "type": {
+                "description": "Resulting status of the processed piece record",
+                "type": "string",
+                "enum": [
+                  "success",
+                  "failure"
+                ]
+              },
+              "error": {
+                "description": "Error details in case binding process for the piece record has failed",
+                "type": "object",
+                "$ref": "../../../raml-util/schemas/error.schema",
+                "readonly": true
+              }
+            },
+            "required": [
+              "type"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "pieceId",
+          "processingStatus"
+        ],
+        "additionalProperties": false
       }
     },
     "itemId": {
@@ -26,6 +60,7 @@
   "additionalProperties": false,
   "required": [
     "poLineId",
-    "boundPieceIds"
+    "boundPieceIds",
+    "processingStatus"
   ]
 }
