@@ -17,10 +17,10 @@
         "$ref": "../../common/schemas/uuid.json"
       }
     },
-    "requestsAction": {
-      "description": "Action to determine whether the open circulation requests should be transferred to a new item or not",
-      "type": "object",
-      "$ref": "requestsAction.json"
+    "itemId": {
+      "description": "The id of the new item created",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
     }
   },
   "additionalProperties": false,
