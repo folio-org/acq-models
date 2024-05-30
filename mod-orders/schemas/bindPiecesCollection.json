@@ -52,7 +52,7 @@
       }
     },
     "requestsAction": {
-      "description": "A flag to determine if the outstanding circulation requests should be transferred to new items or not",
+      "description": "Action to determine whether the open circulation requests should be transferred to a new item or not",
       "type": "object",
       "$ref": "requestsAction.json"
     }
