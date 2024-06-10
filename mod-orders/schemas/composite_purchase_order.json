@@ -97,6 +97,11 @@
       "type": "string",
       "$ref": "../../common/schemas/uuid.json"
     },
+    "totalCredited": {
+      "description": "Total credited for the order",
+      "type": "number",
+      "readonly": true
+    },
     "totalEstimatedPrice": {
       "description": "total estimated price of this purchase order",
       "type": "number"

@@ -9,6 +9,7 @@
   "netTransfers": 2500,
   "unavailable": 10,
   "expenditures": 10,
+  "credits": 0,
   "encumbered": 0,
   "awaitingPayment": 0,
   "overEncumbrance": 0,

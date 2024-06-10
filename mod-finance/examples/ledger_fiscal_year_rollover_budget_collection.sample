@@ -52,6 +52,7 @@
       "netTransfers": 0,
       "awaitingPayment": 3500,
       "available": 10000,
+      "credits": 0,
       "encumbered": 2000,
       "expenditures": 4500,
       "unavailable": 10000,

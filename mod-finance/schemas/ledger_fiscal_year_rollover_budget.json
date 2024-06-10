@@ -68,6 +68,11 @@
       "description": "The amount currently available for this budge",
       "type": "number"
     },
+    "credits": {
+      "default": 0,
+      "description": "The amount currently credited to this budget",
+      "type": "number"
+    },
     "encumbered": {
       "default": 0,
       "description": "The amount currently encumbered for this budget",

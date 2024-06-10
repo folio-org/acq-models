@@ -19,6 +19,14 @@
       "description": "Total awaitingPayment for expense class within a given group",
       "type": "number"
     },
+    "credited": {
+      "description": "Total credited for expense class within a given group",
+      "type": "number"
+    },
+    "percentageCredited": {
+      "description": "The percentage credited for the class on the total spent on a given group",
+      "type": "number"
+    },
     "expended": {
       "description": "Total expended for expense class within a given group",
       "type": "number"
