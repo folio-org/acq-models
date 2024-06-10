@@ -7,6 +7,7 @@
   "allocated": 20000,
   "awaitingPayment": 3500,
   "available": 10000,
+  "credits": 3000,
   "encumbered": 2000,
   "expenditures": 4500,
   "unavailable": 10000,

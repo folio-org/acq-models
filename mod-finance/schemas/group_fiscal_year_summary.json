@@ -61,6 +61,11 @@
       "type": "number",
       "readonly": true
     },
+    "credits": {
+      "description": "Summary of all related budgets credits within a specific fiscal year",
+      "type": "number",
+      "readonly": true
+    },
     "encumbered": {
       "description": "Summary of all related budgets encumbered within a specific fiscal year",
       "type": "number",

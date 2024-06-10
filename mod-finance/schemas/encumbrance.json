@@ -8,6 +8,11 @@
       "description": "Deprecated! Going to be removed in next release. The amount of awaiting for payment",
       "type": "number"
     },
+    "amountCredited": {
+      "default": 0,
+      "description": "The amount currently credited to this encumbrance",
+      "type": "number"
+    },
     "amountExpended": {
       "default": 0,
       "description": "The amount currently expended by this encumbrance",
