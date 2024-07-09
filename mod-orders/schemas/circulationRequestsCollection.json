@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A collection of circulation requests",
+  "type": "object",
+  "properties": {
+    "circulationRequests": {
+      "description": "List of circulation requests",
+      "id": "circulationRequests",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "totalRecords": {
+      "description": "Total number of records in the array",
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "circulationRequests",
+    "totalRecords"
+  ]
+}
