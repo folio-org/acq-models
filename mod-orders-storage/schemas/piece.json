@@ -25,6 +25,10 @@
       "description": "UUID of the associated item record",
       "$ref": "../../common/schemas/uuid.json"
     },
+    "bindItemId": {
+      "description": "UUID of the associated bind item record",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "locationId": {
       "description": "UUID of the (inventory) location record",
       "$ref": "../../common/schemas/uuid.json"
