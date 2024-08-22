@@ -49,6 +49,10 @@
       "description": "Receiving tenant for ECS-enabled clusters",
       "type": "string"
     },
+    "bindItemTenantId": {
+      "description": "Bind item tenant for ECS-enabled clusters",
+      "type": "string"
+    },
     "displayOnHolding": {
       "description": "Whether or not receiving history should be displayed in holding record view",
       "type": "boolean",
