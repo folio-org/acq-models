@@ -29,6 +29,10 @@
       "description": "UUID of the associated bind item record",
       "$ref": "../../common/schemas/uuid.json"
     },
+    "bindItemTenantId": {
+      "description": "Bind item tenant for ECS-enabled clusters",
+      "type": "string"
+    },
     "locationId": {
       "description": "UUID of the (inventory) location record",
       "$ref": "../../common/schemas/uuid.json"
@@ -47,10 +51,6 @@
     },
     "receivingTenantId": {
       "description": "Receiving tenant for ECS-enabled clusters",
-      "type": "string"
-    },
-    "bindItemTenantId": {
-      "description": "Bind item tenant for ECS-enabled clusters",
       "type": "string"
     },
     "displayOnHolding": {
