@@ -112,6 +112,11 @@
       "type": "number",
       "readonly": true
     },
+    "credits": {
+      "description": "Summary of all related to this ledger budgets credits",
+      "type": "number",
+      "readonly": true
+    },
     "encumbered": {
       "description": "Summary of all related to this ledger budgets encumbered",
       "type": "number",

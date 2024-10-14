@@ -32,6 +32,14 @@
       "description": "Total awaitingPayment for expense class within a given budget",
       "type": "number"
     },
+    "credited": {
+      "description": "Total credited for expense class within a given budget",
+      "type": "number"
+    },
+    "percentageCredited": {
+      "description": "The percentage credited for the class on the total credited on a given budget",
+      "type": "number"
+    },
     "expended": {
       "description": "Total expended for expense class within a given budget",
       "type": "number"

@@ -50,6 +50,11 @@
       "type": "number",
       "readonly": true
     },
+    "credits": {
+      "default": 0,
+      "description": "The amount currently credited for this budget",
+      "type": "number"
+    },
     "encumbered": {
       "default": 0,
       "description": "The amount currently encumbered for this budget",

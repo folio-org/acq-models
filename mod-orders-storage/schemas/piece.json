@@ -25,6 +25,14 @@
       "description": "UUID of the associated item record",
       "$ref": "../../common/schemas/uuid.json"
     },
+    "bindItemId": {
+      "description": "UUID of the associated bind item record",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "bindItemTenantId": {
+      "description": "Bind item tenant for ECS-enabled clusters",
+      "type": "string"
+    },
     "locationId": {
       "description": "UUID of the (inventory) location record",
       "$ref": "../../common/schemas/uuid.json"
@@ -102,7 +110,8 @@
     },
     "isBound": {
       "description": "Whether or not piece has already been bound",
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "receiptDate": {
       "description": "Date that associated item is expected to arrive",

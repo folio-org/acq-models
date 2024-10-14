@@ -60,6 +60,10 @@
                   "description": "Whether or not this is a supplementary material for this piece",
                   "type": "boolean"
                 },
+                "receivingTenantId": {
+                  "description": "The tenant id where piece should be checked in",
+                  "type": "string"
+                },
                 "locationId": {
                   "description": "The id of the location",
                   "type": "string",

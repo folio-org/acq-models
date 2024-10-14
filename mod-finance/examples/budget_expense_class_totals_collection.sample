@@ -6,6 +6,7 @@
       "expenseClassStatus": "Active",
       "encumbered": "30.05",
       "awaitingPayment": "0.0",
+      "credited": "30.0",
       "expended": "103.0",
       "percentageExpended": "51.5"
     }

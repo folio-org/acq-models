@@ -5,6 +5,7 @@
       "expenseClassName": "Electronic",
       "encumbered": "30.05",
       "awaitingPayment": "13.0",
+      "credited": "40.0",
       "expended": "103.0",
       "percentageExpended": "51.5"
     }
