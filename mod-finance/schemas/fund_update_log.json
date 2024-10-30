@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Fund update logs",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "id of the fund update log record",
+      "type": "integer"
+    },
+    "_version": {
+      "type": "integer",
+      "description": "Record version for optimistic locking"
+    },
+    "jobName": {
+      "description": "The name of the job",
+      "type": "string"
+    },
+    "jobDetails": {
+      "description": "details of job",
+      "type": "object"
+    },
+    "status": {
+      "description": "The status of the job",
+      "type": "string",
+      "enum": [
+        "IN_PROGRESS",
+        "COMPLETED",
+        "ERROR"
+      ]
+    },
+    "recordsCount": {
+      "description": "The count of records",
+      "type": "integer"
+    },
+    "metadata": {
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "jobName",
+    "status",
+    "recordsCount"
+  ]
+}
