@@ -4,12 +4,16 @@
   "type": "object",
   "properties": {
     "id": {
-      "description": "id of the fund update log record",
-      "type": "integer"
+      "description": "UUID of fund update log",
+      "$ref": "../../common/schemas/uuid.json"
     },
     "_version": {
       "type": "integer",
       "description": "Record version for optimistic locking"
+    },
+    "jobNumber": {
+      "description": "The number of the job",
+      "type": "integer"
     },
     "jobName": {
       "description": "The name of the job",

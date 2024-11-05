@@ -1,6 +1,7 @@
 {
   "id": 1,
   "_version": 1,
+  "jobNumber": 1,
   "jobName": "Daily Fund Update",
   "jobDetails": {
     "description": "Updating fund records for the day"
