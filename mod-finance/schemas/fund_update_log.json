@@ -44,9 +44,7 @@
   },
   "additionalProperties": false,
   "required": [
-    "id",
-    "jobName",
-    "status",
-    "recordsCount"
+    "jobNumber",
+    "jobName"
   ]
 }
