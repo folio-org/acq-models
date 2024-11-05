@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Topic of an audit event",
+  "type": "string",
+  "enum": [
+    "ACQ_INVOICE_CHANGED",
+    "ACQ_INVOICE_LINE_CHANGED"
+  ]
+}
