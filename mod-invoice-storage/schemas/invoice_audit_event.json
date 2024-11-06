@@ -8,8 +8,7 @@
       "$ref": "../../common/schemas/uuid.json"
     },
     "action": {
-      "description": "Action for order (Create, Edit or Delete)",
-      "type": "string",
+      "description": "Action for invoice (Create or Edit)",
       "$ref": "event_action.json"
     },
     "invoiceId": {

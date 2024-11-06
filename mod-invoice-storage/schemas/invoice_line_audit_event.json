@@ -9,7 +9,6 @@
     },
     "action": {
       "description": "Action for invoice line (Create or Edit)",
-      "type": "string",
       "$ref": "event_action.json"
     },
     "invoiceLineId": {
