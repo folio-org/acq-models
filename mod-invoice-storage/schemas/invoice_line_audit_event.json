@@ -11,6 +11,10 @@
       "description": "Action for invoice line (Create or Edit)",
       "$ref": "event_action.json"
     },
+    "invoiceId": {
+      "description": "UUID of the related invoice",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "invoiceLineId": {
       "description": "UUID of the invoice line",
       "$ref": "../../common/schemas/uuid.json"
@@ -35,14 +39,5 @@
       "$ref": "invoice_line.json"
     }
   },
-  "additionalProperties": false,
-  "required": [
-    "id",
-    "action",
-    "invoiceId",
-    "userId",
-    "eventDate",
-    "actionDate",
-    "invoiceSnapshot"
-  ]
+  "additionalProperties": false
 }
