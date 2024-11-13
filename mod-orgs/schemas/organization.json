@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "The record of an organization",
+  "javaName": "Organization",
   "type": "object",
-  "javaClass": "Organization",
   "properties": {
     "id": {
       "description": "The unique UUID for this organization",
