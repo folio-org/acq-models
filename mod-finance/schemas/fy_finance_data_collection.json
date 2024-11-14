@@ -3,9 +3,10 @@
   "description": "A collection of fiscal year finance data",
   "type": "object",
   "properties": {
-    "fyAllFinanceData": {
+    "fyFinanceData": {
       "description": "The list of fiscal year finance data objects contained in this collection",
       "type": "array",
+      "id": "fyFinanceData",
       "items": {
         "type": "object",
         "$ref": "fy_finance_data.json"
@@ -18,7 +19,7 @@
   },
   "additionalProperties": false,
   "required": [
-    "fyAllFinanceData",
+    "fyFinanceData",
     "totalRecords"
   ]
 }
