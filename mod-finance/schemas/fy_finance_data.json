@@ -23,6 +23,10 @@
       "description": "The name of this fund",
       "type": "string"
     },
+    "fundDescription": {
+      "description": "A description of this fund",
+      "type": "string"
+    },
     "fundStatus": {
       "description": "The current status of this fund",
       "type": "string",
@@ -59,6 +63,10 @@
     "budgetInitialAllocation": {
       "default": 0,
       "description": "The amount of the first allocation made to this budget",
+      "type": "number"
+    },
+    "budgetCurrentAllocation": {
+      "description": "The current allocation amount for this budget",
       "type": "number"
     },
     "budgetAllowableExpenditure": {

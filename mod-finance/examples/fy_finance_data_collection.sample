@@ -6,6 +6,7 @@
       "fundId": "123e4567-e89b-12d3-a456-426614174000",
       "fundCode": "FND001",
       "fundName": "General Fund",
+      "fundDescription": "This fund is used for general purposes.",
       "fundStatus": "Active",
       "fundTags": {
         "tagList": ["Education", "Research"]
@@ -14,6 +15,7 @@
       "budgetName": "Annual Budget",
       "budgetStatus": "Active",
       "budgetInitialAllocation": 1000000,
+      "budgetCurrentAllocation": 950000,
       "budgetAllowableExpenditure": 80,
       "budgetAllowableEncumbrance": 90
     },
@@ -23,6 +25,7 @@
       "fundId": "123e4567-e89b-12d3-a456-426614174002",
       "fundCode": "FND002",
       "fundName": "Research Fund",
+      "fundDescription": "This fund is used for research purposes.",
       "fundStatus": "Frozen",
       "fundTags": {
         "tagList": ["Science", "Innovation"]
@@ -31,6 +34,7 @@
       "budgetName": "Research Budget",
       "budgetStatus": "Planned",
       "budgetInitialAllocation": 500000,
+      "budgetCurrentAllocation": 450000,
       "budgetAllowableExpenditure": 70,
       "budgetAllowableEncumbrance": 85
     }
