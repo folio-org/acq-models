@@ -3,6 +3,10 @@
   "description": "Finance data for a fiscal year",
   "type": "object",
   "properties": {
+    "fiscalYearId": {
+      "description": "UUID of the fiscal year",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "fiscalYearCode": {
       "description": "The code of the fiscal year",
       "type": "string"
@@ -68,6 +72,7 @@
   },
   "required": [
     "fiscalYearCode",
+    "fiscalYearId",
     "fundId"
   ]
 }

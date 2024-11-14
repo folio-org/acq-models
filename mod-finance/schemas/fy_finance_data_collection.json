@@ -8,7 +8,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "fund_update_log.json"
+        "$ref": "fy_finance_data.json"
       }
     },
     "totalRecords": {
