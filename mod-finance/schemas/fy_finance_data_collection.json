@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A collection of fiscal year finance data",
+  "type": "object",
+  "properties": {
+    "fyFinanceData": {
+      "description": "The list of fiscal year finance data objects contained in this collection",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "fund_update_log.json"
+      }
+    },
+    "totalRecords": {
+      "description": "The number of objects contained in this collection",
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "fyFinanceData",
+    "totalRecords"
+  ]
+}
