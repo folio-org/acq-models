@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Finance data for a fiscal year",
+  "type": "object",
+  "javaName": "FyFinanceData",
+  "properties": {
+    "fiscalYearId": {
+      "description": "UUID of the fiscal year",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "fiscalYearCode": {
+      "description": "The code of the fiscal year",
+      "type": "string"
+    },
+    "fundId": {
+      "description": "Fund UUID",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "fundCode": {
+      "description": "A unique code associated with the fund",
+      "$ref": "../../common/schemas/fund_code.json"
+    },
+    "fundName": {
+      "description": "The name of this fund",
+      "type": "string"
+    },
+    "fundDescription": {
+      "description": "A description of this fund",
+      "type": "string"
+    },
+    "fundStatus": {
+      "description": "The current status of this fund",
+      "type": "string",
+      "enum": [
+        "Active",
+        "Frozen",
+        "Inactive"
+      ]
+    },
+    "fundTags": {
+      "type": "object",
+      "description": "Arbitrary tags associated with this fund",
+      "$ref": "../../../raml-util/schemas/tags.schema"
+    },
+    "budgetId": {
+      "description": "UUID of this budget",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "budgetName": {
+      "description": "The name of the budget",
+      "type": "string"
+    },
+    "budgetStatus": {
+      "description": "The status of the budget",
+      "type": "string",
+      "enum": [
+        "Active",
+        "Frozen",
+        "Inactive",
+        "Planned",
+        "Closed"
+      ]
+    },
+    "budgetInitialAllocation": {
+      "default": 0,
+      "description": "The amount of the first allocation made to this budget",
+      "type": "number"
+    },
+    "budgetCurrentAllocation": {
+      "description": "The current allocation amount for this budget",
+      "type": "number"
+    },
+    "budgetAllowableExpenditure": {
+      "description": "The expenditure percentage limit for this budget",
+      "type": "number"
+    },
+    "budgetAllowableEncumbrance": {
+      "description": "The encumbrance percentage limit for this budget",
+      "type": "number"
+    }
+  },
+  "required": [
+    "fiscalYearCode",
+    "fiscalYearId",
+    "fundId"
+  ]
+}
