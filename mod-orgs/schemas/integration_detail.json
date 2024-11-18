@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "EDI config",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "The unique id of this email",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "_version": {
+      "type": "integer",
+      "description": "Record version for optimistic locking"
+    },
+    "exportConfigId" : {
+      "description": "UUID of the export configuration. Needed to find Jobs by export config UUID",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "vendorId": {
+      "description": "UUID of the acquisition method",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "configName": {
+      "description": "Configuration name",
+      "type": "string"
+    },
+    "configDescription": {
+      "description": "Configuration description",
+      "type": "string"
+    },
+    "ediConfig": {
+      "description": "EDI config for this vendor",
+      "$ref": "edi_config.json"
+    },
+    "ediFtp": {
+      "$ref": "edi_ftp.json"
+    },
+    "ediSchedule": {
+      "$ref": "edi_schedule.json"
+    },
+    "isDefaultConfig": {
+      "description": "If true then config is default",
+      "type": "boolean",
+      "default": false
+    },
+    "metadata": {
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "vendorId"
+  ]
+}
