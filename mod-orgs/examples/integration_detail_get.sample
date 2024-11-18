@@ -1,0 +1,65 @@
+{
+  "id": "6a01fc0b-d556-49f9-a2bf-394718a9a3d4",
+  "_version": 1,
+  "exportConfigId": "123e4567-e89b-12d3-a456-426614174003",
+  "vendorId": "d0fb5aa0-cdf1-11e8-a8d5-f2801f1b9fd1",
+  "configName": "Sample EDI Config 1",
+  "configDescription": "This is a sample EDI configuration for a vendor.",
+  "ediConfig": {
+    "accountNoList": [
+      "123456",
+      "789012"
+    ],
+    "defaultAcquisitionMethods": [
+      "e89b-12d3-a456-426614174000",
+      "e89b-12d3-a456-426614174001"
+    ],
+    "ediNamingConvention": "Sample Naming Convention",
+    "libEdiCode": "LIB123",
+    "libEdiType": "014/EAN",
+    "vendorEdiCode": "VEND456",
+    "vendorEdiType": "091/Vendor-assigned",
+    "notes": "These are sample notes for the EDI configuration.",
+    "sendAccountNumber": true,
+    "supportOrder": true,
+    "supportInvoice": false
+  },
+  "ediFtp": {
+    "ftpFormat": "SFTP",
+    "serverAddress": "ftp://ftp.example.com",
+    "username": "ftpUser",
+    "password": "ftpPassword",
+    "ftpMode": "Binary",
+    "ftpConnMode": "Passive",
+    "ftpPort": 21,
+    "orderDirectory": "/orders",
+    "invoiceDirectory": "/invoices",
+    "notes": "FTP configuration notes",
+    "isPrimaryTransmissionMethod": true
+  },
+  "ediSchedule": {
+    "enableScheduledExport": false,
+    "scheduleParameters": {
+      "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab",
+      "scheduleFrequency": 1,
+      "schedulePeriod": "DAY",
+      "schedulingDate": "2024-11-18T08:29:02.958+00:00",
+      "scheduleTime": "02:00",
+      "scheduleDay": 1,
+      "weekDays": [
+        "MONDAY",
+        "WEDNESDAY",
+        "FRIDAY"
+      ],
+      "timeZone": "UTC"
+    },
+    "schedulingNotes": "Schedule notes for this EDI job"
+  },
+  "isDefaultConfig": true,
+  "metadata": {
+    "createdDate": "2024-11-18T10:30:53.788+00:00",
+    "createdByUserId": "3ab24dc6-155f-4c8f-86d3-ce2e92e804e6",
+    "updatedDate": "2024-11-18T10:30:53.788+00:00",
+    "updatedByUserId": "3ab24dc6-155f-4c8f-86d3-ce2e92e804e6"
+  }
+}
