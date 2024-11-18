@@ -32,9 +32,11 @@
       "$ref": "edi_config.json"
     },
     "ediFtp": {
+      "description": "The FTP object for this EDI",
       "$ref": "edi_ftp.json"
     },
     "ediSchedule": {
+      "description": "The job object for this EDI",
       "$ref": "edi_schedule.json"
     },
     "isDefaultConfig": {

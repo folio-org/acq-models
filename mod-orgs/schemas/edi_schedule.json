@@ -9,6 +9,7 @@
       "default": false
     },
     "scheduleParameters": {
+      "description": "Job scheduler parameters",
       "$ref": "schedule_parameters.json"
     },
     "schedulingNotes": {
