@@ -2,6 +2,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Finance data for a fiscal year",
   "type": "object",
+  "javaName": "FyFinanceData",
   "properties": {
     "fiscalYearId": {
       "description": "UUID of the fiscal year",
