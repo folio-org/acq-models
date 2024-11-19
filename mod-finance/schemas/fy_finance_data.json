@@ -2,7 +2,6 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Finance data for a fiscal year",
   "type": "object",
-  "javaName": "FyFinanceData",
   "properties": {
     "fiscalYearId": {
       "description": "UUID of the fiscal year",
@@ -42,6 +41,13 @@
       "description": "Arbitrary tags associated with this fund",
       "$ref": "../../../raml-util/schemas/tags.schema"
     },
+    "fundAcqUnitIds": {
+      "description": "List of acquisition unit IDs associated with the fund",
+      "type": "array",
+      "items": {
+        "$ref": "../../common/schemas/uuid.json"
+      }
+    },
     "budgetId": {
       "description": "UUID of this budget",
       "$ref": "../../common/schemas/uuid.json"
@@ -77,6 +83,13 @@
     "budgetAllowableEncumbrance": {
       "description": "The encumbrance percentage limit for this budget",
       "type": "number"
+    },
+    "budgetAcqUnitIds": {
+      "description": "List of acquisition unit IDs associated with the budget",
+      "type": "array",
+      "items": {
+        "$ref": "../../common/schemas/uuid.json"
+      }
     }
   },
   "required": [
