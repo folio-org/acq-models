@@ -11,13 +11,15 @@
       "fundTags": {
         "tagList": ["Education", "Research"]
       },
+      "fundAcqUnitIds": ["123e4567-e89b-12d3-a456-426614174006"],
       "budgetId": "123e4567-e89b-12d3-a456-426614174001",
       "budgetName": "Annual Budget",
       "budgetStatus": "Active",
       "budgetInitialAllocation": 1000000,
       "budgetCurrentAllocation": 950000,
       "budgetAllowableExpenditure": 80,
-      "budgetAllowableEncumbrance": 90
+      "budgetAllowableEncumbrance": 90,
+      "budgetAcqUnitIds": ["123e4567-e89b-12d3-a456-426614174008"]
     },
     {
       "fiscalYearId": "123e4567-e89b-12d3-a456-426614174005",
@@ -30,13 +32,15 @@
       "fundTags": {
         "tagList": ["Science", "Innovation"]
       },
+      "fundAcqUnitIds": ["123e4567-e89b-12d3-a456-426614174007"],
       "budgetId": "123e4567-e89b-12d3-a456-426614174003",
       "budgetName": "Research Budget",
       "budgetStatus": "Planned",
       "budgetInitialAllocation": 500000,
       "budgetCurrentAllocation": 450000,
       "budgetAllowableExpenditure": 70,
-      "budgetAllowableEncumbrance": 85
+      "budgetAllowableEncumbrance": 85,
+      "budgetAcqUnitIds": ["123e4567-e89b-12d3-a456-426614174009"]
     }
   ],
   "totalRecords": 2
