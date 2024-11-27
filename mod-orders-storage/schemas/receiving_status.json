@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The status of a piece",
+  "javaName": "ReceivingStatus",
+  "type": "string",
+  "enum": [
+    "Received",
+    "Expected",
+    "Late",
+    "Claim delayed",
+    "Claim sent",
+    "Unreceivable"
+  ],
+  "default": "Expected"
+}
