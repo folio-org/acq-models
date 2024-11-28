@@ -35,15 +35,10 @@
         ],
         "additionalProperties": false
       }
-    },
-    "totalRecords": {
-      "description": "The total number of pieces claimed in the list",
-      "type": "integer"
     }
   },
   "additionalProperties": false,
   "required": [
-    "claimingPieceResults",
-    "totalRecords"
+    "claimingPieceResults"
   ]
 }
