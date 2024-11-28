@@ -3,9 +3,9 @@
   "description": "A collection of claiming pieces",
   "type": "object",
   "properties": {
-    "claiming": {
+    "claimingPieceIds": {
       "description": "List of claiming pieces",
-      "id": "claiming",
+      "id": "claimingPieceIds",
       "type": "array",
       "items": {
         "description": "The id of the piece",
@@ -20,7 +20,7 @@
   },
   "additionalProperties": false,
   "required": [
-    "claiming",
+    "claimingPieceIds",
     "totalRecords"
   ]
 }
