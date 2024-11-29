@@ -49,6 +49,14 @@
         "$ref": "../../common/schemas/uuid.json"
       }
     },
+    "ledgerId": {
+      "description": "UUID of this ledger",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "ledgerCode": {
+      "description": "The code for the ledger",
+      "type": "string"
+    },
     "budgetId": {
       "description": "UUID of this budget",
       "$ref": "../../common/schemas/uuid.json"
@@ -91,6 +99,14 @@
       "items": {
         "$ref": "../../common/schemas/uuid.json"
       }
+    },
+    "groupId": {
+      "description": "UUID of this group",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "groupCode": {
+      "description": "The code for the group",
+      "type": "string"
     }
   },
   "required": [

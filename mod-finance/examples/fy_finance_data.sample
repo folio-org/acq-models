@@ -10,6 +10,8 @@
     "tagList": ["Education", "Research"]
   },
   "fundAcqUnitIds": ["123e4567-e89b-12d3-a456-426614174006"],
+  "ledgerId": "123e4567-e89b-12d3-a456-426614174015",
+  "ledgerCode": "LED001",
   "budgetId": "123e4567-e89b-12d3-a456-426614174001",
   "budgetName": "Annual Budget",
   "budgetStatus": "Active",
@@ -17,5 +19,7 @@
   "budgetCurrentAllocation": 950000,
   "budgetAllowableExpenditure": 80,
   "budgetAllowableEncumbrance": 90,
-  "budgetAcqUnitIds": ["123e4567-e89b-12d3-a456-426614174008"]
+  "budgetAcqUnitIds": ["123e4567-e89b-12d3-a456-426614174008"],
+  "groupId": "123e4567-e89b-12d3-a456-426614174025",
+  "groupCode": "GRP001",
 }
