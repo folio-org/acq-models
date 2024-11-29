@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A collection of piece ids and a new status to update",
+  "type": "object",
+  "properties": {
+    "pieceIds": {
+      "description": "A collection of piece ids to update",
+      "type": "array",
+      "id": "pieceIds",
+      "items": {
+        "type": "string",
+        "$ref": "../../common/schemas/uuid.json"
+      }
+    },
+    "receivingStatus": {
+      "description": "The new status of the corresponding pieces",
+      "$ref": "../../mod-orders-storage/schemas/receiving_status.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "pieceIds",
+    "receivingStatus"
+  ]
+}

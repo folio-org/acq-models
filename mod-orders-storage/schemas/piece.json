@@ -93,16 +93,7 @@
     },
     "receivingStatus": {
       "description": "The status of this piece",
-      "type": "string",
-      "enum": [
-        "Received",
-        "Expected",
-        "Late",
-        "Claim delayed",
-        "Claim sent",
-        "Unreceivable"
-      ],
-      "default": "Expected"
+      "$ref": "receiving_status.json"
     },
     "supplement": {
       "description": "Whether or not this is supplementary material",
