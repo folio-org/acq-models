@@ -1,0 +1,16 @@
+{
+  "claimingPieceResults": [
+    {
+      "pieceId": "123e4567-e89b-12d3-a456-426614174000",
+      "status": "success"
+    },
+    {
+      "pieceId": "123e4567-e89b-12d3-a456-426614174001",
+      "status": "failure",
+      "error": {
+        "code": "CLAIM_ERROR",
+        "message": "Failed to claim piece"
+      }
+    }
+  ]
+}
