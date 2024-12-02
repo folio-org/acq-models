@@ -85,6 +85,10 @@
       "description": "The current allocation amount for this budget",
       "type": "number"
     },
+    "allocationChange": {
+      "description": "The change in allocation amount for this budget",
+      "type": "number"
+    },
     "budgetAllowableExpenditure": {
       "description": "The expenditure percentage limit for this budget",
       "type": "number"
@@ -107,6 +111,23 @@
     "groupCode": {
       "description": "The code for the group",
       "type": "string"
+    },
+    "transactionDescription": {
+      "description": "A description of this transaction",
+      "type": "string"
+    },
+    "transactionTag": {
+      "type": "object",
+      "description": "Arbitrary tags associated with this transaction",
+      "$ref": "../../../raml-util/schemas/tags.schema"
+    },
+    "updateType": {
+      "description": "The type of update being performed",
+      "type": "string",
+      "enum": [
+        "Preview",
+        "Commit"
+      ]
     }
   },
   "required": [
