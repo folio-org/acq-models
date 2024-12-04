@@ -85,7 +85,7 @@
       "description": "The current allocation amount for this budget",
       "type": "number"
     },
-    "allocationChange": {
+    "budgetAllocationChange": {
       "description": "The change in allocation amount for this budget",
       "type": "number"
     },
