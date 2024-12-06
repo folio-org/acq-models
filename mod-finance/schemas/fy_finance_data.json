@@ -81,10 +81,6 @@
       "description": "The amount of the first allocation made to this budget",
       "type": "number"
     },
-    "budgetCurrentAllocation": {
-      "description": "The current allocation amount for this budget",
-      "type": "number"
-    },
     "budgetAllocationChange": {
       "description": "The change in allocation amount for this budget",
       "type": "number"
@@ -120,14 +116,6 @@
       "type": "object",
       "description": "Arbitrary tags associated with this transaction",
       "$ref": "../../../raml-util/schemas/tags.schema"
-    },
-    "updateType": {
-      "description": "The type of update being performed",
-      "type": "string",
-      "enum": [
-        "Preview",
-        "Commit"
-      ]
     }
   },
   "required": [
