@@ -81,8 +81,8 @@
       "description": "The amount of the first allocation made to this budget",
       "type": "number"
     },
-    "budgetCurrentAllocation": {
-      "description": "The current allocation amount for this budget",
+    "budgetAllocationChange": {
+      "description": "The change in allocation amount for this budget",
       "type": "number"
     },
     "budgetAllowableExpenditure": {
@@ -107,6 +107,15 @@
     "groupCode": {
       "description": "The code for the group",
       "type": "string"
+    },
+    "transactionDescription": {
+      "description": "A description of this transaction",
+      "type": "string"
+    },
+    "transactionTag": {
+      "type": "object",
+      "description": "Arbitrary tags associated with this transaction",
+      "$ref": "../../../raml-util/schemas/tags.schema"
     }
   },
   "required": [
