@@ -12,6 +12,14 @@
         "$ref": "fy_finance_data.json"
       }
     },
+    "updateType": {
+      "description": "The type of update being performed",
+      "type": "string",
+      "enum": [
+        "Preview",
+        "Commit"
+      ]
+    },
     "totalRecords": {
       "description": "The number of objects contained in this collection",
       "type": "integer"
@@ -20,6 +28,7 @@
   "additionalProperties": false,
   "required": [
     "fyFinanceData",
+    "updateType",
     "totalRecords"
   ]
 }
