@@ -3,5 +3,6 @@
     "5f5b4f3b-6b7b-4b1e-8b4d-8b1b2b3b4b5b",
     "5f5b4f3b-6b7b-4b1e-8b4d-8b1b2b3b4b5c"
   ],
-  "receivingStatus": "Unreceivable"
+  "receivingStatus": "Unreceivable",
+  "claimingInterval": 1
 }
