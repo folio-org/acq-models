@@ -93,6 +93,10 @@
       "description": "The encumbrance percentage limit for this budget",
       "type": "number"
     },
+    "budgetAfterAllocation": {
+      "description": "The amount of the budget after the allocation",
+      "type": "number"
+    },
     "budgetAcqUnitIds": {
       "description": "List of acquisition unit IDs associated with the budget",
       "type": "array",
