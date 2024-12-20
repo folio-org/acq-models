@@ -15,6 +15,10 @@
     "receivingStatus": {
       "description": "The new status of the corresponding pieces",
       "$ref": "../../mod-orders-storage/schemas/receiving_status.json"
+    },
+    "claimingInterval": {
+      "description": "Time interval (in days) for processing claims related to this piece",
+      "type": "integer"
     }
   },
   "additionalProperties": false,
