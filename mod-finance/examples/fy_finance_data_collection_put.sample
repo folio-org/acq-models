@@ -21,6 +21,7 @@
       "budgetAllocationChange": -50000,
       "budgetAllowableExpenditure": 80,
       "budgetAllowableEncumbrance": 90,
+      "budgetAfterAllocation": 950000,
       "budgetAcqUnitIds": ["123e4567-e89b-12d3-a456-426614174008"],
       "groupId": "123e4567-e89b-12d3-a456-426614174025",
       "groupCode": "GRP001",
@@ -50,6 +51,7 @@
       "budgetAllocationChange": -50000,
       "budgetAllowableExpenditure": 70,
       "budgetAllowableEncumbrance": 85,
+      "budgetAfterAllocation": 450000,
       "budgetAcqUnitIds": ["123e4567-e89b-12d3-a456-426614174009"],
       "groupId": "123e4567-e89b-12d3-a456-426614174026",
       "groupCode": "GRP002",
@@ -59,5 +61,6 @@
       }
     }
   ],
+  "updateType": "Commit",
   "totalRecords": 2
 }
