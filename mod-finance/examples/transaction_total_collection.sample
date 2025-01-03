@@ -1,0 +1,21 @@
+{
+  "transactionTotals": [
+    {
+      "fiscalYearId": "4438bc3b-4b4a-4e5e-9886-5f69b48a7a32",
+      "transactionType": "Allocation",
+      "currency": "USD",
+      "fromFundId": "27f27438-3197-4281-a353-511829421d6e",
+      "toFundId": "2e51c019-97f3-4523-87e9-59250e3b48bc",
+      "amount": 50000
+    },
+    {
+      "fiscalYearId": "684b5dc5-92f6-4db7-b996-b549d88f5e4e",
+      "transactionType": "Transfer",
+      "currency": "USD",
+      "fromFundId": "7fbd5d84-62d1-44c6-9c45-6cb173998bbd",
+      "toFundId": "69640328-788e-43fc-9c3c-af39e243f3b7",
+      "amount": 1000,
+    }
+  ],
+  "totalRecords": 2
+}
