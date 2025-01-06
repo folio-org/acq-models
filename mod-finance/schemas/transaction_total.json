@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A financial transaction total",
+  "type": "object",
+  "javaName": "transactionTotal",
+  "properties": {
+    "fiscalYearId": {
+      "$ref": "../../common/schemas/uuid.json",
+      "description": "UUID of the fiscal year that the transaction is taking place in"
+    },
+    "transactionType": {
+      "description": "This describes the type of transaction",
+      "enum": [
+        "Allocation",
+        "Credit",
+        "Encumbrance",
+        "Payment",
+        "Pending payment",
+        "Rollover transfer",
+        "Transfer"
+      ],
+      "type": "string"
+    },
+    "fromFundId": {
+      "$ref": "../../common/schemas/uuid.json",
+      "description": "UUID of the fund money is moving from"
+    },
+    "toFundId": {
+      "$ref": "../../common/schemas/uuid.json",
+      "description": "UUID of the fund money is moving to"
+    },
+    "amount": {
+      "description": "The amount of this transaction",
+      "type": "number"
+    }
+  },
+  "required": [
+    "fiscalYearId",
+    "transactionType",
+    "fromFundId",
+    "toFundId",
+    "amount"
+  ],
+  "additionalProperties": true
+}
