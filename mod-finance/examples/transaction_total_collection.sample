@@ -14,7 +14,7 @@
       "currency": "USD",
       "fromFundId": "7fbd5d84-62d1-44c6-9c45-6cb173998bbd",
       "toFundId": "69640328-788e-43fc-9c3c-af39e243f3b7",
-      "amount": 1000,
+      "amount": 1000
     }
   ],
   "totalRecords": 2
