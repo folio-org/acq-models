@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Collection of Wrapper Piece records",
+  "type": "object",
+  "properties": {
+    "wrapperPieces": {
+      "description": "Collection of Wrapper Piece records",
+      "type": "array",
+      "id": "wrapperPieces",
+      "items": {
+        "type": "object",
+        "$ref": "wrapper_piece.json"
+      }
+    },
+    "totalRecords": {
+      "description": "The number of objects contained in this collection",
+      "type": "integer"
+    }
+  },
+  "additionalProperties": true
+}

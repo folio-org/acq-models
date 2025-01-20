@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Wrapper Piece details",
+  "type": "object",
+  "javaName": "WrapperPiece",
+  "properties": {
+    "vendorId": {
+      "description": "UUID of the vendor id this record is associated with",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "piece": {
+      "description": "Piece details",
+      "$ref": "piece.json"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "vendorId",
+    "piece"
+  ]
+}
