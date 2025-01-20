@@ -1,15 +1,15 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Collection of Org Piece records",
+  "description": "Collection of Wrapper Piece records",
   "type": "object",
   "properties": {
-    "orgPieces": {
-      "description": "Collection of Org Piece records",
+    "wrapperPieces": {
+      "description": "Collection of Wrapper Piece records",
       "type": "array",
-      "id": "orgPieces",
+      "id": "wrapperPieces",
       "items": {
         "type": "object",
-        "$ref": "org_piece.json"
+        "$ref": "wrapper_piece.json"
       }
     },
     "totalRecords": {
@@ -17,5 +17,5 @@
       "type": "integer"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": true
 }
