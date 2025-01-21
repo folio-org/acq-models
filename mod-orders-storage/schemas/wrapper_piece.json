@@ -16,6 +16,10 @@
       "description": "PoLine details",
       "$ref": "po_line.json"
     },
+    "title": {
+      "description": "Title details",
+      "$ref": "title.json"
+    },
     "purchaseOrder": {
       "description": "PurchaseOrder details",
       "$ref": "purchase_order.json"
@@ -26,6 +30,7 @@
     "vendorId",
     "piece",
     "poLine",
+    "title",
     "purchaseOrder"
   ]
 }
