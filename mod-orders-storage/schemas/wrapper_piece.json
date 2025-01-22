@@ -11,11 +11,26 @@
     "piece": {
       "description": "Piece details",
       "$ref": "piece.json"
+    },
+    "poLine": {
+      "description": "PoLine details",
+      "$ref": "po_line.json"
+    },
+    "title": {
+      "description": "Title details",
+      "$ref": "title.json"
+    },
+    "purchaseOrder": {
+      "description": "PurchaseOrder details",
+      "$ref": "purchase_order.json"
     }
   },
   "additionalProperties": true,
   "required": [
     "vendorId",
-    "piece"
+    "piece",
+    "poLine",
+    "title",
+    "purchaseOrder"
   ]
 }
