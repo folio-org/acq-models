@@ -257,9 +257,7 @@
       "$ref": "../../mod-orders-storage/schemas/vendor_detail.json"
     },
     "customFields" : {
-      "description": "Object that contains custom field",
-      "type": "object",
-      "additionalProperties": true
+      "$ref": "../../common/schemas/custom_fields.json"
     },
     "metadata": {
       "type": "object",
