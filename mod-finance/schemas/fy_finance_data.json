@@ -77,7 +77,6 @@
       ]
     },
     "budgetInitialAllocation": {
-      "default": 0,
       "description": "The amount of the first allocation made to this budget",
       "type": "number"
     },
