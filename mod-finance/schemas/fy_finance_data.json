@@ -80,6 +80,10 @@
       "description": "The amount of the first allocation made to this budget",
       "type": "number"
     },
+    "budgetCurrentAllocation": {
+      "description": "The amount currently allocated to this budget",
+      "type": "number"
+    },
     "budgetAllocationChange": {
       "description": "The change in allocation amount for this budget",
       "type": "number"
