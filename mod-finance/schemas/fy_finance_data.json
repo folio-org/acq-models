@@ -67,14 +67,7 @@
     },
     "budgetStatus": {
       "description": "The status of the budget",
-      "type": "string",
-      "enum": [
-        "Active",
-        "Frozen",
-        "Inactive",
-        "Planned",
-        "Closed"
-      ]
+      "type": "string"
     },
     "budgetInitialAllocation": {
       "description": "The amount of the first allocation made to this budget",
