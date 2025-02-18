@@ -116,6 +116,14 @@
       "type": "object",
       "description": "Arbitrary tags associated with this transaction",
       "$ref": "../../../raml-util/schemas/tags.schema"
+    },
+    "isFundChanged": {
+      "description": "Indicates if the fund has changed",
+      "type": "boolean"
+    },
+    "isBudgetChanged": {
+      "description": "Indicates if the budget has changed",
+      "type": "boolean"
     }
   },
   "required": [
