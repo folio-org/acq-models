@@ -23,7 +23,9 @@
       "budgetAllowableEncumbrance": 90,
       "budgetAcqUnitIds": ["123e4567-e89b-12d3-a456-426614174008"],
       "groupId": "123e4567-e89b-12d3-a456-426614174025",
-      "groupCode": "GRP001"
+      "groupCode": "GRP001",
+      "isFundChanged": false,
+      "isBudgetChanged": true
     },
     {
       "fiscalYearId": "123e4567-e89b-12d3-a456-426614174005",
@@ -48,7 +50,9 @@
       "budgetAllowableEncumbrance": 85,
       "budgetAcqUnitIds": ["123e4567-e89b-12d3-a456-426614174009"],
       "groupId": "123e4567-e89b-12d3-a456-426614174026",
-      "groupCode": "GRP002"
+      "groupCode": "GRP002",
+      "isFundChanged": true,
+      "isBudgetChanged": true
     }
   ],
   "totalRecords": 2
