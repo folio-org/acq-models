@@ -21,7 +21,10 @@
     },
     "jobDetails": {
       "description": "details of job",
-      "type": "object"
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
     },
     "status": {
       "description": "The status of the job",
