@@ -59,7 +59,7 @@
     },
     "budgetId": {
       "description": "UUID of this budget",
-      "type": "string"
+      "$ref": "../../common/schemas/uuid.json"
     },
     "budgetName": {
       "description": "The name of the budget",
