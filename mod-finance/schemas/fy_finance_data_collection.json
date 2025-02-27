@@ -12,6 +12,10 @@
         "$ref": "fy_finance_data.json"
       }
     },
+    "worksheetName": {
+      "description": "The name of the worksheet from which the data was uploaded",
+      "type": "string"
+    },
     "updateType": {
       "description": "The type of update being performed",
       "type": "string",
