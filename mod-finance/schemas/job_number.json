@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Job number containing type and sequence number",
+  "type": "object",
+  "properties": {
+    "type": {
+      "description": "Type of the job",
+      "type": "string",
+      "enum": ["FundUpdateLogs"]
+    },
+    "sequenceNumber": {
+      "description": "Sequence number",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "type",
+    "sequenceNumber"
+  ]
+}
