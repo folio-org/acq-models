@@ -6,7 +6,7 @@
     "type": {
       "description": "Type of the job",
       "type": "string",
-      "enum": ["Logs"]
+      "enum": ["FundUpdateLogs"]
     },
     "sequenceNumber": {
       "description": "Sequence number",
