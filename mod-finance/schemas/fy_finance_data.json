@@ -30,12 +30,7 @@
     },
     "fundStatus": {
       "description": "The current status of this fund",
-      "type": "string",
-      "enum": [
-        "Active",
-        "Frozen",
-        "Inactive"
-      ]
+      "type": "string"
     },
     "fundTags": {
       "type": "object",
