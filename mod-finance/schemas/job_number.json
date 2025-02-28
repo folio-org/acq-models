@@ -10,7 +10,7 @@
     },
     "sequenceNumber": {
       "description": "Sequence number",
-      "type": "number"
+      "type": "string"
     }
   },
   "additionalProperties": false,
