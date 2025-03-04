@@ -29,11 +29,13 @@
     },
     "allowableEncumbrance": {
       "description": "The encumbrance percentage limit for this budget",
-      "type": "number"
+      "type": "number",
+      "minimum": 0
     },
     "allowableExpenditure": {
       "description": "The expenditure percentage limit for this budget",
-      "type": "number"
+      "type": "number",
+      "minimum": 0
     },
     "allocated": {
       "description": "The amount currently allocated to this budget",
