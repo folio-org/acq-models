@@ -156,7 +156,7 @@
     },
     "orderFormat": {
       "description": "The purchase order line format",
-      "type": "object",
+      "type": "string",
       "$ref": "order_format.json"
     },
     "packagePoLineId": {
