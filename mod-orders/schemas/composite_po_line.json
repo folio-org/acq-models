@@ -208,7 +208,7 @@
     },
     "receiptStatus": {
       "description": "The purchase order line receipt status",
-      "type": "object",
+      "type": "string",
       "$ref": "../../mod-orders-storage/schemas/receipt_status.json"
     },
     "renewalNote": {

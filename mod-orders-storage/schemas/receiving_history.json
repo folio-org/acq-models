@@ -74,7 +74,7 @@
     "poLineReceiptStatus": {
       "$ref": "receipt_status.json",
       "description": "The purchase order line receipt status",
-      "type": "object"
+      "type": "string"
     },
     "purchaseOrderId": {
       "$ref": "../../common/schemas/uuid.json",
