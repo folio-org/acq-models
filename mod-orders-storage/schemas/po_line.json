@@ -204,7 +204,7 @@
     },
     "receiptStatus": {
       "description": "The purchase order line receipt status",
-      "type": "object",
+      "type": "string",
       "$ref": "receipt_status.json"
     },
     "renewalNote": {
