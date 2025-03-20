@@ -158,7 +158,7 @@
     },
     "orderFormat": {
       "description": "The purchase order line format",
-      "type": "object",
+      "type": "string",
       "$ref": "../../mod-orders-storage/schemas/order_format.json"
     },
     "packagePoLineId": {
