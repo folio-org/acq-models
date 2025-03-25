@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Exchange rate source schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "The unique identifier of the exchange rate source",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "providerUri": {
+      "description": "The URI of the exchange rate provider",
+      "type": "string"
+    },
+    "apiKey": {
+      "description": "The API key or login for the provider",
+      "type": "string"
+    },
+    "apiSecret": {
+      "description": "The API secret or password for the provider",
+      "type": "string"
+    },
+    "refreshInterval": {
+      "description": "Refresh interval specified in seconds",
+      "type": "integer",
+      "default": 86400
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "providerUri",
+    "refreshInterval"
+  ]
+}
