@@ -2,6 +2,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Collection of order template categories",
   "type": "object",
+  "javaName": "OrderTemplateCategoryCollection",
   "properties": {
     "orderTemplateCategories": {
       "description": "Collection of order template categories",

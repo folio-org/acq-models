@@ -2,6 +2,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Order template",
   "type": "object",
+  "javaName": "OrderTemplate",
   "properties": {
     "id": {
       "description": "UUID of order template",
