@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Order Template Category",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "UUID of order template category",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "name": {
+      "description": "The name of order template category",
+      "type": "string"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "name"
+  ]
+}
