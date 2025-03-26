@@ -1,9 +1,9 @@
 {
-   "orderTemplateCategories":[
-     {
-       "id": "3dee318b-f5b3-40dc-be93-cc89b8c45b6f",
-       "name": "Sample Order Template Category"
-     }
-   ],
-   "totalRecords":1
+  "orderTemplateCategories": [
+    {
+      "id": "3dee318b-f5b3-40dc-be93-cc89b8c45b6f",
+      "name": "Sample Order Template Category"
+    }
+  ],
+  "totalRecords": 1
 }

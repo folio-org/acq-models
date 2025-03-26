@@ -14,7 +14,7 @@
       }
     },
     "totalRecords": {
-      "description": "The number of objects contained in this collection",
+      "description": "The number of objects in DB in general for incoming search criteria.",
       "type": "integer"
     }
   },
