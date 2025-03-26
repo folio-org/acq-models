@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Collection of order template categories",
+  "type": "object",
+  "javaName": "OrderTemplateCategoryCollection",
+  "properties": {
+    "orderTemplateCategories": {
+      "description": "Collection of order template categories",
+      "type": "array",
+      "id": "orderTemplateCategories",
+      "items": {
+        "type": "object",
+        "$ref": "order_template_category.json"
+      }
+    },
+    "totalRecords": {
+      "description": "The number of objects in DB in general for incoming search criteria.",
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "orderTemplateCategories",
+    "totalRecords"
+  ]
+}

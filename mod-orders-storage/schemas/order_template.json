@@ -2,6 +2,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Order template",
   "type": "object",
+  "javaName": "OrderTemplate",
   "properties": {
     "id": {
       "description": "UUID of order template",
@@ -22,6 +23,10 @@
     "hiddenFields": {
       "description": "Fields for hidden from end user",
       "type": "object"
+    },
+    "categoryId": {
+      "description": "UUID of order template category",
+      "$ref": "../../common/schemas/uuid.json"
     }
   },
   "additionalProperties": true,
