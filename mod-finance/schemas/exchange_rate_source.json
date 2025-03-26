@@ -7,6 +7,10 @@
       "description": "The unique identifier of the exchange rate source",
       "$ref": "../../common/schemas/uuid.json"
     },
+    "enabled": {
+      "description": "Flag indicating whether the specified exchange rate source should be used",
+      "type": "boolean"
+    },
     "providerUri": {
       "description": "The URI of the exchange rate provider",
       "type": "string"
@@ -27,7 +31,9 @@
   },
   "additionalProperties": false,
   "required": [
+    "enabled",
     "providerUri",
-    "refreshInterval"
+    "apiKey",
+    "apiSecret"
   ]
 }
