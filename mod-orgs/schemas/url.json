@@ -26,10 +26,11 @@
     },
     "categories": {
       "id": "categories",
-      "description": "The list of categories for this organization URL",
+      "description": "The list of category ids for this organization URL",
       "type": "array",
       "items": {
-        "type": "string"
+        "description": "UUID of the organization category",
+        "$ref": "../../common/schemas/uuid.json"
       }
     },
     "notes": {

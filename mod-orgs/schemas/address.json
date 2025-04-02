@@ -37,10 +37,11 @@
     },
     "categories": {
       "id": "categories",
-      "description": "The list of categories for this organization address",
+      "description": "The list of category ids for this organization address",
       "type": "array",
       "items": {
-        "type": "string"
+        "description": "UUID of the organization category",
+        "$ref": "../../common/schemas/uuid.json"
       }
     },
     "language": {
