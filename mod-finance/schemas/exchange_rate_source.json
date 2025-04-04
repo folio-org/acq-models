@@ -11,6 +11,15 @@
       "description": "Flag indicating whether the specified exchange rate source should be used",
       "type": "boolean"
     },
+    "providerType": {
+      "description": "Provider type",
+      "type": "string",
+      "enum": [
+        "treasury.gov",
+        "convera.com",
+        "currencyapi.com"
+      ]
+    },
     "providerUri": {
       "description": "The URI of the exchange rate provider",
       "type": "string"
@@ -33,7 +42,6 @@
   "required": [
     "enabled",
     "providerUri",
-    "apiKey",
-    "apiSecret"
+    "providerType"
   ]
 }
