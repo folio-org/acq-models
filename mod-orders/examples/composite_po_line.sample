@@ -69,7 +69,7 @@
     "createInventory": "Instance, Holding",
     "trial": false,
     "expectedActivation": "2018-10-09T00:00:00.000Z",
-    "userLimit": 10,
+    "userLimit": "10",
     "accessProvider": "ba3f3d45-247d-41f6-8dc9-6488adcad329",
     "license": {
       "code": "Code 1",
