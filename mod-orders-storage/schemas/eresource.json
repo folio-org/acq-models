@@ -34,7 +34,7 @@
     },
     "userLimit": {
       "description": "the concurrent user-limit",
-      "type": "integer"
+      "type": "string"
     },
     "accessProvider": {
       "description": "UUID of the access provider",
