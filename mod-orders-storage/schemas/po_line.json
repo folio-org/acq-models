@@ -251,7 +251,6 @@
     "cost",
     "orderFormat",
     "source",
-    "purchaseOrderId",
     "titleOrPackage"
   ]
 }
