@@ -15,7 +15,6 @@
     },
     "approvedById": {
       "description": "UUID of the user approving the order",
-      "type": "object",
       "$ref": "../../common/schemas/uuid.json"
     },
     "approvalDate": {
@@ -25,13 +24,11 @@
     },
     "assignedTo": {
       "description": "UUID of the user this purchase order his assigned to",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "$ref": "../../common/schemas/uuid.json"
     },
     "billTo": {
       "description": "UUID of the billing address",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "$ref": "../../common/schemas/uuid.json"
     },
     "closeReason": {
       "description": "Close reason for purchase order",
@@ -88,18 +85,15 @@
     },
     "shipTo": {
       "description": "UUID of the shipping address",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "$ref": "../../common/schemas/uuid.json"
     },
     "template": {
       "description": "The ID of the order template used for this order. Applies to both PO and POL",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "$ref": "../../common/schemas/uuid.json"
     },
     "vendor": {
       "description": "UUID of the vendor record",
-      "type": "string",
-      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+      "$ref": "../../common/schemas/uuid.json"
     },
     "workflowStatus": {
       "description": "the workflow status for this purchase order",

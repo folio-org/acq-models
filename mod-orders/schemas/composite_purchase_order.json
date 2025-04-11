@@ -5,7 +5,6 @@
   "properties": {
     "id": {
       "description": "UUID of this purchase order",
-      "type": "string",
       "$ref": "../../common/schemas/uuid.json"
     },
     "approved": {
@@ -15,7 +14,6 @@
     },
     "approvedById": {
       "description": "UUID of the user approving the order",
-      "type": "object",
       "$ref": "../../common/schemas/uuid.json"
     },
     "approvalDate": {
@@ -25,12 +23,10 @@
     },
     "assignedTo": {
       "description": "UUID of the user this purchase order his assigned to",
-      "type": "string",
       "$ref": "../../common/schemas/uuid.json"
     },
     "billTo": {
       "description": "UUID of the billing address",
-      "type": "string",
       "$ref": "../../common/schemas/uuid.json"
     },
     "closeReason": {
@@ -89,12 +85,10 @@
     },
     "shipTo": {
       "description": "UUID of the shipping address",
-      "type": "string",
       "$ref": "../../common/schemas/uuid.json"
     },
     "template": {
       "description": "The ID of the order template used for this order. Applies to both PO and POL",
-      "type": "string",
       "$ref": "../../common/schemas/uuid.json"
     },
     "totalCredited": {
@@ -122,7 +116,6 @@
     },
     "vendor": {
       "description": "UUID of the vendorDetails record",
-      "type": "string",
       "$ref": "../../common/schemas/uuid.json"
     },
     "workflowStatus": {
@@ -130,13 +123,13 @@
       "type": "string",
       "$ref": "../../mod-orders-storage/schemas/workflow_status.json"
     },
-    "compositePoLines": {
-      "description": "a list of completely de-referenced purchase order lines",
-      "id": "compositePoLines",
+    "poLines": {
+      "description": "a list of purchase order lines",
+      "id": "poLines",
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "composite_po_line.json"
+        "$ref": "../../mod-orders-storage/schemas/po_line.json"
       }
     },
     "acqUnitIds": {

@@ -23,22 +23,12 @@
     },
     "acquisitionMethod": {
       "description": "UUID of the acquisition method for this purchase order line",
-      "type": "string",
       "$ref": "../../common/schemas/uuid.json"
     },
     "automaticExport": {
       "description": "if true then line will be marked as available to export in the EDIFACT format or other format",
       "type": "boolean",
       "default": false
-    },
-    "alerts": {
-      "description": "an array of alert record IDs",
-      "id": "alerts",
-      "type": "array",
-      "items": {
-        "description": "UUID of an alert record",
-        "$ref": "../../common/schemas/uuid.json"
-      }
     },
     "cancellationRestriction": {
       "description": "whether or not there are cancellation restrictions for this purchase order line",
@@ -49,11 +39,11 @@
       "type": "string"
     },
     "claims": {
-      "description": "list of claims",
+      "description": "claims associated with this purchase order line",
       "id": "claims",
       "type": "array",
       "items": {
-        "description": "claim record",
+        "description": "a claim record",
         "type": "object",
         "$ref": "claim.json"
       }
@@ -82,7 +72,7 @@
       }
     },
     "cost": {
-      "description": "cost record",
+      "description": "cost details associated with this purchase order line",
       "type": "object",
       "$ref": "cost.json"
     },
@@ -91,7 +81,7 @@
       "type": "string"
     },
     "details": {
-      "description": "details record",
+      "description": "details about this purchase order line",
       "type": "object",
       "$ref": "details.json"
     },
@@ -108,7 +98,7 @@
       }
     },
     "eresource": {
-      "description": "eresource record",
+      "description": "eresource-related details of this purchase order line",
       "type": "object",
       "$ref": "eresource.json"
     },
@@ -117,7 +107,7 @@
       "id": "fundDistribution",
       "type": "array",
       "items": {
-        "description": "fund distribution record",
+        "description": "a fund distribution record",
         "type": "object",
         "$ref": "fund_distribution.json"
       }
@@ -136,7 +126,7 @@
       "id": "locations",
       "type": "array",
       "items": {
-        "description": "location record",
+        "description": "The location details",
         "type": "object",
         "$ref": "location.json"
       }
@@ -169,7 +159,7 @@
       "$ref": "payment_status.json"
     },
     "physical": {
-      "description": "UUID of the physical (details) record",
+      "description": "details of this purchase order line relating to physical materials",
       "type": "object",
       "$ref": "physical.json"
     },
@@ -178,7 +168,7 @@
       "type": "string"
     },
     "poLineNumber": {
-      "description": "A human readable number assigned to this PO line",
+      "description": "A human readable number assigned to this PO line (assigned automatically)",
       "type": "string",
       "pattern": "^[a-zA-Z0-9]{1,22}-[0-9]{1,3}$"
     },
@@ -211,15 +201,6 @@
       "description": "Renewal note for this purchase order line",
       "type": "string"
     },
-    "reportingCodes": {
-      "description": "a list of reporting codes associated with this purchase order line",
-      "id": "reportingCodes",
-      "type": "array",
-      "items": {
-        "description": "UUID of the reporting code",
-        "$ref": "../../common/schemas/uuid.json"
-      }
-    },
     "requester": {
       "description": "who requested this purchase order line",
       "type": "string"
@@ -249,7 +230,7 @@
       "type": "string"
     },
     "vendorDetail": {
-      "description": "Vendor detail record",
+      "description": "Details related to the vendor of this purchase order line",
       "type": "object",
       "$ref": "vendor_detail.json"
     },
@@ -266,9 +247,10 @@
   },
   "additionalProperties": false,
   "required": [
+    "acquisitionMethod",
+    "cost",
     "orderFormat",
     "source",
-    "purchaseOrderId",
     "titleOrPackage"
   ]
 }
