@@ -11,6 +11,11 @@
     "defaultTemplateId": {
       "description": "UUID of the default order template",
       "$ref": "../../common/schemas/uuid.json"
+    },
+    "metadata": {
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
     }
   },
   "additionalProperties": false,
