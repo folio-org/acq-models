@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Mosaic Configuration",
+  "type": "object",
+  "javaName": "MosaicConfiguration",
+  "properties": {
+    "id": {
+      "description": "UUID of the configuration",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "defaultTemplateId": {
+      "description": "UUID of the default order template",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "metadata": {
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "defaultTemplateId"
+  ]
+}
