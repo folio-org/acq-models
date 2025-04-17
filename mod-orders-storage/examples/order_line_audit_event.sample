@@ -25,7 +25,6 @@
         ]
       },
       "donor": "donor",
-      "alerts": [],
       "claims": [],
       "claimingActive": false,
       "claimingInterval": 0,
@@ -96,7 +95,6 @@
       },
       "paymentStatus": "Payment Not Required",
       "receiptStatus": "Pending",
-      "reportingCodes": [],
       "titleOrPackage": "Sport",
       "automaticExport": true,
       "purchaseOrderId": "c4abf6c3-4bd5-4464-999b-c66cfb6f1cf9",
