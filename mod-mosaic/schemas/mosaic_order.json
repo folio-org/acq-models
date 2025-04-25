@@ -149,8 +149,5 @@
       "readonly": true
     }
   },
-  "additionalProperties": false,
-  "required": [
-    "id"
-  ]
+  "additionalProperties": false
 }

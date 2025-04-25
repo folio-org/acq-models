@@ -16,7 +16,6 @@
   },
   "additionalProperties": false,
   "required": [
-    "orderTemplateId",
     "orderData"
   ]
 }
