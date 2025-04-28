@@ -48,8 +48,8 @@
       "description": "note for poLIne",
       "type": "string"
     },
-    "poLineDescriptor": {
-      "description": "descriptor for poLine",
+    "poLineDescription": {
+      "description": "description for poLine",
       "type": "string"
     },
     "renewalNote": {
