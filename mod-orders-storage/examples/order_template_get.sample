@@ -3,5 +3,8 @@
    "templateName": "Amazon book orders",
    "templateCode": "Amazon-B",
    "templateDescription": "Use to create orders in FOLIO after they are placed on Amazon",
-   "categoryId": "3dee318b-f5b3-40dc-be93-cc89b8c45b6f"
+   "categoryIds": [
+     "3dee318b-f5b3-40dc-be93-cc89b8c45b6f",
+     "aadeee05-5349-4669-b9bf-ff817488e223"
+   ]
 }

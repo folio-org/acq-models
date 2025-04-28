@@ -24,8 +24,8 @@
       "description": "Fields for hidden from end user",
       "type": "object"
     },
-    "categoryId": {
-      "description": "UUID of order template category",
+    "categoryIds": {
+      "description": "UUIDs of order template categories",
       "$ref": "../../common/schemas/uuid.json"
     }
   },
