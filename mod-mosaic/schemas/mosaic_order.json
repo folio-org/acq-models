@@ -136,12 +136,7 @@
     "customFields": {
       "description": "Custom fields for the order",
       "type": "object",
-      "additionalProperties": {
-        "type": [
-          "string",
-          "null"
-        ]
-      }
+      "$ref": "../../common/schemas/custom_fields.json"
     },
     "metadata": {
       "type": "object",
