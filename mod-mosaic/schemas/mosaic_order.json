@@ -12,9 +12,14 @@
       "description": "title of the material",
       "type": "string"
     },
-    "author": {
-      "description": "the name of a author to the material",
-      "type": "string"
+    "contributors": {
+      "description": "list of contributors to the material",
+      "id": "contributors",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "../../mod-orders-storage/schemas/contributor.json"
+      }
     },
     "publicationDate": {
       "description": "date (year) of the material's publication",
@@ -24,13 +29,10 @@
       "description": "edition of the material",
       "type": "string"
     },
-    "productId": {
-      "description": "The actual product identifier",
-      "type": "string"
-    },
-    "receivingNote": {
-      "description": "notes regarding receiving instructions",
-      "type": "string"
+    "details": {
+      "description": "details about this purchase order line",
+      "type": "object",
+      "$ref": "../../mod-orders-storage/schemas/details.json"
     },
     "userLimit": {
       "description": "the concurrent user-limit",
@@ -44,12 +46,12 @@
       "description": "who selected this material",
       "type": "string"
     },
-    "poLineNote": {
-      "description": "note for poLIne",
+    "orderNote": {
+      "description": "note for order",
       "type": "string"
     },
-    "poLineDescriptor": {
-      "description": "descriptor for poLine",
+    "poLineDescription": {
+      "description": "description for poLine",
       "type": "string"
     },
     "renewalNote": {
@@ -80,29 +82,36 @@
       "description": "Quantity of electronic items in this purchase order line",
       "type": "integer"
     },
-    "folioOrderTemplateId": {
-      "description": "UUID of the order template",
-      "$ref": "../../common/schemas/uuid.json"
+    "locations": {
+      "description": "Location records for this purchase order line",
+      "id": "locations",
+      "type": "array",
+      "items": {
+        "description": "The location details",
+        "type": "object",
+        "$ref": "../../mod-orders-storage/schemas/location.json"
+      }
     },
-    "locationId": {
-      "description": "location of the material",
-      "$ref": "../../common/schemas/uuid.json"
-    },
-    "fundId": {
-      "description": "fund of poLine",
-      "$ref": "../../common/schemas/uuid.json"
-    },
-    "expenseClassId": {
-      "description": "expense class of the material",
-      "$ref": "../../common/schemas/uuid.json"
+    "fundDistribution": {
+      "description": "Fund distribution records for this purchase order line",
+      "id": "fundDistribution",
+      "type": "array",
+      "items": {
+        "description": "a fund distribution record",
+        "type": "object",
+        "$ref": "../../mod-orders-storage/schemas/fund_distribution.json"
+      }
     },
     "materialTypeId": {
       "description": "material type of the material",
       "$ref": "../../common/schemas/uuid.json"
     },
-    "acquisitionUnitId": {
-      "description": "acquisition unit",
-      "$ref": "../../common/schemas/uuid.json"
+    "acqUnitIds": {
+      "description": "acquisition unit ids associated with this purchase order",
+      "type": "array",
+      "items": {
+        "$ref": "../../common/schemas/uuid.json"
+      }
     },
     "billTo": {
       "description": "UUID for the billing address",
@@ -136,12 +145,7 @@
     "customFields": {
       "description": "Custom fields for the order",
       "type": "object",
-      "additionalProperties": {
-        "type": [
-          "string",
-          "null"
-        ]
-      }
+      "$ref": "../../common/schemas/custom_fields.json"
     },
     "metadata": {
       "type": "object",
