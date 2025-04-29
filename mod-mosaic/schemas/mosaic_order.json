@@ -24,9 +24,10 @@
       "description": "edition of the material",
       "type": "string"
     },
-    "productId": {
-      "description": "The actual product identifier",
-      "type": "string"
+    "details": {
+      "description": "details about this purchase order line",
+      "type": "object",
+      "$ref": "../../mod-orders-storage/schemas/details.json"
     },
     "receivingNote": {
       "description": "notes regarding receiving instructions",
