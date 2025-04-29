@@ -12,9 +12,14 @@
       "description": "title of the material",
       "type": "string"
     },
-    "author": {
-      "description": "the name of a author to the material",
-      "type": "string"
+    "contributors": {
+      "description": "list of contributors to the material",
+      "id": "contributors",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "../../mod-orders-storage/schemas/contributor.json"
+      }
     },
     "publicationDate": {
       "description": "date (year) of the material's publication",
