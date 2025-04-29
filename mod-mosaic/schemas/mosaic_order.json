@@ -84,13 +84,25 @@
       "description": "UUID of the order template",
       "$ref": "../../common/schemas/uuid.json"
     },
-    "locationId": {
-      "description": "location of the material",
-      "$ref": "../../common/schemas/uuid.json"
+    "locations": {
+      "description": "Location records for this purchase order line",
+      "id": "locations",
+      "type": "array",
+      "items": {
+        "description": "The location details",
+        "type": "object",
+        "$ref": "../../mod-orders-storage/schemas/location.json"
+      }
     },
-    "fundId": {
-      "description": "fund of poLine",
-      "$ref": "../../common/schemas/uuid.json"
+    "fundDistribution": {
+      "description": "Fund distribution records for this purchase order line",
+      "id": "fundDistribution",
+      "type": "array",
+      "items": {
+        "description": "a fund distribution record",
+        "type": "object",
+        "$ref": "../../mod-orders-storage/schemas/fund_distribution.json"
+      }
     },
     "expenseClassId": {
       "description": "expense class of the material",
