@@ -34,10 +34,6 @@
       "type": "object",
       "$ref": "../../mod-orders-storage/schemas/details.json"
     },
-    "receivingNote": {
-      "description": "notes regarding receiving instructions",
-      "type": "string"
-    },
     "userLimit": {
       "description": "the concurrent user-limit",
       "type": "string"
@@ -50,8 +46,8 @@
       "description": "who selected this material",
       "type": "string"
     },
-    "poLineNote": {
-      "description": "note for poLIne",
+    "orderNote": {
+      "description": "note for order",
       "type": "string"
     },
     "poLineDescription": {
@@ -86,10 +82,6 @@
       "description": "Quantity of electronic items in this purchase order line",
       "type": "integer"
     },
-    "folioOrderTemplateId": {
-      "description": "UUID of the order template",
-      "$ref": "../../common/schemas/uuid.json"
-    },
     "locations": {
       "description": "Location records for this purchase order line",
       "id": "locations",
@@ -109,10 +101,6 @@
         "type": "object",
         "$ref": "../../mod-orders-storage/schemas/fund_distribution.json"
       }
-    },
-    "expenseClassId": {
-      "description": "expense class of the material",
-      "$ref": "../../common/schemas/uuid.json"
     },
     "materialTypeId": {
       "description": "material type of the material",

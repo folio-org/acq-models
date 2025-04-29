@@ -1,16 +1,28 @@
 {
   "id": "58912740-1da1-4d1d-a5f5-72f7c4e2b7a8",
   "title": "Advanced Database Systems",
-  "author": "Jane Smith",
+  "contributors": [
+    {
+      "contributor": "Jane Smith",
+      "contributorNameTypeId": "2b94c631-fca9-4892-a730-03ee529ffe2a"
+    }
+  ],
   "publicationDate": "2024",
   "edition": "Third Edition",
-  "productId": "9781234567890",
-  "receivingNote": "Please check for damage upon receipt",
+  "details": {
+    "productIds": [
+      {
+        "productId": "9781234567890",
+        "productIdType": "ISBN"
+      }
+    ],
+    "receivingNote": "Please check for damage upon receipt"
+  },
   "userLimit": "10",
   "requesterName": "Dr. Michael Brown",
   "selectorName": "Alice Johnson",
-  "poLineNote": "Priority acquisition for computer science department",
-  "poLineDescriptor": "CS-DB-2024-01",
+  "orderNote": "Priority acquisition for computer science department",
+  "poLineDescription": "CS-DB-2024-01",
   "renewalNote": "Review subscription annually in March",
   "referenceNumbers": [
     {
@@ -27,12 +39,24 @@
   "currency": "USD",
   "quantityPhysical": 3,
   "quantityElectronic": 1,
-  "folioOrderTemplateId": "fb76c8b2-c6be-4d5f-9a9c-6c5e0aa15c33",
-  "locationId": "7d9a1c91-eb4f-4e08-94c6-2cb31c8f9067",
-  "fundId": "3b430358-d5c7-4fc8-b8de-496bfa41c851",
-  "expenseClassId": "1bfcbe66-d7b5-4a57-9bc4-f8c4e7c2f083",
+  "locations": [
+    {
+      "locationId": "7d9a1c91-eb4f-4e08-94c6-2cb31c8f9067",
+      "quantity": 3,
+      "quantityPhysical": 2,
+      "quantityElectronic": 1
+    }
+  ],
+  "fundDistribution": [
+    {
+      "fundId": "3b430358-d5c7-4fc8-b8de-496bfa41c851",
+      "expenseClassId": "1bfcbe66-d7b5-4a57-9bc4-f8c4e7c2f083",
+      "value": 100,
+      "distributionType": "percentage"
+    }
+  ],
   "materialTypeId": "d9985a0f-665e-421c-b3e7-4a6e5e8f3ce1",
-  "acquisitionUnitId": "4cc73d39-3db0-47f6-8567-89e93d3c4646",
+  "acqUnitIds": ["4cc73d39-3db0-47f6-8567-89e93d3c4646"],
   "billTo": "5b8e1e9f-2788-4e69-a368-5cdb7d58c5b6",
   "shipTo": "70c42f32-d207-4c7a-9be9-7bdfa8c45d48",
   "vendor": "19bb3a90-7a45-4692-8b4d-5fe6b5b36c22",
