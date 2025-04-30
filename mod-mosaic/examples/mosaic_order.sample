@@ -21,7 +21,9 @@
   "userLimit": "10",
   "requesterName": "Dr. Michael Brown",
   "selectorName": "Alice Johnson",
-  "orderNote": "Priority acquisition for computer science department",
+  "notes": [
+    "Priority acquisition for computer science department"
+  ],
   "poLineDescription": "CS-DB-2024-01",
   "renewalNote": "Review subscription annually in March",
   "referenceNumbers": [
