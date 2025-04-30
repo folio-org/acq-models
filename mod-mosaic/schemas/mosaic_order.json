@@ -46,9 +46,13 @@
       "description": "who selected this material",
       "type": "string"
     },
-    "orderNote": {
-      "description": "note for order",
-      "type": "string"
+    "notes": {
+      "description": "free-form notes associated with this mosaic order",
+      "id": "notes",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     },
     "poLineDescription": {
       "description": "description for poLine",
@@ -104,6 +108,10 @@
     },
     "materialTypeId": {
       "description": "material type of the material",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "acquisitionMethod": {
+      "description": "UUID of the acquisition method for this purchase order line",
       "$ref": "../../common/schemas/uuid.json"
     },
     "acqUnitIds": {
