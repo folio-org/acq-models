@@ -46,9 +46,13 @@
       "description": "who selected this material",
       "type": "string"
     },
-    "orderNote": {
-      "description": "note for order",
-      "type": "string"
+    "notes": {
+      "description": "free-form notes associated with this mosaic order",
+      "id": "notes",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     },
     "poLineDescription": {
       "description": "description for poLine",
