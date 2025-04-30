@@ -106,6 +106,10 @@
       "description": "material type of the material",
       "$ref": "../../common/schemas/uuid.json"
     },
+    "acquisitionMethod": {
+      "description": "UUID of the acquisition method for this purchase order line",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "acqUnitIds": {
       "description": "acquisition unit ids associated with this purchase order",
       "type": "array",
