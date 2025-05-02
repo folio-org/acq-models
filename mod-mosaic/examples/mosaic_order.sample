@@ -1,74 +1,73 @@
 {
-  "id": "58912740-1da1-4d1d-a5f5-72f7c4e2b7a8",
-  "title": "Advanced Database Systems",
-  "contributors": [
-    {
-      "contributor": "Jane Smith",
-      "contributorNameTypeId": "2b94c631-fca9-4892-a730-03ee529ffe2a"
-    }
-  ],
-  "publicationDate": "2024",
-  "edition": "Third Edition",
-  "details": {
-    "productIds": [
+  "orderTemplateId": "4dee318b-f5b3-40dc-be93-cc89b8c45b6f",
+  "orderData": {
+    "title": "Advanced Database Systems",
+    "contributors": [
       {
-        "productId": "9781234567890",
-        "productIdType": "ISBN"
+        "contributor": "Jane Smith",
+        "contributorNameTypeId": "2b94c631-fca9-4892-a730-03ee529ffe2a"
       }
     ],
-    "receivingNote": "Please check for damage upon receipt"
-  },
-  "userLimit": "10",
-  "requesterName": "Dr. Michael Brown",
-  "selectorName": "Alice Johnson",
-  "notes": [
-    "Priority acquisition for computer science department"
-  ],
-  "poLineDescription": "CS-DB-2024-01",
-  "renewalNote": "Review subscription annually in March",
-  "referenceNumbers": [
-    {
-      "refNumber": "REF-2024-0123",
-      "refNumberType": "Purchase Order"
+    "publicationDate": "2024",
+    "edition": "Third Edition",
+    "details": {
+      "productIds": [
+        {
+          "productId": "978-3-16-148410-0",
+          "productIdType": "123e4567-e89b-12d3-a456-426614174000"
+        }
+      ],
+      "receivingNote": "Please check for damage upon receipt"
     },
-    {
-      "refNumber": "INV-5678",
-      "refNumberType": "Invoice"
+    "userLimit": "10",
+    "requesterName": "Dr. Michael Brown",
+    "selectorName": "Alice Johnson",
+    "notes": [
+      "Priority acquisition for computer science department"
+    ],
+    "poLineDescription": "CS-DB-2024-01",
+    "renewalNote": "Review subscription annually in March",
+    "referenceNumbers": [
+      {
+        "refNumber": "REF-2024-0123",
+        "refNumberType": "Vendor title number"
+      },
+      {
+        "refNumber": "5678",
+        "refNumberType": "Vendor internal number"
+      }
+    ],
+    "listUnitPrice": 89.99,
+    "listUnitPriceElectronic": 79.99,
+    "currency": "USD",
+    "quantityPhysical": 3,
+    "quantityElectronic": 1,
+    "locations": [
+      {
+        "locationId": "7d9a1c91-eb4f-4e08-94c6-2cb31c8f9067",
+        "quantity": 4,
+        "quantityPhysical": 3,
+        "quantityElectronic": 1
+      }
+    ],
+    "fundDistribution": [
+      {
+        "fundId": "ab7e8eb2-5c32-4e1f-9c48-dbf75350ded8",
+        "expenseClassId": "1bcc3247-99bf-4dca-9b0f-7bc51a2998c2",
+        "value": 100,
+        "distributionType": "percentage"
+      }
+    ],
+    "materialTypeId": "d9985a0f-665e-421c-b3e7-4a6e5e8f3ce1",
+    "acquisitionMethod": "73d14bc5-d131-48c6-b380-f8e62f63c8f3",
+    "billTo": "5b8e1e9f-2788-4e69-a368-5cdb7d58c5b6",
+    "shipTo": "70c42f32-d207-4c7a-9be9-7bdfa8c45d48",
+    "vendor": "e0fb5df2-cdf1-11e8-a8d5-f2801f1b9fd1",
+    "materialSupplier": "19bb3a90-7a45-4692-8b4d-5fe6b5b36c22",
+    "accessProvider": "63183e47-8b36-410d-8c2a-e50c07175b3d",
+    "format": "P/E mix",
+    "customFields": {
+      "externalOrderNumber": "Handle with care"
     }
-  ],
-  "listUnitPrice": 89.99,
-  "listUnitPriceElectronic": 79.99,
-  "currency": "USD",
-  "quantityPhysical": 3,
-  "quantityElectronic": 1,
-  "locations": [
-    {
-      "locationId": "7d9a1c91-eb4f-4e08-94c6-2cb31c8f9067",
-      "quantity": 3,
-      "quantityPhysical": 2,
-      "quantityElectronic": 1
-    }
-  ],
-  "fundDistribution": [
-    {
-      "fundId": "3b430358-d5c7-4fc8-b8de-496bfa41c851",
-      "expenseClassId": "1bfcbe66-d7b5-4a57-9bc4-f8c4e7c2f083",
-      "value": 100,
-      "distributionType": "percentage"
-    }
-  ],
-  "materialTypeId": "d9985a0f-665e-421c-b3e7-4a6e5e8f3ce1",
-  "acqUnitIds": ["4cc73d39-3db0-47f6-8567-89e93d3c4646"],
-  "acquisitionMethod": "73d14bc5-d131-48c6-b380-f8e62f63c8f3",
-  "billTo": "5b8e1e9f-2788-4e69-a368-5cdb7d58c5b6",
-  "shipTo": "70c42f32-d207-4c7a-9be9-7bdfa8c45d48",
-  "vendor": "19bb3a90-7a45-4692-8b4d-5fe6b5b36c22",
-  "materialSupplier": "19bb3a90-7a45-4692-8b4d-5fe6b5b36c22",
-  "accessProvider": "63183e47-8b36-410d-8c2a-e50c07175b3d",
-  "format": "P/E mix",
-  "customFields": {
-    "specialInstructions": "Handle with care",
-    "departmentCode": "CS-101",
-    "donorInfo": null
   }
 }
