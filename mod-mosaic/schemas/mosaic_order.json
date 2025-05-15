@@ -142,13 +142,9 @@
       "$ref": "../../common/schemas/uuid.json"
     },
     "format": {
-      "description": "Order format (Physical, electronic, P/E mix)",
+      "description": "Order format (Physical Resource, Electronic Resource, P/E mix, Other)",
       "type": "string",
-      "enum": [
-        "Physical",
-        "Electronic",
-        "P/E mix"
-      ]
+      "$ref": "../../mod-orders-storage/schemas/order_format.json"
     },
     "customFields": {
       "description": "Custom fields for the order",
