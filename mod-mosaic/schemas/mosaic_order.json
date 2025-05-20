@@ -133,6 +133,11 @@
       "description": "UUID for the vendor organization",
       "$ref": "../../common/schemas/uuid.json"
     },
+    "workflowStatus": {
+      "description": "the workflow status for this purchase order",
+      "type": "string",
+      "$ref": "../../mod-orders-storage/schemas/workflow_status.json"
+    },
     "materialSupplier": {
       "description": "UUID for the material supplier",
       "$ref": "../../common/schemas/uuid.json"
