@@ -34,10 +34,6 @@
       "type": "object",
       "$ref": "../../mod-orders-storage/schemas/details.json"
     },
-    "userLimit": {
-      "description": "the concurrent user-limit",
-      "type": "string"
-    },
     "requesterName": {
       "description": "who requested this purchase order line",
       "type": "string"
@@ -106,10 +102,6 @@
         "$ref": "../../mod-orders-storage/schemas/fund_distribution.json"
       }
     },
-    "materialTypeId": {
-      "description": "material type of the material",
-      "$ref": "../../common/schemas/uuid.json"
-    },
     "acquisitionMethod": {
       "description": "UUID of the acquisition method for this purchase order line",
       "$ref": "../../common/schemas/uuid.json"
@@ -138,18 +130,20 @@
       "type": "string",
       "$ref": "../../mod-orders-storage/schemas/workflow_status.json"
     },
-    "materialSupplier": {
-      "description": "UUID for the material supplier",
-      "$ref": "../../common/schemas/uuid.json"
-    },
-    "accessProvider": {
-      "description": "UUID for the access provider",
-      "$ref": "../../common/schemas/uuid.json"
-    },
     "format": {
       "description": "Order format (Physical Resource, Electronic Resource, P/E mix, Other)",
       "type": "string",
       "$ref": "../../mod-orders-storage/schemas/order_format.json"
+    },
+    "physical": {
+      "description": "details of this purchase order line relating to physical materials",
+      "type": "object",
+      "$ref": "../../mod-orders-storage/schemas/physical.json"
+    },
+    "eresource": {
+      "description": "eresource-related details of this purchase order line",
+      "type": "object",
+      "$ref": "../../mod-orders-storage/schemas/eresource.json"
     },
     "customFields": {
       "description": "Custom fields for the order",
