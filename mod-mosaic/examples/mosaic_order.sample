@@ -37,13 +37,12 @@
   ],
   "listUnitPriceElectronic": 79.99,
   "currency": "USD",
-  "quantityPhysical": 3,
   "quantityElectronic": 1,
   "locations": [
     {
       "locationId": "7d9a1c91-eb4f-4e08-94c6-2cb31c8f9067",
-      "quantity": 4,
-      "quantityPhysical": 3,
+      "quantity": 1,
+      "quantityPhysical": 0,
       "quantityElectronic": 1
     }
   ],
