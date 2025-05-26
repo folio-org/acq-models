@@ -35,7 +35,6 @@
       "refNumberType": "Vendor internal number"
     }
   ],
-  "listUnitPrice": 89.99,
   "listUnitPriceElectronic": 79.99,
   "currency": "USD",
   "quantityPhysical": 3,
@@ -62,9 +61,9 @@
   "shipTo": "70c42f32-d207-4c7a-9be9-7bdfa8c45d48",
   "vendor": "e0fb5df2-cdf1-11e8-a8d5-f2801f1b9fd1",
   "workflowStatus": "Pending",
-  "materialSupplier": "19bb3a90-7a45-4692-8b4d-5fe6b5b36c22",
   "accessProvider": "63183e47-8b36-410d-8c2a-e50c07175b3d",
-  "format": "P/E Mix",
+  "checkinItems": true,
+  "createInventory": "Instance, Holding"
   "customFields": {
     "externalOrderNumber": "Handle with care"
   }
