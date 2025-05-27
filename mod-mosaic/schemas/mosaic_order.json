@@ -145,6 +145,11 @@
       "type": "object",
       "$ref": "../../mod-orders-storage/schemas/eresource.json"
     },
+    "checkinItems": {
+      "description": "if true this will toggle the Check-in workflow for details associated with this PO line",
+      "type": "boolean",
+      "default": false
+    },
     "customFields": {
       "description": "Custom fields for the order",
       "type": "object",
