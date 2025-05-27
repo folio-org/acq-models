@@ -146,7 +146,7 @@
       "$ref": "../../mod-orders-storage/schemas/eresource.json"
     },
     "checkinItems": {
-      "description": "if true this will toggle the Check-in workflow for details associated with this PO line",
+      "description": "If true will configure the POL for the 'Independent order and receipt quantity' receiving workflow, alternatively will default to 'Synchronized order and receipt quantity'",
       "type": "boolean",
       "default": false
     },
