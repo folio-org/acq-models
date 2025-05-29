@@ -2,6 +2,7 @@
   "orderTemplateId": "4dee318b-f5b3-40dc-be93-cc89b8c45b6f",
   "orderData": {
     "title": "Advanced Database Systems",
+    "assignedTo": "bf74b736-9b3f-48da-bdc8-7236237324d7"
     "contributors": [
       {
         "contributor": "Jane Smith",
@@ -25,6 +26,7 @@
       "Priority acquisition for computer science department"
     ],
     "poLineDescription": "CS-DB-2024-01",
+    "internalNote": "Internal note for this poline",
     "renewalNote": "Review subscription annually in March",
     "referenceNumbers": [
       {

@@ -12,6 +12,10 @@
       "description": "title of the material",
       "type": "string"
     },
+    "assignedTo": {
+      "description": "UUID of the user to whom this order is assigned",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "contributors": {
       "description": "list of contributors to the material",
       "id": "contributors",
@@ -52,6 +56,10 @@
     },
     "poLineDescription": {
       "description": "description for poLine",
+      "type": "string"
+    },
+    "internalNote": {
+      "description": "Internal note for this purchase order line",
       "type": "string"
     },
     "renewalNote": {
