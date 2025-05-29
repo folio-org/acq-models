@@ -155,8 +155,7 @@
     },
     "checkinItems": {
       "description": "If true will configure the POL for the 'Independent order and receipt quantity' receiving workflow, alternatively will default to 'Synchronized order and receipt quantity'",
-      "type": "boolean",
-      "default": false
+      "type": "boolean"
     },
     "customFields": {
       "description": "Custom fields for the order",
