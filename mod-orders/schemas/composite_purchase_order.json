@@ -154,6 +154,10 @@
       "type": "object",
       "$ref": "../../common/schemas/custom_fields.json"
     },
+    "fiscalYearId": {
+      "description": "Fiscal Year Id of the first Fund Distribution used for Purchase Order opening",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "metadata": {
       "type": "object",
       "$ref": "../../../raml-util/schemas/metadata.schema",
