@@ -34,7 +34,7 @@
       "type": "object",
       "$ref": "../../mod-orders-storage/schemas/close_reason.json"
     },
-    "orderedById": {
+    "openedById": {
       "description": "UUID of the user opening the Order",
       "$ref": "../../common/schemas/uuid.json"
     },
