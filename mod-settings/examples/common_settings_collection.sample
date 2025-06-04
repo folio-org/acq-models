@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "id": "409d98c0-323b-48e3-a127-617742bbd42f",
+      "scope": "stripes-core.prefs.manage",
+      "key": "tenantLocaleSettings",
+      "value": {
+        "locale": "en-US",
+        "currency": "USD",
+        "timezone": "UTC"
+      }
+    },
+    {
+      "id": "401967b7-386b-4449-bb2b-aa29309b5175",
+      "scope": "circulation",
+      "key": "generalTlr",
+      "value": {
+        "titleLevelRequestsFeatureEnabled": true,
+        "createTitleLevelRequestsByDefault": false,
+        "tlrHoldShouldFollowCirculationRules": false
+      }
+    },
+    {
+      "id": "0d560d5d-3583-4a3e-b079-611ccfbfc69b",
+      "scope": "ui-inventory.display-settings.manage",
+      "key": "display-settings",
+      "value": {
+        "defaultSort": "title"
+      }
+    }
+  ],
+  "resultInfo": {
+    "totalRecords": 3,
+    "diagnostics": []
+  }
+}

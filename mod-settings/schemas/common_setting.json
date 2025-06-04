@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "Common setting object from mod-settings module",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "description": "The UUID of this setting",
+      "type": "string",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "scope": {
+      "description": "Scope(permission) associated with this setting",
+      "type": "string"
+    },
+    "key": {
+      "description": "The key of this setting",
+      "type": "string"
+    },
+    "value": {
+      "description": "Nested value object",
+      "type": "object",
+      "additionalProperties": true
+    },
+    "userId": {
+      "description": "User ID associated with this setting",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "scope",
+    "key",
+    "value"
+  ]
+}
