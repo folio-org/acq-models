@@ -9,6 +9,7 @@
     "reason": "Shipping delay",
     "note": "Two years is too long for shipping of 'Calendar for Year 2017'"
   },
+  "openedById": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1",
   "dateOrdered": "2018-08-20T00:00:00.000+0000",
   "manualPo": false,
   "notes": [
@@ -47,6 +48,7 @@
   "customFields": {
     "membership": "opt_0"
   },
+  "fiscalYearId": "43aba0df-70e4-435e-8463-d8f730d19e0b",
   "metadata": {
     "createdDate": "2018-08-19T00:00:00.000+0000",
     "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
