@@ -9,14 +9,17 @@
     },
     "diagnostics": {
       "description": "Diagnostics information in case of errors",
-      "type": "object",
-      "properties": {
-        "message": {
-          "description": "Error message",
-          "type": "string"
-        }
-      },
-      "additionalProperties": true
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "description": "Error message",
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
     }
   }
 }
