@@ -35,6 +35,10 @@
       "type": "object",
       "$ref": "close_reason.json"
     },
+    "openedById": {
+      "description": "UUID of the user opening the Order",
+      "$ref": "../../common/schemas/uuid.json"
+    },
     "dateOrdered": {
       "description": "Date and time when purchase order was opened",
       "type": "string",
@@ -121,6 +125,10 @@
       "description": "Object that contains custom field",
       "type": "object",
       "$ref": "../../common/schemas/custom_fields.json"
+    },
+    "fiscalYearId": {
+      "description": "Fiscal Year Id of the first Fund Distribution used for Purchase Order opening",
+      "$ref": "../../common/schemas/uuid.json"
     },
     "metadata": {
       "type": "object",
