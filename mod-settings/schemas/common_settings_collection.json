@@ -8,12 +8,12 @@
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "setting.json"
+        "$ref": "common_setting.json"
       }
     },
     "resultInfo": {
       "type": "object",
-      "$ref": "setting.json"
+      "$ref": "result_info.json"
     }
   },
   "required": [
