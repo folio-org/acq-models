@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "Result info object for settings collection",
+  "additionalProperties": false,
+  "properties": {
+    "totalRecords": {
+      "type": "integer"
+    },
+    "diagnostics": {
+      "description": "Diagnostics information in case of errors",
+      "type": "string"
+    }
+  }
+}

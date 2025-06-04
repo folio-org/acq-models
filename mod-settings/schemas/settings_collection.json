@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "Collection of common settings",
+  "properties": {
+    "items": {
+      "description": "List of common settings",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "setting.json"
+      }
+    },
+    "resultInfo": {
+      "type": "object",
+      "$ref": "setting.json"
+    }
+  },
+  "required": [
+    "items",
+    "resultInfo"
+  ]
+}
