@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "Mosaic custom fields record",
+  "additionalProperties": true,
+  "properties": {
+    "refId": {
+      "type": "string",
+      "description": "The reference id of the custom field",
+      "example": "department_1"
+    },
+    "entityType": {
+      "type": "string",
+      "description": "The entity type, the custom field is assigned to",
+      "enum": [
+        "purchase_order",
+        "po_line"
+      ]
+    },
+    "value": {
+      "type": "string",
+      "description": "The value of the custom field",
+      "example": "Test"
+    }
+  },
+  "required": [
+    "refId",
+    "entityType",
+    "value"
+  ]
+}

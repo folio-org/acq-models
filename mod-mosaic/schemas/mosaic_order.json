@@ -158,9 +158,14 @@
       "type": "boolean"
     },
     "customFields": {
-      "description": "Custom fields for the order",
-      "type": "object",
-      "$ref": "../../common/schemas/custom_fields.json"
+      "description": "Mosaic custom fields for either the PO or POL",
+      "id": "customFields",
+      "type": "array",
+      "items": {
+        "description": "A Mosaic custom fields record",
+        "type": "object",
+        "$ref": "mosaic_custom_fields.json"
+      }
     },
     "metadata": {
       "type": "object",
