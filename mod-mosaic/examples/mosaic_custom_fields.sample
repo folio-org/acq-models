@@ -1,0 +1,12 @@
+[
+  {
+    "refId": "externalOrderNumber",
+    "entityType": "purchase_order",
+    "value": "Handle with care"
+  },
+  {
+    "refId": "membership",
+    "entityType": "po_line",
+    "value": "opt_1"
+  }
+]
