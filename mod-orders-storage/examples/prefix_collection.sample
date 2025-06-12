@@ -4,8 +4,15 @@
           {
             "id": "db9f5d17-0ca3-4d14-ae49-16b63c8fc083",
             "name": "Custom prefix",
-            "description": "Custom prefix description"
+            "description": "Custom prefix description",
+            "deprecated": false
+          },
+          {
+            "id": "db9f5d17-0ca3-4d14-ae49-16b63c8fc084",
+            "name": "Custom prefix (deprecated)",
+            "description": "Custom prefix description",
+            "deprecated": true
           }
         ],
-    "totalRecords": 1
+    "totalRecords": 2
 }
