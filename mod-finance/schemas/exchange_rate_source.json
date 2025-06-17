@@ -36,6 +36,12 @@
       "description": "Refresh interval specified in seconds",
       "type": "integer",
       "default": 86400
+    },
+    "metadata": {
+      "description": "Metadata about creation and changes to record, provided by the server (client should not provide)",
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
     }
   },
   "additionalProperties": false,
