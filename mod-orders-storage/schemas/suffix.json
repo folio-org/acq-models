@@ -16,7 +16,7 @@
       "type": "string"
     },
     "deprecated": {
-      "description": "Prefix deprecated",
+      "description": "Suffix deprecated flag",
       "type": "boolean",
       "default": false
     }
