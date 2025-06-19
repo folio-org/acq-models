@@ -14,6 +14,11 @@
     "description": {
       "description": "Suffix description",
       "type": "string"
+    },
+    "deprecated": {
+      "description": "Suffix deprecated flag",
+      "type": "boolean",
+      "default": false
     }
   },
   "additionalProperties": false,

@@ -2,10 +2,17 @@
     "suffixes":
         [
           {
-            "id": "0c966bd2-0ca6-43a2-9388-3a4403f19e6f",
+            "id": "db9f5d17-0ca3-4d14-ae49-16b63c8fc083",
             "name": "Custom suffix",
-            "description": "Custom suffix description"
+            "description": "Custom suffix description",
+            "deprecated": false
+          },
+          {
+            "id": "db9f5d17-0ca3-4d14-ae49-16b63c8fc084",
+            "name": "Custom suffix (deprecated)",
+            "description": "Custom suffix description",
+            "deprecated": true
           }
         ],
-    "totalRecords": 1
+    "totalRecords": 2
 }
