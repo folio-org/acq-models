@@ -16,7 +16,7 @@
       "type": "string"
     },
     "deprecated": {
-      "description": "Prefix deprecated flag",
+      "description": "Mark the Prefix as deprecated to block new usage, but still allow it to be found in searches.",
       "type": "boolean",
       "default": false
     }
