@@ -118,5 +118,6 @@
       }
     ],
     "vendorAccount": "8910-25"
-  }
+  },
+  "suppressInstanceFromDiscovery": true
 }

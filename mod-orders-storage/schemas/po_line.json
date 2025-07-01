@@ -234,6 +234,11 @@
       "type": "object",
       "$ref": "vendor_detail.json"
     },
+    "suppressInstanceFromDiscovery": {
+      "type": "boolean",
+      "description": "Records the fact that the record should not be displayed in a discovery system",
+      "default": false
+    },
     "customFields" : {
       "description": "Object that contains custom field",
       "type": "object",
