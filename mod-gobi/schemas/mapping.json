@@ -95,7 +95,8 @@
         "VENDOR_REF_NO",
         "VENDOR_REF_NO_TYPE",
         "VOLUMES",
-        "WORKFLOW_STATUS"
+        "WORKFLOW_STATUS",
+        "SUPPRESS_INSTANCE_FROM_DISCOVERY"
       ],
       "javaEnums": [
         {
@@ -542,6 +543,11 @@
           "name": "WORKFLOW_STATUS",
           "title": "po.workflowStatus",
           "description": "Composite workflow status"
+        },
+        {
+          "name": "SUPPRESS_INSTANCE_FROM_DISCOVERY",
+          "title": "poLine.suppressInstanceFromDiscovery",
+          "description": "Records the fact that the record should not be displayed in a discovery system"
         }
       ]
     },
