@@ -227,7 +227,7 @@
     {
       "field": "SUPPRESS_INSTANCE_FROM_DISCOVERY",
       "dataSource": {
-        "default": "false"
+        "from": "//SuppressInstanceFromDiscovery"
       }
     },
     {
