@@ -4,5 +4,7 @@
     "5f5b4f3b-6b7b-4b1e-8b4d-8b1b2b3b4b5c"
   ],
   "receivingStatus": "Unreceivable",
-  "claimingInterval": 1
+  "claimingInterval": 1,
+  "internalNote": "Batch update for pieces",
+  "externalNote": "Please review the status changes"
 }
