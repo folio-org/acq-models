@@ -19,6 +19,14 @@
     "claimingInterval": {
       "description": "Time interval (in days) for processing claims related to this piece",
       "type": "integer"
+    },
+    "internalNote": {
+      "description": "Internal note associated with the piece status update",
+      "type": "string"
+    },
+    "externalNote": {
+      "description": "External note associated with the piece status update",
+      "type": "string"
     }
   },
   "additionalProperties": false,
