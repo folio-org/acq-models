@@ -14,12 +14,22 @@
     "exchangeRate": {
       "description": "Exchange rate value",
       "type": "number"
+    },
+    "operationMode": {
+      "description": "Operation mode performed on the exchange rate",
+      "type": "string",
+      "enum": [
+        "MULTIPLY",
+        "DIVIDE"
+      ],
+      "default": "MULTIPLY"
     }
   },
   "additionalProperties": false,
   "required": [
     "from",
     "to",
-    "exchangeRate"
+    "exchangeRate",
+    "operationMode"
   ]
 }
