@@ -1,5 +1,6 @@
 {
   "from": "USD",
   "to": "EUR",
-  "exchangeRate": 1.234
+  "exchangeRate": 1.234,
+  "operationMode": "MULTIPLY"
 }
