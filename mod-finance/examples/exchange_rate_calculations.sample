@@ -1,0 +1,22 @@
+{
+  "exchangeRateCalculations": [
+    {
+      "from": "USD",
+      "to": "EUR",
+      "amount": 1000,
+      "rate": 0.85
+    },
+    {
+      "from": "EUR",
+      "to": "GBP",
+      "amount": 500,
+      "rate": 0.90
+    },
+    {
+      "from": "GBP",
+      "to": "JPY",
+      "amount": 200,
+      "rate": 150.00
+    }
+  ]
+}
