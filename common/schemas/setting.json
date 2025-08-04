@@ -16,8 +16,7 @@
       "type": "string"
     },
     "value": {
-      "description": "The value of this setting",
-      "type": "string"
+      "description": "The value of this setting (any type)"
     },
     "metadata": {
       "type": "object",

@@ -1,9 +1,12 @@
 {
-  "id": "f04c7277-0019-43cf-84b3-02d894a9d81a",
-  "key": "BANKING_INFORMATION_ENABLED",
-  "value": "true",
-  "metadata": {
-    "createdDate": "2023-10-16T00:00:00.000+0000",
-    "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
-  }
+    "id": "0f7a1363-b853-47da-88c8-af838d30872d",
+    "_version": 1,
+    "key": "openOrder",
+    "value": "{\"isOpenOrderEnabled\":true,\"isDuplicateCheckDisabled\":true}",
+    "metadata": {
+        "createdDate": "2025-08-04T09:36:03.660+00:00",
+        "createdByUserId": "d49a2d53-dd55-4b50-a08b-778578860371",
+        "updatedDate": "2025-08-04T09:36:03.660+00:00",
+        "updatedByUserId": "d49a2d53-dd55-4b50-a08b-778578860371"
+    }
 }
