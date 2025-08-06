@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Exchange rate calculation schema",
+  "type": "object",
+  "properties": {
+    "exchangeRateCalculations": {
+      "description": "The list of exchange rate calculation objects",
+      "type": "array",
+      "id": "exchangeRateCalculations",
+      "items": {
+        "type": "object",
+        "properties": {
+          "from": {
+            "description": "Fund code to calculate the exchange rate from",
+            "$ref": "../../common/schemas/fund_code.json"
+          },
+          "to": {
+            "description": "Fund code to calculate the exchange rate to",
+            "$ref": "../../common/schemas/fund_code.json"
+          },
+          "amount": {
+            "description": "Amount to calculate the exchange rate for",
+            "type": "number"
+          },
+          "rate": {
+            "description": "Custom exchange rate to use for the calculation",
+            "type": "number"
+          },
+          "calculation": {
+            "description": "Calculated exchange rate value",
+            "type": "number"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "from",
+          "to",
+          "amount"
+        ]
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "exchangeRateCalculations"
+  ]
+}
