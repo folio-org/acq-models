@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Adjustment Preset",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "UUID of this adjustment preset",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "description": {
+      "description": "Displayed in invoice line as a name for the input",
+      "type": "string"
+    },
+    "exportToAccounting": {
+      "description": "Whether or not to show this adjustment in batchedVoucherLines",
+      "type": "boolean",
+      "default": false
+    },
+    "prorate": {
+      "description": "Displayed in invoice line per adjustment in toggled on in settings",
+      "type": "string",
+      "enum": [
+        "By line",
+        "By amount",
+        "By quantity",
+        "Not prorated"
+      ],
+      "default": "Not prorated"
+    },
+    "relationToTotal": {
+      "description": "Relationship of this adjustment to the total;In addition to: added to subtotal;Included in: reported as subtotal portion;Separate from:calculated from subtotal",
+      "type": "string",
+      "enum": [
+        "In addition to",
+        "Included in",
+        "Separate from"
+      ],
+      "default": "In addition to"
+    },
+    "type": {
+      "description": "Adjustment type",
+      "type": "string",
+      "enum": [
+        "Percentage",
+        "Amount"
+      ]
+    },
+    "alwaysShow": {
+      "description": "Flag to toggle to always show this adjustment preset",
+      "type": "boolean",
+      "default": false
+    },
+    "defaultValue": {
+      "description": "Default adjustment value",
+      "type": "number"
+    },
+    "_version": {
+      "type": "integer",
+      "description": "Record version for optimistic locking"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "description",
+    "exportToAccounting",
+    "prorate",
+    "relationToTotal",
+    "type",
+    "alwaysShow"
+  ]
+}
