@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A collection of adjustment presets",
+  "type": "object",
+  "properties": {
+    "adjustmentPresets": {
+      "description": "An array of adjustment preset records",
+      "id": "adjustmentPresets",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "adjustment_preset.json"
+      }
+    },
+    "totalRecords": {
+      "description": "Total number of records in the array",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "adjustmentPresets",
+    "totalRecords"
+  ]
+}
