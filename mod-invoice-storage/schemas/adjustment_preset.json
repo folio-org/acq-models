@@ -50,9 +50,14 @@
       "type": "boolean",
       "default": false
     },
-    "defaultValue": {
+    "defaultAmount": {
       "description": "Default adjustment value",
       "type": "number"
+    },
+    "metadata": {
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
     },
     "_version": {
       "type": "integer",
