@@ -6,6 +6,12 @@
   "relationToTotal": "In addition to",
   "type": "Amount",
   "alwaysShow": true,
-  "defaultValue": 10,
+  "defaultAmount": 10,
+  "metadata": {
+    "createdDate": "2025-10-31T09:21:44.386+0000",
+    "createdByUserId": "12408630-bce2-5a82-b577-9be500e9b324",
+    "updatedDate": "2025-10-31T09:21:44.386+0000",
+    "updatedByUserId": "12408630-bce2-5a82-b577-9be500e9b324"
+  },
   "_version": 1
 }
