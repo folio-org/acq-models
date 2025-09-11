@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Fiscal Years Holder",
+  "description": "A holder for current and previous fiscal years related to an order",
+  "type": "object",
+  "properties": {
+    "current": {
+      "description": "List of current fiscal years for an order",
+      "type": "array",
+      "items": {
+        "javaType": "org.folio.rest.acq.model.finance.FiscalYear"
+      }
+    },
+    "previous": {
+      "description": "List of previous fiscal years for an order",
+      "type": "array",
+      "items": {
+        "javaType": "org.folio.rest.acq.model.finance.FiscalYear"
+      }
+    }
+  },
+  "required": [
+    "current",
+    "previous"
+  ]
+}

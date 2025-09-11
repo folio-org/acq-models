@@ -1,0 +1,36 @@
+{
+  "current" : [ {
+    "id" : "d768a11b-e78e-4339-ae1a-09984b94fb28",
+    "_version" : 3,
+    "acqUnitIds" : [ ],
+    "name" : "TT2026",
+    "code" : "TT2026",
+    "currency" : "USD",
+    "periodStart" : "2025-07-01T00:00:00.000+00:00",
+    "periodEnd" : "2026-12-31T00:00:00.000+00:00",
+    "series" : "TT",
+    "metadata" : {
+      "createdDate" : "2025-09-08T07:34:18.674+00:00",
+      "createdByUserId" : "4671b801-1605-45f2-b99f-6c4aa3f9dfd3",
+      "updatedDate" : "2025-09-08T11:44:40.226+00:00",
+      "updatedByUserId" : "4671b801-1605-45f2-b99f-6c4aa3f9dfd3"
+    }
+  } ],
+  "previous" : [ {
+    "id" : "7ed6fb02-97a5-4af4-8ba9-da5d4641325f",
+    "_version" : 2,
+    "acqUnitIds" : [ ],
+    "name" : "TT2025",
+    "code" : "TT2025",
+    "currency" : "USD",
+    "periodStart" : "2025-01-01T00:00:00.000+00:00",
+    "periodEnd" : "2025-06-30T00:00:00.000+00:00",
+    "series" : "TT",
+    "metadata" : {
+      "createdDate" : "2025-09-08T07:34:01.575+00:00",
+      "createdByUserId" : "4671b801-1605-45f2-b99f-6c4aa3f9dfd3",
+      "updatedDate" : "2025-09-08T07:36:13.326+00:00",
+      "updatedByUserId" : "4671b801-1605-45f2-b99f-6c4aa3f9dfd3"
+    }
+  } ]
+}
