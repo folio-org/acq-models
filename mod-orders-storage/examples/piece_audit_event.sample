@@ -18,6 +18,7 @@
       "receivingTenantId": "diku",
       "displayOnHolding": false,
       "displayToPublic": false,
+      "sequenceNumber": 1,
       "enumeration": "Volume 1",
       "chronology": "2021",
       "barcode": "0987654111",
