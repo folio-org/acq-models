@@ -24,6 +24,13 @@
       "description": "UUID of the instance associated with this Title",
       "$ref": "../../common/schemas/uuid.json"
     },
+    "nextSequenceNumber": {
+      "description": "The next sequence number to be used for the created Piece records",
+      "type": "integer",
+      "readonly": true,
+      "minimum": 1,
+      "default": 1
+    },
     "productIds": {
       "description": "List of product identifiers",
       "id": "productIds",
