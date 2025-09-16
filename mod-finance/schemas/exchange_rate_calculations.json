@@ -26,6 +26,11 @@
             "description": "Custom exchange rate to use for the calculation",
             "type": "number"
           },
+          "manual": {
+            "description": "Is the exchange rate manually set?",
+            "default": false,
+            "type": "boolean"
+          },
           "calculation": {
             "description": "Calculated exchange rate value",
             "type": "number"

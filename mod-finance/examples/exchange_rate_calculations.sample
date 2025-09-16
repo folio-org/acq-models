@@ -4,6 +4,7 @@
       "from": "USD",
       "to": "EUR",
       "amount": 1000,
+      "manual": true,
       "rate": 0.85
     },
     {
