@@ -27,7 +27,6 @@
     "nextSequenceNumber": {
       "description": "The next sequence number to be used for the created Piece records",
       "type": "integer",
-      "readonly": true,
       "minimum": 1,
       "default": 1
     },
