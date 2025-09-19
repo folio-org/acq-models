@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Mosaic Order Request",
+  "type": "object",
+  "javaName": "MosaicOrderRequest",
+  "properties": {
+    "orderTemplateId": {
+      "description": "UUID of the order template",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "orderData": {
+      "description": "the mosaic order",
+      "type": "object",
+      "$ref": "mosaic_order.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "orderData"
+  ]
+}
