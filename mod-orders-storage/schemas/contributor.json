@@ -10,7 +10,8 @@
     "contributorNameTypeId": {
       "description": "UUID of the contributor type",
       "type": "string",
-      "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+      "pattern": "^[a-f0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+      "x-fqm-visibility": "hidden"
     }
   },
   "additionalProperties": false,

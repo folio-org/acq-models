@@ -9,7 +9,8 @@
     },
     "productIdType": {
       "description": "The type of product identifier",
-      "$ref": "../../common/schemas/product_id_type.json"
+      "$ref": "../../common/schemas/product_id_type.json",
+      "x-fqm-visibility": "hidden"
     },
     "qualifier": {
       "description": "Information about the binding, format, volume numbers, part of a set, publisher, distributor, etc. which might be enclosed in parenthesis",
