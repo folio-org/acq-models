@@ -6,135 +6,182 @@
   "properties": {
     "id": {
       "description": "UUID of this piece record",
-      "$ref": "../../common/schemas/uuid.json"
+      "$ref": "../../common/schemas/uuid.json",
+      "x-fqm-essential": true
     },
-      "displaySummary": {
+    "displaySummary": {
       "description": "Display summary information",
-      "type": "string"
+      "type": "string",
+      "x-fqm-essential": true,
+      "x-fqm-visible-by-default": true
     },
-      "comment": {
+    "comment": {
       "description": "Free form commentary",
-      "type": "string"
+      "type": "string",
+      "x-fqm-essential": true
     },
     "format": {
       "description": "The format of the piece",
       "type": "string",
-      "$ref": "piece_format.json"
+      "$ref": "piece_format.json",
+      "x-fqm-essential": true,
+      "x-fqm-visible-by-default": true
     },
     "itemId": {
       "description": "UUID of the associated item record",
-      "$ref": "../../common/schemas/uuid.json"
+      "$ref": "../../common/schemas/uuid.json",
+      "x-fqm-essential": true,
+      "x-fqm-visibility": "hidden"
     },
     "bindItemId": {
       "description": "UUID of the associated bind item record",
-      "$ref": "../../common/schemas/uuid.json"
+      "$ref": "../../common/schemas/uuid.json",
+      "x-fqm-essential": true,
+      "x-fqm-visibility": "hidden"
     },
     "bindItemTenantId": {
       "description": "Bind item tenant for ECS-enabled clusters",
-      "type": "string"
+      "type": "string",
+      "x-fqm-essential": true
     },
     "locationId": {
       "description": "UUID of the (inventory) location record",
-      "$ref": "../../common/schemas/uuid.json"
+      "$ref": "../../common/schemas/uuid.json",
+      "x-fqm-essential": true,
+      "x-fqm-visibility": "hidden"
     },
     "poLineId": {
       "description": "UUID of the purchase order line this record is associated with",
-      "$ref": "../../common/schemas/uuid.json"
+      "$ref": "../../common/schemas/uuid.json",
+      "x-fqm-essential": true,
+      "x-fqm-visibility": "hidden"
     },
     "titleId": {
       "description": "UUID of the title record",
-      "$ref": "../../common/schemas/uuid.json"
+      "$ref": "../../common/schemas/uuid.json",
+      "x-fqm-essential": true,
+      "x-fqm-visibility": "hidden"
     },
     "holdingId": {
       "description": "UUID of the holding record",
-      "$ref": "../../common/schemas/uuid.json"
+      "$ref": "../../common/schemas/uuid.json",
+      "x-fqm-essential": true,
+      "x-fqm-visibility": "hidden"
     },
     "receivingTenantId": {
       "description": "Receiving tenant for ECS-enabled clusters",
-      "type": "string"
+      "type": "string",
+      "x-fqm-essential": true
     },
     "displayOnHolding": {
       "description": "Whether or not receiving history should be displayed in holding record view",
       "type": "boolean",
-      "default": false
+      "default": false,
+      "x-fqm-essential": true
     },
     "displayToPublic": {
       "description": "Whether or not the piece data should display to patrons at point of receipt",
       "type": "boolean",
-      "default": false
+      "default": false,
+      "x-fqm-essential": true,
+      "x-fqm-visible-by-default": true
     },
     "sequenceNumber": {
       "description": "The sequence number of this piece to determine the order in which it appears",
       "type": "integer",
-      "minimum": 1
+      "minimum": 1,
+      "x-fqm-essential": true,
+      "x-fqm-visible-by-default": true
     },
     "enumeration": {
       "type": "string",
-      "description": "Enumeration is the descriptive information for the numbering scheme of a serial. Synchronized with inventory item."
+      "description": "Enumeration is the descriptive information for the numbering scheme of a serial. Synchronized with inventory item.",
+      "x-fqm-essential": true,
+      "x-fqm-visible-by-default": true
     },
     "chronology": {
       "type": "string",
-      "description": "Chronology is the descriptive information for the dating scheme of a serial. Synchronized with inventory item."
+      "description": "Chronology is the descriptive information for the dating scheme of a serial. Synchronized with inventory item.",
+      "x-fqm-essential": true,
+      "x-fqm-visible-by-default": true
     },
     "barcode": {
       "type": "string",
-      "description": "Barcode is the descriptive information for the barcode of a serial. Synchronized with inventory item."
+      "description": "Barcode is the descriptive information for the barcode of a serial. Synchronized with inventory item.",
+      "x-fqm-essential": true
     },
     "accessionNumber": {
       "type": "string",
-      "description": "AccessionNumber is the descriptive information for the accession number of a serial. Synchronized with inventory item."
+      "description": "AccessionNumber is the descriptive information for the accession number of a serial. Synchronized with inventory item.",
+      "x-fqm-essential": true
     },
     "callNumber": {
       "type": "string",
-      "description": "CallNumber is the descriptive information for the call number of a serial. Synchronized with inventory item."
+      "description": "CallNumber is the descriptive information for the call number of a serial. Synchronized with inventory item.",
+      "x-fqm-essential": true
     },
     "discoverySuppress": {
       "type": "boolean",
-      "description": "Records the fact that the record should not be displayed in a discovery system"
+      "description": "Records the fact that the record should not be displayed in a discovery system",
+      "x-fqm-essential": true
     },
     "copyNumber": {
       "type": "string",
-      "description": "Copy number of the piece"
+      "description": "Copy number of the piece",
+      "x-fqm-essential": true,
+      "x-fqm-visible-by-default": true
     },
     "receivingStatus": {
       "description": "The status of this piece",
-      "$ref": "receiving_status.json"
+      "$ref": "receiving_status.json",
+      "x-fqm-essential": true,
+      "x-fqm-visible-by-default": true
     },
     "supplement": {
       "description": "Whether or not this is supplementary material",
-      "type": "boolean"
+      "type": "boolean",
+      "x-fqm-essential": true
     },
     "isBound": {
       "description": "Whether or not piece has already been bound",
       "type": "boolean",
-      "default": false
+      "default": false,
+      "x-fqm-essential": true
     },
     "receiptDate": {
       "description": "Date that associated item is expected to arrive",
       "type": "string",
-      "format": "date-time"
+      "format": "date-time",
+      "x-fqm-essential": true,
+      "x-fqm-visible-by-default": true
     },
     "receivedDate": {
       "description": "The date associated item is actually received",
       "type": "string",
-      "format": "date-time"
+      "format": "date-time",
+      "x-fqm-essential": true,
+      "x-fqm-visible-by-default": true
     },
     "statusUpdatedDate": {
       "description": "Date when the status of this piece was last updated",
       "type": "string",
-      "format": "date-time"
+      "format": "date-time",
+      "x-fqm-essential": true
     },
     "claimingInterval": {
       "description": "Time interval (in days) for processing claims related to this piece",
-      "type": "integer"
+      "type": "integer",
+      "x-fqm-essential": true
     },
     "internalNote": {
       "description": "Internal note for Send Claim action",
-      "type": "string"
+      "type": "string",
+      "x-fqm-essential": true
     },
     "externalNote": {
       "description": "External note for Send Claim action to share with Vendor",
-      "type": "string"
+      "type": "string",
+      "x-fqm-essential": true
     },
     "metadata": {
       "type": "object",
