@@ -78,6 +78,16 @@
                   "type": "boolean",
                   "default": false
                 },
+                "displayToPublic": {
+                  "description": "Whether or not the piece data should display to patrons at point of receipt",
+                  "type": "boolean",
+                  "default": false
+                },
+                "sequenceNumber": {
+                  "description": "The sequence number of this piece to determine the order in which it appears",
+                  "type": "integer",
+                  "minimum": 1
+                },
                 "enumeration": {
                   "type": "string",
                   "description": "Enumeration is the descriptive information for the numbering scheme of a serial. Synchronized with inventory item."
