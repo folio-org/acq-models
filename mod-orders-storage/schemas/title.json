@@ -25,13 +25,29 @@
       "description": "UUID of the purchase order line this Title is associated with",
       "$ref": "../../common/schemas/uuid.json",
       "x-fqm-essential": true,
-      "x-fqm-visibility": "hidden"
+      "x-fqm-visibility": "hidden",
+      "x-fqm-joins-to-raw": [
+        {
+          "targetId": "58148257-bfb0-4687-8c42-d2833d772f3e",
+          "targetField": "id",
+          "type": "equality-cast-uuid",
+          "direction": "left"
+        }
+      ]
     },
     "instanceId": {
       "description": "UUID of the instance associated with this Title",
       "$ref": "../../common/schemas/uuid.json",
       "x-fqm-essential": true,
-      "x-fqm-visibility": "hidden"
+      "x-fqm-visibility": "hidden",
+      "x-fqm-joins-to-raw": [
+        {
+          "targetId": "8fc4a9d2-7ccf-4233-afb8-796911839862",
+          "targetField": "id",
+          "type": "equality-cast-uuid",
+          "direction": "left"
+        }
+      ]
     },
     "nextSequenceNumber": {
       "description": "The next sequence number to be used for the created Piece records",
@@ -47,7 +63,8 @@
       "items": {
         "$ref": "product_identifier.json"
       },
-      "x-fqm-essential": true
+      "x-fqm-essential": true,
+      "x-fqm-value-getter": "( SELECT jsonb_agg(record.value || jsonb_build_object('productIdType', identifier_type.jsonb ->> 'name') ORDER BY record.value ->> 'productIdType') FROM jsonb_array_elements((:sourceAlias.jsonb -> 'productIds')) record(value) LEFT join ${tenant_id}_mod_fqm_manager.src_inventory_identifier_type identifier_type ON (record.value ->> 'productIdType') = identifier_type.id::text)::text"
     },
     "contributors": {
       "description": "List of contributors to the material",
