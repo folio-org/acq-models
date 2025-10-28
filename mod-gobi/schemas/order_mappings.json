@@ -3,6 +3,14 @@
   "description": "Set of order mappings",
   "type": "object",
   "properties": {
+    "id": {
+      "description": "UUID of this order mappings record",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "_version": {
+      "type": "integer",
+      "description": "Record version for optimistic locking"
+    },
     "orderType": {
       "type": "string",
       "description": "The type of the GOBI order",
