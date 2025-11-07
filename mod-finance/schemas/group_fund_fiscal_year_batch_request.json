@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A batch request to query group-fund-fiscal-year records by multiple fundIds",
+  "type": "object",
+  "properties": {
+    "fundIds": {
+      "description": "The list of fund IDs to query",
+      "type": "array",
+      "items": {
+        "$ref": "../../common/schemas/uuid.json"
+      },
+      "minItems": 1
+    },
+    "fiscalYearId": {
+      "description": "Optional fiscal year ID to filter results",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "groupId": {
+      "description": "Optional group ID to filter results",
+      "$ref": "../../common/schemas/uuid.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "fundIds"
+  ]
+}
