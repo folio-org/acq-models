@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Collection of record IDs for batch requests",
+  "type": "object",
+  "properties": {
+    "ids": {
+      "description": "The list of record IDs",
+      "type": "array",
+      "id": "ids",
+      "items": {
+        "$ref": "uuid.json"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "ids"
+  ]
+}
