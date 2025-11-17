@@ -10,8 +10,8 @@
     "productIdType": {
       "description": "The type of product identifier",
       "$ref": "../../common/schemas/product_id_type.json",
-      "x-fqm-value-getter": "(SELECT array_agg(identifier_type.jsonb ->> 'name') FROM jsonb_array_elements(:src__acquisition__orders_storage__titles.jsonb->'productIds') AS elems LEFT JOIN ${tenant_id}_mod_fqm_manager.src_inventory_identifier_type identifier_type ON (elems.value->>'productIdType')::uuid = identifier_type.id)",
-      "x-fqm-filter-value-getter": "(SELECT array_agg(lower(identifier_type.jsonb ->> 'name')) FROM jsonb_array_elements(:src__acquisition__orders_storage__titles.jsonb->'productIds') AS elems LEFT JOIN ${tenant_id}_mod_fqm_manager.src_inventory_identifier_type identifier_type ON (elems.value->>'productIdType')::uuid = identifier_type.id)",
+      "x-fqm-value-getter": "(SELECT array_agg(identifier_type.value->>'productIdType' ORDER BY identifier_type.value->>'productIdType') FROM jsonb_array_elements(:src__acquisition__orders_storage__titles.jsonb->'productIds') AS identifier_type)",
+      "x-fqm-filter-value-getter": "(SELECT array_agg(identifier_type.value->>'productIdType' ORDER BY identifier_type.value->>'productIdType') FROM jsonb_array_elements(:src__acquisition__orders_storage__titles.jsonb->'productIds') AS identifier_type)",
       "x-fqm-data-type": "stringType",
       "x-fqm-source": {
         "columnName": "name",
