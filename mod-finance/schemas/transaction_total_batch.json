@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A transaction total batch request",
+  "type": "object",
+  "javaName": "transactionTotalBatch",
+  "properties": {
+    "fiscalYearId": {
+      "$ref": "../../common/schemas/uuid.json",
+      "description": "UUID of the fiscal year that the transaction is taking place in"
+    },
+    "transactionTypes": {
+      "type": "array",
+      "description": "Types of transactions to include in the filter",
+      "items": {
+        "description": "This describes the type of transaction",
+        "enum": [
+          "Allocation",
+          "Credit",
+          "Encumbrance",
+          "Payment",
+          "Pending payment",
+          "Rollover transfer",
+          "Transfer"
+        ],
+        "type": "string"
+      }
+    },
+    "fromFundIds": {
+      "type": "array",
+      "description": "UUIDs of the fund money is moving from (use only one of fromFundIds or toFundIds to filter)",
+      "items": {
+        "$ref": "../../common/schemas/uuid.json",
+        "description": "UUID of the fund money is moving from"
+      }
+    },
+    "toFundIds": {
+      "type": "array",
+      "description": "UUID of the fund money is moving to (use only one of fromFundIds or toFundIds to filter)",
+      "items": {
+        "$ref": "../../common/schemas/uuid.json",
+        "description": "UUID of the fund money is moving to"
+      }
+    }
+  },
+  "required": [
+    "fiscalYearId",
+    "transactionTypes"
+  ],
+  "additionalProperties": false
+}
