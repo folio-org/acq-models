@@ -10,6 +10,7 @@
     },
     "transactionTypes": {
       "type": "array",
+      "description": "Types of transactions to include in the filter",
       "items": {
         "description": "This describes the type of transaction",
         "enum": [
@@ -26,6 +27,7 @@
     },
     "fromFundIds": {
       "type": "array",
+      "description": "UUIDs of the fund money is moving from (use only one of fromFundIds or toFundIds to filter)",
       "items": {
         "$ref": "../../common/schemas/uuid.json",
         "description": "UUID of the fund money is moving from"
@@ -33,6 +35,7 @@
     },
     "toFundIds": {
       "type": "array",
+      "description": "UUID of the fund money is moving to (use only one of fromFundIds or toFundIds to filter)",
       "items": {
         "$ref": "../../common/schemas/uuid.json",
         "description": "UUID of the fund money is moving to"
