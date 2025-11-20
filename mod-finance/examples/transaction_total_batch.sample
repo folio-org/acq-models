@@ -1,0 +1,11 @@
+{
+  "fiscalYearId": "4438bc3b-4b4a-4e5e-9886-5f69b48a7a32",
+  "transactionTypes": [
+    "Allocation",
+    "Transfer"
+  ],
+  "fromFundIds": [
+    "27f27438-3197-4281-a353-511829421d6e",
+    "2e51c019-97f3-4523-87e9-59250e3b48bc"
+  ]
+}
