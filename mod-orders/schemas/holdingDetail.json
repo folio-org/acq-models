@@ -4,9 +4,11 @@
   "description": "The contents of the dynamic map holding details",
   "properties": {
     "pieces_detail_collection": {
+      "description": "Collection of piece details for the holding",
       "type": "object",
       "properties": {
         "pieces_detail": {
+          "description": "Array of piece details",
           "type": "array",
           "items": {
             "type": "object",
@@ -33,9 +35,11 @@
       }
     },
     "items_detail_collection": {
+      "description": "Collection of item details for the holding",
       "type": "object",
       "properties": {
         "items_detail": {
+          "description": "Array of item details",
           "type": "array",
           "items": {
             "type": "object",
