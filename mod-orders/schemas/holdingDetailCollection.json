@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A collection of holding ids to retrieved the holding details",
+  "type": "object",
+  "properties": {
+    "holdingIds": {
+      "description": "An array of holding ids",
+      "id": "holdingIds",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "../../../raml-util/schemas/uuid.schema"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "holdingIds"
+  ]
+}

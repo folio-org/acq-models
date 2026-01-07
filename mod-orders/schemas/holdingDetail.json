@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "The contents of the dynamic map holding details",
+  "properties": {
+    "pieces_detail_collection": {
+      "description": "Collection of piece details for the holding",
+      "type": "object",
+      "properties": {
+        "pieces_detail": {
+          "description": "Array of piece details",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "description": "UUID of the piece record",
+                "$ref": "../../../raml-util/schemas/uuid.schema"
+              },
+              "itemId": {
+                "description": "UUID of the associated item record",
+                "$ref": "../../../raml-util/schemas/uuid.schema"
+              },
+              "tenantId": {
+                "description": "Associated tenant in ECS-enabled environments",
+                "type": "string"
+              }
+            }
+          }
+        },
+        "totalRecords": {
+          "description": "Total number of records in the array",
+          "type": "integer"
+        }
+      }
+    },
+    "items_detail_collection": {
+      "description": "Collection of item details for the holding",
+      "type": "object",
+      "properties": {
+        "items_detail": {
+          "description": "Array of item details",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "description": "UUID of the item record",
+                "$ref": "../../../raml-util/schemas/uuid.schema"
+              },
+              "tenantId": {
+                "description": "Associated tenant in ECS-enabled environments",
+                "type": "string"
+              }
+            }
+          }
+        },
+        "totalRecords": {
+          "description": "Total number of records in the array",
+          "type": "integer"
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

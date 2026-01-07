@@ -1,0 +1,53 @@
+{
+  "e54b1f4d-7d05-4b1a-9368-3c36b75d8ac1": {
+    "pieces_detail_collection": {
+      "pieces_detail": [
+        {
+          "id": "8d0e7e3e-8e4f-4f3c-9c9e-1a2b3c4d5e6f",
+          "itemId": "7a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d",
+          "tenantId": "consortium"
+        },
+        {
+          "id": "9e1f2a3b-4c5d-6e7f-8a9b-0c1d2e3f4a5b",
+          "itemId": "8b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e",
+          "tenantId": "consortium"
+        }
+      ],
+      "totalRecords": 2
+    },
+    "items_detail_collection": {
+      "items_detail": [
+        {
+          "id": "7a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d",
+          "tenantId": "university"
+        },
+        {
+          "id": "8b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e",
+          "tenantId": "university"
+        }
+      ],
+      "totalRecords": 2
+    }
+  },
+  "f65c2g5e-8e16-5c2b-a479-4d47c86e9bd2": {
+    "pieces_detail_collection": {
+      "pieces_detail": [
+        {
+          "id": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+          "itemId": "b2c3d4e5-f6a7-8b9c-0d1e-2f3a4b5c6d7e",
+          "tenantId": "consortium"
+        }
+      ],
+      "totalRecords": 1
+    },
+    "items_detail_collection": {
+      "items_detail": [
+        {
+          "id": "b2c3d4e5-f6a7-8b9c-0d1e-2f3a4b5c6d7e",
+          "tenantId": "consortium"
+        }
+      ],
+      "totalRecords": 1
+    }
+  }
+}
