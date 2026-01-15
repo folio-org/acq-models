@@ -3,6 +3,33 @@
   "type": "object",
   "description": "The contents of the dynamic map holding details",
   "properties": {
+    "poLine_detail_collection": {
+      "description": "Collection of poLine details for the holding",
+      "type": "object",
+      "properties": {
+        "poLine_detail": {
+          "description": "Array of poLine details",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "description": "UUID of the poLine record",
+                "$ref": "../../../raml-util/schemas/uuid.schema"
+              },
+              "tenantId": {
+                "description": "Associated tenant in ECS-enabled environments",
+                "type": "string"
+              }
+            }
+          }
+        },
+        "totalRecords": {
+          "description": "Total number of records in the array",
+          "type": "integer"
+        }
+      }
+    },
     "pieces_detail_collection": {
       "description": "Collection of piece details for the holding",
       "type": "object",
@@ -15,6 +42,10 @@
             "properties": {
               "id": {
                 "description": "UUID of the piece record",
+                "$ref": "../../../raml-util/schemas/uuid.schema"
+              },
+              "poLineId": {
+                "description": "UUID of the associated poLine record",
                 "$ref": "../../../raml-util/schemas/uuid.schema"
               },
               "itemId": {
