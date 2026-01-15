@@ -1,14 +1,24 @@
 {
   "e54b1f4d-7d05-4b1a-9368-3c36b75d8ac1": {
+    "poLines_detail_collection": {
+      "poLines_detail": [
+        {
+          "id": "8f3a7d2b-6e1c-4b9a-a2d5-f9e8c3b1a0d4"
+        }
+      ],
+      "totalRecords": 1
+    },
     "pieces_detail_collection": {
       "pieces_detail": [
         {
           "id": "8d0e7e3e-8e4f-4f3c-9c9e-1a2b3c4d5e6f",
+          "poLineId": "8f3a7d2b-6e1c-4b9a-a2d5-f9e8c3b1a0d4",
           "itemId": "7a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d",
           "tenantId": "consortium"
         },
         {
           "id": "9e1f2a3b-4c5d-6e7f-8a9b-0c1d2e3f4a5b",
+          "poLineId": "8f3a7d2b-6e1c-4b9a-a2d5-f9e8c3b1a0d4",
           "itemId": "8b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e",
           "tenantId": "consortium"
         }
@@ -30,10 +40,19 @@
     }
   },
   "f65c2g5e-8e16-5c2b-a479-4d47c86e9bd2": {
+    "poLines_detail_collection": {
+      "poLines_detail": [
+        {
+          "id": "c9b4e1f7-0d2a-45c8-9e6b-3f2a1d7c0b5e"
+        }
+      ],
+      "totalRecords": 1
+    },
     "pieces_detail_collection": {
       "pieces_detail": [
         {
           "id": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+          "poLineId": "c9b4e1f7-0d2a-45c8-9e6b-3f2a1d7c0b5e",
           "itemId": "b2c3d4e5-f6a7-8b9c-0d1e-2f3a4b5c6d7e",
           "tenantId": "consortium"
         }
