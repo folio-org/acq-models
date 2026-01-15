@@ -1,7 +1,7 @@
 {
   "e54b1f4d-7d05-4b1a-9368-3c36b75d8ac1": {
-    "poLine_detail_collection": {
-      "poLine_detail": [
+    "poLines_detail_collection": {
+      "poLines_detail": [
         {
           "id": "8f3a7d2b-6e1c-4b9a-a2d5-f9e8c3b1a0d4",
           "tenantId": "consortium"

@@ -3,11 +3,11 @@
   "type": "object",
   "description": "The contents of the dynamic map holding details",
   "properties": {
-    "poLine_detail_collection": {
+    "poLines_detail_collection": {
       "description": "Collection of poLine details for the holding",
       "type": "object",
       "properties": {
-        "poLine_detail": {
+        "poLines_detail": {
           "description": "Array of poLine details",
           "type": "array",
           "items": {
