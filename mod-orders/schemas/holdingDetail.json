@@ -16,10 +16,6 @@
               "id": {
                 "description": "UUID of the poLine record",
                 "$ref": "../../../raml-util/schemas/uuid.schema"
-              },
-              "tenantId": {
-                "description": "Associated tenant in ECS-enabled environments",
-                "type": "string"
               }
             }
           }
