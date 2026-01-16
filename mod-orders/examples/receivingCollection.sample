@@ -5,6 +5,7 @@
       "received": 2,
       "receivedItems": [
         {
+          "accessionNumber": "A123456789",
           "barcode": "0987654321",
           "callNumber": "PR 8923 W6 L36 1990 c.3",
           "comment": "Very important note",
@@ -15,6 +16,7 @@
           "pieceId": "c18c49b7-d970-44d6-b5d4-bd76c1c62d83"
         },
         {
+          "accessionNumber": "A987654321",
           "barcode": "0987654111",
           "callNumber": "BF2050 .M335 1999",
           "comment": "Very important note",
@@ -31,6 +33,7 @@
       "received": 1,
       "receivedItems": [
         {
+          "accessionNumber": "A123456",
           "barcode": "0987654333",
           "callNumber": "PR 8923 W6 L36 1990 c.4",
           "comment": "Very important note",

@@ -26,6 +26,10 @@
             "items": {
               "type": "object",
               "properties": {
+                "accessionNumber": {
+                  "description": "The accession number assigned to the piece",
+                  "type": "string"
+                },
                 "barcode": {
                   "description": "The barcode assigned to the item",
                   "type": "string"
