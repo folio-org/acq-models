@@ -6,7 +6,7 @@
     "poNumber": {
       "description": "A human readable generated or manually entered ID assigned to the purchase order",
       "type": "string",
-      "pattern": "^[a-zA-Z0-9]{1,16}$"
+      "pattern": "^[a-zA-Z0-9]{1,22}$"
     }
   },
   "required": [

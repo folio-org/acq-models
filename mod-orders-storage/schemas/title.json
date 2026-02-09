@@ -95,7 +95,7 @@
     "poLineNumber": {
       "description": "The number of the POL identified by poLineId",
       "type": "string",
-      "pattern": "^[a-zA-Z0-9]{1,16}-[0-9]{1,3}$",
+      "pattern": "^[a-zA-Z0-9]{1,22}-[0-9]{1,3}$",
       "x-fqm-essential": true,
       "x-fqm-visible-by-default": true
     },
