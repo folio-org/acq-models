@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Batch tracking record for aggregating item Kafka events",
+  "javaName": "BatchTracking",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique identifier for the batch",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "processedCount": {
+      "description": "Number of records processed so far",
+      "type": "integer",
+      "default": 0,
+      "minimum": 0
+    },
+    "totalRecords": {
+      "description": "Total number of records expected in this batch",
+      "type": "integer",
+      "minimum": 1
+    },
+    "createdDate": {
+      "description": "Date and time when the batch tracking record was created",
+      "type": "string",
+      "format": "date-time"
+    },
+    "_version": {
+      "type": "integer",
+      "description": "Record version for optimistic locking"
+    },
+    "metadata": {
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "totalRecords"
+  ]
+}
+
