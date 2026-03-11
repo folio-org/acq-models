@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Fiscal year hierarchy: a tree of associations from Ledger to Group to Fund to Budget to Expense Class",
+  "type": "object",
+  "properties": {
+    "fiscalYearId": {
+      "description": "UUID of the fiscal year this hierarchy applies to",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "ledgers": {
+      "description": "Ledgers at the root of the hierarchy, each containing groups, funds, budgets, and expense classes",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "description": "Ledger node with its descendant tree",
+        "properties": {
+          "id": {
+            "description": "UUID of the ledger",
+            "$ref": "../../common/schemas/uuid.json"
+          },
+          "name": { "type": "string", "description": "Ledger name" },
+          "code": { "type": "string", "description": "Ledger code" },
+          "groups": {
+            "description": "Groups under this ledger",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "description": "Group node with its descendant tree",
+              "properties": {
+                "id": {
+                  "description": "UUID of the group",
+                  "$ref": "../../common/schemas/uuid.json"
+                },
+                "name": { "type": "string", "description": "Group name" },
+                "code": { "type": "string", "description": "Group code" },
+                "funds": {
+                  "description": "Funds under this group (for this fiscal year)",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "description": "Fund node with its descendant tree",
+                    "properties": {
+                      "id": {
+                        "description": "UUID of the fund",
+                        "$ref": "../../common/schemas/uuid.json"
+                      },
+                      "name": { "type": "string", "description": "Fund name" },
+                      "code": { "type": "string", "description": "Fund code" },
+                      "budgets": {
+                        "description": "Budgets under this fund (for this fiscal year)",
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "description": "Budget node with its descendant tree",
+                          "properties": {
+                            "id": {
+                              "description": "UUID of the budget",
+                              "$ref": "../../common/schemas/uuid.json"
+                            },
+                            "name": { "type": "string", "description": "Budget name" },
+                            "expenseClasses": {
+                              "description": "Expense classes under this budget",
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "description": "Expense class node",
+                                "properties": {
+                                  "id": {
+                                    "description": "UUID of the expense class",
+                                    "$ref": "../../common/schemas/uuid.json"
+                                  },
+                                  "name": { "type": "string", "description": "Expense class name" },
+                                  "code": { "type": "string", "description": "Expense class code" }
+                                },
+                                "additionalProperties": false,
+                                "required": [ "id" ]
+                              }
+                            }
+                          },
+                          "additionalProperties": false,
+                          "required": [ "id" ]
+                        }
+                      }
+                    },
+                    "additionalProperties": false,
+                    "required": [ "id" ]
+                  }
+                }
+              },
+              "additionalProperties": false,
+              "required": [ "id" ]
+            }
+          }
+        },
+        "additionalProperties": false,
+        "required": [ "id" ]
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "fiscalYearId",
+    "ledgers"
+  ]
+}

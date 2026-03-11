@@ -1,0 +1,42 @@
+{
+  "fiscalYearId": "ac2164c7-ba3d-1bc2-a12c-e35ceccbfaf2",
+  "ledgers": [
+    {
+      "id": "7cef8378-7cbd-1fae-bcdd-8b9d7c0af9de",
+      "name": "Main Library",
+      "code": "MAIN-LIB",
+      "groups": [
+        {
+          "id": "a1b2c3d4-e5f6-4a5b-8c9d-0e1f2a3b4c5d",
+          "name": "Humanities",
+          "code": "HUM",
+          "funds": [
+            {
+              "id": "b2c3d4e5-f6a7-5b6c-9d0e-1f2a3b4c5d6e",
+              "name": "History Fund",
+              "code": "HIST",
+              "budgets": [
+                {
+                  "id": "c3d4e5f6-a7b8-4c7d-8e1f-2a3b4c5d6e7f",
+                  "name": "History FY2020",
+                  "expenseClasses": [
+                    {
+                      "id": "d4e5f6a7-b8c9-4d8e-9f2a-3b4c5d6e7f8a",
+                      "name": "Books",
+                      "code": "BOOKS"
+                    },
+                    {
+                      "id": "e5f6a7b8-c9d0-4e9f-a2a3-b4c5d6e7f8a9b",
+                      "name": "Serials",
+                      "code": "SERIALS"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
