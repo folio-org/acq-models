@@ -16,6 +16,11 @@
               "id": {
                 "description": "UUID of the poLine record",
                 "$ref": "../../../raml-util/schemas/uuid.schema"
+              },
+              "checkinItems": {
+                "description": "if true this will toggle the Check-in workflow for details associated with this PO line",
+                "type": "boolean",
+                "default": false
               }
             }
           }
