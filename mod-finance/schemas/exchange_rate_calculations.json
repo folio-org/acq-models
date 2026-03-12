@@ -29,6 +29,10 @@
           "calculation": {
             "description": "Calculated exchange rate value",
             "type": "number"
+          },
+          "operationMode": {
+            "description": "Operation mode for manual exchange rate to use, supports null, MULTIPLY (inferred default) or DIVIDE",
+            "type": "string"
           }
         },
         "additionalProperties": false,
