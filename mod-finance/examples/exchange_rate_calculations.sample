@@ -10,13 +10,15 @@
       "from": "EUR",
       "to": "GBP",
       "amount": 500,
-      "rate": 0.90
+      "rate": 0.90,
+      "operationMode": "MULTIPLY"
     },
     {
       "from": "GBP",
       "to": "JPY",
       "amount": 200,
-      "rate": 150.00
+      "rate": 150.00,
+      "operationMode": "DIVIDE"
     }
   ]
 }

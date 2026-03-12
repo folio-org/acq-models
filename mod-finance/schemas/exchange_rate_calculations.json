@@ -29,6 +29,10 @@
           "calculation": {
             "description": "Calculated exchange rate value",
             "type": "number"
+          },
+          "operationMode": {
+            "description": "Operation mode performed on the exchange rate",
+            "type": "string"
           }
         },
         "additionalProperties": false,
