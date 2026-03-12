@@ -31,7 +31,7 @@
             "type": "number"
           },
           "operationMode": {
-            "description": "Operation mode performed on the exchange rate",
+            "description": "Operation mode for manual exchange rate to use, supports null, MULTIPLY (inferred default) or DIVIDE",
             "type": "string"
           }
         },
