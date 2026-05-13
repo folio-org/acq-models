@@ -194,8 +194,7 @@
     },
     "nextInvoiceLineNumber": {
       "description": "Number that will be used next time an invoice line is created",
-      "type": "integer",
-      "readonly": true
+      "type": "integer"
     },
     "metadata": {
       "type": "object",
