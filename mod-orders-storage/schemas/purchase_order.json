@@ -113,8 +113,7 @@
     },
     "nextPolNumber": {
       "description": "Number that will be used next time a purchase order line is created",
-      "type": "integer",
-      "readonly": true
+      "type": "integer"
     },
     "tags": {
       "type": "object",
