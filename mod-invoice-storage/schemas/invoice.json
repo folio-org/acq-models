@@ -130,13 +130,11 @@
     },
     "subTotal": {
       "description": "Invoice amount before adjustments are applied. This is sum of all subTotal amounts of the corresponding invoice lines. This amount is always calculated by system.",
-      "type": "number",
-      "readonly": true
+      "type": "number"
     },
     "total": {
       "description": "The total amount is calculated \"on the fly\" of this invoice which is sum of subTotal and adjustmentsTotal. Must be the same with existed \"lockTotal\", when approve invoice.",
-      "type": "number",
-      "readonly": true
+      "type": "number"
     },
     "vendorInvoiceNo": {
       "description": "This is the number from the vendor's invoice, which is different from the folioInvoiceNo",
@@ -194,8 +192,7 @@
     },
     "nextInvoiceLineNumber": {
       "description": "Number that will be used next time an invoice line is created",
-      "type": "integer",
-      "readonly": true
+      "type": "integer"
     },
     "metadata": {
       "type": "object",
