@@ -41,7 +41,6 @@
   "customFields": {
     "membership": "opt_0"
   },
-  "fiscalYearId": "43aba0df-70e4-435e-8463-d8f730d19e0b",
   "metadata": {
     "createdDate": "2018-07-19T00:00:00.000+0000",
     "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
@@ -100,6 +99,9 @@
         "subscriptionTo": "2020-10-09T00:00:00.000Z"
       },
       "donor": "ABCDEFGHIJKLM",
+      "multiYearPayment": true,
+      "prepaymentTerm": 2,
+      "startingFiscalYear": "FY2025",
       "fundDistribution": [
         {
           "code": "HIST",
@@ -107,14 +109,16 @@
           "fundId": "63157e96-0693-426d-b0df-948bacdfdb08",
           "distributionType": "percentage",
           "value": 80.0,
-          "encumbrance": "eb506834-6c70-4239-8d1a-6414a5b08ac3"
+          "encumbrance": "eb506834-6c70-4239-8d1a-6414a5b08ac3",
+          "fiscalYearId": "684b5dc5-92b9-4c35-9a06-3a1854db4e37"
         },
         {
           "code": "GENRL",
           "fundId": "3652829d-a625-4c84-b297-9bd9955d6bc9",
           "distributionType": "percentage",
           "value": 20.0,
-          "encumbrance": "0466cb77-0344-43c6-85eb-0a64aa2934e5"
+          "encumbrance": "0466cb77-0344-43c6-85eb-0a64aa2934e5",
+          "fiscalYearId": "5e49501e-2b6b-4a5e-8a6d-7e43e31de3f2"
         }
       ],
       "locations": [

@@ -60,6 +60,9 @@
           },
           "isPackage": false,
           "orderFormat": "P/E Mix",
+          "multiYearPayment": true,
+          "prepaymentTerm": 2,
+          "startingFiscalYear": "FY2025",
           "titleOrPackage": "Kayak Fishing in the Northern Gulf Coast"
         },
         {
@@ -75,6 +78,7 @@
           },
           "isPackage": true,
           "orderFormat": "Physical Resource",
+          "multiYearPayment": false,
           "titleOrPackage": "The Girl on the Train"
         }
       ]

@@ -239,6 +239,19 @@
       "description": "Records the fact that the record should not be displayed in a discovery system",
       "default": false
     },
+    "multiYearPayment": {
+      "description": "Indicates whether this PO Line involves payment spread across multiple fiscal years",
+      "type": "boolean",
+      "default": false
+    },
+    "prepaymentTerm": {
+      "description": "Number of fiscal years across which the prepayment is spread",
+      "type": "integer"
+    },
+    "startingFiscalYear": {
+      "description": "The code or identifier of the first fiscal year of the prepayment term",
+      "type": "string"
+    },
     "customFields" : {
       "description": "Object that contains custom field",
       "type": "object",

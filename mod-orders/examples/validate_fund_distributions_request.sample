@@ -15,12 +15,14 @@
     {
       "code": "HIST",
       "fundId": "63157e96-0693-426d-b0df-948bacdfdb08",
+      "fiscalYearId": "684b5dc5-92b9-4c35-9a06-3a1854db4e37",
       "distributionType": "percentage",
       "value": 50.0
     },
     {
       "code": "EUROHIST",
       "fundId": "e9285a1c-1dfc-4380-868c-e74073003f43",
+      "fiscalYearId": "5e49501e-2b6b-4a5e-8a6d-7e43e31de3f2",
       "distributionType": "amount",
       "value": 50.00
     }
