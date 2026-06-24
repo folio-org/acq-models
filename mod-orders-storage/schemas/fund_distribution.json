@@ -31,10 +31,6 @@
     "value": {
       "description": "The value of the cost to be applied to this fund",
       "type": "number"
-    },
-    "fiscalYearId": {
-      "description": "UUID of the fiscal year associated with this fund distribution",
-      "$ref": "../../common/schemas/uuid.json"
     }
   },
   "additionalProperties": false,

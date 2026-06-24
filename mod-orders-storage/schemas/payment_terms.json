@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Payment terms for multi-year prepayment on a purchase order line",
+  "type": "object",
+  "properties": {
+    "totalPrice": {
+      "description": "Total price for the prepayment period",
+      "type": "number"
+    },
+    "prepaymentTerm": {
+      "description": "Number of fiscal years across which the prepayment is spread",
+      "type": "integer"
+    },
+    "startingFiscalYear": {
+      "description": "The code or identifier of the first fiscal year of the prepayment term",
+      "type": "string"
+    },
+    "fundDistributions": {
+      "description": "Fund distributions across the prepayment term",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "fund_distribution.json"
+      }
+    }
+  },
+  "required": [
+    "totalPrice",
+    "prepaymentTerm",
+    "startingFiscalYear"
+  ],
+  "additionalProperties": false
+}

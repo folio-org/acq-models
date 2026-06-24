@@ -244,13 +244,10 @@
       "type": "boolean",
       "default": false
     },
-    "prepaymentTerm": {
-      "description": "Number of fiscal years across which the prepayment is spread",
-      "type": "integer"
-    },
-    "startingFiscalYear": {
-      "description": "The code or identifier of the first fiscal year of the prepayment term",
-      "type": "string"
+    "paymentTerms": {
+      "description": "Payment terms for multi-year prepayment on this purchase order line",
+      "type": "object",
+      "$ref": "payment_terms.json"
     },
     "customFields" : {
       "description": "Object that contains custom field",

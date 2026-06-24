@@ -61,8 +61,12 @@
           "isPackage": false,
           "orderFormat": "P/E Mix",
           "multiYearPayment": true,
-          "prepaymentTerm": 2,
-          "startingFiscalYear": "FY2025",
+          "paymentTerms": {
+            "totalPrice": 150.00,
+            "prepaymentTerm": 2,
+            "startingFiscalYear": "FY2025",
+            "fundDistributions": []
+          },
           "titleOrPackage": "Kayak Fishing in the Northern Gulf Coast"
         },
         {
