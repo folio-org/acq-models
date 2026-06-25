@@ -11,9 +11,9 @@
       "description": "Number of fiscal years across which the prepayment is spread",
       "type": "integer"
     },
-    "startingFiscalYear": {
-      "description": "The code or identifier of the first fiscal year of the prepayment term",
-      "type": "string"
+    "startingFiscalYearId": {
+      "description": "UUID of the first fiscal year of the prepayment term",
+      "$ref": "../../common/schemas/uuid.json"
     },
     "fundDistributions": {
       "description": "Fund distributions across the prepayment term",
@@ -27,7 +27,7 @@
   "required": [
     "totalPrice",
     "prepaymentTerm",
-    "startingFiscalYear"
+    "startingFiscalYearId"
   ],
   "additionalProperties": false
 }

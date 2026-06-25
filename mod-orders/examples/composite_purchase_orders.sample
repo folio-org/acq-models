@@ -64,7 +64,7 @@
           "paymentTerms": {
             "totalPrice": 150.00,
             "prepaymentTerm": 2,
-            "startingFiscalYear": "FY2025",
+            "startingFiscalYearId": "684b5dc5-92b9-4c35-9a06-3a1854db4e37",
             "fundDistributions": []
           },
           "titleOrPackage": "Kayak Fishing in the Northern Gulf Coast"
