@@ -15,12 +15,12 @@
       "description": "UUID of the first fiscal year of the prepayment term",
       "$ref": "../../common/schemas/uuid.json"
     },
-    "fundDistributions": {
-      "description": "Fund distributions across the prepayment term",
+    "fiscalYearDistributions": {
+      "description": "Fund distributions grouped per fiscal year across the prepayment term",
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "fund_distribution.json"
+        "$ref": "fiscal_year_distribution.json"
       }
     }
   },

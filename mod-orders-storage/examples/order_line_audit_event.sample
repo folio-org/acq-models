@@ -103,13 +103,18 @@
         "totalPrice": 150.00,
         "prepaymentTerm": 2,
         "startingFiscalYearId": "684b5dc5-92b9-4c35-9a06-3a1854db4e37",
-        "fundDistributions": [
+        "fiscalYearDistributions": [
           {
-            "code": "AFRICAHIST",
-            "fundId": "7fbd5d84-62d1-44c6-9c45-6cb173998bbd",
-            "expenseClassId": "1bcc3247-99bf-4dca-9b0f-7bc51a2998c2",
-            "distributionType": "percentage",
-            "value": 100
+            "fiscalYearId": "684b5dc5-92b9-4c35-9a06-3a1854db4e37",
+            "fundDistributions": [
+              {
+                "code": "AFRICAHIST",
+                "fundId": "7fbd5d84-62d1-44c6-9c45-6cb173998bbd",
+                "expenseClassId": "1bcc3247-99bf-4dca-9b0f-7bc51a2998c2",
+                "distributionType": "percentage",
+                "value": 100
+              }
+            ]
           }
         ]
       },

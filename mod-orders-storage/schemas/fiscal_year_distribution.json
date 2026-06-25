@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Fund distributions for a specific fiscal year within a prepayment term",
+  "type": "object",
+  "properties": {
+    "fiscalYearId": {
+      "description": "UUID of the fiscal year",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "fundDistributions": {
+      "description": "Fund distributions for this fiscal year",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "fund_distribution.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}
