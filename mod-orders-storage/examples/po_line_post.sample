@@ -53,6 +53,25 @@
     "d926d900-e27d-46d6-bba8-31e9d5c2cf44",
     "077274ad-6b4f-4c28-9779-6d381e7a1ca1"
   ],
+  "multiYearPayment": true,
+  "paymentTerms": {
+    "totalPrice": 150.00,
+    "prepaymentTerm": 2,
+    "startingFiscalYearId": "684b5dc5-92b9-4c35-9a06-3a1854db4e37",
+    "fiscalYearDistributions": [
+      {
+        "fiscalYearId": "684b5dc5-92b9-4c35-9a06-3a1854db4e37",
+        "fundDistributions": [
+          {
+            "code": "HIST",
+            "fundId": "63157e96-0693-426d-b0df-948bacdfdb08",
+            "distributionType": "amount",
+            "value": 71.96
+          }
+        ]
+      }
+    ]
+  },
   "fundDistribution": [
     {
       "code": "HIST",

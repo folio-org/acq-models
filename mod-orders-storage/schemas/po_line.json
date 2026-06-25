@@ -239,6 +239,16 @@
       "description": "Records the fact that the record should not be displayed in a discovery system",
       "default": false
     },
+    "multiYearPayment": {
+      "description": "Indicates whether this PO Line involves payment spread across multiple fiscal years",
+      "type": "boolean",
+      "default": false
+    },
+    "paymentTerms": {
+      "description": "Payment terms for multi-year prepayment on this purchase order line",
+      "type": "object",
+      "$ref": "payment_terms.json"
+    },
     "customFields" : {
       "description": "Object that contains custom field",
       "type": "object",
