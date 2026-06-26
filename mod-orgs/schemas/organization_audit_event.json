@@ -32,7 +32,12 @@
     "organizationSnapshot": {
       "description": "Full snapshot of the organization",
       "type": "object",
-      "$ref": "organization.json"
+      "javaType": "org.folio.rest.jaxrs.model.Organization"
+    },
+    "originalOrganizationSnapshot": {
+      "description": "Snapshot of the organization prior to the edit. Populated only for Edit actions.",
+      "type": "object",
+      "javaType": "org.folio.rest.jaxrs.model.Organization"
     }
   },
   "additionalProperties": false
