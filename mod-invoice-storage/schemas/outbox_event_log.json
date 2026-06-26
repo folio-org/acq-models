@@ -22,10 +22,6 @@
     "payload": {
       "description": "Event payload to send to Kafka",
       "type": "string"
-    },
-    "originalPayload": {
-      "description": "Pre-edit entity payload. Populated only for Edit actions.",
-      "type": "string"
     }
   },
   "additionalProperties": false,
