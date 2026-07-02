@@ -1,4 +1,5 @@
 {
   "value": "Purchase At Vendor System",
-  "source": "System"
+  "source": "System",
+  "deprecated": false
 }
