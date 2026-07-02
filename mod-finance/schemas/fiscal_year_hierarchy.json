@@ -1,0 +1,213 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A hierarchical rollup, for one fiscal year, of a ledger and its groups, funds, budgets and budget expense classes",
+  "type": "object",
+  "javaName": "FiscalYearHierarchy",
+  "properties": {
+    "fiscalYearId": {
+      "description": "UUID of the fiscal year this hierarchy is scoped to",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "fiscalYearCode": {
+      "description": "The code of the fiscal year",
+      "type": "string"
+    },
+    "ledgerId": {
+      "description": "UUID of the ledger",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "ledgerCode": {
+      "description": "The code of the ledger",
+      "type": "string"
+    },
+    "ledgerName": {
+      "description": "The name of the ledger",
+      "type": "string"
+    },
+    "groups": {
+      "description": "The groups associated, for this fiscal year, with funds belonging to this ledger",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "groupId": {
+            "description": "UUID of the group",
+            "$ref": "../../common/schemas/uuid.json"
+          },
+          "groupCode": {
+            "description": "The code of the group",
+            "type": "string"
+          },
+          "groupName": {
+            "description": "The name of the group",
+            "type": "string"
+          },
+          "funds": {
+            "description": "The funds belonging to this ledger that are associated with this group for this fiscal year",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "fundId": {
+                  "description": "UUID of the fund",
+                  "$ref": "../../common/schemas/uuid.json"
+                },
+                "fundCode": {
+                  "description": "A unique code associated with the fund",
+                  "type": "string"
+                },
+                "fundName": {
+                  "description": "The name of the fund",
+                  "type": "string"
+                },
+                "budget": {
+                  "description": "The budget for this fund in this fiscal year, if one exists",
+                  "type": "object",
+                  "properties": {
+                    "budgetId": {
+                      "description": "UUID of the budget",
+                      "$ref": "../../common/schemas/uuid.json"
+                    },
+                    "budgetName": {
+                      "description": "The name of the budget",
+                      "type": "string"
+                    },
+                    "budgetStatus": {
+                      "description": "The status of the budget",
+                      "type": "string"
+                    },
+                    "initialAllocation": {
+                      "description": "The amount of the first allocation made to this budget",
+                      "type": "number"
+                    },
+                    "allocated": {
+                      "description": "The amount currently allocated to this budget",
+                      "type": "number"
+                    },
+                    "available": {
+                      "description": "The amount currently available for this budget",
+                      "type": "number"
+                    },
+                    "budgetExpenseClasses": {
+                      "description": "The expense classes associated with this budget",
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "expenseClassId": {
+                            "description": "UUID of the expense class",
+                            "$ref": "../../common/schemas/uuid.json"
+                          },
+                          "expenseClassCode": {
+                            "description": "The code of the expense class",
+                            "type": "string"
+                          },
+                          "expenseClassName": {
+                            "description": "The name of the expense class",
+                            "type": "string"
+                          },
+                          "status": {
+                            "description": "The status of this expense class within the budget",
+                            "type": "string"
+                          }
+                        },
+                        "additionalProperties": false
+                      }
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "funds": {
+      "description": "The funds belonging to this ledger that are not associated with any group for this fiscal year",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fundId": {
+            "description": "UUID of the fund",
+            "$ref": "../../common/schemas/uuid.json"
+          },
+          "fundCode": {
+            "description": "A unique code associated with the fund",
+            "type": "string"
+          },
+          "fundName": {
+            "description": "The name of the fund",
+            "type": "string"
+          },
+          "budget": {
+            "description": "The budget for this fund in this fiscal year, if one exists",
+            "type": "object",
+            "properties": {
+              "budgetId": {
+                "description": "UUID of the budget",
+                "$ref": "../../common/schemas/uuid.json"
+              },
+              "budgetName": {
+                "description": "The name of the budget",
+                "type": "string"
+              },
+              "budgetStatus": {
+                "description": "The status of the budget",
+                "type": "string"
+              },
+              "initialAllocation": {
+                "description": "The amount of the first allocation made to this budget",
+                "type": "number"
+              },
+              "allocated": {
+                "description": "The amount currently allocated to this budget",
+                "type": "number"
+              },
+              "available": {
+                "description": "The amount currently available for this budget",
+                "type": "number"
+              },
+              "budgetExpenseClasses": {
+                "description": "The expense classes associated with this budget",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "expenseClassId": {
+                      "description": "UUID of the expense class",
+                      "$ref": "../../common/schemas/uuid.json"
+                    },
+                    "expenseClassCode": {
+                      "description": "The code of the expense class",
+                      "type": "string"
+                    },
+                    "expenseClassName": {
+                      "description": "The name of the expense class",
+                      "type": "string"
+                    },
+                    "status": {
+                      "description": "The status of this expense class within the budget",
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "fiscalYearId",
+    "ledgerId"
+  ]
+}
