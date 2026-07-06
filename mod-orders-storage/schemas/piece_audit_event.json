@@ -32,13 +32,11 @@
     },
     "pieceSnapshot": {
       "description": "Full snapshot of the piece",
-      "type": "object",
-      "javaType": "org.folio.rest.jaxrs.model.Piece"
+      "$ref": "piece.json"
     },
     "originalPieceSnapshot": {
       "description": "Full snapshot of the piece before the EDIT action",
-      "type": "object",
-      "javaType": "org.folio.rest.jaxrs.model.Piece"
+      "$ref": "piece.json"
     }
   },
   "additionalProperties": false

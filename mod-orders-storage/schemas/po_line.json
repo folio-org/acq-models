@@ -2,7 +2,6 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "purchase order line",
   "type": "object",
-  "javaName": "PoLine",
   "properties": {
     "id": {
       "description": "UUID identifying this purchase order line",
