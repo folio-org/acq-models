@@ -32,13 +32,11 @@
     },
     "orderSnapshot": {
       "description": "Full snapshot of the order",
-      "type": "object",
-      "javaType": "org.folio.rest.jaxrs.model.PurchaseOrder"
+      "$ref": "purchase_order.json"
     },
     "originalOrderSnapshot": {
       "description": "Full snapshot of the order before the EDIT action",
-      "type": "object",
-      "javaType": "org.folio.rest.jaxrs.model.PurchaseOrder"
+      "$ref": "purchase_order.json"
     }
   },
   "additionalProperties": false

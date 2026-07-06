@@ -36,13 +36,11 @@
     },
     "orderLineSnapshot": {
       "description": "Full snapshot of the order line",
-      "type": "object",
-      "javaType": "org.folio.rest.jaxrs.model.PoLine"
+      "$ref": "po_line.json"
     },
     "originalOrderLineSnapshot": {
       "description": "Full snapshot of the order line before the EDIT action",
-      "type": "object",
-      "javaType": "org.folio.rest.jaxrs.model.PoLine"
+      "$ref": "po_line.json"
     }
   },
   "additionalProperties": false
