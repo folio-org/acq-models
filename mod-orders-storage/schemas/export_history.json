@@ -52,6 +52,10 @@
         "description": "UUID of the purchase order line",
         "type": "string"
       }
+    },
+    "exportTransmissionMethod": {
+      "description": "Specifies how the export was delivered and is populated only after a successful FTP upload, email delivery, or file download staging",
+      "type": "string"
     }
   },
   "additionalProperties": false,
