@@ -32,7 +32,10 @@
     },
     "orderSnapshot": {
       "description": "Full snapshot of the order",
-      "type": "object",
+      "$ref": "purchase_order.json"
+    },
+    "originalOrderSnapshot": {
+      "description": "Full snapshot of the order before the EDIT action",
       "$ref": "purchase_order.json"
     }
   },

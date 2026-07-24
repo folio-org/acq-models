@@ -2,7 +2,6 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Piece details",
   "type": "object",
-  "javaName": "Piece",
   "properties": {
     "id": {
       "description": "UUID of this piece record",

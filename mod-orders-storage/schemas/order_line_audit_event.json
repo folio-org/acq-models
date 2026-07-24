@@ -36,7 +36,10 @@
     },
     "orderLineSnapshot": {
       "description": "Full snapshot of the order line",
-      "type": "object",
+      "$ref": "po_line.json"
+    },
+    "originalOrderLineSnapshot": {
+      "description": "Full snapshot of the order line before the EDIT action",
       "$ref": "po_line.json"
     }
   },

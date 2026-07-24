@@ -32,7 +32,10 @@
     },
     "pieceSnapshot": {
       "description": "Full snapshot of the piece",
-      "type": "object",
+      "$ref": "piece.json"
+    },
+    "originalPieceSnapshot": {
+      "description": "Full snapshot of the piece before the EDIT action",
       "$ref": "piece.json"
     }
   },
