@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "An expense class associated with a budget, as it appears in the fiscal year hierarchy",
+  "type": "object",
+  "javaName": "FiscalYearHierarchyExpenseClass",
+  "properties": {
+    "expenseClassId": {
+      "description": "UUID of the expense class",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "expenseClassCode": {
+      "description": "The code of the expense class",
+      "type": "string"
+    },
+    "expenseClassName": {
+      "description": "The name of the expense class",
+      "type": "string"
+    },
+    "status": {
+      "description": "The status of this expense class within the budget",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A group and the funds within it for a fiscal year, as it appears in the fiscal year hierarchy",
+  "type": "object",
+  "javaName": "FiscalYearHierarchyGroup",
+  "properties": {
+    "groupId": {
+      "description": "UUID of the group",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "groupCode": {
+      "description": "The code of the group",
+      "type": "string"
+    },
+    "groupName": {
+      "description": "The name of the group",
+      "type": "string"
+    },
+    "funds": {
+      "description": "The funds belonging to this ledger that are associated with this group for this fiscal year",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "fiscal_year_hierarchy_fund.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}

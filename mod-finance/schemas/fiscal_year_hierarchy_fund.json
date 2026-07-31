@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A fund and its budget for a fiscal year, as it appears in the fiscal year hierarchy",
+  "type": "object",
+  "javaName": "FiscalYearHierarchyFund",
+  "properties": {
+    "fundId": {
+      "description": "UUID of the fund",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "fundCode": {
+      "description": "A unique code associated with the fund",
+      "type": "string"
+    },
+    "fundName": {
+      "description": "The name of the fund",
+      "type": "string"
+    },
+    "budget": {
+      "description": "The budget for this fund in this fiscal year, if one exists",
+      "type": "object",
+      "$ref": "fiscal_year_hierarchy_budget.json"
+    }
+  },
+  "additionalProperties": false
+}
