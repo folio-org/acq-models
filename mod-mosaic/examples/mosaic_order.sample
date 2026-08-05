@@ -41,6 +41,8 @@
   "currency": "USD",
   "quantityPhysical": 3,
   "quantityElectronic": 1,
+  "discount": 5.00,
+  "discountType": "amount",
   "locations": [
     {
       "locationId": "7d9a1c91-eb4f-4e08-94c6-2cb31c8f9067",
