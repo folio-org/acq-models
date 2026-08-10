@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A hierarchical rollup, for one fiscal year, of a ledger and its groups, funds, budgets and budget expense classes",
+  "type": "object",
+  "javaName": "FiscalYearHierarchy",
+  "properties": {
+    "fiscalYearId": {
+      "description": "UUID of the fiscal year this hierarchy is scoped to",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "fiscalYearCode": {
+      "description": "The code of the fiscal year",
+      "type": "string"
+    },
+    "ledgerId": {
+      "description": "UUID of the ledger",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "ledgerCode": {
+      "description": "The code of the ledger",
+      "type": "string"
+    },
+    "ledgerName": {
+      "description": "The name of the ledger",
+      "type": "string"
+    },
+    "groups": {
+      "description": "The groups associated, for this fiscal year, with funds belonging to this ledger",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "fiscal_year_hierarchy_group.json"
+      }
+    },
+    "funds": {
+      "description": "The funds belonging to this ledger that are not associated with any group for this fiscal year",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "fiscal_year_hierarchy_fund.json"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "fiscalYearId",
+    "ledgerId"
+  ]
+}

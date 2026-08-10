@@ -90,6 +90,23 @@
       "description": "Quantity of electronic items in this purchase order line",
       "type": "integer"
     },
+    "additionalCost": {
+      "description": "Lump sum that is added to the total estimated price - not affected by discount",
+      "type": "number"
+    },
+    "discount": {
+      "description": "Percentage (0 to 100) or amount (positive number) that is subtracted from the list price time quantities calculation before additional cost",
+      "type": "number"
+    },
+    "discountType": {
+      "description": "Percentage or amount discount type",
+      "type": "string",
+      "enum": [
+        "amount",
+        "percentage"
+      ],
+      "default": "percentage"
+    },
     "locations": {
       "description": "Location records for this purchase order line",
       "id": "locations",

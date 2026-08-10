@@ -1,0 +1,53 @@
+{
+  "fiscalYearId": "123e4567-e89b-12d3-a456-426614174004",
+  "fiscalYearCode": "FY2023",
+  "ledgerId": "123e4567-e89b-12d3-a456-426614174015",
+  "ledgerCode": "LED001",
+  "ledgerName": "Main Library Ledger",
+  "groups": [
+    {
+      "groupId": "123e4567-e89b-12d3-a456-426614174025",
+      "groupCode": "GRP001",
+      "groupName": "Materials",
+      "funds": [
+        {
+          "fundId": "123e4567-e89b-12d3-a456-426614174000",
+          "fundCode": "FND001",
+          "fundName": "General Fund",
+          "budget": {
+            "budgetId": "123e4567-e89b-12d3-a456-426614174001",
+            "budgetName": "Annual Budget",
+            "budgetStatus": "Active",
+            "initialAllocation": 1000000,
+            "allocated": 1000000,
+            "available": 950000,
+            "budgetExpenseClasses": [
+              {
+                "expenseClassId": "123e4567-e89b-12d3-a456-426614174030",
+                "expenseClassCode": "PRINT",
+                "expenseClassName": "Print materials",
+                "status": "Active"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "funds": [
+    {
+      "fundId": "123e4567-e89b-12d3-a456-426614174002",
+      "fundCode": "FND002",
+      "fundName": "Research Fund",
+      "budget": {
+        "budgetId": "123e4567-e89b-12d3-a456-426614174003",
+        "budgetName": "Research Budget",
+        "budgetStatus": "Planned",
+        "initialAllocation": 500000,
+        "allocated": 500000,
+        "available": 450000,
+        "budgetExpenseClasses": []
+      }
+    }
+  ]
+}

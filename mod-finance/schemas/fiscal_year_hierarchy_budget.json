@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The budget for a fund in a fiscal year, as it appears in the fiscal year hierarchy",
+  "type": "object",
+  "javaName": "FiscalYearHierarchyBudget",
+  "properties": {
+    "budgetId": {
+      "description": "UUID of the budget",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "budgetName": {
+      "description": "The name of the budget",
+      "type": "string"
+    },
+    "budgetStatus": {
+      "description": "The status of the budget",
+      "type": "string"
+    },
+    "initialAllocation": {
+      "description": "The amount of the first allocation made to this budget",
+      "type": "number"
+    },
+    "allocated": {
+      "description": "The amount currently allocated to this budget",
+      "type": "number"
+    },
+    "available": {
+      "description": "The amount currently available for this budget",
+      "type": "number"
+    },
+    "budgetExpenseClasses": {
+      "description": "The expense classes associated with this budget",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "fiscal_year_hierarchy_expense_class.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}

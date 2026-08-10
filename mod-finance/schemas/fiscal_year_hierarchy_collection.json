@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A collection of fiscal year hierarchies, one per ledger",
+  "type": "object",
+  "properties": {
+    "fiscalYearHierarchies": {
+      "description": "The list of fiscal year hierarchy objects contained in this collection",
+      "type": "array",
+      "id": "fiscalYearHierarchies",
+      "items": {
+        "type": "object",
+        "$ref": "fiscal_year_hierarchy.json"
+      }
+    },
+    "totalRecords": {
+      "description": "The number of objects contained in this collection",
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "fiscalYearHierarchies",
+    "totalRecords"
+  ]
+}
