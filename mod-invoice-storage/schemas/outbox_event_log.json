@@ -12,7 +12,8 @@
       "type": "string",
       "enum": [
         "Invoice",
-        "InvoiceLine"
+        "InvoiceLine",
+        "Voucher"
       ]
     },
     "action": {
