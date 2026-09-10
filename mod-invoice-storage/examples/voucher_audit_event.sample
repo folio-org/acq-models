@@ -1,0 +1,56 @@
+{
+  "id": "99fb699a-cdf1-11e9-a9d9-f2801f1b9aa1",
+  "action": "Edit",
+  "voucherId": "a9b99f8a-7100-47f2-9903-6293d44a9905",
+  "userId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1",
+  "eventDate": "2019-05-07T00:00:00.000+0000",
+  "actionDate": "2019-05-07T00:00:00.000+0000",
+  "voucherSnapshot": {
+    "id": "a9b99f8a-7100-47f2-9903-6293d44a9905",
+    "accountingCode": "0206",
+    "amount": 23.45,
+    "batchGroupId": "2a2cb998-1437-41d1-88ad-01930aaeadd5",
+    "disbursementNumber": "EFT546790",
+    "disbursementDate": "2019-05-07T00:00:00.000+0000",
+    "disbursementAmount": 250.00,
+    "exchangeRate": 1.12,
+    "operationMode": "MULTIPLY",
+    "exportToAccounting": false,
+    "invoiceCurrency": "EUR",
+    "invoiceId": "c0d08448-347b-418a-8c2f-5fb50248d67e",
+    "status": "Paid",
+    "systemCurrency": "USD",
+    "type": "Payment",
+    "voucherDate": "2019-05-06T00:00:00.000+0000",
+    "voucherNumber": "1001",
+    "vendorId": "168f8a63-d612-406e-813f-c7527f241ac3",
+    "acqUnitIds": [
+      "1895e539-8dac-441e-b1f5-aab62b3fde60",
+      "47f504bd-0c1b-498e-a2ae-e2f0a0cea273"
+    ]
+  },
+  "originalVoucherSnapshot": {
+    "id": "a9b99f8a-7100-47f2-9903-6293d44a9905",
+    "accountingCode": "0206",
+    "amount": 23.45,
+    "batchGroupId": "2a2cb998-1437-41d1-88ad-01930aaeadd5",
+    "disbursementNumber": "EFT546789",
+    "disbursementDate": "2019-05-05T00:00:00.000+0000",
+    "disbursementAmount": 100.00,
+    "exchangeRate": 1.12,
+    "operationMode": "MULTIPLY",
+    "exportToAccounting": false,
+    "invoiceCurrency": "EUR",
+    "invoiceId": "c0d08448-347b-418a-8c2f-5fb50248d67e",
+    "status": "Awaiting payment",
+    "systemCurrency": "USD",
+    "type": "Payment",
+    "voucherDate": "2019-05-06T00:00:00.000+0000",
+    "voucherNumber": "1000",
+    "vendorId": "168f8a63-d612-406e-813f-c7527f241ac3",
+    "acqUnitIds": [
+      "1895e539-8dac-441e-b1f5-aab62b3fde60",
+      "47f504bd-0c1b-498e-a2ae-e2f0a0cea273"
+    ]
+  }
+}

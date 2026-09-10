@@ -4,6 +4,7 @@
   "type": "string",
   "enum": [
     "ACQ_INVOICE_CHANGED",
-    "ACQ_INVOICE_LINE_CHANGED"
+    "ACQ_INVOICE_LINE_CHANGED",
+    "ACQ_VOUCHER_CHANGED"
   ]
 }
