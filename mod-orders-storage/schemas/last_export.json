@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Details about the last export",
+  "type": "object",
+  "properties": {
+    "transmissionMethod": {
+      "description": "Method by which the last export was successfully transmitted",
+      "type": "string",
+      "enum": [
+        "FTP",
+        "File download",
+        "Email"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

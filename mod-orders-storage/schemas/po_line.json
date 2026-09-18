@@ -143,6 +143,11 @@
       "type": "string",
       "format": "date-time"
     },
+    "lastExport": {
+      "description": "Details about the last export",
+      "type": "object",
+      "$ref": "last_export.json"
+    },
     "orderFormat": {
       "description": "The purchase order line format",
       "type": "string",
