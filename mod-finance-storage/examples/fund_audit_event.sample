@@ -1,0 +1,46 @@
+{
+  "id": "99fb699a-cdf1-11e9-a9d9-f2801f1b9aa1",
+  "action": "Edit",
+  "fundId": "6e2fbba3-d557-4480-bca3-b6f5c645de04",
+  "userId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1",
+  "eventDate": "2025-05-07T00:00:00.000+0000",
+  "actionDate": "2025-05-07T00:00:00.000+0000",
+  "fundSnapshot": {
+    "id": "6e2fbba3-d557-4480-bca3-b6f5c645de04",
+    "code": "HIST",
+    "description": "Tracking fund for the History department",
+    "externalAccountNo": "1121112569489",
+    "fundStatus": "Frozen",
+    "fundTypeId": "c93373df-e7ec-4d31-b200-719736610d89",
+    "ledgerId": "7ebd02c8-2bd4-40ae-b44d-0e76dc197633",
+    "name": "History",
+    "acqUnitIds": [
+      "1895e539-8dac-441e-b1f5-aab62b3fde60"
+    ],
+    "metadata": {
+      "createdDate": "2025-05-05T00:00:00.000+0000",
+      "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1",
+      "updatedDate": "2025-05-07T00:00:00.000+0000",
+      "updatedByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
+    }
+  },
+  "originalFundSnapshot": {
+    "id": "6e2fbba3-d557-4480-bca3-b6f5c645de04",
+    "code": "HIST",
+    "description": "Tracking fund for the History department",
+    "externalAccountNo": "1121112569489",
+    "fundStatus": "Active",
+    "fundTypeId": "c93373df-e7ec-4d31-b200-719736610d89",
+    "ledgerId": "7ebd02c8-2bd4-40ae-b44d-0e76dc197633",
+    "name": "History",
+    "acqUnitIds": [
+      "1895e539-8dac-441e-b1f5-aab62b3fde60"
+    ],
+    "metadata": {
+      "createdDate": "2025-05-05T00:00:00.000+0000",
+      "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1",
+      "updatedDate": "2025-05-05T00:00:00.000+0000",
+      "updatedByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
+    }
+  }
+}
