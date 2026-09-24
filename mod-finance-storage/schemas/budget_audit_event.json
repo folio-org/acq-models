@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Budget audit event",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "UUID of the event",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "action": {
+      "description": "Action for budget (Create or Edit)",
+      "$ref": "event_action.json"
+    },
+    "budgetId": {
+      "description": "UUID of the budget",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "userId": {
+      "description": "UUID of the user who performed the action",
+      "$ref": "../../common/schemas/uuid.json"
+    },
+    "eventDate": {
+      "description": "Date time when event triggered",
+      "format": "date-time",
+      "type": "string"
+    },
+    "actionDate": {
+      "description": "Date time when budget action occurred",
+      "format": "date-time",
+      "type": "string"
+    },
+    "budgetSnapshot": {
+      "description": "Full snapshot of the budget",
+      "type": "object",
+      "javaType": "org.folio.rest.jaxrs.model.Budget"
+    },
+    "originalBudgetSnapshot": {
+      "description": "Snapshot of the budget prior to the edit. Populated only for Edit actions.",
+      "type": "object",
+      "javaType": "org.folio.rest.jaxrs.model.Budget"
+    }
+  },
+  "additionalProperties": false
+}
