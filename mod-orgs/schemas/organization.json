@@ -13,7 +13,7 @@
       "type": "string"
     },
     "code": {
-      "description": "The code for this organization",
+      "description": "The code for this organization. Must not start or end with whitespace.",
       "type": "string",
       "pattern": "[\\S ]{1,}"
     },
