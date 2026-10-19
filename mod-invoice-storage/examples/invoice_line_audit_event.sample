@@ -88,5 +88,33 @@
       "createdDate": "2018-07-19T00:00:00.000+0000",
       "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
     }
+  },
+  "invoiceSnapshot": {
+    "id": "c0d08448-347b-418a-8c2f-5fb50248d67e",
+    "accountingCode": "0206",
+    "adjustmentsTotal": 0,
+    "batchGroupId": "2a2cb998-1437-41d1-88ad-01930aaeadd5",
+    "chkSubscriptionOverlap": false,
+    "currency": "USD",
+    "enclosureNeeded": false,
+    "exportToAccounting": true,
+    "folioInvoiceNo": "123invoicenumber45",
+    "invoiceDate": "2018-07-20T00:00:00.000+0000",
+    "note": "Some note",
+    "paymentMethod": "EFT",
+    "status": "Open",
+    "source": "User",
+    "vendorInvoiceNo": "YK75851",
+    "vendorId": "168f8a63-d612-406e-813f-c7527f241ac3",
+    "fiscalYearId": "ac2164c7-ba3d-1bc2-a12c-e35ceccbfaf2",
+    "accountNo": "GOBI-HIST-12",
+    "nextInvoiceLineNumber": 2,
+    "acqUnitIds": [
+      "1895e539-8dac-441e-b1f5-aab62b3fde60"
+    ],
+    "metadata": {
+      "createdDate": "2018-07-19T00:00:00.000+0000",
+      "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
+    }
   }
 }
