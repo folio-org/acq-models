@@ -41,6 +41,10 @@
     "originalOrderLineSnapshot": {
       "description": "Full snapshot of the order line before the EDIT action",
       "$ref": "po_line.json"
+    },
+    "orderSnapshot": {
+      "description": "Snapshot of the parent order at the time of the order line change",
+      "$ref": "purchase_order.json"
     }
   },
   "additionalProperties": false
