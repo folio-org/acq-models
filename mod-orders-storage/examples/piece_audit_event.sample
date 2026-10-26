@@ -39,5 +39,45 @@
         "createdByUserId": "58edf8c3-89e4-559c-9aed-aae637a3f40b",
         "updatedByUserId": "58edf8c3-89e4-559c-9aed-aae637a3f40b"
       }
+    },
+  "titleSnapshot":
+    {
+      "id": "9a665b22-9fe5-4c95-b4ee-837a5433c95d",
+      "expectedReceiptDate": "2018-10-05T00:00:00.000Z",
+      "title": "Sample Title",
+      "poLineId": "d471d766-8dbb-4609-999a-02681dea6c22",
+      "instanceId": "f1b57aeb-23c9-4386-bcb8-efda56878267",
+      "nextSequenceNumber": 2,
+      "contributors": [
+        {
+          "contributor": "Ed Mashburn",
+          "contributorNameTypeId": "fbdd42a8-e47d-4694-b448-cc571d1b44c3"
+        }
+      ],
+      "packageName": "Package sample",
+      "poLineNumber": "268758-03",
+      "publisher": "Schiffer Publishing",
+      "publishedDate": "1972",
+      "receivingNote": "ABCDEFGHIJKL",
+      "edition": "Third Edt.",
+      "claimingActive": false,
+      "claimingInterval": 0,
+      "isAcknowledged": true,
+      "productIds": [
+        {
+          "productId": "9780764354113",
+          "productIdType": "8261054f-be78-422d-bd51-4ed9f33c3422",
+          "qualifier": "(paperback)"
+        }
+      ],
+      "acqUnitIds": [
+        "1895e539-8dac-441e-b1f5-aab62b3fde60"
+      ],
+      "metadata": {
+        "createdDate": "2022-11-10T09:20:00.000Z",
+        "updatedDate": "2022-11-10T09:22:15.808Z",
+        "createdByUserId": "58edf8c3-89e4-559c-9aed-aae637a3f40b",
+        "updatedByUserId": "58edf8c3-89e4-559c-9aed-aae637a3f40b"
+      }
     }
 }
