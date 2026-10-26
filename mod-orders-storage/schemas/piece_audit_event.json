@@ -37,6 +37,10 @@
     "originalPieceSnapshot": {
       "description": "Full snapshot of the piece before the EDIT action",
       "$ref": "piece.json"
+    },
+    "titleSnapshot": {
+      "description": "Snapshot of the parent title at the time of the piece change",
+      "$ref": "title.json"
     }
   },
   "additionalProperties": false
