@@ -20,6 +20,36 @@
       "description": "The record's date, one of the rule's target dates (YYYY-MM-DD)",
       "type": "string",
       "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "createdByUserId": {
+      "description": "UUID of the user who created the record",
+      "$ref": "uuid.json"
+    },
+    "assigneeUserIds": {
+      "description": "UUIDs of the users the record is assigned to, e.g. an order's assignee or the members of a task's team",
+      "type": "array",
+      "items": {
+        "$ref": "uuid.json"
+      }
+    },
+    "identifiers": {
+      "description": "Human-readable identifiers of the record, field name to value, e.g. vendorInvoiceNo, poNumber, or poLineNumber and titleOrPackage",
+      "type": "object",
+      "javaType": "org.folio.rest.jaxrs.model.CalendarMatchIdentifiers",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "parentId": {
+      "description": "UUID of the parent record, e.g. the purchase order of an order line",
+      "$ref": "uuid.json"
+    },
+    "acqUnitIds": {
+      "description": "UUIDs of the acquisition units the record belongs to",
+      "type": "array",
+      "items": {
+        "$ref": "uuid.json"
+      }
     }
   },
   "additionalProperties": false,
